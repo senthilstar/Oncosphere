@@ -22,8 +22,8 @@ sources:
 Phase 3, open-label; n=557; untreated advanced EGFR ex19del/L858R NSCLC. Osimertinib 80 mg + pemetrexed + cisplatin/carboplatin ×4, then osimertinib + pemetrexed maintenance vs osimertinib alone.
 
 ## Results
-- **PFS** (primary, NEJM 2023): 25.5 vs 16.7 mo; HR 0.62.
-- **OS** (final, ESMO 2025/NEJM): **47.5 vs 37.6 mo**; HR 0.77 (95% CI 0.61–0.96; p=0.02); 57% maturity.
+- **PFS** (primary, NEJM 2023): 25.5 vs 16.7 mo; HR 0.62. <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa2306434">[NEJM 2023]</a>
+- **OS** (final, ESMO 2025/NEJM): **47.5 vs 37.6 mo**; HR 0.77 (95% CI 0.61–0.96; p=0.02); 57% maturity. <a class="cite" href="https://www.nejm.org/doi/10.1056/NEJMoa2510308">[NEJM 2025]</a>
 - OS at 36 mo: 63% vs 51%; at 48 mo: 49% vs 41%.
 - CNS metastases at baseline: 36-mo OS 57% vs 40%.
 - Grade ≥3 AEs (all causes): 70% vs 34% — mainly haematological, chemotherapy-related.
@@ -36,6 +36,6 @@ NCCN/ESMO list three preferred first-line options for common EGFR mutations: osi
 
 <p class="opinion">I favour FLAURA2 for fit patients with brain metastases or high tumour burden; osimertinib monotherapy remains entirely reasonable for elderly/frail patients or those prioritising fewer hospital visits.</p>
 
-{% include india.html text="EGFR mutations are common in Indian NSCLC (roughly a quarter to a third of adenocarcinomas in Indian series). Pemetrexed-platinum is widely available and affordable; the limiting factor is osimertinib cost and access — confirm availability under CMCHIS/PM-JAY or patient-assistance programmes. Amivantamab access in India is limited; I could not verify current CDSCO status." %}
+{% include india.html text="EGFR mutations are common in Indian NSCLC: pooled prevalence 28.7% in advanced adenocarcinoma and 24.2% in all NSCLC ([meta-analysis, Asia-Pac J Clin Oncol 2022](https://pubmed.ncbi.nlm.nih.gov/35634796/)). Pemetrexed-platinum is widely available and affordable; the limiting factor is osimertinib cost and access — check current availability, including CMCHIS/PM-JAY coverage or patient-assistance programmes. Amivantamab: check current availability." %}
 
 <p class="note">The original oncosphere.in article was image-based and could not be recovered; this is a rewritten, referenced version under the same title.</p>

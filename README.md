@@ -1,6 +1,6 @@
 # Oncosphere
 
-Jekyll site built natively by GitHub Pages (no build step). Live: https://senthilstar.github.io/Oncosphere/
+Jekyll site built natively by GitHub Pages (no build step). Live: https://oncosphere.in/
 
 ## Add a news post
 Create `_posts/YYYY-MM-DD-short-slug.md`:

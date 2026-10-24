@@ -25,7 +25,7 @@ sources:
 Phase 3, double-blind; n=142 with progressing desmoids (≥20% growth within 12 months). Nirogacestat 150 mg twice daily vs placebo. Primary endpoint: PFS.
 
 ## Results
-- PFS: HR **0.29** (95% CI 0.15–0.55; p<0.001).
+- PFS: HR **0.29** (95% CI 0.15–0.55; p<0.001). <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa2210140">[NEJM 2023]</a>
 - 2-year event-free probability: **76% vs 44%**.
 - ORR **41% vs 8%**; complete response 7% vs 0%.
 - Improvements in pain, desmoid-specific symptoms and quality of life.
@@ -38,6 +38,6 @@ Diarrhoea (most common), nausea, fatigue, hypophosphataemia, maculopapular rash.
 ## Place in therapy
 NCCN lists nirogacestat as a preferred systemic option for progressive/symptomatic desmoids. Longer follow-up and the optimal duration of therapy remain open questions.
 
-{% include india.html text="Desmoids are rare; diagnose in a sarcoma pathology unit (β-catenin nuclear IHC). I could not verify CDSCO approval or Indian pricing of nirogacestat as of Oct 2026 — check before counselling. **Opinion:** for most patients in government settings, surveillance, then sorafenib (generic) or low-dose methotrexate–vinblastine, remain pragmatic choices." %}
+{% include india.html text="Desmoids are rare; diagnose in a sarcoma pathology unit (β-catenin nuclear IHC). Nirogacestat in India: check current availability (CDSCO status and pricing not verified). **Opinion:** for most patients in government settings, surveillance, then sorafenib (generic) or low-dose methotrexate–vinblastine, remain pragmatic choices." %}
 
 <p class="note">The original oncosphere.in article was image-based and could not be recovered; this is a rewritten, referenced version under the same title.</p>

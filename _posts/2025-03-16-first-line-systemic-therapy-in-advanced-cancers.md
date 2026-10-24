@@ -48,11 +48,12 @@ Choosing the right first-line systemic therapy is crucial in managing advanced c
 - **Target-defined ADCs** → now first line in some settings (enfortumab vedotin + pembrolizumab in urothelial cancer).
 - **Chemotherapy** remains the backbone for many, and alone when IO/targeted options are unavailable.
 
-{% include chart.html title="Landmark first-line trials: median overall survival (months)" labels="KEYNOTE-189: pembro + chemo|KEYNOTE-189: chemo|FLAURA2: osimertinib + chemo|FLAURA2: osimertinib|EV-302: EV + pembro|EV-302: platinum chemo" values="22.0|10.7|47.5|37.6|31.5|16.1" max="50" unit=" mo" note="Medians from the cited publications; cross-trial comparison is not valid — different diseases and populations." %}
+{% include chart.html title="Landmark first-line trials: median overall survival (months)" labels="KEYNOTE-189: pembro + chemo|KEYNOTE-189: chemo|FLAURA2: osimertinib + chemo|FLAURA2: osimertinib|EV-302: EV + pembro|EV-302: platinum chemo" values="22.0|10.6|47.5|37.6|31.5|16.1" max="50" unit=" mo" note="Medians from the cited publications; cross-trial comparison is not valid — different diseases and populations." %}
+<p class="chart-note">Sources: <a href="https://pubmed.ncbi.nlm.nih.gov/36809080/">KEYNOTE-189 (OS 22.0 vs 10.6 mo, HR 0.60)</a> · <a href="https://www.nejm.org/doi/10.1056/NEJMoa2510308">FLAURA2 (HR 0.77)</a> · <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2312117">EV-302 (HR 0.47)</a></p>
 
 ## Step 4 — Practicalities
 - Check drug access, insurance (CMCHIS, PM-JAY) and travel burden before promising a regimen.
 - Baseline TSH, cortisol, LFTs before immunotherapy; LVEF before anti-HER2; ophthalmic/ILD counselling with relevant ADCs.
 - Discuss palliative care early — improves quality of life and, in one RCT, survival (Temel, NEJM 2010).
 
-{% include india.html text="Broad NGS is often out of pocket; prioritise single-gene/IHC tests that change first-line therapy (EGFR, ALK IHC, MMR IHC, HER2). Biosimilars and Indian generics have reduced costs for trastuzumab, bevacizumab and several TKIs. **Opinion:** where checkpoint inhibitors are unaffordable, a well-delivered chemotherapy doublet plus early palliative care is still good medicine — and low-dose immunotherapy studies from India are worth following, but are not yet a universal standard." %}
+{% include india.html text="Broad NGS is often out of pocket; prioritise single-gene/IHC tests that change first-line therapy (EGFR, ALK IHC, MMR IHC, HER2). Biosimilars and Indian generics exist for trastuzumab, bevacizumab and several TKIs — check current availability and cost locally. **Opinion:** where checkpoint inhibitors are unaffordable, a well-delivered chemotherapy doublet plus early palliative care is still good medicine — and low-dose immunotherapy studies from India are worth following, but are not yet a universal standard." %}
