@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-<article class="post wrap narrow"><h1>{{ page.title }}</h1>
-<p class="meta">{{ page.display_date | default: page.date | date: '%-m/%-d/%Y' }} · {% assign w = content | number_of_words %}{{ w | divided_by: 200 | plus: 1 }} min read</p>
-{% if page.image %}<img class="hero-img" src="{{ page.image }}" alt="">{% endif %}
+<article class="post wrap narrow"><p class="kicker">{{ page.category | default: "Oncology" }}{% if page.audience %} · for {{ page.audience }}{% endif %}</p><h1>{{ page.title }}</h1>
+<p class="meta">{{ page.display_date | default: page.date | date: '%-m/%-d/%Y' }} · {% assign w = content | number_of_words %}{{ w | divided_by: 200 | plus: 1 }} min read{% if page.updated %} · updated {{ page.updated | date: '%-d %b %Y' }}{% endif %}</p>
+<img class="hero-img" src="{{ page.cover | default: 'general' | prepend: '/assets/img/cover-' | append: '.svg' | relative_url }}" alt="" width="800" height="400">
+{% if page.tldr %}<div class="tldr reveal"><strong>Bottom line</strong>{{ page.tldr | markdownify }}</div>{% endif %}
 {{ content }}
-{% if page.sources %}<section class="sources"><h2>Sources</h2><ol>{% for s in page.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a></li>{% endfor %}</ol></section>{% endif %}
+{% include ad.html slot="in_article" %}
+{% if page.sources %}<section class="sources"><h2>Sources</h2><ol>{% for s in page.sources %}<li><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a></li>{% endfor %}</ol></section>{% endif %}
+<p class="note">Educational summary, not medical advice. Opinions are labelled as such and are the author's own. Approvals and availability in India (CDSCO) may differ from the US/EU.</p>
 <p><a href="{{ '/#blog' | relative_url }}">← Back to blog</a></p></article>

@@ -1,4 +1,6 @@
 ---
+cover: news
+updated: 2026-10-24
 title: "ESMO Congress 2026 in Madrid: what to watch"
 category: Conference
 audience: clinicians
@@ -20,3 +22,5 @@ The European Society for Medical Oncology (ESMO) Congress 2026 is being held in 
 The programme also includes sessions on artificial intelligence in oncology, toxicities of novel therapies and patient-advocacy sessions on access and equity — topics highly relevant to public-sector oncology in India.
 
 I will post short summaries of the practice-changing results here after the data are presented. Abstracts are available through the official ESMO programme linked below.
+
+{% include india.html text="Look for results that are deliverable with drugs already accessible in India (generics, biosimilars), and for any data on shorter treatment durations or lower doses that could make therapy more affordable. **Opinion.**" %}

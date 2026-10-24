@@ -1,0 +1,4 @@
+{% comment %}Bar chart from cited numbers. Params: title, labels "A|B", values "1|2", max, unit, note{% endcomment %}{% assign L = include.labels | split: "|" %}{% assign V = include.values | split: "|" %}
+<figure class="chart reveal" role="img" aria-label="{{ include.title }}"><figcaption>{{ include.title }}</figcaption>
+{% for l in L %}{% assign v = V[forloop.index0] %}<div class="bar-row"><span class="bl">{{ l }}</span><span class="bt"><span class="bf c{{ forloop.index0 }}" style="--w:{{ v | times: 100.0 | divided_by: include.max | round: 1 }}%"></span></span><span class="bv">{{ v }}{{ include.unit }}</span></div>
+{% endfor %}{% if include.note %}<p class="chart-note">{{ include.note }}</p>{% endif %}</figure>

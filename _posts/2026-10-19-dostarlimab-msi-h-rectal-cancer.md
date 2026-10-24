@@ -1,4 +1,6 @@
 ---
+cover: gi
+updated: 2026-10-24
 title: "Dostarlimab gets FDA accelerated approval for MSI-H/dMMR locally advanced rectal cancer"
 category: Approvals
 audience: clinicians and patients
@@ -18,3 +20,5 @@ About 5–10% of rectal cancers are mismatch-repair deficient. The landmark sing
 If you have rectal cancer, ask whether your biopsy has been tested for **MMR (mismatch repair) or MSI**. The result can change which treatment is best.
 
 <p class="note">Accelerated approval means continued approval may depend on confirmatory trials. This is a US decision.</p>
+
+{% include india.html text="Universal MMR IHC on rectal biopsies is cheap and widely available. Dostarlimab access in India: not verified as of Oct 2026. **Opinion:** where the drug is unavailable, dMMR rectal cancer should still be discussed at a tumour board — other PD-1 inhibitors have been used off-label in studies, but the evidence base is smaller." %}

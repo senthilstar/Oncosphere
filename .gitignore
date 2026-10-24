@@ -1,1 +1,6 @@
 shots/
+_site/
+.bundle/
+vendor/
+Gemfile.lock
+.jekyll-cache/

@@ -1,4 +1,6 @@
 ---
+cover: news
+updated: 2026-10-24
 title: "FDA oncology approvals, October 2026: a roundup"
 category: Approvals
 audience: clinicians
@@ -28,3 +30,5 @@ A busy month for US approvals. Summarised from the FDA's oncology approval notif
 Two approvals (atezolizumab in colon cancer, dostarlimab in rectal cancer) reinforce **universal MMR/MSI testing** of colorectal cancers at diagnosis — something we can do with immunohistochemistry in most centres.
 
 <p class="note">These are US FDA decisions. Approval and availability in India (CDSCO) may differ.</p>
+
+{% include india.html text="US approvals usually reach India later, often at high cost. The cheapest actionable lesson is testing: MMR IHC for every colorectal cancer and HER2 testing in breast cancer." %}

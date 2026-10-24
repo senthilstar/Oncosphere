@@ -1,14 +1,24 @@
 title: Oncosphere
 tagline: Cancer care, explained — trial updates and patient guides
-description: Oncology news, practice-changing trials and patient-friendly cancer explainers from Dr. Senthil, medical oncologist, Chennai.
-author: Dr. Senthil
+description: Oncology news, practice-changing trials and patient-friendly cancer explainers from Dr. Senthil Kumar, medical oncologist, Chennai.
+author: Dr. Senthil Kumar
 url: https://senthilstar.github.io
 baseurl: /Oncosphere
 twitter: esenthil84
+email: esenthilkmc02@gmail.com
 permalink: /:title/
 markdown: kramdown
 plugins: [jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
-exclude: [shots, README.md]
+exclude: [shots, README.md, Gemfile, Gemfile.lock, vendor, tools]
+
+# Google AdSense — leave EMPTY until AdSense approves the site.
+# Then paste your publisher ID, e.g. adsense_client: "ca-pub-1234567890123456"
+adsense_client: "ca-pub-8974689914681880"   # AdSense publisher ID (empty string disables all ad code)
+adsense_slots:                # ad unit IDs from AdSense > Ads > By ad unit (optional; empty = slot hidden)
+  header: ""
+  in_article: ""
+  sidebar: ""
+
 defaults:
   - scope: {path: "", type: posts}
     values: {layout: post}

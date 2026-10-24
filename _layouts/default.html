@@ -1,7 +1,11 @@
 <!doctype html><html lang="en"><head>{% include head.html %}</head><body>
-<header class="site"><div class="wrap nav"><a class="brand" href="{{ '/' | relative_url }}">Oncosphere</a>
-<nav><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/#blog' | relative_url }}">Blog</a><a href="{{ '/#contact' | relative_url }}">Contact</a></nav></div></header>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap nav"><a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/favicon.svg' | relative_url }}" alt="" width="26" height="26">Oncosphere</a>
+<nav><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/#blog' | relative_url }}">Blog</a><a href="{{ '/#contact' | relative_url }}">Contact</a></nav></div><div class="progress" aria-hidden="true"></div></header>
+{% include ad.html slot="header" %}
 <main id="main">{{ content }}</main>
-<footer class="site"><div class="wrap"><p class="brand">Oncosphere</p><p><a href="mailto:esenthilkmc02@gmail.com">esenthilkmc02@gmail.com</a></p>
-<p class="disclaimer"><strong>Disclaimer:</strong> Oncosphere is for general education only. It is not medical advice and does not replace a consultation with your own doctor. No patient information is collected or published here. <a href="{{ '/disclaimer/' | relative_url }}">Full disclaimer</a></p></div></footer>
+<footer class="site"><div class="wrap fgrid"><div><p class="brand">Oncosphere</p><p>Evidence-based oncology notes from Chennai.</p><p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p></div>
+<div><p class="strong">Site</p><p><a href="{{ '/about/' | relative_url }}">About</a> · <a href="{{ '/contact/' | relative_url }}">Contact</a> · <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a> · <a href="{{ '/disclaimer/' | relative_url }}">Disclaimer</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p></div>
+{% include ad.html slot="sidebar" %}</div>
+<div class="wrap"><p class="disclaimer"><strong>Disclaimer:</strong> Oncosphere is for general education only. It is not medical advice and does not replace a consultation with your own doctor. No patient information is collected or published here. <a href="{{ '/disclaimer/' | relative_url }}">Full disclaimer</a></p><p class="small">© {{ site.time | date: '%Y' }} Oncosphere. Illustrations are original SVGs.</p></div></footer>
 </body></html>
