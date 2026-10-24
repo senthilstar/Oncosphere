@@ -1,0 +1,8 @@
+<!doctype html><html lang="{{ page.lang | default: 'en' }}"><head>{% include head.html %}</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap nav"><a class="brand" href="{{ '/' | relative_url }}"><span class="dot"></span>Oncosphere</a>
+<nav><a href="{{ '/news/' | relative_url }}">News</a><a href="{{ '/explainers/' | relative_url }}">For patients</a><a href="{{ '/about/' | relative_url }}">About</a></nav></div></header>
+<main id="main" class="wrap">{{ content }}</main>
+<footer class="site"><div class="wrap"><p class="disclaimer"><strong>Disclaimer:</strong> Oncosphere is for general education only. It is not medical advice and does not replace a consultation with your own doctor. No patient information is collected or published here. Treatment approvals mentioned may not apply in India; ask your oncologist.</p>
+<p>© {{ site.time | date: '%Y' }} Dr. Senthil · <a href="https://x.com/esenthil84">@esenthil84</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a> · <a href="{{ '/disclaimer/' | relative_url }}">Full disclaimer</a></p></div></footer>
+</body></html>

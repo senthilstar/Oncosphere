@@ -1,0 +1,1 @@
+<a class="card" href="{{ include.p.url | relative_url }}"><span class="tag">{{ include.p.category | default: 'News' }}</span><h3>{{ include.p.title }}</h3><p>{{ include.p.summary }}</p><time>{{ include.p.date | date: '%d %b %Y' }}</time></a>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OncoSphere - The Cancer Chronicles</title>
+    <style>
+        :root {
+            --primary-color: #6b46c1;
+            --secondary-color: #805ad5;
+            --text-color: #2d3748;
+            --light-bg: #f7fafc;
+            --border-color: #e2e8f0;
+            --accent-color: #d53f8c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .hero {
+            background: linear-gradient(to right, rgba(107, 70, 193, 0.9), rgba(213, 63, 140, 0.9)),
+                        url('/api/placeholder/1200/400') center/cover;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content-section {
+            padding: 4rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section-description {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #4a5568;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .blog-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .blog-card:hover .card-image img {
+            transform: scale(1.05);
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card-category {
+            color: var(--accent-color);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+        
+        .card-title a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .card-title a:hover {
+            color: var(--primary-color);
+        }
+        
+        .card-excerpt {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+        
+        .card-meta {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            color: #718096;
+        }
+        
+        .author-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 0.75rem;
+        }
+        
+        .subscribe-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .subscribe-form {
+            max-width: 500px;
+            margin: 2rem auto 0;
+            display: flex;
+        }
+        
+        .subscribe-input {
+            flex: 1;
+            padding: 0.8rem 1rem;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 1rem;
+        }
+        
+        .subscribe-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0 1.5rem;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .subscribe-btn:hover {
+            background-color: #c03a7f;
+        }
+        
+        .categories-section {
+            background-color: white;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .category-card {
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-count {
+            color: #718096;
+            font-size: 0.875rem;
+        }
+        
+        footer {
+            background-color: #2d3748;
+            color: white;
+            padding: 4rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.875rem;
+            color: #a0aec0;
+        }
+        
+        /* Mobile menu */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                right: -300px;
+                width: 300px;
+                height: 100%;
+                background-color: white;
+                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s;
+                z-index: 20;
+                padding: 2rem;
+            }
+            
+            nav.active {
+                right: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 1rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .blog-grid, .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .subscribe-form {
+                flex-direction: column;
+            }
+            
+            .subscribe-input {
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+            
+            .subscribe-btn {
+                border-radius: 4px;
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Onco<span>Sphere</span></a>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>OncoSphere - The Cancer Chronicles</h1>
+            <p>Sharing stories, research, and hope in the journey through cancer. Join our community of survivors, caregivers, and medical professionals.</p>
+            <a href="#" class="btn">Explore Articles</a>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-description">Stay informed with our most recent posts on cancer research, treatment options, survivor stories, and more.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/300" alt="Latest breakthrough in immunotherapy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Research</span>
+                        <h3 class="card-title"><a href="#">Breakthrough in Immunotherapy Shows Promise for Late-Stage Patients</a></h3>
+                        <p class="card-excerpt">New clinical trials reveal significant improvements in survival rates for patients with previously untreatable forms of cancer.</p>
+                        <div class="card-meta">
+                            <img src="/api/placeholder/60/60" alt="Dr. Jane Smith" class="author-avatar">
+                            <span>Dr. Jane Smith • March 5, 2025</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/300" alt="Nutrition during cancer treatment">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Lifestyle</span>
+                        <h3 class="card-title"><a href="#">Nutrition Guide: What to Eat During Cancer Treatment</a></h3>
+                        <p class="card-excerpt">Expert advice on maintaining proper nutrition while dealing with the side effects of chemotherapy and radiation.</p>
+                        <div class="card-meta">
+                            <img src="/api/placeholder/60/60" alt="Maria Johnson" class="author-avatar">
+                            <span>Maria Johnson • February 28, 2025</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/300" alt="Cancer survivor story">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Personal Story</span>
+                        <h3 class="card-title"><a href="#">My Journey: From Diagnosis to Five Years Cancer-Free</a></h3>
+                        <p class="card-excerpt">Thomas shares his emotional and physical journey through stage 3 lung cancer and the lessons he learned along the way.</p>
+                        <div class="card-meta">
+                            <img src="/api/placeholder/60/60" alt="Thomas Wright" class="author-avatar">
+                            <span>Thomas Wright • February 20, 2025</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-section">
+        <div class="container">
+            <h2>Stay Updated on Latest Research & Stories</h2>
+            <p>Join our newsletter and receive weekly updates directly to your inbox.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Your email address" class="subscribe-input" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="content-section categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explore by Categories</h2>
+                <p class="section-description">Find articles relevant to your specific interests or needs.</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🔬</div>
+                    <h3 class="category-title">Research & Treatments</h3>
+                    <div class="category-count">43 Articles</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💪</div>
+                    <h3 class="category-title">Survivor Stories</h3>
+                    <div class="category-count">27 Articles</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥗</div>
+                    <h3 class="category-title">Nutrition & Lifestyle</h3>
+                    <div class="category-count">19 Articles</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">❤️</div>
+                    <h3 class="category-title">Caregivers' Corner</h3>
+                    <div class="category-count">15 Articles</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About OncoSphere</h3>
+                    <p>A community-driven platform dedicated to sharing knowledge, experiences, and hope in the fight against cancer.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Support Groups</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Research & Treatments</a></li>
+                        <li><a href="#">Survivor Stories</a></li>
+                        <li><a href="#">Nutrition & Lifestyle</a></li>
+                        <li><a href="#">Caregivers' Corner</a></li>
+                        <li><a href="#">Medical Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 OncoSphere - The Cancer Chronicles. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mainNav.contains(e.target) && e.target !== menuToggle) {
+                mainNav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
