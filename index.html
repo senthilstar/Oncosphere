@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Oncosphere — Cancer care, explained
+title: "Discover Oncosphere: Insights on Cancer history, Cancer Treatments and latest clinical trials"
 ---
-<section class="hero"><h1>Cancer care, explained clearly.</h1>
-<p>Practice-changing trials and approvals for doctors, and plain-language guides for patients and families — from Dr. Senthil, medical oncologist, Chennai.</p>
-<a class="btn" href="{{ '/news/' | relative_url }}">Latest updates</a><a class="btn alt" href="{{ '/explainers/' | relative_url }}">Guides for patients</a></section>
-<h2>Latest oncology updates</h2>
-<div class="grid">{% for p in site.posts limit:6 %}{% include card.html p=p %}{% endfor %}</div>
-<h2>For patients &amp; families</h2>
-<div class="grid">{% assign ex = site.pages | where: "section", "explainer" %}{% for p in ex %}<a class="card" href="{{ p.url | relative_url }}"><span class="tag">Guide</span><h3>{{ p.title }}</h3><p>{{ p.summary }}</p></a>{% endfor %}</div>
+<section class="hero"><div class="wrap"><h1>Explore Cancer Insights and Innovations Today</h1><p>Stay informed on cancer history, treatments, and the latest research breakthroughs and trials.</p></div></section>
+<section id="blog" class="wrap block"><h2 class="label">Cancer treatment paradigms</h2><div class="grid">{% for p in site.posts %}{% include card.html p=p %}{% endfor %}</div></section>
+<section class="wrap block two"><div><h3>Historical Perspectives</h3><p>Explore the evolving understanding of cancer through history, from early theories to modern advancements, shaping the way we diagnose, treat, and research this complex disease.</p></div>
+<div class="stat"><h3>15</h3><p class="strong">Trusted by Professionals</p><p>Expert Guidance</p></div></section>
+<section class="light"><div class="wrap block"><h3>Empowering Cancer Awareness and Research</h3><p>Oncosphere is dedicated to providing insightful information on cancer history, treatments, future trends, and the latest research to empower patients and families in their journey.</p></div></section>
+<section class="wrap block"><h3>Gallery</h3><p>Explore visual insights on cancer research, treatments, and future trends.</p></section>
+<section class="light"><div class="wrap block"><h2 class="label">General Medical Topics</h2><p>Sharing thoughtful discussions on medical topics that matter to oncologists and their patients.</p></div></section>
+<section id="contact" class="wrap block"><h3>Get in Touch</h3><p>We welcome your inquiries and feedback regarding cancer research, treatments, and our blog. Connect with us to share your thoughts.</p>
+<h6>Support</h6><p><a href="mailto:esenthilkmc02@gmail.com">esenthilkmc02@gmail.com</a></p></section>

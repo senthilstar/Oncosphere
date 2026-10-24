@@ -15,6 +15,6 @@ On **19 October 2026**, the US FDA granted **accelerated approval** to dostarlim
 About 5–10% of rectal cancers are mismatch-repair deficient. The landmark single-centre study from Memorial Sloan Kettering (Cercek et al., NEJM 2022) reported that the first 12 patients treated with dostarlimab alone had a clinical complete response, avoiding chemoradiation and surgery at the time of reporting.
 
 ## For patients
-If you have rectal cancer, ask whether your biopsy has been tested for **MMR (mismatch repair) or MSI**. The result can change which treatment is best. See our guide: [What is immunotherapy?]({{ '/explainers/immunotherapy/' | relative_url }})
+If you have rectal cancer, ask whether your biopsy has been tested for **MMR (mismatch repair) or MSI**. The result can change which treatment is best.
 
 <p class="note">Accelerated approval means continued approval may depend on confirmatory trials. This is a US decision.</p>

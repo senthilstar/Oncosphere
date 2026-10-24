@@ -5,7 +5,7 @@ author: Dr. Senthil
 url: https://senthilstar.github.io
 baseurl: /Oncosphere
 twitter: esenthil84
-permalink: /news/:year/:month/:title/
+permalink: /:title/
 markdown: kramdown
 plugins: [jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 exclude: [shots, README.md]

@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-<article class="post"><p class="meta"><span class="tag">{{ page.category | default: 'News' }}</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %b %Y' }}</time>{% if page.audience %} · For {{ page.audience }}{% endif %}</p>
-<h1>{{ page.title }}</h1>{% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+<article class="post wrap narrow"><h1>{{ page.title }}</h1>
+<p class="meta">{{ page.display_date | default: page.date | date: '%-m/%-d/%Y' }} · {% assign w = content | number_of_words %}{{ w | divided_by: 200 | plus: 1 }} min read</p>
+{% if page.image %}<img class="hero-img" src="{{ page.image }}" alt="">{% endif %}
 {{ content }}
 {% if page.sources %}<section class="sources"><h2>Sources</h2><ol>{% for s in page.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a></li>{% endfor %}</ol></section>{% endif %}
-<p><a href="{{ '/news/' | relative_url }}">← All updates</a></p></article>
+<p><a href="{{ '/#blog' | relative_url }}">← Back to blog</a></p></article>

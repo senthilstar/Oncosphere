@@ -1,7 +1,0 @@
----
-layout: default
-title: Guides for patients and families
-permalink: /explainers/
----
-<h1>Guides for patients &amp; families</h1><p>Simple, general explanations. Always discuss your own treatment with your oncologist.</p>
-<div class="grid">{% assign ex = site.pages | where: "section", "explainer" %}{% for p in ex %}<a class="card" href="{{ p.url | relative_url }}"><span class="tag">Guide</span><h3>{{ p.title }}</h3><p>{{ p.summary }}</p></a>{% endfor %}</div>

@@ -1,1 +1,3 @@
-<a class="card" href="{{ include.p.url | relative_url }}"><span class="tag">{{ include.p.category | default: 'News' }}</span><h3>{{ include.p.title }}</h3><p>{{ include.p.summary }}</p><time>{{ include.p.date | date: '%d %b %Y' }}</time></a>
+<a class="card" href="{{ include.p.url | relative_url }}"><div class="cover">{% if include.p.image %}<img src="{{ include.p.image }}" alt="" loading="lazy">{% endif %}</div>
+<h3>{{ include.p.title }}</h3>{% if include.p.summary %}<p>{{ include.p.summary }}</p>{% endif %}
+<p class="meta">{{ include.p.display_date | default: include.p.date | date: '%-m/%-d/%Y' }} · {% assign w = include.p.content | number_of_words %}{{ w | divided_by: 200 | plus: 1 }} min read</p></a>
