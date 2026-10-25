@@ -36,6 +36,22 @@ NCCN/ESMO list three preferred first-line options for common EGFR mutations: osi
 
 <p class="opinion">I favour FLAURA2 for fit patients with brain metastases or high tumour burden; osimertinib monotherapy remains entirely reasonable for elderly/frail patients or those prioritising fewer hospital visits.</p>
 
+## Subgroups worth knowing
+- **CNS metastases:** patients with brain metastases at baseline had a larger absolute OS gain (36-month OS 57% vs 40%), which is why many oncologists favour the combination here.
+- **L858R vs exon 19 deletion:** benefit was seen in both; the pre-specified subgroups were not powered to prove a difference. L858R tumours do worse on osimertinib alone, which is a reasonable argument for intensification.
+- **ctDNA / co-mutations (TP53):** exploratory analyses suggest higher-risk biology benefits most, but these are hypothesis-generating.
+
+## Toxicity in practice
+Most extra toxicity came from chemotherapy (anaemia, neutropenia, thrombocytopenia, nausea) and was concentrated in the first 4 cycles. Pemetrexed maintenance requires folic acid and B12 premedication and regular renal checks. Discontinuation of osimertinib due to adverse events was uncommon in both arms. <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa2306434">[NEJM 2023]</a>
+
+## The competing option: MARIPOSA
+Amivantamab + lazertinib improved PFS over osimertinib (23.7 vs 16.6 months, HR 0.70) and later overall survival. <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa2403614">[NEJM 2024]</a> It requires IV infusions and carries high rates of rash, paronychia, infusion reactions and venous thromboembolism (prophylactic anticoagulation is recommended). No head-to-head trial compares it with FLAURA2.
+
+## Practical sequencing
+- Get **EGFR mutation subtype** right first; uncommon mutations (G719X, L861Q, S768I) and exon 20 insertions were excluded from FLAURA2.
+- At progression on either strategy, re-biopsy (tissue or plasma) to look for MET amplification, histological transformation (small cell) or other resistance mechanisms.
+- Carboplatin was used in most patients rather than cisplatin — a practical choice for older patients.
+
 {% include india.html text="EGFR mutations are common in Indian NSCLC: pooled prevalence 28.7% in advanced adenocarcinoma and 24.2% in all NSCLC ([meta-analysis, Asia-Pac J Clin Oncol 2022](https://pubmed.ncbi.nlm.nih.gov/35634796/)). Pemetrexed-platinum is widely available and affordable; the limiting factor is osimertinib cost and access — check current availability, including CMCHIS/PM-JAY coverage or patient-assistance programmes. Amivantamab: check current availability." %}
 
 <p class="note">The original oncosphere.in article was image-based and could not be recovered; this is a rewritten, referenced version under the same title.</p>

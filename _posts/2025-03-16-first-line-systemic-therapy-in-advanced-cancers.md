@@ -24,6 +24,8 @@ sources:
     url: https://doi.org/10.1016/S0140-6736(21)00797-2
   - title: ICMR — consensus documents for management of cancers
     url: https://www.icmr.gov.in/
+  - title: "Temel JS, et al. Early palliative care for metastatic NSCLC. N Engl J Med 2010"
+    url: https://www.nejm.org/doi/full/10.1056/NEJMoa1000678
 ---
 Choosing the right first-line systemic therapy is crucial in managing advanced cancers. The treatment approach depends on cancer type, histology, molecular markers, and patient factors. From targeted therapies to immunotherapy and chemotherapy, precision medicine is reshaping cancer care. Read more to explore the latest guidelines, treatment strategies, and advancements in systemic therapy for advanced cancers!
 
@@ -55,5 +57,28 @@ Choosing the right first-line systemic therapy is crucial in managing advanced c
 - Check drug access, insurance (CMCHIS, PM-JAY) and travel burden before promising a regimen.
 - Baseline TSH, cortisol, LFTs before immunotherapy; LVEF before anti-HER2; ophthalmic/ILD counselling with relevant ADCs.
 - Discuss palliative care early — improves quality of life and, in one RCT, survival (Temel, NEJM 2010).
+
+## Step 5 — Read the evidence critically
+- **Overall survival is the gold standard**, but crossover dilutes it. In KEYNOTE-189, more than half of chemo-arm patients later received anti-PD-(L)1 therapy, yet OS still favoured upfront pembrolizumab (HR 0.60; 5-year OS 19.4% vs 11.3%). <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/36809080/">[JCO 2023]</a>
+- **PFS gains are meaningful only with acceptable toxicity.** KEYNOTE-189 PFS was 9.0 vs 4.9 months (HR 0.50). <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/36809080/">[JCO 2023]</a> Ask whether the control arm reflects the standard where you practise.
+- **Subgroups generate hypotheses, they do not prove them.** PD-L1 cut-offs matter in some diseases: in CheckMate 649 the nivolumab benefit was concentrated in PD-L1 CPS ≥5 (OS 14.4 vs 11.1 months, HR 0.71). <a class="cite" href="https://doi.org/10.1016/S0140-6736(21)00797-2">[Lancet 2021]</a>
+- **Quality of life and time toxicity** (days spent in hospital or travelling) matter as much as medians for many patients.
+
+## Step 6 — Plan for the whole journey
+- Define the response assessment schedule (usually every 2–3 cycles / 6–12 weeks) before starting.
+- Decide early what the **second line** would be, so tissue, biomarkers and fitness are preserved for it.
+- Treatment holidays or de-escalation (e.g. stopping immunotherapy at 2 years in responders, as in KEYNOTE-189's 35-cycle cap) reduce cost and toxicity.
+- Re-biopsy or liquid biopsy at progression on targeted therapy to find resistance mechanisms (e.g. MET amplification after osimertinib).
+
+## Special situations
+- **Elderly or frail patients:** geriatric assessment (G8 screening) predicts chemotherapy toxicity better than age alone; single-agent or dose-adjusted regimens are often appropriate.
+- **Organ dysfunction:** many targeted drugs and immunotherapies need little renal adjustment, whereas cisplatin, pemetrexed and capecitabine do — check creatinine clearance.
+- **Pregnancy and fertility:** discuss sperm/oocyte preservation before gonadotoxic therapy when relevant.
+- **Pre-existing autoimmune disease or organ transplant:** immunotherapy needs specialist discussion; transplant rejection is a real risk.
+
+## Step 7 — Palliative care is not "giving up"
+Early integrated palliative care improved quality of life, reduced depression and was associated with longer survival (median 11.6 vs 8.9 months) in metastatic NSCLC. <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa1000678">[NEJM 2010]</a> Symptom control, nutrition, psychosocial support and advance-care discussions belong in the first visit, not the last.
+
+<p class="opinion">Opinion: in Indian practice, the single most impactful first-line decision is often getting the right biomarker result before cycle 1 — a week's delay for an EGFR or ALK result is usually worth it.</p>
 
 {% include india.html text="Broad NGS is often out of pocket; prioritise single-gene/IHC tests that change first-line therapy (EGFR, ALK IHC, MMR IHC, HER2). Biosimilars and Indian generics exist for trastuzumab, bevacizumab and several TKIs — check current availability and cost locally. **Opinion:** where checkpoint inhibitors are unaffordable, a well-delivered chemotherapy doublet plus early palliative care is still good medicine — and low-dose immunotherapy studies from India are worth following, but are not yet a universal standard." %}

@@ -37,6 +37,26 @@ Phase 3, open-label, 147 sites. High-risk HER2+ early breast cancer (≥T3, node
 
 <p class="opinion">For high-risk patients with cardiac concerns, T-DXd → THP is attractive where affordable. I would wait for EFS before abandoning anthracycline regimens universally.</p>
 
+## Who was enrolled
+High-risk HER2-positive early breast cancer: T3 or larger, inflammatory, or node-positive disease (cT0–4, cN1–3). HER2 status was centrally confirmed. Approximately 900 patients were randomised across the arms; the T-DXd monotherapy arm was closed early after an independent committee judged it unlikely to beat the control. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41130363/">[Ann Oncol 2025]</a>
+
+## Regimens in detail
+- **T-DXd → THP:** trastuzumab deruxtecan 5.4 mg/kg every 3 weeks ×4, then paclitaxel + trastuzumab + pertuzumab ×4.
+- **ddAC → THP:** dose-dense doxorubicin + cyclophosphamide every 2 weeks ×4, then THP ×4 (the standard high-risk control in many countries).
+- After surgery, patients received standard adjuvant HER2-directed therapy per investigator (HP, or T-DM1 for residual disease).
+
+## Why pCR matters (and its limits)
+pCR after neoadjuvant therapy is strongly associated with better event-free survival at the patient level, but trial-level gains in pCR have not always translated into EFS gains. Residual disease also opens the door to T-DM1, which improved invasive disease-free survival in KATHERINE (HR 0.50). <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa1814017">[NEJM 2019]</a> Long-term EFS from DESTINY-Breast11 is therefore essential.
+
+## Safety in practice
+- **ILD/pneumonitis:** baseline chest imaging, educate about cough and breathlessness, stop T-DXd for any grade ≥2 ILD.
+- **Nausea:** T-DXd is moderately-to-highly emetogenic — use a three-drug antiemetic regimen.
+- **Cardiac:** baseline and serial LVEF are still required because THP follows.
+- **Alopecia and fatigue** occur with both regimens.
+
+## Guideline context
+Neoadjuvant anthracycline-free regimens such as TCHP were already acceptable alternatives (TRAIN-2 showed no pCR advantage for adding anthracyclines). DESTINY-Breast11 adds a new option for the highest-risk patients; NCCN/ESMO adoption should be checked against the current guideline version.
+
 {% include india.html text="T-DXd is costly and not widely available in government hospitals. Biosimilar trastuzumab-based regimens (TCHP, or AC → THP where pertuzumab is accessible) remain the realistic standard. HER2 testing quality (IHC/ISH) is the first priority. For this neoadjuvant indication in India, check current availability." %}
 
 <p class="note">The original oncosphere.in article was image-based and could not be recovered; this is a rewritten, referenced version under the same title.</p>
