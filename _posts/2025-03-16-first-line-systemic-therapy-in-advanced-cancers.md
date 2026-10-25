@@ -13,7 +13,7 @@ sources:
   - title: ESMO Clinical Practice Guidelines
     url: https://www.esmo.org/guidelines
   - title: ASCO Guidelines
-    url: https://society.asco.org/practice-patients/guidelines
+    url: https://www.asco.org/guidelines
   - title: "Garassino MC, et al. KEYNOTE-189 5-year outcomes. J Clin Oncol 2023"
     url: https://ascopubs.org/doi/10.1200/JCO.22.01989
   - title: "Planchard D, et al. FLAURA2 overall survival. N Engl J Med 2025"

@@ -1,6 +1,6 @@
 ---
 cover: gi
-updated: 2026-10-24
+updated: 2026-10-25
 title: "Dostarlimab gets FDA accelerated approval for MSI-H/dMMR locally advanced rectal cancer"
 category: Approvals
 audience: clinicians and patients
@@ -10,6 +10,8 @@ sources:
     url: https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications
   - title: "Cercek A, et al. PD-1 Blockade in Mismatch Repair–Deficient, Locally Advanced Rectal Cancer. N Engl J Med 2022"
     url: https://www.nejm.org/doi/full/10.1056/NEJMoa2201445
+  - title: "Cercek A, et al. Nonoperative Management of Mismatch Repair–Deficient Tumors. N Engl J Med 2025;392:2297–2308"
+    url: https://www.nejm.org/doi/full/10.1056/NEJMoa2404512
   - title: "André T, et al. KEYNOTE-177. N Engl J Med 2020"
     url: https://www.nejm.org/doi/full/10.1056/NEJMoa2017699
 ---
@@ -17,6 +19,15 @@ On **19 October 2026**, the US FDA granted **accelerated approval** to dostarlim
 
 ## Background
 About 5–10% of rectal cancers are mismatch-repair deficient. The landmark single-centre study from Memorial Sloan Kettering (Cercek et al., NEJM 2022) reported that the first 12 patients treated with dostarlimab alone had a clinical complete response, avoiding chemoradiation and surgery at the time of reporting.
+
+## Updated evidence: the expanded MSK study (NEJM 2025)
+The same phase 2 study was expanded to 117 patients with Stage I–III dMMR tumours, given 6 months of dostarlimab. <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa2404512">[NEJM 2025]</a> <a class="cite" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12661660/">[PMC full text]</a>
+- **Rectal cohort:** all **49 of 49** patients who completed treatment had a clinical complete response, and none needed surgery on the primary tumour. 37 had a sustained complete response at 12 months, meeting the primary endpoint.
+- **Rectal cohort durability:** 2-year recurrence-free survival **96%** (95% CI 90–100), median follow-up for recurrence 30.2 months.
+- **Other dMMR tumours (colon, gastric, urothelial and others):** 35 of 54 (65%) had a clinical complete response; 2-year recurrence-free survival 85%.
+- **Safety:** 95% of patients had either no adverse events (35%) or reversible grade 1–2 events (60%). No patient lost the chance of curative surgery.
+
+{% include chart.html title="Neoadjuvant dostarlimab, MSK phase 2 (NEJM 2025)" labels="Rectal: clinical complete response|Rectal: 2-yr recurrence-free survival|Non-rectal: clinical complete response|Non-rectal: 2-yr recurrence-free survival" values="100|96|65|85" max="100" unit="%" note="Cercek et al., N Engl J Med 2025;392:2297. Single-centre, single-arm study." %}
 
 ## For patients
 If you have rectal cancer, ask whether your biopsy has been tested for **MMR (mismatch repair) or MSI**. The result can change which treatment is best.
