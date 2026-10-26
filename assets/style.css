@@ -37,3 +37,5 @@ footer.site{background:var(--pri2);color:#cfe0e6;padding:40px 0 20px;margin-top:
 .cite{font-size:.8em;white-space:nowrap;margin-left:.2em}
 @media(max-width:560px){.nav{flex-wrap:wrap;gap:6px}nav a{margin-left:10px;font-size:.95em}.post table{display:block;overflow-x:auto}.bar-row{grid-template-columns:1fr}img{max-width:100%;height:auto}}
 .hlink{color:inherit;text-decoration:none;border-bottom:2px solid currentColor}.hlink:hover{opacity:.75}
+/* Allow the expanded site navigation to wrap on small screens. */
+@media(max-width:1100px){.nav{height:auto;min-height:62px;flex-wrap:wrap;gap:8px;padding-top:10px;padding-bottom:10px}.nav nav{display:flex;flex-wrap:wrap;gap:6px 14px}.nav nav a{margin-left:0}}

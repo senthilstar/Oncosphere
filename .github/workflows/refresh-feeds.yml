@@ -1,0 +1,28 @@
+name: Refresh oncology feeds
+on:
+  schedule:
+    - cron: '30 0 * * *' # 06:00 IST
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: refresh-feeds
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python3 tools/refresh_feeds.py
+      - name: Commit changed feed data
+        run: |
+          git add _data/latest_pubmed.json _data/latest_trials.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh oncology research feeds'
+            git push
+          fi
