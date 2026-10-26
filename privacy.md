@@ -8,9 +8,9 @@ permalink: /privacy/
 
 _Last updated: 24 October 2026_
 
-**Who we are.** Oncosphere ({{ site.url }}{{ site.baseurl }}, intended domain oncosphere.in) is run by Dr. Senthil Kumar. Contact: [esenthilkmc02@gmail.com](mailto:esenthilkmc02@gmail.com).
+**Who we are.** Oncosphere ({{ site.url }}{{ site.baseurl }}, intended domain oncosphere.in) is run by Dr. Senthil Kumar.
 
-**Information we collect.** The site has no accounts, forms or comments and does not ask for health information. If you email us, we receive your email address and message and use them only to reply.
+**Information we collect.** The site has no accounts, forms or comments and does not ask for health information. If you contact the author, any message content is used only to reply.
 
 **Hosting.** The site is hosted on GitHub Pages, which may log technical data such as IP addresses for security; see [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
@@ -18,7 +18,7 @@ _Last updated: 24 October 2026_
 
 **Fonts.** Pages load fonts from Google Fonts, which receives your IP address.
 
-**Your rights.** Under India's Digital Personal Data Protection Act, 2023 and other applicable laws, you may ask us to access or delete any personal data you have emailed us.
+**Your rights.** Under India's Digital Personal Data Protection Act, 2023 and other applicable laws, you may ask to access or delete any personal data you have sent when contacting the author.
 
 **Children.** The site is not directed at children under 18.
 

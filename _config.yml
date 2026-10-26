@@ -1,10 +1,9 @@
 title: Oncosphere
 tagline: Cancer care, explained — trial updates and patient guides
-description: Oncology news, practice-changing trials and patient-friendly cancer explainers from Dr. Senthil Kumar, medical oncologist, Chennai.
+description: Oncology news, practice-changing trials and patient-friendly cancer explainers from Dr. Senthil Kumar, medical oncologist.
 author: Dr. Senthil Kumar
 url: https://oncosphere.in
 baseurl: ""
-email: esenthilkmc02@gmail.com
 permalink: /:title/
 markdown: kramdown
 plugins: [jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
@@ -24,7 +23,5 @@ defaults:
 lang: en_IN
 logo: /assets/img/favicon.svg
 image: /assets/img/cover-general.jpg
-twitter:
-  username: esenthil84
 social:
   name: Dr. Senthil Kumar

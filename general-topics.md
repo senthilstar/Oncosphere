@@ -28,6 +28,6 @@ Telegraphic primers for patients and clinicians. Educational only — not medica
 
 ## CMCHIS / PM-JAY cancer coverage {#cmchis-pmjay}
 - PM-JAY: ₹5 lakh/family/year; oncology packages cover chemo, radiation, surgery at empanelled hospitals. [PM-JAY](https://pmjay.gov.in/)
-- CMCHIS (Tamil Nadu): ₹5 lakh/family/year; many cancer procedures covered. [CMCHIS](https://www.cmchistn.com/)
+- CMCHIS: ₹5 lakh/family/year; many cancer procedures covered at empanelled centres. [CMCHIS](https://www.cmchistn.com/)
 - Carry ration/Aadhaar card; ask the hospital's Arogya Mitra desk.
 </div>

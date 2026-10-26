@@ -21,11 +21,11 @@ Curated. One-line gists, outbound links, topic tags. Updated as new must-reads a
 - **[@myESMO — cancer vaccines explained](https://x.com/myESMO/status/2114432850804039800)** `melanoma · vaccine` — Sapna Patel on what INTerpath-001 means for patients.
 - **[@OncoAlert — DASL-HiCaP video](https://x.com/OncoAlert/status/2114389745891434912)** `prostate` — Portuguese-language video take on DASL-HiCaP in localized prostate cancer.
 
-### Dr. Senthil Kumar (@esenthil84)
-- **[ATOMIC: adjuvant IO in dMMR colon cancer](https://x.com/esenthil84/status/2108801158311748036)** `colon · MSI` — Thread on adding atezolizumab to adjuvant FOLFOX in stage III dMMR colon cancer.
-- **[HER2CLIMB-05: maintenance intensifies](https://x.com/esenthil84/status/2108801212070170677)** `breast · HER2` — Tucatinib added to HER2 maintenance after first-line induction — what it means for practice.
-- **[PSMAddition: radioligands move earlier](https://x.com/esenthil84/status/2108801325773541643)** `prostate` — Lu-PSMA-617 brought into hormone-sensitive metastatic prostate cancer.
-- **[FDA oncology approvals, October 2026](https://x.com/esenthil84/status/2108801585904279856)** `regulatory` — One-thread roundup of the month's FDA oncology approvals.
+### Dr. Senthil Kumar
+- **[ATOMIC: adjuvant IO in dMMR colon cancer](/trial-briefs-october-2026/)** `colon · MSI` — Thread on adding atezolizumab to adjuvant FOLFOX in stage III dMMR colon cancer.
+- **[HER2CLIMB-05: maintenance intensifies](/trial-briefs-october-2026/)** `breast · HER2` — Tucatinib added to HER2 maintenance after first-line induction — what it means for practice.
+- **[PSMAddition: radioligands move earlier](/trial-briefs-october-2026/)** `prostate` — Lu-PSMA-617 brought into hormone-sensitive metastatic prostate cancer.
+- **[FDA oncology approvals, October 2026](/fda-oncology-approvals-october-2026/)** `regulatory` — One-thread roundup of the month's FDA oncology approvals.
 
 ### Discussions
 - **[@NEJM — clinical trial prediction markets](https://x.com/NEJM/status/2114462033731068127)** `trials · ethics` — NEJM Perspective: do betting markets on trial outcomes inform or distort? Who pays the cost?

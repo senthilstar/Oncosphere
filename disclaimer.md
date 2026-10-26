@@ -12,7 +12,7 @@ permalink: /disclaimer/
 
 **Accuracy.** Information is accurate to the best of the author's knowledge on the date of posting and may become outdated. Guidelines change frequently; always check the current NCCN, ESMO, ASCO or ICMR documents.
 
-**Opinions** are labelled as such, are the author's own and not those of his employer (Government of Tamil Nadu) or any institution.
+**Opinions** are labelled as such, are the author's own and not those of any employer or institution.
 
 **Advertising.** Ads shown on this site are served by third parties; their display is not an endorsement of any product.
 

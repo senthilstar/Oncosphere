@@ -6,7 +6,7 @@ permalink: /about/
 <div class="wrap narrow block" markdown="1">
 # About Oncosphere
 
-Oncosphere is an independent educational blog by **Dr. Senthil Kumar**, a medical oncologist working in Tamil Nadu government service in Chennai.
+Oncosphere is an independent educational blog by **Dr. Senthil Kumar**, a medical oncologist.
 
 **What you'll find:** concise, referenced summaries of practice-changing trials, guideline updates (NCCN, ESMO, ASCO, ICMR) and plain-language explainers for patients and families. A new post is planned most Mondays.
 
@@ -15,7 +15,7 @@ Oncosphere is an independent educational blog by **Dr. Senthil Kumar**, a medica
 - Opinions are labelled as opinion.
 - Numbers are not invented; if something cannot be verified it is stated.
 - No patient-identifiable information or patient images are published.
-- Views are personal and do not represent the Government of Tamil Nadu or any institution.
+- Views are personal and do not represent any employer or institution.
 
 **Advertising:** the site may display Google AdSense ads to cover running costs. Advertisers have no influence on content. See the [Privacy Policy]({{ '/privacy/' | relative_url }}).
 
