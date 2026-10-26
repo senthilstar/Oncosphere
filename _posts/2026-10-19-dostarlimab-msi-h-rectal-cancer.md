@@ -1,5 +1,5 @@
 ---
-cover: gi
+cover: immuno
 updated: 2026-10-25
 title: "Dostarlimab gets FDA accelerated approval for MSI-H/dMMR locally advanced rectal cancer"
 category: Approvals

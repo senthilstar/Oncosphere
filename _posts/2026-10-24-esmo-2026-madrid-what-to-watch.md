@@ -1,5 +1,5 @@
 ---
-cover: news
+cover: esmo
 updated: 2026-10-24
 title: "ESMO Congress 2026 in Madrid: what to watch"
 category: Conference

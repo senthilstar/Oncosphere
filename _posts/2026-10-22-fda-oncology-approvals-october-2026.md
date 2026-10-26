@@ -1,5 +1,5 @@
 ---
-cover: news
+cover: approvals
 updated: 2026-10-24
 title: "FDA oncology approvals, October 2026: a roundup"
 category: Approvals

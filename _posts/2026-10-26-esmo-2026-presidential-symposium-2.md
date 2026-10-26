@@ -1,5 +1,5 @@
 ---
-cover: news
+cover: esmo
 updated: 2026-10-26
 title: "ESMO 2026 Presidential Symposium II: KRAS G12C, EGFR/MET lung, CLDN18.2 gastric and biliary"
 category: Conference

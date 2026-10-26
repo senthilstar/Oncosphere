@@ -3,7 +3,7 @@ title: "First-Line Systemic Therapy in Advanced Cancers"
 display_date: 2024-05-08
 updated: 2026-10-24
 category: Treatment paradigms
-cover: general
+cover: paradigm
 audience: clinicians and informed patients
 summary: "Choosing the right first-line systemic therapy is crucial in managing advanced cancers."
 tldr: "Test first (histology + biomarkers), then match: targeted therapy for driver-positive disease, immunotherapy ± chemotherapy for biomarker-selected tumours, ADCs increasingly moving earlier. Fitness, goals and access decide the rest."

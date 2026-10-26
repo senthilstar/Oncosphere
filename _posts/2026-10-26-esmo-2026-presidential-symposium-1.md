@@ -1,5 +1,5 @@
 ---
-cover: news
+cover: esmo
 updated: 2026-10-26
 title: "ESMO 2026 Presidential Symposium I: melanoma vaccine, bladder, SCLC and prostate"
 category: Conference
