@@ -23,7 +23,7 @@ defaults:
     values: {layout: post}
 lang: en_IN
 logo: /assets/img/favicon.svg
-image: /assets/img/cover-general.svg
+image: /assets/img/cover-general.jpg
 twitter:
   username: esenthil84
 social:
