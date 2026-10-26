@@ -9,9 +9,9 @@ description: "Telegraphic trial-by-trial briefs from Dr. Senthil Kumar's October
 tldr: "Endpoints, arms and key numbers exactly as posted in two X threads (8 and 10 Oct 2026). Read the primary source before changing practice."
 sources:
   - title: "Dr. Senthil Kumar on X — October 2026 oncology updates thread (19 posts)"
-    url: https://x.com/esenthil84/status/2108742921398964674
+    url: 
   - title: "Dr. Senthil Kumar on X — HER2 breast cancer 2026 thread (12 posts)"
-    url: https://x.com/esenthil84/status/2108271374955614367
+    url: 
 ---
 
 Single-topic, telegraphic briefs. Numbers are as posted in the source threads; cross-trial comparison is not valid.
@@ -33,7 +33,7 @@ Trial schedule:
 ⚠️ Grade 3–4 adverse events: 84.1% vs 71.9%.
 🔎 Clinical implication: establish MMR/MSI status before the adjuvant discussion. This indication concerns stage III dMMR disease; extrapolation to pMMR or stage II disease requires separate evidence.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801158311748036">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### HER2CLIMB-05: MAINTENANCE INTENSIFIES
 
@@ -51,7 +51,7 @@ Endocrine therapy was permitted for HR+ disease.
 ⚠️ Hepatotoxicity, diarrhoea and creatinine elevation require attention.
 This trial tested maintenance after THP induction. It does not answer every contemporary first-line sequencing question.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801212070170677">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### ESR1: MOLECULAR PROGRESSION BEFORE SCAN PROGRESSION
 
@@ -68,7 +68,7 @@ Switch the AI to camizestrant while continuing the CDK4/6 inhibitor.
 ⚠️ QTc interactions and bradycardia matter.
 The European Guardant360 CDx announcement concerns diagnostic access. The clinical question remains precise: when should molecular resistance trigger an endocrine switch?
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801253627322865">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### NRG-BR002: ABLATION DOES NOT AUTOMATICALLY MEAN BETTER SURVIVAL
 
@@ -85,7 +85,7 @@ The phase III component did not proceed.
 🔎 Routine metastasis-directed ablation to improve survival is unsupported by this trial.
 Palliation remains a separate indication. Oligoprogression also requires its own evidence; it should not be conflated with this study population.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801287810937076">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### PSMADDITION: RADIOLIGANDS MOVE EARLIER
 
@@ -102,7 +102,7 @@ ADT remains foundational.
 🇮🇳 Practical appraisal must include PSMA PET access, nuclear-medicine capacity, cost and alternatives—not only the relative hazard reduction.
 This is an earlier approval being discussed now, not a new October approval.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801325773541643">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### RAMPP: CYTOREDUCTIVE PROSTATECTOMY
 
@@ -118,7 +118,7 @@ Grade ≥III surgical complications: 14%.
 The cancer-specific mortality signal deserves further study. It does not establish routine cytoreductive prostatectomy for contemporary metastatic practice.
 Separate the evidence for surgery from the evidence for prostate radiotherapy.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801359348998420">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### NANT: CHEMOTHERAPY-FREE NEOADJUVANT OVARIAN THERAPY?
 
@@ -136,7 +136,7 @@ Crucial counterpoint:
 Randomised OPAL cohort C, n=36, reported ORR 31.6% with niraparib vs 70.6% with platinum–taxane and closed for futility.
 NANT generates a research hypothesis. It does not justify replacing standard platinum–taxane neoadjuvant chemotherapy.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801395512279059">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### FRα ADCS: THE OVARIAN PIPELINE EXPANDS
 
@@ -153,7 +153,7 @@ Questions for the eventual dataset:
 Breakthrough Therapy designation supports development; it does not establish marketing approval.
 Avoid importing mirvetuximab’s eligibility criteria or toxicity profile into a different ADC.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801438256435222">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### EXCALIBER-RRMM: BIG PFS SIGNAL, REAL TOXICITY
 
@@ -172,7 +172,7 @@ Published primary MRD analysis:
 1–2 prior lines; anti-CD38-refractory and bortezomib-refractory disease were excluded.
 A compelling efficacy signal with substantial supportive-care requirements. Do not extrapolate directly to daratumumab-refractory myeloma.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801476705628176">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### FRAIL MYELOMA & THE “CURE” QUESTION
 
@@ -189,7 +189,7 @@ PFS benefit persists. The frail-subgroup OS difference was not statistically sig
 Serial MRD and imaging confirmation was reported in a 12-patient subset.
 Remarkable treatment-free remission deserves recognition. “Cure” requires more mature evidence and should not be inferred from selected long-term survivors.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801512407494886">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### BISPECIFICS MOVE EARLIER
 
@@ -206,7 +206,7 @@ Glofitamab + pola-R-CHP.
 Glofitamab started in cycle 3 after initial chemotherapy.
 Promising schedule and activity—but a small single-arm cohort cannot establish superiority over standard first-line therapy.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801553041948976">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### ADDED UPDATE: FIRST-LINE CLL
 
@@ -224,7 +224,7 @@ Comparator caveat:
 Superiority to BR does not establish superiority to modern covalent BTK inhibitors or fixed-duration venetoclax-based therapy.
 The original social-media sweep missed a clinically important CLL development.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801585904279856">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### ADDED UPDATE: POST-IO RCC
 
@@ -242,7 +242,7 @@ Final OS analysis was not statistically significant.
 ⚠️ Monitor anaemia and hypoxia from belzutifan, alongside hypertension, proteinuria and other lenvatinib toxicities.
 Correction to the watch-list: LITESPARK-011 already has regulatory outcome data; it is not simply awaiting an ESMO headline.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108743479325265998">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### ADDED UPDATES: LUNG & BILIARY CANCER
 
@@ -263,7 +263,7 @@ REFOCUS, n=116:
 Trial patients were FGFR-inhibitor naïve.
 Monitor phosphate and ocular toxicity.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108743507724927446">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### ctDNA MOVES FROM PROGNOSIS TO TREATMENT SELECTION
 
@@ -280,7 +280,7 @@ Signatera CDx was approved for patient selection.
 It should not be extended automatically to ctDNA-negative patients or to every commercially available MRD assay.
 Biomarker selection can define who receives treatment—not merely who has higher recurrence risk.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108743538586652908">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### MULTICANCER SCREENING: A MAJOR REALITY CHECK
 
@@ -300,7 +300,7 @@ FDA Breakthrough Device designation.
 Designation ≠ approval.
 Test performance ≠ demonstrated screening benefit.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108743564843000100">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ### THE WATCH-LIST
 
@@ -316,7 +316,7 @@ Reading rule:
 Population → comparator → absolute benefit → toxicity → maturity → affordability.
 #OncoTwitter #Oncology #PrecisionOncology #Immunotherapy #BreastCancer #ColonCancer #Myeloma #CLL #RCC #ESMO26
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108743626620833902">Dr. Senthil Kumar on X, 2026-10-10</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-10</a></p>
 
 ## HER2 breast cancer — 2026
 
@@ -346,7 +346,7 @@ Discuss T-DXd→THP as an approved neoadjuvant option in eligible stage II–III
 Do not claim TCHP is obsolete.
 A new regimen has arrived. The optimal patient remains a clinical question.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108272425754648655">Dr. Senthil Kumar on X, 2026-10-08</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-08</a></p>
 
 ### ⚔️ NON-pCR: T-DM1 OR T-DXd?
 
@@ -376,7 +376,7 @@ How to choose?
 🎯 Non-pCR now has two evidence-based ADC options.
 The decision is efficacy versus toxicity, not simply newest versus oldest.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108272488396562795">Dr. Senthil Kumar on X, 2026-10-08</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-08</a></p>
 
 ### 🌍 FIRST-LINE HER2+ METASTATIC BREAST CANCER — 2026
 
@@ -407,7 +407,7 @@ Mature OS data, established maintenance pathways and an ADC-free first-line appr
 🎯 ESMO recommendation ≠ a mandate to abandon THP.
 Choose the full therapeutic sequence, not only the longest first-line PFS.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108272567849296229">Dr. Senthil Kumar on X, 2026-10-08</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-08</a></p>
 
 ### 💎 HER2+ MAINTENANCE — PATINA VS HER2CLIMB-05
 
@@ -440,7 +440,7 @@ HP ± tucatinib is relevant; PATINA does not apply.
 Different populations. Different designs. Different risk profiles.
 🎯 The next frontier is personalised maintenance, not necessarily indefinite chemotherapy.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108272603559555341">Dr. Senthil Kumar on X, 2026-10-08</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-08</a></p>
 
 ### ⚔️ SECOND-LINE HER2+ MBC — WHAT AFTER FIRST-LINE?
 
@@ -474,7 +474,7 @@ We have excellent drugs.
 But the optimal sequence after early ADC exposure remains incompletely defined.
 Drug availability is not the same as sequencing evidence.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108272642423992345">Dr. Senthil Kumar on X, 2026-10-08</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-08</a></p>
 
 ### 🧠 HER2+ BRAIN METASTASES — A DIFFERENT SEQUENCING PROBLEM
 
@@ -507,7 +507,7 @@ ESMO 2026:
 The brain may progress while the body remains controlled.
 Treat the compartment that is failing.
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108272680118161671">Dr. Senthil Kumar on X, 2026-10-08</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-08</a></p>
 
 ### 🇮🇳 HER2 BREAST CANCER — 2026 CLINICAL RULEBOOK
 
@@ -547,6 +547,6 @@ HER2 care is no longer one drug for one receptor.
 It is a treatment pathway spanning diagnosis, cure, recurrence and resistance.
 #Oncology #OncTwitter #BreastCancer #HER2 #HER2Low #ADC #Trastuzumab #TDM1 #Enhertu #ESMO #NCCN
 
-<p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108272790059266303">Dr. Senthil Kumar on X, 2026-10-08</a></p>
+<p class="chart-note">Source: <a href=" Senthil Kumar on X, 2026-10-08</a></p>
 
 {% include india.html text="Test first (MMR, HER2, ESR1 where available). Many of these drugs are not yet CDSCO-approved or affordable in India — check access before discussing with patients." %}

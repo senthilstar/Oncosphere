@@ -8,7 +8,7 @@ summary: Pirtobrutinib in first-line CLL, tucatinib maintenance in HER2+ breast 
 description: Pirtobrutinib in first-line CLL, tucatinib maintenance in HER2+ breast cancer, adjuvant atezolizumab for dMMR colon cancer and more.
 sources:
   - title: "Dr. Senthil Kumar on X — October 2026 oncology updates thread (ATOMIC, BRUIN CLL-313)"
-    url: https://x.com/esenthil84/status/2108801585904279856
+    url: 
   - title: FDA — Oncology/Hematologic Malignancies Approval Notifications
     url: https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications
   - title: FDA approves atezolizumab with chemotherapy for Stage III dMMR colon cancer
