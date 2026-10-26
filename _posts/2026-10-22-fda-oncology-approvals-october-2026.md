@@ -1,11 +1,13 @@
 ---
 cover: approvals
-updated: 2026-10-24
+updated: 2026-10-26
 title: "FDA oncology approvals, October 2026: a roundup"
 category: Approvals
 audience: clinicians
 summary: Pirtobrutinib in first-line CLL, tucatinib maintenance in HER2+ breast cancer, adjuvant atezolizumab for dMMR colon cancer and more.
 sources:
+  - title: "Dr. Senthil Kumar on X — October 2026 oncology updates thread (ATOMIC, BRUIN CLL-313)"
+    url: https://x.com/esenthil84/status/2108801585904279856
   - title: FDA — Oncology/Hematologic Malignancies Approval Notifications
     url: https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications
   - title: FDA approves atezolizumab with chemotherapy for Stage III dMMR colon cancer
@@ -30,9 +32,11 @@ A busy month for US approvals. Summarised from the FDA's oncology approval notif
 Two approvals (atezolizumab in colon cancer, dostarlimab in rectal cancer) reinforce **universal MMR/MSI testing** of colorectal cancers at diagnosis — something we can do with immunohistochemistry in most centres.
 
 ## Notes on each approval
-- **Pirtobrutinib (first-line CLL/SLL):** a non-covalent BTK inhibitor, previously used after covalent BTK inhibitors. The first-line label applies to patients without 17p deletion; check the FDA label for the trial data supporting it.
+- **Pirtobrutinib (first-line CLL/SLL):** a non-covalent BTK inhibitor, previously used after covalent BTK inhibitors. The first-line label applies to patients without 17p deletion; BRUIN CLL-313 (n=282) vs bendamustine–rituximab: median PFS not estimable vs 33.5 mo, HR 0.20 (95% CI 0.11–0.37); OS immature. Dose 200 mg once daily. Watch infections, bleeding, cytopenias, arrhythmias. **Caveat:** beating BR does not prove superiority over covalent BTK inhibitors or fixed-duration venetoclax regimens.
 - **Tucatinib maintenance:** adds an oral HER2 tyrosine-kinase inhibitor to HP maintenance after first-line induction — relevant given the frequency of brain metastases in HER2-positive disease.
-- **Adjuvant atezolizumab in dMMR colon cancer:** the first immunotherapy approval in the curative colon setting, based on adding atezolizumab to FOLFOX-type chemotherapy in stage III dMMR disease.
+- **Adjuvant atezolizumab in dMMR colon cancer:** the first immunotherapy approval in the curative colon setting, based on adding atezolizumab to FOLFOX-type chemotherapy in stage III dMMR disease. ATOMIC (n=712): 3-yr DFS 86.3% vs 76.2%, HR 0.50 (95% CI 0.35–0.73); 6 mo atezolizumab + mFOLFOX6, then 6 mo atezolizumab alone. Grade 3–4 AEs 84.1% vs 71.9%. Do not extrapolate to pMMR or stage II.
+
+{% include chart.html title="ATOMIC: 3-year disease-free survival, stage III dMMR colon cancer" labels="Atezolizumab + mFOLFOX6|mFOLFOX6" values="86.3|76.2" max="100" unit="%" note="As summarised by Dr. Senthil Kumar on X (10 Oct 2026); check the FDA notice for the label." %}
 - **Nogapendekin alfa + BCG:** an IL-15 superagonist for BCG-unresponsive non-muscle-invasive bladder cancer; the label now includes papillary-only high-grade disease.
 - **Pembrolizumab TMB-H:** conversion from accelerated to traditional approval. TMB-H is uncommon and benefit varies by tumour type — it is a last-line, not a first-line, biomarker in most cancers.
 - **Dostarlimab (dMMR rectal):** see the [separate post]({{ '/dostarlimab-msi-h-rectal-cancer/' | relative_url }}).
