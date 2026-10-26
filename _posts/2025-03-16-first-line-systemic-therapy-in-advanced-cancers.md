@@ -38,21 +38,64 @@ Choosing the right first-line systemic therapy is crucial in managing advanced c
 ## Step 2 — Biomarkers before first line
 | Tumour | Minimum biomarkers (NCCN/ESMO) |
 |---|---|
-| NSCLC (non-squamous) | EGFR, ALK, ROS1, BRAF, KRAS G12C, MET ex14, RET, NTRK, HER2; PD-L1 — broad NGS preferred |
-| Breast | ER/PR, HER2 (incl. HER2-low), germline BRCA; PIK3CA/ESR1 at relevant lines |
-| Colorectal | RAS, BRAF V600E, MMR/MSI, HER2 |
-| Gastric / GEJ | HER2, MMR/MSI, PD-L1 CPS, Claudin 18.2 |
-| Urothelial | FGFR2/3; (PD-L1 rarely decisive now) |
+| [NSCLC](#nsclc) (non-squamous) | EGFR, ALK, ROS1, BRAF, KRAS G12C, MET ex14, RET, NTRK, HER2; PD-L1 — broad NGS preferred |
+| [Breast](#breast) | ER/PR, HER2 (incl. HER2-low), germline BRCA; PIK3CA/ESR1 at relevant lines |
+| [Colorectal](#colorectal) | RAS, BRAF V600E, MMR/MSI, HER2 |
+| [Gastric / GEJ](#gastric) | HER2, MMR/MSI, PD-L1 CPS, Claudin 18.2 |
+| [Urothelial](#urothelial) | FGFR2/3; (PD-L1 rarely decisive now) |
 | Any solid tumour | MMR/MSI, TMB, NTRK — tissue-agnostic options |
+
+**More first-line principles:** [biliary/gallbladder](#biliary) · [endometrial](#endometrial) · [renal cell](#rcc) · [medullary thyroid](#mtc)
 
 ## Step 3 — Match the therapy
 - **Driver-positive** → targeted therapy first (e.g. osimertinib ± chemotherapy in EGFR-mutant NSCLC; alectinib/lorlatinib in ALK).
-- **Driver-negative, immunogenic** → checkpoint inhibitor ± chemotherapy (NSCLC, gastric, oesophageal, urothelial, HNSCC, cervix, endometrial dMMR, TNBC PD-L1+).
-- **Target-defined ADCs** → now first line in some settings (enfortumab vedotin + pembrolizumab in urothelial cancer).
+- **Driver-negative, immunogenic** → checkpoint inhibitor ± chemotherapy ([NSCLC](#nsclc), [gastric](#gastric), oesophageal, [urothelial](#urothelial), HNSCC, cervix, [endometrial dMMR](#endometrial), TNBC PD-L1+).
+- **Target-defined ADCs** → now first line in some settings (enfortumab vedotin + pembrolizumab in [urothelial cancer](#urothelial)).
 - **Chemotherapy** remains the backbone for many, and alone when IO/targeted options are unavailable.
 
 {% include chart.html title="Landmark first-line trials: median overall survival (months)" labels="KEYNOTE-189: pembro + chemo|KEYNOTE-189: chemo|FLAURA2: osimertinib + chemo|FLAURA2: osimertinib|EV-302: EV + pembro|EV-302: platinum chemo" values="22.0|10.6|47.5|37.6|31.5|16.1" max="50" unit=" mo" note="Medians from the cited publications; cross-trial comparison is not valid — different diseases and populations." %}
 <p class="chart-note">Sources: <a href="https://pubmed.ncbi.nlm.nih.gov/36809080/">KEYNOTE-189 (OS 22.0 vs 10.6 mo, HR 0.60)</a> · <a href="https://www.nejm.org/doi/10.1056/NEJMoa2510308">FLAURA2 (HR 0.77)</a> · <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2312117">EV-302 (HR 0.47)</a></p>
+
+## First-line principles by cancer
+Click a cancer name above or below. Principles condensed from Dr. Senthil Kumar's X threads; numbers as stated there.
+
+### Urothelial / bladder cancer {#urothelial}
+- Confirm urothelial histology; document variant differentiation — it can change the pathway.
+- Cisplatin eligibility by Galsky criteria (any one: ECOG PS 2, CrCl <60 mL/min, grade ≥2 hearing loss or neuropathy, NYHA III).
+- **Preferred first line: enfortumab vedotin + pembrolizumab**, across cisplatin eligibility and PD-L1 groups.
+- EV unsuitable/unavailable: cisplatin-eligible → gemcitabine–cisplatin + nivolumab (up to 6 cycles), then nivolumab; platinum chemo then **avelumab maintenance** if no progression after 4–6 cycles (JAVELIN Bladder 100).
+- Test FGFR3 (validated assay) for later erdafitinib. [Thread](https://x.com/esenthil84/status/2106351975801794591)
+
+### Gallbladder / biliary tract cancer {#biliary}
+- Not all biliary tract cancer is biologically identical; pathology and baseline liver/biliary status matter.
+- Molecular testing **early** — HER2 IHC ± ISH, MSI/MMR, broad panel when possible.
+- ABC-02 set the gem–cis backbone; **chemo-immunotherapy** (KEYNOTE-966: pembrolizumab + GemCis, mOS 12.7 vs 10.9 mo, HR 0.83) is first line.
+- HER2 is a key gallbladder target; oligoprogression → consider local therapy, don't abandon effective systemic therapy.
+- LMIC: if NGS unaffordable, prioritise HER2 IHC, then MMR/MSI. [Thread](https://x.com/esenthil84/status/2106811155616596104)
+
+### Endometrial carcinoma {#endometrial}
+- First line has moved from chemotherapy alone to molecularly informed treatment — know MMR status.
+- Dostarlimab + carboplatin–paclitaxel (RUBY Part 1): dMMR/MSI-H 24-month PFS 61.4% vs 15.7% (HR 0.28); overall OS 44.6 vs 28.2 mo.
+- Cytoreduction when complete macroscopic resection is achievable. [Thread](https://x.com/esenthil84/status/2105367956545011741)
+
+### Renal cell carcinoma {#rcc}
+- Confirm histology (clear cell, papillary, chromophobe…) — it drives the regimen.
+- IO-based combinations are the first-line standard; triplets add toxicity: COSMIC-313 (cabozantinib + nivo/ipi) improved PFS 16.6 vs 11.2 mo but not OS (41.9 vs 42.0 mo, HR 1.02). [Thread](https://x.com/esenthil84/status/2106089025635504287)
+
+### Medullary thyroid cancer {#mtc}
+- Systemic therapy for advanced/metastatic MTC is a separate pathway from differentiated thyroid cancer; RET status guides choice. [Thread](https://x.com/esenthil84/status/2105479646527770882)
+
+### NSCLC {#nsclc}
+- Broad NGS + PD-L1 before cycle 1; driver-positive → targeted therapy (osimertinib ± chemo in EGFR). See [FLAURA2]({{ '/flaura-2-trial/' | relative_url }}).
+
+### Breast cancer {#breast}
+- ER/PR, HER2 (incl. HER2-low), germline BRCA; ADCs moving earlier. See [DESTINY-Breast11]({{ '/destiny-breast-11-trial/' | relative_url }}) and [ESR1 brief]({{ '/trial-briefs-october-2026/' | relative_url }}).
+
+### Colorectal cancer {#colorectal}
+- RAS, BRAF V600E, MMR/MSI, HER2 first; dMMR → immunotherapy. See [dostarlimab in MSI-H rectal]({{ '/dostarlimab-msi-h-rectal-cancer/' | relative_url }}) and [ASCO GI 2026]({{ '/asco-gi-2026/' | relative_url }}).
+
+### Gastric / GEJ cancer {#gastric}
+- HER2, MMR/MSI, PD-L1 CPS, claudin 18.2 before first line; nivolumab benefit concentrated at CPS ≥5 (CheckMate 649). See [ASCO GI 2026]({{ '/asco-gi-2026/' | relative_url }}).
 
 ## Step 4 — Practicalities
 - Check drug access, insurance (CMCHIS, PM-JAY) and travel burden before promising a regimen.
