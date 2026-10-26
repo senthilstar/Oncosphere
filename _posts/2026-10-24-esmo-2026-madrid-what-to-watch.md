@@ -40,4 +40,6 @@ I will post short summaries of the practice-changing results here after the data
 ## What I will cover after the meeting
 Post-congress summaries will follow the same format as other posts on this site: a bottom-line box, telegraphic trial data with citations, guideline context and a "What it means for India" note. Figures will only be added once they are available in the official abstracts or full papers.
 
+**Now posted:** [Presidential Symposium I]({{ '/esmo-2026-presidential-symposium-1/' | relative_url }}) and [Presidential Symposium II]({{ '/esmo-2026-presidential-symposium-2/' | relative_url }}).
+
 {% include india.html text="Look for results that are deliverable with drugs already accessible in India (generics, biosimilars), and for any data on shorter treatment durations or lower doses that could make therapy more affordable. **Opinion.**" %}
