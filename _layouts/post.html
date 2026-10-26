@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post wrap narrow"><p class="kicker">{{ page.category | default: "Oncology" }}{% if page.audience %} · for {{ page.audience }}{% endif %}</p><h1>{{ page.title }}</h1>
 <p class="meta">{{ page.display_date | default: page.date | date: '%-m/%-d/%Y' }} · {% assign w = content | number_of_words %}{{ w | divided_by: 200 | plus: 1 }} min read{% if page.updated %} · updated {{ page.updated | date: '%-d %b %Y' }}{% endif %}</p>
-<img class="hero-img" src="{{ page.cover | default: 'general' | prepend: '/assets/img/cover-' | append: '.svg' | relative_url }}" alt="" width="800" height="400">
+<img class="hero-img" src="{{ page.cover | default: 'general' | prepend: '/assets/img/cover-' | append: '.jpg' | relative_url }}" alt="" width="800" height="400">
 {% if page.tldr %}<div class="tldr reveal"><strong>Bottom line</strong>{{ page.tldr | markdownify }}</div>{% endif %}
 {{ content }}
 {% include ad.html slot="in_article" %}

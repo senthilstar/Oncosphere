@@ -9,6 +9,9 @@ permalink: /history/
 
 From shadows to light — how cancer care evolved. Telegraphic; sources linked where available.
 
+## Subtopics
+[Halsted and Beatson: surgery and hormones](#halsted-beatson) · [From shadows to light: X-rays, radium and radiotherapy](#x-rays-radium) · [The Radium Girls](#radium-girls) · [Nitrogen mustard and Farber's antifolates](#chemotherapy) · [Cisplatin and testicular cancer](#cisplatin) · [Trastuzumab: targeted therapy arrives](#trastuzumab) · [Imatinib for CML](#imatinib) · [HPV vaccine](#hpv-vaccine) · [Ipilimumab: checkpoint era](#ipilimumab) · [Tissue-agnostic: MSI-H/dMMR](#tissue-agnostic) · [ADCs, organ preservation, ctDNA](#adc-ctdna)
+
 ## 1890s — Halsted and Beatson: surgery and hormones {#halsted-beatson}
 
 Radical mastectomy set the surgical template; Beatson's oophorectomy showed breast cancer could respond to hormone removal — the first systemic idea.
