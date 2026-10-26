@@ -5,6 +5,7 @@ title: "ESMO Congress 2026 in Madrid: what to watch"
 category: Conference
 audience: clinicians
 summary: ESMO 2026 runs 23–27 October in Madrid. Presidential Symposia are on Saturday 24 and Sunday 25 October.
+description: ESMO 2026 runs 23–27 October in Madrid. Presidential Symposia are on Saturday 24 and Sunday 25 October.
 sources:
   - title: ESMO Congress 2026 — official programme
     url: https://www.esmo.org/meeting-calendar/esmo-congress-2026/programme

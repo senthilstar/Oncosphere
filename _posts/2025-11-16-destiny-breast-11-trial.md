@@ -5,6 +5,7 @@ category: Trials
 cover: breast
 audience: clinicians
 summary: "Neoadjuvant T-DXd → THP raised pCR to 67.3% vs 56.3% with ddAC-THP in high-risk HER2+ early breast cancer, with less toxicity."
+description: "Neoadjuvant T-DXd → THP raised pCR to 67.3% vs 56.3% with ddAC-THP in high-risk HER2+ early breast cancer, with less toxicity."
 tldr: "Anthracycline-free T-DXd ×4 → THP ×4: pCR +11.2% (p=0.003), grade ≥3 AEs 37.5% vs 55.8%, less LV dysfunction. EFS immature. T-DXd alone (43% pCR) is not enough."
 sources:
   - title: "Harbeck N, et al. DESTINY-Breast11. Ann Oncol 2025 (full paper)"

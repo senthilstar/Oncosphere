@@ -5,6 +5,7 @@ category: Trials
 cover: sarcoma
 audience: clinicians
 summary: "Phase 3 DeFi: oral γ-secretase inhibitor nirogacestat cut the risk of progression by 71% in progressing desmoid tumours."
+description: "Phase 3 DeFi: oral γ-secretase inhibitor nirogacestat cut the risk of progression by 71% in progressing desmoid tumours."
 tldr: "Nirogacestat 150 mg BID: PFS HR 0.29, ORR 41% vs 8% vs placebo. First FDA-approved drug for desmoid tumours (Nov 2023). Ovarian dysfunction and diarrhoea are the key toxicities. Active surveillance is still first for asymptomatic, stable disease."
 sources:
   - title: "Gounder M, et al. Nirogacestat, a γ-secretase inhibitor for desmoid tumors. N Engl J Med 2023;388:898-912"

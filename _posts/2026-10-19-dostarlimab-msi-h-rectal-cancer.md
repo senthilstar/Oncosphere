@@ -5,6 +5,7 @@ title: "Dostarlimab gets FDA accelerated approval for MSI-H/dMMR locally advance
 category: Approvals
 audience: clinicians and patients
 summary: On 19 October 2026 the FDA granted accelerated approval to dostarlimab for Stage II/III MSI-H or dMMR rectal cancer.
+description: On 19 October 2026 the FDA granted accelerated approval to dostarlimab for Stage II/III MSI-H or dMMR rectal cancer.
 sources:
   - title: FDA — Oncology/Hematologic Malignancies Approval Notifications (entry dated 19 Oct 2026)
     url: https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications

@@ -5,6 +5,7 @@ category: Trials
 cover: lung
 audience: clinicians
 summary: "Osimertinib + platinum–pemetrexed: final OS 47.5 vs 37.6 months vs osimertinib alone in EGFR-mutant advanced NSCLC."
+description: "Osimertinib + platinum–pemetrexed: final OS 47.5 vs 37.6 months vs osimertinib alone in EGFR-mutant advanced NSCLC."
 tldr: "FLAURA2 adds ~10 months of median OS (HR 0.77) at the cost of more grade ≥3 toxicity (70% vs 34%). Strongest case: CNS metastases, L858R, high disease burden. Osimertinib alone remains reasonable for frail patients or by preference."
 sources:
   - title: "Planchard D, et al. Osimertinib with or without chemotherapy in EGFR-mutated advanced NSCLC. N Engl J Med 2023;389:1935-1948"

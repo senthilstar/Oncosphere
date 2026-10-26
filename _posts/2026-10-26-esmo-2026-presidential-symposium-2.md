@@ -5,6 +5,7 @@ title: "ESMO 2026 Presidential Symposium II: KRAS G12C, EGFR/MET lung, CLDN18.2 
 category: Conference
 audience: clinicians
 summary: Krascendo 1, SAFFRON, CLARITY-Gastric 01 and HARMONi-GI1 all improved overall survival against active comparators.
+description: Krascendo 1, SAFFRON, CLARITY-Gastric 01 and HARMONi-GI1 all improved overall survival against active comparators.
 sources:
   - title: "Targeted Oncology — ESMO 2026 Presidential Symposium II showcases OS-improving LBAs in lung and GI cancers (25 Oct 2026)"
     url: https://www.targetedonc.com/view/esmo-2026-savolitinib-presidential-symposium-divarasib-nsclc-krascendo1-saffron-clarity-gastric01-harmoni-gi1

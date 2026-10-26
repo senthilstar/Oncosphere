@@ -5,6 +5,7 @@ category: Treatment paradigms
 cover: bladder
 audience: clinicians
 summary: "Explore cancer history, treatments, and latest research."
+description: "Explore cancer history, treatments, and latest research."
 tldr: "First line for fit patients: enfortumab vedotin + pembrolizumab (EV-302) is the preferred standard (NCCN, ESMO). If EV-pembro is not possible: platinum chemo — gemcitabine-cisplatin + nivolumab (CheckMate-901) or platinum then avelumab maintenance (JAVELIN Bladder 100). Test FGFR3 for later lines."
 sources:
   - title: "Powles T, et al. Enfortumab vedotin and pembrolizumab in untreated advanced urothelial cancer (EV-302). N Engl J Med 2024;390:875-888"

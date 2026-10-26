@@ -5,6 +5,7 @@ title: "ESMO 2026 Presidential Symposium I: melanoma vaccine, bladder, SCLC and 
 category: Conference
 audience: clinicians
 summary: Four positive phase 3 late-breakers from Madrid — INTerpath-001, VOLGA, DeLLphi-305 and DASL-HiCaP. Two showed overall survival gains at interim analysis.
+description: Four positive phase 3 late-breakers from Madrid — INTerpath-001, VOLGA, DeLLphi-305 and DASL-HiCaP. Two showed overall survival gains at interim analysis.
 sources:
   - title: "Targeted Oncology — Late-breaking phase 3 data headline ESMO 2026 Presidential Symposium I (24 Oct 2026)"
     url: https://www.targetedonc.com/view/esmo-2026-presidential-symposium-i-late-breaking-recap

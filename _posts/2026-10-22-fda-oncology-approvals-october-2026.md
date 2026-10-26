@@ -5,6 +5,7 @@ title: "FDA oncology approvals, October 2026: a roundup"
 category: Approvals
 audience: clinicians
 summary: Pirtobrutinib in first-line CLL, tucatinib maintenance in HER2+ breast cancer, adjuvant atezolizumab for dMMR colon cancer and more.
+description: Pirtobrutinib in first-line CLL, tucatinib maintenance in HER2+ breast cancer, adjuvant atezolizumab for dMMR colon cancer and more.
 sources:
   - title: "Dr. Senthil Kumar on X — October 2026 oncology updates thread (ATOMIC, BRUIN CLL-313)"
     url: https://x.com/esenthil84/status/2108801585904279856
