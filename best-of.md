@@ -10,13 +10,27 @@ permalink: /best-of/
 Curated. One-line gists, outbound links, topic tags. Updated as new must-reads appear.
 
 ## Tweets / threads
+
+### From the community (ESMO 2026)
+- **[@NEJM — DeLLphi-305 published](https://x.com/NEJM/status/2114371469601870079)** `SCLC` — Tarlatamab–durvalumab maintenance in extensive-stage SCLC; original article posted at ESMO 2026.
+- **[@NEJM — Krascendo 1 result](https://x.com/NEJM/status/2114380217867288970)** `lung · KRAS G12C` — Divarasib vs sotorasib/adagrasib in pretreated KRAS G12C NSCLC; PFS 9.8 months headline.
+- **[@DrChoueiri — Krascendo 1 live](https://x.com/DrChoueiri/status/2114383549289959624)** `lung · KRAS G12C` — Trialist's take from the room: PFS 9.8 vs 5.7 mo, HR 0.58.
+- **[@DrChoueiri — SAFFRON](https://x.com/DrChoueiri/status/2114389676752875542)** `lung · EGFR/MET` — Osimertinib + savolitinib vs platinum/pemetrexed after osimertinib in EGFRm/MET+ disease.
+- **[@myESMO — HARMONi-GI1](https://x.com/myESMO/status/2114401673216926206)** `biliary` — Ivonescimab (PD-1/VEGF bispecific) + chemo improved OS in biliary tract cancer.
+- **[@myESMO — claudin 18.2 ADCs](https://x.com/myESMO/status/2114394101248405759)** `gastric · ADC` — Phase III Presidential Symposium data for two claudin 18.2 ADCs.
+- **[@myESMO — cancer vaccines explained](https://x.com/myESMO/status/2114432850804039800)** `melanoma · vaccine` — Sapna Patel on what INTerpath-001 means for patients.
+- **[@OncoAlert — DASL-HiCaP video](https://x.com/OncoAlert/status/2114389745891434912)** `prostate` — Portuguese-language video take on DASL-HiCaP in localized prostate cancer.
+
+### Dr. Senthil Kumar (@esenthil84)
 - **[ATOMIC: adjuvant IO in dMMR colon cancer](https://x.com/esenthil84/status/2108801158311748036)** `colon · MSI` — Thread on adding atezolizumab to adjuvant FOLFOX in stage III dMMR colon cancer.
 - **[HER2CLIMB-05: maintenance intensifies](https://x.com/esenthil84/status/2108801212070170677)** `breast · HER2` — Tucatinib added to HER2 maintenance after first-line induction — what it means for practice.
-- **[ESR1: molecular before scan progression](https://x.com/esenthil84/status/2108801253627322865)** `breast · HR+` — ctDNA ESR1 mutation as a trigger to switch endocrine therapy before radiologic progression.
-- **[NRG-BR002: ablation ≠ survival](https://x.com/esenthil84/status/2108801287810937076)** `breast · oligomets` — Metastasis-directed therapy in oligometastatic breast cancer did not automatically improve survival.
 - **[PSMAddition: radioligands move earlier](https://x.com/esenthil84/status/2108801325773541643)** `prostate` — Lu-PSMA-617 brought into hormone-sensitive metastatic prostate cancer.
-- **[RAMPP: cytoreductive prostatectomy](https://x.com/esenthil84/status/2108801359348998420)** `prostate` — Does removing the primary help in metastatic prostate cancer? The thread unpacks it.
 - **[FDA oncology approvals, October 2026](https://x.com/esenthil84/status/2108801585904279856)** `regulatory` — One-thread roundup of the month's FDA oncology approvals.
+
+### Discussions
+- **[@NEJM — clinical trial prediction markets](https://x.com/NEJM/status/2114462033731068127)** `trials · ethics` — NEJM Perspective: do betting markets on trial outcomes inform or distort? Who pays the cost?
+- **[@DrChoueiri — CARE1 PD-L1 testing](https://x.com/DrChoueiri/status/2114371579647844838)** `kidney · biomarker` — 90% local vs central PD-L1 concordance in mRCC — groundwork for biomarker-guided debate.
+- **[@DrChoueiri — LITESPARK-011 QoL](https://x.com/DrChoueiri/status/2114373010211873009)** `kidney · QoL` — Baseline QoL tracked with PFS/OS (exploratory) — prognostic or confounding?
 
 ## Blogs & explainers
 - **[NCI Cancer Currents blog](https://www.cancer.gov/news-events/cancer-currents-blog)** `general` — NCI's plain-language research news; reliable first read on new trials.
