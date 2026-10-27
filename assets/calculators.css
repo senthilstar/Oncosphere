@@ -1,1 +1,14 @@
 .calc-nav{display:block;line-height:2;margin:20px 0}.calc-nav a{margin:0 8px 0 0}.calc-search{display:block;max-width:560px;font-weight:700}.calc-search input,.calc-form input,.calc-form select{display:block;width:100%;font:inherit;padding:9px;border:1px solid #adbec5;border-radius:7px;background:#fff;color:var(--ink)}.calc-search input{margin-top:8px}.calc-section{scroll-margin-top:100px;margin-top:44px}.calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:22px;align-items:start}.calculator{padding:20px;min-width:0}.calculator:hover{transform:none}.calculator h3,.calculator p{margin:0 0 14px}.calc-form{display:grid;gap:12px}.calc-form label{font-size:.9rem}.calc-form button{font:inherit;background:var(--pri);color:white;border:0;border-radius:8px;padding:10px 16px;cursor:pointer}.calc-result{display:block;background:var(--soft);border-left:4px solid var(--pri);padding:12px;overflow-wrap:anywhere;white-space:pre-line}.calculator .calc-bands{font-size:.85rem;margin-top:14px;color:var(--mut)}.calculator .calc-source{font-size:.8rem;margin-bottom:0}.calc-source a{overflow-wrap:anywhere}[hidden]{display:none!important}.calc-form :focus-visible,.calc-search input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+
+.calculators-page>.note{max-width:85ch;padding:18px 20px}
+.calc-nav{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0;line-height:1.5}
+.calc-nav a{font-size:.94rem;margin:0;padding:9px 14px;border:1px solid #cbdde1;border-radius:24px;background:var(--soft);text-decoration:none;color:var(--pri2)}
+.calc-nav a:hover{background:#e0eff2;border-color:var(--pri)}
+.calc-search{margin-top:28px}.calc-search input{padding:12px 14px}
+#calculator-count{color:var(--mut);font-size:.9rem;margin:12px 0 0}
+.calc-section{scroll-margin-top:160px}.calc-section h2{padding-bottom:12px;border-bottom:1px solid #dde7ea}
+.calculator{box-shadow:0 4px 16px rgba(15,42,61,.04)}.calculator h3{font-size:1.2rem;line-height:1.4}
+.calc-form{gap:16px}.calc-form input,.calc-form select{min-height:44px;margin-top:5px}
+.calc-form button{min-height:44px;font-weight:700}.calc-form button:hover{background:var(--pri2)}
+.calc-result{margin-top:18px;line-height:1.6}.calc-result:empty{display:none}
+@media(max-width:560px){.calculator{padding:18px}.calc-grid{gap:16px}.calc-nav a{padding:9px 12px}}

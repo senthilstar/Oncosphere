@@ -7,7 +7,7 @@ import urllib.parse
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
-EMAIL = 'esenthilkmc02@gmail.com'
+EMAIL = 'noreply@oncosphere.in'
 EUTILS = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
 
