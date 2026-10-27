@@ -64,26 +64,26 @@ Click a cancer name above or below. Principles condensed from Dr. Senthil Kumar'
 - Cisplatin eligibility by Galsky criteria (any one: ECOG PS 2, CrCl <60 mL/min, grade ≥2 hearing loss or neuropathy, NYHA III).
 - **Preferred first line: enfortumab vedotin + pembrolizumab**, across cisplatin eligibility and PD-L1 groups.
 - EV unsuitable/unavailable: cisplatin-eligible → gemcitabine–cisplatin + nivolumab (up to 6 cycles), then nivolumab; platinum chemo then **avelumab maintenance** if no progression after 4–6 cycles (JAVELIN Bladder 100).
-- Test FGFR3 (validated assay) for later erdafitinib. [Thread](https://x.com/i/status/2106351975801794591)
+- Test FGFR3 (validated assay) for later erdafitinib. [Thread](https://x.com/esenthil84/status/2106351975801794591)
 
 ### Gallbladder / biliary tract cancer {#biliary}
 - Not all biliary tract cancer is biologically identical; pathology and baseline liver/biliary status matter.
 - Molecular testing **early** — HER2 IHC ± ISH, MSI/MMR, broad panel when possible.
 - ABC-02 set the gem–cis backbone; **chemo-immunotherapy** (KEYNOTE-966: pembrolizumab + GemCis, mOS 12.7 vs 10.9 mo, HR 0.83) is first line.
 - HER2 is a key gallbladder target; oligoprogression → consider local therapy, don't abandon effective systemic therapy.
-- LMIC: if NGS unaffordable, prioritise HER2 IHC, then MMR/MSI. [Thread](https://x.com/i/status/2106811155616596104)
+- LMIC: if NGS unaffordable, prioritise HER2 IHC, then MMR/MSI. [Thread](https://x.com/esenthil84/status/2106811155616596104)
 
 ### Endometrial carcinoma {#endometrial}
 - First line has moved from chemotherapy alone to molecularly informed treatment — know MMR status.
 - Dostarlimab + carboplatin–paclitaxel (RUBY Part 1): dMMR/MSI-H 24-month PFS 61.4% vs 15.7% (HR 0.28); overall OS 44.6 vs 28.2 mo.
-- Cytoreduction when complete macroscopic resection is achievable. [Thread](https://x.com/i/status/2105367956545011741)
+- Cytoreduction when complete macroscopic resection is achievable. [Thread](https://x.com/esenthil84/status/2105367956545011741)
 
 ### Renal cell carcinoma {#rcc}
 - Confirm histology (clear cell, papillary, chromophobe…) — it drives the regimen.
-- IO-based combinations are the first-line standard; triplets add toxicity: COSMIC-313 (cabozantinib + nivo/ipi) improved PFS 16.6 vs 11.2 mo but not OS (41.9 vs 42.0 mo, HR 1.02). [Thread](https://x.com/i/status/2106089025635504287)
+- IO-based combinations are the first-line standard; triplets add toxicity: COSMIC-313 (cabozantinib + nivo/ipi) improved PFS 16.6 vs 11.2 mo but not OS (41.9 vs 42.0 mo, HR 1.02). [Thread](https://x.com/esenthil84/status/2106089025635504287)
 
 ### Medullary thyroid cancer {#mtc}
-- Systemic therapy for advanced/metastatic MTC is a separate pathway from differentiated thyroid cancer; RET status guides choice. [Thread](https://x.com/i/status/2105479646527770882)
+- Systemic therapy for advanced/metastatic MTC is a separate pathway from differentiated thyroid cancer; RET status guides choice. [Thread](https://x.com/esenthil84/status/2105479646527770882)
 
 ### NSCLC {#nsclc}
 - Broad NGS + PD-L1 before cycle 1; driver-positive → targeted therapy (osimertinib ± chemo in EGFR). See [FLAURA2]({{ '/flaura-2-trial/' | relative_url }}).
