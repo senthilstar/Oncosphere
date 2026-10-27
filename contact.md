@@ -6,7 +6,7 @@ permalink: /contact/
 <div class="wrap narrow block" markdown="1">
 # Contact
 
-Oncosphere is curated by **Dr. Senthil Kumar**. X: [@esenthil84](https://x.com/esenthil84)
+Oncosphere is curated by **Dr. Senthil Kumar**.
 
 Corrections, feedback and topic suggestions are welcome. **Please do not send medical records or ask for personal treatment advice** — individual medical advice is not provided through this website. In an emergency, go to the nearest hospital.
 </div>

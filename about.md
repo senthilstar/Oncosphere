@@ -6,7 +6,7 @@ permalink: /about/
 <div class="wrap narrow block" markdown="1">
 # About Oncosphere
 
-Oncosphere is an independent educational blog by **Dr. Senthil Kumar**, a medical oncologist. Follow on X: [@esenthil84](https://x.com/esenthil84).
+Oncosphere is an independent educational blog by **Dr. Senthil Kumar**, a medical oncologist.
 
 **What you'll find:** concise, referenced summaries of practice-changing trials, guideline updates (NCCN, ESMO, ASCO, ICMR) and plain-language explainers for patients and families. A new post is planned most Mondays.
 

@@ -8,7 +8,7 @@ permalink: /privacy/
 
 _Last updated: 27 October 2026_
 
-**Who we are.** Oncosphere ({{ site.url }}{{ site.baseurl }}, intended domain oncosphere.in) is run by **Dr. Senthil Kumar**. Contact via X: [@esenthil84](https://x.com/esenthil84).
+**Who we are.** Oncosphere ({{ site.url }}{{ site.baseurl }}, intended domain oncosphere.in) is run by **Dr. Senthil Kumar**.
 
 **Information we collect.** The site has no accounts, forms or comments and does not ask for health information. If you contact the author, any message content is used only to reply.
 
