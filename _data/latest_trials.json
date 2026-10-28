@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT07030907",
-    "title": "A Study to Evaluate the Safety and Efficacy of OPB-101 in Platinum-resistant Ovarian Cancer",
-    "status": "TERMINATED",
+    "nct": "NCT07849231",
+    "title": "A Study to Evaluate DMR-001 in Participants With CALR-mutant Myeloproliferative Neoplasms",
+    "status": "RECRUITING",
     "phase": "PHASE1",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT07030907"
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT07849231"
   },
   {
-    "nct": "NCT07894458",
-    "title": "MRD-Guided Postoperative Surveillance and Adaptive Treatment for Resectable Lung Cancer",
+    "nct": "NCT07724886",
+    "title": "Role of ERBT Plus Intravesical BCG in Intermediate-Risk or High-Risk NMBC",
     "status": "RECRUITING",
     "phase": "NA",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT07894458"
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT07724886"
   },
   {
-    "nct": "NCT02311933",
-    "title": "Tamoxifen Citrate or Z-Endoxifen Hydrochloride in Treating Patients With Locally Advanced or Metastatic, Estrogen Receptor-Positive, HER2-Negative Breast Cancer",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT02311933"
-  },
-  {
-    "nct": "NCT07890324",
-    "title": "A Phase II Clinical Study Evaluating the Efficacy and Safety of SXRN Injection in Patients With Cancer Cachexia",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT07890324"
-  },
-  {
-    "nct": "NCT06510660",
-    "title": "Adebrelimab ±Induction Chemotherapy Followed by Concurrent Chemoradiotherapy for Unresectable Locally Advanced ESCC",
+    "nct": "NCT06672146",
+    "title": "Comparing New Treatments for People With Newly Diagnosed Acute Myeloid Leukemia That Has an IDH2 Gene Change (A MyeloMATCH Treatment Trial)",
     "status": "RECRUITING",
     "phase": "PHASE2",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT06510660"
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT06672146"
   },
   {
-    "nct": "NCT07770698",
-    "title": "A Study of Sonrotoclax (BGB-11417) in Children With Relapsed or Refractory Acute Myeloid Leukemia and B-cell Acute Lymphoblastic Leukemia",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT07770698"
-  },
-  {
-    "nct": "NCT07691515",
-    "title": "Intraarterial Therapies Plus Tislelizumab Plus Lenvatinib Versus Tislelizumab Plus Gemcitabine-Cisplatin in Unresectable Intrahepatic Cholangiocarcinoma",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE3",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT07691515"
-  },
-  {
-    "nct": "NCT07572136",
-    "title": "Anti-CRLF2-R/TSLPR Chimeric Antigen Receptor T Cells (TSLPR-CART) in Participants With Recurrent or Refractory CRLF2-R/TSLPR-Overexpressing B-Cell Acute Lymphoblastic Leukemia (B-ALL)",
+    "nct": "NCT06680037",
+    "title": "A Study to Assess the Safety and Clinical Activity of Azer-cel in Participants With B-cell Mediated Autoimmune Disorders",
     "status": "RECRUITING",
     "phase": "PHASE1",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT07572136"
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT06680037"
   },
   {
-    "nct": "NCT04799106",
-    "title": "Community Based Strategies for Early Detection of Melanoma",
-    "status": "ENROLLING_BY_INVITATION",
-    "phase": "Not applicable",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT04799106"
-  },
-  {
-    "nct": "NCT06348199",
-    "title": "A Study to Compare the Efficacy, Safety, Pharmacokinetics, and Immunogenicity Between SB27 and Keytruda in Subjects With Metastatic Non-squamous Non-small Cell Lung Cancer",
-    "status": "ACTIVE_NOT_RECRUITING",
+    "nct": "NCT05623020",
+    "title": "A Study to Learn About the Effects of the Combination of Elranatamab, Daratumumab and Lenalidomide Compared With Daratumumab, Bortezomib, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma Who Are Not Candidates for Transplant",
+    "status": "RECRUITING",
     "phase": "PHASE3",
-    "updated": "2026-10-26",
-    "url": "https://clinicaltrials.gov/study/NCT06348199"
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT05623020"
+  },
+  {
+    "nct": "NCT05849480",
+    "title": "A Study of CDX-1140, a CD40 Agonist, in Combination With Capecitabine and Oxaliplatin (CAPOX) and Keytruda in Subjects With Biliary Tract Carcinoma (BTC)",
+    "status": "RECRUITING",
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT05849480"
+  },
+  {
+    "nct": "NCT05794659",
+    "title": "Adjuvant Therapeutic Cancer Vaccine (AST-201, pUMVC3-hIGFBP-2) in Patients With Advanced Ovarian Cancer",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT05794659"
+  },
+  {
+    "nct": "NCT04005339",
+    "title": "NAPOLI-2: Fluorouracil, Leucovorin, and Nanoliposomal Irinotecan in Biliary Cancer",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT04005339"
+  },
+  {
+    "nct": "NCT07441681",
+    "title": "Comparing Radiation Plus Cetuximab to Radiation Plus Chemotherapy in People With Advanced Head and Neck Cancer Who Cannot Receive Cisplatin",
+    "status": "RECRUITING",
+    "phase": "PHASE3",
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT07441681"
+  },
+  {
+    "nct": "NCT07898436",
+    "title": "Menin Inhibitors in Pediatric Relapsed or Refractory Acute Leukemia",
+    "status": "RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-10-27",
+    "url": "https://clinicaltrials.gov/study/NCT07898436"
   }
 ]
