@@ -1,6 +1,6 @@
 ---
 title: "Advanced Bladder / Urothelial cancer"
-updated: 2026-10-26
+updated: 2026-10-29
 category: Treatment paradigms
 cover: bladder
 audience: clinicians
@@ -26,6 +26,8 @@ sources:
     url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-fam-trastuzumab-deruxtecan-nxki-unresectable-or-metastatic-her2
   - title: "Galsky MD, et al. Treatment of patients with metastatic urothelial cancer “unfit” for cisplatin-based chemotherapy. J Clin Oncol 2011;29:2432-8"
     url: https://pubmed.ncbi.nlm.nih.gov/21555688/
+  - title: "FDA Oncology/Hematologic Malignancies Approval Notifications (bladder entries Mar 2025 – Oct 2026)"
+    url: https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications
   - title: NCCN Guidelines — Bladder Cancer
     url: https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1417
   - title: ESMO Clinical Practice Guidelines — Bladder cancer
@@ -63,6 +65,15 @@ Commonly used criteria (Galsky consensus): patients are usually considered cispl
 - **EV:** blood sugar every cycle (hyperglycaemia can be severe even without diabetes), skin review in cycle 1–2, neuropathy grading, eye lubrication.
 - **Pembrolizumab/nivolumab/avelumab:** TSH, LFTs, creatinine, cortisol if symptoms; educate on colitis and pneumonitis.
 - **Erdafitinib:** serum phosphate (hyperphosphataemia is expected and drives dose titration), ophthalmology for central serous retinopathy, nail and mouth care.
+
+## Moving upstream: what changed in earlier-stage bladder cancer (US approvals)
+The drugs of the metastatic setting are now being used before relapse, so many patients reaching first-line metastatic therapy will already have seen a PD-1/PD-L1 inhibitor or EV. <a class="cite" href="https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications">[FDA]</a>
+- **Mar 2025 — durvalumab + gemcitabine-cisplatin** neoadjuvant, then adjuvant durvalumab after cystectomy, for MIBC (NIAGARA).
+- **Nov 2025 — EV + pembrolizumab** neoadjuvant then adjuvant for cisplatin-ineligible MIBC; **Jul 2026** extended to all MIBC patients who are cystectomy candidates.
+- **May 2026 — atezolizumab adjuvant** after cystectomy for MIBC with ctDNA molecular residual disease (FDA-authorised test).
+- **May 2026 — durvalumab + BCG** for BCG-naïve high-risk NMIBC; **Oct 2026 — nogapendekin alfa (Anktiva) + BCG** widened to BCG-unresponsive papillary-only high-grade NMIBC.
+
+**Practical point:** record the date and response to any perioperative immunotherapy or EV. Patients relapsing soon after perioperative EV-pembro are not the population studied in EV-302, so its results do not transfer directly; platinum chemotherapy or a clinical trial is the usual tumour-board discussion (editorial opinion, not a guideline statement).
 
 ## Upper tract and variant histology
 Upper-tract urothelial carcinoma was included in the main trials and is treated similarly in the metastatic setting. Pure non-urothelial histologies (squamous, adenocarcinoma, small cell) were largely excluded; small-cell bladder cancer follows small-cell lung cancer–type regimens.
