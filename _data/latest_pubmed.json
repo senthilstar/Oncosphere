@@ -19,6 +19,27 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42898639/"
   },
   {
+    "pmid": "42860120",
+    "title": "Enhancing neoadjuvant immunotherapy for locally advanced rectal cancer via an injectable thermosensitive hydrogel system with multipathway macrophage immunomodulation.",
+    "journal": "Biomaterials",
+    "pubdate": "2027 Mar",
+    "authors": [
+      "Chen W",
+      "Shi K",
+      "Peng Z",
+      "Pan M",
+      "Mo D",
+      "Tang Y",
+      "Tong Q",
+      "Yang P",
+      "Deng H",
+      "Wei Y",
+      "Chen M",
+      "Qian Z"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42860120/"
+  },
+  {
     "pmid": "42869113",
     "title": "Single-gRNA CRISPR/eCas9-mediated simultaneous targeting of cIAP1 and cIAP2 in colorectal cancer cells: RNA-seq reveals distinct transcriptomic and apoptotic responses.",
     "journal": "Gene",
@@ -298,40 +319,5 @@
       "GEC-ESTRO Breast Cancer Working Group"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42921130/"
-  },
-  {
-    "pmid": "42910049",
-    "title": "Study protocol for the TROG 21.08 VITaL trial: a randomized controlled trial investigating ventilation imaging to improve the quality of life for patients with lung cancer treated with radiation therapy.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Vino D SK",
-      "Gebski V",
-      "Senthi S",
-      "Kai C",
-      "Jayamanne D",
-      "Palma D",
-      "Hardcastle N",
-      "Byrne HL",
-      "Hoover DA",
-      "Kipritidis J",
-      "Espinoza A",
-      "Zwan B",
-      "Kaur G",
-      "Sawant A",
-      "Tahir BA",
-      "Mercieca-Bebber R",
-      "Shah KK",
-      "Bowen A",
-      "Cavanagh M",
-      "Hunt L",
-      "Arulananda S",
-      "Ball H",
-      "Eikelis N",
-      "Moore A",
-      "Silvester S",
-      "Keall P"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42910049/"
   }
 ]

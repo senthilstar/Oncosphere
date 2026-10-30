@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT07901738",
-    "title": "Zopapogene Imadenovec for the Treatment of Recurrent Respiratory Papillomatosis in Children",
+    "nct": "NCT06991738",
+    "title": "177Lu-DOTA-EB-TATE in Adult Patients With Metastatic, Radioactive Iodine Non-Responsive Oncocytic (Hurthle-Cell) Thyroid Cancer",
     "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE3",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT07901738"
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT06991738"
   },
   {
-    "nct": "NCT07297212",
-    "title": "A Clinical Trial Testing the Safety of the Investigational Drug Pumitamig (BNT327) and How Well it Works in Patients With Recurrent Glioblastoma",
+    "nct": "NCT06428409",
+    "title": "A Clinical Study of MK-2870 Alone or With Other Treatments to Treat Gastrointestinal Cancers (MK-9999-02A)",
+    "status": "RECRUITING",
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT06428409"
+  },
+  {
+    "nct": "NCT07776691",
+    "title": "A Study of Raludotatug Deruxtecan With or Without Bevacizumab as First-Line Maintenance Treatment in Non-HRD-Positive Advanced Ovarian Cancer (MK-5909-006, (ENGOT-ov102/GOG-3141/ REJOICE-Ovarian 04)",
+    "status": "RECRUITING",
+    "phase": "PHASE3",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT07776691"
+  },
+  {
+    "nct": "NCT03223610",
+    "title": "Venetoclax, Ibrutinib, Prednisone, Obinutuzumab, and Revlimid (ViPOR) in Relapsed/Refractory B-cell Lymphoma",
+    "status": "RECRUITING",
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT03223610"
+  },
+  {
+    "nct": "NCT07504458",
+    "title": "Pivotal Open-label Phase 3 Clinical Study of QTX-2101 in Adult Patients With Acute Promyelocytic Leukemia",
+    "status": "RECRUITING",
+    "phase": "PHASE3",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT07504458"
+  },
+  {
+    "nct": "NCT07328516",
+    "title": "Natural History Study of Early Life Exposures in Agriculture (ELEA)",
+    "status": "ENROLLING_BY_INVITATION",
+    "phase": "Not applicable",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT07328516"
+  },
+  {
+    "nct": "NCT01742299",
+    "title": "Study to Allow Access to Imatinib for Patients Who Are on Imatinib Treatment in a Novartis-sponsored Study and Are Benefiting From the Treatment as Judged by the Investigator",
+    "status": "COMPLETED",
+    "phase": "PHASE4",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT01742299"
+  },
+  {
+    "nct": "NCT06686381",
+    "title": "Tetra-modality Bladder Preservation Strategies in Muscle-invasive Bladder Cancer: TURBT+ Chemo/Immunotherapy+ Radiation Therapy+ Maintenance Immunotherapy vs. W&W",
     "status": "RECRUITING",
     "phase": "PHASE2",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT07297212"
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT06686381"
   },
   {
-    "nct": "NCT07895459",
-    "title": "MRD Monitoring in Colorectal Cancer Using ctDNA",
-    "status": "RECRUITING",
-    "phase": "NA",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT07895459"
-  },
-  {
-    "nct": "NCT07901582",
-    "title": "Implementation of a Pain Management Plan in Major Open Abdominal Surgeries.",
-    "status": "RECRUITING",
-    "phase": "NA",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT07901582"
-  },
-  {
-    "nct": "NCT06694454",
-    "title": "Neoadjuvant Inhaled Azacytidine With Platinum-Based Chemotherapy and Durvalumab (MEDI4736) - a Combined Epigenetic-Immunotherapy (AZA-AEGEAN) Regimen for Operable Early-Stage Non-Small Cell Lung Cancer (NSCLC)",
-    "status": "SUSPENDED",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT06694454"
-  },
-  {
-    "nct": "NCT06487247",
-    "title": "HEME Home Transfusion Program",
-    "status": "RECRUITING",
-    "phase": "NA",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT06487247"
-  },
-  {
-    "nct": "NCT06747585",
-    "title": "A Study to Investigate ALE.P02 as a Monotherapy or in Combination With Pembrolizumab in Adult Patients With Selected CLDN1+ Solid Tumors",
-    "status": "RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT06747585"
-  },
-  {
-    "nct": "NCT07901543",
-    "title": "Feasibility Study of a Chatbot AI-Driven Preliminary Screening System for Hereditary Cancer Syndromes",
-    "status": "RECRUITING",
-    "phase": "Not applicable",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT07901543"
-  },
-  {
-    "nct": "NCT02716116",
-    "title": "A Study of TAK-788 in Adults With Non-Small Cell Lung Cancer",
-    "status": "COMPLETED",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT02716116"
-  },
-  {
-    "nct": "NCT04411043",
-    "title": "Observatory of Prolymphocytic Leukemia T",
+    "nct": "NCT03367702",
+    "title": "Stereotactic Body Radiation Therapy or Intensity-Modulated Radiation Therapy in Treating Patients With Stage IIA-B Prostate Cancer",
     "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "Not applicable",
-    "updated": "2026-10-28",
-    "url": "https://clinicaltrials.gov/study/NCT04411043"
+    "phase": "PHASE3",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT03367702"
+  },
+  {
+    "nct": "NCT04402788",
+    "title": "Testing the Addition of Radiation Therapy to the Usual Immune Therapy Treatment (Atezolizumab) for Extensive Stage Small Cell Lung Cancer, The RAPTOR Trial",
+    "status": "SUSPENDED",
+    "phase": "PHASE2, PHASE3",
+    "updated": "2026-10-29",
+    "url": "https://clinicaltrials.gov/study/NCT04402788"
   }
 ]
