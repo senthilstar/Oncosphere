@@ -40,6 +40,20 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42860120/"
   },
   {
+    "pmid": "42960010",
+    "title": "Nanobiomechanics in Oncology: Atomic Force Microscopy for Cancer Mechanophenotyping Using Cellular Young's Modulus.",
+    "journal": "Journal of the Royal Society of New Zealand",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Tjoa H",
+      "Mei L",
+      "De Silva H",
+      "Tong D",
+      "Guan G"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42960010/"
+  },
+  {
     "pmid": "42869113",
     "title": "Single-gRNA CRISPR/eCas9-mediated simultaneous targeting of cIAP1 and cIAP2 in colorectal cancer cells: RNA-seq reveals distinct transcriptomic and apoptotic responses.",
     "journal": "Gene",
@@ -130,6 +144,64 @@
       "Janody F"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42909582/"
+  },
+  {
+    "pmid": "42960192",
+    "title": "Adaptive MR-guided whole-pelvic SBRT with or without focal intraprostatic lesion boost for high-risk localized prostate Cancer: Adverse events and longitudinal quality-of-life outcomes.",
+    "journal": "Clinical and translational radiation oncology",
+    "pubdate": "2027 Jan",
+    "authors": [
+      "Poon DMC",
+      "Yuan J",
+      "Yang B",
+      "Wong OL",
+      "Wong HY",
+      "Tse MY",
+      "Huang CY",
+      "Chiu ST",
+      "Yu SK",
+      "Chiu G"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42960192/"
+  },
+  {
+    "pmid": "42959946",
+    "title": "Development and validation of a cumulative risk model and assessment tool for radiation-induced hypothyroidism in head and neck cancer: a multicentre study.",
+    "journal": "Clinical and translational radiation oncology",
+    "pubdate": "2027 Jan",
+    "authors": [
+      "Wu J",
+      "Gong J",
+      "Zhang J",
+      "Teng X",
+      "Zhang X",
+      "Lui JCF",
+      "Cheung KM",
+      "Au KH",
+      "Wong KCW",
+      "Yeung DKW",
+      "Lee VHF",
+      "Cai J",
+      "Li T",
+      "Zang J",
+      "Chow JCH"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42959946/"
+  },
+  {
+    "pmid": "42959402",
+    "title": "Peri-urethral calcifications as a potential biomarker for acute genitourinary toxicity following prostate stereotactic body radiotherapy.",
+    "journal": "Clinical and translational radiation oncology",
+    "pubdate": "2027 Jan",
+    "authors": [
+      "Awad M",
+      "Massalha I",
+      "Tova Y",
+      "Zidan J",
+      "Katz R",
+      "Hijab A"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42959402/"
   },
   {
     "pmid": "42936426",
@@ -237,87 +309,5 @@
       "Hou Y"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42927325/"
-  },
-  {
-    "pmid": "42927245",
-    "title": "Radiotherapy dose escalation for the non-operative management of patients with unresectable locally recurrent rectal cancer (STEP-UP): Study protocol for a multicentre, prospective, open-label feasibility study.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Vande Kerckhove FEC",
-      "Beeftink JL",
-      "Tijssen RHN",
-      "Zijlstra J",
-      "Verrijssen AE",
-      "van Kuijk SMJ",
-      "van Ravensteijn SG",
-      "van Hellemond IEG",
-      "Calon TGA",
-      "Werter IM",
-      "Couwenberg AM",
-      "Schuurhuizen CSEW",
-      "den Hartogh MD",
-      "Hendriksen EM",
-      "Hupkens B",
-      "Buijsen J",
-      "Berbée M",
-      "Intven MPW",
-      "Bloemen JG",
-      "Nederend J",
-      "Burger JWA",
-      "Peulen HMU"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42927245/"
-  },
-  {
-    "pmid": "42927216",
-    "title": "Sentinel lymph node-guided modification of postoperative radiotherapy in oral tongue squamous cell carcinoma: a retrospective dosimetric and NTCP modelling study.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Björgvinsson E",
-      "Kolev A",
-      "Onjukka E",
-      "Hedman M",
-      "Tedgren ÅC",
-      "Södergren L",
-      "Friesland S",
-      "Margolin G",
-      "Cardell LO",
-      "Gubanski M"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42927216/"
-  },
-  {
-    "pmid": "42921462",
-    "title": "Randomized controlled trials of radiation therapy for cutaneous malignancies: a systematic review.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Mahase SS",
-      "Miccio J",
-      "Chilov M",
-      "Gharzai LA",
-      "Barker CA",
-      "Zaorsky NG"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42921462/"
-  },
-  {
-    "pmid": "42921130",
-    "title": "The value of breast brachytherapy boost in the current era: a narrative literature review from the GEC-ESTRO breast cancer working group.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Montesinos IM",
-      "Konat-Bąska K",
-      "Guinot JL",
-      "Polgar C",
-      "Strnad V",
-      "Hannoun-Levi JM",
-      "Gutierrez C",
-      "GEC-ESTRO Breast Cancer Working Group"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42921130/"
   }
 ]
