@@ -54,6 +54,143 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42960010/"
   },
   {
+    "pmid": "42906309",
+    "title": "A novel Co-SnO(2)/Rhodamine B composite as photoactive material with excellent photoelectrochemical performance for ultrasensitive detection of prostate cancer biomarker.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Xiao Y",
+      "Deng H",
+      "Xu J",
+      "Yuan R",
+      "Chai Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42906309/"
+  },
+  {
+    "pmid": "42901111",
+    "title": "A novel DNA weighted summation system for cancer diagnosis.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Luo K",
+      "Liu X",
+      "Zhong X",
+      "Yang Y",
+      "Ye G",
+      "Xiong Y",
+      "Xia Z",
+      "Zhong M",
+      "Huang Y",
+      "Xu J",
+      "Pan R",
+      "Yao Q",
+      "Fan L",
+      "Tao K",
+      "Wang S",
+      "Xia Q",
+      "Guo Y",
+      "Xiao X",
+      "Lin M"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42901111/"
+  },
+  {
+    "pmid": "42892232",
+    "title": "A logic-gated DNA nanocascade for dual-RNA imaging in a triple-negative breast cancer cell model.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Liu G",
+      "Zhen J",
+      "Shan H",
+      "Zang Y",
+      "Li Y",
+      "He P",
+      "Zhou H",
+      "Wang Q"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42892232/"
+  },
+  {
+    "pmid": "42879935",
+    "title": "Fibroblast activation protein-α-triggered photoacoustic signal \"on\" for pancreatic tumor imaging.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Tang R",
+      "Zhang Z",
+      "Zhu L",
+      "Xu HD",
+      "Zhang T",
+      "Yang Y",
+      "Zhan W",
+      "Zhou S",
+      "Liang G"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42879935/"
+  },
+  {
+    "pmid": "42858627",
+    "title": "An Ago-mediated duplex biosensing platform with orthogonal electrochemical coding for microRNA detection based on TDN interfaces and UiO-66-NH(2) nanocarriers.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Li H",
+      "Wu K",
+      "Li H",
+      "Kong J",
+      "Chen H"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42858627/"
+  },
+  {
+    "pmid": "42858625",
+    "title": "Rationally optimized split crRNA-based CRISPR/Cas12a platform for amplification-free miRNA detection.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Cha S",
+      "Zhang P",
+      "Hou J",
+      "Wang L",
+      "Yang Q",
+      "Liu X",
+      "Yu G",
+      "Zhang L"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42858625/"
+  },
+  {
+    "pmid": "42854434",
+    "title": "Temperature-responsive PDDNFs@QDs integrating simplified isolation for efficient tumor-derived small extracellular vesicles analysis enables breast cancer diagnosis and subtyping.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Meng X",
+      "Zhang Z",
+      "Jiang P",
+      "Qiu B",
+      "Chen J",
+      "Chen P"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42854434/"
+  },
+  {
+    "pmid": "42843104",
+    "title": "Ligation-assisted DNA strand displacements and CRISPR/Cas14 cleavage for ultrasensitive detection of PIWI-interacting RNA.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Li X",
+      "Guo Z",
+      "Ye W",
+      "Chai H",
+      "Miao P"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42843104/"
+  },
+  {
     "pmid": "42869113",
     "title": "Single-gRNA CRISPR/eCas9-mediated simultaneous targeting of cIAP1 and cIAP2 in colorectal cancer cells: RNA-seq reveals distinct transcriptomic and apoptotic responses.",
     "journal": "Gene",
@@ -100,214 +237,5 @@
       "Shi J"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42838248/"
-  },
-  {
-    "pmid": "42929781",
-    "title": "Colorectal cancers with distinct metastatic potential trigger divergent early T cell responses.",
-    "journal": "The Journal of experimental medicine",
-    "pubdate": "2027 Jan 4",
-    "authors": [
-      "Saad M",
-      "Thoms A",
-      "Yin YS",
-      "Mamede I",
-      "Rahman A",
-      "Chen R",
-      "Carrasco SE",
-      "Darcy PW",
-      "Goto N",
-      "Tavazoie SF",
-      "Bilate AM",
-      "Mucida D"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42929781/"
-  },
-  {
-    "pmid": "42909582",
-    "title": "Adhesion integrity activates mechanosensitive proliferative signaling.",
-    "journal": "The Journal of cell biology",
-    "pubdate": "2027 Jan 4",
-    "authors": [
-      "Faria L",
-      "Gonçalves CM",
-      "Fidalgo I",
-      "Mix C",
-      "Azevedo MM",
-      "Lopes CS",
-      "Kostylenko O",
-      "Rodrigues V",
-      "Braguês R",
-      "Sampaio P",
-      "Tavares S",
-      "Mahajan V",
-      "Taubenberger AV",
-      "Janody F"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42909582/"
-  },
-  {
-    "pmid": "42960192",
-    "title": "Adaptive MR-guided whole-pelvic SBRT with or without focal intraprostatic lesion boost for high-risk localized prostate Cancer: Adverse events and longitudinal quality-of-life outcomes.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Poon DMC",
-      "Yuan J",
-      "Yang B",
-      "Wong OL",
-      "Wong HY",
-      "Tse MY",
-      "Huang CY",
-      "Chiu ST",
-      "Yu SK",
-      "Chiu G"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42960192/"
-  },
-  {
-    "pmid": "42959946",
-    "title": "Development and validation of a cumulative risk model and assessment tool for radiation-induced hypothyroidism in head and neck cancer: a multicentre study.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Wu J",
-      "Gong J",
-      "Zhang J",
-      "Teng X",
-      "Zhang X",
-      "Lui JCF",
-      "Cheung KM",
-      "Au KH",
-      "Wong KCW",
-      "Yeung DKW",
-      "Lee VHF",
-      "Cai J",
-      "Li T",
-      "Zang J",
-      "Chow JCH"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42959946/"
-  },
-  {
-    "pmid": "42959402",
-    "title": "Peri-urethral calcifications as a potential biomarker for acute genitourinary toxicity following prostate stereotactic body radiotherapy.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Awad M",
-      "Massalha I",
-      "Tova Y",
-      "Zidan J",
-      "Katz R",
-      "Hijab A"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42959402/"
-  },
-  {
-    "pmid": "42936426",
-    "title": "Model-Based Normal Tissue Complication Probability Comparison Between Proton and Photon Therapies for Brain Tumors Complying With Planning Study Guidelines.",
-    "journal": "Advances in radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Higaki H",
-      "Nishioka K",
-      "Yokokawa K",
-      "Nakazato K",
-      "Otake I",
-      "Kobashi K",
-      "Motegi A",
-      "Sakurai H",
-      "Murakami M",
-      "Tamamura H",
-      "Waki T",
-      "Ogino T",
-      "Iwata H",
-      "Takagi M",
-      "Okimoto T",
-      "Zenda S",
-      "Araya M",
-      "Murayama S",
-      "Yamazaki H",
-      "Aoyama H"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42936426/"
-  },
-  {
-    "pmid": "42935767",
-    "title": "Early and late CTCAE and patient-reported outcomes following breast radiotherapy in the REQUITE cohort.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Bockstiegel T",
-      "Webb A",
-      "Aguado-Barrera ME",
-      "Aguado-Flor E",
-      "Altabas M",
-      "Aznar M",
-      "Azria D",
-      "Briers E",
-      "Bultijnck R",
-      "Chang-Claude J",
-      "Cicchetti A",
-      "De Santis MC",
-      "Dunning A",
-      "Fachal L",
-      "Fuentes-Rios O",
-      "Giraldo A",
-      "Gómez-Caamaño A",
-      "Gutiérrez-Enríquez S",
-      "Herskind C",
-      "Heumann P",
-      "Johnson K",
-      "Kaaks R",
-      "Kerns SL",
-      "Lambrecht M",
-      "La Rocca E",
-      "Mollà M",
-      "Rancati T",
-      "Reyes VM",
-      "Romero JCR",
-      "Rosenstein BS",
-      "De Ruysscher D",
-      "Seibold P",
-      "Shearer RM",
-      "Stobart H",
-      "Symonds RP",
-      "Taboada-Valladares B",
-      "Talbot CJ",
-      "Vega A",
-      "Veldeman L",
-      "Veldwijk MR",
-      "Ward T",
-      "West CML",
-      "REQUITE/REQUITEplus/RADprecise consortia",
-      "Rattay T",
-      "Sperk E"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42935767/"
-  },
-  {
-    "pmid": "42927325",
-    "title": "Timing of cranial radiotherapy in HER2-positive breast Cancer brain metastases treated with Pyrotinib: a multicentre real-world cohort study.",
-    "journal": "Clinical and translational radiation oncology",
-    "pubdate": "2027 Jan",
-    "authors": [
-      "Chen Z",
-      "Jing H",
-      "Huang S",
-      "Wang M",
-      "Mao D",
-      "Li L",
-      "Lu S",
-      "Zhou X",
-      "Bi D",
-      "Zhang Y",
-      "Chen X",
-      "Ma Y",
-      "Xia Y",
-      "Yi J",
-      "Hou Y"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42927325/"
   }
 ]
