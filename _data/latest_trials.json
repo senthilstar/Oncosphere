@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT07284758",
-    "title": "A Study to Evaluate the Efficacy of Cemsidomide + Dexamethasone in Participants With Relapsed/Refractory Multiple Myeloma",
-    "status": "RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT07284758"
-  },
-  {
-    "nct": "NCT07907419",
-    "title": "Effect of a Health Belief Model Based Digital Nudge Intervention on Breast Cancer Screening",
-    "status": "NOT_YET_RECRUITING",
+    "nct": "NCT07732101",
+    "title": "Exercise Intervention for Breast Cancer Patients With Sarcopenia",
+    "status": "ENROLLING_BY_INVITATION",
     "phase": "NA",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT07907419"
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07732101"
   },
   {
-    "nct": "NCT07724652",
-    "title": "The AYA Oncology Self-care Movement",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "NA",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT07724652"
-  },
-  {
-    "nct": "NCT06991738",
-    "title": "177Lu-DOTA-EB-TATE in Adult Patients With Metastatic, Radioactive Iodine Non-Responsive Oncocytic (Hurthle-Cell) Thyroid Cancer",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT06991738"
-  },
-  {
-    "nct": "NCT06922318",
-    "title": "The COSMYC Trial (COmbined Suppression of MYC)",
+    "nct": "NCT07217301",
+    "title": "A Study Comparing TAK-928 With Docetaxel in Adults With Non-Small Cell Lung Cancer",
     "status": "RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT06922318"
-  },
-  {
-    "nct": "NCT06090669",
-    "title": "Imatinib to Increase RUNX1 Activity in Participants With Germline RUNX1 Deficiency",
-    "status": "RECRUITING",
-    "phase": "PHASE1",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT06090669"
-  },
-  {
-    "nct": "NCT07570173",
-    "title": "A Clinical Trial of MK-1045 in People With B-cell Acute Lymphoblastic Leukemia (MK-1045-005)",
-    "status": "RECRUITING",
-    "phase": "PHASE2, PHASE3",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT07570173"
-  },
-  {
-    "nct": "NCT07906717",
-    "title": "A Study of JNJ-101556143 With Best Supportive Care in Participants With Metastatic Prostate Cancer",
-    "status": "NOT_YET_RECRUITING",
     "phase": "PHASE3",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT07906717"
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07217301"
   },
   {
-    "nct": "NCT05086692",
-    "title": "A Beta-only IL-2 ImmunoTherapY Study",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT05086692"
+    "nct": "NCT07832630",
+    "title": "Saruparib in HRDsig+ Solid Tumors",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07832630"
   },
   {
-    "nct": "NCT07667400",
-    "title": "Docetaxel and SX-682 in Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma, Salivary Gland Carcinoma, and Advanced Prostate Cancer",
+    "nct": "NCT06259136",
+    "title": "Palliative Care Yields Cancer Wellbeing Support",
+    "status": "COMPLETED",
+    "phase": "NA",
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT06259136"
+  },
+  {
+    "nct": "NCT07495124",
+    "title": "IGFBP-2 Vaccine to Prevent Ovarian Cancer Progression in Patients With Serologic Detection of Recurrence",
     "status": "RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07495124"
+  },
+  {
+    "nct": "NCT07796373",
+    "title": "Nemtabrutinib for Chronic Lymphocytic Leukemia (CLL)/Small Lymphocytic Leukemia (SLL) Refractory to Covalent Bruton Tyrosine Kinase Inhibitor or Pirtobrutinib and Previously Treated With a BCL2 Inhibitor",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07796373"
+  },
+  {
+    "nct": "NCT07888322",
+    "title": "Assessment of Intelligent Algorithms for Detection, Diagnosis and Risk Stratification of Tumors of the Kidney and Prostate",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07888322"
+  },
+  {
+    "nct": "NCT07647029",
+    "title": "A Clinical Study on Prophylactic RespOnse To hEtrombopag for Secondary Prevention in Anti-Cancer Therapy-induced Thrombocytopeniae",
+    "status": "RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07647029"
+  },
+  {
+    "nct": "NCT07908888",
+    "title": "Efficacy and Safety of Polatuzumab Vedotin, Rituximab Combined With Reduced-dose Cyclophosphamide, Doxorubicin and Prednisone Regimen in the Treatment of Elderly Patients With Diffuse Large B-cell Lymphoma: A Multicenter, Single-arm, Prospective Study",
+    "status": "RECRUITING",
+    "phase": "PHASE4",
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07908888"
+  },
+  {
+    "nct": "NCT07905131",
+    "title": "A Study of Perioperative Navlimetostat Combined With Modified FOLFIRINOX in Patients With MTAP-Deleted Pancreatic Cancer",
+    "status": "NOT_YET_RECRUITING",
     "phase": "PHASE1, PHASE2",
-    "updated": "2026-10-30",
-    "url": "https://clinicaltrials.gov/study/NCT07667400"
+    "updated": "2026-11-02",
+    "url": "https://clinicaltrials.gov/study/NCT07905131"
   }
 ]

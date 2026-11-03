@@ -1,5 +1,17 @@
 [
   {
+    "pmid": "42933160",
+    "title": "Cascade DNA walker-driven photo-controlled CRISPR/Cas12a nanorobot enabling ultrasensitive one-pot detection of dual miRNAs in triple-negative breast cancer.",
+    "journal": "Talanta",
+    "pubdate": "2027 Mar 1",
+    "authors": [
+      "Yu L",
+      "Li X",
+      "Huang L"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42933160/"
+  },
+  {
     "pmid": "42898639",
     "title": "Cytotoxic T lymphocyte-inspired nanotherapeutics chaperoning granzyme B for tumor immune remodeling.",
     "journal": "Bioactive materials",
@@ -223,19 +235,5 @@
       "He X"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42858932/"
-  },
-  {
-    "pmid": "42838248",
-    "title": "PD-1 expression reprograms tumor-associated macrophages polarization and influences progression and clinical outcomes in lung adenocarcinoma.",
-    "journal": "Gene",
-    "pubdate": "2027 Jan 5",
-    "authors": [
-      "Deng L",
-      "Zhan Y",
-      "Dai M",
-      "Xu J",
-      "Shi J"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42838248/"
   }
 ]
