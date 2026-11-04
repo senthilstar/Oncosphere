@@ -31,6 +31,41 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42898639/"
   },
   {
+    "pmid": "42874359",
+    "title": "An aggregation-induced emission fluorescent microsphere-based intelligent lateral flow immunosensor for rapid and quantitative detection of prostate-specific antigen.",
+    "journal": "Talanta",
+    "pubdate": "2027 Mar 1",
+    "authors": [
+      "Wu Y",
+      "Wang Y",
+      "Huang X",
+      "Chen G",
+      "Gu Y",
+      "Wang X",
+      "Liu Q"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42874359/"
+  },
+  {
+    "pmid": "42868808",
+    "title": "Multifunctional nanoflower-assisted catalytic hairpin assembly enables extracellular vesicles derived-microRNAs profiling for colorectal cancer diagnosis.",
+    "journal": "Talanta",
+    "pubdate": "2027 Mar 1",
+    "authors": [
+      "Zhang X",
+      "Pan J",
+      "Lin Y",
+      "Lin Z",
+      "Zhu Y",
+      "Yang C",
+      "Zhang Y",
+      "Yan L",
+      "Li Z",
+      "Yan X"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42868808/"
+  },
+  {
     "pmid": "42860120",
     "title": "Enhancing neoadjuvant immunotherapy for locally advanced rectal cancer via an injectable thermosensitive hydrogel system with multipathway macrophage immunomodulation.",
     "journal": "Biomaterials",
@@ -64,6 +99,80 @@
       "Guan G"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42960010/"
+  },
+  {
+    "pmid": "42945694",
+    "title": "Photoresponsive Silicon Phthalocyanine with Intracellular Self-Regulated Aggregation Drives ER-Lysosome-Lipid Droplets Redistribution for Enhanced Photodynamic Therapy.",
+    "journal": "Biomaterials advances",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Wu X",
+      "Xu Y",
+      "Ye Q",
+      "You C",
+      "Xu J",
+      "Wang Z",
+      "Huang L",
+      "Chen K",
+      "Dong B",
+      "Peng Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42945694/"
+  },
+  {
+    "pmid": "42913156",
+    "title": "Stiffness and viscoelasticity of adipose tissue decellularized extracellular matrix hydrogels influence proliferation, growth pattern, migration and invasion of breast cancer cells.",
+    "journal": "Biomaterials advances",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Salvador Moreno N",
+      "Fernandez MM",
+      "Azkargorta M",
+      "Madarieta I",
+      "Aguirresarobe R",
+      "Elortza F",
+      "Olalde B",
+      "Cipitria A"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42913156/"
+  },
+  {
+    "pmid": "42896432",
+    "title": "PEGylated fucoxanthin liposomes remodel G(0)/G(1) cell cycle homeostasis and suppress gallbladder cancer progression via modulation of NR2F1-mediated signaling networks.",
+    "journal": "Biomaterials advances",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Cao JF",
+      "Hang K",
+      "Zhang X",
+      "Xia Q",
+      "Xia Z",
+      "Liao D",
+      "Rong C",
+      "Li K"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42896432/"
+  },
+  {
+    "pmid": "42881042",
+    "title": "Corrigendum to \"Transdermal delivery of brucine-encapsulated liposomes significantly enhances anti-tumor outcomes in treating triple-negative breast cancer\" [Biomater. Adv. 153 (2023) 213566].",
+    "journal": "Biomaterials advances",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Wu M",
+      "Hu Y",
+      "Xu M",
+      "Fu L",
+      "Li C",
+      "Wu J",
+      "Sun X",
+      "Wang W",
+      "Wang S",
+      "Wang T",
+      "Ding W",
+      "Li P"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42881042/"
   },
   {
     "pmid": "42906309",
@@ -155,85 +264,5 @@
       "Chen H"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42858627/"
-  },
-  {
-    "pmid": "42858625",
-    "title": "Rationally optimized split crRNA-based CRISPR/Cas12a platform for amplification-free miRNA detection.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Cha S",
-      "Zhang P",
-      "Hou J",
-      "Wang L",
-      "Yang Q",
-      "Liu X",
-      "Yu G",
-      "Zhang L"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42858625/"
-  },
-  {
-    "pmid": "42854434",
-    "title": "Temperature-responsive PDDNFs@QDs integrating simplified isolation for efficient tumor-derived small extracellular vesicles analysis enables breast cancer diagnosis and subtyping.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Meng X",
-      "Zhang Z",
-      "Jiang P",
-      "Qiu B",
-      "Chen J",
-      "Chen P"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42854434/"
-  },
-  {
-    "pmid": "42843104",
-    "title": "Ligation-assisted DNA strand displacements and CRISPR/Cas14 cleavage for ultrasensitive detection of PIWI-interacting RNA.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Li X",
-      "Guo Z",
-      "Ye W",
-      "Chai H",
-      "Miao P"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42843104/"
-  },
-  {
-    "pmid": "42869113",
-    "title": "Single-gRNA CRISPR/eCas9-mediated simultaneous targeting of cIAP1 and cIAP2 in colorectal cancer cells: RNA-seq reveals distinct transcriptomic and apoptotic responses.",
-    "journal": "Gene",
-    "pubdate": "2027 Jan 5",
-    "authors": [
-      "Batır MB"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42869113/"
-  },
-  {
-    "pmid": "42863532",
-    "title": "The epigenetic landscape of hepatocellular carcinoma: from molecular mechanisms to early detection biomarkers and precision therapy.",
-    "journal": "Gene",
-    "pubdate": "2027 Jan 5",
-    "authors": [
-      "Dubey S",
-      "Gupta H"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42863532/"
-  },
-  {
-    "pmid": "42858932",
-    "title": "Transcription factor CTCF activates KIAA1199 expression to inhibit ferroptosis and promote malignant behaviors in colorectal cancer based on bioinformatics and machine learning.",
-    "journal": "Gene",
-    "pubdate": "2027 Jan 5",
-    "authors": [
-      "Fan X",
-      "Meng L",
-      "Zheng S",
-      "He X"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42858932/"
   }
 ]
