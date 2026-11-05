@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Organ-preservation pathway for MSI-H or dMMR locally advanced rectal cancer</title>
+  <desc id="desc">Educational schematic: biopsy and MMR or MSI testing, six months of dostarlimab, then watch-and-wait if clinical complete response, or chemoradiation and surgery if residual disease. Figures from AZUR-1 and the MSK phase 2 study as summarised on Oncosphere.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2a3d"/>
+      <stop offset="55%" stop-color="#1f7a8c"/>
+      <stop offset="100%" stop-color="#3aa6a0"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f2a3d" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="680" rx="18" fill="#fbfaf6"/>
+  <rect x="0" y="0" width="1200" height="88" fill="url(#bg)"/>
+  <text x="40" y="38" fill="#ffffff" font-family="DM Sans, system-ui, sans-serif" font-size="26" font-weight="700">Organ preservation in MSI-H / dMMR rectal cancer</text>
+  <text x="40" y="68" fill="#d7ecec" font-family="DM Sans, system-ui, sans-serif" font-size="15">Educational pathway · figures from AZUR-1 (FDA label) and MSK phase 2 · not a treatment algorithm for individuals</text>
+
+  <!-- Step 1 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="120" width="250" height="200" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <circle cx="70" cy="150" r="16" fill="#e09f3e"/>
+  <text x="70" y="155" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">1</text>
+  <text x="96" y="156" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700">Biopsy + test</text>
+  <text x="60" y="195" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Stage II / III rectal cancer</text>
+  <text x="60" y="220" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Ask for MMR IHC or MSI</text>
+  <rect x="60" y="240" width="210" height="52" rx="10" fill="#eef8f3"/>
+  <text x="165" y="262" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="700">~5–10% of rectal cancers</text>
+  <text x="165" y="280" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="700">are MSI-H / dMMR</text>
+
+  <!-- Arrow 1 -->
+  <path d="M300 220 H340" stroke="#1f7a8c" stroke-width="3" fill="none"/>
+  <polygon points="340,212 358,220 340,228" fill="#1f7a8c"/>
+
+  <!-- Step 2 -->
+  <g filter="url(#shadow)">
+    <rect x="370" y="120" width="250" height="200" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <circle cx="400" cy="150" r="16" fill="#e09f3e"/>
+  <text x="400" y="155" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">2</text>
+  <text x="426" y="156" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700">PD-1 blockade</text>
+  <text x="390" y="195" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Dostarlimab 500 mg IV</text>
+  <text x="390" y="220" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">every 3 weeks × 9 cycles</text>
+  <rect x="390" y="240" width="210" height="52" rx="10" fill="#f2f7f8"/>
+  <text x="495" y="262" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="700">About 6 months of therapy</text>
+  <text x="495" y="280" text-anchor="middle" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">FDA accelerated approval 19 Oct 2026</text>
+
+  <!-- Arrow 2 -->
+  <path d="M630 220 H670" stroke="#1f7a8c" stroke-width="3" fill="none"/>
+  <polygon points="670,212 688,220 670,228" fill="#1f7a8c"/>
+
+  <!-- Step 3 -->
+  <g filter="url(#shadow)">
+    <rect x="700" y="120" width="460" height="200" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <circle cx="730" cy="150" r="16" fill="#e09f3e"/>
+  <text x="730" y="155" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">3</text>
+  <text x="756" y="156" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="16" font-weight="700">Restage · decide</text>
+  <text x="720" y="192" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Endoscopy + rectal MRI + CT (and DRE in trials)</text>
+
+  <rect x="720" y="210" width="200" height="88" rx="12" fill="#eef8f3" stroke="#2a9d8f"/>
+  <text x="820" y="238" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">Clinical complete</text>
+  <text x="820" y="258" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">response → watch</text>
+  <text x="820" y="278" text-anchor="middle" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">intensive surveillance</text>
+
+  <rect x="940" y="210" width="200" height="88" rx="12" fill="#fff7ea" stroke="#e09f3e"/>
+  <text x="1040" y="238" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">Residual disease</text>
+  <text x="1040" y="258" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">→ CRT / surgery</text>
+  <text x="1040" y="278" text-anchor="middle" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">do not delay salvage</text>
+
+  <!-- Evidence strip -->
+  <text x="40" y="370" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="18" font-weight="700">What the pivotal data showed</text>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="390" width="360" height="170" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="60" y="424" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="15" font-weight="700">AZUR-1 · multicentre phase 2</text>
+  <text x="60" y="450" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">n = 154 · Stage II/III MSI-H/dMMR</text>
+  <text x="60" y="476" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">cCR12 investigator 68% · central 47%</text>
+  <text x="60" y="502" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">71% needed nothing beyond dostarlimab</text>
+  <text x="60" y="528" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">USPI 10/2026 · accelerated approval basis</text>
+
+  <g filter="url(#shadow)">
+    <rect x="420" y="390" width="360" height="170" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="440" y="424" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="15" font-weight="700">MSK 19-288 · expanded phase 2</text>
+  <text x="440" y="450" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Rectal cohort: 49 / 49 clinical CR</text>
+  <text x="440" y="476" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">2-year recurrence-free survival 96%</text>
+  <text x="440" y="502" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Label cohort (n=50): cCR12 93%</text>
+  <text x="440" y="528" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">NEJM 2022 / 2025 · single-centre</text>
+
+  <g filter="url(#shadow)">
+    <rect x="800" y="390" width="360" height="170" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="820" y="424" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="15" font-weight="700">Practical caveats</text>
+  <text x="820" y="450" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Universal MMR/MSI testing first</text>
+  <text x="820" y="476" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Organ preservation needs intensive FU</text>
+  <text x="820" y="502" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Confirmatory durability still required</text>
+  <text x="820" y="528" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">US decision · India availability may differ</text>
+
+  <text x="40" y="610" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="13">Oncosphere educational graphic · 5 Nov 2026 · Sources: FDA approval notice, Jemperli USPI 10/2026, Cercek et al. NEJM 2022 and 2025</text>
+  <text x="40" y="638" fill="#9aa8b2" font-family="DM Sans, system-ui, sans-serif" font-size="12">Not medical advice. No head-to-head comparison implied between AZUR-1 and MSK. Read the linked trial post for citations.</text>
+</svg>

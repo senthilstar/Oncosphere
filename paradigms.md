@@ -32,6 +32,7 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 
 ## Immunotherapy — dostarlimab {#immuno}
 - [Dostarlimab in MSI-H/dMMR rectal cancer]({{ '/dostarlimab-msi-h-rectal-cancer/' | relative_url }})
+- [New 5 Nov 2026: organ-preservation pathway illustration]({{ '/dostarlimab-organ-preservation-pathway/' | relative_url }})
 
 ## Trial briefs {#trial-briefs}
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})

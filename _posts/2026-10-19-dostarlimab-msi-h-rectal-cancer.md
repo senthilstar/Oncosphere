@@ -1,6 +1,6 @@
 ---
 cover: immuno
-updated: 2026-10-29
+updated: 2026-11-05
 title: "Dostarlimab gets FDA accelerated approval for MSI-H/dMMR locally advanced rectal cancer"
 category: Approvals
 audience: clinicians and patients
@@ -25,6 +25,12 @@ sources:
     url: https://www.nejm.org/doi/full/10.1056/NEJMoa2017699
 ---
 On **19 October 2026**, the US FDA granted **accelerated approval** to dostarlimab (Jemperli, GSK) for adults with **Stage II/III locally advanced rectal cancer that is MSI-H or dMMR**, as determined by an FDA-authorised test.
+
+<figure style="margin:20px 0 8px">
+<img src="{{ '/assets/img/infographic-dostarlimab-organ-preservation.svg' | relative_url }}" alt="Organ-preservation pathway for MSI-H or dMMR locally advanced rectal cancer: test, treat with dostarlimab, then watch-and-wait or salvage" width="1200" height="680" style="width:100%;height:auto;border-radius:12px;border:1px solid #e3ecee;background:#fbfaf6">
+<figcaption class="meta"><a href="{{ '/dostarlimab-organ-preservation-pathway/' | relative_url }}">Open the organ-preservation pathway illustration</a> · Original Oncosphere graphic, 5 Nov 2026</figcaption>
+</figure>
+
 
 ## Background
 About 5–10% of rectal cancers are mismatch-repair deficient. The landmark single-centre study from Memorial Sloan Kettering (Cercek et al., NEJM 2022) reported that the first 12 patients treated with dostarlimab alone had a clinical complete response, avoiding chemoradiation and surgery at the time of reporting.
