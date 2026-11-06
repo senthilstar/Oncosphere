@@ -12,6 +12,30 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42933160/"
   },
   {
+    "pmid": "42901134",
+    "title": "Thermosensitive and tumor-targeted asparaginase fusion protein enables metabolic-immunotherapy for solid tumors.",
+    "journal": "Biomaterials",
+    "pubdate": "2027 Mar",
+    "authors": [
+      "Gong L",
+      "Wang X",
+      "Zheng Y",
+      "Liu S",
+      "Zhang F",
+      "Sun Y",
+      "Qi Y",
+      "Han L",
+      "Gong Y",
+      "Huang S",
+      "Han C",
+      "Xie J",
+      "Zhu S",
+      "Wei X",
+      "Gao W"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42901134/"
+  },
+  {
     "pmid": "42898639",
     "title": "Cytotoxic T lymphocyte-inspired nanotherapeutics chaperoning granzyme B for tumor immune remodeling.",
     "journal": "Bioactive materials",
@@ -29,6 +53,42 @@
       "Shi L"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42898639/"
+  },
+  {
+    "pmid": "42896419",
+    "title": "Genetically engineering mast cells as effectors for targeted cancer cell cytotoxicity.",
+    "journal": "Biomaterials",
+    "pubdate": "2027 Mar",
+    "authors": [
+      "Han X",
+      "Wen D",
+      "Fu R",
+      "Soto J",
+      "Song Y",
+      "Wu Y",
+      "Wang Z",
+      "Lin X",
+      "Yu J",
+      "Sheng T",
+      "Li S",
+      "Gu Z",
+      "He K"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42896419/"
+  },
+  {
+    "pmid": "42874514",
+    "title": "A self-assembled hydrophobic polymer tagged nanoplatform for membrane protein degradation and immunomodulatory drug delivery.",
+    "journal": "Biomaterials",
+    "pubdate": "2027 Mar",
+    "authors": [
+      "Lee S",
+      "Park M",
+      "Jeon S",
+      "Byun H",
+      "Kim WJ"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42874514/"
   },
   {
     "pmid": "42874359",
@@ -215,54 +275,5 @@
       "Lin M"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42901111/"
-  },
-  {
-    "pmid": "42892232",
-    "title": "A logic-gated DNA nanocascade for dual-RNA imaging in a triple-negative breast cancer cell model.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Liu G",
-      "Zhen J",
-      "Shan H",
-      "Zang Y",
-      "Li Y",
-      "He P",
-      "Zhou H",
-      "Wang Q"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42892232/"
-  },
-  {
-    "pmid": "42879935",
-    "title": "Fibroblast activation protein-α-triggered photoacoustic signal \"on\" for pancreatic tumor imaging.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Tang R",
-      "Zhang Z",
-      "Zhu L",
-      "Xu HD",
-      "Zhang T",
-      "Yang Y",
-      "Zhan W",
-      "Zhou S",
-      "Liang G"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42879935/"
-  },
-  {
-    "pmid": "42858627",
-    "title": "An Ago-mediated duplex biosensing platform with orthogonal electrochemical coding for microRNA detection based on TDN interfaces and UiO-66-NH(2) nanocarriers.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Li H",
-      "Wu K",
-      "Li H",
-      "Kong J",
-      "Chen H"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42858627/"
   }
 ]

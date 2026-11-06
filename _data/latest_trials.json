@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT03150329",
-    "title": "Pembrolizumab and Vorinostat in Patients With Relapsed or Refractory DLBCL, FCL or HL.",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE1",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT03150329"
-  },
-  {
-    "nct": "NCT07914101",
-    "title": "Sequential Chemotherapy Followed by Ultrahypofractionated Radiotherapy for Muscle-Invasive Bladder Cancer",
+    "nct": "NCT07535918",
+    "title": "Using e-Technologies to Maximize Physical Activity After Cancer Treatment",
     "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE3",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT07914101"
-  },
-  {
-    "nct": "NCT07539311",
-    "title": "Study to Assess the Efficacy and Safety of Rina-S in Participants With Advanced Gastrointestinal (GI) Cancers",
-    "status": "RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT07539311"
-  },
-  {
-    "nct": "NCT05498428",
-    "title": "A Study of Amivantamab in Participants With Advanced or Metastatic Solid Tumors Including Epidermal Growth Factor Receptor (EGFR)-Mutated Non-Small Cell Lung Cancer",
-    "status": "RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT05498428"
-  },
-  {
-    "nct": "NCT07107230",
-    "title": "A Study of JNJ-95437446 in Participants With Advanced-Stage Solid Tumors",
-    "status": "RECRUITING",
-    "phase": "PHASE1",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT07107230"
-  },
-  {
-    "nct": "NCT04358913",
-    "title": "MR Imaging Study Using the Northern Alberta Linac-MR (Northern LIGHTs - 1)",
-    "status": "RECRUITING",
     "phase": "NA",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT04358913"
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT07535918"
   },
   {
-    "nct": "NCT06800313",
-    "title": "Study of HLD-0915 (JNJ-101556143) in Patients With Metastatic Prostate Cancer",
-    "status": "RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT06800313"
-  },
-  {
-    "nct": "NCT06303505",
-    "title": "FiH Study to Investigate Safety, PK and Efficacy of the NaPi2b ADC TUB-040 in Patients With PROC or r/r Adenocarcinoma NSCLC",
-    "status": "RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT06303505"
-  },
-  {
-    "nct": "NCT07914556",
-    "title": "Phase 1 Study of 6MW5311 in Adults With Relapsed or Refractory Blood Cancers",
+    "nct": "NCT07672483",
+    "title": "IL-12 Genetically Engineered Myeloid Cells in Participants With Relapsed, Refractory Solid Tumors",
     "status": "RECRUITING",
     "phase": "PHASE1",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT07914556"
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT07672483"
   },
   {
-    "nct": "NCT01987999",
-    "title": "A Nutraceutical Intervention in Patients With Previously Untreated Human Prostate Cancer",
+    "nct": "NCT06045065",
+    "title": "Preclinical Brain Tumor Models",
     "status": "COMPLETED",
-    "phase": "PHASE2",
-    "updated": "2026-11-03",
-    "url": "https://clinicaltrials.gov/study/NCT01987999"
+    "phase": "Not applicable",
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT06045065"
+  },
+  {
+    "nct": "NCT00730678",
+    "title": "Pharmacogenetic Determinants Of Treatment Response In Children",
+    "status": "RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT00730678"
+  },
+  {
+    "nct": "NCT00027274",
+    "title": "Cancer in Inherited Bone Marrow Failure Syndromes",
+    "status": "RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT00027274"
+  },
+  {
+    "nct": "NCT07619534",
+    "title": "Collection of CSF Samples From Participants With Metastatic Triple Negative Breast Cancer (TNBC) and HER2+ Breast Cancer With no Prior History Nor Active Radiographically Detectable Brain Metastases",
+    "status": "RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT07619534"
+  },
+  {
+    "nct": "NCT07918755",
+    "title": "Development and Validation of a Biopsy Decision Model for Nasopharyngeal Carcinoma Based on Serological Markers and Endoscopic Features",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT07918755"
+  },
+  {
+    "nct": "NCT07867262",
+    "title": "A Study to Evaluate the Effects of GDC-4198 in Combination With Letrozole, Fulvestrant, or Giredestrant in Participants With Locally Advanced or Metastatic Hormone Receptor-Positive, HER2-Negatve Breast Cancer",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE1",
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT07867262"
+  },
+  {
+    "nct": "NCT02992964",
+    "title": "Pilot Study of Nivolumab in Pediatric Patients With Hypermutant Cancers",
+    "status": "TERMINATED",
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT02992964"
+  },
+  {
+    "nct": "NCT07919730",
+    "title": "Rowing-Based Exercise Intervention on Health and Quality of Life in Breast Cancer Survivors",
+    "status": "COMPLETED",
+    "phase": "NA",
+    "updated": "2026-11-05",
+    "url": "https://clinicaltrials.gov/study/NCT07919730"
   }
 ]
