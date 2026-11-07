@@ -42,5 +42,5 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 - [Three oncology FDA decisions to watch in November 2026]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }})
 
 ## Conferences {#conferences}
-- [ESMO 2026 Madrid hub]({{ '/esmo-2026/' | relative_url }}) · [ESMO 2026 week update (2–6 Nov)]({{ '/esmo-2026-week-update/' | relative_url }}) · [Best of cancer media]({{ '/best-of/' | relative_url }})
+- [ESMO 2026 Madrid hub]({{ '/esmo-2026/' | relative_url }}) · [ESMO 2026 week update (2–6 Nov)]({{ '/esmo-2026-week-update/' | relative_url }}) · [ESMO 2026 trial matching game]({{ '/esmo-2026-match/' | relative_url }}) · [Best of cancer media]({{ '/best-of/' | relative_url }})
 </div>

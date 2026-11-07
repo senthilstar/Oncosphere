@@ -16,6 +16,7 @@ Between 2 and 6 November 2026 the Oncosphere ESMO Madrid coverage moved from fou
 - **NEJM companion** — [HEALER and OptiTROP-Lung06]({{ '/esmo-2026-china-phase-3-healer-optitrop-lung06/' | relative_url }}) — two China-run phase 3s published with ESMO, not in the Presidential slot
 - **Forest plot** — [Hazard ratios for all 10 trials]({{ '/esmo-2026-forest-plot/' | relative_url }}) — one-page visual of headline and OS HRs with 95% CIs
 - **Trial quiz** — [10 interactive questions]({{ '/esmo-2026-quiz/' | relative_url }}) — self-test keyed to the three trial pages
+- **Trial matching game** — [match 10 trials to disease or regimen]({{ '/esmo-2026-match/' | relative_url }}) — click-to-pair self-test keyed to the same pages
 - **Hub** — [ESMO 2026 Madrid hub]({{ '/esmo-2026/' | relative_url }}) — index of all of the above
 
 ## How the ten trials fit together
@@ -52,7 +53,7 @@ The [trial quiz]({{ '/esmo-2026-quiz/' | relative_url }}) (2 Nov) asks ten quest
 1. Skim this page for the map.
 2. Open Symposium I, then Symposium II, then the HEALER/OptiTROP note for tables, toxicity and regulatory caveats.
 3. Use the forest plot to lock the HRs visually.
-4. Run the quiz once.
+4. Run the quiz once, or try the [matching game]({{ '/esmo-2026-match/' | relative_url }}).
 
 Hub index: [ESMO 2026 Madrid]({{ '/esmo-2026/' | relative_url }}). Related: [FDA decisions to watch in November 2026]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }}) (ivonescimab, neladalkib, giredestrant PDUFA dates — separate from the Madrid LBAs).
 
