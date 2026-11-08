@@ -77,20 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42896419/"
   },
   {
-    "pmid": "42874514",
-    "title": "A self-assembled hydrophobic polymer tagged nanoplatform for membrane protein degradation and immunomodulatory drug delivery.",
-    "journal": "Biomaterials",
-    "pubdate": "2027 Mar",
-    "authors": [
-      "Lee S",
-      "Park M",
-      "Jeon S",
-      "Byun H",
-      "Kim WJ"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42874514/"
-  },
-  {
     "pmid": "42874359",
     "title": "An aggregation-induced emission fluorescent microsphere-based intelligent lateral flow immunosensor for rapid and quantitative detection of prostate-specific antigen.",
     "journal": "Talanta",
@@ -270,5 +256,21 @@
       "Liang G"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42879935/"
+  },
+  {
+    "pmid": "42918430",
+    "title": "Osteopontin primary transcript generates exonic circRNA molecules by back splicing in tumor cell lines.",
+    "journal": "Gene",
+    "pubdate": "2027 Jan 10",
+    "authors": [
+      "Mendonça de Mattos MM",
+      "Martins Vargas SO",
+      "Robertson LT",
+      "de Oliveira Pereira I",
+      "Mattos DS",
+      "Silva GR",
+      "Pereira Gimba ER"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42918430/"
   }
 ]
