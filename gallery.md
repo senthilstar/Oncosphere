@@ -10,6 +10,7 @@ permalink: /gallery/
 <section class="wrap block">
 <h2 id="infographics">Infographics</h2>
 <div class="gallery infographic-gallery">
+<a href="/rybrevant-faspro-hnscc-fda-approval/"><figure><img src="/assets/img/infographic-origami-4-rybrevant-faspro-hnscc.svg" alt="OrigAMI-4: subcutaneous amivantamab in pretreated head and neck squamous cell carcinoma" loading="lazy"><figcaption>OrigAMI-4 · Rybrevant Faspro in pretreated HNSCC · Original Oncosphere graphic (8 Nov 2026)</figcaption></figure></a>
 <a href="/advanced-bladder-urothelial-cancer/"><figure><img src="/assets/img/infographic-ev302.jpg" alt="EV-302: advanced urothelial cancer trial infographic" loading="lazy"><figcaption>EV-302: advanced urothelial cancer · Original Oncosphere graphic</figcaption></figure></a>
 <a href="/flaura-2-trial/"><figure><img src="/assets/img/infographic-flaura2.jpg" alt="FLAURA2: EGFR-mutated lung cancer trial infographic" loading="lazy"><figcaption>FLAURA2: EGFR-mutated lung cancer · Original Oncosphere graphic</figcaption></figure></a>
 <a href="/destiny-breast-11-trial/"><figure><img src="/assets/img/infographic-destiny-breast11.jpg" alt="DESTINY-Breast11: HER2-positive early breast cancer trial infographic" loading="lazy"><figcaption>DESTINY-Breast11: HER2-positive early breast cancer · Original Oncosphere graphic</figcaption></figure></a>

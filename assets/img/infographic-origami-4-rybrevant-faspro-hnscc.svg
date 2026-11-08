@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">OrigAMI-4 at a glance: subcutaneous amivantamab (Rybrevant Faspro) in pretreated head and neck squamous cell carcinoma</title>
+  <desc id="desc">Educational infographic of the 5 November 2026 US FDA accelerated approval. OrigAMI-4 cohort 1, 102 patients: overall response rate 42 percent (95 percent CI 32 to 52), including complete responses in 15 percent and partial responses in 28 percent; 56 percent of responders had a duration of response of at least 6 months (range 1.4+ to 19.7+ months). Not indicated for HPV-associated oropharyngeal cancer. Figures from the FDA approval notice and the Johnson and Johnson 5 November 2026 release citing the US prescribing information. No clinician name on this graphic.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2a3d"/>
+      <stop offset="55%" stop-color="#1f7a8c"/>
+      <stop offset="100%" stop-color="#3aa6a0"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f2a3d" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" rx="18" fill="#fbfaf6"/>
+  <rect x="0" y="0" width="1200" height="88" fill="url(#bg)"/>
+  <text x="40" y="38" fill="#ffffff" font-family="DM Sans, system-ui, sans-serif" font-size="26" font-weight="700">OrigAMI-4: pretreated recurrent or metastatic HNSCC</text>
+  <text x="40" y="68" fill="#d7ecec" font-family="DM Sans, system-ui, sans-serif" font-size="15">Subcutaneous amivantamab + hyaluronidase (Rybrevant Faspro) · FDA accelerated approval 5 Nov 2026 · educational, not a treatment algorithm</text>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="116" width="360" height="188" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="60" y="148" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="15" font-weight="700">Who it is for</text>
+  <text x="60" y="178" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Adults with recurrent / metastatic HNSCC</text>
+  <text x="60" y="200" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">after platinum AND an anti-PD-(L)1</text>
+  <text x="60" y="222" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">antibody</text>
+  <rect x="60" y="242" width="320" height="42" rx="10" fill="#fff7ea"/>
+  <text x="220" y="268" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="700">Not for HPV-associated OPSCC (p16)</text>
+
+  <g filter="url(#shadow)">
+    <rect x="420" y="116" width="360" height="188" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="440" y="148" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="15" font-weight="700">Trial</text>
+  <text x="440" y="178" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">OrigAMI-4 Cohort 1 · NCT06385080</text>
+  <text x="440" y="200" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Phase 1b/2 · open-label · multicentre</text>
+  <text x="440" y="222" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">n=102 · BICR · RECIST v1.1</text>
+  <rect x="440" y="242" width="320" height="42" rx="10" fill="#eef8f3"/>
+  <text x="600" y="268" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="700">Weight-based SC dose every 3 weeks</text>
+
+  <g filter="url(#shadow)">
+    <rect x="800" y="116" width="360" height="188" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="820" y="148" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="15" font-weight="700">What it is</text>
+  <text x="820" y="178" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Amivantamab + hyaluronidase-lpuj</text>
+  <text x="820" y="200" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">EGFR × MET bispecific antibody</text>
+  <text x="820" y="222" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">First dual-targeted approval here (sponsor)</text>
+  <rect x="820" y="242" width="320" height="42" rx="10" fill="#f2f7f8"/>
+  <text x="980" y="268" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="13" font-weight="700">Janssen Biotech · US accelerated approval</text>
+
+  <text x="40" y="344" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="18" font-weight="700">What OrigAMI-4 showed</text>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="364" width="360" height="150" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="220" y="400" text-anchor="middle" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="14">Overall response rate (BICR)</text>
+  <text x="220" y="452" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="42" font-weight="700">42%</text>
+  <text x="220" y="488" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">95% CI 32–52%</text>
+
+  <g filter="url(#shadow)">
+    <rect x="420" y="364" width="360" height="150" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="600" y="400" text-anchor="middle" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="14">Responses included (sponsor / PI)</text>
+  <text x="510" y="452" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="32" font-weight="700">15%</text>
+  <text x="510" y="480" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="13">complete</text>
+  <text x="690" y="452" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="32" font-weight="700">28%</text>
+  <text x="690" y="480" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="13">partial</text>
+
+  <g filter="url(#shadow)">
+    <rect x="800" y="364" width="360" height="150" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="980" y="400" text-anchor="middle" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="14">Duration of response</text>
+  <text x="980" y="452" text-anchor="middle" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="42" font-weight="700">56%</text>
+  <text x="980" y="488" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="700">of responders lasted ≥6 months</text>
+
+  <text x="40" y="548" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="13">ORR on a 0–100% scale, with the 95% confidence interval marked. Not a comparison with another trial.</text>
+  <rect x="40" y="560" width="1120" height="22" rx="11" fill="#e7eef0"/>
+  <rect x="40" y="560" width="470.4" height="22" rx="11" fill="#1f7a8c"/>
+  <line x1="398.4" y1="556" x2="398.4" y2="586" stroke="#0f2a3d" stroke-width="2"/>
+  <line x1="622.4" y1="556" x2="622.4" y2="586" stroke="#0f2a3d" stroke-width="2"/>
+  <line x1="398.4" y1="571" x2="622.4" y2="571" stroke="#0f2a3d" stroke-width="2"/>
+  <text x="398.4" y="606" text-anchor="middle" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">32%</text>
+  <text x="510.4" y="606" text-anchor="middle" fill="#0f2a3d" font-family="DM Sans, system-ui, sans-serif" font-size="12" font-weight="700">42%</text>
+  <text x="622.4" y="606" text-anchor="middle" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">52%</text>
+  <text x="1160" y="606" text-anchor="end" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="12">100%</text>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="624" width="1120" height="118" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+  </g>
+  <text x="60" y="654" fill="#1f7a8c" font-family="DM Sans, system-ui, sans-serif" font-size="15" font-weight="700">Safety in OrigAMI-4 (n=102) and what comes next</text>
+  <text x="60" y="678" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Most common adverse reactions (≥20%): rash 79% · fatigue 39% · nail toxicity 35% · stomatitis 32% · oedema 28%</text>
+  <text x="60" y="700" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Serious adverse reactions 39% · fatal adverse reactions 6% (sudden death 2%; myocardial ischaemia, tumour haemorrhage, aspiration pneumonia, ILD/pneumonitis 1% each)</text>
+  <text x="60" y="722" fill="#14202b" font-family="DM Sans, system-ui, sans-serif" font-size="14">Label warnings: hypersensitivity / administration-related reactions, ILD/pneumonitis, dermatologic reactions, ocular toxicity, embryo-fetal toxicity</text>
+
+  <text x="40" y="770" fill="#5b6b78" font-family="DM Sans, system-ui, sans-serif" font-size="13">Confirmatory trial: OrigAMI-5 (NCT07276399), phase 3 first-line. DOR range among responders: 1.4+ to 19.7+ months (sponsor / PI). Sources: FDA 5 Nov 2026; J&amp;J 5 Nov 2026 citing US PI. No clinician name on this graphic.</text>
+</svg>

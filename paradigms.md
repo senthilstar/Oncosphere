@@ -38,6 +38,7 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 8 Nov 2026: Rybrevant Faspro (amivantamab) for pretreated HNSCC]({{ '/rybrevant-faspro-hnscc-fda-approval/' | relative_url }})
 - [FDA oncology approvals, October 2026]({{ '/fda-oncology-approvals-october-2026/' | relative_url }})
 - [Three oncology FDA decisions to watch in November 2026]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }})
 
