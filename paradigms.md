@@ -17,6 +17,7 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 
 ## Lung {#lung}
 - [FLAURA2 — osimertinib + chemotherapy]({{ '/flaura-2-trial/' | relative_url }})
+- [New 9 Nov 2026: lung cancer staging puzzle (TNM 9th edition, 10 cases)]({{ '/lung-cancer-staging-puzzle/' | relative_url }})
 
 ## Breast {#breast}
 - [DESTINY-Breast11]({{ '/destiny-breast-11-trial/' | relative_url }})
