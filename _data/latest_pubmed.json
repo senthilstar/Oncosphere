@@ -93,6 +93,22 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42874359/"
   },
   {
+    "pmid": "42999803",
+    "title": "Outcomes of Patients with Rare Cancers Treated with Immune Checkpoint Inhibitors with and Without Lung and/or Liver Metastases (NCI/SWOG S1609).",
+    "journal": "Journal of immunotherapy and precision oncology",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Wang Y",
+      "Othus M",
+      "Chae YK",
+      "Davies M",
+      "Dietrich E",
+      "Patel SP",
+      "Kurzrock R"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42999803/"
+  },
+  {
     "pmid": "42960010",
     "title": "Nanobiomechanics in Oncology: Atomic Force Microscopy for Cancer Mechanophenotyping Using Cellular Young's Modulus.",
     "journal": "Journal of the Royal Society of New Zealand",
@@ -256,21 +272,5 @@
       "Liang G"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42879935/"
-  },
-  {
-    "pmid": "42918430",
-    "title": "Osteopontin primary transcript generates exonic circRNA molecules by back splicing in tumor cell lines.",
-    "journal": "Gene",
-    "pubdate": "2027 Jan 10",
-    "authors": [
-      "Mendonça de Mattos MM",
-      "Martins Vargas SO",
-      "Robertson LT",
-      "de Oliveira Pereira I",
-      "Mattos DS",
-      "Silva GR",
-      "Pereira Gimba ER"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42918430/"
   }
 ]
