@@ -1,7 +1,7 @@
 ---
 title: "EGFR-mutant NSCLC after osimertinib: the 2026 phase 3 evidence, ahead of the 14 Nov FDA decision"
 cover: lung
-updated: 2026-11-09
+updated: 2026-11-10
 category: Perspective
 audience: clinicians
 summary: "Four randomised phase 3 trials now test new options against platinum–pemetrexed after third-generation EGFR TKI failure: SAFFRON (osimertinib + savolitinib, MET-driven), HERON-Lung01 (HER3 ADC), PANKU-Lung01 (EGFR×HER3 bispecific ADC) and HARMONi (ivonescimab + chemo, FDA decision 14 Nov). Only SAFFRON has a statistically significant OS gain so far."
@@ -39,6 +39,11 @@ Progression on osimertinib is the most common decision point in EGFR-mutant NSCL
 All comparators: platinum + pemetrexed, then pemetrexed maintenance (HARMONi: placebo + platinum doublet). "—" means we have not verified the exact number for this note.
 
 {% include chart.html title="Median PFS: new agent vs platinum–pemetrexed (months)" labels="SAFFRON|HERON-Lung01|PANKU-Lung01" values="7.6|8.3|11.1" max="12" unit=" mo" note="Control arms: 5.4, 5.4 and 5.7 months. Different populations and follow-up; not a head-to-head comparison." %}
+
+<figure class="reveal" style="margin:1.5rem 0">
+<img src="{{ '/assets/img/illustration-egfr-nsclc-after-osimertinib.svg' | relative_url }}" alt="Illustration: four strategies after osimertinib in EGFR-mutant NSCLC. On the tumour cell, savolitinib with continued osimertinib blocks MET bypass signalling; ruzaltatug rezetecan is a HER3-directed ADC; izalontamab brengitecan is an EGFR by HER3 bispecific ADC. In the microenvironment, ivonescimab binds PD-1 on T cells and VEGF. Median PFS versus platinum–pemetrexed: SAFFRON 7.6 vs 5.4 months (HR 0.55, OS HR 0.68 significant); HERON-Lung01 8.3 vs 5.4 months (HR 0.47, OS immature); PANKU-Lung01 11.1 vs 5.7 months (HR 0.40, OS immature); HARMONi PFS significant, primary OS HR 0.79 not significant, FDA decision 14 November 2026." width="1200" height="800" loading="lazy" style="width:100%;height:auto;border-radius:14px;border:1px solid #e3ecee;background:#fbfaf6">
+<figcaption><strong>New illustration (10 Nov 2026):</strong> where each post-osimertinib strategy acts — MET bypass (SAFFRON), HER3 ADC (HERON-Lung01), EGFR×HER3 bispecific ADC (PANKU-Lung01) and PD-1×VEGF bispecific antibody (HARMONi). Schematic; figures are those in the table above, from the cited trial publications. Not a head-to-head comparison.</figcaption>
+</figure>
 
 ## SAFFRON — the biomarker-driven option
 - Osimertinib continued plus savolitinib, in tumours with MET overexpression, amplification or both.

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">After osimertinib: four phase 3 strategies and the targets they hit in EGFR-mutant NSCLC</title>
+  <desc id="desc">Schematic illustration. On a tumour cell, savolitinib (with continued osimertinib) blocks MET signalling; ruzaltatug rezetecan is a HER3-directed antibody-drug conjugate; izalontamab brengitecan is an EGFR by HER3 bispecific antibody-drug conjugate. In the tumour microenvironment, ivonescimab binds PD-1 on T cells and VEGF. All four were compared with platinum plus pemetrexed. Median PFS: SAFFRON 7.6 vs 5.4 months (HR 0.55); HERON-Lung01 8.3 vs 5.4 months (HR 0.47); PANKU-Lung01 11.1 vs 5.7 months (HR 0.40); HARMONi PFS significant, primary OS HR 0.79 not significant, FDA decision due 14 November 2026. Only SAFFRON has a statistically significant overall survival gain (HR 0.68). Not a head-to-head comparison.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2a3d"/>
+      <stop offset="55%" stop-color="#1f7a8c"/>
+      <stop offset="100%" stop-color="#3aa6a0"/>
+    </linearGradient>
+    <linearGradient id="cyto" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde9e2"/>
+      <stop offset="100%" stop-color="#f8d3c6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f2a3d" flood-opacity="0.16"/>
+    </filter>
+    <g id="payload"><circle r="5" fill="#e0a100" stroke="#8a6200" stroke-width="1.2"/></g>
+  </defs>
+
+  <rect width="1200" height="800" rx="18" fill="#fbfaf6"/>
+  <rect x="0" y="0" width="1200" height="88" fill="url(#bg)"/>
+  <text x="40" y="40" fill="#ffffff" font-family="DM Sans, system-ui, sans-serif" font-size="28" font-weight="700">After osimertinib: four phase 3 strategies, four kinds of target</text>
+  <text x="40" y="70" fill="#d9f1ef" font-family="DM Sans, system-ui, sans-serif" font-size="17">EGFR-mutant advanced NSCLC · every trial used platinum–pemetrexed as the comparator · schematic, not to scale</text>
+
+  <!-- ===== Tumour cell panel ===== -->
+  <g font-family="DM Sans, system-ui, sans-serif">
+    <text x="40" y="118" font-size="15" font-weight="700" fill="#0f2a3d" letter-spacing="1">TUMOUR CELL</text>
+    <!-- extracellular space -->
+    <rect x="40" y="128" width="720" height="104" rx="10" fill="#eef6f7"/>
+    <!-- membrane -->
+    <rect x="40" y="232" width="720" height="18" fill="#c97b63"/>
+    <line x1="40" y1="236" x2="760" y2="236" stroke="#e8b3a1" stroke-width="2" stroke-dasharray="6 5"/>
+    <line x1="40" y1="246" x2="760" y2="246" stroke="#e8b3a1" stroke-width="2" stroke-dasharray="6 5"/>
+    <!-- cytoplasm -->
+    <rect x="40" y="250" width="720" height="146" rx="10" fill="url(#cyto)"/>
+    <text x="745" y="388" font-size="13" fill="#9a4f3a" text-anchor="end">cytoplasm</text>
+    <text x="200" y="222" font-size="13" fill="#4d7a85">outside the cell</text>
+
+    <!-- MET receptor -->
+    <g transform="translate(150,0)">
+      <path d="M -16 150 L 0 190 L 16 150" fill="none" stroke="#7b4bb3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="-6" y="188" width="12" height="102" fill="#7b4bb3"/>
+      <rect x="-20" y="290" width="40" height="30" rx="8" fill="#7b4bb3"/>
+      <text x="0" y="310" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">kinase</text>
+      <text x="-30" y="168" font-size="16" fill="#4b2a77" font-weight="700" text-anchor="end">MET</text>
+      <text x="-30" y="186" font-size="12" fill="#4b2a77" text-anchor="end">bypass track</text>
+      <!-- savolitinib -->
+      <rect x="28" y="290" width="104" height="30" rx="15" fill="#ffffff" stroke="#7b4bb3" stroke-width="2.5"/>
+      <text x="80" y="310" font-size="13" fill="#4b2a77" text-anchor="middle" font-weight="700">savolitinib</text>
+      <line x1="28" y1="305" x2="22" y2="305" stroke="#7b4bb3" stroke-width="3"/>
+    </g>
+
+    <!-- EGFR receptor (mutant) -->
+    <g transform="translate(400,0)">
+      <path d="M -16 150 L 0 190 L 16 150" fill="none" stroke="#1f7a8c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="-6" y="188" width="12" height="102" fill="#1f7a8c"/>
+      <rect x="-20" y="290" width="40" height="30" rx="8" fill="#1f7a8c"/>
+      <circle cx="14" cy="292" r="7" fill="#d1495b"/>
+      <text x="0" y="310" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">kinase</text>
+      <text x="-26" y="172" font-size="16" fill="#0f4f5c" font-weight="700" text-anchor="end">EGFR</text>
+      <text x="-26" y="190" font-size="12" fill="#0f4f5c" text-anchor="end">ex19del / L858R</text>
+      <!-- osimertinib -->
+      <rect x="-60" y="334" width="120" height="30" rx="15" fill="#ffffff" stroke="#1f7a8c" stroke-width="2.5"/>
+      <text x="0" y="354" font-size="13" fill="#0f4f5c" text-anchor="middle" font-weight="700">osimertinib</text>
+      <line x1="0" y1="334" x2="0" y2="322" stroke="#1f7a8c" stroke-width="3"/>
+    </g>
+
+    <!-- HER3 receptor -->
+    <g transform="translate(600,0)">
+      <path d="M -16 150 L 0 190 L 16 150" fill="none" stroke="#c0571a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="-6" y="188" width="12" height="102" fill="#c0571a"/>
+      <rect x="-20" y="290" width="40" height="30" rx="8" fill="#c0571a"/>
+      <text x="0" y="310" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">HER3</text>
+      <text x="-14" y="216" font-size="16" fill="#7a3510" font-weight="700" text-anchor="end">HER3</text>
+    </g>
+
+    <!-- iza-bren: bispecific ADC bridging EGFR and HER3 -->
+    <g>
+      <path d="M 416 148 C 440 128, 470 128, 500 140 C 530 128, 560 128, 584 148" fill="none" stroke="#2a9d6f" stroke-width="7" stroke-linecap="round"/>
+      <line x1="500" y1="140" x2="500" y2="200" stroke="#2a9d6f" stroke-width="7" stroke-linecap="round"/>
+      <use href="#payload" x="490" y="212"/><use href="#payload" x="510" y="212"/><use href="#payload" x="500" y="224"/>
+      <text x="500" y="122" font-size="13" fill="#1b6e4c" font-weight="700" text-anchor="middle">iza-bren (EGFR×HER3 ADC)</text>
+    </g>
+
+    <!-- ruzaltatug rezetecan: HER3 ADC (sideways antibody binding HER3) -->
+    <g>
+      <line x1="622" y1="160" x2="640" y2="170" stroke="#d1495b" stroke-width="6" stroke-linecap="round"/>
+      <line x1="622" y1="180" x2="640" y2="170" stroke="#d1495b" stroke-width="6" stroke-linecap="round"/>
+      <line x1="640" y1="170" x2="668" y2="170" stroke="#d1495b" stroke-width="7" stroke-linecap="round"/>
+      <use href="#payload" x="677" y="163"/><use href="#payload" x="677" y="178"/>
+      <text x="690" y="160" font-size="12" fill="#9c2738" font-weight="700">ruzaltatug</text>
+      <text x="690" y="175" font-size="12" fill="#9c2738" font-weight="700">rezetecan</text>
+      <text x="690" y="190" font-size="11" fill="#9c2738">(HER3 ADC)</text>
+    </g>
+
+    <!-- legend -->
+    <use href="#payload" x="60" y="378"/>
+    <text x="72" y="383" font-size="12" fill="#5a4630">= cytotoxic payload carried by an ADC</text>
+    <circle cx="300" cy="378" r="6" fill="#d1495b"/>
+    <text x="312" y="383" font-size="12" fill="#5a4630">= activating EGFR mutation</text>
+  </g>
+
+  <!-- ===== Microenvironment panel ===== -->
+  <g font-family="DM Sans, system-ui, sans-serif">
+    <text x="790" y="118" font-size="15" font-weight="700" fill="#0f2a3d" letter-spacing="1">TUMOUR MICROENVIRONMENT</text>
+    <rect x="790" y="128" width="370" height="268" rx="10" fill="#f1f4fa"/>
+    <!-- T cell -->
+    <circle cx="880" cy="300" r="58" fill="#dfe8fb" stroke="#3b5ba5" stroke-width="3"/>
+    <text x="880" y="298" font-size="15" fill="#22396f" text-anchor="middle" font-weight="700">T cell</text>
+    <text x="880" y="316" font-size="12" fill="#22396f" text-anchor="middle">(held back by PD-1)</text>
+    <!-- PD-1 receptor -->
+    <line x1="925" y1="263" x2="944" y2="244" stroke="#3b5ba5" stroke-width="7" stroke-linecap="round"/>
+    <text x="900" y="232" font-size="13" fill="#22396f" font-weight="700">PD-1</text>
+    <!-- vessel -->
+    <path d="M 1060 140 C 1040 220, 1090 290, 1070 390" fill="none" stroke="#c0392b" stroke-width="30" stroke-linecap="round" opacity="0.85"/>
+    <text x="1090" y="372" font-size="12" fill="#8e2a20">vessel</text>
+    <!-- VEGF dimers -->
+    <g fill="#e67e22" stroke="#9a4f0e" stroke-width="1.2">
+      <circle cx="1018" cy="222" r="7"/><circle cx="1030" cy="230" r="7"/>
+      <circle cx="1010" cy="300" r="7"/><circle cx="1022" cy="308" r="7"/>
+    </g>
+    <text x="1004" y="266" font-size="13" fill="#9a4f0e" font-weight="700" text-anchor="end">VEGF</text>
+    <!-- ivonescimab bispecific -->
+    <path d="M 948 240 C 960 190, 990 186, 1012 214" fill="none" stroke="#f0a202" stroke-width="7" stroke-linecap="round"/>
+    <text x="975" y="166" font-size="13" fill="#8a5a00" font-weight="700" text-anchor="middle">ivonescimab</text>
+    <text x="975" y="182" font-size="12" fill="#8a5a00" text-anchor="middle">(PD-1×VEGF bispecific)</text>
+  </g>
+
+  <!-- ===== Trial cards ===== -->
+  <g font-family="DM Sans, system-ui, sans-serif">
+    <!-- SAFFRON -->
+    <g transform="translate(40,420)" filter="url(#shadow)">
+      <rect width="270" height="300" rx="14" fill="#ffffff" stroke="#7b4bb3" stroke-width="2"/>
+      <rect width="270" height="8" rx="4" fill="#7b4bb3"/>
+      <text x="18" y="38" font-size="20" font-weight="700" fill="#4b2a77">SAFFRON</text>
+      <text x="18" y="60" font-size="13" fill="#333">Osimertinib + savolitinib</text>
+      <text x="18" y="78" font-size="13" fill="#333">EGFR TKI + MET TKI</text>
+      <text x="18" y="104" font-size="12" fill="#666">Needs MET overexpression</text>
+      <text x="18" y="120" font-size="12" fill="#666">and/or amplification</text>
+      <text x="18" y="158" font-size="13" fill="#666">Median PFS</text>
+      <text x="18" y="188" font-size="26" font-weight="700" fill="#4b2a77">7.6 vs 5.4 mo</text>
+      <text x="18" y="210" font-size="14" fill="#333">HR 0.55</text>
+      <rect x="14" y="228" width="242" height="54" rx="10" fill="#ece3f7"/>
+      <text x="26" y="250" font-size="13" font-weight="700" fill="#4b2a77">OS significant: HR 0.68</text>
+      <text x="26" y="270" font-size="12" fill="#4b2a77">17.8 vs 12.9 months</text>
+    </g>
+    <!-- HERON-Lung01 -->
+    <g transform="translate(326,420)" filter="url(#shadow)">
+      <rect width="270" height="300" rx="14" fill="#ffffff" stroke="#d1495b" stroke-width="2"/>
+      <rect width="270" height="8" rx="4" fill="#d1495b"/>
+      <text x="18" y="38" font-size="20" font-weight="700" fill="#9c2738">HERON-Lung01</text>
+      <text x="18" y="60" font-size="13" fill="#333">Ruzaltatug rezetecan</text>
+      <text x="18" y="78" font-size="13" fill="#333">HER3-directed ADC</text>
+      <text x="18" y="104" font-size="12" fill="#666">After any EGFR TKI</text>
+      <text x="18" y="120" font-size="12" fill="#666">China only · n=498</text>
+      <text x="18" y="158" font-size="13" fill="#666">Median PFS</text>
+      <text x="18" y="188" font-size="26" font-weight="700" fill="#9c2738">8.3 vs 5.4 mo</text>
+      <text x="18" y="210" font-size="14" fill="#333">HR 0.47</text>
+      <rect x="14" y="228" width="242" height="54" rx="10" fill="#fbe4e7"/>
+      <text x="26" y="250" font-size="13" font-weight="700" fill="#9c2738">OS immature</text>
+      <text x="26" y="270" font-size="12" fill="#9c2738">HR 0.70 (0.43–1.14)</text>
+    </g>
+    <!-- PANKU-Lung01 -->
+    <g transform="translate(612,420)" filter="url(#shadow)">
+      <rect width="270" height="300" rx="14" fill="#ffffff" stroke="#2a9d6f" stroke-width="2"/>
+      <rect width="270" height="8" rx="4" fill="#2a9d6f"/>
+      <text x="18" y="38" font-size="20" font-weight="700" fill="#1b6e4c">PANKU-Lung01</text>
+      <text x="18" y="60" font-size="13" fill="#333">Izalontamab brengitecan</text>
+      <text x="18" y="78" font-size="13" fill="#333">EGFR×HER3 bispecific ADC</text>
+      <text x="18" y="104" font-size="12" fill="#666">After 3rd-gen EGFR TKI</text>
+      <text x="18" y="120" font-size="12" fill="#666">China only · n=432</text>
+      <text x="18" y="158" font-size="13" fill="#666">Median PFS</text>
+      <text x="18" y="188" font-size="26" font-weight="700" fill="#1b6e4c">11.1 vs 5.7 mo</text>
+      <text x="18" y="210" font-size="14" fill="#333">HR 0.40 · grade ≥3 TRAEs 79%</text>
+      <rect x="14" y="228" width="242" height="54" rx="10" fill="#dff3ea"/>
+      <text x="26" y="250" font-size="13" font-weight="700" fill="#1b6e4c">OS immature</text>
+      <text x="26" y="270" font-size="12" fill="#1b6e4c">12-mo OS 83.0% vs 72.9%</text>
+    </g>
+    <!-- HARMONi -->
+    <g transform="translate(898,420)" filter="url(#shadow)">
+      <rect width="262" height="300" rx="14" fill="#ffffff" stroke="#f0a202" stroke-width="2"/>
+      <rect width="262" height="8" rx="4" fill="#f0a202"/>
+      <text x="18" y="38" font-size="20" font-weight="700" fill="#8a5a00">HARMONi</text>
+      <text x="18" y="60" font-size="13" fill="#333">Ivonescimab + platinum–</text>
+      <text x="18" y="78" font-size="13" fill="#333">pemetrexed · PD-1×VEGF</text>
+      <text x="18" y="104" font-size="12" fill="#666">After 3rd-gen EGFR TKI</text>
+      <text x="18" y="120" font-size="12" fill="#666">Global</text>
+      <text x="18" y="158" font-size="13" fill="#666">Median PFS</text>
+      <text x="18" y="188" font-size="22" font-weight="700" fill="#8a5a00">Significant gain</text>
+      <text x="18" y="210" font-size="14" fill="#333">FDA decision due 14 Nov 2026</text>
+      <rect x="14" y="228" width="234" height="54" rx="10" fill="#fdf0d2"/>
+      <text x="26" y="250" font-size="13" font-weight="700" fill="#8a5a00">OS not significant</text>
+      <text x="26" y="270" font-size="12" fill="#8a5a00">Primary HR 0.79 (0.62–1.01)</text>
+    </g>
+  </g>
+
+  <text x="40" y="752" font-family="DM Sans, system-ui, sans-serif" font-size="13" fill="#4a5a60">Different populations, biomarker selection and follow-up: not a head-to-head comparison. None of these regimens is CDSCO-approved in India.</text>
+  <text x="40" y="774" font-family="DM Sans, system-ui, sans-serif" font-size="12" fill="#6b7a80">Sources: SAFFRON (NEJM; ESMO 2026 LBA6) · HERON-Lung01 and PANKU-Lung01 (The Lancet, 2026) · HARMONi (Summit Therapeutics, WCLC 2026). Original Oncosphere graphic · oncosphere.in</text>
+</svg>
