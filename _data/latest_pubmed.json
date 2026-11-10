@@ -197,6 +197,18 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42881042/"
   },
   {
+    "pmid": "42869735",
+    "title": "Thyroid Disease in the Era of Obesity and Glucagon-Like-Peptide-1 Agonists.",
+    "journal": "Otolaryngologic clinics of North America",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Coblens O",
+      "Dunmire A",
+      "Maldonado-Chapa F"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42869735/"
+  },
+  {
     "pmid": "42906309",
     "title": "A novel Co-SnO(2)/Rhodamine B composite as photoactive material with excellent photoelectrochemical performance for ultrasensitive detection of prostate cancer biomarker.",
     "journal": "Biosensors & bioelectronics",
@@ -254,23 +266,5 @@
       "Wang Q"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42892232/"
-  },
-  {
-    "pmid": "42879935",
-    "title": "Fibroblast activation protein-α-triggered photoacoustic signal \"on\" for pancreatic tumor imaging.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Tang R",
-      "Zhang Z",
-      "Zhu L",
-      "Xu HD",
-      "Zhang T",
-      "Yang Y",
-      "Zhan W",
-      "Zhou S",
-      "Liang G"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42879935/"
   }
 ]
