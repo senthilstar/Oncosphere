@@ -30,6 +30,7 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 - [Advanced bladder (urothelial) cancer]({{ '/advanced-bladder-urothelial-cancer/' | relative_url }})
 
 ## Sarcoma {#sarcoma}
+- [New 11 Nov 2026: pimicotinib for tenosynovial giant cell tumour (FDA approval)]({{ '/pimicotinib-tgct-fda-approval/' | relative_url }})
 - [DeFi — nirogacestat in desmoid tumours]({{ '/defi-trial/' | relative_url }})
 
 ## Immunotherapy — dostarlimab {#immuno}
@@ -40,6 +41,7 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 11 Nov 2026: pimicotinib (Pimjetmi) for symptomatic TGCT]({{ '/pimicotinib-tgct-fda-approval/' | relative_url }})
 - [New 8 Nov 2026: Rybrevant Faspro (amivantamab) for pretreated HNSCC]({{ '/rybrevant-faspro-hnscc-fda-approval/' | relative_url }})
 - [FDA oncology approvals, October 2026]({{ '/fda-oncology-approvals-october-2026/' | relative_url }})
 - [Three oncology FDA decisions to watch in November 2026]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }})
