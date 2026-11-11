@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT07546500",
-    "title": "A Study of Azenosertib (ZN-c3) Versus Investigator's Choice Chemotherapy in Subjects With Platinum-Resistant High-Grade Serous Ovarian, Primary Peritoneal, or Fallopian Tube Cancers Positive for Cyclin E1 Protein Expression",
-    "status": "RECRUITING",
-    "phase": "PHASE3",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT07546500"
-  },
-  {
-    "nct": "NCT07926048",
-    "title": "A Study of QLS5132 in Platinum-Resistant Recurrent Ovarian, Fallopian Tube, or Primary Peritoneal Cancer",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE3",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT07926048"
-  },
-  {
-    "nct": "NCT01906385",
-    "title": "Maximum Tolerated Dose, Safety, and Efficacy of Rhenium Nanoliposomes in Recurrent Glioma (ReSPECT)",
+    "nct": "NCT04128748",
+    "title": "Liposomal Cytarabine and Daunorubicin (CPX-351) and Quizartinib for the Treatment of Acute Myeloid Leukemia and High Risk Myelodysplastic Syndrome",
     "status": "ACTIVE_NOT_RECRUITING",
     "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT01906385"
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT04128748"
   },
   {
-    "nct": "NCT07389278",
-    "title": "Combination ADI-PEG 20, TMZ, and RT for Treatment of Newly Diagnosed High-grade Glioma (HGG)",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT07389278"
-  },
-  {
-    "nct": "NCT07619534",
-    "title": "Collection of CSF Samples From Participants With Metastatic Triple Negative Breast Cancer (TNBC) and HER2+ Breast Cancer With no Prior History Nor Active Radiographically Detectable Brain Metastases",
+    "nct": "NCT07929415",
+    "title": "Single Versus Double Stapling and Two Purse-String Techniques in Rectal Cancer Surgery",
     "status": "RECRUITING",
-    "phase": "Not applicable",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT07619534"
-  },
-  {
-    "nct": "NCT07926542",
-    "title": "Dexmedetomidine as an add-on Sedative for Endobronchial Ultrasound",
-    "status": "COMPLETED",
     "phase": "NA",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT07926542"
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT07929415"
   },
   {
-    "nct": "NCT02154022",
-    "title": "Collection of Pharmacokinetic Samples From People With Unanticipated Response, Significant Toxicity or Concern of Future Toxicity",
-    "status": "ENROLLING_BY_INVITATION",
+    "nct": "NCT07796373",
+    "title": "Nemtabrutinib for Chronic Lymphocytic Leukemia (CLL)/Small Lymphocytic Leukemia (SLL) Refractory to Covalent Bruton Tyrosine Kinase Inhibitor or Pirtobrutinib and Previously Treated With a BCL2 Inhibitor",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT07796373"
+  },
+  {
+    "nct": "NCT07144683",
+    "title": "Anastomotic Leakage After Colorectal Surgery.",
+    "status": "RECRUITING",
     "phase": "Not applicable",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT02154022"
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT07144683"
   },
   {
-    "nct": "NCT07195591",
-    "title": "Beginning Radiation Immediately With GammaTile at GBM Excision Versus Standard of Care",
+    "nct": "NCT06841354",
+    "title": "A Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) as Monotherapy and in Combination With Pembrolizumab (MK-3475) in Participants With Triple-Negative Breast Cancer (MK-2870-011/TroFuse-011)",
     "status": "RECRUITING",
     "phase": "PHASE3",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT07195591"
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT06841354"
   },
   {
-    "nct": "NCT05588141",
-    "title": "000860: A Phase I/II Study of Zotiraciclib for Recurrent Malignant Gliomas With Isocitrate Dehydrogenase 1 or 2 (IDH1 or IDH2) Mutations",
-    "status": "RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT05588141"
+    "nct": "NCT04561791",
+    "title": "Evaluation of Tethered Capsule Endomicroscopy as a Screening Tool for Barrett's Esophagus in the Primary Care Setting",
+    "status": "ENROLLING_BY_INVITATION",
+    "phase": "NA",
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT04561791"
   },
   {
-    "nct": "NCT00924196",
-    "title": "Natural History Study of Patients With Neurofibromatosis Type I",
+    "nct": "NCT06353386",
+    "title": "Substudy 01A: Safety and Efficacy of Opevesostat (MK-5684)-Based Treatment Combinations or Opevesostat Alone in Participants With Metastatic Castration-resistant Prostate Cancer (mCRPC) (MK-5684-01A)",
     "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "Not applicable",
-    "updated": "2026-11-09",
-    "url": "https://clinicaltrials.gov/study/NCT00924196"
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT06353386"
+  },
+  {
+    "nct": "NCT07929961",
+    "title": "Study of MC001 in Patients With Advanced Solid Tumours",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE1",
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT07929961"
+  },
+  {
+    "nct": "NCT06848088",
+    "title": "A Study to Learn About the Long-Term Health of Adult Participants From a Previous Study of a New Melanoma Treatment",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT06848088"
+  },
+  {
+    "nct": "NCT06985784",
+    "title": "Virtual Reality Interventions for the Improvement of Depression, Anxiety and Pain in Patients With Head and Neck Cancer and Caregivers",
+    "status": "RECRUITING",
+    "phase": "NA",
+    "updated": "2026-11-10",
+    "url": "https://clinicaltrials.gov/study/NCT06985784"
   }
 ]

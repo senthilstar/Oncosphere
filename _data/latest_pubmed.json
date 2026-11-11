@@ -36,25 +36,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42901134/"
   },
   {
-    "pmid": "42898639",
-    "title": "Cytotoxic T lymphocyte-inspired nanotherapeutics chaperoning granzyme B for tumor immune remodeling.",
-    "journal": "Bioactive materials",
-    "pubdate": "2027 Mar",
-    "authors": [
-      "Chen Y",
-      "Zhang Y",
-      "Chen J",
-      "Du X",
-      "Wang S",
-      "Ma Z",
-      "Zhou H",
-      "Yu J",
-      "Ma F",
-      "Shi L"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42898639/"
-  },
-  {
     "pmid": "42896419",
     "title": "Genetically engineering mast cells as effectors for targeted cancer cell cytotoxicity.",
     "journal": "Biomaterials",
@@ -140,23 +121,6 @@
       "Peng Y"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42945694/"
-  },
-  {
-    "pmid": "42913156",
-    "title": "Stiffness and viscoelasticity of adipose tissue decellularized extracellular matrix hydrogels influence proliferation, growth pattern, migration and invasion of breast cancer cells.",
-    "journal": "Biomaterials advances",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Salvador Moreno N",
-      "Fernandez MM",
-      "Azkargorta M",
-      "Madarieta I",
-      "Aguirresarobe R",
-      "Elortza F",
-      "Olalde B",
-      "Cipitria A"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42913156/"
   },
   {
     "pmid": "42896432",
@@ -266,5 +230,39 @@
       "Wang Q"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42892232/"
+  },
+  {
+    "pmid": "42879935",
+    "title": "Fibroblast activation protein-α-triggered photoacoustic signal \"on\" for pancreatic tumor imaging.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Jan 15",
+    "authors": [
+      "Tang R",
+      "Zhang Z",
+      "Zhu L",
+      "Xu HD",
+      "Zhang T",
+      "Yang Y",
+      "Zhan W",
+      "Zhou S",
+      "Liang G"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42879935/"
+  },
+  {
+    "pmid": "42918430",
+    "title": "Osteopontin primary transcript generates exonic circRNA molecules by back splicing in tumor cell lines.",
+    "journal": "Gene",
+    "pubdate": "2027 Jan 10",
+    "authors": [
+      "Mendonça de Mattos MM",
+      "Martins Vargas SO",
+      "Robertson LT",
+      "de Oliveira Pereira I",
+      "Mattos DS",
+      "Silva GR",
+      "Pereira Gimba ER"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42918430/"
   }
 ]
