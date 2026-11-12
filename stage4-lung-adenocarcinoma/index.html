@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage IV Lung Adenocarcinoma: An Interactive Evidence Atlas (Nov 2026)</title>
+<meta name="description" content="Interactive review of metastatic (stage IV) lung adenocarcinoma: drivers, immunotherapy, ADCs, guidelines, India perspective. Evidence current to 11 November 2026.">
+<style>
+:root{--bg:#f6f8fb;--panel:#fff;--ink:#1b2430;--muted:#5a6878;--line:#dde3ea;--brand:#0f4c81;--brand2:#0b7a75;--accent:#c2410c;--soft:#eef4fb;--good:#15803d;--warn:#b45309;--bad:#b91c1c;--chip:#e8eef7;--shadow:0 1px 3px rgba(15,30,60,.08),0 6px 24px rgba(15,30,60,.05)}
+[data-theme=dark]{--bg:#0d1117;--panel:#151b23;--ink:#e6edf3;--muted:#9aa7b4;--line:#2a3441;--brand:#6cb6ff;--brand2:#3fd0c4;--accent:#ff9b5e;--soft:#1a2330;--good:#4ade80;--warn:#fbbf24;--bad:#f87171;--chip:#1f2a38;--shadow:0 1px 3px rgba(0,0,0,.4)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.62 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;transition:background .25s,color .25s}
+a{color:var(--brand)}h1,h2,h3,h4{line-height:1.25;color:var(--ink)}h2{font-size:1.55rem;margin:0 0 .6rem;border-bottom:2px solid var(--line);padding-bottom:.35rem}h3{font-size:1.15rem;margin:1.4rem 0 .5rem;color:var(--brand)}h4{margin:1rem 0 .3rem}
+.topbar{position:sticky;top:0;z-index:50;display:flex;gap:.6rem;align-items:center;padding:.55rem 1rem;background:color-mix(in srgb,var(--panel) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .t{font-weight:700;color:var(--brand);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar input{flex:1;max-width:380px;margin-left:auto;padding:.45rem .7rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.btn{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:.4rem .7rem;cursor:pointer;font:inherit;font-size:.88rem}.btn:hover{border-color:var(--brand)}.btn.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+#hits{font-size:.8rem;color:var(--muted);white-space:nowrap}
+.layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:1.4rem;max-width:1480px;margin:0 auto;padding:1rem}
+nav#toc{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;padding:.6rem .4rem;font-size:.86rem}
+nav#toc a{display:block;padding:.28rem .6rem;border-left:3px solid transparent;color:var(--muted);text-decoration:none;border-radius:0 6px 6px 0}
+nav#toc a:hover{color:var(--ink);background:var(--soft)}nav#toc a.active{color:var(--brand);border-left-color:var(--brand);background:var(--soft);font-weight:600}nav#toc a.dim{opacity:.3}
+nav#toc .grp{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:.8rem .6rem .2rem}
+main{min-width:0}
+section.sec{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:1.2rem;box-shadow:var(--shadow)}
+.hero{background:linear-gradient(135deg,#0f4c81 0%,#0b7a75 60%,#14532d 100%);color:#fff;border:none}
+.hero h1{color:#fff;font-size:2.05rem;margin:.2rem 0 .4rem}.hero p{color:#e3eef8;margin:.3rem 0}.hero .sub{font-size:1.05rem}
+.hero .meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}.hero .meta span{background:rgba(255,255,255,.14);padding:.25rem .6rem;border-radius:20px;font-size:.82rem}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;padding:.08rem .45rem;border-radius:5px;vertical-align:middle;letter-spacing:.02em;white-space:nowrap}
+.b-appr{background:#dcfce7;color:#166534}.b-rep{background:#dbeafe;color:#1e40af}.b-inv{background:#f3e8ff;color:#6b21a8}.b-neg{background:#fee2e2;color:#991b1b}
+.verify{background:#fef3c7;color:#92400e;border:1px dashed #d97706}
+[data-theme=dark] .b-appr{background:#14532d;color:#bbf7d0}[data-theme=dark] .b-rep{background:#1e3a8a;color:#bfdbfe}[data-theme=dark] .b-inv{background:#4c1d95;color:#e9d5ff}[data-theme=dark] .b-neg{background:#7f1d1d;color:#fecaca}[data-theme=dark] .verify{background:#422006;color:#fde68a}
+.grid{display:grid;gap:.9rem}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.g4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.kpi{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:.8rem .9rem}.kpi .v{font-size:1.65rem;font-weight:800;color:var(--brand);line-height:1.1}.kpi .l{font-size:.82rem;color:var(--muted)}.kpi .s{font-size:.74rem;color:var(--muted);margin-top:.25rem}
+.card{border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem;background:var(--panel)}
+.pearl{border-left:4px solid var(--brand2);background:color-mix(in srgb,var(--brand2) 9%,var(--panel));padding:.65rem .9rem;border-radius:0 10px 10px 0;margin:.8rem 0}
+.pearl::before{content:"Clinical pearl";display:block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--brand2);margin-bottom:.15rem}
+.warnbox{border-left:4px solid var(--warn);background:color-mix(in srgb,var(--warn) 9%,var(--panel));padding:.65rem .9rem;border-radius:0 10px 10px 0;margin:.8rem 0}
+.warnbox::before{content:"Caution";display:block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--warn);margin-bottom:.15rem}
+.india{border-left:4px solid #ea580c;background:color-mix(in srgb,#ea580c 8%,var(--panel));padding:.65rem .9rem;border-radius:0 10px 10px 0;margin:.8rem 0}
+.india::before{content:"India / resource-stratified";display:block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#ea580c;margin-bottom:.15rem}
+table{border-collapse:collapse;width:100%;font-size:.88rem;margin:.6rem 0}th,td{border-bottom:1px solid var(--line);padding:.45rem .5rem;text-align:left;vertical-align:top}th{background:var(--soft);font-weight:700;position:sticky;top:0}
+.tw{overflow:auto;max-height:640px;border:1px solid var(--line);border-radius:10px}
+#trialTable th{cursor:pointer;user-select:none;white-space:nowrap}#trialTable th:hover{color:var(--brand)}#trialTable th.asc::after{content:" ▲"}#trialTable th.desc::after{content:" ▼"}
+#trialTable td{font-size:.82rem}#trialTable tr:hover td{background:var(--soft)}
+.filters{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;margin:.4rem 0}.filters select,.filters input{padding:.38rem .5rem;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink);font:inherit;font-size:.86rem}
+details.drug{border:1px solid var(--line);border-radius:10px;margin:.45rem 0;background:var(--panel)}details.drug summary{cursor:pointer;padding:.6rem .85rem;font-weight:650;list-style:none;display:flex;justify-content:space-between;gap:.6rem}
+details.drug summary::after{content:"+";font-weight:800;color:var(--brand)}details.drug[open] summary::after{content:"–"}details.drug .body{padding:0 .9rem .8rem;font-size:.9rem}details.drug summary small{font-weight:400;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.35rem}.chip{background:var(--chip);border:1px solid var(--line);border-radius:20px;padding:.18rem .6rem;font-size:.78rem;cursor:pointer}.chip:hover{border-color:var(--brand)}
+.algo{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.7rem;background:var(--soft);padding:.9rem;border-radius:12px;border:1px solid var(--line)}
+.algo label{font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.algo select{width:100%;padding:.5rem;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit;margin-top:.2rem}
+#algoOut{margin-top:.9rem}.opt{border:1px solid var(--line);border-left:5px solid var(--brand);border-radius:10px;padding:.65rem .9rem;margin:.5rem 0;background:var(--panel);animation:fade .35s ease}.opt.alt{border-left-color:var(--muted)}.opt.inv{border-left-color:#7c3aed}.opt h4{margin:0 0 .25rem}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.chartbox{border:1px solid var(--line);border-radius:12px;padding:.8rem;background:var(--panel);overflow-x:auto}.chartbox svg{display:block;max-width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:.8rem;font-size:.8rem;color:var(--muted);margin:.3rem 0}.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--panel);padding:.45rem .6rem;border-radius:8px;font-size:.8rem;max-width:320px;z-index:99;opacity:0;transition:opacity .12s;box-shadow:var(--shadow)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}.seg button{border:none;border-right:1px solid var(--line);background:var(--panel);color:var(--ink);padding:.35rem .7rem;cursor:pointer;font:inherit;font-size:.84rem}.seg button:last-child{border-right:none}.seg button.on{background:var(--brand);color:#fff}
+.flow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:stretch}.flow .st{flex:1 1 160px;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:.6rem .7rem;font-size:.86rem;position:relative}.flow .st b{display:block;color:var(--brand)}
+.cmp td:first-child{font-weight:650;white-space:nowrap}.small{font-size:.83rem;color:var(--muted)}.mono{font-family:ui-monospace,Consolas,monospace;font-size:.85em}
+mark{background:#fde68a;color:#111;border-radius:3px}
+.back{position:fixed;right:18px;bottom:18px;z-index:60}
+ol.refs li{margin:.2rem 0;font-size:.85rem;word-break:break-word}
+.resmap{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.5rem}.resmap div{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:.5rem .6rem;font-size:.82rem}.resmap b{display:block;font-size:1.05rem;color:var(--accent)}
+@media(max-width:980px){.layout{grid-template-columns:1fr}nav#toc{position:relative;top:0;max-height:none;display:none}nav#toc.show{display:block}#tocBtn{display:inline-block!important}}
+@media print{.topbar,nav#toc,.back,.filters,.seg,#tocBtn,.noprint{display:none!important}.layout{display:block;padding:0}section.sec{box-shadow:none;break-inside:auto;border:none;border-top:1px solid #999;border-radius:0}body{background:#fff;color:#000;font-size:11pt}details.drug{break-inside:avoid}details.drug .body{display:block!important}.hero{background:#fff!important;color:#000}.hero h1,.hero p{color:#000}.tw{max-height:none;overflow:visible}th{position:static}a{color:#000}}
+</style>
+<link rel="canonical" href="https://oncosphere.in/stage4-lung-adenocarcinoma/"><link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml"><script data-goatcounter="https://oncosphere.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head>
+<body><div id="onco-back" style="position:fixed;left:12px;bottom:12px;z-index:9999;font:600 13px/1 system-ui,-apple-system,Segoe UI,Arial,sans-serif"><a href="/paradigms/" style="display:inline-block;padding:9px 13px;border-radius:999px;background:#0f2a3d;color:#fff;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25)">&larr; Oncosphere</a></div><style>@media print{#onco-back{display:none!important}}</style>
+<div class="topbar">
+  <button class="btn" id="tocBtn" style="display:none" aria-label="Contents">☰</button>
+  <div class="t">Stage IV Lung Adenocarcinoma · Evidence Atlas</div>
+  <input id="q" type="search" placeholder="Search sections (e.g. MET, osimertinib, ILD, CNS)…" aria-label="Search sections">
+  <span id="hits"></span>
+  <button class="btn" id="themeBtn" title="Dark / light">◐ Theme</button>
+  <button class="btn" onclick="window.print()" title="Print">⎙ Print</button>
+</div>
+<div class="layout">
+<nav id="toc" aria-label="Table of contents"></nav>
+<main id="main">
+<section class="sec hero" id="top" data-grp="Start">
+  <p class="small" style="color:#cfe3f5;letter-spacing:.1em;text-transform:uppercase;margin:0">Interactive evidence review · Medical Oncology</p>
+  <h1>Stage IV (Metastatic) Lung Adenocarcinoma</h1>
+  <p class="sub">From platinum doublets to bispecific ADCs: the evidence for every driver, immunotherapy, the guidelines and where they disagree, and what is practical in India</p>
+  <div class="meta"><span>Evidence current to 11 November 2026</span><span>NCCN NSCLC v9.2026</span><span>ASCO Living Guideline v2026.3.x</span><span>ESMO Living Guideline (2025 update)</span><span>ESMO 2026 (Berlin) late-breakers included</span><span>Works offline, single file</span></div>
+</section>
+
+<section class="sec" id="howto" data-grp="Start">
+  <h2>How to use this atlas</h2>
+  <div class="grid g2">
+    <div>
+      <p><b>Navigation.</b> The sticky contents bar on the left highlights where you are. The search box at the top hides sections that don't match (try <i>MET</i>, <i>ILD</i>, <i>leptomeningeal</i>). The theme button switches dark/light, and printing expands every card.</p>
+      <p><b>Interactive tools.</b> These are the <a href="#algorithm">treatment algorithm</a> (choose driver → PD-L1 → setting), the <a href="#charts">forest plot and survival bars</a>, the <a href="#approvals">approvals timeline</a>, the <a href="#prevalence">driver prevalence donut</a>, the <a href="#trials">sortable trial table</a> and the <a href="#drugs">expandable drug cards</a>.</p>
+    </div>
+    <div>
+      <p><b>Evidence labels</b></p>
+      <p><span class="badge b-appr">Approved</span> FDA (and/or EMA) approval verified for the indication described.<br>
+      <span class="badge b-rep">Reported</span> Peer-reviewed or congress phase 2/3 data; not (yet) approved for this use.<br>
+      <span class="badge b-inv">Investigational</span> Not approved anywhere for this use, or China-only approval.<br>
+      <span class="badge b-neg">Negative</span> Primary endpoint missed.<br>
+      <span class="badge verify">verify</span> Figure taken from memory or secondary sources and <b>not re-checked against the primary paper this session</b>. Check it before you teach or quote it.</p>
+      <p class="small">HR = hazard ratio for progression or death (PFS) unless labelled OS. mo = months. NR = not reached. IC = intracranial. CNS ORR is in measurable brain metastases unless stated. Doses are for teaching; check the current label, organ function and local formulary before prescribing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="keynums" data-grp="Start">
+  <h2>Key numbers at a glance</h2>
+  <div class="grid g4">
+    <div class="kpi"><div class="v">47.5 mo</div><div class="l">Median OS, osimertinib + platinum-pemetrexed</div><div class="s">FLAURA2 vs 37.6 mo with osimertinib; HR 0.77 (NEJM 2025)</div></div>
+    <div class="kpi"><div class="v">HR 0.75</div><div class="l">OS, amivantamab + lazertinib vs osimertinib</div><div class="s">MARIPOSA; 3-yr OS 60% vs 51%; projected gain &gt;12 mo</div></div>
+    <div class="kpi"><div class="v">60%</div><div class="l">5-yr PFS with lorlatinib (ALK+)</div><div class="s">CROWN vs 8% with crizotinib; HR 0.19</div></div>
+    <div class="kpi"><div class="v">46.1 mo</div><div class="l">Median PFS, taletrectinib, TKI-naïve ROS1+</div><div class="s">TRUST-I/II pooled, ORR 89.8% (AACR 2026 update)</div></div>
+    <div class="kpi"><div class="v">22.0 mo</div><div class="l">Median OS, pembrolizumab + pem-platinum</div><div class="s">KEYNOTE-189 5-yr; 5-yr OS 19.4% vs 11.3%</div></div>
+    <div class="kpi"><div class="v">HR 0.56</div><div class="l">OS, divarasib vs sotorasib/adagrasib</div><div class="s">Krascendo 1 (ESMO 2026): 17.7 vs 12.0 mo</div></div>
+    <div class="kpi"><div class="v">HR 0.68</div><div class="l">OS, osimertinib + savolitinib after osimertinib</div><div class="s">SAFFRON (MET-high), 17.8 vs 12.9 mo</div></div>
+    <div class="kpi"><div class="v">14.3 mo</div><div class="l">Median PFS, 1L T-DXd for HER2-mutant disease</div><div class="s">DESTINY-Lung04 vs 8.3 mo with pembro-chemo; HR 0.63</div></div>
+    <div class="kpi"><div class="v">~26–30%</div><div class="l">EGFR-mutation rate, Indian adenocarcinoma</div><div class="s">26% (202/780) at Tata Memorial; other series 28–33%</div></div>
+    <div class="kpi"><div class="v">30.75 mo</div><div class="l">Median OS, ivonescimab (PD-L1 ≥1%)</div><div class="s">HARMONi-2 vs 22.57 mo with pembrolizumab; HR 0.73 (interim; China)</div></div>
+    <div class="kpi"><div class="v">≈₹8k/mo</div><div class="l">Generic osimertinib 80 mg (retail)</div><div class="s">Online pharmacy listings; unofficial <span class="badge verify">verify</span></div></div>
+    <div class="kpi"><div class="v">~70%</div><div class="l">Indian lung cancers presenting locally advanced or metastatic</div><div class="s">PGIMER/DHR cost-effectiveness report, 2025</div></div>
+  </div>
+</section>
+
+<section class="sec" id="epi" data-grp="Foundations">
+  <h2>1. Epidemiology and molecular landscape (including India and Asia)</h2>
+  <div class="grid g2">
+  <div>
+  <ul>
+    <li>Adenocarcinoma is the most common NSCLC histology worldwide and is now the dominant subtype in Indian series, including a growing share in never-smokers, women and younger patients.</li>
+    <li><b>India.</b> GLOBOCAN 2022 recorded about 81,700 new lung cancers and 75,000 deaths in India. Roughly 70% present at locally advanced or metastatic stage (PGIMER/DHR report, 2025).</li>
+    <li><b>EGFR in India.</b> 26% of 780 adenocarcinomas carried an EGFR mutation at Tata Memorial (PLoS One 2013; 23.2% of all 907 NSCLC). Other Indian cohorts report 28–33%. Western rates are about 10–15%, and East Asian rates 40–50%.</li>
+    <li><b>ALK in India.</b> 2.5% in 3,351 tested adenocarcinomas and 3% in a 500-patient multicentre series. Some reviews quote up to about 10%, depending on enrichment and assay.</li>
+    <li><b>ROS1.</b> About 1–2% in the West; 2.8–4.1% reported in Indian series.</li>
+    <li><b>KRAS G12C</b> is about 13–14% of NSCLC in the West and is <b>less frequent in Asian/Indian never-smokers</b> <span class="badge verify">verify Indian rate</span>.</li>
+    <li>A misdiagnosed tuberculosis phase (empirical ATT before a tissue diagnosis) is a recognised cause of diagnostic delay in India.</li>
+  </ul>
+  <div class="pearl">In a never-smoking Indian woman with adenocarcinoma, the pre-test probability of an actionable driver (EGFR, ALK, ROS1, HER2, RET, MET) exceeds 50–60%. Never start immunotherapy before driver results are back. IO followed by osimertinib raises the risk of serious pneumonitis.</div>
+  </div>
+  <div id="prevalence">
+    <h3 style="margin-top:0">Driver prevalence donut <span class="badge verify">approximate ranges</span></h3>
+    <div class="seg noprint" id="donutSeg"><button data-k="west" class="on">Western</button><button data-k="asia">East Asian</button><button data-k="india">Indian</button></div>
+    <div class="chartbox" style="margin-top:.5rem"><svg id="donut" viewBox="0 0 520 320" role="img" aria-label="Driver prevalence donut chart"></svg></div>
+    <p class="small">Teaching approximations from published ranges (adenocarcinoma). The Indian slice uses Tata Memorial (EGFR 26%) and multicentre ALK (3%) and ROS1 (~3%) data. Other Indian driver rates are sparse and marked approximate.</p>
+  </div>
+  </div>
+</section>
+
+<section class="sec" id="staging" data-grp="Foundations">
+  <h2>2. Staging (IASLC/AJCC 9th edition, effective 1 Jan 2025) and oligometastatic definitions</h2>
+  <div class="grid g2">
+  <table class="cmp">
+    <tr><th>Category</th><th>Definition</th><th>Stage</th></tr>
+    <tr><td>M1a</td><td>Separate tumour nodule(s) in a contralateral lobe; pleural or pericardial nodules; malignant pleural or pericardial effusion</td><td>IVA</td></tr>
+    <tr><td>M1b</td><td>Single extrathoracic metastasis in a single organ</td><td>IVA</td></tr>
+    <tr><td>M1c1 <span class="badge b-appr">new</span></td><td>Multiple extrathoracic metastases in <b>one</b> organ system (multiple lesions in one organ, paired organs, or a diffusely distributed system such as bone)</td><td>IVB</td></tr>
+    <tr><td>M1c2 <span class="badge b-appr">new</span></td><td>Multiple extrathoracic metastases in <b>more than one</b> organ system</td><td>IVB</td></tr>
+  </table>
+  <div>
+    <h4>Oligometastatic disease: definitions that matter</h4>
+    <ul>
+      <li><b>EORTC Lung Cancer Group consensus (Dingemans, JTO 2019).</b> Up to <b>5 metastases in up to 3 organs</b>, all treatable radically, with mediastinal nodes not counted as metastases. Staging requires FDG-PET-CT and brain MRI.</li>
+      <li><b>ESTRO/EORTC classification (Guckenberger, Lancet Oncol 2020).</b> Separates <i>de-novo</i> (synchronous or metachronous) from <i>repeat</i> and <i>induced</i> oligometastatic disease (oligo-persistence, oligo-progression). This matters for trial eligibility and for the "local consolidative therapy" (LCT) decision.</li>
+      <li>The 9th edition splits M1c because <b>survival worsens with each additional organ system involved</b>. M1b and M1c1 prognosis overlaps in some datasets.</li>
+    </ul>
+  </div>
+  </div>
+</section>
+
+<section class="sec" id="workup" data-grp="Foundations">
+  <h2>3. Diagnostic work-up and biomarker testing</h2>
+  <div class="flow">
+    <div class="st"><b>1 · Suspect stage IV</b>CECT chest/abdomen, then FDG-PET-CT. <b>Contrast MRI brain for all stage IV</b> (including asymptomatic patients, given the CNS-penetrant TKI options).</div>
+    <div class="st"><b>2 · Tissue first, plasma in parallel</b>Core biopsy (≥2–3 cores) or EBUS-TBNA with a cell block. Send plasma ctDNA <i>at the same time</i> if tissue is scant or will be delayed.</div>
+    <div class="st"><b>3 · Broad NGS</b>DNA NGS (EGFR, KRAS, BRAF, MET ex14, HER2, NTRK, RET, ROS1, ALK) plus <b>RNA NGS for fusions</b> and MET ex14 skipping.</div>
+    <div class="st"><b>4 · IHC</b>PD-L1 TPS (22C3/SP263 interchangeable for TPS; SP142 is not). ALK D5F3 IHC is acceptable as a stand-alone test. Add c-MET IHC (Teliso-V, SAFFRON) and HER2 IHC (T-DXd tumour-agnostic) as needed.</div>
+    <div class="st"><b>5 · Hold IO until drivers are known</b>If the patient is unstable, start chemotherapy alone, then add the targeted agent or IO once results are back.</div>
+  </div>
+  <div class="grid g2" style="margin-top:.8rem">
+  <div>
+    <h3>Tissue vs liquid biopsy ("plasma-first")</h3>
+    <ul>
+      <li>Plasma NGS is highly specific. A <b>positive</b> result is actionable and can save 1–3 weeks. A <b>negative</b> result needs tissue NGS, because sensitivity is about 70–80% and lower for fusions, CNS-only or low-volume disease.</li>
+      <li>Concurrent tissue + plasma testing raises the yield of actionable alterations (ASCO 2026 endorses combining both).</li>
+      <li>Baseline EGFR ctDNA positivity (~80%) is <b>prognostic</b>. In FLAURA2 the OS benefit of adding chemotherapy held regardless of ctDNA clearance. PACE-LUNG (ESMO 2026) tested ctDNA-guided escalation and remains investigational.</li>
+    </ul>
+    <h3>Reflex-testing nuances</h3>
+    <ul>
+      <li><b>Sequential single-gene PCR</b> (EGFR, then ALK IHC, then ROS1 FISH…) wastes tissue. ASCO says it "should not be routine" outside truly resource-limited settings.</li>
+      <li>Test <b>all non-squamous NSCLC</b> regardless of smoking status, and squamous disease in never/light smokers or small biopsies.</li>
+      <li>Use RNA NGS (or targeted RNA panels) when DNA NGS is negative in a never-smoker. Fusions (ALK, ROS1, RET, NTRK, NRG1) and MET ex14 skipping are under-called on DNA-only panels.</li>
+      <li>PD-L1 ≥50% plus never-smoker plus "driver-negative" on a small panel should prompt a re-test.</li>
+      <li><b>At progression:</b> re-biopsy (tissue ± plasma) to look for MET amplification or overexpression, transformation to SCLC/squamous, C797S, ALK/ROS1 resistance mutations, and HER2/BRAF/RET fusions.</li>
+    </ul>
+  </div>
+  <div>
+    <div class="india">
+      <ul style="margin:.2rem 0">
+        <li>EGFR RT-PCR (or ddPCR) on tissue is widely available and cheap. Many Indian centres still run EGFR PCR, then ALK IHC (D5F3), then ROS1 IHC with FISH confirmation. If you must, run them <b>in parallel</b> on cut sections, not sequentially.</li>
+        <li>Cell blocks from pleural fluid are an under-used source of DNA/RNA. Ask the pathologist to prepare a cell block from every malignant effusion.</li>
+        <li>For a patient who cannot afford NGS, a pragmatic minimum is EGFR, ALK IHC, ROS1 IHC and PD-L1. Then add NGS (or plasma NGS) if all are negative in a never-smoker.</li>
+        <li>Pharma-sponsored testing programmes exist for several targets <span class="badge verify">programme names and eligibility vary; verify locally</span>.</li>
+      </ul>
+    </div>
+    <h3>PD-L1 assays</h3>
+    <p>22C3 (pembrolizumab), SP263 (approved for several agents) and 28-8 are analytically close for TPS. SP142 under-calls tumour cells. Report TPS bands as <b>&lt;1%, 1–49% and ≥50%</b>. PD-L1 is heterogeneous: a small biopsy can misclassify, so do not deny IO on a borderline small-sample result.</p>
+    <h3>Imaging</h3>
+    <p>PET-CT plus MRI brain at baseline. MRI brain every 2–3 months in the first year for driver-positive patients with baseline CNS disease <span class="badge verify">interval varies by guideline</span>. Response by RECIST 1.1 and RANO-BM.</p>
+  </div>
+  </div>
+</section>
+
+<section class="sec" id="history" data-grp="Foundations">
+  <h2>4. Historical evolution: from "one size fits all" to 13+ actionable targets</h2>
+  <div class="grid g2">
+  <div>
+    <h3 style="margin-top:0">The chemotherapy era</h3>
+    <ul>
+      <li><b>ECOG 1594</b> (Schiller, NEJM 2002; n=1,207): four platinum doublets gave equivalent results, with median OS ≈ 7.9 months. This created the "platinum plateau".</li>
+      <li><b>E4599</b> (Sandler, NEJM 2006; n=878): adding bevacizumab to carboplatin-paclitaxel gave OS 12.3 vs 10.3 mo (HR 0.79) and ORR 35% vs 15%. It was the first agent to break the 1-year barrier, and patients with squamous histology or haemoptysis were excluded.</li>
+      <li><b>JMDB</b> (Scagliotti, JCO 2008; n=1,725): cisplatin-pemetrexed was non-inferior overall but superior in adenocarcinoma (OS 12.6 vs 10.9 mo). This established <b>histology-directed therapy</b>.</li>
+      <li><b>PARAMOUNT</b> (Paz-Ares, Lancet Oncol 2012 / JCO 2013; n=539): continuation pemetrexed maintenance gave PFS HR 0.62 and OS 13.9 vs 11.0 mo (HR 0.78).</li>
+      <li><b>Second line:</b> docetaxel (TAX 317) was the standard. REVEL (+ramucirumab; OS 10.5 vs 9.1 mo, HR 0.86) and LUME-Lung 1 (+nintedanib, adenocarcinoma only; OS 12.6 vs 10.3 mo, HR 0.83) added modest gains.</li>
+    </ul>
+    <h3>The targeted era</h3>
+    <ul>
+      <li><b>IPASS</b> (Mok, NEJM 2009): gefitinib vs carboplatin-paclitaxel in selected East Asians. PFS HR 0.48 if EGFR-mutant but 2.85 if wild-type. This showed that <b>the biomarker, not the clinical phenotype</b>, selects patients.</li>
+      <li>EGFR TKI generations: 1st (gefitinib, erlotinib), 2nd (afatinib, dacomitinib), 3rd (osimertinib, lazertinib, aumolertinib, firmonertinib [furmonertinib]).</li>
+      <li>ALK: crizotinib (PROFILE 1014) → alectinib (ALEX) → lorlatinib (CROWN), with median PFS rising from ~11 months to &gt;60 months.</li>
+    </ul>
+  </div>
+  <div>
+    <h3 style="margin-top:0">The immunotherapy era</h3>
+    <ul>
+      <li>2015: nivolumab beats docetaxel (CheckMate 057; OS 12.2 vs 9.4 mo).</li>
+      <li>2016: KEYNOTE-024 makes pembrolizumab monotherapy first-line for PD-L1 ≥50%.</li>
+      <li>2018: KEYNOTE-189 establishes chemo-IO for all PD-L1 levels.</li>
+      <li>2020–2023: dual checkpoint inhibition (CheckMate 227/9LA, POSEIDON) and cemiplimab (EMPOWER-Lung 1/3).</li>
+    </ul>
+    <h3>The "post-PD-1" era (2024–2026)</h3>
+    <ul>
+      <li><b>PD-1×VEGF bispecifics:</b> ivonescimab beats pembrolizumab on PFS (HARMONi-2) and on OS at interim (HR 0.73, China). The FDA decision on the EGFR post-TKI BLA is due on <b>14 Nov 2026</b>.</li>
+      <li><b>ADCs:</b> TROP2 (Dato-DXd, sac-TMT), HER2 (T-DXd), c-MET (Teliso-V), HER3 and EGFR×HER3 (iza-bren, ruzaltatug rezetecan).</li>
+      <li><b>Combination first-line for EGFR</b> with an OS benefit (FLAURA2, MARIPOSA), so osimertinib monotherapy is no longer the only standard.</li>
+      <li>Next-generation KRAS (divarasib beats sotorasib/adagrasib head-to-head) and pan-RAS(ON) inhibition (daraxonrasib, in the NCCN emerging-biomarker table).</li>
+    </ul>
+  </div>
+  </div>
+  <h3 id="approvals">FDA approvals timeline in metastatic NSCLC (2003 to Nov 2026) <span class="small">(filter with the buttons; hover a dot for the full list)</span></h3>
+  <div class="seg noprint" id="tlSeg"><button data-k="all" class="on">All</button><button data-k="chemo">Chemo/anti-angiogenic</button><button data-k="tki">Targeted</button><button data-k="io">Immunotherapy</button><button data-k="adc">ADC/bispecific</button></div>
+  <div class="chartbox" style="margin-top:.5rem"><svg id="timeline" viewBox="0 0 1100 395" role="img" aria-label="Approvals timeline"></svg></div>
+  <p class="small">Approval years are FDA years for the lung indication (accelerated or regular). Pre-2015 years are from standard pharmacology references <span class="badge verify">verify individual dates</span>. Approvals from 2024 to 2026 were checked against FDA notices and press releases this session.</p>
+</section>
+
+<section class="sec" id="algorithm" data-grp="Decide">
+  <h2>5. Interactive treatment algorithm</h2>
+  <p class="small">Choose the molecular group, PD-L1 and setting. The output lists the <b>preferred</b> and <b>alternative</b> options consistent with NCCN v9.2026, ASCO 2026 and ESMO, with the supporting trial evidence (click a chip to open it in the trial table). <b>This is a teaching aid, not a prescribing tool.</b></p>
+  <div class="algo noprint">
+    <div><label for="aDrv">Molecular group</label><select id="aDrv"></select></div>
+    <div><label for="aPdl">PD-L1 TPS</label><select id="aPdl"><option value="hi">≥50%</option><option value="mid">1–49%</option><option value="neg">&lt;1%</option><option value="unk">Unknown / pending</option></select></div>
+    <div><label for="aSet">Setting</label><select id="aSet"><option value="1L">First line</option><option value="2L">Progression after first line</option><option value="3L">Later lines</option></select></div>
+    <div><label for="aCns">Brain metastases</label><select id="aCns"><option value="no">None / not relevant</option><option value="yes">Present at baseline</option></select></div>
+    <div><label for="aPs">Performance status</label><select id="aPs"><option value="fit">ECOG 0–1</option><option value="ps2">ECOG 2 / frail / elderly</option></select></div>
+  </div>
+  <div id="algoOut" aria-live="polite"></div>
+</section>
+<section class="sec" id="egfr" data-grp="Drivers">
+  <h2>6. EGFR-mutant disease</h2>
+  <h3>6.1 Common mutations (exon 19 deletion, L858R): first line</h3>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Comparison</th><th>n</th><th>Median PFS (mo)</th><th>Median OS (mo)</th><th>HR PFS / OS</th><th>Key note</th></tr>
+    <tr><td><b>FLAURA</b><br><span class="small">NEJM 2018/2020</span> <span class="badge b-appr">Approved</span></td><td>Osimertinib vs gefitinib/erlotinib</td><td>556</td><td>18.9 vs 10.2</td><td>38.6 vs 31.8</td><td>0.46 / 0.80</td><td>CNS ORR 91% vs 68% (measurable) <span class="badge verify">verify</span>; L858R and Asian subgroups had smaller OS gains</td></tr>
+    <tr><td><b>FLAURA2</b><br><span class="small">NEJM 2023; OS NEJM 2025</span> <span class="badge b-appr">Approved</span></td><td>Osimertinib + platinum-pemetrexed (4 cycles, then osi + pem maintenance) vs osimertinib</td><td>557</td><td>25.5 vs 16.7</td><td><b>47.5 vs 37.6</b></td><td>0.62 / <b>0.77</b> (0.61–0.96)</td><td>3-yr OS 63% vs 51%; 4-yr 49% vs 41%. Grade ≥3 AE 70% vs 34%. Benefit consistent incl. brain mets</td></tr>
+    <tr><td><b>MARIPOSA</b><br><span class="small">NEJM 2024; OS NEJM 2025</span> <span class="badge b-appr">Approved</span></td><td>Amivantamab + lazertinib vs osimertinib (2:2:1 with lazertinib arm)</td><td>1,074 (429 vs 429)</td><td>23.7 vs 16.6</td><td><b>NR vs 36.7</b></td><td>0.70 / <b>0.75</b> (0.61–0.92)</td><td>3-yr OS 60% vs 51%; grade ≥3 AE 80% vs 52% (skin, VTE, IRR). Time to symptomatic progression 43.6 vs 29.3 mo</td></tr>
+    <tr><td><b>Tata Memorial (Noronha)</b><br><span class="small">JCO 2020</span> <span class="badge b-rep">Reported</span></td><td>Gefitinib + pemetrexed-carboplatin vs gefitinib</td><td>350</td><td>16 vs 8</td><td>NR vs 17</td><td>0.51 / 0.45</td><td>Indian phase 3; grade ≥3 toxicity 51% vs 25%. Showed the "TKI + chemo" principle years before FLAURA2</td></tr>
+    <tr><td><b>ARCHER 1050</b><br><span class="small">Lancet Oncol 2017; JCO 2018</span> <span class="badge b-appr">Approved</span></td><td>Dacomitinib vs gefitinib</td><td>452</td><td>14.7 vs 9.2</td><td>34.1 vs 26.8</td><td>0.59 / 0.76</td><td>Brain mets excluded; high rates of diarrhoea, paronychia and dermatitis <span class="badge verify">verify</span></td></tr>
+    <tr><td><b>SANOVO</b><br><span class="small">ESMO 2026 LBA69</span> <span class="badge b-inv">Investigational</span></td><td>Savolitinib + osimertinib vs placebo + osimertinib in <b>MET-overexpressing</b> EGFRm (China)</td><td>326</td><td>24.9 vs 13.8 (ITT)<br>24.8 vs 11.1 (IHC3+)</td><td>44.5 vs 34.9</td><td>0.56 / 0.48 (no P)</td><td>Screened 1,896 to randomise 326; grade ≥3 TEAE 77% vs 38%. De-novo MET overexpression is a poor-prognosis subgroup</td></tr>
+  </table></div>
+  <div class="grid g2">
+  <div>
+    <h4>Choosing between the three first-line standards</h4>
+    <table class="cmp">
+      <tr><th></th><th>Osimertinib</th><th>Osi + chemo</th><th>Ami + laz</th></tr>
+      <tr><td>OS vs osi</td><td>reference</td><td>+9.9 mo (HR 0.77)</td><td>HR 0.75 (median NR)</td></tr>
+      <tr><td>Route</td><td>Oral</td><td>Oral + IV q3w (pem lifelong)</td><td>IV weekly → q2w (SC in development) + oral</td></tr>
+      <tr><td>Key toxicity</td><td>Mild</td><td>Cytopenias, fatigue, renal</td><td>Rash, paronychia, IRR, VTE, hypoalbuminaemia, oedema</td></tr>
+      <tr><td>Best fit</td><td>Frail, low disease burden, ctDNA-negative?</td><td>Brain mets (ESMO "preferred"), L858R, high burden, TP53 co-mut</td><td>Fit, motivated, high burden; wishes to "save" chemo</td></tr>
+      <tr><td>India cost</td><td>Generic ≈₹8k/mo <span class="badge verify">unofficial</span></td><td>+ pemetrexed/carboplatin (generic, PMJAY-coverable chemo)</td><td>Amivantamab not realistically accessible at scale <span class="badge verify">price not verified</span></td></tr>
+    </table>
+  </div>
+  <div>
+    <div class="pearl">High-risk features that push toward intensification: <b>brain metastases, L858R, TP53 co-mutation, baseline detectable EGFR ctDNA, liver metastases, ≥3 metastatic sites</b>. ASCO 2026 now recommends <i>combination</i> therapy (osi + chemo or ami + laz) as the first-line approach, with osimertinib monotherapy "for patients who do not pursue combination therapy".</div>
+    <div class="india">Where osimertinib is unaffordable, <b>gefitinib + pemetrexed-carboplatin</b> (Noronha, JCO 2020) is an evidence-based, low-cost option with an OS benefit over gefitinib alone. Generic gefitinib retails at about ₹3,400–5,500 per month <span class="badge verify">online listings</span>. Erlotinib and afatinib are alternatives. Dose-reduced afatinib (30 mg) is commonly used for tolerability.</div>
+    <div class="warnbox">Do <b>not</b> give osimertinib after recent PD-(L)1 therapy if you can avoid it. The combination and close sequencing raise the risk of severe pneumonitis (TATTON; observational series). Never start IO while EGFR results are pending.</div>
+  </div>
+  </div>
+
+  <h3>6.2 Uncommon EGFR mutations (G719X, L861Q, S768I, compound mutations)</h3>
+  <ul>
+    <li><b>Afatinib.</b> In the pooled LUX-Lung 2/3/6 analysis (Yang, Lancet Oncol 2015), "major uncommon" mutations (G719X, L861Q, S768I) had an ORR of about 71% and median PFS of about 10.7 mo <span class="badge verify">verify</span>. FDA label expansion followed in 2018.</li>
+    <li><b>Osimertinib.</b> KCSG-LU15-09 (Cho, JCO 2020; n=36): ORR 50%, median PFS 8.2 mo <span class="badge verify">verify</span>. It is preferred by many for CNS coverage.</li>
+    <li><b>Compound mutations</b> (e.g., G719X + S768I) generally do as well as or better than single uncommon mutations. Exon 18 deletions and E709X respond to afatinib.</li>
+    <li><b>De-novo T790M</b> calls for osimertinib. <b>Exon 20 insertions</b> are a separate entity (below). A769_D770insASV-type insertions are poorly sensitive to all classical TKIs, whereas A763_Y764insFQEA is sensitive to them.</li>
+    <li>NCCN lists afatinib, osimertinib, gefitinib, erlotinib and dacomitinib for S768I, L861Q and G719X, with afatinib or osimertinib preferred.</li>
+  </ul>
+
+  <h3>6.3 EGFR exon 20 insertions</h3>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Regimen</th><th>Setting</th><th>n</th><th>Result</th><th>Status</th></tr>
+    <tr><td><b>PAPILLON</b> (Zhou, NEJM 2023)</td><td>Amivantamab + carboplatin-pemetrexed vs chemo</td><td>1L</td><td>308</td><td>PFS 11.4 vs 6.7 mo, HR 0.40; ORR 73% vs 47%</td><td><span class="badge b-appr">Approved (Mar 2024)</span></td></tr>
+    <tr><td><b>WU-KONG28</b> (NEJM 2026; ASCO 2026 LBA8500)</td><td>Sunvozertinib vs platinum-pemetrexed</td><td>1L</td><td><span class="badge verify">n not checked</span></td><td>PFS 10.3 vs 7.5 mo, HR 0.65 (0.50–0.85); 12-mo PFS 46% vs 27%</td><td><span class="badge b-rep">Reported</span> (1L); approved for post-platinum use</td></tr>
+    <tr><td><b>FURVENT</b> (2026)</td><td>Firmonertinib 240 mg vs chemo</td><td>1L</td><td>—</td><td>BICR PFS 11.0 vs 9.5 mo, HR 0.75, P=0.065. <b>Missed</b>. ORR 60% vs 33%</td><td><span class="badge b-neg">Negative</span></td></tr>
+    <tr><td><b>WU-KONG1B</b></td><td>Sunvozertinib 200 mg</td><td>Post-platinum</td><td>~97</td><td>ORR ≈46% <span class="badge verify">verify</span></td><td><span class="badge b-appr">FDA accelerated (Jul 2025)</span></td></tr>
+    <tr><td><b>REZILIENT1</b> (JCO 2025)</td><td>Zipalertinib</td><td>Post-platinum ± amivantamab</td><td>—</td><td>Confirmed ORR 35.2%; mDOR 8.8 mo</td><td><span class="badge b-rep">NDA accepted; PDUFA 27 Feb 2027</span></td></tr>
+    <tr><td>Mobocertinib (EXCLAIM-2)</td><td>vs chemo</td><td>1L</td><td>—</td><td>Did not meet PFS endpoint; US approval withdrawn (2023)</td><td><span class="badge b-neg">Withdrawn</span></td></tr>
+  </table></div>
+  <div class="pearl">Exon 20 insertions are resistant to gefitinib, erlotinib and osimertinib at standard dose (A763_Y764insFQEA excepted). Amivantamab + carboplatin-pemetrexed remains the global first-line standard (ESMO-MCBS 3). An oral TKI (sunvozertinib) is a reasonable second line, or first line where regulators allow.</div>
+
+  <h3>6.4 Resistance to osimertinib: mechanisms</h3>
+  <div class="resmap">
+    <div><b>MET amp/OE</b>15–25% of resistant cases (definition-dependent). Targets: savolitinib, tepotinib, capmatinib + osi; amivantamab</div>
+    <div><b>EGFR C797S</b>~7–15% after 1L osi. cis vs trans configuration matters. 4th-generation TKIs are investigational</div>
+    <div><b>Histologic transformation</b>SCLC ~3–10%, squamous. Higher risk with TP53 + RB1 loss. Treat as SCLC</div>
+    <div><b>HER2 amp</b>~2–5%. T-DXd and trials</div>
+    <div><b>Fusions</b>ALK, RET, BRAF, FGFR3. Consider adding the matching TKI to osimertinib (case series)</div>
+    <div><b>BRAF V600E / KRAS / PIK3CA</b>Each a few %; osi + BRAF/MEK in case reports</div>
+    <div><b>Unknown</b>~40–50%. Chemotherapy-based or ADC-based treatment</div>
+  </div>
+  <p class="small">Percentages are approximate literature ranges after first-line osimertinib <span class="badge verify">verify</span>.</p>
+
+  <h3>6.5 After progression on osimertinib (± chemotherapy)</h3>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Regimen vs control</th><th>n</th><th>PFS (mo)</th><th>OS (mo)</th><th>HR PFS / OS</th><th>Status / comment</th></tr>
+    <tr><td><b>MARIPOSA-2</b> (Ann Oncol 2024)</td><td>Amivantamab + carboplatin-pemetrexed vs chemo</td><td>657</td><td>6.3 vs 4.2</td><td>17.7 vs 15.3</td><td>0.48 / 0.73 (0.54–0.99)</td><td><span class="badge b-appr">Approved (Sep 2024)</span>; IC PFS also improved</td></tr>
+    <tr><td><b>SAFFRON</b> (NEJM 2026; ESMO LBA6)</td><td>Osimertinib + savolitinib vs platinum-pemetrexed (MET IHC3+ ≥90% and/or FISH ≥10 copies)</td><td>338</td><td>7.6 vs 5.4</td><td>17.8 vs 12.9</td><td>0.55 / 0.68</td><td><span class="badge b-rep">Reported</span>; US Fast Track; China-approved (SACHI). All-oral. 7% fatal AEs vs 0</td></tr>
+    <tr><td><b>HARMONi</b> (Lancet Oncol 2026)</td><td>Ivonescimab + chemo vs placebo + chemo (global, post-3rd-generation TKI)</td><td>438</td><td>6.8 vs 4.4</td><td>16.8 vs 14.0</td><td>0.52 / 0.79 (0.62–1.01; P=0.057)</td><td><span class="badge b-rep">BLA under review; PDUFA 14 Nov 2026</span></td></tr>
+    <tr><td><b>HARMONi-A</b> (JAMA 2024; SITC 2025 final OS)</td><td>Ivonescimab + chemo vs chemo (China)</td><td>322</td><td>7.1 vs 4.8</td><td>final OS HR 0.74</td><td>0.46 / 0.74</td><td>China-approved</td></tr>
+    <tr><td><b>OptiTROP-Lung04</b> (NEJM 2025; ESMO 2026 final OS)</td><td>Sac-TMT (TROP2 ADC) vs platinum-pemetrexed (China)</td><td>376</td><td>8.3 vs 4.3</td><td><b>25.9 vs 17.4</b></td><td>0.49 / 0.69</td><td>China-approved; TKI not continued in either arm; prior TKI could be 1st/2nd- or 3rd-generation (benefit larger after a 3rd-generation TKI)</td></tr>
+    <tr><td><b>PANKU-Lung01</b> (Lancet; ESMO LBA71)</td><td>Iza-bren (EGFR×HER3 bispecific ADC) vs platinum-pemetrexed (China)</td><td>432</td><td>11.1 vs 5.7</td><td>NR vs 19.4 (immature)</td><td>0.40 / 0.66</td><td><span class="badge b-inv">Investigational</span>; grade ≥3 TRAE 79% vs 62%; ILD 0.9%</td></tr>
+    <tr><td><b>HERON-Lung01</b> (Lancet; ESMO LBA72)</td><td>Ruzaltatug rezetecan (HER3 ADC) vs platinum-pemetrexed (China)</td><td>498</td><td>8.3 vs 5.4</td><td>immature</td><td>0.47 / 0.70 (NS)</td><td><span class="badge b-inv">Investigational</span>; ILD 2.4%</td></tr>
+    <tr><td><b>HS-10241-301</b> (JCO; ESMO 2026)</td><td>Dalmelitinib + aumolertinib vs chemo (MET-amp FISH)</td><td>314</td><td>6.2 vs 4.4</td><td>immature</td><td>0.60 / 0.84</td><td><span class="badge b-inv">Investigational</span> (China NDA)</td></tr>
+    <tr><td><b>TROPION-Lung05 + Lung01 pooled</b> (JTO 2025)</td><td>Dato-DXd (single arm / subgroup)</td><td>~117 EGFRm</td><td colspan="3">ORR 43.6% in EGFRm in TL05 <span class="badge verify">pooled figures not re-checked</span></td><td><span class="badge b-appr">FDA accelerated (Jun 2025)</span> after EGFR TKI + platinum</td></tr>
+    <tr><td><b>HERTHENA-Lung02</b></td><td>Patritumab deruxtecan (HER3-DXd) vs platinum-pemetrexed</td><td>586</td><td>5.8 vs 5.4</td><td>16.0 vs 15.9</td><td>0.77 / 0.98</td><td><span class="badge b-neg">No OS benefit</span>; US BLA withdrawn (2025)</td></tr>
+    <tr><td><b>COMPEL</b> (ESMO Open 2025)</td><td>Chemo + continued osimertinib vs chemo + placebo (non-CNS progression)</td><td>—</td><td colspan="3">PFS benefit with osimertinib continuation <span class="badge verify">numbers not re-checked</span></td><td>Added to ASCO 2026 as an option</td></tr>
+    <tr><td>IMpower150 (EGFR subgroup)</td><td>Atezolizumab + bevacizumab + carboplatin-paclitaxel</td><td>~124 EGFR/ALK</td><td colspan="3">Exploratory OS signal only <span class="badge verify">verify</span></td><td>Option in NCCN after TKIs; avoid PD-1 alone</td></tr>
+  </table></div>
+  <div class="pearl">The <b>post-osimertinib algorithm in 2026</b>: (1) <b>re-biopsy</b> (tissue preferred) to look for MET IHC/FISH, SCLC transformation and new fusions. (2) MET-high: osimertinib + savolitinib (SAFFRON, OS benefit) or osimertinib + tepotinib (INSIGHT 2), per ASCO. (3) Otherwise amivantamab + carboplatin-pemetrexed (MARIPOSA-2). If amivantamab is unavailable, platinum-pemetrexed ± continued osimertinib (COMPEL), or atezolizumab-bevacizumab-carboplatin-paclitaxel. (4) After platinum: Dato-DXd (FDA accelerated). In China: sac-TMT and ivonescimab. (5) <b>Oligo-progression</b>: local ablative therapy and continue the TKI. (6) <b>CNS-only progression</b>: SRS and continue the TKI, or escalate osimertinib to 160 mg for leptomeningeal disease (BLOOM).</div>
+</section>
+<section class="sec" id="alk" data-grp="Drivers">
+  <h2>7. ALK rearrangement</h2>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Comparison</th><th>n</th><th>PFS</th><th>OS</th><th>HR PFS</th><th>Intracranial</th><th>Status</th></tr>
+    <tr><td><b>CROWN</b> (5-yr, JCO 2024)</td><td>Lorlatinib vs crizotinib</td><td>296</td><td>Median NR vs 9.1 mo; <b>5-yr PFS 60% vs 8%</b></td><td>Immature</td><td><b>0.19</b></td><td>IC ORR 82% vs 23% (measurable, primary analysis); time to IC progression HR ≈0.06 <span class="badge verify">verify</span></td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td><b>ALEX</b> (NEJM 2017; Ann Oncol 2020)</td><td>Alectinib vs crizotinib</td><td>303</td><td>34.8 vs 10.9 mo</td><td>5-yr OS 62.5% vs 45.5%</td><td>0.43</td><td>CNS ORR 81% vs 50% (measurable) <span class="badge verify">verify</span></td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td><b>ALTA-1L</b> (JCO 2020/JTO 2021)</td><td>Brigatinib vs crizotinib</td><td>275</td><td>24.0 vs 11.1 mo</td><td>NS (crossover)</td><td>0.48</td><td>IC ORR 78% vs 26% <span class="badge verify">verify</span></td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td><b>eXalt3</b></td><td>Ensartinib vs crizotinib</td><td>290</td><td>25.8 vs 12.7 mo</td><td>—</td><td>0.51</td><td>—</td><td><span class="badge b-appr">FDA Dec 2024</span></td></tr>
+    <tr><td><b>PROFILE 1014</b> (NEJM 2014)</td><td>Crizotinib vs platinum-pemetrexed</td><td>343</td><td>10.9 vs 7.0 mo</td><td>Crossover</td><td>0.45</td><td>Poor CNS control</td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td><b>ALKOVE-1</b> (ASCO 2026)</td><td>Neladalkib (NVL-655), TKI-pretreated</td><td>253</td><td colspan="2">ORR 31% overall; <b>26% after lorlatinib (n=190)</b></td><td>—</td><td>Designed to be brain-penetrant and to cover G1202R and compound mutations</td><td><span class="badge b-rep">Priority review; PDUFA 27 Nov 2026</span></td></tr>
+  </table></div>
+  <div class="grid g2">
+  <div>
+    <ul>
+      <li><b>First-line standard:</b> lorlatinib is preferred by many for its unprecedented 5-year PFS and CNS protection. Alectinib remains a category 1 preferred option with a mature 5-year OS. Brigatinib and ensartinib are alternatives.</li>
+      <li><b>Lorlatinib toxicity:</b> hyperlipidaemia (~70%), oedema, weight gain, and <b>CNS effects</b> (mood, cognition, speech, psychosis; ~40% any grade). Dose reduction to 75 or 50 mg does not appear to compromise efficacy (CROWN post-hoc) <span class="badge verify">verify</span>.</li>
+      <li><b>Resistance:</b> after a 2nd-generation TKI, ~50% are on-target (G1202R most often); after lorlatinib, compound mutations and bypass (MET amplification). Re-biopsy (plasma acceptable) to guide lorlatinib after alectinib/brigatinib, or trials of neladalkib.</li>
+      <li>Alectinib with chemotherapy has no role first line. Chemo-IO after TKIs is weak, and IO monotherapy is ineffective.</li>
+    </ul>
+  </div>
+  <div>
+    <div class="pearl">Variant matters. EML4-ALK <b>v3</b> (E6;A20) is associated with shorter PFS on 2nd-generation TKIs and more G1202R, so lorlatinib first line is particularly attractive. TP53 co-mutation also predicts shorter benefit.</div>
+    <div class="india">Brand alectinib (Alecensa 150 mg) lists at about ₹1.03 lakh per 56 capsules. At 600 mg BID (8 capsules/day) that is roughly <b>₹4.4 lakh/month</b>. Lorlatinib (Lorbriqua) lists at about ₹3.1 lakh per 30 tablets. Prices are from online pharmacy listings <span class="badge verify">unofficial</span>. Generic alectinib pricing quoted online varies widely (₹50k–1.5 lakh/month) <span class="badge verify">unverified</span>. Manufacturer patient-assistance programmes may apply. Crizotinib → alectinib/lorlatinib sequencing on a budget is acceptable, but the CNS risk is higher with crizotinib first line.</div>
+  </div>
+  </div>
+</section>
+
+<section class="sec" id="ros1" data-grp="Drivers">
+  <h2>8. ROS1 rearrangement</h2>
+  <div class="tw"><table>
+    <tr><th>Drug (trial)</th><th>TKI-naïve ORR</th><th>TKI-naïve median PFS</th><th>IC ORR</th><th>Post-TKI activity</th><th>Status</th></tr>
+    <tr><td><b>Crizotinib</b> (PROFILE 1001, Ann Oncol 2019; n=53)</td><td>72%</td><td>19.3 mo (OS 51.4 mo)</td><td>Poor CNS penetration</td><td>—</td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td><b>Entrectinib</b> (integrated ALKA/STARTRK)</td><td>68%</td><td>15.7 mo</td><td>~80%</td><td>Limited</td><td><span class="badge b-appr">Approved</span> <span class="badge verify">verify</span></td></tr>
+    <tr><td><b>Repotrectinib</b> (TRIDENT-1, NEJM 2024)</td><td>79%</td><td>35.7 mo</td><td>89% (n=9)</td><td>ORR 38% after one TKI (no chemo); active vs G2032R</td><td><span class="badge b-appr">Approved (Nov 2023)</span></td></tr>
+    <tr><td><b>Taletrectinib</b> (TRUST-I/II pooled; AACR 2026)</td><td><b>89.8%</b> (n=157)</td><td><b>46.1 mo</b></td><td>76.5% (n=17)</td><td>Active after crizotinib incl. G2032R</td><td><span class="badge b-appr">Approved (Jun 2025)</span></td></tr>
+    <tr><td><b>Zidesamtinib</b> (ARROS-1)</td><td>—</td><td>—</td><td>Designed to be TRK-sparing and CNS-penetrant</td><td>After ≥1 ROS1 TKI</td><td><span class="badge b-appr">Approved (Jul 2026)</span>; NCCN preferred for symptomatic brain progression</td></tr>
+  </table></div>
+  <div class="pearl">TRK co-inhibition (entrectinib, repotrectinib, taletrectinib) causes <b>dizziness, dysgeusia, weight gain and ataxia</b>. Zidesamtinib was designed to spare TRK. Taletrectinib carries notable <b>hepatotoxicity</b> (transaminase rise) and GI effects. Check LFTs every 2 weeks for the first 2 months <span class="badge verify">per label; verify</span>. For first line, NCCN/ASCO list crizotinib, entrectinib, repotrectinib and taletrectinib. Prefer a CNS-active agent when brain metastases are present.</div>
+</section>
+
+<section class="sec" id="kras" data-grp="Drivers">
+  <h2>9. KRAS (G12C and beyond)</h2>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Comparison</th><th>n</th><th>PFS (mo)</th><th>OS (mo)</th><th>HR PFS / OS</th><th>ORR</th><th>Status</th></tr>
+    <tr><td><b>CodeBreaK 200</b> (Lancet 2023)</td><td>Sotorasib vs docetaxel</td><td>345</td><td>5.6 vs 4.5</td><td>10.6 vs 11.3</td><td>0.66 / 1.01</td><td>28% vs 13%</td><td><span class="badge b-appr">Accelerated</span>; no OS gain</td></tr>
+    <tr><td><b>KRYSTAL-12</b> (Lancet 2025)</td><td>Adagrasib vs docetaxel</td><td>453</td><td>5.5 vs 3.8</td><td>Not yet reported</td><td>0.58 / —</td><td>32% vs 9%</td><td><span class="badge b-appr">Accelerated</span></td></tr>
+    <tr><td><b>Krascendo 1</b> (NEJM 2026; ESMO LBA5)</td><td>Divarasib vs sotorasib (91%) / adagrasib</td><td>338</td><td><b>9.8 vs 5.7</b></td><td><b>17.7 vs 12.0</b></td><td>0.58 / 0.56</td><td>58% vs 32%</td><td><span class="badge b-rep">Reported</span>; grade 3–4 TRAE 25% vs 35%</td></tr>
+    <tr><td><b>KRYSTAL-7</b> phase 2 (PD-L1 ≥50%)</td><td>Adagrasib + pembrolizumab 1L</td><td>—</td><td>27.7</td><td>—</td><td>single arm</td><td>59%</td><td>Phase 3 ongoing (completion 2028)</td></tr>
+    <tr><td><b>Krascendo-170</b> (ASCO 2026)</td><td>Divarasib + pembrolizumab 1L, PD-L1+</td><td>—</td><td>19.3</td><td>—</td><td>single arm</td><td>73%</td><td>Phase 3 KRASCENDO-2 enrolling</td></tr>
+    <tr><td><b>SUNRAY-01/LOXO pooled</b> (ESMO 2026)</td><td>Olomorasib + chemo-IO 1L</td><td>—</td><td>11.6</td><td>—</td><td>single arm</td><td>62%</td><td><span class="badge b-inv">Investigational</span></td></tr>
+  </table></div>
+  <ul>
+    <li><b>First line today:</b> treat as driver-negative (chemo-IO or IO by PD-L1). KRAS-mutant disease responds well to IO, <b>unless STK11 and/or KEAP1 are co-mutated</b> (cold, IO-resistant). Dual checkpoint inhibition (POSEIDON exploratory) and G12C-inhibitor + IO combinations target this subgroup.</li>
+    <li><b>Sotorasib + IO</b> caused significant hepatotoxicity (CodeBreaK 100/101) when given concurrently or soon after IO. Stagger, and monitor LFTs.</li>
+    <li><b>Pan-RAS:</b> daraxonrasib (RAS(ON) multi-selective; FDA-approved for pancreatic cancer in Aug 2026) is listed in the NCCN Sept 2026 emerging-biomarker table for previously treated KRAS G12/G13/Q61 NSCLC <span class="badge b-inv">off-label in lung</span>.</li>
+  </ul>
+</section>
+
+<section class="sec" id="braf" data-grp="Drivers">
+  <h2>10. BRAF V600E</h2>
+  <div class="tw"><table>
+    <tr><th>Regimen (trial)</th><th>Setting</th><th>n</th><th>ORR</th><th>Median PFS</th><th>Median OS</th><th>Status</th></tr>
+    <tr><td>Dabrafenib + trametinib (BRF113928; Lancet Oncol 2017; 5-yr JTO 2022)</td><td>1L</td><td>36</td><td>64%</td><td>10.9 mo</td><td>17.3 mo</td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td>Encorafenib + binimetinib (PHAROS; JCO 2023; updated 2025)</td><td>1L</td><td>59</td><td>75%</td><td><b>30.4 mo</b> (IRR)</td><td>Updated OS published (JCO 2025) <span class="badge verify">value not checked</span></td><td><span class="badge b-appr">Approved (Oct 2023)</span></td></tr>
+    <tr><td>Encorafenib + binimetinib (PHAROS)</td><td>Pre-treated</td><td>39</td><td>46%</td><td>9.3 mo <span class="badge verify">verify</span></td><td>—</td><td><span class="badge b-appr">Approved</span></td></tr>
+  </table></div>
+  <p>Non-V600 BRAF (class II/III) is not targeted by these combinations. Treat as driver-negative and consider trials. Many BRAF V600E tumours occur in former or current smokers with high PD-L1, so a first-line IO-based regimen followed by BRAF/MEK is acceptable (NCCN). Pyrexia (dabrafenib) is managed by interruption ± steroids. Encorafenib/binimetinib causes less pyrexia but more GI toxicity.</p>
+</section>
+
+<section class="sec" id="met" data-grp="Drivers">
+  <h2>11. MET: exon 14 skipping, amplification and protein overexpression</h2>
+  <div class="tw"><table>
+    <tr><th>Drug (trial)</th><th>Population</th><th>ORR</th><th>Median PFS</th><th>Status</th></tr>
+    <tr><td>Capmatinib (GEOMETRY mono-1; NEJM 2020)</td><td>METex14, treatment-naïve (n=28 initial; 60 expanded)</td><td>68%</td><td>12.4 mo</td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td>Capmatinib (GEOMETRY mono-1)</td><td>METex14, pre-treated</td><td>41%</td><td>5.4 mo</td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td>Tepotinib (VISION; NEJM 2020, update 2023)</td><td>METex14, all lines</td><td>~51% overall; ~57% treatment-naïve <span class="badge verify">verify</span></td><td>~11–12.6 mo <span class="badge verify">verify</span></td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td><b>Telisotuzumab vedotin</b> (LUMINOSITY)</td><td>EGFR-wt non-squamous, c-Met <b>high</b> (≥50% tumour cells 3+), previously treated (n=84)</td><td>35%</td><td>mDOR 7.2 mo</td><td><span class="badge b-appr">FDA accelerated (May 2025)</span></td></tr>
+  </table></div>
+  <ul>
+    <li>METex14 patients are older (median ~72–75 years). <b>Peripheral oedema</b> is the class toxicity and is cumulative, managed with dose reduction rather than diuretics alone. Watch creatinine (MET inhibitors inhibit tubular secretion, giving a pseudo-rise).</li>
+    <li>De-novo <b>MET amplification</b> (high-level, e.g., GCN ≥10) responds to capmatinib (ORR ~29–40% in pre-treated GCN ≥10) <span class="badge verify">verify</span>. Acquired MET-driven resistance in EGFRm disease is covered in §6.5 (SAFFRON).</li>
+    <li>Teliso-V toxicity: <b>peripheral neuropathy</b> (MMAE payload), ILD (~7–10%) <span class="badge verify">verify</span>, fatigue.</li>
+  </ul>
+</section>
+
+<section class="sec" id="ret" data-grp="Drivers">
+  <h2>12. RET fusion</h2>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Comparison / population</th><th>n</th><th>Result</th><th>Status</th></tr>
+    <tr><td><b>LIBRETTO-431</b> (NEJM 2023)</td><td>Selpercatinib vs platinum-pemetrexed ± pembrolizumab (1L)</td><td>261</td><td>PFS 24.8 vs 11.2 mo, HR 0.46; ORR 84% vs 65%; CNS progression markedly reduced <span class="badge verify">CNS HR 0.28; verify</span></td><td><span class="badge b-appr">Approved</span></td></tr>
+    <tr><td>LIBRETTO-001 (JCO 2023)</td><td>Selpercatinib, treatment-naïve</td><td>~69</td><td>ORR 84%; median PFS ~22 mo <span class="badge verify">verify</span></td><td><span class="badge b-appr">Approved; tumour-agnostic regular approval Jul 2026</span></td></tr>
+    <tr><td>ARROW</td><td>Pralsetinib, treatment-naïve</td><td>—</td><td>ORR ~72% <span class="badge verify">verify</span></td><td><span class="badge b-appr">Approved (NSCLC)</span></td></tr>
+  </table></div>
+  <p>The <b>chemo-IO control arm did poorly</b> in LIBRETTO-431, confirming that RET-fusion NSCLC responds poorly to IO. Selpercatinib: hypertension, transaminitis, QTc prolongation, <b>chylous effusions</b>, hypersensitivity (often in patients who had prior IO), and weight gain. Dose by weight (120 mg BID if &lt;50 kg, 160 mg BID if ≥50 kg).</p>
+</section>
+
+<section class="sec" id="ntrk" data-grp="Drivers">
+  <h2>13. NTRK1/2/3 fusion</h2>
+  <p>NTRK fusions occur in &lt;1% of NSCLC and are enriched in never-smokers. They are best detected by RNA NGS (pan-TRK IHC is a screen with limited specificity in some contexts). Larotrectinib (pooled lung cohort ORR ~73% <span class="badge verify">verify; small n</span>), entrectinib and repotrectinib (tumour-agnostic approval Jun 2024) are all approved. CNS activity is good with entrectinib and repotrectinib. Solvent-front mutations (e.g., NTRK1 G595R) mediate resistance and are covered by repotrectinib.</p>
+</section>
+
+<section class="sec" id="her2" data-grp="Drivers">
+  <h2>14. HER2 (ERBB2) mutation</h2>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Regimen</th><th>Setting</th><th>n</th><th>ORR</th><th>Median PFS</th><th>Other</th><th>Status</th></tr>
+    <tr><td><b>DESTINY-Lung04</b> (WCLC/ESMO 2026)</td><td>T-DXd vs pembrolizumab + platinum-pemetrexed</td><td><b>1L randomised</b></td><td><span class="badge verify">n</span></td><td>70%</td><td><b>14.3 vs 8.3 mo</b> (HR 0.63, 0.50–0.79)</td><td>OS immature</td><td><span class="badge b-rep">Reported</span>; NCCN v9.2026 keeps T-DXd as subsequent therapy</td></tr>
+    <tr><td><b>Beamion LUNG-1</b> (NEJM 2026)</td><td>Zongertinib</td><td>1L (cohort 2)</td><td>74</td><td>76%</td><td>14.4 mo (mDOR 15.2)</td><td>Active in brain mets</td><td><span class="badge b-appr">FDA accelerated 1L (Feb 2026)</span></td></tr>
+    <tr><td>Beamion LUNG-1 (NEJM 2025)</td><td>Zongertinib</td><td>Pre-treated</td><td>75</td><td>71%</td><td>—</td><td>Mostly grade 1–2 diarrhoea; low ILD</td><td><span class="badge b-appr">FDA accelerated (Aug 2025)</span></td></tr>
+    <tr><td><b>SOHO-01</b> (NEJM 2025; ASCO 2026)</td><td>Sevabertinib 20 mg BID</td><td>1L (cohort F)</td><td>73</td><td>75.3%</td><td>13.5 mo</td><td>Diarrhoea 88% (grade 3: 5.5%); no ILD</td><td><span class="badge b-appr">FDA accelerated 1L (9 Sep 2026)</span></td></tr>
+    <tr><td>SOHO-01</td><td>Sevabertinib</td><td>Pre-treated, HER2-naïve (D) / post-HER2 ADC (E)</td><td>81 / 52</td><td>66.7% / 38%</td><td>8.3 mo / —</td><td>—</td><td><span class="badge b-appr">FDA accelerated (Nov 2025)</span></td></tr>
+    <tr><td>DESTINY-Lung02 (JCO 2023)</td><td>T-DXd 5.4 mg/kg</td><td>Pre-treated</td><td>102</td><td>49%</td><td>9.9 mo</td><td>Drug-related ILD ~13% (5.4 mg/kg) <span class="badge verify">verify</span></td><td><span class="badge b-appr">Approved (Aug 2022)</span></td></tr>
+    <tr><td>DESTINY-Lung01 (NEJM 2022)</td><td>T-DXd 6.4 mg/kg</td><td>Pre-treated</td><td>91</td><td>55%</td><td>8.2 mo</td><td>OS 17.8 mo; ILD 26%</td><td>Dose superseded by 5.4 mg/kg</td></tr>
+  </table></div>
+  <div class="pearl">Distinguish <b>HER2 mutation</b> (TKD; exon 20 YVMA insertion is the most common), <b>HER2 amplification</b> and <b>HER2 overexpression</b> (IHC 3+, where T-DXd has a tumour-agnostic approval). The new oral TKIs are approved for TKD mutations. Pick a TKI first and keep T-DXd for later, or the reverse? There is no head-to-head data. NCCN (Sept 2026) lists zongertinib and sevabertinib first line, with T-DXd for subsequent lines.</div>
+</section>
+
+<section class="sec" id="nrg1" data-grp="Drivers">
+  <h2>15. NRG1 fusion and other emerging targets</h2>
+  <ul>
+    <li><b>NRG1 fusions</b> (≈0.2–0.3%; enriched in invasive mucinous adenocarcinoma). <b>Zenocutuzumab</b> (HER2×HER3 bispecific) received FDA accelerated approval in Dec 2024 for NRG1+ NSCLC and pancreatic cancer (eNRGy; NSCLC ORR ≈33% <span class="badge verify">verify</span>). Detection requires RNA NGS.</li>
+    <li><b>KRAS non-G12C / pan-RAS:</b> daraxonrasib, in the NCCN emerging list.</li>
+    <li><b>TROP2-QCS</b> (computational pathology biomarker for Dato-DXd), <b>B7-H3</b>, <b>CEACAM5</b> (tusamitamab failed) and <b>integrin β6</b> (sigvotatug vedotin: SigVie-002 <span class="badge b-neg">negative</span>, OS 11.9 vs 11.5 mo).</li>
+    <li><b>FGFR, PIK3CA</b>: no lung-specific approvals.</li>
+  </ul>
+</section>
+<section class="sec" id="nodriver" data-grp="No driver">
+  <h2>16. No actionable driver: first-line immunotherapy</h2>
+  <h3>16.1 PD-L1 ≥50%</h3>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Regimen vs control</th><th>n</th><th>PFS (mo)</th><th>OS (mo)</th><th>HR PFS / OS</th><th>Note</th></tr>
+    <tr><td><b>KEYNOTE-024</b> (5-yr, JCO 2021)</td><td>Pembrolizumab vs platinum doublet</td><td>305</td><td>7.7 vs 5.5</td><td>26.3 vs 13.4</td><td>0.50 / 0.62</td><td>5-yr OS 31.9% vs 16.3%, despite 66% effective crossover <span class="badge verify">verify crossover %</span></td></tr>
+    <tr><td><b>KEYNOTE-042</b> (Lancet 2019)</td><td>Pembrolizumab vs chemo (TPS ≥1%)</td><td>1,274</td><td>—</td><td>TPS ≥50%: 20.0 vs 12.2; ≥1%: 16.7 vs 12.1</td><td>OS 0.69 (≥50%) / 0.81 (≥1%)</td><td>Benefit driven by TPS ≥50%; 1–49% not clearly better</td></tr>
+    <tr><td><b>IMpower110</b> (NEJM 2020)</td><td>Atezolizumab vs chemo (TC3/IC3)</td><td>572 (205 high)</td><td>8.1 vs 5.0</td><td>20.2 vs 13.1</td><td>0.63 / 0.59</td><td>SP142 high-expressor population</td></tr>
+    <tr><td><b>EMPOWER-Lung 1</b> (Lancet 2021)</td><td>Cemiplimab vs chemo (PD-L1 ≥50%)</td><td>563</td><td>8.2 vs 5.7</td><td>NR vs 14.2</td><td>0.54 / 0.57</td><td>Allowed treated, stable brain mets; 5-yr update available <span class="badge verify">values not checked</span></td></tr>
+    <tr><td><b>PERSEE</b> (GFPC 01-2020; Ann Oncol 2026)</td><td>Pembrolizumab + chemo vs pembrolizumab (TPS ≥50%)</td><td>—</td><td><b>16.1 vs 6.9</b></td><td>50.2 vs 29.9 (NS)</td><td>0.56 / 0.77 (0.56–1.05)</td><td>Academic phase 3. Grade ≥3 TRAE 54% vs 19%; benefit also in TPS 90–100%</td></tr>
+    <tr><td><b>HARMONi-2</b> (Lancet 2025; WCLC 2026 OS)</td><td>Ivonescimab vs pembrolizumab (TPS ≥1%; China)</td><td>398</td><td>11.1 vs 5.8</td><td><b>30.75 vs 22.57</b></td><td>0.51 / 0.73 (0.57–0.95)</td><td>Interim OS; PD-1×VEGF bispecific; HARMONi-7 (global, TPS ≥50%) ongoing</td></tr>
+  </table></div>
+  <div class="pearl">For TPS ≥50%, <b>IO monotherapy vs chemo-IO</b> is now a real debate. PERSEE showed a large PFS benefit (but no significant OS gain) when chemotherapy was added. Favour chemo-IO in high-burden or symptomatic disease, and in never-smokers or those with STK11/KEAP1 co-mutations or TPS just above 50%. Favour monotherapy for TPS ≥90%, the frail, the elderly and smokers with low burden. NCCN lists both as category 1 options.</div>
+
+  <h3>16.2 Any PD-L1 (including &lt;1%): chemo-immunotherapy and dual checkpoint inhibition</h3>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Regimen</th><th>n</th><th>PFS (mo)</th><th>OS (mo)</th><th>HR PFS / OS</th><th>Note</th></tr>
+    <tr><td><b>KEYNOTE-189</b> (5-yr, JCO 2023)</td><td>Pembrolizumab + carboplatin/cisplatin-pemetrexed vs placebo + chemo</td><td>616</td><td>9.0 vs 4.9</td><td><b>22.0 vs 10.6</b></td><td>0.50 / 0.60</td><td>5-yr OS 19.4% vs 11.3%; benefit in all TPS groups, including &lt;1%</td></tr>
+    <tr><td><b>IMpower150</b> (NEJM 2018; final OS 2021)</td><td>Atezolizumab + bevacizumab + carboplatin-paclitaxel (ABCP) vs BCP</td><td>1,202</td><td>8.3 vs 6.8</td><td>19.5 vs 14.7</td><td>0.62 / 0.80</td><td>The regimen with data in EGFR/ALK after TKIs and in liver metastases (exploratory)</td></tr>
+    <tr><td><b>CheckMate 227</b> (NEJM 2019; 5-yr 2023)</td><td>Nivolumab + ipilimumab vs chemo (TPS ≥1%)</td><td>1,189 (793 compared)</td><td>—</td><td>17.1 vs 14.9</td><td>OS 0.79</td><td>5-yr OS 24% vs 14% <span class="badge verify">verify</span>; also active in TPS &lt;1%</td></tr>
+    <tr><td><b>CheckMate 9LA</b> (Lancet Oncol 2021)</td><td>Nivolumab + ipilimumab + 2 cycles chemo</td><td>719</td><td>6.7 vs 5.0</td><td>15.8 vs 11.0</td><td>0.68 / 0.72</td><td>Short chemo exposure; useful in TPS &lt;1% <span class="badge verify">PFS values verify</span></td></tr>
+    <tr><td><b>POSEIDON</b> (JCO 2023)</td><td>Tremelimumab + durvalumab + chemo vs chemo</td><td>1,013</td><td>6.2 vs 4.8</td><td>14.0 vs 11.7</td><td>0.72 / 0.77</td><td>Exploratory benefit in STK11/KEAP1/KRAS-mutant non-squamous disease</td></tr>
+    <tr><td><b>EMPOWER-Lung 3</b> (Nat Med 2022)</td><td>Cemiplimab + platinum doublet vs chemo</td><td>466</td><td>8.2 vs 5.0</td><td>21.9 vs 13.0</td><td>0.56 / 0.71</td><td>Both histologies</td></tr>
+    <tr><td><b>OptiTROP-Lung06</b> (NEJM 2026; ESMO LBA66)</td><td>Sac-TMT + pembrolizumab vs chemo + pembrolizumab, <b>PD-L1 &lt;1%</b> non-squamous (China)</td><td>—</td><td><b>15.0 vs 5.7</b></td><td>immature</td><td>0.49 / 0.58</td><td><span class="badge b-inv">Investigational</span>; could replace platinum alongside IO</td></tr>
+  </table></div>
+  <div class="grid g2">
+  <div>
+    <h4>STK11 / KEAP1 / SMARCA4 nuances</h4>
+    <ul>
+      <li>STK11 loss gives a "cold" TME and is associated with poor outcomes on PD-(L)1 monotherapy. It is partly prognostic, not purely predictive.</li>
+      <li>KEAP1 (NRF2 activation) predicts poor outcomes across chemo and IO.</li>
+      <li>POSEIDON exploratory and CheckMate 227 subsets suggest that <b>adding a CTLA-4 inhibitor</b> helps STK11/KEAP1-mutant disease. Prospective trials (e.g., TRITON) are testing this <span class="badge verify">trial results not checked</span>.</li>
+      <li>SMARCA4-deficient tumours are aggressive. Chemo-IO is preferred.</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Duration and de-escalation</h4>
+    <ul>
+      <li>Two years of IO is the trial-defined norm. DIAL (IFCT-2103, phase 2; ESMO 2026) found similar 18- and 24-month survival when IO was stopped at 6 months, with pemetrexed maintenance continued. The phase 3 is ongoing.</li>
+      <li><b>MOIO</b> (ESMO 2026): 12-weekly IO dosing <b>failed non-inferiority</b>, with more deaths. Do not extend intervals beyond labelled schedules.</li>
+      <li>India: weight-based and vial-sharing pembrolizumab, and low-dose nivolumab, are used for affordability. Evidence for low-dose IO in lung cancer is limited compared with head and neck (Tata data) <span class="badge verify">lung-specific data not checked</span>.</li>
+    </ul>
+  </div>
+  </div>
+
+  <h3>16.3 Second line and beyond (driver-negative)</h3>
+  <div class="tw"><table>
+    <tr><th>Trial</th><th>Regimen vs docetaxel</th><th>n</th><th>PFS (mo)</th><th>OS (mo)</th><th>HR PFS / OS</th><th>Note</th></tr>
+    <tr><td>REVEL (Lancet 2014)</td><td>Docetaxel + ramucirumab</td><td>1,253</td><td>4.5 vs 3.0</td><td>10.5 vs 9.1</td><td>0.76 / 0.86</td><td>Pre-IO era; modern data show ORR ~30% post chemo-IO</td></tr>
+    <tr><td>LUME-Lung 1 (Lancet Oncol 2014)</td><td>Docetaxel + nintedanib (adenocarcinoma)</td><td>658 (adeno)</td><td>—</td><td>12.6 vs 10.3</td><td>OS 0.83</td><td>EMA-approved; not FDA</td></tr>
+    <tr><td><b>TROPION-Lung01</b> (JCO 2025)</td><td>Dato-DXd</td><td>604</td><td>4.4 vs 3.7</td><td>12.9 vs 11.8</td><td>0.75 / 0.94</td><td>Non-squamous PFS HR 0.63 <span class="badge verify">verify</span>; NSQ BLA withdrawn; EGFR approval instead</td></tr>
+    <tr><td>SigVie-002 (ESMO 2026)</td><td>Sigvotatug vedotin</td><td>—</td><td>4.7 vs 4.2</td><td>11.9 vs 11.5</td><td>0.84 / 0.93</td><td><span class="badge b-neg">Negative</span></td></tr>
+    <tr><td>CheckMate 057 / KEYNOTE-010 / OAK</td><td>Nivolumab / pembrolizumab / atezolizumab (IO-naïve)</td><td>582 / 1,034 / 850</td><td>—</td><td>12.2 vs 9.4 / 10.4 vs 8.5 / 13.8 vs 9.6</td><td>OS 0.73 / 0.71 / 0.73</td><td>Only relevant if IO was not given first line</td></tr>
+  </table></div>
+  <div class="pearl">Beating docetaxel after chemo-IO has proven very hard. Dato-DXd (TL01), sigvotatug vedotin (SigVie-002), tusamitamab and several IO-combinations all failed to improve OS. Docetaxel ± ramucirumab (or + nintedanib) remains the global benchmark. The newest wave tests ADCs <b>earlier</b> (OptiTROP-Lung06, TROPION-Lung07/08, AVANZAR) <span class="badge verify">TL07/08/AVANZAR results not checked</span>.</div>
+</section>
+
+<section class="sec" id="special" data-grp="Special settings">
+  <h2>17. Special clinical settings</h2>
+  <div class="grid g2">
+  <div class="card">
+    <h3 style="margin-top:0">Brain metastases</h3>
+    <ul>
+      <li><b>Driver-positive, asymptomatic, small:</b> start a CNS-penetrant TKI (osimertinib, lorlatinib, alectinib, brigatinib, selpercatinib, repotrectinib/taletrectinib) and get an MRI at 6–8 weeks. Defer SRS. FLAURA2 and CROWN show high IC control.</li>
+      <li><b>Symptomatic, large (&gt;3 cm), oedema or posterior fossa:</b> SRS or surgery first, then systemic therapy.</li>
+      <li><b>Driver-negative:</b> SRS for limited lesions (1–4, and increasingly up to 10–15 by total volume), then chemo-IO. Pembrolizumab has activity in untreated small brain mets (phase 2, ~30% IC ORR) <span class="badge verify">verify</span>.</li>
+      <li><b>Avoid WBRT</b> where possible (QUARTZ showed no QoL/OS benefit vs supportive care in poor-prognosis patients). If WBRT is used, add hippocampal avoidance + memantine.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">Leptomeningeal disease</h3>
+    <ul>
+      <li>EGFRm: osimertinib <b>160 mg</b> (BLOOM; LM ORR ~62% by BICR) <span class="badge verify">verify</span>. Amivantamab + lazertinib also has CSF activity.</li>
+      <li>ALK: lorlatinib. Consider an intrathecal pemetrexed trial approach (Chinese phase 1/2 data) <span class="badge verify">verify</span>.</li>
+      <li>Focal RT for symptomatic bulky sites; proton craniospinal irradiation (phase 2, mixed histologies) where available.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">Oligometastatic disease: consolidative local therapy</h3>
+    <ul>
+      <li><b>Gomez</b> (Lancet Oncol 2016; JCO 2019; n=49): LCT after first-line systemic therapy gave PFS 14.2 vs 4.4 mo and OS <b>41.2 vs 17.0 mo</b>.</li>
+      <li><b>SINDAS</b> (JCO 2023 <span class="badge verify">year verify</span>; n=133; EGFRm, China): TKI + upfront RT gave PFS 20.2 vs 12.5 mo and OS 25.5 vs 17.4 mo (1st-generation TKI era).</li>
+      <li><b>SABR-COMET</b> (JCO 2020; n=99, mixed primaries): 5-yr OS 42.3% vs 17.7%.</li>
+      <li><b>SARON</b> (ESMO 2026; n=140; driver-negative): PFS 13.9 vs 8.9 mo (HR 0.64) and local failure 13% vs 40%, but <b>OS 31.0 vs 28.0 mo (HR 0.99)</b>. This tempers enthusiasm in the IO era.</li>
+      <li>Practical: ≤3–5 lesions with controlled disease after 3–4 months of systemic therapy → discuss SABR/surgery at the tumour board. NRG-LU002 (maintenance ± LCT) did not show a clear benefit <span class="badge verify">verify</span>.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">Elderly and PS 2</h3>
+    <ul>
+      <li><b>IFCT-0501</b> (Lancet 2011): monthly carboplatin + weekly paclitaxel vs monotherapy in patients aged 70–89 gave OS 10.3 vs 6.2 mo <span class="badge verify">verify</span>.</li>
+      <li><b>IPSOS</b> (Lancet 2023; n=453): atezolizumab vs single-agent chemotherapy in platinum-ineligible patients (PS 2–3 or aged ≥70 with comorbidity) gave OS 10.3 vs 9.2 mo (HR 0.78), with 2-yr OS doubled <span class="badge verify">verify</span>.</li>
+      <li>Driver-positive PS 3–4 patients can still be offered a TKI. Dramatic "Lazarus" responses are common with EGFR, ALK and ROS1.</li>
+      <li>Use G8/CARG geriatric screens. Pemetrexed needs CrCl ≥45 mL/min plus folate/B12.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">Bone metastases</h3>
+    <ul>
+      <li>Denosumab 120 mg SC q4w or zoledronic acid 4 mg q3–4w (q12w de-escalation acceptable). Denosumab was superior for time to first SRE in solid tumours (Henry 2011). A lung-subgroup OS signal was exploratory.</li>
+      <li>Calcium + vitamin D; dental review (osteonecrosis of the jaw); watch hypocalcaemia with denosumab.</li>
+      <li>8 Gy single-fraction RT for pain; SBRT for oligo or spine lesions (SC.24); spinal cord compression → steroids + surgery/RT.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">Malignant pleural effusion</h3>
+    <ul>
+      <li>Send the fluid as a <b>cell block for NGS</b>. Fluid can also be used for PD-L1, with caution.</li>
+      <li>Recurrent effusion: indwelling pleural catheter (IPC) or talc pleurodesis. IPC + talc (IPC-PLUS) improves pleurodesis rates. TKIs and bevacizumab-containing regimens often control effusions.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">Transformation to SCLC and re-biopsy at progression</h3>
+    <ul>
+      <li>Occurs in ~3–14% of EGFRm tumours at TKI resistance (median ~18 months). Higher risk with <b>TP53 + RB1</b> alterations at baseline. Suspect it with a rising NSE/ProGRP or rapid visceral or brain progression.</li>
+      <li>Treat with platinum-etoposide ± continued TKI. IO adds little. Tarlatamab (DLL3) is an option at relapse <span class="badge verify">transformed-SCLC data limited</span>.</li>
+      <li><b>Re-biopsy</b> at every progression on targeted therapy when feasible. Plasma first, then tissue if negative or if transformation is suspected (plasma cannot diagnose histology).</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">Drug interactions (including TB co-treatment)</h3>
+    <ul>
+      <li>Most TKIs are CYP3A4 substrates. Watch rifampicin (TB co-treatment is common in India) and azoles. Rifampicin markedly lowers osimertinib, alectinib and lorlatinib levels; switch to rifabutin or increase the dose per label.</li>
+      <li>PPIs reduce gefitinib, erlotinib, dacomitinib and capmatinib absorption (time doses around them). Osimertinib and lorlatinib are not affected.</li>
+    </ul>
+  </div>
+  </div>
+</section>
+<section class="sec" id="charts" data-grp="Visual evidence">
+  <h2>18. Visual evidence: forest plot and survival bars</h2>
+  <h3 style="margin-top:0">Forest plot of hazard ratios (randomised phase 3)</h3>
+  <div class="filters noprint">
+    <div class="seg" id="fpEnd"><button data-k="hr" class="on">PFS HR</button><button data-k="hrOS">OS HR</button></div>
+    <select id="fpCat"><option value="all">All molecular groups</option></select>
+    <span class="small">Squares are point estimates, bars are 95% CIs where verified (no bar means CI not checked). Hover for detail; click to open in the table.</span>
+  </div>
+  <div class="chartbox"><svg id="forest" viewBox="0 0 980 600" role="img" aria-label="Forest plot"></svg></div>
+  <h3>Median PFS / OS with the best first-line regimen, by molecular group</h3>
+  <div class="filters noprint"><div class="seg" id="barEnd"><button data-k="pfs" class="on">Median PFS</button><button data-k="os">Median OS</button></div><span class="small">Cross-trial comparison for orientation only (different eras, populations and follow-up). Hatched bars mean the median was not reached (bar drawn at the lower bound shown).</span></div>
+  <div class="chartbox"><svg id="bars" viewBox="0 0 980 470" role="img" aria-label="Median survival bars"></svg></div>
+</section>
+
+<section class="sec" id="trials" data-grp="Visual evidence">
+  <h2>19. Trial database: sortable and filterable</h2>
+  <div class="filters noprint">
+    <input id="tFilter" type="search" placeholder="Filter text (drug, trial, journal)…">
+    <select id="tDrv"><option value="all">All groups</option></select>
+    <select id="tSet"><option value="all">All settings</option><option>1L</option><option>2L+</option><option>Post-TKI</option><option>Historical</option><option>Oligo</option></select>
+    <select id="tStat"><option value="all">Any status</option><option value="appr">Approved</option><option value="rep">Reported</option><option value="inv">Investigational</option><option value="neg">Negative</option></select>
+    <button class="btn" id="tReset">Reset</button>
+    <span id="tCount" class="small"></span>
+  </div>
+  <div class="tw"><table id="trialTable"><thead><tr>
+    <th data-k="name">Trial</th><th data-k="drv">Group</th><th data-k="set">Setting</th><th data-k="arms">Regimen vs control</th><th data-k="n">n</th><th data-k="pfs">PFS (mo)</th><th data-k="os">OS (mo)</th><th data-k="hr">HR PFS</th><th data-k="hrOS">HR OS</th><th data-k="orr">ORR</th><th data-k="cns">CNS</th><th data-k="ref">Reference</th>
+  </tr></thead><tbody></tbody></table></div>
+</section>
+
+<section class="sec" id="drugs" data-grp="Practical">
+  <h2>20. Drug cards: dosing and key toxicities</h2>
+  <div class="filters noprint"><input id="dFilter" type="search" placeholder="Filter drugs…"><button class="btn" id="dOpen">Expand all</button><button class="btn" id="dClose">Collapse all</button></div>
+  <div id="drugList" class="grid g2"></div>
+  <p class="small">Doses are standard adult label doses for NSCLC as best known <span class="badge verify">confirm against the current label</span>. Renal and hepatic adjustments are omitted for brevity.</p>
+</section>
+
+<section class="sec" id="guidelines" data-grp="Practical">
+  <h2>21. Guidelines side by side, and where they disagree</h2>
+  <div class="tw"><table class="cmp">
+    <tr><th>Topic</th><th>NCCN v9.2026 (Oct 2026)</th><th>ESMO living guideline (oncogene-addicted, 2025 update)</th><th>ASCO living guideline (driver: v2026.3.x)</th><th>India (ICMR / NCG / Pan-Asian ESMO)</th></tr>
+    <tr><td>Biomarker testing</td><td>Broad molecular profiling (NGS) incl. RNA for fusions; PD-L1. Plasma acceptable, tissue if negative</td><td>NGS recommended for non-squamous advanced NSCLC</td><td>Broad NGS + IHC (PD-L1, HER2, MET); RNA helpful; tissue + plasma; sequential single-gene PCR "should not be routine"</td><td>Pan-Asian ESMO (ESMO Open 2024) adapts testing to resources. ICMR consensus permits EGFR/ALK/ROS1 single-gene testing where NGS is unavailable <span class="badge verify">document date/version</span></td></tr>
+    <tr><td>EGFR common, 1L</td><td>Osimertinib; osimertinib + pemetrexed-platinum; amivantamab + lazertinib (all category 1) <span class="badge verify">preferred status per version</span>. Also erlotinib ± ramucirumab/bev, gefitinib, afatinib, dacomitinib</td><td>Osimertinib (ESMO-MCBS 4) or osi + chemo or ami + laz (both MCBS 3). <b>Osi + chemo preferred with baseline CNS mets</b></td><td><b>Combination (osi + chemo or ami + laz) recommended</b>; osi alone if the patient does not pursue combination; lazertinib alone if osi unavailable</td><td>Osimertinib, or gefitinib + pemetrexed-carboplatin (Noronha) where osi is unaffordable</td></tr>
+    <tr><td>EGFR after osimertinib</td><td>Amivantamab + carboplatin-pemetrexed; platinum doublet ± ABCP; Dato-DXd (after platinum)</td><td>Amivantamab + chemo; platinum-based chemo</td><td>Ami + chemo; <b>chemo ± osi continuation (COMPEL)</b>; osi + tepotinib or savolitinib for acquired MET amp; Dato-DXd after osi + platinum</td><td>Platinum-pemetrexed ± bevacizumab; ABCP if affordable</td></tr>
+    <tr><td>EGFR exon 20 ins</td><td>Amivantamab + carboplatin-pemetrexed 1L; sunvozertinib subsequent</td><td>Ami + carbo-pem (MCBS 3)</td><td>Ami + chemo 1L; sunvozertinib after platinum ± ami</td><td>Platinum-pemetrexed; amivantamab rarely accessible</td></tr>
+    <tr><td>ALK 1L</td><td>Alectinib, brigatinib, lorlatinib (preferred); ensartinib; crizotinib/ceritinib (other)</td><td>Alectinib, brigatinib, lorlatinib</td><td>Alectinib, brigatinib, lorlatinib (lorlatinib favoured for CNS)</td><td>Alectinib (generic) or crizotinib where cost-limited</td></tr>
+    <tr><td>ROS1</td><td>Taletrectinib, repotrectinib, entrectinib, crizotinib (1L). <b>Zidesamtinib</b> subsequent, preferred for symptomatic CNS progression (Oct 2026)</td><td>Crizotinib, entrectinib; repotrectinib</td><td>Taletrectinib added 1L/2L; repotrectinib</td><td>Crizotinib</td></tr>
+    <tr><td>HER2 mutation</td><td><b>Zongertinib, sevabertinib</b> 1L (Sept 2026); T-DXd subsequent</td><td>T-DXd after 1L</td><td>Zongertinib, sevabertinib 2L and after T-DXd (Feb 2026 text) <span class="badge verify">may have changed in later 2026.3.x versions</span></td><td>Chemo-IO 1L; T-DXd if accessible</td></tr>
+    <tr><td>KRAS G12C</td><td>Chemo-IO/IO 1L; sotorasib or adagrasib subsequent; daraxonrasib in emerging-biomarker table</td><td>Sotorasib/adagrasib 2L</td><td>Sotorasib/adagrasib 2L</td><td>Chemo-IO / chemo; G12C inhibitors not marketed widely <span class="badge verify">availability</span></td></tr>
+    <tr><td>PD-L1 ≥50%, no driver</td><td>Pembrolizumab, atezolizumab, cemiplimab monotherapy (cat 1) or chemo-IO</td><td>Mono-IO or chemo-IO</td><td>(non-driver guideline) Mono-IO or chemo-IO</td><td>Pembrolizumab (dose-capped/weight-based) or chemo when IO unaffordable</td></tr>
+    <tr><td>Oligometastatic</td><td>LCT (SABR/surgery) option for limited mets after systemic therapy</td><td>Radical local treatment may be considered in selected patients</td><td>—</td><td>Tumour-board decision; SABR access variable</td></tr>
+  </table></div>
+  <h3>Points of disagreement and nuance</h3>
+  <ul>
+    <li><b>EGFR first line:</b> ASCO (2026) frames <i>combination</i> as the default. ESMO keeps osimertinib with the higher MCBS score (4) and grades the combinations MCBS 3, citing toxicity and cost. NCCN lists all three without forcing a choice.</li>
+    <li><b>HER2 first line:</b> NCCN moved zongertinib and sevabertinib to first line within weeks of the FDA approvals. It has <b>not</b> yet adopted 1L T-DXd despite DESTINY-Lung04 (PFS HR 0.63). ESMO and most ex-US regulators have not followed yet.</li>
+    <li><b>China-only data</b> (ivonescimab, sac-TMT, iza-bren, savolitinib + osimertinib 1L): mainly Chinese approvals. Western guidelines wait for global trials (HARMONi-3, IZABRIGHT-Lung01). The FDA decision on ivonescimab is due 14 Nov 2026.</li>
+    <li><b>PD-L1 ≥50%:</b> PERSEE may push guidelines toward chemo-IO for high-burden disease, but it has no OS significance.</li>
+    <li><b>Low- and middle-income settings:</b> Pan-Asian ESMO and NCG documents explicitly allow 1st/2nd-generation TKI ± chemo and crizotinib as resource-adapted standards.</li>
+  </ul>
+</section>
+
+<section class="sec" id="india" data-grp="Practical">
+  <h2>22. India: resource-stratified approach, costs and access</h2>
+  <div class="grid g2">
+  <div>
+    <h3 style="margin-top:0">Indicative retail drug costs (Nov 2026) <span class="badge verify">all unofficial</span></h3>
+    <table>
+      <tr><th>Drug</th><th>Pack price (listing)</th><th>Approx. monthly</th><th>Source type</th></tr>
+      <tr><td>Osimertinib 80 mg (generic, e.g., Osimert)</td><td>₹7,750–8,200 / 30 tabs (one listing ₹12,078)</td><td>≈₹8k–12k</td><td>Online pharmacy (PharmEasy, PlatinumRx)</td></tr>
+      <tr><td>Gefitinib 250 mg (generics)</td><td>₹3,400–5,531 / 30 tabs</td><td>≈₹3.4k–5.5k</td><td>Online pharmacy</td></tr>
+      <tr><td>Alectinib 150 mg (Alecensa)</td><td>₹1,03,500 / 56 caps</td><td>≈₹4.4 lakh (8 caps/day)</td><td>Online pharmacy</td></tr>
+      <tr><td>Alectinib (generic)</td><td>quoted ₹50k–1.5 lakh/month</td><td>uncertain</td><td>Clinic blog <span class="badge verify">unverified</span></td></tr>
+      <tr><td>Lorlatinib 100 mg (Lorbriqua)</td><td>₹3,12,000 / 30 tabs</td><td>≈₹3.1 lakh</td><td>Online pharmacy</td></tr>
+      <tr><td>Crizotinib / ceritinib (brand)</td><td>—</td><td>₹40k–50k (2025 report)</td><td>PGIMER/DHR report via ThePrint</td></tr>
+    </table>
+    <p class="small">Prices vary by city, hospital pharmacy, government tender rates and patient-assistance schemes. Amivantamab, lazertinib, T-DXd, Dato-DXd and the newer TKIs: Indian prices not checked.</p>
+  </div>
+  <div>
+    <h3 style="margin-top:0">Coverage</h3>
+    <ul>
+      <li><b>AB-PMJAY (HBP 2.0):</b> 71 medical-oncology packages. Oral drug dispensing is included in chemotherapy packages and paid per cycle. <b>I could not verify a lung-specific TKI package or rate</b> in the HBP documents; confirm with the empanelled hospital PMJAY desk and the current HBP 2022 master list.</li>
+      <li>A government-commissioned PGIMER cost-effectiveness study (2025) recommended including crizotinib and ceritinib in PMJAY <b>only after price cuts of about 81% and 92%</b> to reach value-based prices.</li>
+      <li><b>Tamil Nadu CMCHIS:</b> no lung-TKI-specific package found in this search <span class="badge verify">check the CMCHIS package list</span>.</li>
+      <li>Manufacturer patient-assistance programmes (PAPs) often provide "buy X, get Y free" schemes for brand TKIs <span class="badge verify">terms vary</span>.</li>
+    </ul>
+  </div>
+  </div>
+  <h3>Resource-stratified pathway (adapted from the ASCO resource-stratified framework)</h3>
+  <div class="tw"><table class="cmp">
+    <tr><th>Tier</th><th>Testing</th><th>EGFR common</th><th>ALK</th><th>No driver</th></tr>
+    <tr><td>Basic</td><td>Histology + IHC (TTF-1); EGFR PCR</td><td>Gefitinib/erlotinib/afatinib</td><td>Crizotinib if PAP; else chemo</td><td>Platinum-pemetrexed → pemetrexed maintenance</td></tr>
+    <tr><td>Limited</td><td>EGFR PCR + ALK IHC + ROS1 IHC + PD-L1</td><td><b>Gefitinib + pemetrexed-carboplatin</b> or generic osimertinib</td><td>Crizotinib or generic alectinib</td><td>Chemo; pembrolizumab mono if PD-L1 ≥50% and affordable</td></tr>
+    <tr><td>Enhanced</td><td>Tissue NGS (DNA ± RNA) or plasma NGS</td><td>Osimertinib ± chemo</td><td>Alectinib / lorlatinib</td><td>Chemo-IO (KN-189)</td></tr>
+    <tr><td>Maximal</td><td>DNA + RNA NGS, plasma, re-biopsy at progression</td><td>Osi + chemo or ami + laz; MET-guided post-osi therapy</td><td>Lorlatinib → neladalkib (trial / approval)</td><td>Chemo-IO; ADC trials; bispecifics</td></tr>
+  </table></div>
+  <div class="pearl">In the TN government sector, the most cost-effective "value" interventions are (1) EGFR, ALK and ROS1 testing <i>before</i> any treatment, (2) generic osimertinib (or gefitinib + chemo) for EGFRm disease, (3) pemetrexed-based doublets with continuation maintenance, and (4) SRS/SABR access rather than WBRT.</div>
+</section>
+
+<section class="sec" id="tox" data-grp="Practical">
+  <h2>23. Toxicity management: quick reference</h2>
+  <div class="tw"><table class="cmp">
+    <tr><th>Toxicity</th><th>Drugs</th><th>Prevention / management</th></tr>
+    <tr><td>ILD / pneumonitis</td><td>T-DXd (~13% at 5.4 mg/kg in DL-02 <span class="badge verify">verify</span>), Dato-DXd, osimertinib (~3–4%; higher in Japanese patients), IO, brigatinib (early-onset pulmonary events)</td><td>Baseline CT; educate on cough/dyspnoea. <b>T-DXd/Dato-DXd:</b> grade 1 → hold, consider steroids, resume only after resolution; grade ≥2 → permanently discontinue + prednisolone ≥1 mg/kg. <b>Osimertinib:</b> stop; rechallenge after low-grade ILD is controversial. <b>Brigatinib:</b> 90 mg lead-in for 7 days</td></tr>
+    <tr><td>Infusion reactions</td><td>Amivantamab IV (~65% at C1D1 <span class="badge verify">verify</span>)</td><td>Premedicate (antihistamine, paracetamol, dexamethasone on C1D1–D2). Split the first dose over D1/D2 and start slowly. <b>SC amivantamab</b> (PALOMA-3) cut IRR to ~13% vs ~66% <span class="badge verify">verify</span></td></tr>
+    <tr><td>Venous thromboembolism</td><td>Amivantamab + lazertinib (VTE ~37% any grade in MARIPOSA <span class="badge verify">verify</span>), also chemo</td><td><b>Prophylactic anticoagulation for the first 4 months</b> (label): apixaban 2.5 mg BID or rivaroxaban 10 mg OD. PALOMA-3 showed fewer VTEs with prophylaxis</td></tr>
+    <tr><td>Rash, paronychia, scalp folliculitis</td><td>Amivantamab ± lazertinib, EGFR TKIs (afatinib, dacomitinib)</td><td><b>COCOON regimen</b>: oral doxycycline 100 mg BID (or minocycline) for 12 weeks, clindamycin 1% lotion to the scalp, chlorhexidine 4% nail wash, non-comedogenic ceramide moisturiser. This roughly halved grade ≥2 dermatologic AEs (38.6% vs 76.5% <span class="badge verify">verify</span>). New COCOON (ESMO 2026): a 4-week lazertinib lead-in + SC amivantamab further reduced grade ≥2 skin AEs (18% vs 39%; exploratory)</td></tr>
+    <tr><td>Diarrhoea</td><td>Afatinib, dacomitinib, sevabertinib (88% any; grade 3 ~5.5% 1L), zongertinib, neratinib-like HER2 TKIs</td><td>Loperamide at the first loose stool; hydration; dose reduction</td></tr>
+    <tr><td>Hepatotoxicity</td><td>Sotorasib/adagrasib (worse soon after IO), taletrectinib, selpercatinib, zongertinib, capmatinib</td><td>LFTs every 2 weeks for 2–3 months. Hold at grade ≥3; steroids if immune-mediated overlap is suspected</td></tr>
+    <tr><td>Peripheral oedema</td><td>Capmatinib, tepotinib, savolitinib (49% in SAFFRON), amivantamab</td><td>Compression, leg elevation, dose reduction. Diuretics are of limited help</td></tr>
+    <tr><td>CNS effects, lipids</td><td>Lorlatinib</td><td>Screen mood and cognition; dose reduce. Statin (rosuvastatin/atorvastatin) + fibrate as needed</td></tr>
+    <tr><td>Stomatitis, ocular</td><td>Dato-DXd, sac-TMT (stomatitis 51%)</td><td><b>Prophylactic dexamethasone mouthwash</b>; lubricating eye drops and ophthalmology review (keratitis)</td></tr>
+    <tr><td>Nausea</td><td>T-DXd, Dato-DXd</td><td>Treat as moderately emetogenic: 5-HT3 + dexamethasone ± NK1/olanzapine</td></tr>
+    <tr><td>Neuropathy</td><td>Teliso-V (MMAE), paclitaxel</td><td>Dose delay/reduction per label</td></tr>
+    <tr><td>Immune-related AEs</td><td>PD-(L)1 ± CTLA-4, ivonescimab</td><td>Grade 2 pneumonitis: hold + prednisolone 1 mg/kg. Grade ≥3: discontinue + methylprednisolone 1–2 mg/kg, and add infliximab or MMF if refractory. Check TFTs, cortisol and glucose regularly. Myocarditis → high-dose steroids immediately (troponin baseline). Ivonescimab adds VEGF effects (hypertension, proteinuria, bleeding)</td></tr>
+    <tr><td>Pyrexia</td><td>Dabrafenib + trametinib</td><td>Interrupt at ≥38 °C; restart at the same dose when afebrile; steroid prophylaxis if recurrent</td></tr>
+    <tr><td>Hypertension, QTc, chylous effusion</td><td>Selpercatinib, pralsetinib</td><td>BP control; ECG at baseline and periodically; triglyceride-rich effusion → dose reduction, low-fat diet</td></tr>
+  </table></div>
+</section>
+
+<section class="sec" id="pearls" data-grp="Teaching">
+  <h2>24. Clinical pearls and self-test questions</h2>
+  <div class="grid g2">
+  <div>
+    <h3 style="margin-top:0">Ten pearls</h3>
+    <ol>
+      <li>Never start IO in a never-smoker with adenocarcinoma before driver results are back.</li>
+      <li>A negative plasma NGS result is not a negative test. Get tissue (ideally DNA + RNA).</li>
+      <li>MRI brain is part of baseline staging for every stage IV adenocarcinoma.</li>
+      <li>For EGFRm disease, two first-line regimens now beat osimertinib on OS. Match the choice to patient burden, CNS status and access.</li>
+      <li>Gefitinib + pemetrexed-carboplatin (Tata Memorial) is the Indian evidence-based, low-cost intensification.</li>
+      <li>Lorlatinib's 5-year PFS of 60% means ALK+ disease is increasingly a chronic illness. Manage the lipids and the mood.</li>
+      <li>Re-biopsy at progression: MET (IHC/FISH), SCLC transformation and new fusions all change management.</li>
+      <li>RET, ALK, ROS1 and HER2-mutant tumours respond poorly to IO. Give TKIs and ADCs first.</li>
+      <li>KRAS G12C + STK11/KEAP1 co-mutations call for dual checkpoint inhibition or a trial.</li>
+      <li>After chemo-IO, docetaxel ± ramucirumab is still the benchmark that most new agents fail to beat.</li>
+    </ol>
+  </div>
+  <div>
+    <h3 style="margin-top:0">Self-test questions (with short answers)</h3>
+    <details class="drug"><summary>What does M1c1 vs M1c2 mean in TNM 9?</summary><div class="body">M1c1 means multiple extrathoracic metastases in one organ system. M1c2 means more than one organ system. Both are stage IVB.</div></details>
+    <details class="drug"><summary>Name the OS-positive first-line EGFR trials vs osimertinib.</summary><div class="body">FLAURA2 (osi + chemo; HR 0.77; 47.5 vs 37.6 mo) and MARIPOSA (ami + laz; HR 0.75; 3-yr OS 60% vs 51%).</div></details>
+    <details class="drug"><summary>Which assay does not fit PD-L1 TPS interchangeability?</summary><div class="body">SP142. 22C3, 28-8 and SP263 are broadly comparable for TPS.</div></details>
+    <details class="drug"><summary>Mechanisms of osimertinib resistance?</summary><div class="body">MET amplification/overexpression, C797S, histologic transformation, HER2 amplification, fusions (ALK/RET/BRAF), BRAF V600E/KRAS/PIK3CA, and unknown mechanisms in about 40–50%.</div></details>
+    <details class="drug"><summary>Which first-line trial established cemiplimab in PD-L1 ≥50%?</summary><div class="body">EMPOWER-Lung 1 (OS HR 0.57 at primary analysis).</div></details>
+    <details class="drug"><summary>Why did sotorasib fail to improve OS in CodeBreaK 200?</summary><div class="body">Modest PFS gain (HR 0.66), crossover from docetaxel, and limited single-agent potency. Divarasib later improved OS head-to-head (Krascendo 1, HR 0.56).</div></details>
+    <details class="drug"><summary>What did SARON show?</summary><div class="body">Consolidation RT in driver-negative synchronous oligometastatic NSCLC improved PFS (HR 0.64) and local control but not OS (HR 0.99).</div></details>
+    <details class="drug"><summary>Which HER2 drugs are FDA-approved for first line (Nov 2026)?</summary><div class="body">Zongertinib (Feb 2026) and sevabertinib (Sept 2026), both accelerated. T-DXd 1L (DESTINY-Lung04) is reported but not yet in NCCN first line.</div></details>
+  </div>
+  </div>
+</section>
+<section class="sec" id="caveats" data-grp="Teaching">
+  <h2>25. Caveats and limitations</h2>
+  <ul>
+    <li><b>Figures marked <span class="badge verify">verify</span></b> come from memory or secondary summaries (congress coverage, press releases, KOL summaries) and were <b>not checked against the primary publication</b> this session. Older landmark trials (FLAURA CNS ORR, ALEX/ALTA-1L intracranial ORR, VISION, ARROW, LIBRETTO-001 PFS, CheckMate 9LA PFS, COCOON percentages, IFCT-0501, IPSOS, BLOOM) fall in this group.</li>
+    <li><b>ESMO 2026 data (Oct 2026)</b> (SAFFRON, Krascendo 1, PERSEE, OptiTROP-Lung04/06, PANKU-Lung01, HERON-Lung01, SANOVO, SARON, DIAL, MOIO, COCOON) were taken from published abstracts and press coverage (ASCO Post, KOL Pulse, Nature Rev Clin Oncol). Several trial sample sizes (WU-KONG28, DESTINY-Lung04, PERSEE, OptiTROP-Lung06) were not available and are shown as "—".</li>
+    <li><b>NCCN v9.2026</b> content is summarised from secondary reports (OncoDaily, AJMC, ASCO Post) because the guideline needs a login. Category labels and "preferred" status for EGFR first-line regimens should be checked on nccn.org.</li>
+    <li><b>ASCO living guideline:</b> the HER2 text reflects the Feb 2026 (v2026.3.0) summary. Later 2026.3.x versions may differ.</li>
+    <li><b>Indian drug prices</b> are <b>unofficial</b> online-pharmacy listings (PharmEasy, PlatinumRx, MrMed) and a clinic blog (generic alectinib). They are not government tender or PMJAY rates.</li>
+    <li><b>PMJAY / CMCHIS:</b> no lung-specific TKI package or rate was found. The HBP 2.0 user guideline confirms per-cycle payment of oral drugs within chemotherapy packages only. Confirm locally.</li>
+    <li><b>Indian guideline documents</b> (ICMR consensus, NCG) were not re-read this session. Statements about them are general and marked verify.</li>
+    <li><b>Driver-prevalence donut</b> values are teaching approximations from published ranges. The Indian KRAS, BRAF, MET, RET and HER2 slices are especially uncertain.</li>
+    <li><b>Pending regulatory events (as of 11 Nov 2026):</b> ivonescimab BLA, PDUFA 14 Nov 2026; neladalkib, PDUFA 27 Nov 2026; zipalertinib, PDUFA 27 Feb 2027. Re-check after these dates.</li>
+    <li>Cross-trial comparisons (bar chart) are for orientation only. Doses must be checked against the current label before use.</li>
+  </ul>
+</section>
+
+<section class="sec" id="refs" data-grp="Teaching">
+  <h2>26. References</h2>
+  <p class="small">Links go to the journal, DOI, FDA notice or a PubMed search for the named trial (used where the exact DOI was not re-verified). Last checked 11 November 2026.</p>
+  <ol class="refs" id="refList"></ol>
+</section>
+<p class="small" style="text-align:center;margin:1.5rem 0 3rem">Educational evidence review for oncologists. It does not replace the current prescribing information or institutional protocols. Evidence current to 11 November 2026.</p>
+</main>
+</div>
+<a href="#top" class="btn back noprint" title="Back to top">↑ Top</a>
+<script>
+const REFS={
+flaura:{t:"Osimertinib in untreated EGFR-mutated advanced NSCLC (FLAURA). NEJM 2018;378:113-25; OS. NEJM 2020;382:41-50.",u:"https://doi.org/10.1056/NEJMoa1913662"},
+flaura2:{t:"Osimertinib with or without chemotherapy in EGFR-mutated advanced NSCLC (FLAURA2). NEJM 2023;389:1935-48; Survival with osimertinib plus chemotherapy. NEJM 2026;394:27-38 (online 17 Oct 2025).",u:"https://www.nejm.org/doi/10.1056/NEJMoa2510308"},
+mariposa:{t:"Amivantamab plus lazertinib in previously untreated EGFR-mutated NSCLC (MARIPOSA). NEJM 2024; Overall survival with amivantamab-lazertinib. NEJM 2025;393:1681-93.",u:"https://pubmed.ncbi.nlm.nih.gov/40923797/"},
+noronha:{t:"Gefitinib versus gefitinib plus pemetrexed and carboplatin chemotherapy in EGFR-mutated lung cancer. JCO 2020;38:124-36.",u:"https://ascopubs.org/doi/10.1200/JCO.19.01154"},
+archer:{t:"Dacomitinib vs gefitinib (ARCHER 1050). Lancet Oncol 2017; OS. JCO 2018.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=ARCHER+1050+dacomitinib"},
+ipass:{t:"Gefitinib or carboplatin-paclitaxel in pulmonary adenocarcinoma (IPASS). NEJM 2009;361:947-57.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=IPASS+gefitinib+Mok+2009"},
+sanovo:{t:"SANOVO: savolitinib + osimertinib vs osimertinib in EGFRm MET-overexpressing NSCLC. ESMO 2026 LBA69 (summary via KOL Pulse ESMO 2026 coverage).",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+uncommon:{t:"Afatinib for uncommon EGFR mutations: pooled LUX-Lung 2/3/6. Lancet Oncol 2015; Osimertinib for uncommon EGFR mutations (KCSG-LU15-09). JCO 2020.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=osimertinib+uncommon+EGFR+KCSG-LU15-09"},
+papillon:{t:"Amivantamab plus chemotherapy in NSCLC with EGFR exon 20 insertions (PAPILLON). NEJM 2023;389:2039-51.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=PAPILLON+amivantamab+exon+20"},
+wukong28:{t:"First-line sunvozertinib in NSCLC with EGFR exon 20 insertion mutations (WU-KONG28). NEJM 2026; ASCO 2026 LBA8500.",u:"https://www.nejm.org/doi/full/10.1056/NEJMoa2604461"},
+furvent:{t:"ArriVent. FURVENT phase 3 update: firmonertinib first-line EGFR exon 20 (2026); CancerNetwork report.",u:"https://www.cancernetwork.com/view/firmonertinib-misses-pfs-end-point-in-first-line-egfr-exon-20-nsclc"},
+rezilient:{t:"Zipalertinib in EGFR exon 20 insertion NSCLC previously treated with platinum ± amivantamab (REZILIENT1). JCO 2025; Taiho NDA acceptance (PDUFA 27 Feb 2027).",u:"https://ascopubs.org/doi/pdfdirect/10.1200/JCO-25-00763"},
+sunvoFDA:{t:"FDA accelerated approval of sunvozertinib (Zegfrovy) for EGFR exon 20 insertion NSCLC after platinum (July 2025); WU-KONG1B.",u:"https://www.fda.gov/drugs/cancer-approvals/oncology-cancerhematologic-malignancies-approval-notifications"},
+mariposa2:{t:"Amivantamab plus chemotherapy ± lazertinib after osimertinib (MARIPOSA-2). Ann Oncol 2024;35:77-90; second interim OS, ESMO 2024 LBA54.",u:"https://doi.org/10.1016/j.annonc.2024.08.2296"},
+saffron:{t:"Osimertinib-savolitinib in advanced NSCLC after progression during EGFR-TKI therapy (SAFFRON). NEJM 2026; ESMO 2026 LBA6.",u:"https://ascopost.com/news/november-2026/osimertinib-plus-savolitinib-in-egfr-mutated-nsclc-after-disease-progression/"},
+harmoni:{t:"Ivonescimab plus chemotherapy vs placebo plus chemotherapy after EGFR-TKI (HARMONi). Lancet Oncol 2026.",u:"https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(26)00282-2/abstract"},
+harmoniA:{t:"Ivonescimab plus chemotherapy in EGFR-variant NSCLC (HARMONi-A). JAMA 2024; final OS SITC 2025 abstract 1348.",u:"https://jamanetwork.com/journals/jama/article-abstract/2850536"},
+harmoni2:{t:"Ivonescimab vs pembrolizumab first line in PD-L1-positive NSCLC (HARMONi-2). Lancet 2025; OS analysis J Thorac Oncol 2026 (OA14.01).",u:"https://www.sciencedirect.com/science/article/abs/pii/S1556086426007070"},
+optitrop04:{t:"Sac-TMT vs chemotherapy in EGFR-mutant NSCLC after EGFR-TKI (OptiTROP-Lung04). NEJM 2025; final OS ESMO 2026 LBA67.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+panku:{t:"Izalontamab brengitecan vs platinum-pemetrexed after 3rd-generation EGFR-TKI (PANKU-Lung01). Lancet 2026; ESMO 2026 LBA71.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+heron:{t:"Ruzaltatug rezetecan vs platinum-pemetrexed in EGFRm NSCLC after EGFR-TKI (HERON-Lung01). Lancet 2026; ESMO 2026 LBA72.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+hs10241:{t:"Dalmelitinib + aumolertinib vs chemotherapy in MET-amplified EGFRm NSCLC (HS-10241-301). JCO 2026; ESMO 2026 2615O.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+datoEGFR:{t:"FDA accelerated approval of datopotamab deruxtecan for EGFR-mutated NSCLC (23 Jun 2025); Pooled analysis of Dato-DXd in EGFRm NSCLC. JTO 2025;20:1669-82.",u:"https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-datopotamab-deruxtecan-dlnk-egfr-mutated-non-small-cell-lung-cancer"},
+herthena:{t:"HERTHENA-Lung02: patritumab deruxtecan vs platinum chemotherapy after EGFR TKI (2024-2025); BLA withdrawn 2025.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=HERTHENA-Lung02"},
+compel:{t:"COMPEL: osimertinib plus platinum chemotherapy after progression on first-line osimertinib. ESMO Open 2025;10:105807.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=COMPEL+osimertinib+ESMO+Open+2025"},
+crown:{t:"Lorlatinib vs crizotinib in ALK+ NSCLC: 5-year outcomes from CROWN. JCO 2024;42:3400-09.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=CROWN+lorlatinib+5-year+Solomon"},
+alex:{t:"Alectinib vs crizotinib in untreated ALK+ NSCLC (ALEX). NEJM 2017;377:829-38; Updated OS. Ann Oncol 2020.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=ALEX+alectinib+crizotinib+Peters"},
+alta:{t:"Brigatinib vs crizotinib (ALTA-1L) final analysis. JTO 2021.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=ALTA-1L+brigatinib+final"},
+exalt3:{t:"Ensartinib vs crizotinib (eXalt3). JAMA Oncol 2021; FDA approval Dec 2024.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=eXalt3+ensartinib"},
+profile1014:{t:"First-line crizotinib vs chemotherapy in ALK+ lung cancer (PROFILE 1014). NEJM 2014;371:2167-77.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=PROFILE+1014+crizotinib"},
+alkove:{t:"ALKOVE-1: neladalkib in advanced ALK+ NSCLC. JCO 2026;44(16_suppl):8503; FDA priority review (PDUFA 27 Nov 2026).",u:"https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.8503"},
+profile1001:{t:"Crizotinib in ROS1-rearranged NSCLC: final OS (PROFILE 1001). Ann Oncol 2019.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=PROFILE+1001+ROS1+final+overall+survival"},
+entrec:{t:"Entrectinib in ROS1 fusion-positive NSCLC: updated integrated analysis. JTO Clin Res Rep 2022.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=entrectinib+ROS1+integrated+analysis+Drilon"},
+trident:{t:"Repotrectinib in ROS1 fusion-positive NSCLC (TRIDENT-1). NEJM 2024;390:118-31.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=TRIDENT-1+repotrectinib+NEJM"},
+trust:{t:"Taletrectinib in ROS1+ NSCLC: TRUST. JCO 2025;43:1920-29; AACR 2026 updated TKI-naïve data; FDA approval 11 Jun 2025.",u:"https://ascopubs.org/doi/full/10.1200/JCO-25-00275"},
+zides:{t:"FDA approval of zidesamtinib (Jideytro) for ROS1+ NSCLC after ≥1 ROS1 TKI, 22 Jul 2026; NCCN update Oct 2026.",u:"https://www.cancertherapyadvisor.com/features/fda-oncology-drug-approvals-2026/"},
+cb200:{t:"Sotorasib vs docetaxel (CodeBreaK 200). Lancet 2023;401:733-46.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=CodeBreaK+200+sotorasib+docetaxel"},
+krystal12:{t:"Adagrasib vs docetaxel in KRAS G12C NSCLC (KRYSTAL-12). Lancet 2025.",u:"https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)00866-9/abstract"},
+krascendo1:{t:"Divarasib vs sotorasib or adagrasib in KRAS G12C-mutated NSCLC (Krascendo 1). NEJM 2026; ESMO 2026 LBA5.",u:"https://doi.org/10.1056/nejmoa2605703"},
+krystal7:{t:"KRYSTAL-7 phase 2: adagrasib + pembrolizumab first line (updated 2025).",u:"https://www.oncpracticemanagement.com/issues/2025/may-2025-vol-15-no-5/first-line-adagrasib-plus-pembrolizumab-in-kras-g12c-mutated-nsclc-updated-krystal-7-data"},
+krascendo170:{t:"First-line divarasib + pembrolizumab in KRAS G12C+ NSCLC (Krascendo-170). JCO 2026;44(16_suppl):8510.",u:"https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.8510"},
+olomo:{t:"Pooled first-line olomorasib + chemo-IO (LOXO-RAS-20001/SUNRAY-01). ESMO 2026.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+brf:{t:"Dabrafenib + trametinib in untreated BRAF V600E NSCLC. Lancet Oncol 2017; 5-yr update JTO 2022.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=dabrafenib+trametinib+BRAF+V600E+NSCLC+previously+untreated+Planchard"},
+pharos:{t:"Encorafenib + binimetinib in BRAF V600E NSCLC (PHAROS). JCO 2023; updated OS JCO 2025.",u:"https://ascopubs.org/doi/pdfdirect/10.1200/JCO-25-02023"},
+geometry:{t:"Capmatinib in MET exon 14-mutated or MET-amplified NSCLC (GEOMETRY mono-1). NEJM 2020;383:944-57.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=GEOMETRY+mono-1+capmatinib"},
+vision:{t:"Tepotinib in NSCLC with MET exon 14 skipping (VISION). NEJM 2020; JAMA Oncol 2023.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=VISION+tepotinib+MET+exon+14"},
+luminosity:{t:"FDA accelerated approval of telisotuzumab vedotin (Emrelis) for c-Met-high NSCLC, 14 May 2025 (LUMINOSITY).",u:"https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-telisotuzumab-vedotin-tllv-nsclc-high-c-met-protein-overexpression"},
+libretto431:{t:"First-line selpercatinib or chemotherapy and pembrolizumab in RET fusion-positive NSCLC (LIBRETTO-431). NEJM 2023;389:1839-50.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=LIBRETTO-431"},
+libretto001:{t:"Selpercatinib in RET fusion-positive NSCLC: final LIBRETTO-001. JCO 2023.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=LIBRETTO-001+selpercatinib+NSCLC+Drilon+2023"},
+arrow:{t:"Pralsetinib in RET fusion-positive NSCLC (ARROW). Ann Oncol 2022.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=ARROW+pralsetinib+NSCLC"},
+ntrk:{t:"Larotrectinib in TRK fusion lung cancer. JCO Precis Oncol 2022; repotrectinib NTRK approval Jun 2024.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=larotrectinib+TRK+fusion+lung+cancer"},
+dl04:{t:"Daiichi Sankyo. DESTINY-Lung04: first-line T-DXd vs pembrolizumab + platinum-pemetrexed in HER2-mutant NSCLC (14 Sep 2026); ASCO Post Nov 2026.",u:"https://ascopost.com/news/september-2026/first-line-trastuzumab-deruxtecan-prolongs-pfs-in-her2-mutant-nsclc/"},
+dl02:{t:"T-DXd in HER2-mutant NSCLC (DESTINY-Lung02). JCO 2023;41:4852-63.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=DESTINY-Lung02"},
+dl01:{t:"Trastuzumab deruxtecan in HER2-mutant NSCLC (DESTINY-Lung01). NEJM 2022;386:241-51.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=DESTINY-Lung01+trastuzumab+deruxtecan"},
+beamion1L:{t:"First-line zongertinib in advanced HER2-mutant NSCLC (Beamion LUNG-1). NEJM 2026; FDA accelerated approval 26 Feb 2026.",u:"https://www.nejm.org/doi/full/10.1056/NEJMoa2516969"},
+beamion:{t:"Zongertinib in previously treated HER2-mutant NSCLC. NEJM 2025;392:2321-33; FDA approval 8 Aug 2025.",u:"https://www.fda.gov/drugs/cancer-approvals/oncology-cancerhematologic-malignancies-approval-notifications"},
+soho:{t:"Sevabertinib in advanced HER2-mutant NSCLC (SOHO-01). NEJM 2025;393:1819-32; updated JCO 2026;44(16_suppl):8622; FDA approvals 19 Nov 2025 and 9 Sep 2026 (1L).",u:"https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.8622"},
+enrgy:{t:"Zenocutuzumab in NRG1 fusion-positive cancers (eNRGy). NEJM 2025; FDA accelerated approval Dec 2024.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=zenocutuzumab+NRG1+eNRGy"},
+kn024:{t:"Five-year outcomes with pembrolizumab vs chemotherapy for PD-L1 TPS ≥50% (KEYNOTE-024). JCO 2021;39:2339-49.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=KEYNOTE-024+five-year"},
+kn042:{t:"Pembrolizumab vs chemotherapy for PD-L1-expressing NSCLC (KEYNOTE-042). Lancet 2019;393:1819-30.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=KEYNOTE-042+Mok+Lancet"},
+imp110:{t:"Atezolizumab for first-line treatment of PD-L1-selected NSCLC (IMpower110). NEJM 2020;383:1328-39.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=IMpower110"},
+emp1:{t:"Cemiplimab monotherapy for PD-L1 ≥50% NSCLC (EMPOWER-Lung 1). Lancet 2021;397:592-604.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=EMPOWER-Lung+1+cemiplimab"},
+persee:{t:"PERSEE (GFPC 01-2020): pembrolizumab ± chemotherapy in PD-L1 ≥50% NSCLC. Ann Oncol 2026; ESMO 2026 2614O.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+kn189:{t:"Pembrolizumab plus pemetrexed-platinum: 5-year outcomes (KEYNOTE-189). JCO 2023;41:1992-98.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=KEYNOTE-189+five-year"},
+imp150:{t:"Atezolizumab for first-line treatment of metastatic nonsquamous NSCLC (IMpower150). NEJM 2018;378:2288-301; final OS JTO 2021.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=IMpower150"},
+cm227:{t:"Nivolumab plus ipilimumab in advanced NSCLC (CheckMate 227). NEJM 2019;381:2020-31; 5-yr JCO 2023.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=CheckMate+227+nivolumab+ipilimumab"},
+cm9la:{t:"First-line nivolumab + ipilimumab + 2 cycles chemotherapy (CheckMate 9LA). Lancet Oncol 2021;22:198-211.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=CheckMate+9LA"},
+poseidon:{t:"Durvalumab ± tremelimumab + chemotherapy as first-line treatment (POSEIDON). JCO 2023;41:1213-27.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=POSEIDON+durvalumab+tremelimumab"},
+emp3:{t:"Cemiplimab plus chemotherapy (EMPOWER-Lung 3). Nat Med 2022;28:2374-80.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=EMPOWER-Lung+3"},
+optitrop06:{t:"Sac-TMT + pembrolizumab vs chemo + pembrolizumab in PD-L1-negative non-squamous NSCLC (OptiTROP-Lung06). NEJM 2026; ESMO 2026 LBA66.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+ipsos:{t:"First-line atezolizumab monotherapy vs single-agent chemotherapy in platinum-ineligible NSCLC (IPSOS). Lancet 2023;402:451-63.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=IPSOS+atezolizumab"},
+revel:{t:"Ramucirumab plus docetaxel (REVEL). Lancet 2014;384:665-73.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=REVEL+ramucirumab+docetaxel"},
+lume:{t:"Docetaxel plus nintedanib (LUME-Lung 1). Lancet Oncol 2014;15:143-55.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=LUME-Lung+1+nintedanib"},
+tl01:{t:"Datopotamab deruxtecan vs docetaxel (TROPION-Lung01). JCO 2025.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=TROPION-Lung01"},
+sigvie:{t:"Sigvotatug vedotin vs docetaxel (SigVie-002). ESMO 2026 LBA68.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+io2l:{t:"CheckMate 057. NEJM 2015; KEYNOTE-010. Lancet 2016; OAK. Lancet 2017.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=CheckMate+057+nivolumab+nonsquamous"},
+e4599:{t:"Paclitaxel-carboplatin alone or with bevacizumab (E4599). NEJM 2006;355:2542-50.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=E4599+bevacizumab+Sandler"},
+jmdb:{t:"Cisplatin plus gemcitabine vs cisplatin plus pemetrexed (JMDB). JCO 2008;26:3543-51.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Scagliotti+cisplatin+pemetrexed+gemcitabine+2008"},
+paramount:{t:"Continuation maintenance pemetrexed (PARAMOUNT): final OS. JCO 2013;31:2895-902.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=PARAMOUNT+pemetrexed+maintenance"},
+e1594:{t:"Comparison of four chemotherapy regimens for advanced NSCLC (ECOG 1594). NEJM 2002;346:92-98.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Schiller+four+chemotherapy+regimens+2002"},
+gomez:{t:"Local consolidative therapy vs maintenance therapy for oligometastatic NSCLC: long-term results. JCO 2019;37:1558-65.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Gomez+local+consolidative+therapy+oligometastatic+2019"},
+sindas:{t:"Randomized trial of first-line TKI with or without radiotherapy for synchronous oligometastatic EGFR-mutated NSCLC (SINDAS). JCO 2023.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=SINDAS+oligometastatic+EGFR"},
+saron:{t:"SARON: systemic therapy ± consolidation radiotherapy for synchronous oligometastatic NSCLC. ESMO 2026 2613O.",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+sabrcomet:{t:"SABR-COMET: long-term results. JCO 2020;38:2830-38.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=SABR-COMET+long-term"},
+tnm9:{t:"IASLC/AJCC 9th edition TNM classification of lung cancer (effective 1 Jan 2025): introduction and radiology review. Br J Radiol 2025.",u:"https://academic.oup.com/bjr/article/98/1174/1543/8202914"},
+eortc:{t:"Definition of synchronous oligometastatic NSCLC: EORTC consensus. JTO 2019; ESTRO/EORTC characterisation and classification of oligometastatic disease. Lancet Oncol 2020.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=Dingemans+oligometastatic+consensus+2019"},
+indiaEGFR:{t:"Frequency of EGFR mutations in 907 lung adenocarcinoma patients of Indian ethnicity. PLoS One 2013;8:e76164.",u:"https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0076164"},
+indiaALK:{t:"Experience of ALK testing in 3,351 Indian NSCLC patients. Ann Oncol (ESMO Asia abstract).",u:"https://www.annalsofoncology.org/article/S0923-7534(19)51614-3/pdf"},
+pgimer:{t:"ThePrint (29 Mar 2025). PGIMER report bats for new-age targeted lung cancer therapies to be included in AB-PMJAY.",u:"https://theprint.in/health/pgimer-report-bats-for-new-age-targeted-lung-cancer-therapies-to-be-included-in-ab-pmjay/2569885/"},
+hbp:{t:"National Health Authority. AB-PMJAY Health Benefit Packages 2.0 user guidelines (Sept 2020).",u:"https://govthealth.cg.gov.in/sna/documents/HBP_2.0_User_Guidelines.pdf"},
+nccn:{t:"NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer, Version 9.2026 (accessed via NCCN guideline page; registration required).",u:"https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1450"},
+nccnSep:{t:"OncoDaily. September 2026 NCCN NSCLC updates: sevabertinib first line; daraxonrasib in emerging biomarkers.",u:"https://oncodaily.com/oncolibrary/lung-oncology/nccn-nsclc-2026"},
+nccnOct:{t:"AJMC. Zidesamtinib added to NCCN guidelines for pretreated ROS1+ NSCLC (27 Oct 2026).",u:"https://www.ajmc.com/guidelines/nsclc-guideline-updates-2026"},
+asco:{t:"Therapy for stage IV NSCLC with driver alterations: ASCO Living Guideline v2026.3.0 (JCO, 3 Feb 2026) and later 2026.3.x versions; ASCO Daily News summary.",u:"https://dailynews.ascopubs.org/do/biomarker-testing-incorporation-new-drug-approvals-among-new-guidance-updated-living"},
+esmo:{t:"Updated treatment recommendations for systemic treatment: ESMO oncogene-addicted metastatic NSCLC living guideline. Ann Oncol 2025.",u:"https://doi.org/10.1016/j.annonc.2025.06.007"},
+panasian:{t:"Pan-Asian adapted ESMO Clinical Practice Guidelines for oncogene-addicted metastatic NSCLC. ESMO Open 2024.",u:"https://www.esmoopen.com/article/S2059-7029%2824%2901766-6/fulltext"},
+fda2026:{t:"Cancer Therapy Advisor. FDA roundup: oncology drug approvals in 2026 (updated 5 Oct 2026).",u:"https://www.cancertherapyadvisor.com/features/fda-oncology-drug-approvals-2026/"},
+fdaList:{t:"US FDA. Oncology (cancer)/hematologic malignancies approval notifications.",u:"https://www.fda.gov/drugs/cancer-approvals/oncology-cancerhematologic-malignancies-approval-notifications"},
+ivoPDUFA:{t:"Summit Therapeutics. Q3 2026 results: ivonescimab BLA (EGFRm NSCLC post-TKI), PDUFA 14 Nov 2026.",u:"https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/"},
+esmo26:{t:"KOL Pulse. ESMO 2026: top lung cancer trials (SAFFRON, Krascendo 1, PERSEE, OptiTROP-Lung04/06, PANKU-Lung01, HERON-Lung01, SANOVO, SARON, COCOON, DIAL, MOIO).",u:"https://kolpulse.com/uptempo-blog/esmo26-top-lung-cancer-trials"},
+pricesOsi:{t:"PharmEasy listing: Osimert 80 mg (30 tablets); PlatinumRx listing (accessed Nov 2026). Unofficial retail prices.",u:"https://pharmeasy.in/online-medicine-order/osimert-80mg-bottle-of-30-tablets-3483190"},
+pricesGef:{t:"PharmEasy listing: Geftinat 250 mg (30 tablets) (accessed Nov 2026). Unofficial.",u:"https://pharmeasy.in/online-medicine-order/geftinat-250mg-tablet-25428"},
+pricesAlec:{t:"MrMed listing: Alecensa 150 mg capsule (accessed Nov 2026); CION blog on alectinib price. Unofficial.",u:"https://www.mrmed.in/medicines/alecensa-150mg-capsule"},
+cocoon:{t:"COCOON phase 2: enhanced dermatologic prophylaxis with amivantamab + lazertinib (ELCC/WCLC 2025); new cohorts ESMO 2026 2700RO.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=COCOON+amivantamab+dermatologic"},
+paloma3:{t:"Subcutaneous vs intravenous amivantamab, both with lazertinib, after osimertinib and chemotherapy (PALOMA-3). JCO 2024.",u:"https://pubmed.ncbi.nlm.nih.gov/?term=PALOMA-3+subcutaneous+amivantamab"}
+};
+// T(name, drv, set, arms, n, pfs, os, hr, hrOS, orr, cns, ref, stat, extra)
+const TRIALS=[];
+function T(name,drv,set,arms,n,pfs,os,hr,hrOS,orr,cns,ref,stat,x){TRIALS.push(Object.assign({name,drv,set,arms,n,pfs,os,hr,hrOS,orr,cns,ref,stat},x||{}));}
+// EGFR
+T("FLAURA","EGFR","1L","Osimertinib vs gefitinib/erlotinib",556,"18.9 vs 10.2","38.6 vs 31.8",0.46,0.80,"80% vs 76%","CNS ORR 91% vs 68% (verify)","flaura","appr",{v:1});
+T("FLAURA2","EGFR","1L","Osimertinib + pem-platinum vs osimertinib",557,"25.5 vs 16.7","47.5 vs 37.6",0.62,0.77,"83% vs 76% (verify)","CNS CR 59% vs 43% measurable (verify)","flaura2","appr",{ciOS:[0.61,0.96],v:1});
+T("MARIPOSA","EGFR","1L","Amivantamab + lazertinib vs osimertinib",1074,"23.7 vs 16.6","NR vs 36.7",0.70,0.75,"86% vs 85% (verify)","—","mariposa","appr",{ciOS:[0.61,0.92]});
+T("Tata Memorial (Noronha)","EGFR","1L","Gefitinib + pem-carboplatin vs gefitinib",350,"16 vs 8","NR vs 17",0.51,0.45,"—","—","noronha","rep");
+T("ARCHER 1050","EGFR","1L","Dacomitinib vs gefitinib",452,"14.7 vs 9.2","34.1 vs 26.8",0.59,0.76,"75% vs 72% (verify)","Brain mets excluded","archer","appr",{v:1});
+T("IPASS (EGFR+ subgroup)","EGFR","Historical","Gefitinib vs carboplatin-paclitaxel",1217,"EGFR+: HR 0.48; EGFR-wt: HR 2.85","~equal",0.48,null,"71% vs 47%","—","ipass","appr",{v:1});
+T("SANOVO","EGFR","1L","Savolitinib + osimertinib vs osimertinib (MET-OE)",326,"24.9 vs 13.8","44.5 vs 34.9",0.56,0.48,"81% vs 68%","—","sanovo","inv",{ci:[0.43,0.74],ciOS:[0.33,0.68]});
+T("LUX-Lung pooled (uncommon)","EGFR","1L","Afatinib, G719X/L861Q/S768I",null,"~10.7","—",null,null,"~71%","—","uncommon","appr",{v:1});
+T("KCSG-LU15-09","EGFR","1L","Osimertinib, uncommon EGFR",36,"8.2","—",null,null,"50%","—","uncommon","rep",{v:1});
+T("PAPILLON","EGFR ex20","1L","Amivantamab + carbo-pem vs carbo-pem",308,"11.4 vs 6.7","immature",0.40,null,"73% vs 47%","—","papillon","appr");
+T("WU-KONG28","EGFR ex20","1L","Sunvozertinib vs platinum-pemetrexed",null,"10.3 vs 7.5","—",0.65,null,"—","—","wukong28","rep",{ci:[0.50,0.85]});
+T("FURVENT","EGFR ex20","1L","Firmonertinib 240 mg vs chemo",null,"11.0 vs 9.5 (NS)","—",0.75,null,"60% vs 33%","—","furvent","neg");
+T("WU-KONG1B","EGFR ex20","2L+","Sunvozertinib (post-platinum)",97,"—","—",null,null,"~46% (verify)","—","sunvoFDA","appr",{v:1});
+T("REZILIENT1","EGFR ex20","2L+","Zipalertinib (post-platinum ± ami)",null,"—","—",null,null,"35.2%","—","rezilient","rep");
+T("MARIPOSA-2","EGFR","Post-TKI","Amivantamab + carbo-pem vs carbo-pem",657,"6.3 vs 4.2","17.7 vs 15.3",0.48,0.73,"64% vs 36%","IC PFS improved","mariposa2","appr",{ciOS:[0.54,0.99]});
+T("SAFFRON","EGFR","Post-TKI","Osimertinib + savolitinib vs plat-pem (MET-high)",338,"7.6 vs 5.4","17.8 vs 12.9",0.55,0.68,"51% vs 27%","31% had brain mets","saffron","rep",{ci:[0.42,0.72],ciOS:[0.50,0.91]});
+T("HARMONi","EGFR","Post-TKI","Ivonescimab + chemo vs placebo + chemo",438,"6.8 vs 4.4","16.8 vs 14.0",0.52,0.79,"—","—","harmoni","rep",{ci:[0.41,0.66],ciOS:[0.62,1.01]});
+T("HARMONi-A","EGFR","Post-TKI","Ivonescimab + chemo vs chemo (China)",322,"7.1 vs 4.8","final OS HR 0.74",0.46,0.74,"—","—","harmoniA","inv");
+T("OptiTROP-Lung04","EGFR","Post-TKI","Sac-TMT vs plat-pem (China)",376,"8.3 vs 4.3","25.9 vs 17.4",0.49,0.69,"—","—","optitrop04","inv",{ci:[0.39,0.62],ciOS:[0.54,0.89]});
+T("PANKU-Lung01","EGFR","Post-TKI","Iza-bren (EGFR×HER3 ADC) vs plat-pem (China)",432,"11.1 vs 5.7","NR vs 19.4",0.40,0.66,"60.2% vs 34.5%","—","panku","inv",{ci:[0.31,0.51],ciOS:[0.47,0.91]});
+T("HERON-Lung01","EGFR","Post-TKI","Ruzaltatug rezetecan (HER3 ADC) vs plat-pem (China)",498,"8.3 vs 5.4","immature",0.47,0.70,"60.0% vs 34.3%","—","heron","inv",{ci:[0.36,0.60],ciOS:[0.43,1.14]});
+T("HS-10241-301","EGFR","Post-TKI","Dalmelitinib + aumolertinib vs chemo (MET-amp)",314,"6.2 vs 4.4","immature",0.60,0.84,"59.6% vs 38.6%","—","hs10241","inv",{ci:[0.448,0.805],ciOS:[0.524,1.346]});
+T("TROPION-Lung05 (+TL01 pooled)","EGFR","Post-TKI","Dato-DXd (single arm)",137,"—","—",null,null,"43.6% (EGFRm)","—","datoEGFR","appr");
+T("HERTHENA-Lung02","EGFR","Post-TKI","HER3-DXd vs plat-pem",586,"5.8 vs 5.4","16.0 vs 15.9",0.77,0.98,"—","—","herthena","neg");
+T("COMPEL","EGFR","Post-TKI","Chemo + osimertinib vs chemo + placebo",null,"PFS improved (verify)","—",null,null,"—","Non-CNS progression only","compel","rep",{v:1});
+// ALK
+T("CROWN","ALK","1L","Lorlatinib vs crizotinib",296,"NR vs 9.1 (5-yr 60% vs 8%)","immature",0.19,null,"76% vs 58% (verify)","IC ORR 82% vs 23%","crown","appr",{v:1});
+T("ALEX","ALK","1L","Alectinib vs crizotinib",303,"34.8 vs 10.9","5-yr 62.5% vs 45.5%",0.43,null,"83% vs 76% (verify)","CNS ORR 81% vs 50% (verify)","alex","appr",{v:1});
+T("ALTA-1L","ALK","1L","Brigatinib vs crizotinib",275,"24.0 vs 11.1","NS",0.48,null,"74% vs 62% (verify)","IC ORR 78% vs 26% (verify)","alta","appr",{v:1});
+T("eXalt3","ALK","1L","Ensartinib vs crizotinib",290,"25.8 vs 12.7","—",0.51,null,"—","—","exalt3","appr");
+T("PROFILE 1014","ALK","1L","Crizotinib vs plat-pem",343,"10.9 vs 7.0","crossover",0.45,null,"74% vs 45%","—","profile1014","appr");
+T("ALKOVE-1","ALK","2L+","Neladalkib (TKI-pretreated)",253,"—","—",null,null,"31% (26% post-lorlatinib)","—","alkove","rep");
+// ROS1
+T("PROFILE 1001 (ROS1)","ROS1","1L","Crizotinib",53,"19.3","51.4",null,null,"72%","—","profile1001","appr");
+T("Entrectinib integrated","ROS1","1L","Entrectinib (TKI-naïve)",null,"15.7","—",null,null,"68%","~80%","entrec","appr",{v:1});
+T("TRIDENT-1","ROS1","1L","Repotrectinib (TKI-naïve)",71,"35.7","—",null,null,"79%","89% (n=9)","trident","appr");
+T("TRUST-I/II pooled","ROS1","1L","Taletrectinib (TKI-naïve)",157,"46.1","—",null,null,"89.8%","76.5% (n=17)","trust","appr");
+T("ARROS-1","ROS1","2L+","Zidesamtinib (post-ROS1 TKI)",null,"—","—",null,null,"—","CNS-active (design)","zides","appr");
+// KRAS
+T("CodeBreaK 200","KRAS G12C","2L+","Sotorasib vs docetaxel",345,"5.6 vs 4.5","10.6 vs 11.3",0.66,1.01,"28% vs 13%","—","cb200","appr");
+T("KRYSTAL-12","KRAS G12C","2L+","Adagrasib vs docetaxel",453,"5.5 vs 3.8","not reported",0.58,null,"32% vs 9%","—","krystal12","appr");
+T("Krascendo 1","KRAS G12C","2L+","Divarasib vs sotorasib/adagrasib",338,"9.8 vs 5.7","17.7 vs 12.0",0.58,0.56,"58.4% vs 32.3%","—","krascendo1","rep",{ci:[0.44,0.76],ciOS:[0.41,0.78]});
+T("KRYSTAL-7 (ph2)","KRAS G12C","1L","Adagrasib + pembrolizumab (PD-L1 ≥50%)",null,"27.7","—",null,null,"59.3%","—","krystal7","rep");
+T("Krascendo-170","KRAS G12C","1L","Divarasib + pembrolizumab (PD-L1+)",null,"19.3","—",null,null,"73%","—","krascendo170","rep");
+T("SUNRAY-01/LOXO pooled","KRAS G12C","1L","Olomorasib + chemo-IO",null,"11.6","—",null,null,"62%","—","olomo","inv");
+// BRAF
+T("BRF113928 (1L)","BRAF","1L","Dabrafenib + trametinib",36,"10.9","17.3",null,null,"64%","—","brf","appr");
+T("PHAROS (naïve)","BRAF","1L","Encorafenib + binimetinib",59,"30.4","see JCO 2025",null,null,"75%","—","pharos","appr");
+T("PHAROS (pretreated)","BRAF","2L+","Encorafenib + binimetinib",39,"9.3 (verify)","—",null,null,"46%","—","pharos","appr",{v:1});
+// MET
+T("GEOMETRY mono-1 (naïve)","MET","1L","Capmatinib, METex14",60,"12.4","—",null,null,"68%","—","geometry","appr");
+T("GEOMETRY mono-1 (pretreated)","MET","2L+","Capmatinib, METex14",null,"5.4","—",null,null,"41%","—","geometry","appr");
+T("VISION","MET","1L","Tepotinib, METex14",null,"~12 (verify)","—",null,null,"~51–57% (verify)","—","vision","appr",{v:1});
+T("LUMINOSITY","MET","2L+","Telisotuzumab vedotin (c-Met high)",84,"mDOR 7.2","—",null,null,"35%","—","luminosity","appr");
+// RET
+T("LIBRETTO-431","RET","1L","Selpercatinib vs plat-pem ± pembro",261,"24.8 vs 11.2","—",0.46,null,"84% vs 65%","CNS progression ↓ (verify HR)","libretto431","appr",{v:1});
+T("LIBRETTO-001 (naïve)","RET","1L","Selpercatinib",69,"~22 (verify)","—",null,null,"84%","—","libretto001","appr",{v:1});
+T("ARROW (naïve)","RET","1L","Pralsetinib",null,"—","—",null,null,"~72% (verify)","—","arrow","appr",{v:1});
+// NTRK
+T("Larotrectinib lung pooled","NTRK","Any","Larotrectinib",null,"—","—",null,null,"~73% (verify)","Active","ntrk","appr",{v:1});
+// HER2
+T("DESTINY-Lung04","HER2","1L","T-DXd vs pembro + plat-pem",null,"14.3 vs 8.3","immature",0.63,null,"70%","—","dl04","rep",{ci:[0.50,0.79]});
+T("Beamion LUNG-1 (1L)","HER2","1L","Zongertinib",74,"14.4","—",null,null,"76%","Active","beamion1L","appr");
+T("Beamion LUNG-1 (pretreated)","HER2","2L+","Zongertinib",75,"—","—",null,null,"71%","—","beamion","appr");
+T("SOHO-01 (1L, cohort F)","HER2","1L","Sevabertinib",73,"13.5","—",null,null,"75.3%","—","soho","appr");
+T("SOHO-01 (pretreated, D)","HER2","2L+","Sevabertinib",81,"8.3","—",null,null,"66.7%","—","soho","appr");
+T("DESTINY-Lung02","HER2","2L+","T-DXd 5.4 mg/kg",102,"9.9","~19 (verify)",null,null,"49%","—","dl02","appr",{v:1});
+T("DESTINY-Lung01","HER2","2L+","T-DXd 6.4 mg/kg",91,"8.2","17.8",null,null,"55%","—","dl01","appr");
+// NRG1
+T("eNRGy (NSCLC)","NRG1","2L+","Zenocutuzumab",null,"—","—",null,null,"~33% (verify)","—","enrgy","appr",{v:1});
+// IO
+T("KEYNOTE-024","No driver","1L","Pembrolizumab vs chemo (PD-L1 ≥50%)",305,"7.7 vs 5.5","26.3 vs 13.4",0.50,0.62,"44.8% vs 27.8%","—","kn024","appr");
+T("KEYNOTE-042","No driver","1L","Pembrolizumab vs chemo (PD-L1 ≥1%)",1274,"—","16.7 vs 12.1 (≥1%)",null,0.81,"—","—","kn042","appr");
+T("IMpower110","No driver","1L","Atezolizumab vs chemo (TC3/IC3)",572,"8.1 vs 5.0","20.2 vs 13.1",0.63,0.59,"38% vs 29%","—","imp110","appr");
+T("EMPOWER-Lung 1","No driver","1L","Cemiplimab vs chemo (PD-L1 ≥50%)",563,"8.2 vs 5.7","NR vs 14.2",0.54,0.57,"39% vs 20%","Treated brain mets allowed","emp1","appr");
+T("PERSEE","No driver","1L","Pembro + chemo vs pembro (PD-L1 ≥50%)",null,"16.1 vs 6.9","50.2 vs 29.9 (NS)",0.56,0.77,"—","—","persee","rep",{ci:[0.43,0.74],ciOS:[0.56,1.05]});
+T("HARMONi-2","No driver","1L","Ivonescimab vs pembrolizumab (PD-L1 ≥1%)",398,"11.1 vs 5.8","30.75 vs 22.57",0.51,0.73,"50% vs 39% (verify)","—","harmoni2","inv",{ciOS:[0.57,0.95]});
+T("KEYNOTE-189","No driver","1L","Pembro + pem-platinum vs chemo",616,"9.0 vs 4.9","22.0 vs 10.6",0.50,0.60,"48% vs 20%","—","kn189","appr");
+T("IMpower150","No driver","1L","Atezo + bev + carbo-pac vs bev + CP",1202,"8.3 vs 6.8","19.5 vs 14.7",0.62,0.80,"—","—","imp150","appr");
+T("CheckMate 227 (PD-L1 ≥1%)","No driver","1L","Nivolumab + ipilimumab vs chemo",1189,"—","17.1 vs 14.9",null,0.79,"—","—","cm227","appr");
+T("CheckMate 9LA","No driver","1L","Nivo + ipi + 2 cycles chemo vs chemo",719,"6.7 vs 5.0 (verify)","15.8 vs 11.0",0.68,0.72,"38% vs 25% (verify)","—","cm9la","appr",{v:1});
+T("POSEIDON","No driver","1L","Treme + durva + chemo vs chemo",1013,"6.2 vs 4.8","14.0 vs 11.7",0.72,0.77,"—","—","poseidon","appr");
+T("EMPOWER-Lung 3","No driver","1L","Cemiplimab + chemo vs chemo",466,"8.2 vs 5.0","21.9 vs 13.0",0.56,0.71,"43% vs 23%","—","emp3","appr");
+T("OptiTROP-Lung06","No driver","1L","Sac-TMT + pembro vs chemo + pembro (PD-L1 <1%)",null,"15.0 vs 5.7","immature",0.49,0.58,"50.2% vs 47.3%","—","optitrop06","inv",{ci:[0.36,0.65],ciOS:[0.38,0.88]});
+T("IPSOS","No driver","1L","Atezolizumab vs single-agent chemo (unfit)",453,"—","10.3 vs 9.2",null,0.78,"—","—","ipsos","appr",{v:1});
+T("REVEL","No driver","2L+","Docetaxel + ramucirumab vs docetaxel",1253,"4.5 vs 3.0","10.5 vs 9.1",0.76,0.86,"23% vs 14%","—","revel","appr");
+T("LUME-Lung 1 (adeno)","No driver","2L+","Docetaxel + nintedanib vs docetaxel",658,"—","12.6 vs 10.3",null,0.83,"—","—","lume","appr");
+T("TROPION-Lung01","No driver","2L+","Dato-DXd vs docetaxel",604,"4.4 vs 3.7","12.9 vs 11.8",0.75,0.94,"—","—","tl01","rep");
+T("SigVie-002","No driver","2L+","Sigvotatug vedotin vs docetaxel",null,"4.7 vs 4.2","11.9 vs 11.5",0.84,0.93,"—","—","sigvie","neg",{ci:[0.699,1.019],ciOS:[0.767,1.126]});
+T("CheckMate 057","No driver","2L+","Nivolumab vs docetaxel (non-squamous)",582,"2.3 vs 4.2","12.2 vs 9.4",null,0.73,"19% vs 12%","—","io2l","appr");
+T("OAK","No driver","2L+","Atezolizumab vs docetaxel",850,"—","13.8 vs 9.6",null,0.73,"—","—","io2l","appr");
+// Historical
+T("ECOG 1594","No driver","Historical","4 platinum doublets compared",1207,"—","~7.9 (all arms)",null,null,"~19%","—","e1594","appr",{v:1});
+T("E4599","No driver","Historical","Carbo-pac + bevacizumab vs carbo-pac",878,"6.2 vs 4.5","12.3 vs 10.3",0.66,0.79,"35% vs 15%","—","e4599","appr");
+T("JMDB (adeno subgroup)","No driver","Historical","Cis-pem vs cis-gem",1725,"—","12.6 vs 10.9",null,0.84,"—","—","jmdb","appr");
+T("PARAMOUNT","No driver","Historical","Pemetrexed maintenance vs placebo",539,"4.1 vs 2.8","13.9 vs 11.0",0.62,0.78,"—","—","paramount","appr");
+// Oligo
+T("Gomez (MDACC)","Oligo","Oligo","LCT vs maintenance/observation",49,"14.2 vs 4.4","41.2 vs 17.0",null,null,"—","—","gomez","rep");
+T("SINDAS","Oligo","Oligo","TKI + upfront RT vs TKI (EGFRm)",133,"20.2 vs 12.5","25.5 vs 17.4",null,null,"—","—","sindas","rep");
+T("SABR-COMET","Oligo","Oligo","SABR + SOC vs SOC (mixed primaries)",99,"—","5-yr 42.3% vs 17.7%",null,null,"—","—","sabrcomet","rep");
+T("SARON","Oligo","Oligo","Systemic ± consolidation RT (driver-neg)",140,"13.9 vs 8.9","31.0 vs 28.0",0.64,0.99,"—","—","saron","neg",{ciOS:[0.63,1.55]});
+// add CIs for FLAURA known
+TRIALS.forEach((t,i)=>t.id="t"+i);
+const DRUGS=[
+["Osimertinib","EGFR (3rd gen)","80 mg PO once daily; 160 mg for leptomeningeal disease (BLOOM, off-label)","Diarrhoea, rash, paronychia, stomatitis; QTc prolongation; ILD ~3–4%; cardiomyopathy (↓LVEF); cytopenias","FLAURA, FLAURA2"],
+["Gefitinib","EGFR (1st gen)","250 mg PO once daily","Rash, diarrhoea, transaminitis (more than erlotinib), ILD. Avoid PPIs or space doses","IPASS, Noronha"],
+["Erlotinib","EGFR (1st gen)","150 mg PO once daily on an empty stomach (± ramucirumab/bevacizumab in RELAY/NEJ026)","Rash (correlates with response), diarrhoea; smoking lowers levels","—"],
+["Afatinib","EGFR (2nd gen, pan-HER)","40 mg PO once daily (30 mg common for tolerability)","Diarrhoea (very frequent), stomatitis, paronychia, acneiform rash","LUX-Lung; uncommon EGFR"],
+["Dacomitinib","EGFR (2nd gen)","45 mg PO once daily (start 30 mg often used)","Diarrhoea, paronychia, dermatitis; frequent dose reductions","ARCHER 1050"],
+["Amivantamab","EGFR-MET bispecific antibody","IV: 1,050 mg (<80 kg) / 1,400 mg (≥80 kg) weekly ×4 (C1D1 split D1/D2), then q2w (with lazertinib). With chemo: weight-based weekly loading, then q3w (1,400/1,750 mg). SC formulation in development/approval (verify)","Infusion reactions (C1D1), acneiform rash, paronychia, scalp folliculitis, hypoalbuminaemia, oedema, VTE (anticoagulant prophylaxis ×4 months with lazertinib), ILD","MARIPOSA, MARIPOSA-2, PAPILLON"],
+["Lazertinib","EGFR (3rd gen)","240 mg PO once daily (with amivantamab)","Paraesthesia, rash, diarrhoea; additive skin toxicity with amivantamab","MARIPOSA"],
+["Sunvozertinib","EGFR exon 20","200 mg PO once daily","Diarrhoea, rash, CPK rise, QTc, ILD (verify label)","WU-KONG1B, WU-KONG28"],
+["Alectinib","ALK (2nd gen)","600 mg PO twice daily with food","Myalgia, CPK rise, constipation, oedema, hyperbilirubinaemia, photosensitivity, bradycardia, anaemia","ALEX"],
+["Lorlatinib","ALK/ROS1 (3rd gen)","100 mg PO once daily (reduce to 75/50 mg for AEs)","Hypercholesterolaemia/hypertriglyceridaemia, oedema, weight gain, CNS (mood, cognition, speech, hallucination), neuropathy. Strong CYP3A inducers contraindicated","CROWN"],
+["Brigatinib","ALK (2nd gen)","90 mg once daily ×7 days, then 180 mg once daily","Early-onset pulmonary events (days 1–7), hypertension, CPK rise, bradycardia, visual disturbance","ALTA-1L"],
+["Crizotinib","ALK/ROS1/MET","250 mg PO twice daily","Visual disturbance, oedema, nausea, transaminitis, bradycardia, hypogonadism (men), renal cysts","PROFILE 1014, 1001"],
+["Ensartinib","ALK","225 mg PO once daily","Rash, pruritus, transaminitis, oedema (verify)","eXalt3"],
+["Repotrectinib","ROS1/TRK/ALK","160 mg once daily ×14 days, then 160 mg twice daily","Dizziness, dysgeusia, paraesthesia, ataxia, weight gain, constipation","TRIDENT-1"],
+["Taletrectinib","ROS1/TRK","600 mg PO once daily (empty stomach; verify)","Transaminitis (frequent), nausea, diarrhoea, dizziness, dysgeusia, QTc","TRUST-I/II"],
+["Entrectinib","ROS1/TRK/ALK","600 mg PO once daily","Dysgeusia, dizziness, weight gain, fatigue, cognitive effects, heart failure (rare), fractures","ALKA/STARTRK"],
+["Zidesamtinib","ROS1 (TRK-sparing)","100 mg PO once daily","CNS effects, QTc, ILD, fractures, myalgia/CPK, pancreatic enzymes (label warnings)","ARROS-1"],
+["Sotorasib","KRAS G12C","960 mg PO once daily","Diarrhoea, hepatotoxicity (especially within 3 months of IO), nausea","CodeBreaK 100/200"],
+["Adagrasib","KRAS G12C","600 mg PO twice daily","Nausea, vomiting, diarrhoea, fatigue, hepatotoxicity, QTc. Good CNS penetration","KRYSTAL-1/12"],
+["Dabrafenib + trametinib","BRAF V600E + MEK","Dabrafenib 150 mg BID + trametinib 2 mg once daily","Pyrexia, rash, ↓LVEF, uveitis/retinopathy, hepatotoxicity, haemorrhage","BRF113928"],
+["Encorafenib + binimetinib","BRAF V600E + MEK","Encorafenib 450 mg once daily + binimetinib 45 mg BID","Nausea, diarrhoea, fatigue, visual (serous retinopathy), ↓LVEF; less pyrexia","PHAROS"],
+["Capmatinib","MET","400 mg PO twice daily","Peripheral oedema, nausea, creatinine rise (pseudo), hepatotoxicity, photosensitivity, ILD","GEOMETRY mono-1"],
+["Tepotinib","MET","450 mg PO once daily with food","Oedema, hypoalbuminaemia, creatinine rise, diarrhoea, ILD","VISION, INSIGHT 2"],
+["Savolitinib","MET","300 mg PO twice daily with osimertinib (SAFFRON); weight-based once-daily dosing used in other studies (verify)","Peripheral oedema (49%), nausea, hepatotoxicity, hypersensitivity/fever; fatal AEs 7% in SAFFRON","SAFFRON, SANOVO, SACHI"],
+["Telisotuzumab vedotin","c-Met ADC (MMAE)","1.9 mg/kg IV q2w","Peripheral neuropathy, fatigue, ILD, ocular, hypoalbuminaemia","LUMINOSITY"],
+["Selpercatinib","RET","120 mg BID (<50 kg) or 160 mg BID (≥50 kg)","Hypertension, transaminitis, QTc, dry mouth, chylous effusion, hypersensitivity (post-IO), hypothyroidism","LIBRETTO-001/431"],
+["Pralsetinib","RET","400 mg PO once daily on an empty stomach","Cytopenias, hypertension, pneumonitis, infections, transaminitis","ARROW"],
+["Larotrectinib","TRK","100 mg PO twice daily","Dizziness, weight gain, transaminitis, withdrawal pain on stopping","NAVIGATE/LOXO-TRK"],
+["Trastuzumab deruxtecan","HER2 ADC","5.4 mg/kg IV q3w (NSCLC)","ILD/pneumonitis (boxed warning), nausea (moderately emetogenic), neutropenia, alopecia, ↓LVEF","DESTINY-Lung01/02/04"],
+["Zongertinib","HER2 TKI (TKD-selective)","120 mg once daily (<90 kg) / 180 mg (≥90 kg)","Diarrhoea (mostly grade 1–2), hepatotoxicity, ↓LVEF, ILD (low)","Beamion LUNG-1"],
+["Sevabertinib","HER2/EGFR TKI","20 mg PO twice daily with food","Diarrhoea (~88%; grade 3 ~5% 1L), hepatotoxicity, ocular, pancreatic enzymes, ↓LVEF; no ILD in SOHO-01 update","SOHO-01"],
+["Zenocutuzumab","HER2×HER3 bispecific","750 mg IV q2w","Infusion reactions, diarrhoea, ILD, ↓LVEF; embryo-fetal toxicity (boxed)","eNRGy"],
+["Datopotamab deruxtecan","TROP2 ADC","6 mg/kg IV q3w","Stomatitis (steroid mouthwash prophylaxis), ocular surface toxicity, ILD, nausea, alopecia","TROPION-Lung01/05"],
+["Pembrolizumab","PD-1","200 mg q3w or 400 mg q6w (SC formulation approved Sept 2025)","Immune-related AEs: pneumonitis, colitis, hepatitis, endocrinopathies, nephritis, myocarditis","KEYNOTE-024/042/189"],
+["Atezolizumab","PD-L1","1,200 mg q3w (840 q2w / 1,680 q4w)","irAEs as above","IMpower110/150, IPSOS"],
+["Cemiplimab","PD-1","350 mg IV q3w","irAEs","EMPOWER-Lung 1/3"],
+["Nivolumab + ipilimumab","PD-1 + CTLA-4","Nivolumab 3 mg/kg q2w or 360 mg q3w + ipilimumab 1 mg/kg q6w (± 2 cycles chemo in 9LA)","Higher irAE rates (CTLA-4): colitis, hypophysitis, hepatitis","CheckMate 227/9LA"],
+["Durvalumab + tremelimumab","PD-L1 + CTLA-4","Durvalumab 1,500 mg + tremelimumab 75 mg q3w ×4 with chemo, then durvalumab q4w + 5th tremelimumab dose at week 16","irAEs","POSEIDON"],
+["Ivonescimab","PD-1×VEGF bispecific","20 mg/kg IV q3w in HARMONi trials (verify); not FDA-approved (PDUFA 14 Nov 2026)","irAEs + VEGF effects: hypertension, proteinuria, bleeding","HARMONi, HARMONi-A, HARMONi-2"],
+["Pemetrexed","Antifolate","500 mg/m² IV q3w; folic acid 350–1,000 µg daily from 7 days before + vitamin B12 1,000 µg IM q9w; dexamethasone 4 mg BID ×3 days","Myelosuppression, rash, fatigue, nephrotoxicity (CrCl ≥45 needed; avoid NSAIDs)","JMDB, PARAMOUNT, KN-189"],
+["Carboplatin / cisplatin","Platinum","Carboplatin AUC 5 q3w; cisplatin 75 mg/m² q3w (hydration, Mg)","Thrombocytopenia (carbo); nephro-, oto-, neurotoxicity, emesis (cis)","—"],
+["Docetaxel","Taxane","75 mg/m² IV q3w (60 mg/m² often used in Asians/frail)","Neutropenia, febrile neutropenia, fluid retention, neuropathy, nail changes","REVEL, TL01"],
+["Ramucirumab","VEGFR2 mAb","10 mg/kg IV q3w with docetaxel","Hypertension, bleeding, proteinuria, impaired wound healing","REVEL"],
+["Bevacizumab","VEGF-A mAb","15 mg/kg (or 7.5 mg/kg) IV q3w","Hypertension, proteinuria, haemorrhage (avoid with haemoptysis/central cavitation), thrombosis, GI perforation","E4599, IMpower150"],
+["Nintedanib","Triple angiokinase TKI","200 mg PO BID days 2–21 with docetaxel (adenocarcinoma; EMA)","Diarrhoea, transaminitis","LUME-Lung 1"]
+];
+
+const TIMELINE=[
+[2003,"Gefitinib (accelerated)","tki"],[2004,"Erlotinib 2L","tki"],[2004,"Pemetrexed 2L","chemo"],[2006,"Bevacizumab + carbo-pac (E4599)","chemo"],[2008,"Pemetrexed 1L (non-squamous)","chemo"],[2009,"Pemetrexed maintenance","chemo"],[2011,"Crizotinib (ALK)","tki"],[2013,"Afatinib; erlotinib 1L EGFR","tki"],[2014,"Ceritinib; ramucirumab + docetaxel","tki"],[2015,"Nivolumab 2L; osimertinib (T790M); alectinib; gefitinib re-approved 1L","io"],[2016,"Pembrolizumab 1L PD-L1 ≥50%; crizotinib ROS1; atezolizumab 2L","io"],[2017,"Brigatinib; dabrafenib + trametinib; pembro + chemo (accelerated)","tki"],[2018,"Osimertinib 1L; lorlatinib; dacomitinib; KN-189 regimen","tki"],[2019,"Entrectinib; atezo + bev + chemo (IMpower150)","io"],[2020,"Capmatinib; selpercatinib; pralsetinib; nivo + ipi (± chemo); atezolizumab 1L","tki"],[2021,"Sotorasib; amivantamab (ex20); tepotinib; cemiplimab 1L; lorlatinib 1L","tki"],[2022,"T-DXd (HER2m); adagrasib; durva + treme + chemo; cemiplimab + chemo","adc"],[2023,"Encorafenib + binimetinib; repotrectinib (ROS1)","tki"],[2024,"Osimertinib + chemo; amivantamab + chemo (ex20, post-osi); amivantamab + lazertinib; ensartinib; zenocutuzumab (NRG1)","tki"],[2025,"Telisotuzumab vedotin; Dato-DXd (EGFR); taletrectinib; sunvozertinib; zongertinib (2L); sevabertinib (2L)","adc"],[2026,"Zongertinib 1L (Feb); selpercatinib tumour-agnostic regular (Jul); zidesamtinib (Jul); sevabertinib 1L (Sep)","tki"]
+];
+
+const DONUT={
+ west:[["EGFR",15],["KRAS G12C",13],["KRAS other",17],["ALK",5],["ROS1",1.5],["BRAF",3],["MET ex14",3],["RET",1.5],["HER2",2.5],["NTRK/NRG1/other",1.5],["No known driver",37]],
+ asia:[["EGFR",47],["KRAS G12C",4],["KRAS other",6],["ALK",5],["ROS1",2],["BRAF",1.5],["MET ex14",2],["RET",2],["HER2",3],["NTRK/NRG1/other",1.5],["No known driver",26]],
+ india:[["EGFR",27],["KRAS G12C",4],["KRAS other",5],["ALK",4],["ROS1",3],["BRAF",1.5],["MET ex14",2],["RET",1.5],["HER2",2],["NTRK/NRG1/other",1],["No known driver",49]]
+};
+const DCOL=["#0f4c81","#c2410c","#f59e0b","#0b7a75","#7c3aed","#db2777","#16a34a","#0891b2","#9333ea","#64748b","#cbd5e1"];
+
+// best 1L regimen per group: [label, value, NR?, source]
+const BARS={
+ pfs:[["EGFR · osi + chemo (FLAURA2)",25.5,0],["EGFR · ami + laz (MARIPOSA)",23.7,0],["ALK · alectinib (ALEX)",34.8,0],["ALK · lorlatinib (CROWN) 5-yr PFS 60%",60,1],["ROS1 · taletrectinib (TRUST)",46.1,0],["ROS1 · repotrectinib (TRIDENT-1)",35.7,0],["BRAF · enco/bini (PHAROS)",30.4,0],["RET · selpercatinib (L-431)",24.8,0],["KRAS G12C · ada + pembro (ph2, PD-L1 ≥50%)",27.7,0],["HER2 · zongertinib (Beamion)",14.4,0],["HER2 · T-DXd (DL-04)",14.3,0],["MET ex14 · capmatinib (GEOMETRY)",12.4,0],["No driver · pembro + chemo, PD-L1 ≥50% (PERSEE)",16.1,0],["No driver · ivonescimab (HARMONi-2)",11.1,0],["No driver · KN-189",9.0,0],["No driver · pembro mono (KN-024)",7.7,0]],
+ os:[["ROS1 · crizotinib (PROFILE 1001)",51.4,0],["EGFR · osi + chemo (FLAURA2)",47.5,0],["EGFR · ami + laz (MARIPOSA) lower CI 42.9",42.9,1],["ALK · alectinib (5-yr OS 62.5%)",60,1],["EGFR · osimertinib (FLAURA)",38.6,0],["No driver · pembro + chemo (PERSEE, NS)",50.2,0],["No driver · ivonescimab (HARMONi-2)",30.75,0],["No driver · pembro mono (KN-024)",26.3,0],["No driver · KN-189",22.0,0],["No driver · cemiplimab + chemo (EMPOWER-L3)",21.9,0],["BRAF · dab/tram (BRF113928)",17.3,0],["HER2 · T-DXd 6.4 (DL-01, pretreated)",17.8,0]]
+};
+const DRV=[["none","No actionable driver (incl. KRAS non-G12C)"],["egfr","EGFR exon 19 del / L858R"],["egfru","EGFR uncommon (G719X, L861Q, S768I)"],["ex20","EGFR exon 20 insertion"],["alk","ALK fusion"],["ros1","ROS1 fusion"],["kras","KRAS G12C"],["braf","BRAF V600E"],["met","MET exon 14 skipping"],["ret","RET fusion"],["ntrk","NTRK fusion"],["her2","HER2 (ERBB2) TKD mutation"],["nrg1","NRG1 fusion"]];
+const O=(t,d,ev,b)=>({t,d,ev:ev||[],b:b||""});
+function algo(dr,pd,st,cns,ps){
+ const r={pref:[],alt:[],inv:[],notes:[]};
+ const ioFirst=()=>{ // driver-negative logic
+  if(st==="1L"){
+   if(ps==="ps2"){r.pref.push(O("Single-agent IO (if PD-L1 ≥50%) or carboplatin-based doublet / single agent","IPSOS supports atezolizumab in platinum-ineligible patients. Carboplatin + weekly paclitaxel or pemetrexed for PS 2.",["IPSOS"],"appr"));}
+   if(pd==="hi"){r.pref.push(O("Pembrolizumab, atezolizumab or cemiplimab monotherapy","Category 1. Best for TPS ≥90%, low burden, frail.",["KEYNOTE-024","IMpower110","EMPOWER-Lung 1"],"appr"));r.pref.push(O("Chemo-IO: pembrolizumab + platinum-pemetrexed (or cemiplimab + chemo)","Prefer with high burden, symptomatic disease, never-smoker or STK11/KEAP1 co-mutation. PERSEE: PFS 16.1 vs 6.9 mo vs pembro alone (OS NS).",["KEYNOTE-189","PERSEE","EMPOWER-Lung 3"],"appr"));}
+   else{r.pref.push(O("Pembrolizumab + carboplatin/cisplatin + pemetrexed → pembro + pemetrexed maintenance","Category 1 for all PD-L1 levels. 5-yr OS 19.4%.",["KEYNOTE-189"],"appr"));}
+   r.alt.push(O("Nivolumab + ipilimumab ± 2 cycles chemo; durvalumab + tremelimumab + chemo","Consider for PD-L1 <1% or STK11/KEAP1-mutant disease (exploratory).",["CheckMate 9LA","CheckMate 227 (PD-L1 ≥1%)","POSEIDON"],"appr"));
+   r.alt.push(O("Atezolizumab + bevacizumab + carboplatin-paclitaxel (ABCP)","Useful with liver metastases (exploratory). Avoid bevacizumab with haemoptysis.",["IMpower150"],"appr"));
+   if(pd!=="neg")r.inv.push(O("Ivonescimab (PD-1×VEGF)","HARMONi-2 (China, PD-L1 ≥1%): PFS HR 0.51, interim OS HR 0.73. Not FDA-approved; HARMONi-7 global ongoing.",["HARMONi-2"],"inv"));
+   if(pd==="neg")r.inv.push(O("Sac-TMT + pembrolizumab","OptiTROP-Lung06 (China, PD-L1 <1%): PFS 15.0 vs 5.7 mo. Investigational.",["OptiTROP-Lung06"],"inv"));
+   if(pd==="unk")r.notes.push("PD-L1 pending: if the patient is symptomatic, start platinum-pemetrexed and add pembrolizumab once a driver is excluded.");
+  }else{
+   r.pref.push(O("Docetaxel ± ramucirumab (or + nintedanib for adenocarcinoma, EMA)","The post-chemo-IO benchmark. REVEL: OS 10.5 vs 9.1 mo.",["REVEL","LUME-Lung 1 (adeno)"],"appr"));
+   r.alt.push(O("IO monotherapy if not given first line (nivolumab, pembrolizumab if PD-L1 ≥1%, atezolizumab)","OS HR ~0.71–0.73 vs docetaxel in IO-naïve patients.",["CheckMate 057","OAK"],"appr"));
+   r.alt.push(O("Pemetrexed (if not used); gemcitabine; single agents for PS 2","",[],"appr"));
+   r.alt.push(O("Clinical trials: ADCs (TROP2, B7-H3), bispecifics","TROPION-Lung01 improved PFS but not OS. SigVie-002 negative.",["TROPION-Lung01","SigVie-002"],"inv"));
+  }
+ };
+ const cnsNote=(s)=>{if(cns==="yes")r.notes.push(s);};
+ switch(dr){
+ case "none": ioFirst(); cnsNote("Brain metastases: SRS for limited lesions, then chemo-IO. Asymptomatic small lesions can start chemo-IO with close MRI follow-up."); break;
+ case "egfr":
+  if(st==="1L"){
+   r.pref.push(O("Osimertinib + platinum-pemetrexed","OS 47.5 vs 37.6 mo (HR 0.77). ESMO-preferred with CNS metastases.",["FLAURA2"],"appr"));
+   r.pref.push(O("Amivantamab + lazertinib","OS HR 0.75 vs osimertinib; 3-yr OS 60% vs 51%. Needs VTE prophylaxis and COCOON skin care.",["MARIPOSA"],"appr"));
+   r.pref.push(O("Osimertinib monotherapy","Category 1; ESMO-MCBS 4. Appropriate if combination is declined or unsuitable (frail, low burden).",["FLAURA"],"appr"));
+   r.alt.push(O("Gefitinib + pemetrexed-carboplatin","Indian phase 3: OS HR 0.45 vs gefitinib. A low-cost option.",["Tata Memorial (Noronha)"],"rep"));
+   r.alt.push(O("Erlotinib + ramucirumab/bevacizumab; dacomitinib; afatinib; gefitinib","Older options; use when osimertinib is unavailable.",["ARCHER 1050"],"appr"));
+   r.inv.push(O("Savolitinib + osimertinib for de-novo MET overexpression","SANOVO (China): PFS 24.9 vs 13.8 mo, OS HR 0.48.",["SANOVO"],"inv"));
+   if(ps==="ps2")r.notes.push("PS 2–4 from disease burden: start osimertinib alone. Dramatic responses are typical; consider adding chemo once PS improves.");
+   cnsNote("Brain mets: start osimertinib-based therapy (FLAURA2 combination preferred by ESMO); defer SRS for asymptomatic small lesions; MRI at 6–8 weeks.");
+   r.notes.push("Do not give PD-(L)1 inhibitors before or with osimertinib (pneumonitis risk).");
+  }else if(st==="2L"){
+   r.notes.push("Re-biopsy (tissue ± plasma) for MET IHC/FISH, SCLC transformation, C797S and fusions before choosing.");
+   r.pref.push(O("Amivantamab + carboplatin-pemetrexed","PFS HR 0.48; OS HR 0.73 (2nd interim).",["MARIPOSA-2"],"appr"));
+   r.pref.push(O("MET-high: osimertinib + savolitinib (or + tepotinib)","SAFFRON: OS 17.8 vs 12.9 mo (HR 0.68). ASCO recommends osi + tepotinib/savolitinib for acquired MET amp.",["SAFFRON"],"rep"));
+   r.alt.push(O("Platinum-pemetrexed ± continued osimertinib (non-CNS progression)","COMPEL; added to ASCO 2026.",["COMPEL"],"rep"));
+   r.alt.push(O("Atezolizumab + bevacizumab + carboplatin-paclitaxel","Exploratory benefit in EGFRm subgroup.",["IMpower150"],"appr"));
+   r.alt.push(O("Oligo-progression: local ablative therapy + continue TKI","",[],"rep"));
+   r.inv.push(O("Ivonescimab + chemo","HARMONi: PFS HR 0.52; OS HR 0.79 (NS). FDA decision 14 Nov 2026.",["HARMONi","HARMONi-A"],"rep"));
+   r.inv.push(O("ADCs: sac-TMT (China), iza-bren, ruzaltatug rezetecan","OptiTROP-Lung04 OS 25.9 vs 17.4 mo; PANKU-Lung01 PFS HR 0.40.",["OptiTROP-Lung04","PANKU-Lung01","HERON-Lung01"],"inv"));
+   cnsNote("CNS-only progression: SRS + continue osimertinib; leptomeningeal → osimertinib 160 mg (BLOOM).");
+  }else{
+   r.pref.push(O("Datopotamab deruxtecan (after EGFR TKI + platinum)","FDA accelerated approval Jun 2025; ORR ~44% in EGFRm.",["TROPION-Lung05 (+TL01 pooled)"],"appr"));
+   r.alt.push(O("Docetaxel ± ramucirumab; trials","",["REVEL"],"appr"));
+  }
+  break;
+ case "egfru":
+  if(st==="1L"){r.pref.push(O("Afatinib or osimertinib","Afatinib pooled ORR ~71%; osimertinib ORR 50% (KCSG). Osimertinib preferred with CNS disease.",["LUX-Lung pooled (uncommon)","KCSG-LU15-09"],"appr"));r.alt.push(O("Gefitinib, erlotinib, dacomitinib; chemo (± IO is weak)","",[],"appr"));}
+  else{r.pref.push(O("Platinum-pemetrexed ± bevacizumab; re-biopsy","Amivantamab-based regimens have limited data in uncommon mutations (verify).",[],"appr"));}
+  break;
+ case "ex20":
+  if(st==="1L"){r.pref.push(O("Amivantamab + carboplatin-pemetrexed","PFS 11.4 vs 6.7 mo (HR 0.40).",["PAPILLON"],"appr"));r.alt.push(O("Sunvozertinib (where approved 1L)","WU-KONG28: PFS 10.3 vs 7.5 mo (HR 0.65).",["WU-KONG28"],"rep"));r.alt.push(O("Platinum-pemetrexed (± IO; limited benefit)","",[],"appr"));r.notes.push("Firmonertinib missed its first-line endpoint (FURVENT).");}
+  else{r.pref.push(O("Sunvozertinib (post-platinum)","FDA accelerated Jul 2025.",["WU-KONG1B"],"appr"));r.pref.push(O("Amivantamab (if not used first line)","",["PAPILLON"],"appr"));r.inv.push(O("Zipalertinib","ORR 35.2%; PDUFA 27 Feb 2027.",["REZILIENT1"],"rep"));}
+  break;
+ case "alk":
+  if(st==="1L"){r.pref.push(O("Lorlatinib","5-yr PFS 60% vs 8% (HR 0.19); best CNS protection.",["CROWN"],"appr"));r.pref.push(O("Alectinib","PFS 34.8 mo; 5-yr OS 62.5%.",["ALEX"],"appr"));r.alt.push(O("Brigatinib; ensartinib","",["ALTA-1L","eXalt3"],"appr"));r.alt.push(O("Crizotinib (resource-limited)","Inferior PFS and CNS control.",["PROFILE 1014"],"appr"));cnsNote("Brain mets: lorlatinib or alectinib first, without upfront RT for asymptomatic disease.");}
+  else if(st==="2L"){r.pref.push(O("After alectinib/brigatinib: lorlatinib","Re-biopsy for G1202R and compound mutations.",[],"appr"));r.pref.push(O("After lorlatinib: neladalkib (PDUFA 27 Nov 2026) or trial; platinum-pemetrexed ± bevacizumab","ALKOVE-1: ORR 26% post-lorlatinib.",["ALKOVE-1"],"rep"));r.alt.push(O("ABCP (exploratory)","",["IMpower150"],"appr"));}
+  else{r.pref.push(O("Platinum-pemetrexed; trials; docetaxel","",[],"appr"));}
+  break;
+ case "ros1":
+  if(st==="1L"){r.pref.push(O("Taletrectinib or repotrectinib","TRUST pooled: ORR 89.8%, PFS 46.1 mo. TRIDENT-1: PFS 35.7 mo.",["TRUST-I/II pooled","TRIDENT-1"],"appr"));r.alt.push(O("Entrectinib; crizotinib (no CNS activity)","",["Entrectinib integrated","PROFILE 1001 (ROS1)"],"appr"));}
+  else{r.pref.push(O("Zidesamtinib (NCCN preferred for symptomatic CNS progression); repotrectinib/taletrectinib after crizotinib","Taletrectinib and repotrectinib are active against G2032R.",["ARROS-1","TRIDENT-1"],"appr"));r.alt.push(O("Platinum-pemetrexed ± bevacizumab","",[],"appr"));}
+  break;
+ case "kras":
+  if(st==="1L"){ioFirst();r.notes.push("KRAS G12C: first line is the same as driver-negative disease. With STK11/KEAP1 co-mutation consider dual checkpoint inhibition (POSEIDON exploratory) or a trial (KRYSTAL-7, KRASCENDO-2).");r.inv.push(O("G12C inhibitor + IO (adagrasib + pembro; divarasib + pembro)","Phase 2: PFS 27.7 mo (PD-L1 ≥50%) / 19.3 mo.",["KRYSTAL-7 (ph2)","Krascendo-170"],"rep"));}
+  else{r.pref.push(O("Sotorasib or adagrasib","PFS gain vs docetaxel, no OS gain (CodeBreaK 200). Hepatotoxicity if within ~3 months of IO.",["CodeBreaK 200","KRYSTAL-12"],"appr"));r.inv.push(O("Divarasib (next-generation)","Krascendo 1: OS 17.7 vs 12.0 mo vs soto/ada (HR 0.56).",["Krascendo 1"],"rep"));r.alt.push(O("Docetaxel ± ramucirumab","",["REVEL"],"appr"));r.inv.push(O("Daraxonrasib (pan-RAS)","NCCN emerging-biomarker listing; off-label.",[],"inv"));}
+  break;
+ case "braf":
+  if(st==="1L"){r.pref.push(O("Encorafenib + binimetinib or dabrafenib + trametinib","PHAROS naïve: ORR 75%, PFS 30.4 mo.",["PHAROS (naïve)","BRF113928 (1L)"],"appr"));r.alt.push(O("Chemo-IO first (BRAF/MEK at progression)","Reasonable in smokers with high PD-L1.",["KEYNOTE-189"],"appr"));}
+  else{r.pref.push(O("BRAF/MEK if not used; otherwise chemo ± IO","",["PHAROS (pretreated)"],"appr"));}
+  break;
+ case "met":
+  if(st==="1L"){r.pref.push(O("Capmatinib or tepotinib","GEOMETRY naïve ORR 68%, PFS 12.4 mo.",["GEOMETRY mono-1 (naïve)","VISION"],"appr"));r.alt.push(O("Crizotinib; chemo-IO (patients are often elderly smokers)","",[],"appr"));}
+  else{r.pref.push(O("MET TKI if not used; chemo ± IO; telisotuzumab vedotin if c-Met high & EGFR-wt","LUMINOSITY ORR 35%.",["GEOMETRY mono-1 (pretreated)","LUMINOSITY"],"appr"));}
+  break;
+ case "ret":
+  if(st==="1L"){r.pref.push(O("Selpercatinib (preferred) or pralsetinib","LIBRETTO-431: PFS 24.8 vs 11.2 mo vs chemo ± pembro.",["LIBRETTO-431","ARROW (naïve)"],"appr"));r.notes.push("Avoid IO-first: poor IO responsiveness and post-IO hypersensitivity to selpercatinib.");}
+  else{r.pref.push(O("RET TKI if not used; platinum-pemetrexed ± bevacizumab","",["LIBRETTO-001 (naïve)"],"appr"));}
+  break;
+ case "ntrk":
+  r.pref.push(O(st==="1L"?"Larotrectinib, entrectinib or repotrectinib":"Switch TRK TKI (repotrectinib for solvent-front mutations); chemo","",["Larotrectinib lung pooled"],"appr")); break;
+ case "her2":
+  if(st==="1L"){r.pref.push(O("Zongertinib or sevabertinib (FDA accelerated 1L, 2026)","Beamion 1L: ORR 76%, PFS 14.4 mo. SOHO-01 1L: ORR 75%, PFS 13.5 mo.",["Beamion LUNG-1 (1L)","SOHO-01 (1L, cohort F)"],"appr"));r.alt.push(O("Platinum-pemetrexed ± pembrolizumab","",["KEYNOTE-189"],"appr"));r.inv.push(O("T-DXd first line","DESTINY-Lung04: PFS 14.3 vs 8.3 mo (HR 0.63); not yet NCCN 1L.",["DESTINY-Lung04"],"rep"));}
+  else{r.pref.push(O("T-DXd 5.4 mg/kg; zongertinib or sevabertinib if not used (also after T-DXd)","DL-02: ORR 49%; SOHO-01 post-ADC ORR 38%.",["DESTINY-Lung02","Beamion LUNG-1 (pretreated)","SOHO-01 (pretreated, D)"],"appr"));}
+  break;
+ case "nrg1":
+  if(st==="1L"){ioFirst();r.notes.push("NRG1: chemo-based first line; zenocutuzumab is approved after prior therapy.");}else{r.pref.push(O("Zenocutuzumab","eNRGy ORR ~33% (verify).",["eNRGy (NSCLC)"],"appr"));}
+  break;
+ }
+ if(ps==="ps2"&&dr!=="egfr"&&["alk","ros1","ret","met","her2","braf","ntrk"].includes(dr))r.notes.push("Targeted therapy is appropriate even at PS 2–4 when the poor PS is due to cancer.");
+ return r;
+}
+(function(){
+const $=s=>document.querySelector(s),$$=s=>Array.from(document.querySelectorAll(s));
+const NS="http://www.w3.org/2000/svg";
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const el=(tag,attrs,parent,text)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e;};
+const tip=document.createElement("div");tip.className="tip";document.body.appendChild(tip);
+const showTip=(e,h)=>{tip.innerHTML=h;tip.style.opacity=1;tip.style.left=Math.min(e.clientX+14,innerWidth-340)+"px";tip.style.top=(e.clientY+14)+"px";};
+const hideTip=()=>tip.style.opacity=0;
+const badge=s=>({appr:'<span class="badge b-appr">Approved</span>',rep:'<span class="badge b-rep">Reported</span>',inv:'<span class="badge b-inv">Investigational</span>',neg:'<span class="badge b-neg">Negative</span>'}[s]||"");
+
+/* ---------- references ---------- */
+const refKeys=Object.keys(REFS);const refNum={};refKeys.forEach((k,i)=>refNum[k]=i+1);
+$("#refList").innerHTML=refKeys.map(k=>`<li id="ref-${k}">${esc(REFS[k].t)} <a href="${esc(REFS[k].u)}" target="_blank" rel="noopener">link</a></li>`).join("");
+
+/* ---------- TOC + scroll spy ---------- */
+const secs=$$("section.sec");const toc=$("#toc");let lastG="";let html="";
+secs.forEach(s=>{const h=s.querySelector("h2,h1");if(!h)return;const g=s.dataset.grp||"";if(g!==lastG){html+=`<div class="grp">${esc(g)}</div>`;lastG=g;}
+ const t=s.id==="top"?"Title":h.textContent.replace(/\s+/g," ").replace(/verify|approximate ranges/g,"").trim();html+=`<a href="#${s.id}" data-id="${s.id}">${esc(t.length>48?t.slice(0,46)+"…":t)}</a>`;});
+toc.innerHTML=html;
+const links={};$$("#toc a").forEach(a=>links[a.dataset.id]=a);
+if("IntersectionObserver" in window){const io=new IntersectionObserver(ents=>{ents.forEach(en=>{if(en.isIntersecting){$$("#toc a.active").forEach(a=>a.classList.remove("active"));const a=links[en.target.id];if(a){a.classList.add("active");}}});},{rootMargin:"-30% 0px -60% 0px"});secs.forEach(s=>io.observe(s));}
+$("#tocBtn").onclick=()=>toc.classList.toggle("show");
+
+/* ---------- theme ---------- */
+const setTheme=t=>{document.documentElement.dataset.theme=t;try{localStorage.setItem("la-theme",t)}catch(e){}redraw();};
+$("#themeBtn").onclick=()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark");
+try{const t=localStorage.getItem("la-theme");if(t)document.documentElement.dataset.theme=t;else if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark";}catch(e){}
+
+/* ---------- search ---------- */
+$("#q").addEventListener("input",e=>{const q=e.target.value.trim().toLowerCase();let n=0;
+ secs.forEach(s=>{const hit=!q||s.textContent.toLowerCase().includes(q);s.style.display=hit?"":"none";if(links[s.id])links[s.id].classList.toggle("dim",!hit);if(hit&&q)n++;});
+ $("#hits").textContent=q?`${n} section${n===1?"":"s"}`:"";});
+
+/* ---------- donut ---------- */
+let donutKey="west";
+function drawDonut(){const svg=$("#donut");svg.innerHTML="";const d=DONUT[donutKey];const tot=d.reduce((a,b)=>a+b[1],0);const cx=160,cy=160,R=130,r=78;let a0=-Math.PI/2;
+ d.forEach((s,i)=>{const a1=a0+2*Math.PI*s[1]/tot;const lg=a1-a0>Math.PI?1:0;const p=(a,rr)=>[cx+rr*Math.cos(a),cy+rr*Math.sin(a)];const [x0,y0]=p(a0,R),[x1,y1]=p(a1,R),[x2,y2]=p(a1,r),[x3,y3]=p(a0,r);
+  const path=el("path",{d:`M${x0},${y0}A${R},${R} 0 ${lg} 1 ${x1},${y1}L${x2},${y2}A${r},${r} 0 ${lg} 0 ${x3},${y3}Z`,fill:DCOL[i],stroke:css("--panel"),"stroke-width":2,style:"cursor:pointer;transition:opacity .2s"},svg);
+  path.addEventListener("mousemove",e=>showTip(e,`<b>${esc(s[0])}</b>: ~${s[1]}%`));path.addEventListener("mouseleave",hideTip);
+  const ly=26+i*25;el("rect",{x:330,y:ly-11,width:13,height:13,rx:3,fill:DCOL[i]},svg);el("text",{x:350,y:ly,"font-size":13,fill:css("--ink")},svg,`${s[0]} — ~${s[1]}%`);a0=a1;});
+ el("text",{x:cx,y:cy-4,"text-anchor":"middle","font-size":15,"font-weight":700,fill:css("--ink")},svg,{west:"Western",asia:"East Asian",india:"Indian"}[donutKey]);
+ el("text",{x:cx,y:cy+16,"text-anchor":"middle","font-size":12,fill:css("--muted")},svg,"adenocarcinoma");}
+$$("#donutSeg button").forEach(b=>b.onclick=()=>{$$("#donutSeg button").forEach(x=>x.classList.remove("on"));b.classList.add("on");donutKey=b.dataset.k;drawDonut();});
+
+/* ---------- timeline ---------- */
+let tlKey="all";const TLC={chemo:"#64748b",tki:"#0b7a75",io:"#0f4c81",adc:"#c2410c"};
+function drawTimeline(){const svg=$("#timeline");svg.innerHTML="";const x0=40,x1=1070,y=170,ymin=2003,ymax=2026;const X=yr=>x0+(yr-ymin)/(ymax-ymin)*(x1-x0);
+ el("line",{x1:x0,y1:y,x2:x1,y2:y,stroke:css("--line"),"stroke-width":4,"stroke-linecap":"round"},svg);
+ [["2003–2010","Chemo + anti-VEGF",2003,2010.5],["2011–2014","1st TKIs",2010.5,2014.5],["2015–2019","IO era",2014.5,2019.5],["2020–2026","Precision + ADC era",2019.5,2026.4]].forEach((b,i)=>{el("rect",{x:X(b[2]),y:y+44,width:X(b[3])-X(b[2])-4,height:22,rx:5,fill:["#64748b","#0b7a75","#0f4c81","#c2410c"][i],opacity:.18},svg);el("text",{x:(X(b[2])+X(b[3]))/2,y:y+59,"text-anchor":"middle","font-size":11.5,fill:css("--ink")},svg,b[1]+" ("+b[0]+")");});
+ for(let yr=ymin;yr<=ymax;yr++){el("line",{x1:X(yr),y1:y-5,x2:X(yr),y2:y+5,stroke:css("--muted")},svg);if(yr%2===1||yr===2026)el("text",{x:X(yr),y:y+28,"text-anchor":"middle","font-size":11,fill:css("--muted")},svg,yr);}
+ TIMELINE.forEach((t,i)=>{if(tlKey!=="all"&&t[2]!==tlKey)return;const up=i%2===0;const lvl=(Math.floor(i/2)%3)+1;const yy=up?y-22-lvl*42:y+72+lvl*28;const xx=X(t[0]+((i%3)-1)*0.12);
+  el("line",{x1:xx,y1:y,x2:xx,y2:up?yy+8:yy-12,stroke:TLC[t[2]],"stroke-width":1.4,opacity:.7},svg);
+  const c=el("circle",{cx:xx,cy:y,r:7,fill:TLC[t[2]],stroke:css("--panel"),"stroke-width":2,style:"cursor:pointer"},svg);
+  const short=t[1].split(";")[0];const tx=el("text",{x:xx,y:yy,"text-anchor":xx<130?"start":xx>990?"end":"middle","font-size":10.5,fill:css("--ink"),style:"cursor:pointer"},svg,(t[0]+": "+(short.length>26?short.slice(0,25)+"…":short)));
+  [c,tx].forEach(n=>{n.addEventListener("mousemove",e=>showTip(e,`<b>${t[0]}</b><br>${esc(t[1])}`));n.addEventListener("mouseleave",hideTip);});});
+ const lg=[["Chemo/anti-VEGF","chemo"],["Targeted","tki"],["Immunotherapy","io"],["ADC/bispecific","adc"]];lg.forEach((l,i)=>{el("circle",{cx:50+i*160,cy:380,r:6,fill:TLC[l[1]]},svg);el("text",{x:62+i*160,y:384,"font-size":12,fill:css("--muted")},svg,l[0]);});}
+$$("#tlSeg button").forEach(b=>b.onclick=()=>{$$("#tlSeg button").forEach(x=>x.classList.remove("on"));b.classList.add("on");tlKey=b.dataset.k;drawTimeline();});
+
+/* ---------- forest ---------- */
+let fpEnd="hr",fpCat="all";const cats=[...new Set(TRIALS.map(t=>t.drv))];
+cats.forEach(c=>{$("#fpCat").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`);$("#tDrv").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`);});
+function drawForest(){const svg=$("#forest");svg.innerHTML="";const ciK=fpEnd==="hr"?"ci":"ciOS";
+ const rows=TRIALS.filter(t=>typeof t[fpEnd]==="number"&&(fpCat==="all"||t.drv===fpCat)&&t.set!=="Historical");
+ const H=Math.max(160,rows.length*22+70);svg.setAttribute("viewBox",`0 0 980 ${H}`);
+ const L=330,R=900,lo=0.1,hi=2.0;const X=v=>L+(Math.log(v)-Math.log(lo))/(Math.log(hi)-Math.log(lo))*(R-L);
+ [0.1,0.2,0.3,0.5,0.75,1,1.5,2].forEach(v=>{el("line",{x1:X(v),y1:30,x2:X(v),y2:H-30,stroke:v===1?css("--ink"):css("--line"),"stroke-dasharray":v===1?"":"3,3"},svg);el("text",{x:X(v),y:H-12,"text-anchor":"middle","font-size":11,fill:css("--muted")},svg,v);});
+ el("text",{x:X(0.25),y:20,"text-anchor":"middle","font-size":12,fill:css("--good")},svg,"← favours experimental");el("text",{x:X(1.4),y:20,"text-anchor":"middle","font-size":12,fill:css("--bad")},svg,"favours control →");
+ rows.forEach((t,i)=>{const y=40+i*22;const v=t[fpEnd];const col={appr:"#15803d",rep:"#1d4ed8",inv:"#7c3aed",neg:"#b91c1c"}[t.stat];
+  el("text",{x:8,y:y+4,"font-size":11.5,fill:css("--ink")},svg,(t.name.length>26?t.name.slice(0,25)+"…":t.name));
+  el("text",{x:200,y:y+4,"font-size":10.5,fill:css("--muted")},svg,t.drv+" · "+t.set);
+  if(t[ciK]){el("line",{x1:X(Math.max(lo,t[ciK][0])),y1:y,x2:X(Math.min(hi,t[ciK][1])),y2:y,stroke:col,"stroke-width":2},svg);}
+  const sz=6+Math.min(6,Math.sqrt((t.n||200)/40));const sq=el("rect",{x:X(v)-sz/2,y:y-sz/2,width:sz,height:sz,fill:col,style:"cursor:pointer"},svg);
+  el("text",{x:R+12,y:y+4,"font-size":11,fill:css("--ink")},svg,v.toFixed(2)+(t[ciK]?` (${t[ciK][0]}–${t[ciK][1]})`:""));
+  sq.addEventListener("mousemove",e=>showTip(e,`<b>${esc(t.name)}</b><br>${esc(t.arms)}<br>${fpEnd==="hr"?"PFS":"OS"} HR ${v}${t[ciK]?" ("+t[ciK].join("–")+")":""}<br>n=${t.n||"—"}`));sq.addEventListener("mouseleave",hideTip);
+  sq.addEventListener("click",()=>openTrial(t.name));});
+ if(!rows.length)el("text",{x:490,y:80,"text-anchor":"middle",fill:css("--muted")},svg,"No randomised HRs for this selection");}
+$$("#fpEnd button").forEach(b=>b.onclick=()=>{$$("#fpEnd button").forEach(x=>x.classList.remove("on"));b.classList.add("on");fpEnd=b.dataset.k;drawForest();});
+$("#fpCat").onchange=e=>{fpCat=e.target.value;drawForest();};
+
+/* ---------- bars ---------- */
+let barEnd="pfs";
+function drawBars(){const svg=$("#bars");svg.innerHTML="";const d=BARS[barEnd].slice().sort((a,b)=>b[1]-a[1]);const H=d.length*26+60;svg.setAttribute("viewBox",`0 0 980 ${H}`);
+ const L=380,R=930,max=65;const X=v=>L+v/max*(R-L);
+ const defs=el("defs",{},svg);const pat=el("pattern",{id:"hatch",width:8,height:8,patternUnits:"userSpaceOnUse",patternTransform:"rotate(45)"},defs);el("rect",{width:8,height:8,fill:css("--brand"),opacity:.35},pat);el("line",{x1:0,y1:0,x2:0,y2:8,stroke:css("--brand"),"stroke-width":4},pat);
+ [0,12,24,36,48,60].forEach(v=>{el("line",{x1:X(v),y1:20,x2:X(v),y2:H-30,stroke:css("--line")},svg);el("text",{x:X(v),y:H-12,"text-anchor":"middle","font-size":11,fill:css("--muted")},svg,v+" mo");});
+ d.forEach((b,i)=>{const y=28+i*26;const isND=b[0].startsWith("No driver");el("text",{x:L-8,y:y+12,"text-anchor":"end","font-size":11.5,fill:css("--ink")},svg,b[0]);
+  const rect=el("rect",{x:L,y:y,width:0,height:17,rx:4,fill:b[2]?"url(#hatch)":(isND?css("--accent"):css("--brand2"))},svg);
+  requestAnimationFrame(()=>{rect.style.transition="width .7s ease";rect.setAttribute("width",X(b[1])-L);});
+  el("text",{x:X(b[1])+6,y:y+13,"font-size":11,fill:css("--ink")},svg,b[2]?"NR (≥"+b[1]+")":b[1]);
+  rect.addEventListener("mousemove",e=>showTip(e,`<b>${esc(b[0])}</b><br>${b[2]?"Median not reached":"Median "+b[1]+" months"}`));rect.addEventListener("mouseleave",hideTip);});}
+$$("#barEnd button").forEach(b=>b.onclick=()=>{$$("#barEnd button").forEach(x=>x.classList.remove("on"));b.classList.add("on");barEnd=b.dataset.k;drawBars();});
+
+/* ---------- trial table ---------- */
+let sortK=null,sortDir=1;
+function numOf(v){if(typeof v==="number")return v;const m=String(v||"").match(/[\d.]+/);return m?parseFloat(m[0]):null;}
+function renderTable(){const q=$("#tFilter").value.toLowerCase(),dv=$("#tDrv").value,sv=$("#tSet").value,stv=$("#tStat").value;
+ let rows=TRIALS.filter(t=>(dv==="all"||t.drv===dv)&&(sv==="all"||t.set===sv)&&(stv==="all"||t.stat===stv)&&(!q||JSON.stringify(t).toLowerCase().includes(q)||(REFS[t.ref]&&REFS[t.ref].t.toLowerCase().includes(q))));
+ if(sortK){rows.sort((a,b)=>{const A=a[sortK],B=b[sortK];let r;if(["n","hr","hrOS","pfs","os","orr"].includes(sortK)){const x=numOf(A),y=numOf(B);if(x==null&&y==null)return 0;if(x==null)return 1;if(y==null)return -1;r=x-y;}else r=String(A).localeCompare(String(B));return r*sortDir;});}
+ $("#trialTable tbody").innerHTML=rows.map(t=>`<tr id="row-${t.id}"><td><b>${esc(t.name)}</b> ${badge(t.stat)}${t.v?' <span class="badge verify">verify</span>':""}</td><td>${esc(t.drv)}</td><td>${esc(t.set)}</td><td>${esc(t.arms)}</td><td>${t.n?t.n.toLocaleString("en-IN"):"—"}</td><td>${esc(t.pfs)}</td><td>${esc(t.os)}</td><td>${t.hr!=null?t.hr:"—"}${t.ci?`<br><span class="small">${t.ci.join("–")}</span>`:""}</td><td>${t.hrOS!=null?t.hrOS:"—"}${t.ciOS?`<br><span class="small">${t.ciOS.join("–")}</span>`:""}</td><td>${esc(t.orr)}</td><td>${esc(t.cns)}</td><td><a href="#ref-${t.ref}">[${refNum[t.ref]||"?"}]</a></td></tr>`).join("");
+ $("#tCount").textContent=`${rows.length} of ${TRIALS.length} trials`;}
+["#tFilter","#tDrv","#tSet","#tStat"].forEach(s=>$(s).addEventListener("input",renderTable));
+$("#tReset").onclick=()=>{$("#tFilter").value="";$("#tDrv").value="all";$("#tSet").value="all";$("#tStat").value="all";sortK=null;$$("#trialTable th").forEach(h=>h.classList.remove("asc","desc"));renderTable();};
+$$("#trialTable th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=1;}$$("#trialTable th").forEach(h=>h.classList.remove("asc","desc"));th.classList.add(sortDir===1?"asc":"desc");renderTable();});
+window.openTrial=function(name){$("#q").value="";$("#q").dispatchEvent(new Event("input"));$("#tReset").click();$("#tFilter").value=name;renderTable();const tr=document.getElementById("trials");if(tr.scrollIntoView)tr.scrollIntoView({behavior:"smooth"});};
+
+/* ---------- drug cards ---------- */
+$("#drugList").innerHTML=DRUGS.map(d=>`<details class="drug"><summary><span>${esc(d[0])} <small>· ${esc(d[1])}</small></span></summary><div class="body"><p><b>Dose:</b> ${esc(d[2])}</p><p><b>Key toxicities:</b> ${esc(d[3])}</p><p class="small"><b>Pivotal:</b> ${esc(d[4])}</p></div></details>`).join("");
+$("#dFilter").addEventListener("input",e=>{const q=e.target.value.toLowerCase();$$("#drugList details").forEach(d=>d.style.display=!q||d.textContent.toLowerCase().includes(q)?"":"none");});
+$("#dOpen").onclick=()=>$$("#drugList details").forEach(d=>d.open=true);$("#dClose").onclick=()=>$$("#drugList details").forEach(d=>d.open=false);
+
+/* ---------- algorithm ---------- */
+$("#aDrv").innerHTML=DRV.map(d=>`<option value="${d[0]}">${esc(d[1])}</option>`).join("");
+function renderAlgo(){const r=algo($("#aDrv").value,$("#aPdl").value,$("#aSet").value,$("#aCns").value,$("#aPs").value);
+ const chip=n=>`<span class="chip" onclick="openTrial('${esc(n).replace(/'/g,"\\'")}')">${esc(n)}</span>`;
+ const blk=(o,cls)=>`<div class="opt ${cls}"><h4>${esc(o.t)} ${badge(o.b)}</h4>${o.d?`<div>${esc(o.d)}</div>`:""}${o.ev.length?`<div class="chips" style="margin-top:.35rem">${o.ev.map(chip).join("")}</div>`:""}</div>`;
+ let h="";if(r.pref.length)h+=`<h3>Preferred</h3>`+r.pref.map(o=>blk(o,"")).join("");if(r.alt.length)h+=`<h3>Alternatives / other recommended</h3>`+r.alt.map(o=>blk(o,"alt")).join("");if(r.inv.length)h+=`<h3>Emerging / investigational / regional</h3>`+r.inv.map(o=>blk(o,"inv")).join("");
+ if(r.notes.length)h+=`<div class="pearl">${r.notes.map(esc).join("<br>")}</div>`;
+ if($("#aDrv").value!=="none"&&["1L"].includes($("#aSet").value)&&$("#aPdl").value==="hi"&&!["kras","nrg1","braf","met"].includes($("#aDrv").value))h+=`<div class="warnbox">High PD-L1 does <b>not</b> override a targetable driver. Targeted therapy comes first.</div>`;
+ $("#algoOut").innerHTML=h||"<p>No specific recommendation.</p>";}
+["#aDrv","#aPdl","#aSet","#aCns","#aPs"].forEach(s=>$(s).addEventListener("change",renderAlgo));
+
+/* ---------- print ---------- */
+window.addEventListener("beforeprint",()=>$$("details").forEach(d=>d.open=true));
+
+function redraw(){drawDonut();drawTimeline();drawForest();drawBars();}
+renderTable();renderAlgo();redraw();
+window.__LA_OK=true;
+})();
+</script>
+</body></html>

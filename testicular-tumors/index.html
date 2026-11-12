@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Testicular Tumors: An Interactive Evidence Atlas (Nov 2026)</title>
+<meta name="description" content="Interactive evidence review · Medical Oncology — germ cell tumors of the testis, sex-cord stromal tumors and primary testicular lymphoma.">
+<meta name="color-scheme" content="light dark">
+<style>
+/* ===== Design tokens: "Ink & Copper" ===== */
+:root{
+  --paper:#F5F0E6; --paper-2:#EDE5D6; --card:#FBF8F2; --ink:#14211F; --ink-2:#3A4846; --ink-3:#6B7775;
+  --teal:#0E4D4A; --teal-2:#1E6B66; --teal-soft:#DCE8E4; --copper:#A8551F; --copper-2:#C9773A; --amber:#C98E2B;
+  --rose:#9E3434; --rose-soft:#F3DEDA; --sage:#4F7560; --sage-soft:#DFEADF; --gold-soft:#F4E6C8;
+  --line:rgba(20,33,31,.14); --line-2:rgba(20,33,31,.07); --shadow:0 1px 2px rgba(20,33,31,.06),0 12px 32px -18px rgba(20,33,31,.35);
+  --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,"URW Palladio L",Georgia,serif;
+  --sans:"Avenir Next","Avenir","Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --measure:46rem; --wide:72rem; --rail:15.5rem; --radius:14px;
+}
+[data-theme="dark"]{
+  --paper:#081413; --paper-2:#0D1D1B; --card:#0F2220; --ink:#EEE7DA; --ink-2:#C6CCC6; --ink-3:#8E9C98;
+  --teal:#7CC3B9; --teal-2:#5AA79C; --teal-soft:#123532; --copper:#E8955A; --copper-2:#F0AC74; --amber:#E7B65A;
+  --rose:#EE8C80; --rose-soft:#3A1C1A; --sage:#93C3A3; --sage-soft:#16302A; --gold-soft:#2D2614;
+  --line:rgba(238,231,218,.16); --line-2:rgba(238,231,218,.07); --shadow:0 1px 2px rgba(0,0,0,.4),0 18px 40px -20px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.62 var(--sans);font-feature-settings:"kern","liga","onum";transition:background .3s,color .3s}
+::selection{background:var(--copper);color:#fff}
+a{color:var(--teal-2);text-decoration-thickness:.07em;text-underline-offset:.18em}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-height:1.15;margin:0}
+p{margin:.7em 0}
+small,.small{font-size:.86rem}
+.mono{font-family:var(--mono);font-size:.9em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+kbd{font:600 .72rem var(--mono);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:.05rem .35rem;color:var(--ink-2)}
+/* ===== Top bar ===== */
+.topbar{position:fixed;inset:0 0 auto 0;height:54px;z-index:50;display:flex;align-items:center;gap:.8rem;padding:0 1rem 0 1.2rem;
+  background:color-mix(in srgb,var(--paper) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
+  border-bottom:1px solid var(--line-2);transform:translateY(-100%);transition:transform .35s ease}
+.topbar.show{transform:none}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.02rem;white-space:nowrap;display:flex;align-items:center;gap:.55rem}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--amber),var(--copper));box-shadow:0 0 0 3px color-mix(in srgb,var(--copper) 22%,transparent)}
+.topbar .crumb{color:var(--ink-3);font-size:.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.tbtn{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;height:34px;padding:0 .85rem;font:500 .84rem var(--sans);cursor:pointer;display:inline-flex;align-items:center;gap:.45rem}
+.tbtn:hover{border-color:var(--copper)}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--teal-2),var(--copper));width:0}
+/* ===== Hero ===== */
+.hero{position:relative;min-height:min(94vh,860px);display:grid;align-items:end;color:#F3EDE2;overflow:hidden;background:#071513}
+.hero-img{position:absolute;inset:0;background-image:var(--hero);background-size:cover;background-position:70% 50%;transform:scale(1.04);filter:saturate(1.05)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,16,15,.92) 0%,rgba(5,16,15,.72) 38%,rgba(5,16,15,.15) 70%,rgba(5,16,15,.35) 100%),linear-gradient(0deg,rgba(5,16,15,.95) 0%,transparent 40%)}
+.hero-inner{position:relative;z-index:2;max-width:var(--wide);margin:0 auto;width:100%;padding:7rem 1.6rem 3.2rem}
+.eyebrow{font:600 .78rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#E8B57E;display:flex;align-items:center;gap:.7rem}
+.eyebrow::before{content:"";width:34px;height:1px;background:#E8B57E}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.6rem);font-weight:500;line-height:.98;margin:1.1rem 0 1rem;max-width:13ch;letter-spacing:-.025em}
+.hero h1 em{font-style:italic;color:#F0B27A;font-weight:400}
+.hero .doc-title{font:500 1.02rem var(--sans);color:#CFE2DD;max-width:46ch;margin:0}
+.hero .subtitle{font:600 .82rem var(--sans);letter-spacing:.08em;color:#9FBDB7;margin-top:.5rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;border:1px solid rgba(243,237,226,.25);border-radius:999px;padding:.35rem .8rem;font-size:.8rem;color:#E9E1D3;background:rgba(255,255,255,.04)}
+.hero-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:2.6rem;border-top:1px solid rgba(243,237,226,.18)}
+.hero-stats div{padding:1rem 1rem 0 0}
+.hero-stats b{display:block;font:500 clamp(1.6rem,3vw,2.4rem)/1 var(--serif);color:#F3D2A9}
+.hero-stats span{font-size:.8rem;color:#B9CCC7;line-height:1.35;display:block;margin-top:.35rem}
+.hero-cta{margin-top:2rem;display:flex;gap:.7rem;flex-wrap:wrap}
+.hero-cta a,.hero-cta button{font:600 .88rem var(--sans);padding:.75rem 1.15rem;border-radius:999px;text-decoration:none;cursor:pointer;border:1px solid #E8B57E;color:#1a120a;background:#E8B57E}
+.hero-cta .ghost{background:transparent;color:#F3EDE2;border-color:rgba(243,237,226,.35)}
+.hero .credit{position:absolute;right:1rem;bottom:.8rem;z-index:2;font-size:.68rem;color:rgba(243,237,226,.5)}
+/* ===== Layout ===== */
+.shell{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);max-width:calc(var(--wide) + var(--rail) + 4rem);margin:0 auto;gap:2.4rem;padding:0 1.6rem}
+.rail{position:sticky;top:70px;align-self:start;height:calc(100vh - 86px);overflow:auto;padding:1.6rem 0 2rem;scrollbar-width:thin}
+.rail h4{font:700 .7rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin:0 0 .8rem}
+.rail ol{list-style:none;margin:0;padding:0;counter-reset:ch}
+.rail li a{display:grid;grid-template-columns:2.1rem 1fr;align-items:baseline;padding:.32rem .5rem .32rem 0;color:var(--ink-2);text-decoration:none;font-size:.86rem;line-height:1.3;border-left:2px solid transparent;padding-left:.6rem;border-radius:0 8px 8px 0}
+.rail li a .n{font:500 .78rem var(--serif);color:var(--ink-3);font-style:italic}
+.rail li a:hover{background:var(--line-2);color:var(--ink)}
+.rail li a.active{border-left-color:var(--copper);color:var(--ink);background:linear-gradient(90deg,color-mix(in srgb,var(--copper) 10%,transparent),transparent)}
+.rail li a.active .n{color:var(--copper)}
+main{min-width:0;padding:2.6rem 0 6rem}
+.chapter{padding:3.4rem 0 1rem;border-top:1px solid var(--line);scroll-margin-top:64px}
+.chapter:first-child{border-top:0}
+.ch-head{display:grid;grid-template-columns:auto 1fr;gap:1.3rem;align-items:end;margin-bottom:1.6rem}
+.ch-num{font:400 clamp(3rem,6vw,4.6rem)/.8 var(--serif);font-style:italic;color:transparent;-webkit-text-stroke:1px var(--copper);opacity:.9}
+.kicker{font:700 .7rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--copper)}
+.ch-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-top:.35rem}
+.lede{font:400 1.18rem/1.55 var(--serif);color:var(--ink-2);max-width:var(--measure);margin:0 0 1.4rem}
+.prose{max-width:var(--measure)}
+.prose h3{font-size:1.38rem;margin:2rem 0 .5rem}
+.prose h4{font:700 .82rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--teal-2);margin:1.4rem 0 .3rem}
+.prose ul{padding-left:1.15rem;margin:.5rem 0}
+.prose li{margin:.28rem 0}
+.prose li::marker{color:var(--copper)}
+.wide{max-width:var(--wide)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+/* Cards & notes */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.2rem;box-shadow:var(--shadow)}
+.card h4{font:700 .78rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--teal-2);margin:0 0 .4rem}
+.card p:first-of-type{margin-top:.2rem}
+.pearl{position:relative;border-left:3px solid var(--copper);background:linear-gradient(90deg,color-mix(in srgb,var(--copper) 9%,transparent),transparent 70%);padding:.85rem 1rem .85rem 1.1rem;margin:1.1rem 0;border-radius:0 12px 12px 0;max-width:var(--measure)}
+.pearl::before{content:"Pearl";font:700 .66rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--copper);display:block;margin-bottom:.2rem}
+.pearl.warn{border-color:var(--rose);background:linear-gradient(90deg,color-mix(in srgb,var(--rose) 10%,transparent),transparent 70%)}
+.pearl.warn::before{content:"Pitfall";color:var(--rose)}
+.pearl.nuance{border-color:var(--teal-2);background:linear-gradient(90deg,color-mix(in srgb,var(--teal-2) 10%,transparent),transparent 70%)}
+.pearl.nuance::before{content:"Guideline nuance";color:var(--teal-2)}
+.pull{font:italic 400 1.5rem/1.35 var(--serif);color:var(--teal);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1rem 0;margin:1.8rem 0;max-width:var(--measure)}
+.v{display:inline-flex;align-items:center;gap:.25rem;font:600 .66rem/1 var(--sans);letter-spacing:.04em;color:var(--sage);background:var(--sage-soft);border:1px solid color-mix(in srgb,var(--sage) 35%,transparent);border-radius:999px;padding:.18rem .45rem;vertical-align:.12em;white-space:nowrap;cursor:help}
+.v::before{content:"✓"}
+.tag{display:inline-block;font:600 .7rem var(--sans);padding:.15rem .5rem;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);background:var(--paper-2)}
+.tag.sem{color:var(--teal-2);border-color:color-mix(in srgb,var(--teal-2) 40%,transparent);background:var(--teal-soft)}
+.tag.ns{color:var(--copper);border-color:color-mix(in srgb,var(--copper) 40%,transparent);background:var(--gold-soft)}
+.tag.bad{color:var(--rose);background:var(--rose-soft);border-color:color-mix(in srgb,var(--rose) 40%,transparent)}
+/* Figures */
+figure{margin:1.6rem 0;max-width:var(--wide)}
+figure.fig{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.2rem;box-shadow:var(--shadow)}
+figcaption{font-size:.84rem;color:var(--ink-3);margin-top:.7rem;line-height:1.45}
+figcaption b{color:var(--ink-2);font-family:var(--serif);font-size:.95rem}
+svg text{font-family:var(--sans)}
+.svgwrap{width:100%;overflow:auto}
+.svgwrap svg{display:block;width:100%;height:auto}
+/* Instruments (interactive widgets) */
+.instrument{border:1px solid var(--line);border-radius:20px;background:var(--card);box-shadow:var(--shadow);margin:1.8rem 0;overflow:hidden;max-width:var(--wide)}
+.inst-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1.2rem;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--paper-2),transparent)}
+.inst-head .t{font:600 1.05rem var(--serif)}
+.inst-head .t small{display:block;font:700 .64rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--copper);margin-bottom:.15rem}
+.inst-body{padding:1.1rem 1.2rem 1.3rem}
+.seg{display:inline-flex;flex-wrap:wrap;gap:.3rem;padding:.25rem;border-radius:12px;background:var(--paper-2);border:1px solid var(--line-2)}
+.seg button{appearance:none;border:0;background:transparent;color:var(--ink-2);font:600 .82rem var(--sans);padding:.45rem .75rem;border-radius:9px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12);outline:1px solid var(--line)}
+.ctl-row{display:flex;flex-wrap:wrap;gap:.9rem 1.4rem;align-items:flex-end;margin:.2rem 0 1rem}
+.ctl{display:flex;flex-direction:column;gap:.3rem}
+.ctl label,.lab{font:700 .66rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+select,input[type=number]{font:500 .92rem var(--sans);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.5rem .6rem;min-width:8rem}
+input[type=range]{accent-color:var(--copper);width:100%}
+.out{border-radius:14px;border:1px solid var(--line);padding:1rem 1.1rem;background:var(--paper)}
+.out h5{font:600 1.15rem var(--serif);margin:0 0 .35rem}
+.pill{font:700 .7rem var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:.2rem .55rem;border-radius:999px;display:inline-block;margin-bottom:.4rem}
+.pill.good{background:var(--sage-soft);color:var(--sage)}.pill.int{background:var(--gold-soft);color:var(--amber)}.pill.poor{background:var(--rose-soft);color:var(--rose)}.pill.info{background:var(--teal-soft);color:var(--teal-2)}
+/* tables */
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem}
+.tbl th{font:700 .68rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--line)}
+.tbl td{padding:.6rem;border-bottom:1px solid var(--line-2);vertical-align:top}
+.tbl tr:hover td{background:var(--line-2)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+/* IHC matrix */
+.ihc{display:grid;grid-template-columns:9.5rem repeat(var(--cols),minmax(2.6rem,1fr));gap:3px;font-size:.78rem;min-width:720px}
+.ihc .h{font:700 .66rem var(--sans);letter-spacing:.04em;color:var(--ink-3);writing-mode:vertical-rl;transform:rotate(180deg);text-align:left;padding:.3rem 0;justify-self:center;cursor:pointer}
+.ihc .h.on{color:var(--copper)}
+.ihc .rh{font:600 .82rem var(--serif);padding:.35rem .4rem;cursor:pointer;border-radius:6px;display:flex;align-items:center}
+.ihc .rh.on{background:var(--gold-soft);color:var(--copper)}
+.ihc .c{height:2.1rem;border-radius:6px;display:grid;place-items:center;font:700 .78rem var(--mono);transition:opacity .2s,transform .2s;border:1px solid var(--line-2)}
+.c.p{background:var(--teal-2);color:#fff}.c.f{background:color-mix(in srgb,var(--teal-2) 45%,var(--card));color:var(--ink)}.c.v{background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--amber) 35%,var(--card)) 0 5px,var(--card) 5px 10px);color:var(--ink)}.c.n{background:var(--paper-2);color:var(--ink-3)}
+.ihc.dim .c,.ihc.dim .rh{opacity:.25}.ihc.dim .c.hl,.ihc.dim .rh.hl{opacity:1}
+.legend{display:flex;flex-wrap:wrap;gap:.9rem;font-size:.78rem;color:var(--ink-3);margin-top:.8rem}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:.3rem}
+/* timeline */
+.tl{position:relative;padding-left:1.6rem;max-width:var(--wide)}
+.tl::before{content:"";position:absolute;left:.45rem;top:.3rem;bottom:.3rem;width:2px;background:linear-gradient(var(--teal-2),var(--copper))}
+.tl-item{position:relative;margin:0 0 1.1rem;padding:.8rem 1rem;border:1px solid var(--line);border-radius:14px;background:var(--card);cursor:pointer;transition:border-color .2s}
+.tl-item:hover{border-color:var(--copper)}
+.tl-item::before{content:"";position:absolute;left:-1.42rem;top:1.05rem;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--copper)}
+.tl-item .yr{font:600 1.25rem var(--serif);color:var(--copper);margin-right:.6rem}
+.tl-item .ttl{font-weight:600}
+.tl-item .more{display:none;margin-top:.4rem;color:var(--ink-2);font-size:.92rem}
+.tl-item.open .more{display:block}
+/* flashcards */
+.deck{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:1rem;max-width:var(--wide)}
+.flash{perspective:1200px;min-height:12.5rem;cursor:pointer}
+.flash .in{position:relative;width:100%;height:100%;min-height:12.5rem;transition:transform .6s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d}
+.flash.flip .in{transform:rotateY(180deg)}
+.flash .face{position:absolute;inset:0;overflow:auto;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:1rem 1.1rem;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow);display:flex;flex-direction:column}
+.flash .face:first-child{position:relative;min-height:12.5rem;height:100%}
+.flash .face.back{transform:rotateY(180deg);background:linear-gradient(160deg,var(--teal-soft),var(--card))}
+.flash .q{font:500 1.02rem/1.4 var(--serif)}
+.flash .lab{margin-bottom:.5rem}
+.flash .hint{margin-top:auto;font-size:.72rem;color:var(--ink-3)}
+.flash .a{font-size:.9rem;line-height:1.45;overflow:auto}
+/* search overlay */
+.search{position:fixed;inset:0;z-index:100;background:rgba(5,14,13,.55);backdrop-filter:blur(6px);display:none;align-items:flex-start;justify-content:center;padding:10vh 1rem}
+.search.open{display:flex}
+.search .box{width:min(44rem,100%);background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 30px 80px -20px rgba(0,0,0,.6);overflow:hidden}
+.search input{width:100%;font:500 1.1rem var(--sans);padding:1.05rem 1.2rem;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);outline:none}
+.search .res{max-height:58vh;overflow:auto}
+.search .r{display:block;padding:.75rem 1.2rem;border-bottom:1px solid var(--line-2);text-decoration:none;color:var(--ink)}
+.search .r:hover,.search .r.sel{background:var(--line-2)}
+.search .r b{font:600 .95rem var(--serif)}
+.search .r span{display:block;font-size:.82rem;color:var(--ink-3);margin-top:.15rem}
+.search mark,mark.hit{background:color-mix(in srgb,var(--amber) 45%,transparent);color:inherit;border-radius:3px;padding:0 .1em}
+/* tabs */
+.tabs{display:flex;gap:.3rem;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:1rem}
+.tabs button{appearance:none;border:0;background:none;font:600 .86rem var(--sans);color:var(--ink-3);padding:.65rem .8rem;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--copper)}
+.panel{display:none}.panel.on{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+/* disagreements */
+.dis{display:grid;grid-template-columns:12rem repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card);min-width:860px;font-size:.86rem}
+.dis > div{padding:.7rem .75rem;border-bottom:1px solid var(--line-2);border-right:1px solid var(--line-2)}
+.dis .hd{font:700 .68rem var(--sans);letter-spacing:.12em;text-transform:uppercase;background:var(--paper-2);color:var(--ink-3)}
+.dis .q{font:600 .92rem var(--serif);background:var(--paper-2)}
+.dis .split{background:color-mix(in srgb,var(--amber) 10%,var(--card))}
+.foot{border-top:1px solid var(--line);margin-top:4rem;padding:2rem 0 3rem;color:var(--ink-3);font-size:.84rem}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:.8rem;margin:1.2rem 0;max-width:var(--wide)}
+.kpi div{border-top:2px solid var(--copper);padding:.6rem .2rem 0}
+.kpi b{font:500 1.7rem/1 var(--serif);color:var(--teal);display:block}
+.kpi > div > span{font-size:.8rem;color:var(--ink-3);line-height:1.35;display:block;margin-top:.3rem}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:.55rem 0 .55rem 2.6rem;border-bottom:1px dashed var(--line);cursor:pointer}
+.steps li::before{content:counter(s);position:absolute;left:0;top:.5rem;width:1.8rem;height:1.8rem;border-radius:50%;display:grid;place-items:center;font:600 .85rem var(--serif);border:1px solid var(--copper);color:var(--copper)}
+.steps li.on::before{background:var(--copper);color:#fff}
+.steps li.on{color:var(--ink)}
+.chart{width:100%;height:auto;display:block}
+.hl-flash{animation:hl 2.2s ease}
+@keyframes hl{0%,40%{background:color-mix(in srgb,var(--amber) 30%,transparent)}100%{background:transparent}}
+.toggle-all{font-size:.78rem}
+.menu-btn{display:none}
+/* responsive */
+@media (max-width:1060px){
+  .shell{grid-template-columns:1fr;padding:0 1.1rem}
+  .rail{position:fixed;left:0;top:54px;bottom:0;height:auto;width:min(19rem,86vw);z-index:60;background:var(--card);border-right:1px solid var(--line);padding:1.2rem 1rem;transform:translateX(-102%);transition:transform .3s;box-shadow:var(--shadow)}
+  .rail.open{transform:none}
+  .menu-btn{display:inline-flex}
+  .topbar{transform:none}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .ch-head{grid-template-columns:1fr;gap:.2rem}
+  .topbar .crumb{display:none}
+  .topbar .tbtn{padding:0 .6rem}
+  #searchBtn kbd,#themeLbl{display:none}
+  .brand{font-size:.92rem}
+  .hero::after{background:linear-gradient(0deg,rgba(5,16,15,.96) 0%,rgba(5,16,15,.78) 55%,rgba(5,16,15,.55) 100%)}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+/* print */
+@media print{
+  :root{--paper:#fff;--card:#fff}
+  body{font-size:10.5pt;background:#fff;color:#000}
+  .topbar,.rail,.search,.hero-cta,.tbtn,.seg,.ctl-row,.menu-btn{display:none!important}
+  .hero{min-height:auto;background:#fff;color:#000}.hero::after,.hero-img{display:none}
+  .hero *{color:#000!important}.hero-inner{padding:1rem 0}
+  .shell{display:block;padding:0}
+  .panel{display:block!important}
+  .flash .in{transform:none!important}.flash .face{position:relative;box-shadow:none}.flash .face.back{transform:none}
+  .tl-item .more{display:block}
+  .chapter{break-inside:auto;page-break-before:auto}
+  .instrument,.card,figure.fig{box-shadow:none;break-inside:avoid}
+  a{color:#000;text-decoration:none}
+}
+</style>
+<link rel="canonical" href="https://oncosphere.in/testicular-tumors/"><link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml"><script data-goatcounter="https://oncosphere.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head>
+<body><div id="onco-back" style="position:fixed;left:12px;bottom:12px;z-index:9999;font:600 13px/1 system-ui,-apple-system,Segoe UI,Arial,sans-serif"><a href="/paradigms/" style="display:inline-block;padding:9px 13px;border-radius:999px;background:#0f2a3d;color:#fff;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25)">&larr; Oncosphere</a></div><style>@media print{#onco-back{display:none!important}}</style>
+<a class="sr" href="#main">Skip to content</a>
+<header class="topbar" id="topbar">
+  <button class="tbtn menu-btn" id="menuBtn" aria-label="Open contents">☰</button>
+  <div class="brand"><span class="dot"></span>Testis Atlas</div>
+  <div class="crumb" id="crumb">Interactive evidence review · Medical Oncology</div>
+  <button class="tbtn" id="searchBtn" aria-label="Search">⌕ Search <kbd>/</kbd></button>
+  <button class="tbtn" id="themeBtn" aria-label="Toggle theme">◐ <span id="themeLbl">Dark</span></button>
+  <button class="tbtn" onclick="window.print()" aria-label="Print">⎙</button>
+  <div class="progress" id="prog"></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-img" id="heroImg" role="img" aria-label="Original painted illustration of clustered pluripotent germ cells (artwork, not a micrograph)"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Testicular Tumors: An Interactive Evidence Atlas (Nov 2026)</div>
+    <h1>Germ cell neoplasms of the <em>testis</em></h1>
+    <p class="doc-title">Seminoma, nonseminoma, sex-cord stromal tumors and primary testicular lymphoma — from the inguinal incision to salvage, survivorship and the questions guidelines still argue about.</p>
+    <div class="subtitle">Interactive evidence review · Medical Oncology</div>
+    <div class="hero-meta">
+      <span class="chip">AJCC/UICC 8th · TNM + S</span>
+      <span class="chip">IGCCCG 1997 + 2021 updates</span>
+      <span class="chip">NCCN · ESMO · EAU</span>
+      <span class="chip">Updated November 2026</span>
+    </div>
+    <div class="hero-stats">
+      <div><b>15–35</b><span>Peak age band; second, mostly seminoma, peak after 60</span></div>
+      <div><b>~95%</b><span>Of testicular cancers are germ cell tumors</span></div>
+      <div><b>&gt;90%</b><span>Cure in good-risk metastatic disease with cisplatin</span></div>
+      <div><b>~100%</b><span>Cancer-specific cure in stage I, whatever the strategy</span></div>
+    </div>
+    <div class="hero-cta">
+      <a href="#explorer">Open the treatment explorer</a>
+      <button class="ghost" id="heroSearch">Search the atlas</button>
+      <a class="ghost" href="#pearls">Self-test</a>
+    </div>
+  </div>
+  <div class="credit">Cover: original illustration, schematic only</div>
+</section>
+
+<div class="shell">
+<nav class="rail" id="rail" aria-label="Contents">
+  <h4>Contents</h4>
+  <ol id="toc"></ol>
+  <p class="small" style="color:var(--ink-3);margin-top:1.4rem">Press <kbd>/</kbd> to search · <kbd>t</kbd> theme</p>
+</nav>
+<main id="main">
+
+<!-- I -->
+<section class="chapter" id="epi" data-title="Epidemiology & risk">
+  <div class="ch-head"><div class="ch-num">I</div><div><div class="kicker">Who gets it</div><h2>Epidemiology and risk</h2></div></div>
+  <p class="lede">The commonest solid cancer of young men, rising in incidence across high-income countries, and among the most curable cancers in adult oncology — provided the first decisions are made correctly.</p>
+  <div class="kpi">
+    <div><b>15–35 y</b><span>Main peak; a later peak after ~60 y is mostly seminoma <span class="v" title="Standard medical oncology references">Consensus</span></span></div>
+    <div><b>4–10×</b><span>Risk with a first-degree relative (brother &gt; father) <span class="v" title="Standard medical oncology references">Consensus</span></span></div>
+    <div><b>~2%</b><span>Asynchronous contralateral primary, usually seminoma <span class="v" title="Standard medical oncology references">Consensus</span></span></div>
+    <div><b>~94%</b><span>US 5-year outcome relative to the general population <span class="v" title="JNCCN Insights 2025 (NCCN v2.2025)">JNCCN 2025</span></span></div>
+  </div>
+  <div class="prose">
+    <p>Incidence is highest in Northern and Central Europe and lowest in Africa and Asia; within the US it is most common in White men. The rise in incidence over recent decades is unexplained, and mortality has fallen in high-income settings while remaining higher where access to cisplatin, surgery and expert centres is limited <span class="v" title="Standard medical oncology references">Consensus</span>. Older age (&gt;40), non-White race and lower socioeconomic status are associated with higher testis-cancer mortality <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+    <h3>Cryptorchidism — the dominant modifiable risk</h3>
+    <p>Undescended testis (inguinal or abdominal) raises risk in <em>both</em> gonads, more so on the undescended side; roughly one in ten testicular cancers arises in a man with this history. Prepubertal correction lowers later cancer risk compared with correction after puberty but does not abolish it, and its other great value is that a scrotal testis can be examined <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+  </div>
+  <figure class="fig">
+    <div class="svgwrap">
+    <svg viewBox="0 0 1000 210" role="img" aria-label="Timeline for undescended testis: assessment from about 6 months, orchiopexy by 12 to 18 months, risk persists into adulthood">
+      <defs><linearGradient id="tlg" x1="0" x2="1"><stop offset="0" stop-color="var(--teal-2)"/><stop offset=".55" stop-color="var(--amber)"/><stop offset="1" stop-color="var(--rose)"/></linearGradient></defs>
+      <rect x="40" y="96" width="920" height="10" rx="5" fill="url(#tlg)" opacity=".85"/>
+      <g font-size="13" fill="var(--ink)">
+        <circle cx="60" cy="101" r="9" fill="var(--card)" stroke="var(--teal-2)" stroke-width="3"/><text x="60" y="76" text-anchor="middle" font-weight="700">Birth</text><text x="60" y="140" text-anchor="middle" fill="var(--ink-3)" font-size="12">Examine both testes</text>
+        <circle cx="230" cy="101" r="9" fill="var(--card)" stroke="var(--teal-2)" stroke-width="3"/><text x="230" y="76" text-anchor="middle" font-weight="700">~6 months</text><text x="230" y="140" text-anchor="middle" fill="var(--ink-3)" font-size="12">Spontaneous descent unlikely</text><text x="230" y="156" text-anchor="middle" fill="var(--ink-3)" font-size="12">→ surgical referral</text>
+        <rect x="350" y="84" width="170" height="34" rx="17" fill="var(--card)" stroke="var(--copper)" stroke-width="2.5"/><text x="435" y="106" text-anchor="middle" font-weight="700" fill="var(--copper)">Orchiopexy 12–18 mo</text>
+        <text x="435" y="140" text-anchor="middle" fill="var(--ink-3)" font-size="12">Paediatric guideline target window</text>
+        <circle cx="700" cy="101" r="9" fill="var(--card)" stroke="var(--amber)" stroke-width="3"/><text x="700" y="76" text-anchor="middle" font-weight="700">Puberty</text><text x="700" y="140" text-anchor="middle" fill="var(--ink-3)" font-size="12">Correction after puberty: higher</text><text x="700" y="156" text-anchor="middle" fill="var(--ink-3)" font-size="12">residual cancer risk</text>
+        <circle cx="930" cy="101" r="9" fill="var(--card)" stroke="var(--rose)" stroke-width="3"/><text x="930" y="76" text-anchor="end" font-weight="700">Adulthood</text><text x="930" y="140" text-anchor="end" fill="var(--ink-3)" font-size="12">Lifelong self-examination;</text><text x="930" y="156" text-anchor="end" fill="var(--ink-3)" font-size="12">no routine screening US</text>
+      </g>
+      <text x="40" y="196" font-size="11" fill="var(--ink-3)">Risk is reduced, not removed, by early orchiopexy, and applies to both testes.</text>
+    </svg></div>
+    <figcaption><b>Figure 1.</b> Undescended testis: when to act. Original schematic.</figcaption>
+  </figure>
+  <div class="grid3">
+    <div class="card"><h4>Genetic & familial</h4><ul class="small" style="padding-left:1rem;margin:0">
+      <li>Brothers and sons of patients: roughly 4–10× risk; familial cases present slightly younger</li>
+      <li>i(12p) / 12p gain in essentially all invasive adult GCTs — a lineage marker, not an inherited trait</li>
+      <li>Polygenic susceptibility (KITLG and others); rare moderate-penetrance variants such as <b>CHEK2</b> reported</li></ul></div>
+    <div class="card"><h4>Syndromes & gonadal development</h4><ul class="small" style="padding-left:1rem;margin:0">
+      <li><b>Klinefelter (47,XXY)</b>: mediastinal — not usually testicular — GCT; also Leydig-cell lesions</li>
+      <li><b>Down syndrome</b>: increased testicular GCT risk</li>
+      <li><b>Androgen insensitivity / mixed gonadal dysgenesis</b> (Y material): gonadoblastoma → GCT</li>
+      <li><b>Peutz–Jeghers</b> and <b>Carney complex</b>: Sertoli-lineage tumors (see Ch. XIV)</li>
+      <li>Hypospadias, testicular dysgenesis, infertility</li></ul></div>
+    <div class="card"><h4>Exposures & associations</h4><ul class="small" style="padding-left:1rem;margin:0">
+      <li><b>HIV</b>: more seminoma; treat exactly as in HIV-negative men <span class="v" title="Standard medical oncology references">Consensus</span></li>
+      <li><b>Cannabis</b>: heavy use associated with risk in cohort data — association only, no established mechanism <span class="v" title="Standard medical oncology references">Consensus</span>; cannabis can also cause spurious hCG elevation <span class="v" title="Standard medical oncology references">Consensus</span></li>
+      <li>In-utero estrogen (e.g. DES) exposure: inconsistent evidence — controversial</li>
+      <li>Personal history of GCT: contralateral risk</li></ul></div>
+  </div>
+  <div class="prose">
+    <h3>Testicular microlithiasis</h3>
+    <p>Defined on ultrasound as ≥5 echogenic, non-shadowing 1–3 mm foci (per image or per testis, depending on the definition). It is common and is <em>not</em> a screening tool: in a man without other risk factors, advise monthly self-examination and no serial imaging. Microlithiasis can accompany GCNIS, so the context matters — a history of GCT, undescended testis, an atrophic testis or subfertility moves it from incidental to relevant <span class="v" title="EAU guidance">EAU</span>.</p>
+    <div class="pearl nuance">European guidance considers contralateral testicular biopsy or targeted follow-up when microlithiasis coexists with risk factors (atrophy, prior GCT, cryptorchidism, subfertility); North American practice is generally not to biopsy and to rely on self-examination.</div>
+    <h3>Self-examination and screening</h3>
+    <p>Population screening of asymptomatic men is not recommended. Education about monthly self-examination is appropriate, particularly after cryptorchidism or a prior GCT. Routine surveillance ultrasound of a normal-feeling testis is not advised.</p>
+  </div>
+</section>
+
+<!-- II -->
+<section class="chapter" id="present" data-title="Presentation & the inguinal rule">
+  <div class="ch-head"><div class="ch-num">II</div><div><div class="kicker">The first decision</div><h2>Presentation, markers and the inguinal rule</h2></div></div>
+  <p class="lede">A solid intratesticular mass is cancer until proven otherwise. The operation is the diagnosis — and it must be done through the groin.</p>
+  <div class="prose">
+    <p>Most men notice a painless lump, swelling or hardness; dull ache or heaviness is common, and a sizeable minority are first treated for epididymo-orchitis. Acute severe pain points elsewhere (torsion, infarction, haemorrhage into tumour). Metastatic presentations include back or flank pain from retroperitoneal nodes, cough, dyspnoea or haemoptysis from lung metastases, supraclavicular nodes, gynecomastia from hCG, hCG-driven hyperthyroidism, and superior vena cava syndrome from a mediastinal primary <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+    <h3>Sequence that matters</h3>
+    <ol class="steps" id="seqSteps">
+      <li class="on"><b>Scrotal ultrasound (both testes)</b> — confirms an intratesticular solid lesion and checks the other side.</li>
+      <li><b>AFP, β-hCG, LDH before orchiectomy</b> — baseline for half-life kinetics and for histology clues.</li>
+      <li><b>Discuss sperm banking</b> — before orchiectomy if the other testis is absent or abnormal.</li>
+      <li><b>Radical inguinal orchiectomy</b> with high ligation of the cord at the deep (internal) ring; offer a prosthesis.</li>
+      <li><b>Repeat markers after orchiectomy</b> — the post-orchiectomy values define the <b>S category</b>; for stage assignment wait for expected decay.</li>
+      <li><b>Staging imaging</b> — CT abdomen/pelvis with contrast, chest imaging; brain MRI when indicated.</li>
+    </ol>
+  </div>
+  <figure class="fig">
+    <div class="svgwrap">
+    <svg viewBox="0 0 1000 420" role="img" aria-label="Two-panel schematic: left, inguinal exploration with cord clamped at the deep ring (Chevassu manoeuvre); right, lymphatic drainage of testis to retroperitoneum versus scrotal skin to inguinal nodes">
+      <defs>
+        <marker id="arT" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--teal-2)"/></marker>
+        <marker id="arR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--rose)"/></marker>
+        <radialGradient id="tes" cx=".4" cy=".35"><stop offset="0" stop-color="#F6E3CF"/><stop offset="1" stop-color="#D9B08C"/></radialGradient>
+      </defs>
+      <text x="20" y="28" font-size="15" font-weight="700" fill="var(--copper)">A · Inguinal exploration (Chevassu manoeuvre)</text>
+      <!-- abdominal wall -->
+      <path d="M30 70 Q250 40 470 90" fill="none" stroke="var(--ink-3)" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="40" y="92" font-size="11" fill="var(--ink-3)">Inguinal incision (skin of groin)</text>
+      <ellipse cx="330" cy="102" rx="22" ry="12" fill="none" stroke="var(--teal-2)" stroke-width="2.5"/>
+      <text x="356" y="98" font-size="11.5" fill="var(--teal-2)" font-weight="700">Deep (internal) ring</text>
+      <!-- cord -->
+      <path d="M330 104 C300 170 230 190 190 250" fill="none" stroke="#B6845E" stroke-width="12" stroke-linecap="round"/>
+      <path d="M330 104 C300 170 230 190 190 250" fill="none" stroke="#E7C3A1" stroke-width="4" stroke-linecap="round"/>
+      <!-- clamp -->
+      <g transform="translate(312,128) rotate(-35)"><rect x="-30" y="-5" width="60" height="10" rx="3" fill="var(--ink-2)"/><rect x="-36" y="-9" width="12" height="18" rx="3" fill="var(--ink)"/></g>
+      <text x="360" y="140" font-size="11.5" fill="var(--ink)" font-weight="700">1 · Soft clamp on cord</text>
+      <text x="360" y="155" font-size="11" fill="var(--ink-3)">before the testis is handled</text>
+      <!-- testis delivered -->
+      <ellipse cx="170" cy="292" rx="50" ry="64" fill="url(#tes)" stroke="#A97E5B" stroke-width="2"/>
+      <ellipse cx="160" cy="300" rx="20" ry="22" fill="#9C5B3E" opacity=".75"/>
+      <path d="M215 250 q20 40 0 90" fill="none" stroke="#A97E5B" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+      <text x="40" y="380" font-size="11.5" fill="var(--ink)" font-weight="700">2 · Testis delivered into the wound,</text>
+      <text x="40" y="395" font-size="11" fill="var(--ink-3)">scrotum not opened; drape, inspect, palpate</text>
+      <!-- decision -->
+      <rect x="262" y="210" width="206" height="40" rx="10" fill="var(--teal-soft)" stroke="var(--teal-2)"/>
+      <text x="365" y="234" font-size="12" text-anchor="middle" font-weight="700" fill="var(--teal)">3 · Frozen section if equivocal</text>
+      <path d="M365 250 L320 300" stroke="var(--sage)" stroke-width="2" marker-end="url(#arT)"/>
+      <path d="M365 250 L420 300" stroke="var(--rose)" stroke-width="2" marker-end="url(#arR)"/>
+      <rect x="250" y="304" width="110" height="46" rx="10" fill="var(--sage-soft)" stroke="var(--sage)"/>
+      <text x="305" y="323" font-size="11.5" text-anchor="middle" font-weight="700" fill="var(--sage)">Benign</text><text x="305" y="339" font-size="10.5" text-anchor="middle" fill="var(--ink-2)">return testis</text>
+      <rect x="368" y="304" width="124" height="46" rx="10" fill="var(--rose-soft)" stroke="var(--rose)"/>
+      <text x="430" y="323" font-size="11.5" text-anchor="middle" font-weight="700" fill="var(--rose)">Malignant</text><text x="430" y="339" font-size="10.5" text-anchor="middle" fill="var(--ink-2)">high ligation, remove</text>
+      <!-- Panel B -->
+      <line x1="510" y1="20" x2="510" y2="400" stroke="var(--line)"/>
+      <text x="530" y="28" font-size="15" font-weight="700" fill="var(--copper)">B · Why never through the scrotum</text>
+      <!-- aorta/IVC -->
+      <rect x="745" y="50" width="22" height="210" rx="10" fill="#C96A5A" opacity=".75"/><rect x="775" y="50" width="22" height="210" rx="10" fill="#5C7FA3" opacity=".7"/>
+      <text x="756" y="45" font-size="10.5" text-anchor="middle" fill="var(--ink-3)">Aorta</text><text x="790" y="45" font-size="10.5" text-anchor="middle" fill="var(--ink-3)">IVC</text>
+      <g fill="var(--teal-2)"><circle cx="730" cy="120" r="8"/><circle cx="771" cy="140" r="8"/><circle cx="812" cy="125" r="8"/></g>
+      <text x="830" y="128" font-size="11" fill="var(--teal-2)" font-weight="700">Retroperitoneal nodes</text>
+      <path d="M690 340 C690 260 720 200 760 150" fill="none" stroke="var(--teal-2)" stroke-width="2.5" marker-end="url(#arT)"/>
+      <text x="560" y="240" font-size="11.5" fill="var(--teal-2)" font-weight="700">Testis → along gonadal</text><text x="560" y="255" font-size="11.5" fill="var(--teal-2)" font-weight="700">vessels → retroperitoneum</text>
+      <!-- scrotum -->
+      <path d="M620 330 q60 -30 130 0 q20 60 -65 75 q-85 -15 -65 -75z" fill="#EFD9C6" stroke="#A97E5B" stroke-width="2"/>
+      <ellipse cx="690" cy="355" rx="24" ry="30" fill="url(#tes)" stroke="#A97E5B"/>
+      <g fill="var(--rose)"><circle cx="880" cy="300" r="7"/><circle cx="900" cy="318" r="7"/><circle cx="870" cy="322" r="7"/></g>
+      <text x="912" y="300" font-size="11" fill="var(--rose)" font-weight="700">Inguinal</text><text x="912" y="314" font-size="11" fill="var(--rose)" font-weight="700">nodes</text>
+      <path d="M745 365 C800 360 840 340 862 318" fill="none" stroke="var(--rose)" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arR)"/>
+      <text x="770" y="395" font-size="11.5" fill="var(--rose)" font-weight="700">Scrotal skin → inguinal nodes</text>
+      <text x="530" y="70" font-size="11" fill="var(--ink-3)">Trans-scrotal biopsy or</text><text x="530" y="84" font-size="11" fill="var(--ink-3)">orchiectomy opens a new</text><text x="530" y="98" font-size="11" fill="var(--ink-3)">lymphatic route and risks</text><text x="530" y="112" font-size="11" fill="var(--ink-3)">local seeding</text>
+    </svg></div>
+    <figcaption><b>Figure 2.</b> Inguinal exploration and the lymphatic logic of the inguinal rule. Original schematic, not to scale.</figcaption>
+  </figure>
+  <div class="prose">
+    <h3>Why the inguinal route</h3>
+    <p>The testis develops near the kidney and descends carrying its blood supply and lymphatics with it, so its lymph drains along the gonadal vessels to the retroperitoneum. Scrotal skin drains to the inguinal nodes. Opening the scrotum — by biopsy, fine-needle aspiration or trans-scrotal orchiectomy — breaches the tunica, risks local recurrence and creates an aberrant inguinal/pelvic drainage route that then has to be covered by surveillance or treatment fields. <b>A diagnostic trans-scrotal biopsy of a suspected testicular tumor is contraindicated</b> <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+    <h3>The Chevassu manoeuvre</h3>
+    <p>When the nature of a lesion is uncertain (a small, non-palpable or marker-negative mass; a solitary testis; bilateral lesions), the testis is delivered through the inguinal incision after the cord has been isolated and clamped at the deep ring to control venous and lymphatic outflow. It is inspected on a drape; the lesion can be excised for frozen section. Benign histology allows the testis to be returned; malignancy proceeds to radical orchiectomy with high ligation — or, in selected cases, to organ-sparing surgery (Ch. V).</p>
+    <div class="pearl warn">If a scrotal violation has already happened, do not panic and do not hide it: document it, inform radiation-field planning (historically the ipsilateral inguinal/hemiscrotal region was added) and surveillance planning. Prior inguinal surgery, vasectomy or orchiopexy can also alter drainage <span class="v" title="Standard medical oncology references">Consensus</span>.</div>
+    <h3>When chemotherapy comes first</h3>
+    <p>With life-threatening metastatic disease (respiratory failure from lung metastases, bleeding brain metastases, very high AFP or hCG in a typical pattern of spread), start cisplatin-based chemotherapy immediately on clinical and marker grounds. Orchiectomy is deferred, not abandoned: the testis is a sanctuary site and should be removed during or after chemotherapy <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+  </div>
+</section>
+
+<!-- III -->
+<section class="chapter" id="markers" data-title="Markers, half-lives & S category">
+  <div class="ch-head"><div class="ch-num">III</div><div><div class="kicker">Biochemistry as staging</div><h2>Tumor markers, half-lives and the S category</h2></div></div>
+  <p class="lede">Testis cancer is unusual in carrying serum markers into its TNM staging. Read them as kinetics, not snapshots.</p>
+  <div class="grid3">
+    <div class="card"><h4>AFP</h4><p class="small"><b>Half-life ~5–7 days.</b> Made by yolk sac (and some embryonal) elements. A meaningful, rising AFP is <b>never</b> compatible with pure seminoma: treat as nonseminoma regardless of the slide. Stable, mild elevations (low tens of ng/mL) need context — liver disease, hepatocellular or other GI cancers, or a constitutionally high baseline <span class="v" title="JNCCN Insights 2025">NCCN</span>.</p></div>
+    <div class="card"><h4>β-hCG</h4><p class="small"><b>Half-life ~24–36 hours</b> (sources quote up to 48 h). From syncytiotrophoblast: choriocarcinoma (very high), embryonal carcinoma, and, usually modestly, in about 15–20% of metastatic seminomas <span class="v" title="Germ-cell cancer review, NEJM">NEJM review</span>. False positives: hypogonadism / LH cross-reactivity (testosterone suppression test), cannabis, other tumors <span class="v" title="Standard medical oncology references">Consensus</span>.</p></div>
+    <div class="card"><h4>LDH</h4><p class="small"><b>Non-specific</b>; reflects tumor burden, notably in seminoma. Never base treatment on LDH alone; low-level rises (≤3× ULN) should not drive decisions on their own <span class="v" title="JNCCN Insights 2025">NCCN</span>.</p></div>
+  </div>
+  <div class="prose">
+    <div class="pearl">In a man labelled “seminoma”, a very high β-hCG (above ~1,000 IU/L, and particularly ≥5,000 IU/L — the S2 threshold) should prompt re-review for nonseminomatous elements; NCCN advises re-review and discussion with a high-volume centre when hCG &gt;1,000 IU/L <span class="v" title="JNCCN Insights 2025 (NCCN v2.2025)">NCCN 2025</span>.</div>
+    <p><b>Timing rules.</b> Draw markers before orchiectomy. The <b>S category uses post-orchiectomy nadir values</b>. In the absence of radiological metastases, wait for expected decay (about 4–5 weeks, ≈5 AFP half-lives) before calling stage IS. For <b>IGCCCG</b> risk allocation, use the values taken immediately before day 1 of chemotherapy (after orchiectomy). A slow fall or plateau implies residual disease; a transient rise early in chemotherapy (tumor lysis) is common in bulky disease and is not progression <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+  </div>
+  <div class="instrument" id="decay">
+    <div class="inst-head"><div class="t"><small>Instrument 1</small>Marker decay and S-category explainer</div><span class="tag">Model, not a diagnosis</span></div>
+    <div class="inst-body">
+      <div class="ctl-row">
+        <div class="ctl"><label for="mk">Marker</label><select id="mk"><option value="afp">AFP (ng/mL)</option><option value="hcg">β-hCG (IU/L)</option></select></div>
+        <div class="ctl"><label for="mk0">Pre-orchiectomy value</label><input type="number" id="mk0" value="2400" min="0" step="any"></div>
+        <div class="ctl"><label for="mkd">Days since orchiectomy</label><input type="number" id="mkd" value="21" min="0" max="90"></div>
+        <div class="ctl"><label for="mkobs">Observed value now</label><input type="number" id="mkobs" value="900" min="0" step="any"></div>
+        <div class="ctl"><label for="mkhl">Half-life (days)</label><input type="number" id="mkhl" value="6" min="0.5" max="10" step="0.5"></div>
+        <div class="ctl"><label for="ldh">LDH × ULN</label><input type="number" id="ldh" value="1.2" min="0" step="0.1"></div>
+      </div>
+      <div class="grid2">
+        <svg class="chart" id="decayChart" viewBox="0 0 520 280" role="img" aria-label="Expected versus observed marker decay chart"></svg>
+        <div class="out" id="decayOut"></div>
+      </div>
+      <p class="small" style="color:var(--ink-3)">Expected value = pre-operative value × 0.5<sup>(days ÷ half-life)</sup>. Normal assumed as AFP &lt;10 ng/mL and β-hCG &lt;5 IU/L for illustration; use your laboratory's limits. AJCC S-category cut-offs applied to the observed value.</p>
+    </div>
+  </div>
+  <div class="tblwrap wide"><table class="tbl">
+    <thead><tr><th>S</th><th>LDH</th><th></th><th>β-hCG (IU/L)</th><th></th><th>AFP (ng/mL)</th></tr></thead>
+    <tbody>
+      <tr><td><b>S0</b></td><td colspan="5">All within normal limits</td></tr>
+      <tr><td><b>S1</b></td><td>&lt;1.5 × ULN</td><td>and</td><td>&lt;5,000</td><td>and</td><td>&lt;1,000</td></tr>
+      <tr><td><b>S2</b></td><td>1.5–10 × ULN</td><td>or</td><td>5,000–50,000</td><td>or</td><td>1,000–10,000</td></tr>
+      <tr><td><b>S3</b></td><td>&gt;10 × ULN</td><td>or</td><td>&gt;50,000</td><td>or</td><td>&gt;10,000</td></tr>
+      <tr><td><b>SX</b></td><td colspan="5">Markers not available / not performed</td></tr>
+    </tbody></table></div>
+  <p class="small" style="color:var(--ink-3)">AJCC/UICC 8th edition (2017). S1 requires all three below the S2 thresholds with at least one elevated. <span class="v" title="AJCC 8th">AJCC 8th</span></p>
+</section>
+<!-- IV -->
+<section class="chapter" id="path" data-title="Pathology & IHC">
+  <div class="ch-head"><div class="ch-num">IV</div><div><div class="kicker">What the slide says</div><h2>Pathology and immunohistochemistry</h2></div></div>
+  <p class="lede">Two therapeutic families — seminoma and nonseminoma — and one rule: any nonseminomatous element makes the whole tumor a nonseminoma.</p>
+  <div class="grid2">
+    <div class="card"><h4><span class="tag sem">Seminoma</span></h4><p class="small">About half of testicular GCTs. Sheets of large clear cells with fibrous septa and lymphocytes, sometimes granulomas; scattered syncytiotrophoblasts explain modest hCG. Exquisitely sensitive to radiotherapy and platinum; older median age than nonseminoma <span class="v" title="Standard medical oncology references">Consensus</span>.</p></div>
+    <div class="card"><h4><span class="tag ns">Nonseminoma (NSGCT)</span></h4><p class="small"><b>Embryonal carcinoma</b> (most undifferentiated, totipotent); <b>yolk sac tumor</b> (AFP; the dominant pure histology in infants); <b>choriocarcinoma</b> (very high hCG, haematogenous spread to lung and brain, haemorrhage); <b>teratoma</b> (somatic tissues; chemo- and radio-resistant, treated by surgery, can transform). Most are mixed; pathology should list every component from most to least prevalent <span class="v" title="Standard medical oncology references">Consensus</span>.</p></div>
+  </div>
+  <div class="prose">
+    <h3>Not every germ cell tumor comes from GCNIS</h3>
+    <p>The WHO separates <b>GCNIS-derived</b> post-pubertal tumors (seminoma and the nonseminomas) from <b>non-GCNIS</b> tumors: the <b>spermatocytic tumor</b> (formerly “spermatocytic seminoma” — older men, indolent, rarely metastatic unless sarcomatoid, managed by orchiectomy alone; not a variant of classic seminoma) and the pre-pubertal-type yolk sac tumor and teratoma <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+    <p><b>i(12p)</b> — an isochromosome of the short arm of chromosome 12 — is found in about 80% of GCTs, with the rest showing other 12p gains. FISH for i(12p)/12p gain is a tie-breaker for poorly differentiated midline tumors in young men and confirms GCT clonality in somatic-type malignancies arising from teratoma <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+  </div>
+  <div class="instrument" id="ihcInst">
+    <div class="inst-head"><div class="t"><small>Instrument 2</small>Interactive IHC comparator</div>
+      <div class="seg" id="ihcMode"><button aria-pressed="true" data-m="row">Pick an entity</button><button aria-pressed="false" data-m="col">Pick a stain</button><button aria-pressed="false" data-m="none">Show all</button></div></div>
+    <div class="inst-body">
+      <div style="overflow-x:auto"><div class="ihc" id="ihc"></div></div>
+      <div class="legend"><span><i style="background:var(--teal-2)"></i>Typically positive</span><span><i style="background:color-mix(in srgb,var(--teal-2) 45%,var(--card))"></i>Focal / subset</span><span><i style="background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--amber) 35%,var(--card)) 0 5px,var(--card) 5px 10px)"></i>Variable / sources differ</span><span><i style="background:var(--paper-2)"></i>Typically negative</span></div>
+      <div class="out" id="ihcOut" style="margin-top:1rem"></div>
+    </div>
+  </div>
+  <p class="small" style="color:var(--ink-3);max-width:var(--wide)">Matrix synthesised from standard oncology and surgical-pathology practice; it is a teaching aid, not a substitute for a pathologist's panel. Note that sources disagree on EMA in embryonal carcinoma (some oncology references list it as expressed; many pathology references describe EC as usually EMA-negative).</p>
+</section>
+
+<!-- V -->
+<section class="chapter" id="gcnis" data-title="GCNIS & organ-sparing">
+  <div class="ch-head"><div class="ch-num">V</div><div><div class="kicker">Precursor and preservation</div><h2>GCNIS and organ-sparing surgery</h2></div></div>
+  <div class="grid2">
+    <div class="prose">
+      <h3>Germ cell neoplasia in situ</h3>
+      <ul>
+        <li>Found in the adjacent parenchyma of about 90% of adult GCNIS-type tumors; absent in spermatocytic tumor and pre-pubertal-type tumors.</li>
+        <li>Thought to begin in utero; multifocality explains bilateral disease.</li>
+        <li>Untreated, about <b>50% progress to invasive GCT within 5 years</b> <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+        <li>Contralateral GCNIS in roughly 2–5% of men with a unilateral GCT; asynchronous contralateral cancer ~2% <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+        <li>Options: low-dose radiotherapy (~16–20 Gy; Leydig function partly preserved, fertility lost), orchiectomy, or surveillance in selected men wanting paternity — with sperm banking first and testosterone follow-up.</li>
+        <li>Cisplatin chemotherapy given for the index tumor may eradicate GCNIS in some, but not reliably; re-biopsy is considered after chemo in some European practice.</li>
+      </ul>
+    </div>
+    <div class="prose">
+      <h3>Testis-sparing (partial) orchiectomy</h3>
+      <p>Not standard for a normal contralateral testis with a marker-positive mass. Considered in experienced hands for:</p>
+      <ul>
+        <li><b>Synchronous bilateral tumors</b> or a tumor in a <b>solitary testis</b>, with normal pre-operative testosterone and a lesion small enough (commonly &lt;~2 cm or ≤30% of volume) to leave functioning tissue.</li>
+        <li><b>Small, non-palpable, incidental lesions</b>, often marker-negative, where a benign lesion (Leydig cell tumor, epidermoid cyst) is likely.</li>
+      </ul>
+      <p>Inguinal approach, cord control, frozen section of the lesion and margins, and biopsies of the remnant. GCNIS in the remnant is common and usually needs adjuvant low-dose radiotherapy or close surveillance. Counsel about fertility (bank first), testosterone replacement and the possibility of completion orchiectomy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VI -->
+<section class="chapter" id="spread" data-title="Spread & landing zones">
+  <div class="ch-head"><div class="ch-num">VI</div><div><div class="kicker">Anatomy that predicts</div><h2>Lymphatic landing zones and patterns of spread</h2></div></div>
+  <p class="lede">Laterality predicts where the first nodes will be. That map underlies RPLND templates, radiotherapy fields and what the radiologist should look at first.</p>
+  <div class="instrument" id="lymphInst">
+    <div class="inst-head"><div class="t"><small>Instrument 3</small>Laterality landing-zone map</div>
+      <div class="seg" id="lymphSeg"><button aria-pressed="true" data-s="R">Right testis</button><button aria-pressed="false" data-s="L">Left testis</button><button aria-pressed="false" data-s="X">Prior scrotal / inguinal surgery</button><button aria-pressed="false" data-s="U">Upward spread</button></div></div>
+    <div class="inst-body grid2" style="align-items:center">
+      <div class="svgwrap">
+      <svg id="lymphSvg" viewBox="0 0 440 520" role="img" aria-label="Schematic retroperitoneum showing aorta, IVC, renal veins, gonadal veins and nodal landing zones">
+        <defs><marker id="arC" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="var(--copper)"/></marker></defs>
+        <!-- kidneys -->
+        <ellipse cx="110" cy="150" rx="40" ry="62" fill="#D7A79A" opacity=".55"/><ellipse cx="330" cy="140" rx="40" ry="62" fill="#D7A79A" opacity=".55"/>
+        <text x="110" y="153" text-anchor="middle" font-size="11" fill="var(--ink-3)">R kidney</text><text x="330" y="143" text-anchor="middle" font-size="11" fill="var(--ink-3)">L kidney</text>
+        <!-- IVC (patient's right = viewer's left) and aorta -->
+        <rect x="178" y="40" width="30" height="330" rx="14" fill="#5C7FA3" opacity=".75"/><text x="193" y="30" text-anchor="middle" font-size="11" fill="var(--ink-3)">IVC</text>
+        <rect x="232" y="40" width="26" height="330" rx="12" fill="#C96A5A" opacity=".8"/><text x="245" y="30" text-anchor="middle" font-size="11" fill="var(--ink-3)">Aorta</text>
+        <path d="M150 150 H180" stroke="#5C7FA3" stroke-width="10" opacity=".75"/><path d="M208 160 H300" stroke="#5C7FA3" stroke-width="10" opacity=".75"/>
+        <text x="258" y="182" font-size="10" fill="var(--ink-3)">L renal vein</text>
+        <!-- iliacs -->
+        <path d="M193 368 L150 470" stroke="#5C7FA3" stroke-width="14" opacity=".55" stroke-linecap="round"/><path d="M245 368 L295 470" stroke="#C96A5A" stroke-width="12" opacity=".55" stroke-linecap="round"/>
+        <!-- gonadal veins -->
+        <path id="gvR" d="M120 505 C150 420 180 330 190 260" fill="none" stroke="#5C7FA3" stroke-width="3" stroke-dasharray="5 3"/>
+        <path id="gvL" d="M330 505 C320 400 300 260 292 166" fill="none" stroke="#5C7FA3" stroke-width="3" stroke-dasharray="5 3"/>
+        <text x="62" y="420" font-size="10" fill="var(--ink-3)">R gonadal v. → IVC</text><text x="318" y="330" font-size="10" fill="var(--ink-3)">L gonadal v.</text><text x="318" y="343" font-size="10" fill="var(--ink-3)">→ L renal v.</text>
+        <!-- node groups -->
+        <g class="ng" data-g="iac"><ellipse cx="220" cy="210" rx="11" ry="40" fill="var(--paper-2)" stroke="var(--ink-3)"/></g>
+        <g class="ng" data-g="pc"><ellipse cx="163" cy="220" rx="10" ry="34" fill="var(--paper-2)" stroke="var(--ink-3)"/></g>
+        <g class="ng" data-g="pa"><ellipse cx="275" cy="205" rx="12" ry="38" fill="var(--paper-2)" stroke="var(--ink-3)"/></g>
+        <g class="ng" data-g="il"><ellipse cx="160" cy="430" rx="22" ry="16" fill="var(--paper-2)" stroke="var(--ink-3)"/><ellipse cx="285" cy="430" rx="22" ry="16" fill="var(--paper-2)" stroke="var(--ink-3)"/></g>
+        <g class="ng" data-g="ing"><ellipse cx="95" cy="490" rx="24" ry="12" fill="var(--paper-2)" stroke="var(--ink-3)"/><ellipse cx="355" cy="490" rx="24" ry="12" fill="var(--paper-2)" stroke="var(--ink-3)"/></g>
+        <g class="ng" data-g="rc"><ellipse cx="220" cy="62" rx="40" ry="12" fill="var(--paper-2)" stroke="var(--ink-3)"/></g>
+        <path id="crossArrow" d="M222 255 C240 270 262 262 272 245" fill="none" stroke="var(--copper)" stroke-width="2.5" marker-end="url(#arC)" opacity="0"/>
+        <path id="upArrow" d="M220 50 L220 8" fill="none" stroke="var(--copper)" stroke-width="2.5" marker-end="url(#arC)" opacity="0"/>
+        <text x="20" y="20" font-size="10" fill="var(--ink-3)">Patient's right on the viewer's left</text>
+      </svg></div>
+      <div class="out" id="lymphOut"></div>
+    </div>
+  </div>
+  <div class="prose">
+    <p>The right gonadal vein enters the IVC and the left drains into the left renal vein. <b>Right-sided tumors</b> land first in the interaortocaval nodes just below the renal vessels, with paracaval/precaval spread; <b>left-sided tumors</b> land in the para-aortic nodes just below the left renal vein. Right-to-left crossover is more common than the reverse. Epididymal or cord invasion can involve iliac nodes; scrotal involvement or previous inguinal/scrotal surgery (hernia repair, orchiopexy, vasectomy) can open inguinal drainage. From the retroperitoneum, disease ascends through the retrocrural space and thoracic duct to the mediastinum and left supraclavicular fossa; the lung is the commonest visceral site, with liver, bone and brain much less common and prognostically worse <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+    <h3>Why lumbar back pain changes the plan</h3>
+    <p>New, persistent back pain in a man with a testicular tumor usually means <b>bulky retroperitoneal disease</b> abutting or invading psoas, the vertebral bodies or nerve roots. That is high-volume disease: <b>primary chemotherapy, not primary RPLND</b>. Surgery is reserved for post-chemotherapy residual masses. Tumor-related back pain is a recognised presentation of advanced seminoma that is treated with chemotherapy first <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+  </div>
+</section>
+
+<!-- VII -->
+<section class="chapter" id="imaging" data-title="Imaging & when PET helps">
+  <div class="ch-head"><div class="ch-num">VII</div><div><div class="kicker">Seeing the disease</div><h2>Imaging: every modality, and when PET earns its place</h2></div></div>
+  <figure class="fig">
+    <div class="svgwrap">
+    <svg viewBox="0 0 1000 318" role="img" aria-label="Schematic ultrasound patterns for testicular lesions">
+      <defs>
+        <radialGradient id="usbg" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#6d6d6d"/><stop offset="1" stop-color="#3b3b3b"/></radialGradient>
+        <pattern id="speck" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".8" fill="#8a8a8a"/><circle cx="5" cy="4.5" r=".6" fill="#555"/></pattern>
+      </defs>
+      <g id="usPanels" font-size="12">
+        <!-- 1 seminoma -->
+        <g transform="translate(20,20)"><rect width="150" height="200" rx="12" fill="#1b1b1b"/><ellipse cx="75" cy="95" rx="55" ry="72" fill="url(#usbg)"/><ellipse cx="75" cy="95" rx="55" ry="72" fill="url(#speck)" opacity=".6"/>
+          <path d="M50 70 q25 -20 50 0 q15 25 -5 50 q-25 15 -45 -5 q-15 -25 0 -45z" fill="#262626"/><text x="75" y="235" text-anchor="middle" fill="var(--ink)" font-weight="700">Seminoma</text><text x="75" y="252" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">homogeneous, hypoechoic,</text><text x="75" y="266" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">well-defined / lobulated</text></g>
+        <!-- 2 NSGCT -->
+        <g transform="translate(185,20)"><rect width="150" height="200" rx="12" fill="#1b1b1b"/><ellipse cx="75" cy="95" rx="55" ry="72" fill="url(#usbg)"/><ellipse cx="75" cy="95" rx="55" ry="72" fill="url(#speck)" opacity=".6"/>
+          <path d="M40 75 q20 -35 60 -20 q25 30 0 70 q-35 20 -55 -10 q-15 -20 -5 -40z" fill="#4a4a4a" stroke="#777"/><circle cx="62" cy="88" r="9" fill="#0d0d0d"/><circle cx="88" cy="110" r="6" fill="#0d0d0d"/><circle cx="80" cy="75" r="3" fill="#f2f2f2"/><circle cx="58" cy="115" r="2.5" fill="#f2f2f2"/>
+          <text x="75" y="235" text-anchor="middle" fill="var(--ink)" font-weight="700">Nonseminoma</text><text x="75" y="252" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">heterogeneous, cystic spaces,</text><text x="75" y="266" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">calcific foci, ill-defined</text></g>
+        <!-- 3 microlithiasis -->
+        <g transform="translate(350,20)"><rect width="150" height="200" rx="12" fill="#1b1b1b"/><ellipse cx="75" cy="95" rx="55" ry="72" fill="url(#usbg)"/><ellipse cx="75" cy="95" rx="55" ry="72" fill="url(#speck)" opacity=".6"/>
+          <g fill="#f5f5f5"><circle cx="50" cy="60" r="2"/><circle cx="90" cy="70" r="2"/><circle cx="70" cy="95" r="2"/><circle cx="100" cy="110" r="2"/><circle cx="55" cy="125" r="2"/><circle cx="80" cy="140" r="2"/><circle cx="60" cy="80" r="2"/><circle cx="95" cy="135" r="2"/></g>
+          <text x="75" y="235" text-anchor="middle" fill="var(--ink)" font-weight="700">Microlithiasis</text><text x="75" y="252" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">≥5 tiny echogenic foci,</text><text x="75" y="266" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">no acoustic shadow</text></g>
+        <!-- 4 burned out -->
+        <g transform="translate(515,20)"><rect width="150" height="200" rx="12" fill="#1b1b1b"/><ellipse cx="75" cy="95" rx="48" ry="62" fill="url(#usbg)"/><ellipse cx="75" cy="95" rx="48" ry="62" fill="url(#speck)" opacity=".6"/>
+          <path d="M60 90 l25 -8 l-5 22 z" fill="#e8e8e8"/><path d="M60 92 l0 70 l20 0 l5 -60z" fill="#111" opacity=".7"/>
+          <text x="75" y="235" text-anchor="middle" fill="var(--ink)" font-weight="700">“Burned-out” primary</text><text x="75" y="252" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">small echogenic scar ± shadow</text><text x="75" y="266" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">with bulky RP / mediastinal mass</text></g>
+        <!-- 5 lymphoma -->
+        <g transform="translate(680,20)"><rect width="150" height="200" rx="12" fill="#1b1b1b"/><ellipse cx="75" cy="95" rx="58" ry="74" fill="#2c2c2c"/><ellipse cx="75" cy="95" rx="58" ry="74" fill="url(#speck)" opacity=".35"/>
+          <g stroke="#c0503f" stroke-width="2" fill="none" opacity=".9"><path d="M40 60 q20 30 0 70"/><path d="M70 40 q-10 50 10 110"/><path d="M105 60 q-15 30 0 70"/></g>
+          <text x="75" y="235" text-anchor="middle" fill="var(--ink)" font-weight="700">Lymphoma</text><text x="75" y="252" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">diffusely hypoechoic, enlarged,</text><text x="75" y="266" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">hypervascular; often bilateral</text></g>
+        <!-- 6 epidermoid -->
+        <g transform="translate(845,20)"><rect width="150" height="200" rx="12" fill="#1b1b1b"/><ellipse cx="75" cy="95" rx="55" ry="72" fill="url(#usbg)"/><ellipse cx="75" cy="95" rx="55" ry="72" fill="url(#speck)" opacity=".6"/>
+          <g fill="none" stroke-width="3"><circle cx="75" cy="95" r="26" stroke="#ddd"/><circle cx="75" cy="95" r="19" stroke="#333"/><circle cx="75" cy="95" r="12" stroke="#ddd"/><circle cx="75" cy="95" r="5" stroke="#333"/></g>
+          <text x="75" y="235" text-anchor="middle" fill="var(--ink)" font-weight="700">Epidermoid cyst</text><text x="75" y="252" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">“onion-ring” laminations,</text><text x="75" y="266" text-anchor="middle" fill="var(--ink-3)" font-size="10.5">avascular → enucleation</text></g>
+      </g>
+      <text x="20" y="310" font-size="10.5" fill="var(--ink-3)">Drawn schematics of typical grey-scale/Doppler appearances — not patient images. Ultrasound cannot reliably distinguish histology or assign pT; pathology decides.</text>
+    </svg></div>
+    <figcaption><b>Figure 3.</b> Scrotal ultrasound patterns. Original schematic. Leydig cell tumors are typically small, well-circumscribed, hypoechoic and hypervascular; scrotal US has a sensitivity of 98–99% for testicular cancer <span class="v" title="Standard medical oncology references">Consensus</span>.</figcaption>
+  </figure>
+  <div class="instrument" id="imgInst">
+    <div class="inst-head"><div class="t"><small>Instrument 4</small>Imaging chooser</div></div>
+    <div class="inst-body">
+      <div class="tabs" role="tablist" id="imgTabs">
+        <button role="tab" aria-selected="true" data-p="ip1">Presentation</button>
+        <button role="tab" aria-selected="false" data-p="ip2">Staging</button>
+        <button role="tab" aria-selected="false" data-p="ip3">Residual mass</button>
+        <button role="tab" aria-selected="false" data-p="ip4">Surveillance</button>
+        <button role="tab" aria-selected="false" data-p="ip5">Brain, bone &amp; special</button>
+      </div>
+      <div class="panel on" id="ip1"><div class="grid2">
+        <div><h4 class="lab">First-line</h4><p><b>Bilateral scrotal ultrasound with Doppler</b> — solid vs cystic, intra- vs extratesticular, vascularity, the contralateral testis, microlithiasis. A solid intratesticular mass is an indication for inguinal exploration/orchiectomy.</p></div>
+        <div><h4 class="lab">Selective</h4><p><b>Scrotal MRI</b> only when ultrasound is equivocal (e.g. to characterise a small lesion before organ-sparing surgery, or segmental infarct vs tumor). US guidance from the ASCO GU panel discourages MRI of the testis for routine initial evaluation, while European guidance accepts it as a problem-solver <span class="v" title="EAU">EAU</span>.</p><p><b>PET:</b> no role in characterising the primary.</p></div></div></div>
+      <div class="panel" id="ip2"><div class="grid2">
+        <div><h4 class="lab">Standard</h4><ul class="small"><li><b>CT abdomen + pelvis with IV contrast</b> — the core staging test.</li><li><b>Chest:</b> chest radiograph; <b>CT chest</b> if the radiograph is abnormal, if there are abdominal metastases, or in nonseminoma/high markers (practice varies; many centres CT the chest routinely).</li><li><b>Node size:</b> ~10 mm short axis is the conventional threshold; smaller nodes in the primary landing zone are suspicious, especially if multiple or enlarging.</li><li><b>CT false-negatives:</b> in clinical stage I NSGCT roughly 20–30% harbour occult retroperitoneal micrometastases — the basis of surveillance relapse rates.</li></ul></div>
+        <div><h4 class="lab">Usually adds little</h4><ul class="small"><li><b>MRI abdomen/pelvis:</b> an acceptable radiation-sparing alternative to CT, especially for surveillance; similar staging information.</li><li><b>FDG-PET/CT at initial staging:</b> not routine. False negatives with small-volume disease; <b>teratoma is FDG-negative</b>. PET may help separate reactive from involved nodes in seminoma; it is not useful in NSGCT staging <span class="v" title="Standard medical oncology references">Consensus</span>.</li><li><b>Borderline IIA:</b> repeat cross-sectional imaging after 4–8 weeks before treating <span class="v" title="JNCCN Insights 2025 (NCCN v2.2025, SEM-3 footnote)">NCCN 2025</span>.</li></ul></div></div></div>
+      <div class="panel" id="ip3">
+        <div class="svgwrap">
+        <svg viewBox="0 0 960 330" role="img" aria-label="Residual mass algorithm: seminoma PET-guided above 3 cm; nonseminoma resection above 1 cm">
+          <defs><marker id="arI" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="var(--ink-3)"/></marker></defs>
+          <g font-size="12.5" text-anchor="middle">
+            <rect x="20" y="20" width="440" height="36" rx="10" fill="var(--teal-soft)" stroke="var(--teal-2)"/><text x="240" y="43" font-weight="700" fill="var(--teal)">Seminoma · markers normalised after chemo</text>
+            <rect x="20" y="86" width="200" height="40" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="120" y="110">No mass or ≤3 cm</text>
+            <rect x="260" y="86" width="200" height="40" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="360" y="110">Residual &gt;3 cm</text>
+            <rect x="20" y="160" width="200" height="40" rx="10" fill="var(--sage-soft)" stroke="var(--sage)"/><text x="120" y="184" fill="var(--sage)" font-weight="700">Surveillance</text>
+            <rect x="260" y="150" width="200" height="56" rx="10" fill="var(--gold-soft)" stroke="var(--amber)"/><text x="360" y="173" font-weight="700" fill="var(--copper)">FDG-PET/CT ≥6 weeks</text><text x="360" y="191" font-size="11">after last cycle (or surveillance)</text>
+            <rect x="240" y="236" width="110" height="56" rx="10" fill="var(--sage-soft)" stroke="var(--sage)"/><text x="295" y="259" font-size="11.5" font-weight="700" fill="var(--sage)">PET negative</text><text x="295" y="276" font-size="11">surveillance</text>
+            <rect x="360" y="236" width="120" height="56" rx="10" fill="var(--rose-soft)" stroke="var(--rose)"/><text x="420" y="256" font-size="11.5" font-weight="700" fill="var(--rose)">PET positive</text><text x="420" y="271" font-size="10.5">biopsy/resect or</text><text x="420" y="285" font-size="10.5">short-interval re-imaging</text>
+            <path d="M120 56 V86 M360 56 V86 M120 126 V160 M360 126 V150 M330 206 L300 236 M390 206 L415 236" stroke="var(--ink-3)" fill="none" marker-end="url(#arI)"/>
+            <rect x="500" y="20" width="440" height="36" rx="10" fill="var(--gold-soft)" stroke="var(--copper)"/><text x="720" y="43" font-weight="700" fill="var(--copper)">Nonseminoma · markers normalised after chemo</text>
+            <rect x="500" y="86" width="200" height="40" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="600" y="110">Complete response (&lt;1 cm)</text>
+            <rect x="740" y="86" width="200" height="40" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="840" y="110">Residual &gt;1 cm</text>
+            <rect x="500" y="160" width="200" height="56" rx="10" fill="var(--sage-soft)" stroke="var(--sage)"/><text x="600" y="183" fill="var(--sage)" font-weight="700">Surveillance</text><text x="600" y="201" font-size="10.5">(some resect sub-cm in high-risk)</text>
+            <rect x="740" y="150" width="200" height="66" rx="10" fill="var(--rose-soft)" stroke="var(--rose)"/><text x="840" y="172" font-weight="700" fill="var(--rose)">Resect all residual disease</text><text x="840" y="190" font-size="11">full bilateral template PC-RPLND</text><text x="840" y="206" font-size="11">± other sites; not PET-driven</text>
+            <text x="720" y="250" font-size="11.5" fill="var(--ink-2)">Histology: necrosis/fibrosis ~45% · teratoma ~40% · viable GCT the remainder</text>
+            <text x="720" y="270" font-size="10.5" fill="var(--ink-3)">(classic series; teratoma is PET-negative, so a negative PET does not exclude it)</text>
+            <path d="M600 56 V86 M840 56 V86 M600 126 V160 M840 126 V150" stroke="var(--ink-3)" fill="none" marker-end="url(#arI)"/>
+          </g>
+          <text x="20" y="320" font-size="10.5" fill="var(--ink-3)">Rising markers at any point = active disease → salvage pathway, not surgery for markers alone (except selected chemorefractory/late relapse “desperation” resections).</text>
+        </svg></div>
+        <div class="pearl nuance"><b>PET in residual seminoma.</b> In the prospective SEMPET series, FDG-PET was the best predictor of viable tumor in post-chemotherapy seminoma residuals, especially masses &gt;3 cm <span class="v" title="SEMPET update, J Clin Oncol 2004">SEMPET 2004</span>; a later validation showed accuracy improved markedly when PET was done ≥6 weeks after chemotherapy, with a high negative but modest positive predictive value <span class="v" title="SEMPET retrospective validation, Annals of Oncology">Validation</span>. NCCN keeps PET at ≥6 weeks for masses &gt;3 cm <span class="v" title="JNCCN Insights 2025">NCCN 2025</span>. The <b>EAU 2026</b> update de-emphasises PET as a stand-alone decision tool because of a positive predictive value of only ~30–40% <span class="v" title="EAU 2026 update, as summarised in Urology Times, April 2026">EAU 2026</span>.</div>
+        <p class="small">In classic series about 45% of resected post-chemotherapy retroperitoneal masses show only necrosis/fibrosis and about 40% teratoma <span class="v" title="Germ-cell cancer review, NEJM">NEJM review</span>; up to ~20–29% of sub-centimetre nodes may contain teratoma, though growing teratoma after observation of sub-cm residua is uncommon (~1–2%) <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+      </div>
+      <div class="panel" id="ip4"><div class="grid2">
+        <div><h4 class="lab">Principles</h4><ul class="small"><li>Most relapses in stage I NSGCT occur in the first 2 years; stage I seminoma relapses later (median ~12–14 months) and can be late <span class="v" title="Standard medical oncology references">Consensus</span>.</li><li>Relapse is mainly retroperitoneal → abdominal imaging carries the load; chest imaging can be reduced in seminoma.</li><li><b>Minimise ionising radiation</b>: MRI abdomen can replace CT; low-dose CT protocols where MRI is unavailable.</li></ul></div>
+        <div><h4 class="lab">TRISST (stage I seminoma)</h4><p class="small">669 men randomised (factorial) to CT vs MRI and 7 vs 3 scans. MRI was non-inferior to CT for advanced (≥IIC) relapse (0.6% vs 2.6%), and 3 scans were non-inferior to 7 (2.8% vs 0.3% — numerically more advanced relapses with fewer scans). 5-year OS 99% <span class="v" title="TRISST, J Clin Oncol 2022">TRISST 2022</span>.</p><p class="small"><b>Take-home:</b> MRI is a validated surveillance modality in stage I seminoma; whether to cut scan frequency is a values discussion.</p></div></div></div>
+      <div class="panel" id="ip5"><div class="grid2">
+        <div><h4 class="lab">Brain MRI</h4><p class="small">Neurological symptoms; extensive lung metastases; β-hCG &gt;5,000 IU/L; choriocarcinoma-predominant histology; poor-risk / nonpulmonary visceral disease; and at relapse <span class="v" title="Standard medical oncology references">Consensus</span>.</p></div>
+        <div><h4 class="lab">Bone scan</h4><p class="small">Rarely indicated: bone pain, raised alkaline phosphatase, or extensive disease. Bone metastases are uncommon and confer poor risk in NSGCT (intermediate in seminoma).</p><h4 class="lab">Mediastinal GCT</h4><p class="small">CT/MRI chest; scrotal US to exclude a gonadal primary or burned-out scar.</p></div></div></div>
+    </div>
+  </div>
+</section>
+<!-- VIII -->
+<section class="chapter" id="staging" data-title="Staging & IGCCCG">
+  <div class="ch-head"><div class="ch-num">VIII</div><div><div class="kicker">Anatomy + biology</div><h2>Staging (AJCC/UICC 8th) and IGCCCG risk</h2></div></div>
+  <p class="lede">TNM tells you where the disease is; S and IGCCCG tell you how hard it will be to cure. Stage IS is metastatic disease you cannot yet see.</p>
+  <div class="grid2" style="max-width:var(--wide)">
+    <figure class="fig" style="margin:0">
+      <div class="svgwrap">
+      <svg viewBox="0 -34 460 440" role="img" aria-label="Schematic of local extent for pT categories">
+        <path d="M60 330 q170 90 340 0 q20 -120 -60 -170 l-30 -120 h-160 l-30 120 q-80 50 -60 170z" fill="var(--rose-soft)" stroke="var(--rose)" stroke-width="2" opacity=".8"/>
+        <text x="455" y="396" text-anchor="end" font-size="12" font-weight="700" fill="var(--rose)">pT4 scrotal wall</text>
+        <path d="M200 40 v120 M260 40 v120" stroke="var(--copper)" stroke-width="14" stroke-linecap="round" opacity=".55"/>
+        <text x="275" y="70" font-size="12" font-weight="700" fill="var(--copper)">pT3 spermatic cord</text>
+        <ellipse cx="230" cy="260" rx="120" ry="100" fill="var(--gold-soft)" stroke="var(--amber)" stroke-width="2"/>
+        <text x="300" y="168" font-size="11" fill="var(--amber)" font-weight="700">tunica vaginalis</text>
+        <ellipse cx="220" cy="262" rx="98" ry="82" fill="var(--teal-soft)" stroke="var(--teal-2)" stroke-width="3"/>
+        <text x="96" y="352" font-size="11" fill="var(--teal-2)" font-weight="700">tunica albuginea</text>
+        <path d="M318 220 q30 40 0 100" stroke="#A97E5B" stroke-width="16" fill="none" stroke-linecap="round" opacity=".6"/>
+        <text x="345" y="286" font-size="11" fill="var(--ink-2)">epididymis</text>
+        <circle cx="200" cy="270" r="36" fill="#9C5B3E" opacity=".8"/>
+        <text x="200" y="275" font-size="12" text-anchor="middle" fill="#fff" font-weight="700">pT1</text>
+        <path d="M270 230 l20 -10 l8 12 l-20 10z" fill="var(--ink-3)"/><text x="222" y="212" font-size="10" fill="var(--ink-3)">rete testis = pT1</text>
+        <g fill="var(--rose)"><circle cx="248" cy="300" r="4"/><circle cx="256" cy="292" r="3"/></g>
+        <text x="150" y="330" font-size="10.5" fill="var(--rose)">LVI → pT2</text>
+        <text x="20" y="-18" font-size="11" fill="var(--ink-3)">pTis = GCNIS only. pT2 = LVI, or hilar soft tissue,</text>
+        <text x="20" y="-4" font-size="11" fill="var(--ink-3)">epididymis, or through albuginea into vaginalis.</text>
+      </svg></div>
+      <figcaption><b>Figure 4.</b> Local extent and pT. Original schematic.</figcaption>
+    </figure>
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr><th>Category</th><th>Definition (abridged)</th></tr></thead>
+      <tbody>
+        <tr><td><b>pT1</b></td><td>Testis ± rete testis, no LVI. Seminoma only: <b>pT1a &lt;3 cm</b>, <b>pT1b ≥3 cm</b></td></tr>
+        <tr><td><b>pT2</b></td><td>LVI; or hilar soft tissue, epididymis, or tunica vaginalis outer layer</td></tr>
+        <tr><td><b>pT3</b></td><td>Spermatic cord (direct invasion)</td></tr>
+        <tr><td><b>pT4</b></td><td>Scrotum</td></tr>
+        <tr><td><b>cN1 / pN1</b></td><td>≤2 cm (pN1: and ≤5 nodes)</td></tr>
+        <tr><td><b>cN2 / pN2</b></td><td>&gt;2 to ≤5 cm (pN2: or &gt;5 nodes, or extranodal extension)</td></tr>
+        <tr><td><b>N3</b></td><td>&gt;5 cm</td></tr>
+        <tr><td><b>M1a</b></td><td>Non-regional nodes or lung</td></tr>
+        <tr><td><b>M1b</b></td><td>Other visceral sites (liver, bone, brain…)</td></tr>
+      </tbody></table></div>
+  </div>
+  <div class="instrument" id="stageInst">
+    <div class="inst-head"><div class="t"><small>Instrument 5</small>Stage-group builder</div></div>
+    <div class="inst-body">
+      <div class="ctl-row">
+        <div class="ctl"><label for="sgT">pT</label><select id="sgT"><option>pTis</option><option selected>pT1</option><option>pT2</option><option>pT3</option><option>pT4</option><option>pTX</option></select></div>
+        <div class="ctl"><label for="sgN">N</label><select id="sgN"><option>N0</option><option>N1</option><option>N2</option><option>N3</option></select></div>
+        <div class="ctl"><label for="sgM">M</label><select id="sgM"><option>M0</option><option>M1a</option><option>M1b</option></select></div>
+        <div class="ctl"><label for="sgS">S (post-orchiectomy)</label><select id="sgS"><option>S0</option><option>S1</option><option>S2</option><option>S3</option><option>SX</option></select></div>
+      </div>
+      <div class="out" id="sgOut"></div>
+    </div>
+  </div>
+  <div class="instrument" id="igInst">
+    <div class="inst-head"><div class="t"><small>Instrument 6</small>IGCCCG risk calculator</div><span class="tag">Markers immediately pre-chemotherapy</span></div>
+    <div class="inst-body">
+      <div class="ctl-row">
+        <div class="ctl"><label for="igH">Histology</label><select id="igH"><option value="ns">Nonseminoma (incl. mixed)</option><option value="sem">Pure seminoma</option></select></div>
+        <div class="ctl"><label for="igP">Primary site</label><select id="igP"><option value="tes">Testis / retroperitoneum</option><option value="med">Mediastinum</option></select></div>
+        <div class="ctl"><label for="igV">Non-pulmonary visceral mets</label><select id="igV"><option value="0">No</option><option value="1">Yes (liver, bone, brain…)</option></select></div>
+        <div class="ctl"><label for="igA">AFP ng/mL</label><input type="number" id="igA" value="400" min="0"></div>
+        <div class="ctl"><label for="igB">β-hCG IU/L</label><input type="number" id="igB" value="1200" min="0"></div>
+        <div class="ctl"><label for="igL">LDH × ULN</label><input type="number" id="igL" value="1.2" min="0" step="0.1"></div>
+      </div>
+      <div class="out" id="igOut"></div>
+      <p class="small" style="color:var(--ink-3)">Cut-offs from IGCCCG 1997 (hCG 5,000 IU/L ≈ 1,000 ng/mL; 50,000 IU/L ≈ 10,000 ng/mL). Outcome figures: the IGCCCG 2021 updates. The 2021 updates refine prognosis (LDH 2.5× ULN; age and lung metastases in NSGCT) but the original categories still drive treatment.</p>
+    </div>
+  </div>
+  <div class="prose">
+    <div class="pearl">There is <b>no poor-risk pure seminoma</b>. Seminoma is good risk unless there are non-pulmonary visceral metastases (intermediate). A primary <b>mediastinal nonseminoma</b> is poor risk by definition; a mediastinal <b>seminoma</b> with only nodal/lung disease is still good risk <span class="v" title="Standard medical oncology references">Consensus</span>.</div>
+    <div class="pearl nuance"><b>LDH.</b> In good-risk seminoma, LDH &gt;2.5× ULN carries worse prognosis; NCCN recommends <em>considering</em> intensification without a consensus regimen, some panellists treating as good risk and others more aggressively <span class="v" title="JNCCN Insights 2025">NCCN 2025</span>; EAU 2026 commentary suggests four rather than three cycles for most such patients <span class="v" title="EAU 2026, Urology Times summary">EAU 2026</span>. For NSGCT the classification thresholds remain 1.5× and 10× ULN, while the 2021 update adds a 2.5× ULN prognostic split <span class="v" title="IGCCCG Update Consortium, J Clin Oncol 2021">IGCCCG 2021</span>; elevations up to ~3× ULN should not by themselves alter treatment <span class="v" title="Standard medical oncology references">Consensus</span>.</div>
+  </div>
+</section>
+
+<!-- IX -->
+<section class="chapter" id="explorer" data-title="Treatment explorer">
+  <div class="ch-head"><div class="ch-num">IX</div><div><div class="kicker">Decision support</div><h2>Stage-and-risk treatment explorer</h2></div></div>
+  <p class="lede">Choose the histology, stage, risk features and post-chemotherapy findings. The panel returns the preferred approach, accepted alternatives and the traps — with where guidelines diverge.</p>
+  <div class="instrument" id="txInst">
+    <div class="inst-head"><div class="t"><small>Instrument 7</small>Histology × stage × S × IGCCCG × residual mass</div><button class="tbtn" id="txReset">Reset</button></div>
+    <div class="inst-body">
+      <div class="ctl-row">
+        <div class="ctl"><span class="lab">Histology</span><div class="seg" id="txH"><button aria-pressed="true" data-v="sem">Pure seminoma</button><button aria-pressed="false" data-v="ns">Nonseminoma</button></div></div>
+        <div class="ctl"><span class="lab">Clinical stage</span><div class="seg" id="txS"><button aria-pressed="true" data-v="I">I</button><button aria-pressed="false" data-v="IS">IS</button><button aria-pressed="false" data-v="IIA">IIA</button><button aria-pressed="false" data-v="IIB">IIB</button><button aria-pressed="false" data-v="IIC">IIC</button><button aria-pressed="false" data-v="III">III</button></div></div>
+      </div>
+      <div class="ctl-row" id="txExtra"></div>
+      <div class="out" id="txOut" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <h3>Stage I seminoma</h3>
+    <p>About 70% of seminomas are stage I; 15–20% relapse on surveillance, mostly in the retroperitoneum at a median of ~12–14 months, and virtually all are salvaged. <b>Surveillance is preferred</b> for anyone able to adhere <span class="v" title="JNCCN Insights 2025">NCCN</span>. Size (≥4 cm in older series; continuous risk with size) and, inconsistently, rete testis invasion predict relapse; NCCN discourages risk-adapted adjuvant therapy, while European guidance allows risk-informed discussion. Alternatives for those who decline surveillance: <b>carboplatin AUC 7 × 1–2</b> (one cycle was non-inferior to radiotherapy in a randomised trial and lowered contralateral GCT incidence) or <b>para-aortic RT 20 Gy/10 fractions</b> (or 25.5 Gy/17) <span class="v" title="JNCCN Insights 2025">NCCN</span>. Avoid RT with inflammatory bowel disease or horseshoe kidney.</p>
+    <h3>Stage II seminoma</h3>
+    <ul>
+      <li><b>Borderline IIA:</b> re-image at 4–8 weeks before acting.</li>
+      <li><b>IIA / non-bulky IIB (&lt;3 cm):</b> RT to para-aortic + ipsilateral iliac nodes (30 Gy for 1–2 cm; 36 Gy for 2–3 cm) or BEP×3 / EP×4; <b>nerve-sparing RPLND</b> at a high-volume centre (NCCN category 2B for 2–3 cm); carboplatin ×1 + involved-node RT (SAKK 01/10; category 2B) <span class="v" title="JNCCN Insights 2025 (NCCN v2.2025 SEM-3)">NCCN 2025</span>.</li>
+      <li><b>IIB 3–5 cm, IIC, III:</b> chemotherapy — BEP×3 or EP×4 (good risk); BEP×4 or VIP×4 (intermediate).</li>
+      <li>Primary RPLND for seminoma has long been framed as investigational; NCCN now lists it, and EAU frames it as an option in experienced centres — a live disagreement (Ch. XVII).</li>
+    </ul>
+    <h3>Stage I nonseminoma</h3>
+    <p>Roughly 30–40% of NSGCT present in stage I; overall ~20–30% relapse on surveillance, mostly within 2 years. <b>LVI</b> is the dominant predictor (~40–50% relapse), with embryonal predominance and higher pT as supporting features <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+    <ul>
+      <li><b>Low risk (no LVI):</b> surveillance preferred.</li>
+      <li><b>High risk:</b> surveillance (accepted and preferred by many), <b>BEP × 1</b>, or <b>nerve-sparing RPLND</b> (attractive when the primary has substantial teratoma, or when chemotherapy is to be avoided).</li>
+      <li>Surveillance plus salvage cures ~98–99% <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+    </ul>
+    <h3>Stage IS nonseminoma</h3>
+    <p>Persistently elevated or rising AFP/hCG after orchiectomy with negative imaging is systemic disease: treat with <b>chemotherapy as for advanced disease by IGCCCG risk</b>, not RPLND <span class="v" title="Standard medical oncology references">Consensus</span>. First exclude non-tumor causes (liver disease, hypogonadal hCG, cannabis, assay artefact) and a contralateral primary.</p>
+    <h3>Stage II nonseminoma</h3>
+    <ul>
+      <li><b>Marker-negative IIA (and selected IIB):</b> primary nerve-sparing RPLND or chemotherapy (BEP×3/EP×4). After RPLND: pN1 → surveillance; pN2 → surveillance or 2 cycles of EP; pN3 → full chemotherapy <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+      <li><b>Marker-positive stage II</b> or most IIB: chemotherapy by IGCCCG.</li>
+      <li><b>Small equivocal nodes, normal markers:</b> short-interval repeat imaging is acceptable; pure embryonal carcinoma can be marker-negative.</li>
+    </ul>
+    <h3>Advanced disease (IIC/III, and marker-positive II/IS)</h3>
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr><th>IGCCCG</th><th>Seminoma</th><th>Nonseminoma</th></tr></thead>
+      <tbody>
+        <tr><td><span class="pill good">Good</span></td><td>BEP × 3 or EP × 4 (consider intensifying if LDH &gt;2.5× ULN)</td><td>BEP × 3 or EP × 4</td></tr>
+        <tr><td><span class="pill int">Intermediate</span></td><td>BEP × 4 (preferred) or VIP × 4</td><td>BEP × 4 or VIP × 4</td></tr>
+        <tr><td><span class="pill poor">Poor</span></td><td>— (does not exist)</td><td>BEP × 4 or VIP × 4 (VIP when lung surgery planned, e.g. mediastinal primary)</td></tr>
+      </tbody></table></div>
+    <div class="pearl warn"><b>Never substitute carboplatin for cisplatin</b> in metastatic disease — it is less effective. Do not drop bleomycin from a three-cycle course (BEP×3 → EP×3 is inadequate); EP must be given as four cycles. Keep dose and schedule: delays and reductions for uncomplicated neutropenia compromise cure <span class="v" title="Standard medical oncology references">Consensus</span>.</div>
+    <h3>Residual masses</h3>
+    <p><b>Seminoma:</b> masses usually represent fibrosis and keep shrinking; ≤3 cm → surveillance; &gt;3 cm → PET ≥6 weeks or surveillance; PET-positive → biopsy/resection or close imaging. Post-chemo seminoma surgery is technically hard because of dense desmoplasia. <b>Nonseminoma:</b> resect all residual disease &gt;1 cm with markers normalised (bilateral template; modified templates leave disease in 7–32%) — teratoma and viable tumor cannot be predicted by imaging or PET <span class="v" title="Standard medical oncology references">Consensus</span>. After PC-RPLND: necrosis/teratoma → surveillance; completely resected viable GCT → consider 2 cycles of EP, TIP or VIP <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+  </div>
+</section>
+
+<!-- X -->
+<section class="chapter" id="regimens" data-title="Regimen cards">
+  <div class="ch-head"><div class="ch-num">X</div><div><div class="kicker">The pharmacy</div><h2>Regimen cards</h2></div></div>
+  <p class="lede">Standard published schedules, for orientation. Always check doses against the current guideline and institutional protocol.</p>
+  <div class="ctl-row"><div class="seg" id="rgFilter"><button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="first">First-line</button><button aria-pressed="false" data-f="adj">Adjuvant</button><button aria-pressed="false" data-f="salv">Salvage</button><button aria-pressed="false" data-f="lym">Lymphoma</button></div></div>
+  <div class="deck" id="rgDeck"></div>
+</section>
+
+<!-- XI -->
+<section class="chapter" id="salvage" data-title="Salvage & late relapse">
+  <div class="ch-head"><div class="ch-num">XI</div><div><div class="kicker">When first-line fails</div><h2>Salvage, late relapse and teratoma's long shadow</h2></div></div>
+  <div class="prose">
+    <p>Some 20–30% of men with advanced disease do not achieve durable remission with first-line therapy; they remain curable, at lower odds <span class="v" title="Standard medical oncology references">Consensus</span>. Confirm true progression first — rising markers with growing masses — and exclude growing teratoma and false-positive markers.</p>
+    <div class="grid2">
+      <div class="card"><h4>Conventional-dose (CDCT)</h4><p class="small"><b>TIP × 4</b>: in men with favourable features (gonadal primary, prior complete response), CR ~70% and durable remission in the majority <span class="v" title="Standard medical oncology references">Consensus</span>. <b>VeIP × 4</b> is the alternative. Salvage CDCT historically cures roughly half at first relapse after BEP <span class="v" title="Standard medical oncology references">Consensus</span>.</p></div>
+      <div class="card"><h4>High-dose chemotherapy (HDCT) + ASCT</h4><p class="small"><b>Tandem high-dose carboplatin + etoposide</b>: 364 men, 2-year PFS 60%, better as second line and with hCG &lt;1,000 at HDCT start <span class="v" title="Standard medical oncology references">Consensus</span>. <b>TI-CE</b> (two cycles paclitaxel + ifosfamide with stem-cell mobilisation, then three high-dose carboplatin/etoposide): 5-year DFS 47%, OS 52% in an unfavourable cohort <span class="v" title="Standard medical oncology references">Consensus</span>. Often preferred for poor prognostic features, early (&lt;6 months) relapse, incomplete response, or third line.</p></div>
+    </div>
+    <div class="pearl nuance"><b>TIGER (Alliance A031102 / EORTC 1407)</b> randomises first salvage between TIP × 4 and TI-CE, primary endpoint OS. Accrual of 420 patients completed on 26 October 2022; patients are followed for five years, and as of November 2026 no primary results have been reported (registry lists primary completion 2031) <span class="v" title="ICR CTSU trial page; ClinicalTrials.gov NCT02375204; EORTC 2022">ICR · NCT02375204</span>. Until it reports, choice between CDCT and HDCT at first relapse is guided by prognostic scoring (the International Prognostic Factors Study Group score) and centre expertise.</div>
+    <h3>Third line and beyond</h3>
+    <p>HDCT if not yet given; otherwise clinical trials, gemcitabine/oxaliplatin-based or oral etoposide palliation, and molecular testing — NCCN added MSI/MMR and TMB testing and pembrolizumab for MSI-H/dMMR or TMB-high tumors <span class="v" title="JNCCN Insights 2025">NCCN 2025</span>. “Desperation” surgery can cure selected chemorefractory men with resectable, marker-positive disease (often a single site, AFP-driven).</p>
+    <h3>Late relapse, growing teratoma and malignant transformation</h3>
+    <ul>
+      <li><b>Late relapse</b> (&gt;2 years): often AFP-positive, retroperitoneal, frequently with teratoma/yolk sac elements; relatively chemoresistant after ≥3 cycles of platinum → <b>surgery first</b> when resectable <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+      <li><b>Growing teratoma syndrome:</b> enlarging masses during/after chemotherapy with normal or falling markers — not chemoresistance; stop chemo and resect.</li>
+      <li><b>Somatic-type malignancy</b> from teratoma (rhabdomyosarcoma, adenocarcinoma, embryonic-type neuroectodermal tumor, leukemia): i(12p) proves GCT clonality; treat surgically and with histology-directed therapy <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- XII -->
+<section class="chapter" id="mediastinal" data-title="Mediastinal primary GCT">
+  <div class="ch-head"><div class="ch-num">XII</div><div><div class="kicker">Extragonadal</div><h2>Primary mediastinal germ cell tumors</h2></div></div>
+  <div class="grid2">
+    <div class="prose">
+      <ul>
+        <li>Anterior mediastinum; no testicular primary (scrotal US to exclude a burned-out testicular lesion). Retroperitoneal “primaries” are often metastases from a burned-out testis tumor <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+        <li><b>Klinefelter syndrome</b> is a recognised association.</li>
+        <li><b>Nonseminoma → automatically IGCCCG poor risk</b>, more chemorefractory (TP53 alterations implicated); seminoma can be good risk.</li>
+        <li>Associated <b>haematological malignancy</b> — acute megakaryoblastic (M7) leukemia, other myeloid neoplasms, idiopathic thrombocytopenia — clonally related (i(12p) in the leukemic cells), distinct from etoposide-related leukemia <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+      </ul>
+    </div>
+    <div class="prose">
+      <ul>
+        <li><b>VIP × 4</b> is commonly chosen over BEP because thoracic surgery follows and bleomycin raises peri-operative pulmonary risk; some experts use BEP and omit late bleomycin doses <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+        <li><b>Post-chemotherapy resection of residual mediastinal disease is critical</b> — even with normalised markers, and sometimes with mildly elevated markers.</li>
+        <li>Anaesthesia: low FiO₂ and restrained fluids after bleomycin.</li>
+        <li>Salvage HDCT helps a minority (up to ~25%) with relapsed mediastinal NSGCT; refer to specialised centres <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- XIII -->
+<section class="chapter" id="dlbcl" data-title="Primary testicular DLBCL">
+  <div class="ch-head"><div class="ch-num">XIII</div><div><div class="kicker">The older man's testis tumor</div><h2>Primary testicular diffuse large B-cell lymphoma</h2></div></div>
+  <p class="lede">Usually localised at diagnosis, yet behaving like a systemic, sanctuary-seeking disease: CNS and contralateral-testis relapses, and a relapse curve that does not flatten.</p>
+  <div class="grid3">
+    <div class="card"><h4>Who and what</h4><p class="small">Typically sixth decade or later; the commonest testicular malignancy in older men; may be bilateral. Mostly activated B-cell-type DLBCL. Stage I–IIE in most cases, but outcomes are worse than other early-stage DLBCL <span class="v" title="Standard medical oncology references">Consensus</span>.</p></div>
+    <div class="card"><h4>Why it relapses</h4><p class="small">CNS relapse risk up to ~25% and continued relapse risk even 10 years out <span class="v" title="Standard medical oncology references">Consensus</span>. The testis is an immune-privileged sanctuary behind the blood–testis barrier; the contralateral testis is a classic failure site without treatment.</p></div>
+    <div class="card"><h4>Standard therapy</h4><p class="small"><b>Inguinal orchiectomy</b> (diagnostic) → <b>R-CHOP × 6</b> + <b>CNS prophylaxis</b> (intrathecal and/or high-dose methotrexate per local protocol) + <b>contralateral testis / scrotal RT</b> (commonly 25–30 Gy) at the end of systemic therapy <span class="v" title="Standard medical oncology references">Consensus</span>. Stage II: involved-nodal RT is often added.</p></div>
+  </div>
+  <div class="prose">
+    <h3>Relapse</h3>
+    <p>Chemosensitive relapse: platinum- or gemcitabine-based salvage (<b>R-ICE, R-DHAP, R-GDP</b>) followed by autologous transplant; early or refractory relapse is managed as for systemic DLBCL, where CAR-T therapy is used <span class="v" title="Standard medical oncology references">Consensus</span>. CNS relapse needs CNS-penetrant regimens. Immune-evasion biology (e.g. 9p24.1/PD-L1 alterations) is an active research area.</p>
+    <div class="pearl">A testicular mass in a man over 60 is lymphoma until proven otherwise — still remove it through the groin, and stage with PET/CT, marrow assessment as indicated, and CSF evaluation.</div>
+  </div>
+</section>
+
+<!-- XIV -->
+<section class="chapter" id="scst" data-title="Sex-cord stromal tumors">
+  <div class="ch-head"><div class="ch-num">XIV</div><div><div class="kicker">Non-germ cell</div><h2>Sex-cord stromal tumors</h2></div></div>
+  <div class="tblwrap wide"><table class="tbl">
+    <thead><tr><th>Tumor</th><th>Clinical clues</th><th>Markers / IHC</th><th>Management</th></tr></thead>
+    <tbody>
+      <tr><td><b>Leydig cell tumor</b> (commonest)</td><td>Peaks in childhood (3–9 y) and adulthood (30–60 y); gynecomastia, reduced libido, precocious virilisation in boys; small hypoechoic hypervascular nodule</td><td>Serum AFP/hCG/LDH normal; inhibin, melan-A, calretinin, SF-1 positive; Reinke crystals</td><td>Orchiectomy, or testis-sparing excision for small lesions with frozen section</td></tr>
+      <tr><td><b>Sertoli cell tumor</b> (NOS)</td><td>Painless mass; most benign</td><td>SF-1, inhibin (variable), nuclear β-catenin (CTNNB1) in many</td><td>Orchiectomy; RPLND if high-risk features</td></tr>
+      <tr><td><b>Large-cell calcifying Sertoli cell tumor</b></td><td>Young; often bilateral/multifocal and calcified; <b>Carney complex</b> (PRKAR1A) and <b>Peutz–Jeghers</b> (STK11) associations; gynecomastia</td><td>Inhibin, calretinin, S100; calcifications on US</td><td>Testis-sparing where feasible in syndromic bilateral disease; malignant sporadic forms behave aggressively</td></tr>
+      <tr><td>Intratubular large-cell hyalinizing Sertoli neoplasia</td><td>Peutz–Jeghers; prepubertal gynecomastia (aromatase)</td><td>—</td><td>Conservative; endocrine management</td></tr>
+      <tr><td><b>Granulosa cell tumor</b></td><td>Adult type: estrogenic, gynecomastia. Juvenile type: commonest neonatal testicular neoplasm, benign</td><td>Inhibin, FOXL2 (adult type)</td><td>Orchiectomy; usually curative</td></tr>
+    </tbody></table></div>
+  <div class="prose">
+    <h3>Features suggesting malignancy</h3>
+    <p>Size &gt;5 cm, lymphovascular invasion, necrosis, infiltrative margins, cytological atypia, increased mitoses and proliferation index, older age, aneuploidy <span class="v" title="Standard medical oncology references">Consensus</span>. Malignant tumors metastasise first to retroperitoneal nodes.</p>
+    <h3>When RPLND</h3>
+    <p>Because chemotherapy and radiotherapy are largely ineffective for metastatic sex-cord stromal tumors, an early <b>primary RPLND</b> is considered when the primary has high-risk features, and for limited retroperitoneal disease; established metastases have a poor prognosis. Mitotane has been tried for functional metastatic tumors with mixed results <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+    <p class="small">Other rarities: gonadoblastoma (dysgenetic gonads, Y material), mesothelioma of the tunica vaginalis, rete testis adenocarcinoma (poor prognosis), epidermoid cyst (benign; enucleation), and metastases to the testis in disseminated disease <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+  </div>
+</section>
+
+<!-- XV -->
+<section class="chapter" id="surv" data-title="Fertility, hormones & survivorship">
+  <div class="ch-head"><div class="ch-num">XV</div><div><div class="kicker">Life after cure</div><h2>Fertility, hypogonadism and survivorship</h2></div></div>
+  <div class="grid2">
+    <div class="prose">
+      <h3>Fertility</h3>
+      <ul>
+        <li>Semen quality is often impaired at diagnosis, before any treatment.</li>
+        <li><b>Offer sperm banking before chemotherapy, RT or RPLND</b> — and <b>before orchiectomy</b> if the contralateral testis is absent, atrophic or abnormal <span class="v" title="JNCCN 2025">NCCN</span>.</li>
+        <li>Non-nerve-sparing RPLND → retrograde ejaculation/anejaculation; nerve-sparing templates preserve antegrade ejaculation in most.</li>
+        <li>Chemotherapy can cause prolonged oligo/azoospermia; many recover over 2–5 years.</li>
+      </ul>
+      <h3>Hypogonadism</h3>
+      <p>Check testosterone, LH and FSH at baseline and in follow-up, especially after bilateral disease, GCNIS radiotherapy or chemotherapy. Low testosterone contributes to fatigue, sexual dysfunction, metabolic syndrome and bone loss; replace when symptomatic and biochemically confirmed.</p>
+    </div>
+    <div class="prose">
+      <h3>Late effects</h3>
+      <ul>
+        <li><b>Cardiovascular:</b> raised risk of myocardial infarction after cisplatin and/or infradiaphragmatic RT; metabolic syndrome; early arterial and venous thrombosis (avoid central lines where possible — EAU 2026) <span class="v" title="EAU 2026 (Urology Times summary)">EAU</span>.</li>
+        <li><b>Second malignancies</b> for ≥35 years (stomach, pancreas, bladder, kidney, thyroid, sarcoma, myeloid leukemia). Etoposide-related leukemia (11q23) is dose-dependent: &lt;0.5% at ~1,000 mg/m², &lt;1% at 1,500–2,000 mg/m², up to ~6% above 3,000 mg/m² <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+        <li><b>Cisplatin:</b> ototoxicity/tinnitus, neuropathy, nephrotoxicity, Raynaud phenomenon. <b>Bleomycin:</b> pneumonitis — stop for symptoms; many stop for DLCO falls ≥25%; low FiO₂ at later surgery <span class="v" title="Standard medical oncology references">Consensus</span>.</li>
+        <li>Anxiety, fatigue, financial and relationship effects — survivorship care is part of the cure.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid3">
+    <div class="card"><h4>Gynecomastia</h4><p class="small">From hCG-driven estradiol production (GCT, a minority of patients) and more commonly with Leydig/Sertoli/granulosa tumors. Can be the presenting sign.</p></div>
+    <div class="card"><h4>Paraneoplastic hyperthyroidism</h4><p class="small">Very high hCG stimulates the TSH receptor (shared α-subunit, homologous β): suppressed TSH, high free T4 — resolves as markers fall <span class="v" title="Standard medical oncology references">Consensus</span>.</p></div>
+    <div class="card"><h4>Anti-Ma2 encephalitis</h4><p class="small">Rare limbic/diencephalic/brainstem paraneoplastic encephalitis in young men, sometimes with only a microscopic or GCNIS-level testicular lesion; search the testes when the antibody is found.</p></div>
+  </div>
+  <div class="pearl nuance"><b>miR-371a-3p</b> is the most promising new serum marker — detects seminoma and nonseminoma (not teratoma), with emerging use for staging, surveillance and residual-mass assessment. The <b>EAU 2026</b> update stops short of routine use because of assay standardisation, sample stability, logistics and cost <span class="v" title="EAU 2026 update, Urology Times summary April 2026">EAU 2026</span>; it is not a replacement for AFP, hCG and LDH in 2026.</div>
+</section>
+
+<!-- XVI -->
+<section class="chapter" id="trials" data-title="Practice-changing trials">
+  <div class="ch-head"><div class="ch-num">XVI</div><div><div class="kicker">The evidence spine</div><h2>Practice-changing trials and milestones</h2></div></div>
+  <p class="lede">Tap a milestone to expand. Only dates and results the atlas could verify are shown; ongoing trials are labelled as such.</p>
+  <div class="tl" id="timeline"></div>
+  <h3 style="margin-top:2.4rem">Filterable trial table</h3>
+  <div class="ctl-row"><div class="seg" id="trFilter"><button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="sem">Seminoma</button><button aria-pressed="false" data-f="ns">Nonseminoma</button><button aria-pressed="false" data-f="salv">Salvage</button><button aria-pressed="false" data-f="img">Imaging / markers</button><button aria-pressed="false" data-f="ongoing">Ongoing</button></div></div>
+  <div class="tblwrap wide"><table class="tbl" id="trTable"><thead><tr><th>Trial</th><th>Setting</th><th>Design</th><th>Key result</th><th>Status</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<!-- XVII -->
+<section class="chapter" id="guidelines" data-title="Guidelines side by side">
+  <div class="ch-head"><div class="ch-num">XVII</div><div><div class="kicker">Where experts differ</div><h2>Guidelines side by side</h2></div></div>
+  <p class="lede">Agreement is broad; the interesting medicine lives in the cells shaded amber.</p>
+  <div class="prose small"><p><b>Versions.</b> NCCN Testicular Cancer is listed at <b>Version 1.2027</b> on the NCCN site (November 2026); the specific NCCN statements below were verified against the published NCCN Guidelines Insights for <b>Version 2.2025</b> and should be checked against 1.2027 before use <span class="v" title="NCCN guidelines listing, Nov 2026; JNCCN Insights 2025">NCCN</span>. EAU: 2026 update. ESMO: ESMO–EURACAN Clinical Practice Guideline (2022) — the ESMO column is a summary from secondary reading and was not re-checked line by line for this edition. EAU cells come from the 2026 update as summarised by the guideline panel in April 2026.</p></div>
+  <div style="overflow-x:auto;max-width:var(--wide)"><div class="dis" id="dis"></div></div>
+</section>
+
+<!-- XVIII -->
+<section class="chapter" id="public" data-title="Public awareness & access">
+  <div class="ch-head"><div class="ch-num">XVIII</div><div><div class="kicker">Beyond the clinic</div><h2>Public awareness and access</h2></div></div>
+  <div class="grid2">
+    <div class="prose">
+      <h3>People who chose to speak publicly</h3>
+      <p class="small">Self-disclosed, widely documented cases that changed public awareness — listed only for their awareness impact.</p>
+      <ul>
+        <li><b>Lance Armstrong</b> (cyclist) — disclosed advanced testicular cancer with lung and brain metastases in 1996; treated with orchiectomy, brain surgery and chemotherapy, then returned to elite sport.</li>
+        <li><b>Scott Hamilton</b> (figure skater) — disclosed testicular cancer in 1997 and became an advocate for cancer research.</li>
+        <li><b>Tom Green</b> (comedian) — documented his 2000 diagnosis and orchiectomy on television to encourage self-examination.</li>
+        <li><b>Phil Kessel</b> (ice hockey) — diagnosed in 2006 during his rookie season and returned to play within weeks.</li>
+      </ul>
+    </div>
+    <div class="prose">
+      <h3>Access in resource-variable settings</h3>
+      <p class="small">No India-specific outcome or availability figures could be verified for this atlas. Practical points that hold anywhere: cure depends on correct inguinal orchiectomy, reliable marker assays, cisplatin given at full dose and schedule, and access to high-volume surgeons for RPLND and to centres offering FDG-PET and high-dose chemotherapy with stem-cell rescue. Early referral of advanced, mediastinal and relapsed disease to such centres is the single most important access step. Mortality has remained higher in lower-income countries <span class="v" title="Standard medical oncology references">Consensus</span>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- XIX -->
+<section class="chapter" id="pearls" data-title="Clinical pearls & self-test">
+  <div class="ch-head"><div class="ch-num">XIX</div><div><div class="kicker">Consolidate</div><h2>Clinical pearls and self-test questions</h2></div></div>
+  <div class="ctl-row"><div class="seg" id="qMode"><button aria-pressed="true" data-m="cards">Flashcards</button><button aria-pressed="false" data-m="quiz">Quiz mode</button></div><button class="tbtn" id="qShuffle">Shuffle</button><span class="small" id="qScore" style="color:var(--ink-3)"></span></div>
+  <div class="deck" id="deck"></div>
+  <div id="quiz" style="display:none;max-width:var(--measure)"></div>
+</section>
+
+<section class="chapter" id="sources" data-title="Sources">
+  <div class="ch-head"><div class="ch-num">§</div><div><div class="kicker">Provenance</div><h2>Sources and method</h2></div></div>
+  <div class="prose small">
+    <p>Original synthesis; no text or figures are reproduced from the sources. All diagrams were drawn for this atlas. The cover is an original illustration and is not a micrograph. Green badges (<span class="v">source</span>) name the source checked for that statement; hover for detail.</p>
+    <ul>
+      <li>NCCN Guidelines Insights: Testicular Cancer, Version 2.2025 (JNCCN, April 2025); NCCN Guidelines listing for Testicular Cancer Version 1.2027 (November 2026).</li>
+      <li>AJCC Cancer Staging Manual, 8th edition (2017) — testis TNM and S categories.</li>
+      <li>International Germ Cell Consensus Classification (J Clin Oncol 1997) and the IGCCCG Update Consortium analyses for seminoma and nonseminoma (J Clin Oncol 2021).</li>
+      <li>EAU Guidelines on Testicular Cancer, 2026 update (as summarised in a Urology Times interview, April 2026); ESMO–EURACAN Clinical Practice Guideline: testicular seminoma and non-seminoma (Annals of Oncology, 2022).</li>
+      <li>TRISST (J Clin Oncol 2022); SEMS (J Clin Oncol 2023; ASCO GU 2021 abstract); COTRIMS final results (ESMO 2025 abstract); SEMPET (J Clin Oncol 2004) and its retrospective validation (Annals of Oncology); SAKK 01/10 (Lancet Oncology 2022, as cited by NCCN).</li>
+      <li>TIGER: ICR Clinical Trials &amp; Statistics Unit trial page; ClinicalTrials.gov NCT02375204; EORTC accrual announcement (December 2022). P3BEP (ANZUP 1302): ASCO GU 2026 trial-in-progress abstract.</li>
+      <li>Germ-cell cancer review, New England Journal of Medicine (classic review); Testicular Cancer (European multidisciplinary monograph, 2015).</li>
+    </ul>
+    <p>Not medical advice for an individual patient. Verify doses and recommendations against current guidelines before use.</p>
+  </div>
+  <div class="foot">Testicular Tumors: An Interactive Evidence Atlas (Nov 2026) · Interactive evidence review · Medical Oncology</div>
+</section>
+
+</main>
+</div>
+
+<div class="search" id="search" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="box">
+    <input id="q" type="search" placeholder="Search the atlas — e.g. “PET”, “Chevassu”, “AFP half-life”, “LCCSCT”" autocomplete="off">
+    <div class="res" id="res"></div>
+  </div>
+</div>
+<script>
+document.getElementById('heroImg').style.backgroundImage='url(/testicular-tumors/assets/hero-germcells.webp)';
+</script>
+<script>
+const IHC_COLS=["OCT3/4","SALL4","PLAP","CD117","D2-40","SOX17","SOX2","CD30","Keratin","EMA","Glypican-3","AFP","β-hCG","GATA3","Inhibin","Calretinin","SF-1","Melan-A","CD20/PAX5"];
+// p positive, f focal/subset, v variable/sources differ, n negative
+const IHC_ROWS=[
+ ["GCNIS",          "p p p p p p n n n n n n n n n n n n n","Intratubular atypical germ cells with the same OCT3/4+, SALL4+, PLAP+, CD117+, D2-40+ profile as seminoma. Present beside ~90% of adult GCNIS-type tumors."],
+ ["Seminoma",       "p p p p p p n n n n n n f f n n n n n","OCT3/4, SALL4, PLAP, CD117 (c-KIT), D2-40 and SOX17 positive; CD30 and keratins usually negative (dot-like keratin may occur). β-hCG/GATA3 only in scattered syncytiotrophoblasts."],
+ ["Spermatocytic tumor","n p n f n n n n n n n n n n n n n n n","SALL4+ and often CD117+, but OCT3/4−, PLAP usually − — and not GCNIS-related. Older men, indolent; orchiectomy alone unless sarcomatoid."],
+ ["Embryonal carcinoma","p p f n n n p p p v n f n n n n n n n","OCT3/4, SOX2, CD30 and keratin positive; CD117 negative (key vs seminoma). PLAP in about half. EMA: some oncology references list it as expressed; many pathology sources call EC usually EMA-negative."],
+ ["Yolk sac tumor", "n p v n n p n n p n p p n f n n n n n","SALL4, glypican-3, AFP, keratin positive; OCT3/4, CD30 and CD117 negative. Drives serum AFP."],
+ ["Choriocarcinoma","n f v n n n n n p v f n p p n n n n n","β-hCG and GATA3 positive in syncytiotrophoblast; keratin positive; SALL4 in mononuclear trophoblast. Very high serum hCG, haemorrhagic, lung/brain spread."],
+ ["Teratoma",       "n f n n n n v n p v f n n v n n n n n","Mature/immature somatic tissues with tissue-appropriate markers; OCT3/4 negative. Chemo-resistant — surgery is the treatment."],
+ ["Leydig cell tumor","n n n n n n n n v n n n n n p p p p n","Inhibin, calretinin, SF-1 and melan-A positive; germ cell markers negative. Serum AFP/hCG normal."],
+ ["Sertoli cell tumor","n n n n n n n n v n n n n n v v p n n","SF-1 positive; inhibin/calretinin variable; nuclear β-catenin in many NOS tumors. Germ cell markers negative."],
+ ["Testicular DLBCL","n n n n n n n n n n n n n n n n n n p","CD20/PAX5 (and CD45) positive; all germ cell and sex-cord markers negative. Older men; often bilateral; stage with PET/CT."]
+];
+const REGIMENS=[
+ {n:"BEP",f:"first",sub:"Bleomycin · Etoposide · Cisplatin",d:["Bleomycin 30 units IV days 1, 8, 15","Etoposide 100 mg/m² IV days 1–5","Cisplatin 20 mg/m² IV days 1–5","Every 21 days"],use:"× 3 good risk; × 4 intermediate/poor risk. × 1 as adjuvant in high-risk stage I NSGCT.",tox:"Bleomycin pneumonitis (age, smoking, renal impairment, cumulative dose, high FiO₂); Raynaud; myelosuppression; ototoxicity, neuropathy, nephrotoxicity."},
+ {n:"EP",f:"first",sub:"Etoposide · Cisplatin",d:["Etoposide 100 mg/m² IV days 1–5","Cisplatin 20 mg/m² IV days 1–5","Every 21 days"],use:"× 4 good risk when bleomycin is best avoided (reduced GFR, age >50, lung disease, heavy smoking). × 2 adjuvant after RPLND (pN2) or for completely resected viable GCT after PC-RPLND.",tox:"Never shorten to EP × 3. Febrile neutropenia risk can exceed 20%."},
+ {n:"VIP",f:"first",sub:"Etoposide · Ifosfamide · Cisplatin",d:["Etoposide 75 mg/m² IV days 1–5","Ifosfamide 1,200 mg/m² IV days 1–5 with mesna","Cisplatin 20 mg/m² IV days 1–5","Every 21 days, with G-CSF"],use:"× 4 intermediate/poor risk when bleomycin is contraindicated; favoured for mediastinal NSGCT before thoracic surgery.",tox:"More myelotoxic than BEP; ifosfamide encephalopathy, haemorrhagic cystitis, nephrotoxicity, arrhythmias."},
+ {n:"Carboplatin AUC 7",f:"adj",sub:"Single-agent, stage I seminoma",d:["Carboplatin AUC 7 IV day 1","One cycle (NCCN allows one or two)","Dose on an accurate (ideally measured) GFR"],use:"Alternative to surveillance in stage I seminoma. Never for metastatic disease.",tox:"Thrombocytopenia, nausea; poorly quantified long-term effects; reduces contralateral GCT incidence."},
+ {n:"Radiotherapy",f:"adj",sub:"Seminoma fields",d:["Stage I: para-aortic 20 Gy / 10 fractions (or 25.5 Gy / 17)","Stage IIA: PA + ipsilateral iliac 30 Gy","Stage IIB (≤3 cm): PA + ipsilateral iliac 36 Gy","GCNIS: low-dose testicular RT ~16–20 Gy"],use:"Avoid with inflammatory bowel disease or horseshoe kidney. Consider pelvic coverage after prior scrotal surgery.",tox:"Second malignancies, cardiovascular risk, GI toxicity; out-of-field relapse."},
+ {n:"TIP",f:"salv",sub:"Paclitaxel · Ifosfamide · Cisplatin",d:["Paclitaxel 250 mg/m² IV (24-h infusion) day 1","Ifosfamide 1,500 mg/m² IV days 2–5 with mesna","Cisplatin 25 mg/m² IV days 2–5","Every 21 days × 4, with G-CSF"],use:"First salvage, best with favourable features (gonadal primary, prior complete response, relapse >6 months). TIGER control arm.",tox:"Myelosuppression, neuropathy, nephrotoxicity, ifosfamide neurotoxicity."},
+ {n:"VeIP",f:"salv",sub:"Vinblastine · Ifosfamide · Cisplatin",d:["Vinblastine 0.11 mg/kg IV days 1–2","Ifosfamide 1,200 mg/m² IV days 1–5 with mesna","Cisplatin 20 mg/m² IV days 1–5","Every 21 days × 4, with G-CSF"],use:"Conventional-dose salvage alternative to TIP.",tox:"Myelosuppression, mucositis, constipation/ileus (vinblastine), ifosfamide toxicities."},
+ {n:"TI-CE",f:"salv",sub:"High-dose sequence with stem-cell rescue",d:["Paclitaxel 200 mg/m² day 1 + ifosfamide 2,000 mg/m²/day days 1–3, every 14 days × 2, with G-CSF and leukapheresis","Then high-dose carboplatin (AUC-dosed) + etoposide 400 mg/m²/day, days 1–3, × 3 cycles, each with stem-cell rescue"],use:"Unfavourable relapse, incomplete response, early relapse, or third line. TIGER experimental arm. 5-year DFS 47% / OS 52% in its phase I/II cohort.",tox:"Transplant-level myelosuppression, infection, mucositis, nephro- and ototoxicity; specialist centres only."},
+ {n:"Tandem HD-CE",f:"salv",sub:"High-dose carboplatin + etoposide × 2",d:["Carboplatin 700 mg/m²/day + etoposide 750 mg/m²/day × 3 days","Autologous stem-cell rescue","Two sequential cycles"],use:"Second- or third-line salvage. 2-year PFS 60% in a 364-patient series; better with hCG <1,000 at start and in second line.",tox:"As for TI-CE; treatment-related mortality is low but not zero in expert centres."},
+ {n:"R-CHOP + CNS + RT",f:"lym",sub:"Primary testicular DLBCL",d:["Rituximab 375 mg/m², cyclophosphamide 750 mg/m², doxorubicin 50 mg/m², vincristine 1.4 mg/m² (cap 2 mg) day 1; prednisone 100 mg days 1–5","Every 21 days × 6","CNS prophylaxis (intrathecal and/or high-dose methotrexate)","Contralateral testis / scrotal RT after chemotherapy"],use:"Standard after inguinal orchiectomy.",tox:"Anthracycline cardiotoxicity, neuropathy, infection; HBV screening before rituximab."}
+];
+const TIMELINE=[
+ {y:"1977",t:"Cisplatin combination chemotherapy",d:"Cisplatin-based combination (with vinblastine and bleomycin) turned disseminated testicular cancer into a curable disease, the template for every later regimen.",tag:"ns"},
+ {y:"1987",t:"BEP replaces PVB",d:"A randomised comparison showed etoposide could replace vinblastine with equal or better efficacy and less neuromuscular toxicity, establishing BEP.",tag:"ns"},
+ {y:"1997",t:"IGCCCG classification",d:"An international pooled analysis defined good, intermediate and poor prognosis using primary site, non-pulmonary visceral metastases and post-orchiectomy markers — still the treatment-allocation system.",tag:"img"},
+ {y:"2004",t:"SEMPET update",d:"Prospective multicentre data: FDG-PET predicted viable tumor in post-chemotherapy seminoma residuals better than CT size (specificity 100%, sensitivity 80%).",tag:"img"},
+ {y:"2005",t:"De-escalating stage I seminoma",d:"Randomised trials established 20 Gy as equivalent to 30 Gy para-aortic RT, and one cycle of carboplatin as non-inferior to RT — paving the way for surveillance-first practice.",tag:"sem"},
+ {y:"2021",t:"IGCCCG updates",d:"Contemporary re-analyses of seminoma and nonseminoma: 5-year OS for NSGCT good/intermediate/poor 96%/89%/67%; LDH >2.5× ULN (and, for NSGCT, age and lung metastases) add prognostic information.",tag:"img"},
+ {y:"2022",t:"TRISST · SAKK 01/10 · TIGER accrual",d:"TRISST showed MRI non-inferior to CT (and 3 vs 7 scans non-inferior) for stage I seminoma surveillance. SAKK 01/10 tested carboplatin × 1 + involved-node RT for IIA/B seminoma (3-year PFS 93.7%). TIGER completed accrual of 420 patients on 26 October 2022.",tag:"sem"},
+ {y:"2023",t:"SEMS published",d:"Primary RPLND for seminoma with 1–3 cm retroperitoneal nodes (n=55): 2-year RFS 81%, recurrence 22%, OS 100%; all recurrences salvaged.",tag:"sem"},
+ {y:"2025",t:"COTRIMS final results · NCCN Insights",d:"Unilateral nerve-sparing RPLND without adjuvant chemotherapy in CS IIA/B seminoma (n=34): relapse 11.7%, all salvaged. NCCN Insights (v2.2025) list nerve-sparing RPLND among options for IIA/IIB seminoma <3 cm.",tag:"sem"},
+ {y:"2026",t:"EAU update; NCCN 1.2027 posted",d:"EAU 2026: miR-371a-3p not yet for routine use; PET de-emphasised for residual seminoma; four cycles suggested for good-risk seminoma with LDH >2.5× ULN; avoid central venous lines to reduce VTE. NCCN Testicular Cancer Version 1.2027 listed in November 2026.",tag:"img"}
+];
+const TRIALS=[
+ {n:"TRISST",tags:["sem","img"],set:"Stage I seminoma surveillance",des:"Phase III factorial non-inferiority, n=669: CT vs MRI; 7 vs 3 scans",res:"MRI non-inferior (≥IIC relapse 0.6% vs 2.6%); 3 scans non-inferior (2.8% vs 0.3%); 5-y OS 99%",st:"Published 2022"},
+ {n:"SEMS",tags:["sem"],set:"Seminoma, RP nodes 1–3 cm",des:"Phase II single-arm, n=55, open modified-template RPLND",res:"2-y RFS 81%; recurrence 22%; OS 100%; anejaculation 3 patients",st:"Published 2023"},
+ {n:"PRIMETEST",tags:["sem"],set:"CS IIA/B seminoma",des:"Phase II, primary RPLND",res:"Interim: 17 of 22 (77%) recurrence-free at median 24 months",st:"Reported (interim)"},
+ {n:"COTRIMS",tags:["sem"],set:"CS IIA/B seminoma",des:"Prospective, n=34, unilateral nerve-sparing RPLND, no adjuvant chemo",res:"Relapse 11.7% (all salvaged); antegrade ejaculation preserved in 88%",st:"Final results ESMO 2025"},
+ {n:"SAGURE",tags:["sem"],set:"Seminoma, surgery-first programme",des:"Prospective German programme",res:"No results verified for this atlas",st:"Not verified"},
+ {n:"SAKK 01/10",tags:["sem"],set:"Stage IIA/B seminoma",des:"Phase II, n=116: carboplatin × 1 + involved-node RT",res:"3-y PFS 93.7% (missed 95% target); minimal toxicity",st:"Published 2022"},
+ {n:"Carboplatin vs RT (stage I seminoma)",tags:["sem"],set:"Stage I seminoma",des:"Randomised non-inferiority: carboplatin AUC 7 × 1 vs para-aortic RT",res:"Equivalent relapse; fewer contralateral GCTs with carboplatin",st:"Published 2005 (updated later)"},
+ {n:"20 Gy vs 30 Gy",tags:["sem"],set:"Stage I seminoma RT",des:"Randomised dose comparison",res:"No difference in relapse; less acute toxicity with 20 Gy",st:"Published 2005"},
+ {n:"SEMPET",tags:["sem","img"],set:"Post-chemo seminoma residuals",des:"Prospective multicentre, 56 scans in 51 patients",res:"PET specificity 100%, sensitivity 80%, NPV 96% (vs CT size 74%/70%)",st:"Updated 2004; later validation: accuracy better ≥6 weeks post-chemo"},
+ {n:"BEP × 1 in high-risk CS I NSGCT",tags:["ns"],set:"Stage IB NSGCT",des:"Prospective cohorts (e.g. Swedish–Norwegian programme; UK single-cycle study)",res:"Low relapse rates; figures not reproduced here",st:"Reported"},
+ {n:"IGCCCG Update (NSGCT)",tags:["ns","img"],set:"Metastatic NSGCT",des:"Pooled, contemporary cohort",res:"5-y OS good 96%, intermediate 89%, poor 67%; LDH 2.5× ULN, age, lung mets prognostic",st:"Published 2021"},
+ {n:"TI-CE (phase I/II)",tags:["salv"],set:"Unfavourable relapsed GCT",des:"n=107, paclitaxel/ifosfamide then 3 × high-dose carboplatin/etoposide",res:"5-y DFS 47%, OS 52%",st:"Published"},
+ {n:"Tandem HD-CE series",tags:["salv"],set:"Relapsed GCT, 2004–2014",des:"Retrospective, n=364",res:"2-y PFS 60%",st:"Published"},
+ {n:"TIGER",tags:["salv","ongoing"],set:"First salvage",des:"Phase III, n=420: TIP × 4 vs TI-CE; primary endpoint OS",res:"No primary results reported as of Nov 2026",st:"Active, not recruiting (accrual complete Oct 2022)"},
+ {n:"P3BEP (ANZUP 1302)",tags:["ns","ongoing"],set:"Intermediate/poor-risk GCT, age 11–50",des:"Phase III accelerated vs standard BEP",res:"Interim safety review supported continuation; no efficacy results",st:"Recruiting (2026 abstract)"}
+];
+const DIS={cols:["NCCN (v2.2025 verified; 1.2027 current)","ESMO–EURACAN 2022","EAU 2026"],rows:[
+ {q:"Stage I seminoma after orchiectomy",c:["Surveillance strongly preferred; discourages risk-adapted therapy; carboplatin × 1–2 or RT 20 Gy/10 if surveillance unsuitable","Surveillance preferred; carboplatin × 1 as main alternative","Surveillance preferred; tumor size informs counselling; carboplatin × 1 alternative"],s:false},
+ {q:"Carboplatin: one cycle or two?",c:["1 or 2 cycles AUC 7","1 cycle","1 cycle"],s:true},
+ {q:"Stage IIA / small IIB seminoma",c:["RT, BEP×3/EP×4, nerve-sparing RPLND (2B for 2–3 cm), or carboplatin + RT (2B)","Chemotherapy or RT; RPLND in experienced/trial settings","Chemo or RT; primary RPLND acceptable in experienced centres for selected low-volume disease"],s:true},
+ {q:"Good-risk seminoma with LDH >2.5× ULN",c:["Consider intensification; no consensus regimen","Not verified for this atlas","Four cycles rather than three for most"],s:true},
+ {q:"Residual seminoma >3 cm",c:["PET/CT ≥6 weeks after chemo, or surveillance; PET+ → biopsy/resection","PET ≥6–8 weeks for masses >3 cm","Do not rely on PET alone (PPV ~30–40%)"],s:true},
+ {q:"High-risk (LVI+) stage I NSGCT",c:["Surveillance, BEP × 1, or nerve-sparing RPLND","BEP × 1 or surveillance","BEP × 1 favoured; surveillance an option"],s:true},
+ {q:"NSGCT residual mass <1 cm",c:["Surveillance","Surveillance","Resection can be indicated even for visible sub-cm masses after intermediate/poor-risk disease"],s:true},
+ {q:"LDH thresholds",c:["1.5× / 10× ULN for NSGCT allocation; LDH alone should not drive treatment","IGCCCG thresholds","2.5× ULN prognostic split in seminoma used to adjust cycles"],s:true},
+ {q:"miR-371a-3p",c:["Not part of standard markers","Investigational","Not for routine use (standardisation, stability, cost)"],s:false}
+]};
+const CARDS=[
+ ["Which marker excludes pure seminoma?","A meaningful or rising <b>AFP</b>. Treat as nonseminoma regardless of histology; mild stable AFP elevations need context."],
+ ["Which marker values define the S category — and which define IGCCCG risk?","<b>S</b>: post-orchiectomy nadir AFP/hCG/LDH. <b>IGCCCG</b>: values immediately before day 1 of chemotherapy."],
+ ["Half-lives of AFP and β-hCG?","AFP ~5–7 days; β-hCG ~24–36 hours (up to 48 h in some sources)."],
+ ["Why is trans-scrotal biopsy contraindicated?","Testicular lymph drains to the retroperitoneum; scrotal skin drains to inguinal nodes. Violation risks local seeding and aberrant drainage."],
+ ["What is the Chevassu manoeuvre?","Inguinal delivery of the testis after clamping the cord at the deep ring, inspection ± frozen section, then replacement if benign or high ligation if malignant."],
+ ["Back pain in a man with a testis tumor — implication?","Bulky retroperitoneal disease (psoas/nerve roots): chemotherapy first, not primary RPLND."],
+ ["Is there a poor-risk seminoma?","No. Seminoma is good risk, or intermediate with non-pulmonary visceral metastases."],
+ ["Mediastinal NSGCT — risk group and regimen consideration?","Always poor risk; VIP × 4 often preferred before thoracic surgery; resect residual disease."],
+ ["Stage IS NSGCT — treatment?","Chemotherapy as for advanced disease by IGCCCG, not RPLND."],
+ ["Residual mass rules?","Seminoma: ≤3 cm observe; >3 cm PET ≥6 weeks. NSGCT: resect all >1 cm; PET is not used (teratoma is PET-negative)."],
+ ["Can carboplatin replace cisplatin in metastatic GCT?","No — inferior efficacy. Carboplatin is only for stage I seminoma (or in HDCT)."],
+ ["Spermatocytic tumor — key facts?","Older men; not GCNIS-related; OCT3/4-negative, SALL4-positive; indolent; orchiectomy alone unless sarcomatoid."],
+ ["CD117 vs CD30?","Seminoma CD117+ CD30−; embryonal carcinoma CD30+ CD117−."],
+ ["GCNIS natural history and treatment?","~50% invasive within 5 years; low-dose RT (~16–20 Gy) or orchiectomy; bank sperm first."],
+ ["Primary testicular DLBCL — three essentials beyond R-CHOP?","CNS prophylaxis, contralateral testis RT, and long follow-up (relapses beyond 10 years)."],
+ ["Klinefelter syndrome association?","Mediastinal (not usually testicular) germ cell tumors."],
+ ["Peutz–Jeghers and Carney complex?","Sertoli-lineage tumors — LCCSCT (Carney; also PJS) and intratubular large-cell hyalinizing Sertoli neoplasia (PJS)."],
+ ["When is brain MRI indicated at staging?","Symptoms, hCG >5,000 IU/L, choriocarcinoma predominance, extensive lung or non-pulmonary visceral metastases."],
+ ["TRISST take-home?","MRI is a non-inferior alternative to CT for stage I seminoma surveillance."],
+ ["TIGER status in Nov 2026?","Accrual complete (420, Oct 2022); no primary results reported; registry primary completion 2031."],
+ ["Hyperthyroidism in a man with metastatic GCT?","High hCG stimulating the TSH receptor; resolves with treatment."],
+ ["Sperm banking timing?","Before chemotherapy, RT or RPLND — and before orchiectomy if the other testis is absent or abnormal."]
+];
+const QUIZ=[
+ {q:"A 28-year-old with 'pure seminoma' has post-orchiectomy AFP 180 ng/mL and rising. Best approach?",o:["Treat as seminoma; AFP is unreliable","Treat as nonseminoma","Repeat AFP in 6 months","PET/CT to decide"],a:1,e:"A rising AFP is incompatible with pure seminoma — treat as NSGCT."},
+ {q:"Stage I NSGCT with lymphovascular invasion. Which is NOT a standard option?",o:["Surveillance","BEP × 1","Nerve-sparing RPLND","Carboplatin AUC 7 × 1"],a:3,e:"Carboplatin is for stage I seminoma only."},
+ {q:"Post-chemotherapy seminoma residual of 4.5 cm, markers normal. Next step?",o:["Immediate RPLND","FDG-PET ≥6 weeks after chemotherapy (or surveillance)","Two more cycles of BEP","PET 2 weeks after chemotherapy"],a:1,e:"PET is timed ≥6 weeks to cut false positives; EAU 2026 cautions against relying on PET alone."},
+ {q:"Post-chemo NSGCT, markers normal, 2.5 cm residual retroperitoneal mass, PET-negative. Next?",o:["Surveillance because PET is negative","Bilateral template PC-RPLND","Radiotherapy","Salvage TIP"],a:1,e:"Teratoma is PET-negative; resect all residual NSGCT >1 cm."},
+ {q:"IGCCCG: NSGCT, testis primary, lung metastases only, AFP 2,500 ng/mL, hCG 3,000 IU/L, LDH 1.2× ULN.",o:["Good","Intermediate","Poor","Cannot classify"],a:1,e:"AFP 1,000–10,000 places him in intermediate risk → BEP × 4 or VIP × 4."},
+ {q:"Seminoma with liver metastases. IGCCCG category?",o:["Good","Intermediate","Poor","Not applicable"],a:1,e:"Non-pulmonary visceral metastases make seminoma intermediate; there is no poor-risk seminoma."},
+ {q:"Which is TRUE of primary testicular DLBCL?",o:["Relapse risk ends at 2 years","CNS prophylaxis and contralateral testis RT are standard with R-CHOP","Treat with BEP","Scrotal biopsy is preferred to orchiectomy"],a:1,e:"High CNS and contralateral relapse risk; persistent late relapses."},
+ {q:"A 24-year-old with a testis mass, hCG 180,000 IU/L, multiple bilateral lung metastases and respiratory distress. First step?",o:["Inguinal orchiectomy first","Start chemotherapy now; orchiectomy later","Brain MRI then wait","Biopsy a lung lesion"],a:1,e:"Life-threatening disease with diagnostic markers: start cisplatin chemotherapy; remove the testis later. Brain MRI is also indicated."}
+];
+
+(function(){
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=n=>{if(!isFinite(n))return"–";if(n>=100)return Math.round(n).toLocaleString();if(n>=10)return n.toFixed(1);return n.toFixed(2)};
+function seg(el,cb){if(!el)return;el.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;$$("button",el).forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));cb(b.dataset)});}
+function segVal(el,k){const b=$('button[aria-pressed="true"]',el);return b?b.dataset[k]:null}
+
+/* ---------- theme ---------- */
+const root=document.documentElement;
+function setTheme(t){root.dataset.theme=t;$("#themeLbl").textContent=t==="dark"?"Light":"Dark";try{localStorage.setItem("tt-theme",t)}catch(e){} drawDecay();}
+let saved=null;try{saved=localStorage.getItem("tt-theme")}catch(e){}
+root.dataset.theme=saved||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+$("#themeLbl").textContent=root.dataset.theme==="dark"?"Light":"Dark";
+$("#themeBtn").onclick=()=>setTheme(root.dataset.theme==="dark"?"light":"dark");
+
+/* ---------- TOC, progress, topbar ---------- */
+const chapters=$$(".chapter");
+const roman=["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","§"];
+$("#toc").innerHTML=chapters.map((c,i)=>`<li><a href="#${c.id}" data-id="${c.id}"><span class="n">${roman[i]||""}</span><span>${esc(c.dataset.title)}</span></a></li>`).join("");
+const tocLinks=$$("#toc a");
+const io=new IntersectionObserver(ents=>{ents.forEach(en=>{if(en.isIntersecting){tocLinks.forEach(a=>a.classList.toggle("active",a.dataset.id===en.target.id));$("#crumb").textContent=en.target.dataset.title;}})},{rootMargin:"-45% 0px -50% 0px"});
+chapters.forEach(c=>io.observe(c));
+const hero=$("#top"),bar=$("#topbar"),prog=$("#prog");
+function onScroll(){const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight);prog.style.width=(p*100).toFixed(1)+"%";if(innerWidth>1060)bar.classList.toggle("show",h.scrollTop>hero.offsetHeight-80);}
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+$("#menuBtn").onclick=()=>$("#rail").classList.toggle("open");
+$("#rail").addEventListener("click",e=>{if(e.target.closest("a"))$("#rail").classList.remove("open")});
+
+/* ---------- sequence steps ---------- */
+$$("#seqSteps li").forEach(li=>li.addEventListener("click",()=>{$$("#seqSteps li").forEach(x=>x.classList.toggle("on",x===li))}));
+
+/* ---------- marker decay ---------- */
+const S_CUT={afp:[1000,10000],hcg:[5000,50000]};const NORM={afp:10,hcg:5};
+function sCat(m,v,ldh){
+  const lim=S_CUT[m];let s=0;
+  if(v>NORM[m]||ldh>1)s=1;
+  if(v>=lim[0]||ldh>=1.5)s=Math.max(s,2);
+  if(v>lim[1]||ldh>10)s=3;
+  return s;
+}
+function drawDecay(){
+  const svg=$("#decayChart");if(!svg)return;
+  const m=$("#mk").value,v0=+$("#mk0").value||0,d=+$("#mkd").value||0,obs=+$("#mkobs").value,hl=+$("#mkhl").value||1,ldh=+$("#ldh").value||0;
+  const W=520,H=280,L=56,R=12,T=16,B=36;const maxD=Math.max(42,d+7);
+  const lo=Math.log10(Math.max(0.5,NORM[m]/4)),hi=Math.log10(Math.max(v0,obs||0,NORM[m]*10)*1.6);
+  const x=t=>L+(W-L-R)*t/maxD, y=v=>T+(H-T-B)*(1-(Math.log10(Math.max(v,Math.pow(10,lo)))-lo)/(hi-lo));
+  const cs=getComputedStyle(root);const ink3=cs.getPropertyValue("--ink-3"),teal=cs.getPropertyValue("--teal-2"),cop=cs.getPropertyValue("--copper"),line=cs.getPropertyValue("--line"),sage=cs.getPropertyValue("--sage"),rose=cs.getPropertyValue("--rose");
+  let g="";
+  for(let e=Math.ceil(lo);e<=Math.floor(hi);e++){const yy=y(Math.pow(10,e));g+=`<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="${line}"/><text x="${L-6}" y="${yy+4}" text-anchor="end" font-size="10" fill="${ink3}">${Math.pow(10,e).toLocaleString()}</text>`}
+  for(let t=0;t<=maxD;t+=7){g+=`<text x="${x(t)}" y="${H-B+16}" text-anchor="middle" font-size="10" fill="${ink3}">${t}</text>`}
+  g+=`<text x="${(W+L)/2}" y="${H-4}" text-anchor="middle" font-size="10.5" fill="${ink3}">days after orchiectomy</text>`;
+  const ny=y(NORM[m]);g+=`<line x1="${L}" x2="${W-R}" y1="${ny}" y2="${ny}" stroke="${sage}" stroke-dasharray="4 4"/><text x="${W-R}" y="${ny-5}" text-anchor="end" font-size="10" fill="${sage}">upper normal</text>`;
+  let p="";for(let t=0;t<=maxD;t+=0.5){const v=v0*Math.pow(.5,t/hl);p+=(t?"L":"M")+x(t).toFixed(1)+","+y(v).toFixed(1)}
+  g+=`<path d="${p}" fill="none" stroke="${teal}" stroke-width="2.5"/>`;
+  const tNorm=v0>NORM[m]?hl*Math.log2(v0/NORM[m]):0;
+  if(tNorm>0&&tNorm<=maxD)g+=`<line x1="${x(tNorm)}" x2="${x(tNorm)}" y1="${T}" y2="${H-B}" stroke="${teal}" stroke-dasharray="2 3" opacity=".6"/>`;
+  if(isFinite(obs)&&obs>0){const ex=v0*Math.pow(.5,d/hl);g+=`<line x1="${x(d)}" x2="${x(d)}" y1="${y(ex)}" y2="${y(obs)}" stroke="${cop}" stroke-dasharray="3 3"/><circle cx="${x(d)}" cy="${y(obs)}" r="6" fill="${obs>ex*1.5?rose:cop}" stroke="#fff" stroke-width="1.5"/><circle cx="${x(d)}" cy="${y(ex)}" r="4" fill="${teal}"/>`}
+  g+=`<text x="${L+6}" y="${T+12}" font-size="10.5" fill="${teal}">expected decay (t½ ${hl} d)</text>`;
+  svg.innerHTML=g;
+  const ex=v0*Math.pow(.5,d/hl);const ratio=obs/ex;const s=sCat(m,obs,ldh);
+  let verdict,cls;
+  if(!(obs>0)){verdict="Enter an observed value.";cls="info"}
+  else if(obs<=NORM[m]){verdict="Normalised.";cls="good"}
+  else if(ratio<=1.5){verdict="Falling roughly as expected — re-check until normal or at ~4–5 weeks before calling stage IS.";cls="info"}
+  else if(obs>=v0){verdict="Not falling / rising — residual active disease likely (stage IS if imaging negative; exclude non-tumor causes).";cls="poor"}
+  else {verdict="Slower than expected decay — suggests residual disease; repeat and correlate with imaging.";cls="int"}
+  const name=m==="afp"?"AFP":"β-hCG",unit=m==="afp"?"ng/mL":"IU/L";
+  $("#decayOut").innerHTML=`<span class="pill ${cls}">${cls==="good"?"Normal":cls==="poor"?"Concerning":cls==="int"?"Slow decay":"Tracking"}</span><h5>${name}: expected ${fmt(ex)} vs observed ${fmt(obs)} ${unit}</h5><p class="small">${verdict}</p><p class="small">Days to reach normal if decay is purely first-order: <b>${tNorm>0?fmt(tNorm):"0"}</b> days.</p><p class="small">S category from the observed ${name} and LDH ${ldh}× ULN: <b>S${s}</b>${s?"":" (all normal)"} — use the nadir and all three markers in practice.</p>${m==="afp"&&obs>NORM[m]?'<p class="small" style="color:var(--rose)">Any meaningful AFP excludes pure seminoma.</p>':""}`;
+}
+["#mk","#mk0","#mkd","#mkobs","#mkhl","#ldh"].forEach(s=>$(s).addEventListener("input",drawDecay));
+$("#mk").addEventListener("change",()=>{$("#mkhl").value=$("#mk").value==="afp"?6:1.5;if($("#mk").value==="hcg"){$("#mk0").value=12000;$("#mkd").value=5;$("#mkobs").value=1800}else{$("#mk0").value=2400;$("#mkd").value=21;$("#mkobs").value=900}drawDecay()});
+drawDecay();
+
+/* ---------- IHC ---------- */
+const ihc=$("#ihc");ihc.style.setProperty("--cols",IHC_COLS.length);
+let h='<div></div>'+IHC_COLS.map((c,i)=>`<div class="h" data-c="${i}">${esc(c)}</div>`).join("");
+IHC_ROWS.forEach((r,ri)=>{const v=r[1].split(" ");h+=`<div class="rh" data-r="${ri}">${esc(r[0])}</div>`+v.map((x,ci)=>`<div class="c ${x}" data-r="${ri}" data-c="${ci}" title="${esc(r[0])} · ${esc(IHC_COLS[ci])}: ${({p:"positive",f:"focal/subset",v:"variable",n:"negative"})[x]}">${({p:"+",f:"±",v:"v",n:"–"})[x]}</div>`).join("")});
+ihc.innerHTML=h;
+let ihcMode="row";
+function ihcClear(){ihc.classList.remove("dim");$$(".hl,.on",ihc).forEach(e=>e.classList.remove("hl","on"))}
+function ihcRow(ri){ihcClear();ihc.classList.add("dim");$$(`[data-r="${ri}"]`,ihc).forEach(e=>e.classList.add("hl"));$(`.rh[data-r="${ri}"]`,ihc).classList.add("on");const r=IHC_ROWS[ri],v=r[1].split(" ");const pos=IHC_COLS.filter((c,i)=>v[i]==="p"),neg=IHC_COLS.filter((c,i)=>v[i]==="n");$("#ihcOut").innerHTML=`<h5>${esc(r[0])}</h5><p class="small"><b>Positive:</b> ${pos.join(", ")||"—"}</p><p class="small">${esc(r[2])}</p>`}
+function ihcCol(ci){ihcClear();ihc.classList.add("dim");$$(`.c[data-c="${ci}"]`,ihc).forEach(e=>e.classList.add("hl"));$(`.h[data-c="${ci}"]`,ihc).classList.add("on");const pos=IHC_ROWS.filter(r=>r[1].split(" ")[ci]==="p").map(r=>r[0]),foc=IHC_ROWS.filter(r=>/[fv]/.test(r[1].split(" ")[ci])).map(r=>r[0]);$$(`.c[data-c="${ci}"]`,ihc).forEach(e=>{if(!e.classList.contains("n"))$(`.rh[data-r="${e.dataset.r}"]`,ihc).classList.add("hl")});$("#ihcOut").innerHTML=`<h5>${esc(IHC_COLS[ci])}</h5><p class="small"><b>Typically positive in:</b> ${pos.join(", ")||"—"}</p><p class="small"><b>Focal / variable:</b> ${foc.join(", ")||"—"}</p>`}
+ihc.addEventListener("click",e=>{const t=e.target.closest("[data-r],[data-c]");if(!t)return;if(ihcMode==="col"&&t.dataset.c!==undefined)ihcCol(+t.dataset.c);else if(t.dataset.r!==undefined)ihcRow(+t.dataset.r);else if(t.dataset.c!==undefined)ihcCol(+t.dataset.c)});
+seg($("#ihcMode"),d=>{ihcMode=d.m;if(d.m==="none"){ihcClear();$("#ihcOut").innerHTML='<p class="small">All entities shown. Click a row or a stain.</p>'}else if(d.m==="row")ihcRow(1);else ihcCol(3)});
+ihcRow(1);
+
+/* ---------- lymphatic map ---------- */
+const LY={
+ R:{on:["iac","pc"],x:true,u:false,t:"Right testis",b:"Primary landing zone: <b>interaortocaval</b> nodes just below the renal vessels, then paracaval/precaval. <b>Crossover to the left para-aortic</b> region is relatively common (arrow), so right-sided templates extend across the aorta."},
+ L:{on:["pa"],x:false,u:false,t:"Left testis",b:"Primary landing zone: <b>para-aortic</b> (and preaortic) nodes just below the <b>left renal vein</b>, where the left gonadal vein drains. Left-to-right crossover is uncommon in low-volume disease."},
+ X:{on:["il","ing"],x:false,u:false,t:"Prior scrotal or inguinal surgery",b:"Hernia repair, orchiopexy, vasectomy or scrotal violation can open <b>inguinal and external iliac</b> drainage; epididymal/cord invasion favours <b>iliac</b> nodes. Plan imaging, RT fields and surveillance accordingly."},
+ U:{on:["rc","iac","pa"],x:false,u:true,t:"Upward spread",b:"From the retroperitoneum through the <b>retrocrural</b> space and thoracic duct to the <b>posterior mediastinum</b> and <b>left supraclavicular</b> fossa; haematogenous spread to <b>lung</b> (most common), then liver, bone and brain (choriocarcinoma especially)."}
+};
+function lymph(k){const d=LY[k];$$("#lymphSvg .ng").forEach(g=>{const on=d.on.includes(g.dataset.g);$$("ellipse",g).forEach(e=>{e.setAttribute("fill",on?"var(--copper)":"var(--paper-2)");e.setAttribute("stroke",on?"var(--copper)":"var(--ink-3)");e.style.opacity=on?".85":"1"})});$("#crossArrow").setAttribute("opacity",d.x?1:0);$("#upArrow").setAttribute("opacity",d.u?1:0);$("#gvR").setAttribute("stroke",k==="R"?"var(--copper)":"#5C7FA3");$("#gvL").setAttribute("stroke",k==="L"?"var(--copper)":"#5C7FA3");$("#lymphOut").innerHTML=`<span class="pill info">Landing zone</span><h5>${d.t}</h5><p class="small">${d.b}</p>`}
+seg($("#lymphSeg"),d=>lymph(d.s));lymph("R");
+
+/* ---------- tabs ---------- */
+$$(".tabs").forEach(tb=>tb.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;$$("button",tb).forEach(x=>x.setAttribute("aria-selected",x===b?"true":"false"));const wrap=tb.parentElement;$$(".panel",wrap).forEach(p=>p.classList.toggle("on",p.id===b.dataset.p))}));
+
+/* ---------- stage group ---------- */
+function stageGroup(T,N,M,S){
+  if(M==="M1b")return["IIIC","M1b (non-pulmonary visceral) is always IIIC."];
+  if(M==="M1a"){if(S==="S3")return["IIIC","M1a with S3."];if(S==="S2")return["IIIB","M1a with S2."];if(S==="SX")return["III","M1a; S unknown — sub-group cannot be assigned."];return["IIIA","M1a with S0–S1."]}
+  if(N!=="N0"){if(S==="S3")return["IIIC","Nodal disease with S3 is stage III."];if(S==="S2")return["IIIB","Nodal disease with S2 is stage III."];const g={N1:"IIA",N2:"IIB",N3:"IIC"}[N];return[S==="SX"?"II":g,S==="SX"?"S unknown.":`${N} with S0–S1.`]}
+  if(S==="S1"||S==="S2"||S==="S3")return["IS","Node-negative, M0, persistently elevated markers: occult metastatic disease — treat as advanced."];
+  if(T==="pTis")return["0","GCNIS only."];
+  if(S==="SX")return["I","Stage I, S unknown."];
+  if(T==="pT1")return["IA","Confined to testis without LVI, normal markers."];
+  if(T==="pTX")return["I","pT unknown (e.g. no orchiectomy)."];
+  return["IB","pT2–pT4, N0 M0 S0."];
+}
+function sg(){const [g,n]=stageGroup($("#sgT").value,$("#sgN").value,$("#sgM").value,$("#sgS").value);const cls=/^III/.test(g)?"poor":/^II|IS/.test(g)?"int":"good";$("#sgOut").innerHTML=`<span class="pill ${cls}">Stage group</span><h5>Stage ${g}</h5><p class="small">${n}</p><p class="small" style="color:var(--ink-3)">Prognosis in metastatic disease comes from IGCCCG, not the stage group alone.</p>`}
+["#sgT","#sgN","#sgM","#sgS"].forEach(s=>$(s).addEventListener("change",sg));sg();
+
+/* ---------- IGCCCG ---------- */
+function igcccg(){
+  const H=$("#igH").value,P=$("#igP").value,V=$("#igV").value==="1",A=+$("#igA").value||0,B=+$("#igB").value||0,L=+$("#igL").value||0;
+  let r,why=[],os,notes=[];
+  if(H==="sem"){
+    if(A>20){$("#igOut").innerHTML=`<span class="pill poor">Re-classify</span><h5>Elevated AFP is incompatible with pure seminoma</h5><p class="small">Treat as nonseminoma (switch histology above). Mild stable AFP needs clinical context.</p>`;return}
+    r=V?"Intermediate":"Good";why.push(V?"non-pulmonary visceral metastases":"no non-pulmonary visceral metastases; any primary site, any hCG, any LDH");
+    os=V?"~88% (IGCCCG 2021 seminoma update)":"~95–96% (IGCCCG 2021)";
+    if(P==="med")notes.push("Mediastinal seminoma is classified like testicular seminoma.");
+    if(!V&&L>2.5)notes.push("LDH >2.5× ULN: worse prognosis within good risk — NCCN: consider intensification (no consensus); EAU 2026: four cycles for most.");
+    if(B>1000)notes.push("hCG >1,000 IU/L: re-review pathology for nonseminomatous elements.");
+  } else {
+    const poor=P==="med"||V||A>10000||B>50000||L>10, inter=A>=1000||B>=5000||L>=1.5;
+    r=poor?"Poor":inter?"Intermediate":"Good";
+    if(P==="med")why.push("mediastinal primary");if(V)why.push("non-pulmonary visceral metastases");
+    if(A>10000)why.push("AFP >10,000");else if(A>=1000)why.push("AFP 1,000–10,000");
+    if(B>50000)why.push("hCG >50,000 IU/L");else if(B>=5000)why.push("hCG 5,000–50,000 IU/L");
+    if(L>10)why.push("LDH >10× ULN");else if(L>=1.5)why.push("LDH 1.5–10× ULN");
+    if(!why.length)why.push("testis/RP primary, no NPVM, AFP <1,000, hCG <5,000, LDH <1.5× ULN");
+    os={Good:"~96%",Intermediate:"~89%",Poor:"~67%"}[r]+" 5-year OS (IGCCCG 2021 update)";
+    if(L>2.5&&r!=="Poor")notes.push("LDH >2.5× ULN is an adverse factor in the 2021 update's prognostic model.");
+    if(B>5000)notes.push("hCG >5,000 IU/L: brain MRI.");
+  }
+  const tx={Good:"BEP × 3 or EP × 4",Intermediate:"BEP × 4 (preferred) or VIP × 4",Poor:"BEP × 4 or VIP × 4; refer to an experienced centre"}[r];
+  $("#igOut").innerHTML=`<span class="pill ${r==="Good"?"good":r==="Poor"?"poor":"int"}">${r} risk</span><h5>${H==="sem"?"Seminoma":"Nonseminoma"} · ${r} prognosis</h5><p class="small"><b>Because:</b> ${why.join("; ")}.</p><p class="small"><b>Expected outcome:</b> ${os}.</p><p class="small"><b>First-line:</b> ${tx}.</p>${notes.map(n=>`<p class="small" style="color:var(--copper)">• ${n}</p>`).join("")}`;
+}
+["#igH","#igP","#igV","#igA","#igB","#igL"].forEach(s=>$(s).addEventListener("input",igcccg));igcccg();
+
+/* ---------- treatment explorer ---------- */
+const TX={h:"sem",s:"I",o:{}};
+function sel(id,label,opts,def){const cur=TX.o[id]??def;TX.o[id]=cur;return `<div class="ctl"><label for="x_${id}">${label}</label><select id="x_${id}" data-k="${id}">${opts.map(([v,t])=>`<option value="${v}" ${v===cur?"selected":""}>${t}</option>`).join("")}</select></div>`}
+function extras(){
+  const {h,s}=TX;let x="";
+  if(h==="sem"&&s==="I")x=sel("adh","Can adhere to surveillance?",[["y","Yes"],["n","No / prefers adjuvant"]],"y")+sel("ibd","IBD or horseshoe kidney?",[["n","No"],["y","Yes"]],"n");
+  if(h==="sem"&&s==="IIB")x=sel("sz","Largest node",[["lt3","2–3 cm (non-bulky)"],["3to5","3–5 cm"]],"lt3");
+  if(h==="sem"&&(s==="IIA"))x=sel("bord","Node equivocal / borderline?",[["n","No — clearly enlarged"],["y","Yes"]],"n");
+  if(h==="ns"&&s==="I")x=sel("lvi","Lymphovascular invasion",[["n","Absent"],["y","Present"]],"n")+sel("ec","Embryonal predominance",[["n","No"],["y","Yes"]],"n")+sel("ter","Substantial teratoma in primary",[["n","No"],["y","Yes"]],"n");
+  if(h==="ns"&&(s==="IIA"||s==="IIB"))x=sel("mk","Post-orchiectomy markers",[["norm","Normal"],["elev","Elevated / rising"]],"norm");
+  if((s==="IS"&&h==="ns")||s==="IIC"||s==="III"||(h==="ns"&&(s==="IIA"||s==="IIB")&&TX.o.mk==="elev")||(h==="sem"&&s==="IIB"&&TX.o.sz==="3to5")){
+    const opts=h==="sem"?[["good","Good"],["int","Intermediate (NPVM)"]]:[["good","Good"],["int","Intermediate"],["poor","Poor"]];
+    if(h==="sem"&&TX.o.risk==="poor")TX.o.risk="good";
+    x+=sel("risk","IGCCCG risk",opts,"good");
+    if(h==="sem")x+=sel("ldh","LDH >2.5× ULN?",[["n","No"],["y","Yes"]],"n");
+    x+=sel("post","After first-line chemotherapy",h==="sem"?[["none","Not yet assessed"],["cr","No mass / ≤3 cm, markers normal"],["gt3n","Mass >3 cm, PET negative"],["gt3p","Mass >3 cm, PET positive"],["rise","Rising markers / progression"]]:[["none","Not yet assessed"],["cr","Complete response (<1 cm), markers normal"],["gt1","Residual >1 cm, markers normal"],["rise","Rising markers / progression"]],"none");
+  }
+  $("#txExtra").innerHTML=x||'<span class="small" style="color:var(--ink-3)">No additional modifiers for this combination.</span>';
+}
+function out(title,cls,pref,alt,watch,div){
+  $("#txOut").innerHTML=`<span class="pill ${cls}">${title[0]}</span><h5>${title[1]}</h5><div class="grid2" style="gap:1.2rem"><div><p class="lab">Preferred</p><ul class="small">${pref.map(x=>`<li>${x}</li>`).join("")}</ul>${alt.length?`<p class="lab">Alternatives</p><ul class="small">${alt.map(x=>`<li>${x}</li>`).join("")}</ul>`:""}</div><div>${watch.length?`<p class="lab">Watch-outs</p><ul class="small">${watch.map(x=>`<li>${x}</li>`).join("")}</ul>`:""}${div?`<p class="lab">Where guidelines diverge</p><p class="small">${div}</p>`:""}</div></div>`;
+}
+function adv(){
+  const {h,o}=TX;const r=o.risk||"good";let pref=[],alt=[],w=[],div="";
+  if(r==="good"){pref=["BEP × 3"];alt=["EP × 4 (bleomycin risk: age >50, reduced GFR, lung disease, heavy smoking)"];}
+  else {pref=["BEP × 4"];alt=["VIP × 4 if bleomycin contraindicated (mandatory G-CSF)"];if(r==="poor")w.push("Refer to an experienced centre; early marker decline is prognostic. Mediastinal primary → VIP often preferred before thoracic surgery.")}
+  if(h==="sem"&&r==="good"&&o.ldh==="y"){div="LDH >2.5× ULN: NCCN — consider intensification, no consensus; EAU 2026 — four cycles for most.";}
+  w.push("Never substitute carboplatin for cisplatin; maintain dose intensity.","Sperm banking before cycle 1; brain MRI if hCG >5,000, choriocarcinoma or extensive lung disease.");
+  const p=o.post||"none";
+  if(p==="cr"){w.unshift(h==="sem"?"Residual ≤3 cm with normal markers: surveillance.":"Complete response: surveillance (EAU 2026 allows resection of visible sub-cm residua after intermediate/poor-risk disease).")}
+  if(p==="gt3n")w.unshift("PET-negative >3 cm residual (PET ≥6 weeks): surveillance.");
+  if(p==="gt3p"){w.unshift("PET-positive residual: biopsy/resection or short-interval imaging; if viable seminoma completely resected consider 2 cycles (EP, TIP, VIP or VeIP — no consensus).");div+=(div?" ":"")+"EAU 2026 cautions against relying on PET alone (PPV ~30–40%).";}
+  if(p==="gt1")w.unshift("Residual >1 cm: full bilateral template PC-RPLND (+ other sites) at a high-volume centre. Necrosis/teratoma → surveillance; viable GCT → consider EP/TIP/VIP × 2.");
+  if(p==="rise"){out(["Salvage","Progression after first-line chemotherapy"],"poor",["Confirm progression (exclude growing teratoma, false-positive markers)","TIP × 4 for favourable features, or high-dose chemotherapy (TI-CE or tandem carboplatin/etoposide) for unfavourable features"],["VeIP × 4","Clinical trial; resection of residual disease after salvage"],["TIGER (TIP vs TI-CE) has not yet reported — choice guided by prognostic score and centre expertise","Late relapse (>2 y): surgery first when resectable"],"");return}
+  return{pref,alt,w,div};
+}
+function txRender(){
+  const {h,s,o}=TX;
+  if(h==="sem"){
+    if(s==="I"){const wa=["Relapse 15–20% on surveillance (median ~12–14 months); salvage cures almost all","Use MRI abdomen to reduce radiation (TRISST)"];if(o.ibd==="y")wa.push("Avoid radiotherapy (IBD / horseshoe kidney).");
+      return out(["Stage I seminoma","Surveillance-first"],"good",o.adh==="y"?["Active surveillance"]:["Carboplatin AUC 7 × 1 (NCCN allows × 2)"],o.adh==="y"?["Carboplatin AUC 7 × 1–2","Para-aortic RT 20 Gy/10 (or 25.5 Gy/17)"]:(o.ibd==="y"?["Surveillance with support for adherence"]:["Para-aortic RT 20 Gy/10","Surveillance with adherence support"]),wa,"NCCN discourages risk-adapted adjuvant therapy; European guidance uses size to inform counselling.")}
+    if(s==="IS")return out(["Stage IS seminoma","Rare — question the markers"],"int",["Repeat markers; look for non-tumor causes (hypogonadal hCG, cannabis, other LDH sources)","Close surveillance with imaging"],["If unequivocal and rising: treat as advanced seminoma by IGCCCG"],["A rising AFP means nonseminoma","hCG >1,000 IU/L: re-review pathology"],"");
+    if(s==="IIA"){if(o.bord==="y")return out(["Stage IIA seminoma","Borderline node"],"info",["Repeat CT/MRI in 4–8 weeks before treating"],["Treat if enlarging"],["Do not treat on LDH alone"],"");
+      return out(["Stage IIA seminoma","Shared decision between modalities"],"int",["RT to para-aortic + ipsilateral iliac nodes, 30 Gy","or BEP × 3 / EP × 4"],["Nerve-sparing RPLND at a high-volume centre (SEMS 2-y RFS 81%; COTRIMS relapse 11.7%)","Carboplatin × 1 + involved-node RT (SAKK 01/10; NCCN 2B)"],["Locoregional treatment within 4 weeks of imaging","Discuss recurrence rates and the potential for dual therapy"],"RPLND long framed as investigational; NCCN lists it; EAU accepts it in experienced centres.")}
+    if(s==="IIB"){if(o.sz==="lt3")return out(["Stage IIB seminoma","Non-bulky (<3 cm)"],"int",["RT to para-aortic + ipsilateral iliac nodes, 36 Gy","or BEP × 3 / EP × 4"],["Nerve-sparing RPLND (NCCN category 2B for 2–3 cm)","Carboplatin + RT (2B)"],["Chemo preferred for bulkier disease"],"RPLND remains debated (Ch. XVII).");
+      const a=adv();if(!a)return;return out(["Stage IIB seminoma","3–5 cm: chemotherapy"],"int",a.pref,a.alt,a.w,a.div)}
+    const a=adv();if(!a)return;return out([`Stage ${s} seminoma`,`IGCCCG ${TX.o.risk==="int"?"intermediate":"good"} risk`],TX.o.risk==="int"?"int":"good",a.pref,a.alt,a.w,a.div);
+  } else {
+    if(s==="I"){const hi=o.lvi==="y";const wa=["~20–30% relapse overall, mostly within 2 years; LVI raises risk to ~40–50%","Surveillance + salvage cures ~98–99%"];if(o.ec==="y")wa.push("Embryonal predominance is a supporting, not independently validated, risk factor.");
+      const alt=hi?["BEP × 1","Nerve-sparing RPLND"+(o.ter==="y"?" — attractive with substantial teratoma":"")]:["Nerve-sparing RPLND (selected)"];if(!hi&&o.ter==="y")alt.push("RPLND favoured if surveillance is unreliable, given teratoma");
+      return out(["Stage I NSGCT",hi?"High risk (LVI)":"Low risk"],hi?"int":"good",hi?["Surveillance (if adherent) or BEP × 1 — shared decision"]:["Surveillance"],alt,wa,hi?"EAU/ESMO lean to BEP × 1 for high risk; NCCN presents surveillance, BEP × 1 and RPLND as options.":"")}
+    if(s==="IS"){const a=adv();if(!a)return;return out(["Stage IS NSGCT","Treat as advanced disease"],"int",a.pref,a.alt,["Not RPLND — persistent markers mean systemic disease","Exclude non-tumor causes and a contralateral primary"].concat(a.w),a.div)}
+    if((s==="IIA"||s==="IIB")&&o.mk!=="elev"){return out([`Stage ${s} NSGCT`,"Marker-negative"],"int",s==="IIA"?["Nerve-sparing RPLND","or BEP × 3 / EP × 4"]:["BEP × 3 / EP × 4 (most IIB)"],s==="IIA"?["Repeat imaging in 4–8 weeks if equivocal"]:["RPLND for selected marker-negative IIB in the landing zone"],["After RPLND: pN1 → surveillance; pN2 → surveillance or EP × 2; pN3 → full chemotherapy","Pure embryonal carcinoma can be marker-negative"],"")}
+    const a=adv();if(!a)return;const r=TX.o.risk||"good";return out([`Stage ${s} NSGCT`,`IGCCCG ${r==="int"?"intermediate":r} risk`],r==="good"?"good":r==="poor"?"poor":"int",a.pref,a.alt,a.w,a.div);
+  }
+}
+function txAll(){extras();txRender()}
+seg($("#txH"),d=>{TX.h=d.v;TX.o={};txAll()});seg($("#txS"),d=>{TX.s=d.v;TX.o={};txAll()});
+$("#txExtra").addEventListener("change",e=>{const k=e.target.dataset.k;if(!k)return;TX.o[k]=e.target.value;if(k==="mk"||k==="sz"){extras()}txRender()});
+$("#txReset").onclick=()=>{TX.h="sem";TX.s="I";TX.o={};$$("#txH button").forEach((b,i)=>b.setAttribute("aria-pressed",i?"false":"true"));$$("#txS button").forEach((b,i)=>b.setAttribute("aria-pressed",i?"false":"true"));txAll()};
+txAll();
+
+/* ---------- regimens ---------- */
+function rg(f){$("#rgDeck").innerHTML=REGIMENS.filter(r=>f==="all"||r.f===f).map(r=>`<div class="flash" tabindex="0"><div class="in"><div class="face"><span class="lab">${({first:"First-line",adj:"Adjuvant",salv:"Salvage",lym:"Lymphoma"})[r.f]}</span><h3 style="font-size:1.6rem">${esc(r.n)}</h3><p class="small" style="color:var(--ink-3);margin:.2rem 0 .6rem">${esc(r.sub)}</p><ul class="small" style="padding-left:1rem;margin:0">${r.d.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><span class="hint">Tap for use &amp; toxicity ↻</span></div><div class="face back"><span class="lab">Use</span><p class="a">${esc(r.use)}</p><span class="lab">Watch</span><p class="a">${esc(r.tox)}</p></div></div></div>`).join("");}
+seg($("#rgFilter"),d=>rg(d.f));rg("all");
+document.addEventListener("click",e=>{const f=e.target.closest(".flash");if(f)f.classList.toggle("flip")});
+document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.classList&&e.target.classList.contains("flash")){e.preventDefault();e.target.classList.toggle("flip")}});
+
+/* ---------- timeline & trials ---------- */
+$("#timeline").innerHTML=TIMELINE.map(t=>`<div class="tl-item" tabindex="0"><span class="yr">${t.y}</span><span class="ttl">${esc(t.t)}</span> <span class="tag ${t.tag==="sem"?"sem":t.tag==="ns"?"ns":""}">${({sem:"Seminoma",ns:"Nonseminoma",img:"Risk / imaging / markers"})[t.tag]}</span><div class="more">${esc(t.d)}</div></div>`).join("");
+$("#timeline").addEventListener("click",e=>{const it=e.target.closest(".tl-item");if(it)it.classList.toggle("open")});
+function tr(f){$("#trTable tbody").innerHTML=TRIALS.filter(t=>f==="all"||t.tags.includes(f)).map(t=>`<tr><td><b>${esc(t.n)}</b></td><td>${esc(t.set)}</td><td>${esc(t.des)}</td><td>${esc(t.res)}</td><td>${t.tags.includes("ongoing")?'<span class="tag bad">'+esc(t.st)+'</span>':esc(t.st)}</td></tr>`).join("")}
+seg($("#trFilter"),d=>tr(d.f));tr("all");
+
+/* ---------- disagreements ---------- */
+$("#dis").innerHTML='<div class="hd">Question</div>'+DIS.cols.map(c=>`<div class="hd">${esc(c)}</div>`).join("")+DIS.rows.map(r=>`<div class="q">${esc(r.q)}${r.s?' <span class="tag" style="margin-top:.3rem">split</span>':""}</div>`+r.c.map(c=>`<div class="${r.s?"split":""}">${esc(c)}</div>`).join("")).join("");
+
+/* ---------- flashcards & quiz ---------- */
+let order=CARDS.map((c,i)=>i);
+function deck(){$("#deck").innerHTML=order.map((i,n)=>`<div class="flash" tabindex="0"><div class="in"><div class="face"><span class="lab">Question ${n+1}</span><p class="q">${CARDS[i][0]}</p><span class="hint">Tap to reveal ↻</span></div><div class="face back"><span class="lab">Answer</span><p class="a">${CARDS[i][1]}</p></div></div></div>`).join("")}
+let score=0,answered=0;
+function quiz(){score=0;answered=0;$("#qScore").textContent="";$("#quiz").innerHTML=QUIZ.map((q,qi)=>`<div class="card" style="margin-bottom:1rem" data-q="${qi}"><p class="lab">Case ${qi+1}</p><p style="font-family:var(--serif);font-size:1.08rem;margin:.2rem 0 .7rem">${esc(q.q)}</p><div style="display:grid;gap:.4rem">${q.o.map((o,oi)=>`<button class="tbtn" style="justify-content:flex-start;height:auto;padding:.55rem .8rem;border-radius:10px;text-align:left" data-o="${oi}">${String.fromCharCode(65+oi)}. ${esc(o)}</button>`).join("")}</div><p class="small exp" style="display:none;margin-top:.6rem"></p></div>`).join("")}
+$("#quiz").addEventListener("click",e=>{const b=e.target.closest("button[data-o]");if(!b)return;const c=b.closest("[data-q]");if(c.dataset.done)return;c.dataset.done=1;const q=QUIZ[+c.dataset.q],oi=+b.dataset.o;$$("button",c).forEach((x,i)=>{if(i===q.a){x.style.borderColor="var(--sage)";x.style.background="var(--sage-soft)"}else if(i===oi){x.style.borderColor="var(--rose)";x.style.background="var(--rose-soft)"}});answered++;if(oi===q.a)score++;const ex=$(".exp",c);ex.style.display="block";ex.innerHTML=(oi===q.a?"<b style='color:var(--sage)'>Correct.</b> ":"<b style='color:var(--rose)'>Not quite.</b> ")+esc(q.e);$("#qScore").textContent=`Score ${score}/${answered} of ${QUIZ.length}`});
+seg($("#qMode"),d=>{const c=d.m==="cards";$("#deck").style.display=c?"":"none";$("#quiz").style.display=c?"none":"block";if(!c)quiz()});
+$("#qShuffle").onclick=()=>{for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}deck();if($("#quiz").style.display!=="none"){QUIZ.sort(()=>Math.random()-.5);quiz()}};
+deck();
+
+/* ---------- search ---------- */
+const idx=[];
+chapters.forEach(c=>{$$("p,li,td,h3,h4,.card,figcaption,.pearl,.tl-item,.flash .face",c).forEach(el=>{if(el.closest(".search"))return;const t=el.textContent.replace(/\s+/g," ").trim();if(t.length>12)idx.push({el,t,ch:c.dataset.title,id:c.id})})});
+const sbox=$("#search"),q=$("#q"),res=$("#res");let sIdx=0,hits=[];
+function openS(){sbox.classList.add("open");q.value="";res.innerHTML='<div class="r"><span>Type at least two characters. Enter to jump, Esc to close.</span></div>';setTimeout(()=>q.focus(),20)}
+function closeS(){sbox.classList.remove("open")}
+$("#searchBtn").onclick=openS;$("#heroSearch").onclick=openS;
+sbox.addEventListener("click",e=>{if(e.target===sbox)closeS()});
+q.addEventListener("input",()=>{const s=q.value.trim().toLowerCase();if(s.length<2){res.innerHTML="";hits=[];return}const terms=s.split(/\s+/);const seen=new Set();hits=idx.filter(o=>{const l=o.t.toLowerCase();return terms.every(t=>l.includes(t))}).filter(o=>{const k=o.t.slice(0,80);if(seen.has(k))return false;seen.add(k);return true}).slice(0,40);sIdx=0;
+  const re=new RegExp("("+terms.map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).join("|")+")","gi");
+  res.innerHTML=hits.length?hits.map((h,i)=>{const l=h.t.toLowerCase();const p=Math.max(0,l.indexOf(terms[0])-60);const snip=(p?"…":"")+h.t.slice(p,p+180)+(h.t.length>p+180?"…":"");return `<a class="r ${i?"":"sel"}" href="#" data-i="${i}"><b>${esc(h.ch)}</b><span>${esc(snip).replace(re,"<mark>$1</mark>")}</span></a>`}).join(""):'<div class="r"><span>No matches.</span></div>'});
+function go(i){const h=hits[i];if(!h)return;closeS();const panel=h.el.closest(".panel");if(panel&&!panel.classList.contains("on")){const b=$(`.tabs button[data-p="${panel.id}"]`);if(b)b.click()}const ti=h.el.closest(".tl-item");if(ti)ti.classList.add("open");h.el.scrollIntoView({behavior:"smooth",block:"center"});h.el.classList.remove("hl-flash");void h.el.offsetWidth;h.el.classList.add("hl-flash")}
+res.addEventListener("click",e=>{const a=e.target.closest("a.r");if(!a)return;e.preventDefault();go(+a.dataset.i)});
+q.addEventListener("keydown",e=>{const rs=$$("a.r",res);if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();sIdx=Math.max(0,Math.min(rs.length-1,sIdx+(e.key==="ArrowDown"?1:-1)));rs.forEach((r,i)=>r.classList.toggle("sel",i===sIdx));rs[sIdx]&&rs[sIdx].scrollIntoView({block:"nearest"})}if(e.key==="Enter"){e.preventDefault();go(sIdx)}});
+document.addEventListener("keydown",e=>{const typing=/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName);if(e.key==="Escape"){closeS();$("#rail").classList.remove("open")}if(typing)return;if(e.key==="/"||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k")){e.preventDefault();openS()}if(e.key==="t")setTheme(root.dataset.theme==="dark"?"light":"dark")});
+
+/* ---------- print ---------- */
+addEventListener("beforeprint",()=>{$$(".tl-item").forEach(t=>t.classList.add("open"));$("#deck").style.display="";});
+})();
+
+</script>
+</body>
+</html>
