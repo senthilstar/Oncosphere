@@ -58,22 +58,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42896419/"
   },
   {
-    "pmid": "42874359",
-    "title": "An aggregation-induced emission fluorescent microsphere-based intelligent lateral flow immunosensor for rapid and quantitative detection of prostate-specific antigen.",
-    "journal": "Talanta",
-    "pubdate": "2027 Mar 1",
-    "authors": [
-      "Wu Y",
-      "Wang Y",
-      "Huang X",
-      "Chen G",
-      "Gu Y",
-      "Wang X",
-      "Liu Q"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42874359/"
-  },
-  {
     "pmid": "42999803",
     "title": "Outcomes of Patients with Rare Cancers Treated with Immune Checkpoint Inhibitors with and Without Lung and/or Liver Metastases (NCI/SWOG S1609).",
     "journal": "Journal of immunotherapy and precision oncology",
@@ -264,5 +248,15 @@
       "Pereira Gimba ER"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42918430/"
+  },
+  {
+    "pmid": "42869113",
+    "title": "Single-gRNA CRISPR/eCas9-mediated simultaneous targeting of cIAP1 and cIAP2 in colorectal cancer cells: RNA-seq reveals distinct transcriptomic and apoptotic responses.",
+    "journal": "Gene",
+    "pubdate": "2027 Jan 5",
+    "authors": [
+      "Batır MB"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42869113/"
   }
 ]
