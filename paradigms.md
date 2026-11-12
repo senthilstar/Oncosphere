@@ -10,7 +10,15 @@ permalink: /paradigms/
 Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it means for India” note in every post.
 
 ## Subtopics
-- [First-line systemic therapy](#first-line) · [Lung](#lung) · [Breast](#breast) · [GI](#gi) · [Bladder / GU](#bladder) · [Sarcoma](#sarcoma) · [Immunotherapy — dostarlimab](#immuno) · [Trial briefs](#trial-briefs) · [FDA approvals](#fda) · [Conferences](#conferences)
+- [First-line systemic therapy](#first-line) · [Lung](#lung) · [Breast](#breast) · [GI](#gi) · [Bladder / GU](#bladder) · [Sarcoma](#sarcoma) · [Immunotherapy — dostarlimab](#immuno) · [Trial briefs](#trial-briefs) · [FDA approvals](#fda) · [Conferences](#conferences) · [What changed this week](#this-week)
+
+## What changed this week (6–12 Nov 2026) {#this-week}
+A short weekly blurb on what moved in oncology regulation and on this site. Updated 12 Nov 2026.
+
+- **Two FDA oncology approvals.** On 5 Nov the FDA granted accelerated approval to subcutaneous amivantamab (Rybrevant Faspro) for recurrent or metastatic head and neck squamous cell carcinoma after platinum chemotherapy and an anti-PD-(L)1 antibody; it is not indicated for HPV-associated oropharyngeal cancer ([FDA notice](https://www.fda.gov/drugs/cancer-approvals/oncology-cancerhematologic-malignancies-approval-notifications); [our note]({{ '/rybrevant-faspro-hnscc-fda-approval/' | relative_url }})). On 10 Nov it approved pimicotinib (Pimjetmi) for symptomatic tenosynovial giant cell tumour where surgery may worsen function or cause severe morbidity ([FDA notice](https://www.fda.gov/drugs/cancer-approvals/fda-approves-pimicotinib-symptomatic-tenosynovial-giant-cell-tumor); [our note]({{ '/pimicotinib-tgct-fda-approval/' | relative_url }})).
+- **Still pending: ivonescimab (target date 14 Nov).** As of 12 Nov no FDA decision on ivonescimab plus chemotherapy after a third-generation EGFR TKI (HARMONi) had been announced. The open question is whether a nominal later overall-survival analysis is enough after a non-significant primary one. Neladalkib (27 Nov) and adjuvant giredestrant (30 Nov) follow ([decisions to watch]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }})).
+- **New on Oncosphere this week:** an [ESMO 2026 week update]({{ '/esmo-2026-week-update/' | relative_url }}), a [lung cancer staging puzzle]({{ '/lung-cancer-staging-puzzle/' | relative_url }}) on TNM 9th edition, an [illustration of four strategies after osimertinib]({{ '/egfr-nsclc-after-osimertinib-2026-phase-3-options/' | relative_url }}), and a [SITC 2026 late-breakers note]({{ '/sitc-2026-late-breakers/' | relative_url }}).
+- **For readers in India:** none of these three drugs is approved by CDSCO; an FDA decision says nothing about Indian availability or price.
 
 ## First-line systemic therapy {#first-line}
 - [First-line systemic therapy in advanced cancers]({{ '/first-line-systemic-therapy-in-advanced-cancers/' | relative_url }})

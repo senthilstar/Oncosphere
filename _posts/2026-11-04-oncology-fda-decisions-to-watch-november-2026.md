@@ -1,7 +1,7 @@
 ---
 title: "Three oncology FDA decisions to watch in November 2026"
 cover: news
-updated: 2026-11-04
+updated: 2026-11-12
 category: News
 audience: clinicians
 summary: "FDA target dates this month: ivonescimab + chemo after EGFR-TKI failure (14 Nov), neladalkib in TKI-pretreated ALK+ NSCLC (27 Nov) and adjuvant giredestrant in ER+/HER2- early breast cancer (30 Nov)."
@@ -51,4 +51,6 @@ Giredestrant is an oral SERD. lidERA (n≈4,170, open-label) compared 5 years of
 {% include chart.html title="lidERA: 3-year invasive disease-free survival" labels="Giredestrant|Standard endocrine therapy" values="92.4|89.6" max="100" unit="%" note="Roche, 2 Jun 2026. HR 0.70 (0.57–0.87). OS immature." %}
 
 ## For readers in India
-An FDA decision does not mean CDSCO approval, availability or affordability here. We will update this note when each decision is announced. See also the [October 2026 FDA approvals roundup]({{ '/fda-oncology-approvals-october-2026/' | relative_url }}).
+An FDA decision does not mean CDSCO approval, availability or affordability here. We will update this note when each decision is announced.
+
+**Status, 12 Nov 2026:** no decision has been announced yet on any of the three applications. See [what changed this week]({{ '/paradigms/#this-week' | relative_url }}). See also the [October 2026 FDA approvals roundup]({{ '/fda-oncology-approvals-october-2026/' | relative_url }}).
