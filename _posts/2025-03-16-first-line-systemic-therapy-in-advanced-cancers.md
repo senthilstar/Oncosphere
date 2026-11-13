@@ -1,7 +1,7 @@
 ---
 title: "First-Line Systemic Therapy in Advanced Cancers"
 display_date: 2024-05-08
-updated: 2026-10-24
+updated: 2026-11-14
 category: Treatment paradigms
 cover: paradigm
 audience: clinicians and informed patients
@@ -15,17 +15,17 @@ sources:
     url: https://www.esmo.org/guidelines
   - title: ASCO Guidelines
     url: https://www.asco.org/guidelines
-  - title: "Garassino MC, et al. KEYNOTE-189 5-year outcomes. J Clin Oncol 2023"
+  - title: "KEYNOTE-189 5-year outcomes — J Clin Oncol 2023"
     url: https://ascopubs.org/doi/10.1200/JCO.22.01989
-  - title: "Planchard D, et al. FLAURA2 overall survival. N Engl J Med 2025"
+  - title: "FLAURA2 overall survival — N Engl J Med 2025"
     url: https://www.nejm.org/doi/10.1056/NEJMoa2510308
-  - title: "Powles T, et al. EV-302: enfortumab vedotin + pembrolizumab. N Engl J Med 2024"
+  - title: "EV-302: enfortumab vedotin + pembrolizumab — N Engl J Med 2024"
     url: https://www.nejm.org/doi/full/10.1056/NEJMoa2312117
-  - title: "Janjigian YY, et al. CheckMate 649. Lancet 2021"
+  - title: "CheckMate 649 — Lancet 2021"
     url: https://doi.org/10.1016/S0140-6736(21)00797-2
   - title: ICMR — consensus documents for management of cancers
     url: https://www.icmr.gov.in/
-  - title: "Temel JS, et al. Early palliative care for metastatic NSCLC. N Engl J Med 2010"
+  - title: "Early palliative care for metastatic NSCLC — N Engl J Med 2010"
     url: https://www.nejm.org/doi/full/10.1056/NEJMoa1000678
 ---
 Choosing the right first-line systemic therapy is crucial in managing advanced cancers. The treatment approach depends on cancer type, histology, molecular markers, and patient factors. From targeted therapies to immunotherapy and chemotherapy, precision medicine is reshaping cancer care. Read more to explore the latest guidelines, treatment strategies, and advancements in systemic therapy for advanced cancers!
@@ -45,7 +45,7 @@ Choosing the right first-line systemic therapy is crucial in managing advanced c
 | [Urothelial](#urothelial) | FGFR2/3; (PD-L1 rarely decisive now) |
 | Any solid tumour | MMR/MSI, TMB, NTRK — tissue-agnostic options |
 
-**More first-line principles:** [biliary/gallbladder](#biliary) · [endometrial](#endometrial) · [renal cell](#rcc) · [medullary thyroid](#mtc)
+**First-line principles by cancer (full pages):** [urothelial](/first-line/urothelial-bladder-cancer/) · [renal cell](/first-line/renal-cell-carcinoma/) · [endometrial](/first-line/endometrial-carcinoma/) · [medullary thyroid](/first-line/medullary-thyroid-cancer/) · [gallbladder/biliary](/first-line/gallbladder-biliary-cancer/) · [locally advanced pancreatic](/first-line/locally-advanced-pancreatic-cancer/) · [CLL](/first-line/chronic-lymphocytic-leukaemia/) · [HER2+ metastatic breast](/first-line/her2-positive-metastatic-breast-cancer/) · [stage IV lung adenocarcinoma](/stage4-lung-adenocarcinoma/) · [hub](/first-line/)
 
 ## Step 3 — Match the therapy
 - **Driver-positive** → targeted therapy first (e.g. osimertinib ± chemotherapy in EGFR-mutant NSCLC; alectinib/lorlatinib in ALK).
@@ -57,39 +57,47 @@ Choosing the right first-line systemic therapy is crucial in managing advanced c
 <p class="chart-note">Sources: <a href="https://pubmed.ncbi.nlm.nih.gov/36809080/">KEYNOTE-189 (OS 22.0 vs 10.6 mo, HR 0.60)</a> · <a href="https://www.nejm.org/doi/10.1056/NEJMoa2510308">FLAURA2 (HR 0.77)</a> · <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2312117">EV-302 (HR 0.47)</a></p>
 
 ## First-line principles by cancer
-Click a cancer name above or below. Principles condensed from Dr. Senthil Kumar's X threads; numbers as stated there.
+Each cancer now has its own page — click a name, or see [all first-line principles]({{ '/first-line/' | relative_url }}).
 
-### Urothelial / bladder cancer {#urothelial}
+### [Urothelial / bladder cancer]({{ '/first-line/urothelial-bladder-cancer/' | relative_url }}) {#urothelial}
 - Confirm urothelial histology; document variant differentiation — it can change the pathway.
 - Cisplatin eligibility by Galsky criteria (any one: ECOG PS 2, CrCl <60 mL/min, grade ≥2 hearing loss or neuropathy, NYHA III).
 - **Preferred first line: enfortumab vedotin + pembrolizumab**, across cisplatin eligibility and PD-L1 groups.
 - EV unsuitable/unavailable: cisplatin-eligible → gemcitabine–cisplatin + nivolumab (up to 6 cycles), then nivolumab; platinum chemo then **avelumab maintenance** if no progression after 4–6 cycles (JAVELIN Bladder 100).
-- Test FGFR3 (validated assay) for later erdafitinib. [Thread](https://x.com/esenthil84/status/2106351975801794591)
+- Test FGFR3 (validated assay) for later erdafitinib.
 
-### Gallbladder / biliary tract cancer {#biliary}
+### [Gallbladder / biliary tract cancer]({{ '/first-line/gallbladder-biliary-cancer/' | relative_url }}) {#biliary}
 - Not all biliary tract cancer is biologically identical; pathology and baseline liver/biliary status matter.
 - Molecular testing **early** — HER2 IHC ± ISH, MSI/MMR, broad panel when possible.
 - ABC-02 set the gem–cis backbone; **chemo-immunotherapy** (KEYNOTE-966: pembrolizumab + GemCis, mOS 12.7 vs 10.9 mo, HR 0.83) is first line.
 - HER2 is a key gallbladder target; oligoprogression → consider local therapy, don't abandon effective systemic therapy.
-- LMIC: if NGS unaffordable, prioritise HER2 IHC, then MMR/MSI. [Thread](https://x.com/esenthil84/status/2106811155616596104)
+- LMIC: if NGS unaffordable, prioritise HER2 IHC, then MMR/MSI.
 
-### Endometrial carcinoma {#endometrial}
+### [Endometrial carcinoma]({{ '/first-line/endometrial-carcinoma/' | relative_url }}) {#endometrial}
 - First line has moved from chemotherapy alone to molecularly informed treatment — know MMR status.
-- Dostarlimab + carboplatin–paclitaxel (RUBY Part 1): dMMR/MSI-H 24-month PFS 61.4% vs 15.7% (HR 0.28); overall OS 44.6 vs 28.2 mo.
-- Cytoreduction when complete macroscopic resection is achievable. [Thread](https://x.com/esenthil84/status/2105367956545011741)
+- Dostarlimab + carboplatin–paclitaxel (RUBY Part 1): dMMR/MSI-H 24-month PFS 61.4% vs 15.7% (HR 0.28); overall-population OS HR 0.69.
+- Cytoreduction when complete macroscopic resection is achievable.
 
-### Renal cell carcinoma {#rcc}
+### [Renal cell carcinoma]({{ '/first-line/renal-cell-carcinoma/' | relative_url }}) {#rcc}
 - Confirm histology (clear cell, papillary, chromophobe…) — it drives the regimen.
-- IO-based combinations are the first-line standard; triplets add toxicity: COSMIC-313 (cabozantinib + nivo/ipi) improved PFS 16.6 vs 11.2 mo but not OS (41.9 vs 42.0 mo, HR 1.02). [Thread](https://x.com/esenthil84/status/2106089025635504287)
+- IO-based combinations are the first-line standard; triplets add toxicity: COSMIC-313 (cabozantinib + nivo/ipi) improved PFS 16.6 vs 11.2 mo but not OS (HR 1.02).
 
-### Medullary thyroid cancer {#mtc}
-- Systemic therapy for advanced/metastatic MTC is a separate pathway from differentiated thyroid cancer; RET status guides choice. [Thread](https://x.com/esenthil84/status/2105479646527770882)
+### [Medullary thyroid cancer]({{ '/first-line/medullary-thyroid-cancer/' | relative_url }}) {#mtc}
+- Systemic therapy for advanced/metastatic MTC is a separate pathway from differentiated thyroid cancer; RET status guides choice.
 
-### NSCLC {#nsclc}
+### [Locally advanced pancreatic cancer]({{ '/first-line/locally-advanced-pancreatic-cancer/' | relative_url }}) {#pancreas}
+- Expert MDT confirms "unresectable" on anatomy; induction chemotherapy by fitness, then reassess for conversion surgery.
+- Germline BRCA1/2 and PALB2 testing for everyone.
+
+### [Chronic lymphocytic leukaemia]({{ '/first-line/chronic-lymphocytic-leukaemia/' | relative_url }}) {#cll}
+- Treat only for active disease; TP53/del(17p) and IGHV status before choosing.
+- Continuous BTK inhibitor or fixed-duration venetoclax-based therapy; chemoimmunotherapy is now a niche.
+
+### [NSCLC]({{ '/stage4-lung-adenocarcinoma/' | relative_url }}) {#nsclc}
 - Broad NGS + PD-L1 before cycle 1; driver-positive → targeted therapy (osimertinib ± chemo in EGFR). See [FLAURA2]({{ '/flaura-2-trial/' | relative_url }}).
 
 ### Breast cancer {#breast}
-- ER/PR, HER2 (incl. HER2-low), germline BRCA; ADCs moving earlier. See [DESTINY-Breast11]({{ '/destiny-breast-11-trial/' | relative_url }}) and [ESR1 brief]({{ '/trial-briefs-october-2026/' | relative_url }}).
+- ER/PR, HER2 (incl. HER2-low), germline BRCA; ADCs moving earlier. HER2-positive metastatic disease: [first-line principles page]({{ '/first-line/her2-positive-metastatic-breast-cancer/' | relative_url }}). See [DESTINY-Breast11]({{ '/destiny-breast-11-trial/' | relative_url }}) and [ESR1 brief]({{ '/trial-briefs-october-2026/' | relative_url }}).
 
 ### Colorectal cancer {#colorectal}
 - RAS, BRAF V600E, MMR/MSI, HER2 first; dMMR → immunotherapy. See [dostarlimab in MSI-H rectal]({{ '/dostarlimab-msi-h-rectal-cancer/' | relative_url }}) and [ASCO GI 2026]({{ '/asco-gi-2026/' | relative_url }}).
@@ -100,7 +108,7 @@ Click a cancer name above or below. Principles condensed from Dr. Senthil Kumar'
 ## Step 4 — Practicalities
 - Check drug access, insurance (CMCHIS, PM-JAY) and travel burden before promising a regimen.
 - Baseline TSH, cortisol, LFTs before immunotherapy; LVEF before anti-HER2; ophthalmic/ILD counselling with relevant ADCs.
-- Discuss palliative care early — improves quality of life and, in one RCT, survival (Temel, NEJM 2010).
+- Discuss palliative care early — improves quality of life and, in one RCT, survival (NEJM 2010).
 
 ## Step 5 — Read the evidence critically
 - **Overall survival is the gold standard**, but crossover dilutes it. In KEYNOTE-189, more than half of chemo-arm patients later received anti-PD-(L)1 therapy, yet OS still favoured upfront pembrolizumab (HR 0.60; 5-year OS 19.4% vs 11.3%). <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/36809080/">[JCO 2023]</a>

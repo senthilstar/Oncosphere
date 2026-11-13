@@ -23,6 +23,11 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - **For readers in India:** none of these three drugs is approved by CDSCO; an FDA decision says nothing about Indian availability or price.
 
 ## First-line systemic therapy {#first-line}
+
+- [First-line principles by cancer — hub]({{ '/first-line/' | relative_url }})
+
+[Urothelial / bladder cancer]({{ '/first-line/urothelial-bladder-cancer/' | relative_url }}) · [Renal cell carcinoma]({{ '/first-line/renal-cell-carcinoma/' | relative_url }}) · [Endometrial carcinoma]({{ '/first-line/endometrial-carcinoma/' | relative_url }}) · [Medullary thyroid cancer]({{ '/first-line/medullary-thyroid-cancer/' | relative_url }}) · [Gallbladder / biliary cancer]({{ '/first-line/gallbladder-biliary-cancer/' | relative_url }}) · [Locally advanced pancreatic cancer]({{ '/first-line/locally-advanced-pancreatic-cancer/' | relative_url }}) · [Chronic lymphocytic leukaemia]({{ '/first-line/chronic-lymphocytic-leukaemia/' | relative_url }}) · [HER2-positive metastatic breast cancer]({{ '/first-line/her2-positive-metastatic-breast-cancer/' | relative_url }})
+
 - [First-line systemic therapy in advanced cancers]({{ '/first-line-systemic-therapy-in-advanced-cancers/' | relative_url }})
 
 ## Lung {#lung}
