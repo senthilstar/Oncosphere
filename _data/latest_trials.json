@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT04128748",
-    "title": "Liposomal Cytarabine and Daunorubicin (CPX-351) and Quizartinib for the Treatment of Acute Myeloid Leukemia and High Risk Myelodysplastic Syndrome",
+    "nct": "NCT07672483",
+    "title": "IL-12 Genetically Engineered Myeloid Cells in Participants With Relapsed, Refractory Solid Tumors",
+    "status": "RECRUITING",
+    "phase": "PHASE1",
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT07672483"
+  },
+  {
+    "nct": "NCT01366144",
+    "title": "Veliparib, Paclitaxel, and Carboplatin in Treating Patients With Solid Tumors That Are Metastatic or Cannot Be Removed by Surgery and Liver or Kidney Dysfunction",
     "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT04128748"
+    "phase": "PHASE1",
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT01366144"
   },
   {
-    "nct": "NCT07929415",
-    "title": "Single Versus Double Stapling and Two Purse-String Techniques in Rectal Cancer Surgery",
+    "nct": "NCT05564377",
+    "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Locally Advanced or Advanced Solid Tumors, The ComboMATCH Screening Trial",
     "status": "RECRUITING",
-    "phase": "NA",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT07929415"
-  },
-  {
-    "nct": "NCT07796373",
-    "title": "Nemtabrutinib for Chronic Lymphocytic Leukemia (CLL)/Small Lymphocytic Leukemia (SLL) Refractory to Covalent Bruton Tyrosine Kinase Inhibitor or Pirtobrutinib and Previously Treated With a BCL2 Inhibitor",
-    "status": "NOT_YET_RECRUITING",
     "phase": "PHASE2",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT07796373"
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT05564377"
   },
   {
-    "nct": "NCT07144683",
-    "title": "Anastomotic Leakage After Colorectal Surgery.",
-    "status": "RECRUITING",
-    "phase": "Not applicable",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT07144683"
-  },
-  {
-    "nct": "NCT06841354",
-    "title": "A Study of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) as Monotherapy and in Combination With Pembrolizumab (MK-3475) in Participants With Triple-Negative Breast Cancer (MK-2870-011/TroFuse-011)",
+    "nct": "NCT06472245",
+    "title": "Trial of Therapeutic Cancer Vaccine OSE2101 in Patients With Non-Small Cell Lung Cancer and Secondary Resistance to Immune Checkpoint Inhibitor",
     "status": "RECRUITING",
     "phase": "PHASE3",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT06841354"
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT06472245"
   },
   {
-    "nct": "NCT04561791",
-    "title": "Evaluation of Tethered Capsule Endomicroscopy as a Screening Tool for Barrett's Esophagus in the Primary Care Setting",
-    "status": "ENROLLING_BY_INVITATION",
-    "phase": "NA",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT04561791"
-  },
-  {
-    "nct": "NCT06353386",
-    "title": "Substudy 01A: Safety and Efficacy of Opevesostat (MK-5684)-Based Treatment Combinations or Opevesostat Alone in Participants With Metastatic Castration-resistant Prostate Cancer (mCRPC) (MK-5684-01A)",
+    "nct": "NCT01695941",
+    "title": "Alisertib, Bortezomib, and Rituximab in Treating Patients With Relapsed or Refractory Mantle Cell Lymphoma or B-cell Low Grade Non-Hodgkin Lymphoma",
     "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT06353386"
-  },
-  {
-    "nct": "NCT07929961",
-    "title": "Study of MC001 in Patients With Advanced Solid Tumours",
-    "status": "NOT_YET_RECRUITING",
     "phase": "PHASE1",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT07929961"
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT01695941"
   },
   {
-    "nct": "NCT06848088",
-    "title": "A Study to Learn About the Long-Term Health of Adult Participants From a Previous Study of a New Melanoma Treatment",
+    "nct": "NCT04683653",
+    "title": "Study of Pelvic Hypofractionated Radiotherapy in Endometrial Cancer",
+    "status": "RECRUITING",
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT04683653"
+  },
+  {
+    "nct": "NCT00068003",
+    "title": "Harvesting Cells for Experimental Cancer Treatments",
+    "status": "ENROLLING_BY_INVITATION",
+    "phase": "Not applicable",
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT00068003"
+  },
+  {
+    "nct": "NCT04071223",
+    "title": "Testing the Addition of a New Anti-cancer Drug, Radium-223 Dichloride, to the Usual Treatment (Cabozantinib) for Advanced Renal Cell Cancer That Has Spread to the Bone, RadiCaL Study",
     "status": "ACTIVE_NOT_RECRUITING",
     "phase": "PHASE2",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT06848088"
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT04071223"
   },
   {
-    "nct": "NCT06985784",
-    "title": "Virtual Reality Interventions for the Improvement of Depression, Anxiety and Pain in Patients With Head and Neck Cancer and Caregivers",
+    "nct": "NCT06844981",
+    "title": "Effects of Latin Dancing on Sleep Quality in Hispanic Cancer Survivors",
     "status": "RECRUITING",
     "phase": "NA",
-    "updated": "2026-11-10",
-    "url": "https://clinicaltrials.gov/study/NCT06985784"
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT06844981"
+  },
+  {
+    "nct": "NCT07376330",
+    "title": "Molecular and Cellular Characterization of MALT Lymphoma",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-11-12",
+    "url": "https://clinicaltrials.gov/study/NCT07376330"
   }
 ]

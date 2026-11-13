@@ -36,28 +36,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42901134/"
   },
   {
-    "pmid": "42896419",
-    "title": "Genetically engineering mast cells as effectors for targeted cancer cell cytotoxicity.",
-    "journal": "Biomaterials",
-    "pubdate": "2027 Mar",
-    "authors": [
-      "Han X",
-      "Wen D",
-      "Fu R",
-      "Soto J",
-      "Song Y",
-      "Wu Y",
-      "Wang Z",
-      "Lin X",
-      "Yu J",
-      "Sheng T",
-      "Li S",
-      "Gu Z",
-      "He K"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42896419/"
-  },
-  {
     "pmid": "42999803",
     "title": "Outcomes of Patients with Rare Cancers Treated with Immune Checkpoint Inhibitors with and Without Lung and/or Liver Metastases (NCI/SWOG S1609).",
     "journal": "Journal of immunotherapy and precision oncology",
@@ -74,6 +52,38 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42999803/"
   },
   {
+    "pmid": "42987517",
+    "title": "N-heterocyclic engineering of covalent organic framework (COF)-microenvironments for the development of enzyme-based biosensor with application to lung cancer diagnosis.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Feb 1",
+    "authors": [
+      "Zhou T",
+      "Wang Z",
+      "Deng Y",
+      "Sun Y",
+      "Xue M",
+      "Bo B",
+      "Wang Z",
+      "Li G"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42987517/"
+  },
+  {
+    "pmid": "42987515",
+    "title": "Rapid and sensitive electrochemical point-of-care testing for the chemotherapy agent cisplatin via Co-catalyzed hydrolysis of a glucose derivative.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Feb 1",
+    "authors": [
+      "Xia L",
+      "Zhang J",
+      "Hu X",
+      "Cheng N",
+      "Yuan R",
+      "Zhou R"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42987515/"
+  },
+  {
     "pmid": "42960010",
     "title": "Nanobiomechanics in Oncology: Atomic Force Microscopy for Cancer Mechanophenotyping Using Cellular Young's Modulus.",
     "journal": "Journal of the Royal Society of New Zealand",
@@ -86,6 +96,52 @@
       "Guan G"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42960010/"
+  },
+  {
+    "pmid": "42956580",
+    "title": "Activatable self-reinforcing nanoplatforms potentiate ferroptosis via starvation and photothermal sensitization for amplified cancer therapy.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Feb 1",
+    "authors": [
+      "Zhao JY",
+      "Wang S",
+      "Qin K",
+      "Wang LJ",
+      "Zhang CY"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42956580/"
+  },
+  {
+    "pmid": "42956579",
+    "title": "Nanozyme-engineered stress-resistant microalgae S.t.@CuMgHCF for tumor microenvironment regulation.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Feb 1",
+    "authors": [
+      "Tan H",
+      "Bai L",
+      "Long L",
+      "Zeng H",
+      "Zhang Q",
+      "Hao T",
+      "Guo Z"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42956579/"
+  },
+  {
+    "pmid": "42945784",
+    "title": "Functional double-emulsion droplets enable multiplexed CRISPR quantification of cancer-related miRNAs.",
+    "journal": "Biosensors & bioelectronics",
+    "pubdate": "2027 Feb 1",
+    "authors": [
+      "Zhang Y",
+      "Deng F",
+      "Sang R",
+      "Liu L",
+      "Barber TJ",
+      "Goldys EM",
+      "Li M"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42945784/"
   },
   {
     "pmid": "42945694",
@@ -197,66 +253,5 @@
       "Lin M"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42901111/"
-  },
-  {
-    "pmid": "42892232",
-    "title": "A logic-gated DNA nanocascade for dual-RNA imaging in a triple-negative breast cancer cell model.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Liu G",
-      "Zhen J",
-      "Shan H",
-      "Zang Y",
-      "Li Y",
-      "He P",
-      "Zhou H",
-      "Wang Q"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42892232/"
-  },
-  {
-    "pmid": "42879935",
-    "title": "Fibroblast activation protein-α-triggered photoacoustic signal \"on\" for pancreatic tumor imaging.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Tang R",
-      "Zhang Z",
-      "Zhu L",
-      "Xu HD",
-      "Zhang T",
-      "Yang Y",
-      "Zhan W",
-      "Zhou S",
-      "Liang G"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42879935/"
-  },
-  {
-    "pmid": "42918430",
-    "title": "Osteopontin primary transcript generates exonic circRNA molecules by back splicing in tumor cell lines.",
-    "journal": "Gene",
-    "pubdate": "2027 Jan 10",
-    "authors": [
-      "Mendonça de Mattos MM",
-      "Martins Vargas SO",
-      "Robertson LT",
-      "de Oliveira Pereira I",
-      "Mattos DS",
-      "Silva GR",
-      "Pereira Gimba ER"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42918430/"
-  },
-  {
-    "pmid": "42869113",
-    "title": "Single-gRNA CRISPR/eCas9-mediated simultaneous targeting of cIAP1 and cIAP2 in colorectal cancer cells: RNA-seq reveals distinct transcriptomic and apoptotic responses.",
-    "journal": "Gene",
-    "pubdate": "2027 Jan 5",
-    "authors": [
-      "Batır MB"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42869113/"
   }
 ]
