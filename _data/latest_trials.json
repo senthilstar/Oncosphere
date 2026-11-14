@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT07672483",
-    "title": "IL-12 Genetically Engineered Myeloid Cells in Participants With Relapsed, Refractory Solid Tumors",
-    "status": "RECRUITING",
-    "phase": "PHASE1",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT07672483"
-  },
-  {
-    "nct": "NCT01366144",
-    "title": "Veliparib, Paclitaxel, and Carboplatin in Treating Patients With Solid Tumors That Are Metastatic or Cannot Be Removed by Surgery and Liver or Kidney Dysfunction",
+    "nct": "NCT03367741",
+    "title": "Cabozantinib S-malate and Nivolumab in Treating Patients With Advanced, Recurrent, or Metastatic Endometrial Cancer",
     "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE1",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT01366144"
-  },
-  {
-    "nct": "NCT05564377",
-    "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Locally Advanced or Advanced Solid Tumors, The ComboMATCH Screening Trial",
-    "status": "RECRUITING",
     "phase": "PHASE2",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT05564377"
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT03367741"
   },
   {
-    "nct": "NCT06472245",
-    "title": "Trial of Therapeutic Cancer Vaccine OSE2101 in Patients With Non-Small Cell Lung Cancer and Secondary Resistance to Immune Checkpoint Inhibitor",
-    "status": "RECRUITING",
-    "phase": "PHASE3",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT06472245"
-  },
-  {
-    "nct": "NCT01695941",
-    "title": "Alisertib, Bortezomib, and Rituximab in Treating Patients With Relapsed or Refractory Mantle Cell Lymphoma or B-cell Low Grade Non-Hodgkin Lymphoma",
+    "nct": "NCT04439266",
+    "title": "Testing Crizotinib as a Potential Targeted Treatment in Cancers With ALK Genetic Changes (MATCH-Subprotocol F)",
     "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE1",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT01695941"
+    "phase": "PHASE2",
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT04439266"
   },
   {
-    "nct": "NCT04683653",
-    "title": "Study of Pelvic Hypofractionated Radiotherapy in Endometrial Cancer",
+    "nct": "NCT07027423",
+    "title": "BOLD-100 Plus Doxorubicin in Advanced Soft Tissue Sarcomas",
+    "status": "WITHDRAWN",
+    "phase": "PHASE1",
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT07027423"
+  },
+  {
+    "nct": "NCT00602641",
+    "title": "Melphalan, Prednisone, and Thalidomide or Lenalidomide in Treating Patients With Newly Diagnosed Multiple Myeloma",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE3",
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT00602641"
+  },
+  {
+    "nct": "NCT01386385",
+    "title": "Veliparib With or Without Radiation Therapy, Carboplatin, and Paclitaxel in Patients With Stage III Non-small Cell Lung Cancer That Cannot Be Removed by Surgery",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT01386385"
+  },
+  {
+    "nct": "NCT07935317",
+    "title": "A Study of Tersolisib (LY4064809) and Abemaciclib With Hormone Therapies in Participants With PIK3CA-Mutated Early Breast Cancer",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT07935317"
+  },
+  {
+    "nct": "NCT07937124",
+    "title": "An All-Oral Combination of Ivosidenib, Sonrotoclax, and Chidamide for Newly Diagnosed Acute Myeloid Leukemia With an IDH1 Mutation (ISC)",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT07937124"
+  },
+  {
+    "nct": "NCT06805825",
+    "title": "A Study of the c-Kit Specific Antibody-Drug Conjugate NN3201 for Advanced and/or Metastatic Solid Tumors Known to Express c-Kit",
+    "status": "RECRUITING",
+    "phase": "PHASE1",
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT06805825"
+  },
+  {
+    "nct": "NCT02595892",
+    "title": "Gemcitabine Hydrochloride Alone or With M6620 in Treating Patients With Recurrent Ovarian, Primary Peritoneal, or Fallopian Tube Cancer",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT02595892"
+  },
+  {
+    "nct": "NCT03934372",
+    "title": "Safety and Efficacy of Ponatinib for Treatment of Pediatric Recurrent or Refractory Leukemias, Lymphomas or Solid Tumors",
     "status": "RECRUITING",
     "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT04683653"
-  },
-  {
-    "nct": "NCT00068003",
-    "title": "Harvesting Cells for Experimental Cancer Treatments",
-    "status": "ENROLLING_BY_INVITATION",
-    "phase": "Not applicable",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT00068003"
-  },
-  {
-    "nct": "NCT04071223",
-    "title": "Testing the Addition of a New Anti-cancer Drug, Radium-223 Dichloride, to the Usual Treatment (Cabozantinib) for Advanced Renal Cell Cancer That Has Spread to the Bone, RadiCaL Study",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT04071223"
-  },
-  {
-    "nct": "NCT06844981",
-    "title": "Effects of Latin Dancing on Sleep Quality in Hispanic Cancer Survivors",
-    "status": "RECRUITING",
-    "phase": "NA",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT06844981"
-  },
-  {
-    "nct": "NCT07376330",
-    "title": "Molecular and Cellular Characterization of MALT Lymphoma",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "Not applicable",
-    "updated": "2026-11-12",
-    "url": "https://clinicaltrials.gov/study/NCT07376330"
+    "updated": "2026-11-13",
+    "url": "https://clinicaltrials.gov/study/NCT03934372"
   }
 ]
