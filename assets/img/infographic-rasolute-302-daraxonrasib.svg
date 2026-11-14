@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">RASolute 302 · daraxonrasib vs chemotherapy</title>
+  <desc id="desc">Overall population, 500 patients. Median overall survival 13.2 versus 6.7 months, HR 0.40. Median progression-free survival 7.2 versus 3.6 months, HR 0.49. Overall response rate 30% versus 11%. Grade ≥3 adverse events 61.8% versus 69.6%; discontinuation for treatment-related adverse events 1.2% versus 11.2%. All bar lengths share the same months scale.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2a3d"/>
+      <stop offset="55%" stop-color="#1f7a8c"/>
+      <stop offset="100%" stop-color="#3aa6a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="18" fill="#fbfaf6"/>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+    <rect width="1200" height="110" fill="url(#bg)"/>
+    <text x="40" y="45" fill="#ffffff" font-size="30" font-weight="700">RASolute 302 · daraxonrasib vs chemotherapy</text>
+    <text x="40" y="80" fill="#d7ecec" font-size="18">Previously treated metastatic pancreatic adenocarcinoma · phase 3 · n=500 · overall population</text>
+    <rect x="40" y="133" width="18" height="18" rx="3" fill="#1f7a8c"/>
+    <text x="68" y="148" fill="#14202b" font-size="17">Daraxonrasib</text>
+    <rect x="260" y="133" width="18" height="18" rx="3" fill="#5b6b78"/>
+    <text x="288" y="148" fill="#14202b" font-size="17">Chemotherapy</text>
+    <text x="1160" y="148" text-anchor="end" fill="#5b6b78" font-size="15">Bar lengths proportional to months</text>
+
+    <rect x="40" y="175" width="1120" height="180" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+    <text x="60" y="207" fill="#0f2a3d" font-size="22" font-weight="700">Median overall survival</text>
+    <text x="1138" y="207" text-anchor="end" fill="#1f7a8c" font-size="22" font-weight="700">HR 0.40</text>
+    <text x="60" y="252" fill="#14202b" font-size="16">Daraxonrasib</text>
+    <rect x="230" y="229" width="792" height="32" rx="6" fill="#1f7a8c"/>
+    <text x="1038" y="252" fill="#0f2a3d" font-size="19" font-weight="700">13.2 mo</text>
+    <text x="60" y="308" fill="#14202b" font-size="16">Chemotherapy</text>
+    <rect x="230" y="285" width="402" height="32" rx="6" fill="#5b6b78"/>
+    <text x="648" y="308" fill="#0f2a3d" font-size="19" font-weight="700">6.7 mo</text>
+
+    <rect x="40" y="375" width="1120" height="180" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+    <text x="60" y="407" fill="#0f2a3d" font-size="22" font-weight="700">Median progression-free survival</text>
+    <text x="1138" y="407" text-anchor="end" fill="#1f7a8c" font-size="22" font-weight="700">HR 0.49</text>
+    <text x="60" y="452" fill="#14202b" font-size="16">Daraxonrasib</text>
+    <rect x="230" y="429" width="432" height="32" rx="6" fill="#1f7a8c"/>
+    <text x="678" y="452" fill="#0f2a3d" font-size="19" font-weight="700">7.2 mo</text>
+    <text x="60" y="508" fill="#14202b" font-size="16">Chemotherapy</text>
+    <rect x="230" y="485" width="216" height="32" rx="6" fill="#5b6b78"/>
+    <text x="462" y="508" fill="#0f2a3d" font-size="19" font-weight="700">3.6 mo</text>
+
+    <rect x="40" y="575" width="1120" height="75" rx="14" fill="#eef8f3"/>
+    <text x="60" y="620" fill="#0f2a3d" font-size="22" font-weight="700">Overall response rate</text>
+    <text x="580" y="622" fill="#1f7a8c" font-size="30" font-weight="700">30%</text>
+    <text x="676" y="620" fill="#5b6b78" font-size="20">vs</text>
+    <text x="725" y="622" fill="#5b6b78" font-size="30" font-weight="700">11%</text>
+    <rect x="40" y="670" width="1120" height="77" rx="14" fill="#ffffff" stroke="#e3ecee"/>
+    <text x="60" y="698" fill="#0f2a3d" font-size="17">Grade 3 or higher AEs: <tspan font-weight="700">61.8% vs 69.6%</tspan></text>
+    <text x="60" y="727" fill="#0f2a3d" font-size="17">Discontinuation for treatment-related AEs: <tspan font-weight="700">1.2% vs 11.2%</tspan></text>
+    <text x="40" y="780" fill="#5b6b78" font-size="13">Sources: FDA approval notice (26 Aug 2026); NEJM 2026 (RASolute 302) · Original Oncosphere graphic · oncosphere.in</text>
+  </g>
+</svg>

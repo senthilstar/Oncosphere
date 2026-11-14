@@ -13,14 +13,16 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 - [First-line systemic therapy](#first-line) · [Lung](#lung) · [Breast](#breast) · [GI](#gi) · [Bladder / GU](#bladder) · [Myeloma](#myeloma) · [Sarcoma](#sarcoma) · [Immunotherapy — dostarlimab](#immuno) · [Trial briefs](#trial-briefs) · [FDA approvals](#fda) · [Conferences](#conferences) · [What changed this week](#this-week)
 
 ## What changed this week (6–12 Nov 2026) {#this-week}
-A short weekly blurb on what moved in oncology regulation and on this site. Updated 12 Nov 2026.
+A short weekly blurb on what moved in oncology regulation and on this site. Updated 14 Nov 2026.
 
+- **New deep dive (14 Nov): daraxonrasib in pancreatic cancer.** Survival results, preventive toxicity care and Indian access considerations from [RASolute 302]({{ '/daraxonrasib-pancreatic-cancer-rasolute-302/' | relative_url }}).
 - **Two FDA oncology approvals.** On 5 Nov the FDA granted accelerated approval to subcutaneous amivantamab (Rybrevant Faspro) for recurrent or metastatic head and neck squamous cell carcinoma after platinum chemotherapy and an anti-PD-(L)1 antibody; it is not indicated for HPV-associated oropharyngeal cancer ([FDA notice](https://www.fda.gov/drugs/cancer-approvals/oncology-cancerhematologic-malignancies-approval-notifications); [our note]({{ '/rybrevant-faspro-hnscc-fda-approval/' | relative_url }})). On 10 Nov it approved pimicotinib (Pimjetmi) for symptomatic tenosynovial giant cell tumour where surgery may worsen function or cause severe morbidity ([FDA notice](https://www.fda.gov/drugs/cancer-approvals/fda-approves-pimicotinib-symptomatic-tenosynovial-giant-cell-tumor); [our note]({{ '/pimicotinib-tgct-fda-approval/' | relative_url }})).
-- **Still pending: ivonescimab (target date 14 Nov).** As of 12 Nov no FDA decision on ivonescimab plus chemotherapy after a third-generation EGFR TKI (HARMONi) had been announced. The open question is whether a nominal later overall-survival analysis is enough after a non-significant primary one. Neladalkib (27 Nov) and adjuvant giredestrant (30 Nov) follow ([decisions to watch]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }})).
+- **Also approved, 13 Nov:** durvalumab (Imfinzi) with enfortumab vedotin as neoadjuvant treatment, followed by adjuvant durvalumab after radical cystectomy, for adults with muscle-invasive bladder cancer who are ineligible for or decline cisplatin-based chemotherapy ([FDA notifications](https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications)).
+- **Still pending: ivonescimab (target date 14 Nov).** As of the evening of 14 Nov (IST) we found no announced FDA decision on ivonescimab plus chemotherapy after a third-generation EGFR TKI (HARMONi). The open question is whether a nominal later overall-survival analysis is enough after a non-significant primary one. Neladalkib (27 Nov) and adjuvant giredestrant (30 Nov) follow ([decisions to watch]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }})).
 - **New on Oncosphere this week:** an [ESMO 2026 week update]({{ '/esmo-2026-week-update/' | relative_url }}), a [lung cancer staging puzzle]({{ '/lung-cancer-staging-puzzle/' | relative_url }}) on TNM 9th edition, an [illustration of four strategies after osimertinib]({{ '/egfr-nsclc-after-osimertinib-2026-phase-3-options/' | relative_url }}), and a [SITC 2026 late-breakers note]({{ '/sitc-2026-late-breakers/' | relative_url }}).
 - **New interactive evidence reviews (12 Nov):** [testicular tumours]({{ '/testicular-tumors/' | relative_url }}), [stage IV lung adenocarcinoma]({{ '/stage4-lung-adenocarcinoma/' | relative_url }}) and [frontline therapy in newly diagnosed myeloma]({{ '/ndmm-frontline/' | relative_url }}). The lung and myeloma reviews include an India / resource-limited context section.
 - **New quiz (13 Nov):** test yourself on this month's news with the [November 2026 oncology quiz]({{ '/november-2026-oncology-quiz/' | relative_url }}): ten questions on Rybrevant Faspro, pimicotinib, the three November FDA target dates, post-osimertinib trials and SITC 2026.
-- **For readers in India:** none of these three drugs is approved by CDSCO; an FDA decision says nothing about Indian availability or price.
+- **For readers in India:** an FDA decision says nothing about CDSCO approval, Indian availability or price; the earlier note that Rybrevant Faspro, pimicotinib and ivonescimab are not CDSCO-approved still applies, and we found no CDSCO approval for daraxonrasib either.
 
 ## First-line systemic therapy {#first-line}
 
@@ -40,6 +42,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [DESTINY-Breast11]({{ '/destiny-breast-11-trial/' | relative_url }})
 
 ## GI {#gi}
+- [New 14 Nov 2026: daraxonrasib (Rasonque) in previously treated metastatic pancreatic cancer — RASolute 302]({{ '/daraxonrasib-pancreatic-cancer-rasolute-302/' | relative_url }})
 - [ASCO GI 2026 — HERIZON-GEA-01, BREAKWATER, COMMIT]({{ '/asco-gi-2026/' | relative_url }})
 
 ## Bladder / GU {#bladder}
@@ -61,6 +64,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 14 Nov 2026: daraxonrasib (Rasonque) in previously treated metastatic pancreatic cancer — RASolute 302]({{ '/daraxonrasib-pancreatic-cancer-rasolute-302/' | relative_url }})
 - [New 11 Nov 2026: pimicotinib (Pimjetmi) for symptomatic TGCT]({{ '/pimicotinib-tgct-fda-approval/' | relative_url }})
 - [New 8 Nov 2026: Rybrevant Faspro (amivantamab) for pretreated HNSCC]({{ '/rybrevant-faspro-hnscc-fda-approval/' | relative_url }})
 - [FDA oncology approvals, October 2026]({{ '/fda-oncology-approvals-october-2026/' | relative_url }})

@@ -1,0 +1,16 @@
+# Hot oncology topics already turned into full pages by the nightly refine.
+# Check this list before picking a new topic so topics never repeat.
+# Fields: slug, topic, date_added (IST), page, signal (why chosen), primary_sources
+topics:
+  - slug: daraxonrasib-rasolute-302
+    topic: "Daraxonrasib (Rasonque), RAS(ON) inhibitor, in previously treated metastatic pancreatic cancer (RASolute 302; FDA approval 26 Aug 2026)"
+    date_added: 2026-11-14
+    page: /daraxonrasib-pancreatic-cancer-rasolute-302/
+    signal: "High public engagement across the year (topline Apr 2026, ASCO plenary/NEJM May-Jun 2026, FDA approval Aug 2026); previously only mentioned in passing on the site"
+    primary_sources:
+      - https://www.fda.gov/drugs/cancer-approvals/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma
+      - https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2605555
+      - https://ir.revmed.com/news-releases/news-release-details/us-fda-approves-revolution-medicines-rasonquetm-daraxonrasib/
+# Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
+covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"
