@@ -1,13 +1,15 @@
 ---
 title: "Three oncology FDA decisions to watch in November 2026"
 cover: news
-updated: 2026-11-12
+updated: 2026-11-15
 category: News
 audience: clinicians
 summary: "FDA target dates this month: ivonescimab + chemo after EGFR-TKI failure (14 Nov), neladalkib in TKI-pretreated ALK+ NSCLC (27 Nov) and adjuvant giredestrant in ER+/HER2- early breast cancer (30 Nov)."
 description: "FDA target dates this month: ivonescimab + chemo after EGFR-TKI failure (14 Nov), neladalkib in TKI-pretreated ALK+ NSCLC (27 Nov) and adjuvant giredestrant in ER+/HER2- early breast cancer (30 Nov)."
 tldr: "These are decision deadlines (PDUFA dates), not approvals. FDA can approve, reject or extend. None of the three drugs is approved in India."
 sources:
+  - title: "Summit Therapeutics — Complete Response Letter for ivonescimab BLA (15 Nov 2026)"
+    url: https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx
   - title: "Summit Therapeutics — FDA accepts ivonescimab BLA in EGFRm NSCLC post-TKI; PDUFA 14 Nov 2026 (29 Jan 2026)"
     url: https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Announces-U-S--FDA-Acceptance-of-Biologics-License-Application-BLA-Seeking-Approval-for-Ivonescimab-in-Combination-with-Chemotherapy-in-Treatment-of-Patients-with-EGFRm-NSCLC-Post-TKI-Therapy/default.aspx
   - title: "Summit Therapeutics — updated HARMONi overall survival at WCLC 2026 (15 Sep 2026)"
@@ -36,6 +38,8 @@ Ivonescimab is a PD-1 × VEGF bispecific antibody. HARMONi compared ivonescimab 
 
 **What to watch:** whether FDA accepts a nominal later OS analysis after a non-significant primary one. Ivonescimab is currently approved only in China.
 
+**Update 15 Nov 2026:** FDA issued a complete response letter (see below).
+
 {% include chart.html title="HARMONi: overall survival hazard ratio, ivonescimab + chemo vs chemo" labels="Primary analysis (Apr 2025)|Updated cut (Jun 2026, nominal)|Western patients (Jun 2026)" values="0.79|0.76|0.76" max="1.2" unit="" note="Summit Therapeutics, 15 Sep 2026. 95% CIs 0.62–1.01, 0.61–0.95 and 0.52–1.10. HR below 1 favours ivonescimab." %}
 
 ## Neladalkib for ALK-positive NSCLC after TKIs (27 Nov)
@@ -54,3 +58,5 @@ Giredestrant is an oral SERD. lidERA (n≈4,170, open-label) compared 5 years of
 An FDA decision does not mean CDSCO approval, availability or affordability here. We will update this note when each decision is announced.
 
 **Status, 12 Nov 2026:** no decision has been announced yet on any of the three applications. See [what changed this week]({{ '/paradigms/#this-week' | relative_url }}). See also the [October 2026 FDA approvals roundup]({{ '/fda-oncology-approvals-october-2026/' | relative_url }}).
+
+**Update, 15 Nov 2026:** FDA issued a complete response letter for ivonescimab plus platinum chemotherapy after EGFR TKI therapy (HARMONi), according to [Summit](https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx). Without a statistically significant OS improvement, FDA considered substantial evidence of effectiveness unestablished and the PFS benefit alone insufficient for a positive benefit-risk profile. Summit describes a non-significant trend at the primary OS analysis and cites a post-hoc HR of 0.76. The question above is now answered: a nominal later OS analysis was not accepted in place of a significant primary analysis. Neladalkib (27 Nov) and giredestrant (30 Nov) remain pending.

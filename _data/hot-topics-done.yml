@@ -12,5 +12,18 @@ topics:
       - https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf
       - https://www.nejm.org/doi/full/10.1056/NEJMoa2605555
       - https://ir.revmed.com/news-releases/news-release-details/us-fda-approves-revolution-medicines-rasonquetm-daraxonrasib/
+  - slug: nhs-galleri-mced
+    topic: "NHS-Galleri randomised trial of the Galleri multi-cancer early detection blood test (NEJM/Nature Medicine Sep 2026; FDA panel 23 Sep 2026)"
+    date_added: 2026-11-15
+    page: /nhs-galleri-multi-cancer-early-detection-trial/
+    signal: "High public interest through the year (ASCO 2026 primary result, NEJM/Nature Medicine Sep 2026, FDA advisory panel Sep 2026); previously only a brief item on the site"
+    primary_sources:
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2505723
+      - https://ascopubs.org/doi/10.1200/JCO.2026.44.17_suppl.LBA100
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC13668664/
+      - https://www.fda.gov/media/195032/download
+      - https://www.fda.gov/media/194909/download
+      - https://grail.com/press-releases/fda-advisory-committee-votes-in-favor-of-approval-of-grails-galleri-multi-cancer-early-detection-test/
+      - https://www.sec.gov/Archives/edgar/data/1699031/000162828026070118/ex9912026q3earningspressre.htm
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"

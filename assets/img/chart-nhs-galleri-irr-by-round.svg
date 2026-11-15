@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">NHS-Galleri: late-stage cancer by screening round</title>
+<desc id="desc">Incidence rate ratios and 95% confidence intervals. Overall stage III–IV: 1.03 (0.92–1.14); stage IV: 0.86 (0.74–1.00).</desc>
+<rect width="1200" height="700" fill="#fbfaf6"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#183d42">
+<text x="60" y="62" font-size="29" fill="#183d42" font-weight="bold">NHS-Galleri: late-stage cancer by screening round</text>
+<line x1="65" y1="110" x2="101" y2="110" stroke="#0f6e6e" stroke-width="3" />
+<circle cx="83" cy="110" r="6" fill="#0f6e6e"/>
+<text x="113" y="116" font-size="19" fill="#0f6e6e" >Stage III–IV</text>
+<line x1="310" y1="110" x2="346" y2="110" stroke="#c77d16" stroke-width="3" />
+<circle cx="328" cy="110" r="6" fill="#c77d16"/>
+<text x="358" y="116" font-size="19" fill="#c77d16" >Stage IV</text>
+<text x="925" y="158" font-size="18" fill="#183d42" >IRR (95% CI)</text>
+<line x1="545.0" y1="175" x2="545.0" y2="540" stroke="#657477" stroke-width="1.5" stroke-dasharray="7 6"/>
+<text x="62" y="212" font-size="20" fill="#183d42" >Round 1</text>
+<line x1="532.0" y1="188" x2="824.5" y2="188" stroke="#0f6e6e" stroke-width="3" />
+<line x1="532.0" y1="182" x2="532.0" y2="194" stroke="#0f6e6e" stroke-width="2" />
+<line x1="824.5" y1="182" x2="824.5" y2="194" stroke="#0f6e6e" stroke-width="2" />
+<circle cx="668.5" cy="188" r="6" fill="#0f6e6e"/>
+<text x="925" y="194" font-size="18" fill="#0f6e6e" >1.19 (0.98–1.43)</text>
+<line x1="356.5" y1="222" x2="662.0" y2="222" stroke="#c77d16" stroke-width="3" />
+<line x1="356.5" y1="216" x2="356.5" y2="228" stroke="#c77d16" stroke-width="2" />
+<line x1="662.0" y1="216" x2="662.0" y2="228" stroke="#c77d16" stroke-width="2" />
+<circle cx="486.5" cy="222" r="6" fill="#c77d16"/>
+<text x="925" y="228" font-size="18" fill="#c77d16" >0.91 (0.71–1.18)</text>
+<text x="62" y="307" font-size="20" fill="#183d42" >Round 2</text>
+<line x1="395.5" y1="283" x2="655.5" y2="283" stroke="#0f6e6e" stroke-width="3" />
+<line x1="395.5" y1="277" x2="395.5" y2="289" stroke="#0f6e6e" stroke-width="2" />
+<line x1="655.5" y1="277" x2="655.5" y2="289" stroke="#0f6e6e" stroke-width="2" />
+<circle cx="512.5" cy="283" r="6" fill="#0f6e6e"/>
+<text x="925" y="289" font-size="18" fill="#0f6e6e" >0.95 (0.77–1.17)</text>
+<line x1="265.5" y1="317" x2="584.0" y2="317" stroke="#c77d16" stroke-width="3" />
+<line x1="265.5" y1="311" x2="265.5" y2="323" stroke="#c77d16" stroke-width="2" />
+<line x1="584.0" y1="311" x2="584.0" y2="323" stroke="#c77d16" stroke-width="2" />
+<circle cx="402.0" cy="317" r="6" fill="#c77d16"/>
+<text x="925" y="323" font-size="18" fill="#c77d16" >0.78 (0.57–1.06)</text>
+<text x="62" y="402" font-size="20" fill="#183d42" >Round 3</text>
+<line x1="369.5" y1="378" x2="590.5" y2="378" stroke="#0f6e6e" stroke-width="3" />
+<line x1="369.5" y1="372" x2="369.5" y2="384" stroke="#0f6e6e" stroke-width="2" />
+<line x1="590.5" y1="372" x2="590.5" y2="384" stroke="#0f6e6e" stroke-width="2" />
+<circle cx="467.0" cy="378" r="6" fill="#0f6e6e"/>
+<text x="925" y="384" font-size="18" fill="#0f6e6e" >0.88 (0.73–1.07)</text>
+<line x1="265.5" y1="412" x2="512.5" y2="412" stroke="#c77d16" stroke-width="3" />
+<line x1="265.5" y1="406" x2="265.5" y2="418" stroke="#c77d16" stroke-width="2" />
+<line x1="512.5" y1="406" x2="512.5" y2="418" stroke="#c77d16" stroke-width="2" />
+<circle cx="376.0" cy="412" r="6" fill="#c77d16"/>
+<text x="925" y="418" font-size="18" fill="#c77d16" >0.74 (0.57–0.95)</text>
+<text x="62" y="497" font-size="20" fill="#183d42" >Overall</text>
+<line x1="493.0" y1="473" x2="636.0" y2="473" stroke="#0f6e6e" stroke-width="3" />
+<line x1="493.0" y1="467" x2="493.0" y2="479" stroke="#0f6e6e" stroke-width="2" />
+<line x1="636.0" y1="467" x2="636.0" y2="479" stroke="#0f6e6e" stroke-width="2" />
+<circle cx="564.5" cy="473" r="6" fill="#0f6e6e"/>
+<text x="925" y="479" font-size="18" fill="#0f6e6e" >1.03 (0.92–1.14)</text>
+<line x1="376.0" y1="507" x2="545.0" y2="507" stroke="#c77d16" stroke-width="3" />
+<line x1="376.0" y1="501" x2="376.0" y2="513" stroke="#c77d16" stroke-width="2" />
+<line x1="545.0" y1="501" x2="545.0" y2="513" stroke="#c77d16" stroke-width="2" />
+<circle cx="454.0" cy="507" r="6" fill="#c77d16"/>
+<text x="925" y="513" font-size="18" fill="#c77d16" >0.86 (0.74–1.00)</text>
+<line x1="220" y1="550" x2="870" y2="550" stroke="#cbd5d5" stroke-width="1" />
+<line x1="265.5" y1="550" x2="265.5" y2="557" stroke="#657477" stroke-width="1" />
+<text x="265.5" y="582" font-size="16" fill="#183d42" text-anchor="middle">0.57</text>
+<line x1="376.0" y1="550" x2="376.0" y2="557" stroke="#657477" stroke-width="1" />
+<text x="376.0" y="582" font-size="16" fill="#183d42" text-anchor="middle">0.74</text>
+<line x1="454.0" y1="550" x2="454.0" y2="557" stroke="#657477" stroke-width="1" />
+<text x="454.0" y="582" font-size="16" fill="#183d42" text-anchor="middle">0.86</text>
+<line x1="545.0" y1="550" x2="545.0" y2="557" stroke="#657477" stroke-width="1" />
+<text x="545.0" y="582" font-size="16" fill="#183d42" text-anchor="middle">1</text>
+<line x1="668.5" y1="550" x2="668.5" y2="557" stroke="#657477" stroke-width="1" />
+<text x="668.5" y="582" font-size="16" fill="#183d42" text-anchor="middle">1.19</text>
+<line x1="824.5" y1="550" x2="824.5" y2="557" stroke="#657477" stroke-width="1" />
+<text x="824.5" y="582" font-size="16" fill="#183d42" text-anchor="middle">1.43</text>
+<text x="600" y="627" font-size="19" fill="#183d42" text-anchor="middle">Incidence rate ratio (screened vs control; &lt;1 favours screening)</text>
+<text x="60" y="675" font-size="15" fill="#52676b" >Source: NHS-Galleri, ASCO 2026 LBA100 and NEJM 2026. Original Oncosphere chart.</text>
+</g></svg>

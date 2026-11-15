@@ -1,7 +1,7 @@
 ---
 title: "EGFR-mutant NSCLC after osimertinib: the 2026 phase 3 evidence, ahead of the 14 Nov FDA decision"
 cover: lung
-updated: 2026-11-10
+updated: 2026-11-15
 category: Perspective
 audience: clinicians
 summary: "Four randomised phase 3 trials now test new options against platinum–pemetrexed after third-generation EGFR TKI failure: SAFFRON (osimertinib + savolitinib, MET-driven), HERON-Lung01 (HER3 ADC), PANKU-Lung01 (EGFR×HER3 bispecific ADC) and HARMONi (ivonescimab + chemo, FDA decision 14 Nov). Only SAFFRON has a statistically significant OS gain so far."
@@ -69,6 +69,8 @@ All comparators: platinum + pemetrexed, then pemetrexed maintenance (HARMONi: pl
 
 ## What to watch on 14 November
 FDA must decide whether a PFS win plus a non-significant primary OS (HARMONi) is enough for ivonescimab. That decision will signal how regulators may treat the two Chinese ADC trials, which so far also rest on PFS with immature OS.
+
+**Update, 15 Nov 2026:** the FDA issued a complete response letter for ivonescimab, citing the lack of a statistically significant OS improvement ([Summit](https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx)).
 
 ## Practical reading today
 - Re-biopsy at progression still matters: MET status selects for SAFFRON-type therapy; transformation to small-cell histology changes everything.
