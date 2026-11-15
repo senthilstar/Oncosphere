@@ -36,6 +36,84 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42901134/"
   },
   {
+    "pmid": "42981670",
+    "title": "Tracking lipid droplet dynamics for in vivo visualization of breast cancer models by a BODIPY-based fluorescent probe.",
+    "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+    "pubdate": "2027 Feb 15",
+    "authors": [
+      "Zheng Z",
+      "Liu Y",
+      "Li M",
+      "Xiu T",
+      "Tong L",
+      "Zhang W",
+      "Zhang W",
+      "Li P",
+      "Wang H"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42981670/"
+  },
+  {
+    "pmid": "42913036",
+    "title": "A novel dual-functional ligand targeting c-Myc and VEGF promoter G-quadruplexes for colorectal cancer therapy.",
+    "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
+    "pubdate": "2027 Feb 15",
+    "authors": [
+      "Gao JM",
+      "Yan W",
+      "Yang J",
+      "Ren H",
+      "Zhao L",
+      "Zhang Y",
+      "Chen Y",
+      "Zhou J",
+      "Wei ZZ",
+      "Liu Q",
+      "Zeng H",
+      "Ouyang Y",
+      "Hong Z",
+      "Chen Z",
+      "Zhang MM",
+      "Fan Y",
+      "Wang L",
+      "Huang Y",
+      "Wang H",
+      "Bai CC",
+      "Yang H"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42913036/"
+  },
+  {
+    "pmid": "43032513",
+    "title": "Access to clinical cancer genomics and precision oncology-based care in North America.",
+    "journal": "Lancet regional health. Americas",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Kumar P",
+      "Salawu A",
+      "Demichelis-Gómez R",
+      "Williams A",
+      "Harris AR",
+      "Jenkins-Lord BD",
+      "Mullangi S",
+      "Bajaj RA",
+      "Bolajoko O",
+      "Jacobson I",
+      "Lopez-Correa C",
+      "Parikh A",
+      "Teckie S",
+      "Wu J",
+      "Odedina F",
+      "Davis MB",
+      "Swenson W",
+      "Bourque JM",
+      "Versón CA",
+      "Siu LL",
+      "Chakravarty D"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43032513/"
+  },
+  {
     "pmid": "42999803",
     "title": "Outcomes of Patients with Rare Cancers Treated with Immune Checkpoint Inhibitors with and Without Lung and/or Liver Metastases (NCI/SWOG S1609).",
     "journal": "Journal of immunotherapy and precision oncology",
@@ -163,44 +241,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42945694/"
   },
   {
-    "pmid": "42896432",
-    "title": "PEGylated fucoxanthin liposomes remodel G(0)/G(1) cell cycle homeostasis and suppress gallbladder cancer progression via modulation of NR2F1-mediated signaling networks.",
-    "journal": "Biomaterials advances",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Cao JF",
-      "Hang K",
-      "Zhang X",
-      "Xia Q",
-      "Xia Z",
-      "Liao D",
-      "Rong C",
-      "Li K"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42896432/"
-  },
-  {
-    "pmid": "42881042",
-    "title": "Corrigendum to \"Transdermal delivery of brucine-encapsulated liposomes significantly enhances anti-tumor outcomes in treating triple-negative breast cancer\" [Biomater. Adv. 153 (2023) 213566].",
-    "journal": "Biomaterials advances",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Wu M",
-      "Hu Y",
-      "Xu M",
-      "Fu L",
-      "Li C",
-      "Wu J",
-      "Sun X",
-      "Wang W",
-      "Wang S",
-      "Wang T",
-      "Ding W",
-      "Li P"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42881042/"
-  },
-  {
     "pmid": "42901402",
     "title": "The role of the lymphatic micro-vasculature in malignant tissue fluid and drug transport.",
     "journal": "Journal of theoretical biology",
@@ -224,21 +264,5 @@
       "Chai Y"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42906309/"
-  },
-  {
-    "pmid": "42918430",
-    "title": "Osteopontin primary transcript generates exonic circRNA molecules by back splicing in tumor cell lines.",
-    "journal": "Gene",
-    "pubdate": "2027 Jan 10",
-    "authors": [
-      "Mendonça de Mattos MM",
-      "Martins Vargas SO",
-      "Robertson LT",
-      "de Oliveira Pereira I",
-      "Mattos DS",
-      "Silva GR",
-      "Pereira Gimba ER"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42918430/"
   }
 ]
