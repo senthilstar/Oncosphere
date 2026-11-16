@@ -25,5 +25,17 @@ topics:
       - https://www.fda.gov/media/194909/download
       - https://grail.com/press-releases/fda-advisory-committee-votes-in-favor-of-approval-of-grails-galleri-multi-cancer-early-detection-test/
       - https://www.sec.gov/Archives/edgar/data/1699031/000162828026070118/ex9912026q3earningspressre.htm
+  - slug: relacorilant-rosella
+    topic: "Relacorilant (Lifyorli) + nab-paclitaxel in platinum-resistant ovarian cancer (ROSELLA; Lancet 2025/2026; FDA approval 25 Mar 2026; CHMP positive opinion 17 Sep 2026)"
+    date_added: 2026-11-16
+    page: /relacorilant-platinum-resistant-ovarian-cancer-rosella/
+    signal: "Sustained public interest across the year (FDA approval Mar 2026, final OS Lancet/ASCO 2026, CHMP opinion Sep 2026); not previously covered on the site"
+    primary_sources:
+      - https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01040-2/abstract
+      - https://discovery.ucl.ac.uk/id/eprint/10213945/1/ROSELLA_Final%20Accepted%20Manuscript%20Full_5_14_2025.pdf
+      - https://pubmed.ncbi.nlm.nih.gov/41974149/
+      - https://www.fda.gov/drugs/cancer-approvals/fda-approves-relacorilant-nab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
+      - https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220641s000lbl.pdf
+      - https://www.ema.europa.eu/en/medicines/human/EPAR/lifyorli
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"

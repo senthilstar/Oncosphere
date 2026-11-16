@@ -1,6 +1,6 @@
 ---
 title: "DESTINY BREAST 11 TRIAL"
-updated: 2026-10-28
+updated: 2026-11-16
 category: Trials
 cover: breast
 audience: clinicians
@@ -46,7 +46,7 @@ Phase 3, open-label, 147 sites in 18 countries; randomised 1:1:1. High-risk HER2
 <p class="opinion">For high-risk patients with cardiac concerns, T-DXd → THP is attractive where affordable. I would wait for EFS before abandoning anthracycline regimens universally.</p>
 
 ## Who was enrolled
-High-risk HER2-positive early breast cancer: T3 or larger, inflammatory, or node-positive disease (cT0–4, cN1–3). HER2 status was centrally confirmed. 927 patients were randomised across the three arms (286 / 321 / 320); enrolment to the T-DXd monotherapy arm was closed early on the recommendation of the Independent Data Monitoring Committee. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41130363/">[Ann Oncol 2025]</a>
+High-risk HER2-positive early breast cancer: T3 or larger, inflammatory, or node-positive disease (cT0–4, cN1–3). HER2 status was centrally confirmed. 927 patients were randomised across the three arms (286 / 321 / 320); enrolment to the T-DXd monotherapy arm was closed early on the recommendation of the Independent Data Monitoring Committee. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41130363/">[Ann Oncol 2026]</a>
 
 ## Regimens in detail
 - **T-DXd → THP:** trastuzumab deruxtecan 5.4 mg/kg every 3 weeks ×4 (the FDA-labelled neoadjuvant dose), then paclitaxel + trastuzumab + pertuzumab ×4.
@@ -69,6 +69,7 @@ Neoadjuvant anthracycline-free regimens such as TCHP were already acceptable alt
 - **FDA, 15 May 2026:** T-DXd followed by THP approved as neoadjuvant treatment for HER2-positive (IHC 3+ or ISH+) **stage II or III** breast cancer, at 5.4 mg/kg every 3 weeks ×4, then THP ×4. FDA noted that EFS and OS in DESTINY-Breast11 were not statistically controlled or powered, and that DESTINY-Breast05 provided supportive evidence. A post-marketing requirement asks for 3-year EFS and final OS (reports due 11/2027). <a class="cite" href="https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-two-separate-indications-fam-trastuzumab-deruxtecan-nxki-her2-positive-early-stage">[FDA 2026]</a>
 - **DESTINY-Breast05 (adjuvant, residual disease):** n=1635, T-DXd vs T-DM1, up to 14 cycles. 3-year IDFS **92.4% vs 83.7%** (HR 0.47, 95% CI 0.34–0.66; P<0.001). Adjudicated drug-related ILD **9.6% vs 1.6%**; 2 ILD deaths with T-DXd. Nausea 71.3% with T-DXd. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41370739/">[NEJM 2026]</a> FDA approved adjuvant T-DXd for residual invasive disease on the same day. <a class="cite" href="https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-two-separate-indications-fam-trastuzumab-deruxtecan-nxki-her2-positive-early-stage">[FDA 2026]</a>
 - The T-DXd label carries a boxed warning for ILD/pneumonitis. ILD risk was about 4–5% with 4 neoadjuvant cycles (DESTINY-Breast11) but 9.6% with up to 14 adjuvant cycles (DESTINY-Breast05), so take exposure into account when planning a T-DXd-containing sequence.
+- Numbers in the Results section re-checked against the Ann Oncol abstract on 16 Nov 2026.
 
 {% include chart.html title="Post-neoadjuvant escalation for residual HER2+ disease: 3-year invasive disease-free survival" labels="KATHERINE: T-DM1|KATHERINE: trastuzumab|DESTINY-Breast05: T-DXd|DESTINY-Breast05: T-DM1" values="88.3|77.0|92.4|83.7" max="100" unit="%" note="KATHERINE: NEJM 2019 (HR 0.50). DESTINY-Breast05: NEJM 2026 (HR 0.47); DB-05 enrolled a higher-risk population (node-positive residual disease or inoperable at diagnosis), so do not compare arms across trials." %}
 
