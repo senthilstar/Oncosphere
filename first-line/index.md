@@ -19,6 +19,8 @@ Then match therapy to tumour biology, clinical urgency, safety and sustainable a
 - [Chronic lymphocytic leukaemia]({{ '/first-line/chronic-lymphocytic-leukaemia/' | relative_url }}) — Treat active CLL, test TP53 and IGHV, then choose continuous BTK inhibition or a finite venetoclax-based strategy.
 - [HER2-positive metastatic breast cancer]({{ '/first-line/her2-positive-metastatic-breast-cancer/' | relative_url }}) — Confirm metastatic HER2 status, choose an induction pathway and plan maintenance, pulmonary safety and later sequencing.
 
+- [Cervical cancer (recurrent / metastatic)]({{ '/first-line/cervical-cancer/' | relative_url }}) — Select treatment by PD-L1 CPS, prior immunotherapy, bevacizumab safety and sustainable access.
+
 ## Related treatment reviews
 
 - [Stage IV lung adenocarcinoma]({{ '/stage4-lung-adenocarcinoma/' | relative_url }}) — driver testing and systemic treatment selection.
