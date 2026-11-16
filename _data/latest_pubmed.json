@@ -12,30 +12,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42933160/"
   },
   {
-    "pmid": "42901134",
-    "title": "Thermosensitive and tumor-targeted asparaginase fusion protein enables metabolic-immunotherapy for solid tumors.",
-    "journal": "Biomaterials",
-    "pubdate": "2027 Mar",
-    "authors": [
-      "Gong L",
-      "Wang X",
-      "Zheng Y",
-      "Liu S",
-      "Zhang F",
-      "Sun Y",
-      "Qi Y",
-      "Han L",
-      "Gong Y",
-      "Huang S",
-      "Han C",
-      "Xie J",
-      "Zhu S",
-      "Wei X",
-      "Gao W"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42901134/"
-  },
-  {
     "pmid": "42981670",
     "title": "Tracking lipid droplet dynamics for in vivo visualization of breast cancer models by a BODIPY-based fluorescent probe.",
     "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
@@ -114,6 +90,23 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/43032513/"
   },
   {
+    "pmid": "43000092",
+    "title": "FSTL1(high) hepatic stellate cells secrete CCL3 to activate the PI3K/AKT/mTOR pathway, initiating anoikis resistance and promoting hepatocellular carcinoma progression.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Wang Y",
+      "Wang H",
+      "Nie Y",
+      "Xue H",
+      "Zhou Y",
+      "Li C",
+      "Zhang C",
+      "Gu C"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43000092/"
+  },
+  {
     "pmid": "42999803",
     "title": "Outcomes of Patients with Rare Cancers Treated with Immune Checkpoint Inhibitors with and Without Lung and/or Liver Metastases (NCI/SWOG S1609).",
     "journal": "Journal of immunotherapy and precision oncology",
@@ -128,6 +121,65 @@
       "Kurzrock R"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42999803/"
+  },
+  {
+    "pmid": "42994735",
+    "title": "O-glycosylation of ENO1 at serine 63 by GALNT14 promotes triple-negative breast cancer progression by enhancing ENO1 protein stability.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Wan Y",
+      "Lan J",
+      "Zhou Y",
+      "Shi Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42994735/"
+  },
+  {
+    "pmid": "42988231",
+    "title": "JQ1 targeting BRD4 enhances cisplatin-induced pyroptosis via LDHA-mediated ROS release to potentially overcome chemoresistance in bladder cancer.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Li K",
+      "Tan YK",
+      "Li ZB",
+      "Xiang R",
+      "Deng X",
+      "Jin JY",
+      "Li Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42988231/"
+  },
+  {
+    "pmid": "42988230",
+    "title": "Endothelial senescence orchestrates the tumor immune microenvironment and immunotherapy response in non-small cell lung cancer.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Qiu X",
+      "Qin H",
+      "Deng S",
+      "Kong X",
+      "Chen K",
+      "Zhang R",
+      "Yan H",
+      "Wong PP"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42988230/"
+  },
+  {
+    "pmid": "42988229",
+    "title": "Role of KCTD5 in non-small cell lung cancer progression and reduction of osimertinib sensitivity.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Jiang X",
+      "Guan J",
+      "Li Q",
+      "Sun L"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42988229/"
   },
   {
     "pmid": "42987517",
@@ -162,6 +214,20 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42987515/"
   },
   {
+    "pmid": "42962979",
+    "title": "Glutamine deprivation elevates EFNB3 and its potential link to macropinocytosis in glioblastoma.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Wang B",
+      "Yao X",
+      "Su Y",
+      "Guo-QiangYuan",
+      "Pan Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42962979/"
+  },
+  {
     "pmid": "42960010",
     "title": "Nanobiomechanics in Oncology: Atomic Force Microscopy for Cancer Mechanophenotyping Using Cellular Young's Modulus.",
     "journal": "Journal of the Royal Society of New Zealand",
@@ -188,81 +254,5 @@
       "Zhang CY"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42956580/"
-  },
-  {
-    "pmid": "42956579",
-    "title": "Nanozyme-engineered stress-resistant microalgae S.t.@CuMgHCF for tumor microenvironment regulation.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Feb 1",
-    "authors": [
-      "Tan H",
-      "Bai L",
-      "Long L",
-      "Zeng H",
-      "Zhang Q",
-      "Hao T",
-      "Guo Z"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42956579/"
-  },
-  {
-    "pmid": "42945784",
-    "title": "Functional double-emulsion droplets enable multiplexed CRISPR quantification of cancer-related miRNAs.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Feb 1",
-    "authors": [
-      "Zhang Y",
-      "Deng F",
-      "Sang R",
-      "Liu L",
-      "Barber TJ",
-      "Goldys EM",
-      "Li M"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42945784/"
-  },
-  {
-    "pmid": "42945694",
-    "title": "Photoresponsive Silicon Phthalocyanine with Intracellular Self-Regulated Aggregation Drives ER-Lysosome-Lipid Droplets Redistribution for Enhanced Photodynamic Therapy.",
-    "journal": "Biomaterials advances",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Wu X",
-      "Xu Y",
-      "Ye Q",
-      "You C",
-      "Xu J",
-      "Wang Z",
-      "Huang L",
-      "Chen K",
-      "Dong B",
-      "Peng Y"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42945694/"
-  },
-  {
-    "pmid": "42901402",
-    "title": "The role of the lymphatic micro-vasculature in malignant tissue fluid and drug transport.",
-    "journal": "Journal of theoretical biology",
-    "pubdate": "2027 Jan 21",
-    "authors": [
-      "Brown A",
-      "Penta R"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42901402/"
-  },
-  {
-    "pmid": "42906309",
-    "title": "A novel Co-SnO(2)/Rhodamine B composite as photoactive material with excellent photoelectrochemical performance for ultrasensitive detection of prostate cancer biomarker.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Jan 15",
-    "authors": [
-      "Xiao Y",
-      "Deng H",
-      "Xu J",
-      "Yuan R",
-      "Chai Y"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42906309/"
   }
 ]
