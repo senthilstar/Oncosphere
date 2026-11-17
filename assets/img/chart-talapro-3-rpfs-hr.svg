@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<title>Talazoparib plus enzalutamide: hazard ratios in TALAPRO-3 and TALAPRO-2</title>
+<desc>Forest chart. TALAPRO-3 rPFS hazard ratio 0.48 (95% CI 0.36 to 0.65); BRCA-mutated 0.37 (0.22 to 0.61); non-BRCA HRR-mutated 0.57 (0.39 to 0.82). TALAPRO-2 HRR-mutated mCRPC rPFS 0.45 (0.33 to 0.61) and overall survival 0.62 (0.48 to 0.81). Values below 1 favour talazoparib plus enzalutamide.</desc>
+<rect width="800" height="480" fill="#fff"/>
+<text x="28" y="40" font-size="22" font-weight="700" fill="#1f2d3d">Talazoparib + enzalutamide vs placebo + enzalutamide</text>
+<text x="28" y="64" font-size="14" fill="#475569">Hazard ratios with 95% confidence intervals (below 1.0 favours the combination)</text>
+<line x1="360.0" y1="92" x2="360.0" y2="372" stroke="#e2e8f0" stroke-width="1" />
+<text x="360.0" y="392" font-size="12" fill="#475569" text-anchor="middle">0.0</text>
+<line x1="410.0" y1="92" x2="410.0" y2="372" stroke="#e2e8f0" stroke-width="1" />
+<text x="410.0" y="392" font-size="12" fill="#475569" text-anchor="middle">0.2</text>
+<line x1="460.0" y1="92" x2="460.0" y2="372" stroke="#e2e8f0" stroke-width="1" />
+<text x="460.0" y="392" font-size="12" fill="#475569" text-anchor="middle">0.4</text>
+<line x1="510.0" y1="92" x2="510.0" y2="372" stroke="#e2e8f0" stroke-width="1" />
+<text x="510.0" y="392" font-size="12" fill="#475569" text-anchor="middle">0.6</text>
+<line x1="560.0" y1="92" x2="560.0" y2="372" stroke="#e2e8f0" stroke-width="1" />
+<text x="560.0" y="392" font-size="12" fill="#475569" text-anchor="middle">0.8</text>
+<line x1="610.0" y1="92" x2="610.0" y2="372" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="610.0" y="392" font-size="12" fill="#475569" text-anchor="middle">1.0</text>
+<line x1="660.0" y1="92" x2="660.0" y2="372" stroke="#e2e8f0" stroke-width="1" />
+<text x="660.0" y="392" font-size="12" fill="#475569" text-anchor="middle">1.2</text>
+<text x="485.0" y="414" font-size="13" fill="#0f766e" text-anchor="middle">favours talazoparib + enzalutamide</text>
+<text x="622" y="414" font-size="13" fill="#64748b" text-anchor="start">favours control</text>
+<text x="28" y="110" font-size="14" font-weight="700" fill="#1f2d3d">TALAPRO-3 · metastatic hormone-sensitive (mHSPC)</text>
+<text x="40" y="145" font-size="14" fill="#334155">Overall rPFS</text>
+<line x1="450.0" y1="140" x2="522.5" y2="140" stroke="#0f766e" stroke-width="2.5"/>
+<line x1="450.0" y1="134" x2="450.0" y2="146" stroke="#0f766e" stroke-width="2"/>
+<line x1="522.5" y1="134" x2="522.5" y2="146" stroke="#0f766e" stroke-width="2"/>
+<rect x="474.0" y="134" width="12" height="12" fill="#0f766e"/>
+<text x="772" y="145" font-size="13" fill="#1f2d3d" text-anchor="end">0.48 (0.36–0.65)</text>
+<text x="40" y="185" font-size="14" fill="#334155">BRCAm rPFS · exploratory</text>
+<line x1="415.0" y1="180" x2="512.5" y2="180" stroke="#0f766e" stroke-width="2.5"/>
+<line x1="415.0" y1="174" x2="415.0" y2="186" stroke="#0f766e" stroke-width="2"/>
+<line x1="512.5" y1="174" x2="512.5" y2="186" stroke="#0f766e" stroke-width="2"/>
+<rect x="446.5" y="174" width="12" height="12" fill="#0f766e"/>
+<text x="772" y="185" font-size="13" fill="#1f2d3d" text-anchor="end">0.37 (0.22–0.61)</text>
+<text x="40" y="225" font-size="14" fill="#334155">Non-BRCA HRRm rPFS · exploratory</text>
+<line x1="457.5" y1="220" x2="565.0" y2="220" stroke="#0f766e" stroke-width="2.5"/>
+<line x1="457.5" y1="214" x2="457.5" y2="226" stroke="#0f766e" stroke-width="2"/>
+<line x1="565.0" y1="214" x2="565.0" y2="226" stroke="#0f766e" stroke-width="2"/>
+<rect x="496.5" y="214" width="12" height="12" fill="#0f766e"/>
+<text x="772" y="225" font-size="13" fill="#1f2d3d" text-anchor="end">0.57 (0.39–0.82)</text>
+<text x="28" y="264" font-size="14" font-weight="700" fill="#1f2d3d">TALAPRO-2 · HRR-mutated mCRPC (context)</text>
+<text x="40" y="299" font-size="14" fill="#334155">rPFS (BICR)</text>
+<line x1="442.5" y1="294" x2="512.5" y2="294" stroke="#0f766e" stroke-width="2.5"/>
+<line x1="442.5" y1="288" x2="442.5" y2="300" stroke="#0f766e" stroke-width="2"/>
+<line x1="512.5" y1="288" x2="512.5" y2="300" stroke="#0f766e" stroke-width="2"/>
+<rect x="466.5" y="288" width="12" height="12" fill="#0f766e"/>
+<text x="772" y="299" font-size="13" fill="#1f2d3d" text-anchor="end">0.45 (0.33–0.61)</text>
+<text x="40" y="339" font-size="14" fill="#334155">Overall survival</text>
+<line x1="480.0" y1="334" x2="562.5" y2="334" stroke="#0f766e" stroke-width="2.5"/>
+<line x1="480.0" y1="328" x2="480.0" y2="340" stroke="#0f766e" stroke-width="2"/>
+<line x1="562.5" y1="328" x2="562.5" y2="340" stroke="#0f766e" stroke-width="2"/>
+<rect x="509.0" y="328" width="12" height="12" fill="#0f766e"/>
+<text x="772" y="339" font-size="13" fill="#1f2d3d" text-anchor="end">0.62 (0.48–0.81)</text>
+<text x="28" y="446" font-size="12" fill="#475569">Sources: Talzenna US prescribing information (10/2026); FDA approval notice, 26 Oct 2026.</text>
+<text x="28" y="464" font-size="12" fill="#475569">BRCA / non-BRCA rows are exploratory subgroups; TALAPRO-2 rows are a different disease state, shown for context only.</text>
+</svg>

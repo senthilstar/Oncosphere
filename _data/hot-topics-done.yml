@@ -37,5 +37,19 @@ topics:
       - https://www.fda.gov/drugs/cancer-approvals/fda-approves-relacorilant-nab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
       - https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220641s000lbl.pdf
       - https://www.ema.europa.eu/en/medicines/human/EPAR/lifyorli
+  - slug: talazoparib-talapro-3
+    topic: "Talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3"
+    date_added: 2026-11-17
+    page: /talazoparib-enzalutamide-hrr-mhspc-talapro-3/
+    signal: "Highest-engagement oncology approval item of recent months (FDA approval 26 Oct 2026; NEJM/ASCO May-Jun 2026); previously only a short bullet on the site"
+    primary_sources:
+      - https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-talazoparib-enzalutamide-metastatic-androgen-pathway-modulation-naive-or-sensitive
+      - https://www.pfizermedical.com/talzenna
+      - https://www.asco.org/abstracts-presentations/258180/abstract
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2604126
+      - https://www.pfizer.com/news/press-release/press-release-detail/pfizers-talzenna-plus-xtandi-fda-approved-earlier
+      - https://www.pfizer.com/news/press-release/press-release-detail/talzenna-plus-xtandi-improves-radiographic-progression-free
+      - https://www.nature.com/articles/s41591-025-03961-8
+      - https://www.asco.org/abstracts-presentations/243837
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"

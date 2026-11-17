@@ -13,8 +13,9 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 - [First-line systemic therapy](#first-line) · [Lung](#lung) · [Breast](#breast) · [GI](#gi) · [Bladder / GU](#bladder) · [Myeloma](#myeloma) · [Sarcoma](#sarcoma) · [Immunotherapy — dostarlimab](#immuno) · [Trial briefs](#trial-briefs) · [FDA approvals](#fda) · [Conferences](#conferences) · [What changed this week](#this-week)
 
 ## What changed this week (6–12 Nov 2026) {#this-week}
-A short weekly blurb on what moved in oncology regulation and on this site. Updated 16 Nov 2026.
+A short weekly blurb on what moved in oncology regulation and on this site. Updated 17 Nov 2026.
 
+- **New deep dive (17 Nov): talazoparib + enzalutamide in HRR-mutated hormone-sensitive prostate cancer.** [TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }}) explains progression benefit, immature survival, HRR testing and marrow monitoring.
 - **New deep dive (16 Nov): relacorilant in platinum-resistant ovarian cancer.** [ROSELLA]({{ '/relacorilant-platinum-resistant-ovarian-cancer-rosella/' | relative_url }}) survival results, steroid precautions and implications for treatment selection.
 - **New trial note (16 Nov): ACTION-1.** [RYZ101 after lutetium-177 in GEP-NETs]({{ '/ryz101-action-1-actinium-dotatate-gep-net/' | relative_url }}) has a positive interim PFS announcement, with quantitative results awaited.
 - **New deep dive (15 Nov): multi-cancer blood test screening.** What [NHS-Galleri]({{ '/nhs-galleri-multi-cancer-early-detection-trial/' | relative_url }}) showed on late-stage cancer, test accuracy and the FDA panel vote, with an India view.
@@ -50,6 +51,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [ASCO GI 2026 — HERIZON-GEA-01, BREAKWATER, COMMIT]({{ '/asco-gi-2026/' | relative_url }})
 
 ## Bladder / GU {#bladder}
+- [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})
 - [Advanced bladder (urothelial) cancer]({{ '/advanced-bladder-urothelial-cancer/' | relative_url }})
 - [New 12 Nov 2026: testicular tumours — interactive evidence atlas (staging, IGCCCG, treatment explorer, self-test)]({{ '/testicular-tumors/' | relative_url }})
 
@@ -65,12 +67,14 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [New 5 Nov 2026: organ-preservation pathway illustration]({{ '/dostarlimab-organ-preservation-pathway/' | relative_url }})
 
 ## Trial briefs {#trial-briefs}
+- [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})
 - [New 16 Nov 2026: relacorilant + nab-paclitaxel in platinum-resistant ovarian cancer — ROSELLA]({{ '/relacorilant-platinum-resistant-ovarian-cancer-rosella/' | relative_url }})
 - [New 16 Nov 2026: ACTION-1 — RYZ101 (actinium-225 DOTATATE) in GEP-NETs after lutetium-177]({{ '/ryz101-action-1-actinium-dotatate-gep-net/' | relative_url }})
 - [New 15 Nov 2026: NHS-Galleri — randomised trial of a multi-cancer early-detection blood test]({{ '/nhs-galleri-multi-cancer-early-detection-trial/' | relative_url }})
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})
 - [New 16 Nov 2026: relacorilant + nab-paclitaxel in platinum-resistant ovarian cancer — ROSELLA]({{ '/relacorilant-platinum-resistant-ovarian-cancer-rosella/' | relative_url }})
 - [New 14 Nov 2026: daraxonrasib (Rasonque) in previously treated metastatic pancreatic cancer — RASolute 302]({{ '/daraxonrasib-pancreatic-cancer-rasolute-302/' | relative_url }})
 - [New 11 Nov 2026: pimicotinib (Pimjetmi) for symptomatic TGCT]({{ '/pimicotinib-tgct-fda-approval/' | relative_url }})
