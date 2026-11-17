@@ -30,34 +30,49 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42981670/"
   },
   {
-    "pmid": "42913036",
-    "title": "A novel dual-functional ligand targeting c-Myc and VEGF promoter G-quadruplexes for colorectal cancer therapy.",
-    "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
-    "pubdate": "2027 Feb 15",
+    "pmid": "43039505",
+    "title": "FDG PET/CT in Gynecologic Malignancies.",
+    "journal": "Magnetic resonance imaging clinics of North America",
+    "pubdate": "2027 Feb",
     "authors": [
-      "Gao JM",
-      "Yan W",
-      "Yang J",
-      "Ren H",
-      "Zhao L",
-      "Zhang Y",
-      "Chen Y",
-      "Zhou J",
-      "Wei ZZ",
-      "Liu Q",
-      "Zeng H",
-      "Ouyang Y",
-      "Hong Z",
-      "Chen Z",
-      "Zhang MM",
-      "Fan Y",
-      "Wang L",
-      "Huang Y",
-      "Wang H",
-      "Bai CC",
-      "Yang H"
+      "Aslaner K",
+      "Ozkan ZG",
+      "Akin EA"
     ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42913036/"
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43039505/"
+  },
+  {
+    "pmid": "43039500",
+    "title": "Breast Cancer and Hybrid Imaging Strategies.",
+    "journal": "Magnetic resonance imaging clinics of North America",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Ntekim AU",
+      "Dibble EH"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43039500/"
+  },
+  {
+    "pmid": "43039498",
+    "title": "Prostate-Specific Membrane Antigen-Targeted Radioligand Therapy in Prostate Cancer: Patient Selection, Treatment Workflow, and Emerging Directions.",
+    "journal": "Magnetic resonance imaging clinics of North America",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Denizmen Zorba D",
+      "Sanli Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43039498/"
+  },
+  {
+    "pmid": "43039495",
+    "title": "Carcinoma of Unknown Primary.",
+    "journal": "Magnetic resonance imaging clinics of North America",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Mesci I",
+      "Soydal C"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43039495/"
   },
   {
     "pmid": "43032513",
@@ -212,47 +227,5 @@
       "Zhou R"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42987515/"
-  },
-  {
-    "pmid": "42962979",
-    "title": "Glutamine deprivation elevates EFNB3 and its potential link to macropinocytosis in glioblastoma.",
-    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Wang B",
-      "Yao X",
-      "Su Y",
-      "Guo-QiangYuan",
-      "Pan Y"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42962979/"
-  },
-  {
-    "pmid": "42960010",
-    "title": "Nanobiomechanics in Oncology: Atomic Force Microscopy for Cancer Mechanophenotyping Using Cellular Young's Modulus.",
-    "journal": "Journal of the Royal Society of New Zealand",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Tjoa H",
-      "Mei L",
-      "De Silva H",
-      "Tong D",
-      "Guan G"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42960010/"
-  },
-  {
-    "pmid": "42956580",
-    "title": "Activatable self-reinforcing nanoplatforms potentiate ferroptosis via starvation and photothermal sensitization for amplified cancer therapy.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Feb 1",
-    "authors": [
-      "Zhao JY",
-      "Wang S",
-      "Qin K",
-      "Wang LJ",
-      "Zhang CY"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42956580/"
   }
 ]

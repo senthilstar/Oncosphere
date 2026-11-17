@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT03367741",
-    "title": "Cabozantinib S-malate and Nivolumab in Treating Patients With Advanced, Recurrent, or Metastatic Endometrial Cancer",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT03367741"
+    "nct": "NCT07938333",
+    "title": "Impact of Vitamin D on Gut Microbiome and Metabolome Among Pediatric Oncology Patients",
+    "status": "RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT07938333"
   },
   {
-    "nct": "NCT04439266",
-    "title": "Testing Crizotinib as a Potential Targeted Treatment in Cancers With ALK Genetic Changes (MATCH-Subprotocol F)",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT04439266"
+    "nct": "NCT07730021",
+    "title": "A Study of ASP388B Given by Itself and With Standard Therapies in Participants With Solid Tumors",
+    "status": "RECRUITING",
+    "phase": "PHASE1, PHASE2",
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT07730021"
   },
   {
-    "nct": "NCT07027423",
-    "title": "BOLD-100 Plus Doxorubicin in Advanced Soft Tissue Sarcomas",
-    "status": "WITHDRAWN",
-    "phase": "PHASE1",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT07027423"
-  },
-  {
-    "nct": "NCT00602641",
-    "title": "Melphalan, Prednisone, and Thalidomide or Lenalidomide in Treating Patients With Newly Diagnosed Multiple Myeloma",
+    "nct": "NCT02954874",
+    "title": "Testing MK-3475 (Pembrolizumab) as Adjuvant Therapy for Triple Receptor-Negative Breast Cancer",
     "status": "ACTIVE_NOT_RECRUITING",
     "phase": "PHASE3",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT00602641"
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT02954874"
   },
   {
-    "nct": "NCT01386385",
-    "title": "Veliparib With or Without Radiation Therapy, Carboplatin, and Paclitaxel in Patients With Stage III Non-small Cell Lung Cancer That Cannot Be Removed by Surgery",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT01386385"
-  },
-  {
-    "nct": "NCT07935317",
-    "title": "A Study of Tersolisib (LY4064809) and Abemaciclib With Hormone Therapies in Participants With PIK3CA-Mutated Early Breast Cancer",
+    "nct": "NCT07940023",
+    "title": "Bispecific PSMAxCD3 Antibody CC-1 Applied Subcutaneously in Patients With Castration Resistant Prostate Carcinoma",
     "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT07935317"
-  },
-  {
-    "nct": "NCT07937124",
-    "title": "An All-Oral Combination of Ivosidenib, Sonrotoclax, and Chidamide for Newly Diagnosed Acute Myeloid Leukemia With an IDH1 Mutation (ISC)",
-    "status": "NOT_YET_RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT07937124"
-  },
-  {
-    "nct": "NCT06805825",
-    "title": "A Study of the c-Kit Specific Antibody-Drug Conjugate NN3201 for Advanced and/or Metastatic Solid Tumors Known to Express c-Kit",
-    "status": "RECRUITING",
     "phase": "PHASE1",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT06805825"
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT07940023"
   },
   {
-    "nct": "NCT02595892",
-    "title": "Gemcitabine Hydrochloride Alone or With M6620 in Treating Patients With Recurrent Ovarian, Primary Peritoneal, or Fallopian Tube Cancer",
-    "status": "ACTIVE_NOT_RECRUITING",
+    "nct": "NCT07939113",
+    "title": "Real-World Effectiveness of Cabozantinib in Advanced Neuroendocrine Tumors: A Retrospective Multicenter Study Using the GTE-RENATEN National Database",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "Not applicable",
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT07939113"
+  },
+  {
+    "nct": "NCT07937423",
+    "title": "DYNAMIC Pilot Optimization Trial",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "NA",
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT07937423"
+  },
+  {
+    "nct": "NCT07749950",
+    "title": "Effects of Early Mobilization and Feeding After Lobectomy",
+    "status": "COMPLETED",
+    "phase": "NA",
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT07749950"
+  },
+  {
+    "nct": "NCT07939204",
+    "title": "A Single-Arm Phase II Clinical Study of Sacituzumab Tirumotecan Combined With a PD-1 Inhibitor as Second-Line Therapy for Advanced Esophageal Squamous Cell Carcinoma After Failure of or Progression on Immunotherapy",
+    "status": "NOT_YET_RECRUITING",
     "phase": "PHASE2",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT02595892"
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT07939204"
   },
   {
-    "nct": "NCT03934372",
-    "title": "Safety and Efficacy of Ponatinib for Treatment of Pediatric Recurrent or Refractory Leukemias, Lymphomas or Solid Tumors",
+    "nct": "NCT07882173",
+    "title": "Epcoritamab as Consolidative Therapy for Waldenstr(SqrRoot)(Delta)m Macroglobulinemia (WM) Treated With a Bruton Tyrosine Kinase Inhibitor (BTKi)",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT07882173"
+  },
+  {
+    "nct": "NCT04178174",
+    "title": "Stereotactic Boost and Short-course Radiation Therapy for Oropharynx Cancer",
     "status": "RECRUITING",
-    "phase": "PHASE1, PHASE2",
-    "updated": "2026-11-13",
-    "url": "https://clinicaltrials.gov/study/NCT03934372"
+    "phase": "PHASE3",
+    "updated": "2026-11-16",
+    "url": "https://clinicaltrials.gov/study/NCT04178174"
   }
 ]
