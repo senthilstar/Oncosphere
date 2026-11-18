@@ -1,5 +1,26 @@
 [
   {
+    "pmid": "43041607",
+    "title": "PSMA-targeted nanoparticles delivering ATR and Src/Bcr-Abl inhibitors to stimulate STING and reprogram senescence-associated secretory phenotype for enhancing immunotherapy in prostate cancer.",
+    "journal": "Bioactive materials",
+    "pubdate": "2027 Apr",
+    "authors": [
+      "Wang W",
+      "Liu H",
+      "Liu Y",
+      "Wang H",
+      "Wen X",
+      "Tian Z",
+      "Yin H",
+      "Yang T",
+      "Xing N",
+      "Liu X",
+      "Liang C",
+      "Yang F"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43041607/"
+  },
+  {
     "pmid": "42933160",
     "title": "Cascade DNA walker-driven photo-controlled CRISPR/Cas12a nanorobot enabling ultrasensitive one-pot detection of dual miRNAs in triple-negative breast cancer.",
     "journal": "Talanta",
@@ -28,6 +49,28 @@
       "Wang H"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42981670/"
+  },
+  {
+    "pmid": "42914718",
+    "title": "Xinlikang capsule ameliorates cancer-related fatigue in Lewis lung carcinoma tumor-bearing mice: association with inhibition of oxidative stress and attenuation of JNK activation and bone marrow apoptosis.",
+    "journal": "Journal of ethnopharmacology",
+    "pubdate": "2027 Feb 10",
+    "authors": [
+      "Lu X",
+      "Huang S",
+      "Zhang Y",
+      "Ma T",
+      "Wang J",
+      "Wu X",
+      "Lv G",
+      "Wang F",
+      "Zhang L",
+      "Chen Z",
+      "Wu L",
+      "Liu X",
+      "Zhang L"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42914718/"
   },
   {
     "pmid": "43039505",
@@ -195,37 +238,5 @@
       "Sun L"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42988229/"
-  },
-  {
-    "pmid": "42987517",
-    "title": "N-heterocyclic engineering of covalent organic framework (COF)-microenvironments for the development of enzyme-based biosensor with application to lung cancer diagnosis.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Feb 1",
-    "authors": [
-      "Zhou T",
-      "Wang Z",
-      "Deng Y",
-      "Sun Y",
-      "Xue M",
-      "Bo B",
-      "Wang Z",
-      "Li G"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42987517/"
-  },
-  {
-    "pmid": "42987515",
-    "title": "Rapid and sensitive electrochemical point-of-care testing for the chemotherapy agent cisplatin via Co-catalyzed hydrolysis of a glucose derivative.",
-    "journal": "Biosensors & bioelectronics",
-    "pubdate": "2027 Feb 1",
-    "authors": [
-      "Xia L",
-      "Zhang J",
-      "Hu X",
-      "Cheng N",
-      "Yuan R",
-      "Zhou R"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42987515/"
   }
 ]
