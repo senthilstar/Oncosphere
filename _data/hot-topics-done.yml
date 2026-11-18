@@ -51,5 +51,20 @@ topics:
       - https://www.pfizer.com/news/press-release/press-release-detail/talzenna-plus-xtandi-improves-radiographic-progression-free
       - https://www.nature.com/articles/s41591-025-03961-8
       - https://www.asco.org/abstracts-presentations/243837
+  - slug: camizestrant-serena-6
+    topic: "Camizestrant (Etcamah) switch on ctDNA-detected ESR1 mutation in HR+/HER2- advanced breast cancer — SERENA-6 (NEJM 2025; ODAC 3–6 Apr 2026; EU Jul 2026; FDA accelerated approval 4 Sep 2026)"
+    date_added: 2026-11-18
+    page: /camizestrant-esr1-ctdna-switch-serena-6/
+    signal: "Top-engagement oncology regulatory story of the year (FDA approval despite negative advisory vote, Sep 2026); previously only a short brief on the site"
+    primary_sources:
+      - https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative
+      - https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220359Orig1s000ltr.pdf
+      - https://www.fda.gov/media/192244/download
+      - https://www.fda.gov/media/192245/download
+      - https://www.astrazeneca.com/media-centre/press-releases/2026/fda-odac-vote-on-camizestrant-breast-cancer.html
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2502929
+      - https://hal.science/hal-05248741v1/file/Bidard%2520NEJM%25202025%252C%2520Author%2520Accepted%2520Manuscript.pdf
+      - https://www.ema.europa.eu/en/medicines/human/EPAR/etcamah
+      - https://www.ema.europa.eu/en/documents/smop-initial/chmp-summary-positive-opinion-etcamah_en.pdf
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"

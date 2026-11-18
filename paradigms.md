@@ -13,8 +13,9 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 - [First-line systemic therapy](#first-line) · [Lung](#lung) · [Breast](#breast) · [GI](#gi) · [Bladder / GU](#bladder) · [Myeloma](#myeloma) · [Sarcoma](#sarcoma) · [Immunotherapy — dostarlimab](#immuno) · [Trial briefs](#trial-briefs) · [FDA approvals](#fda) · [Conferences](#conferences) · [What changed this week](#this-week)
 
 ## What changed this week (6–12 Nov 2026) {#this-week}
-A short weekly blurb on what moved in oncology regulation and on this site. Updated 17 Nov 2026.
+A short weekly blurb on what moved in oncology regulation and on this site. Updated 18 Nov 2026.
 
+- **New deep dive (18 Nov): camizestrant switch on ctDNA-detected ESR1 mutation (SERENA-6).** [Read the deep dive]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }}) on progression benefit, safety and the unresolved timing question.
 - **New deep dive (17 Nov): talazoparib + enzalutamide in HRR-mutated hormone-sensitive prostate cancer.** [TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }}) explains progression benefit, immature survival, HRR testing and marrow monitoring.
 - **New deep dive (16 Nov): relacorilant in platinum-resistant ovarian cancer.** [ROSELLA]({{ '/relacorilant-platinum-resistant-ovarian-cancer-rosella/' | relative_url }}) survival results, steroid precautions and implications for treatment selection.
 - **New trial note (16 Nov): ACTION-1.** [RYZ101 after lutetium-177 in GEP-NETs]({{ '/ryz101-action-1-actinium-dotatate-gep-net/' | relative_url }}) has a positive interim PFS announcement, with quantitative results awaited.
@@ -43,6 +44,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [New 9 Nov 2026: lung cancer staging puzzle (TNM 9th edition, 10 cases)]({{ '/lung-cancer-staging-puzzle/' | relative_url }})
 
 ## Breast {#breast}
+- [New 18 Nov 2026: camizestrant switch on ctDNA ESR1 mutation — SERENA-6]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }})
 - [DESTINY-Breast11]({{ '/destiny-breast-11-trial/' | relative_url }})
 
 ## GI {#gi}
@@ -67,6 +69,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [New 5 Nov 2026: organ-preservation pathway illustration]({{ '/dostarlimab-organ-preservation-pathway/' | relative_url }})
 
 ## Trial briefs {#trial-briefs}
+- [New 18 Nov 2026: camizestrant switch on ctDNA ESR1 mutation — SERENA-6]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }})
 - [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})
 - [New 16 Nov 2026: relacorilant + nab-paclitaxel in platinum-resistant ovarian cancer — ROSELLA]({{ '/relacorilant-platinum-resistant-ovarian-cancer-rosella/' | relative_url }})
 - [New 16 Nov 2026: ACTION-1 — RYZ101 (actinium-225 DOTATATE) in GEP-NETs after lutetium-177]({{ '/ryz101-action-1-actinium-dotatate-gep-net/' | relative_url }})
@@ -74,6 +77,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 18 Nov 2026: camizestrant switch on ctDNA ESR1 mutation — SERENA-6]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }})
 - [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})
 - [New 16 Nov 2026: relacorilant + nab-paclitaxel in platinum-resistant ovarian cancer — ROSELLA]({{ '/relacorilant-platinum-resistant-ovarian-cancer-rosella/' | relative_url }})
 - [New 14 Nov 2026: daraxonrasib (Rasonque) in previously treated metastatic pancreatic cancer — RASolute 302]({{ '/daraxonrasib-pancreatic-cancer-rasolute-302/' | relative_url }})

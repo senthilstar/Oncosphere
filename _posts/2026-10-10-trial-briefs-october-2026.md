@@ -67,6 +67,7 @@ Strategy:
 Switch the AI to camizestrant while continuing the CDK4/6 inhibitor.
 ⚠️ QTc interactions and bradycardia matter.
 The European Guardant360 CDx announcement concerns diagnostic access. The clinical question remains precise: when should molecular resistance trigger an endocrine switch?
+Full deep dive: [camizestrant and the ctDNA-guided switch (SERENA-6)](/camizestrant-esr1-ctdna-switch-serena-6/).
 
 <p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801253627322865">Dr. Senthil Kumar on X, 2026-10-10</a></p>
 
