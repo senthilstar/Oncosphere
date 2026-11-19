@@ -33,6 +33,8 @@ Trial schedule:
 ⚠️ Grade 3–4 adverse events: 84.1% vs 71.9%.
 🔎 Clinical implication: establish MMR/MSI status before the adjuvant discussion. This indication concerns stage III dMMR disease; extrapolation to pMMR or stage II disease requires separate evidence.
 
+Full deep dive: [adjuvant atezolizumab in stage III dMMR colon cancer (ATOMIC)](/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/).
+
 <p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801158311748036">Dr. Senthil Kumar on X, 2026-10-10</a></p>
 
 ### HER2CLIMB-05: MAINTENANCE INTENSIFIES

@@ -66,5 +66,17 @@ topics:
       - https://hal.science/hal-05248741v1/file/Bidard%2520NEJM%25202025%252C%2520Author%2520Accepted%2520Manuscript.pdf
       - https://www.ema.europa.eu/en/medicines/human/EPAR/etcamah
       - https://www.ema.europa.eu/en/documents/smop-initial/chmp-summary-positive-opinion-etcamah_en.pdf
+  - slug: atomic-atezolizumab-dmmr-colon
+    topic: "Adjuvant atezolizumab + mFOLFOX6 in resected stage III dMMR colon cancer — ATOMIC (ASCO 2025 plenary; NEJM; FDA approval 8 Oct 2026)"
+    date_added: 2026-11-19
+    page: /atezolizumab-adjuvant-dmmr-colon-cancer-atomic/
+    signal: "High-engagement oncology approval of the year (first adjuvant immunotherapy in colon cancer, FDA Oct 2026); previously only short briefs on the site"
+    primary_sources:
+      - https://www.fda.gov/drugs/cancer-approvals/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2507874
+      - https://ascopost.com/news/march-2026/adjuvant-atezolizumab-and-mfolfox6-in-stage-iii-mismatch-repair-deficient-colon-cancer/
+      - https://www.allianceforclinicaltrialsinoncology.org/news/2026/landmark-alliance-atomic-trial-establishes-new-standard-of-care-for-patients-with-stage-iii-dmmr-colon-cancer/
+      - https://news.gastro.org/issues/2026/march/atezolizumab-boosts-colon-cancer-disease-free-survival-study-finds/
+      - https://www.roche.com/media/releases/med-cor-2026-10-09
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"
