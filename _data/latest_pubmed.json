@@ -160,6 +160,32 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42914718/"
   },
   {
+    "pmid": "43054192",
+    "title": "Releasing Immunosuppression in the Tumor: A Phase 1/2 Study of Arginase Inhibitor INCB001158 in Combination with Chemotherapy in Advanced Malignancies.",
+    "journal": "Journal of immunotherapy and precision oncology",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Naing A",
+      "Javle M",
+      "Cho M",
+      "Gbolahan O",
+      "Alkharabsheh O",
+      "Thistlethwaite F",
+      "Jungels C",
+      "Papadopoulos KP",
+      "Canon JL",
+      "McCune S",
+      "Gogov S",
+      "Cheng L",
+      "Dong Z",
+      "Gong X",
+      "Ioannidis S",
+      "Kristeleit R",
+      "Bridgewater J"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43054192/"
+  },
+  {
     "pmid": "43039505",
     "title": "FDG PET/CT in Gynecologic Malignancies.",
     "journal": "Magnetic resonance imaging clinics of North America",
@@ -233,22 +259,5 @@
       "Chakravarty D"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/43032513/"
-  },
-  {
-    "pmid": "43000092",
-    "title": "FSTL1(high) hepatic stellate cells secrete CCL3 to activate the PI3K/AKT/mTOR pathway, initiating anoikis resistance and promoting hepatocellular carcinoma progression.",
-    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Wang Y",
-      "Wang H",
-      "Nie Y",
-      "Xue H",
-      "Zhou Y",
-      "Li C",
-      "Zhang C",
-      "Gu C"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43000092/"
   }
 ]
