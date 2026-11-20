@@ -105,6 +105,8 @@ ADT remains foundational.
 🇮🇳 Practical appraisal must include PSMA PET access, nuclear-medicine capacity, cost and alternatives—not only the relative hazard reduction.
 This is an earlier approval being discussed now, not a new October approval.
 
+Full deep dive: [Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer (PSMAddition)](/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/).
+
 <p class="chart-note">Source: <a href="https://x.com/esenthil84/status/2108801325773541643">Dr. Senthil Kumar on X, 2026-10-10</a></p>
 
 ### RAMPP: CYTOREDUCTIVE PROSTATECTOMY

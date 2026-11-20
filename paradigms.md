@@ -13,8 +13,11 @@ Telegraphic trial summaries · NCCN / ESMO / ASCO / ICMR context · a “What it
 - [First-line systemic therapy](#first-line) · [Lung](#lung) · [Breast](#breast) · [GI](#gi) · [Bladder / GU](#bladder) · [Myeloma](#myeloma) · [Sarcoma](#sarcoma) · [Immunotherapy — dostarlimab](#immuno) · [Trial briefs](#trial-briefs) · [FDA approvals](#fda) · [Conferences](#conferences) · [What changed this week](#this-week)
 
 ## What changed this week (6–12 Nov 2026) {#this-week}
-A short weekly blurb on what moved in oncology regulation and on this site. Updated 19 Nov 2026.
+A short weekly blurb on what moved in oncology regulation and on this site. Updated 20 Nov 2026.
 
+- **New deep dive (20 Nov): Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer (PSMAddition).** [Read the deep dive]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }}) on efficacy, safety and treatment choices.
+- **Two FDA approvals ahead of target dates (16–17 Nov).** Giredestrant plus everolimus was approved for ESR1-mutated advanced breast cancer on 16 Nov; evERA median PFS was 10 versus 5.5 months, HR 0.38 (95% CI 0.27–0.54). <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally">[FDA]</a> The adjuvant lidERA decision remains due by 30 Nov. Neladalkib received accelerated approval on 17 Nov for previously treated ALK-positive advanced NSCLC; ALKOVE-1 response rates were 49% and 32% in the eligible cohorts. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk">[FDA]</a> See the [FDA decisions page]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }}).
+- **New quiz (20 Nov):** [Deep-dive quiz: eight questions on November's trial deep dives]({{ '/deep-dive-quiz-november-2026/' | relative_url }}) tests trial design and key findings.
 - **New deep dive (19 Nov): adjuvant atezolizumab in stage III dMMR colon cancer (ATOMIC).** [Read the deep dive]({{ '/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/' | relative_url }}) on disease-free survival, safety and the implications for practice.
 - **New deep dive (18 Nov): camizestrant switch on ctDNA-detected ESR1 mutation (SERENA-6).** [Read the deep dive]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }}) on progression benefit, safety and the unresolved timing question.
 - **New deep dive (17 Nov): talazoparib + enzalutamide in HRR-mutated hormone-sensitive prostate cancer.** [TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }}) explains progression benefit, immature survival, HRR testing and marrow monitoring.
@@ -55,6 +58,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [ASCO GI 2026 — HERIZON-GEA-01, BREAKWATER, COMMIT]({{ '/asco-gi-2026/' | relative_url }})
 
 ## Bladder / GU {#bladder}
+- [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
 - [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})
 - [Advanced bladder (urothelial) cancer]({{ '/advanced-bladder-urothelial-cancer/' | relative_url }})
 - [New 12 Nov 2026: testicular tumours — interactive evidence atlas (staging, IGCCCG, treatment explorer, self-test)]({{ '/testicular-tumors/' | relative_url }})
@@ -71,6 +75,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [New 5 Nov 2026: organ-preservation pathway illustration]({{ '/dostarlimab-organ-preservation-pathway/' | relative_url }})
 
 ## Trial briefs {#trial-briefs}
+- [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
 - [New 19 Nov 2026: adjuvant atezolizumab in stage III dMMR colon cancer — ATOMIC]({{ '/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/' | relative_url }})
 - [New 18 Nov 2026: camizestrant switch on ctDNA ESR1 mutation — SERENA-6]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }})
 - [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})
@@ -80,6 +85,7 @@ A short weekly blurb on what moved in oncology regulation and on this site. Upda
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
 - [New 19 Nov 2026: adjuvant atezolizumab in stage III dMMR colon cancer — ATOMIC]({{ '/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/' | relative_url }})
 - [New 18 Nov 2026: camizestrant switch on ctDNA ESR1 mutation — SERENA-6]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }})
 - [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})

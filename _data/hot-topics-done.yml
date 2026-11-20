@@ -78,5 +78,16 @@ topics:
       - https://www.allianceforclinicaltrialsinoncology.org/news/2026/landmark-alliance-atomic-trial-establishes-new-standard-of-care-for-patients-with-stage-iii-dmmr-colon-cancer/
       - https://news.gastro.org/issues/2026/march/atezolizumab-boosts-colon-cancer-disease-free-survival-study-finds/
       - https://www.roche.com/media/releases/med-cor-2026-10-09
+  - slug: psmaddition-lu-psma-mhspc
+    topic: "Lu-PSMA-617 (Pluvicto) + ARPI/ADT in PSMA-positive metastatic hormone-sensitive prostate cancer — PSMAddition (ESMO 2025 LBA6; Lancet 2026; FDA approval 31 Jul 2026)"
+    date_added: 2026-11-20
+    page: /lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/
+    signal: "Among the most-engaged oncology approvals of the past year (FDA Jul 2026; radioligand therapy moves into hormone-sensitive disease); previously only a short brief on the site; GU pages among the site's read areas"
+    primary_sources:
+      - https://www.fda.gov/drugs/cancer-approvals/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway-inhibitor-therapy
+      - https://pubmed.ncbi.nlm.nih.gov/42561994/
+      - "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01092-5/abstract"
+      - "https://www.annalsofoncology.org/article/S0923-7534(25)04871-9/fulltext"
+      - https://www.novartis.com/news/media-releases/fda-approves-pluvicto-psma-metastatic-hormone-sensitive-prostate-cancer-mhspc-advancing-potential-new-standard-care-across-metastatic-disease
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"
