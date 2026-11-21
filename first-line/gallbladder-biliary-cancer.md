@@ -89,6 +89,7 @@ sources:
 - ⚠️ Grade 3–4 AEs 75.7% vs 77.8%; monitor cytopenias, infection and immune injury. <a class="cite" href="https://doi.org/10.1056/EVIDoa2200015">[NEJM Evid 2022]</a>
 
 
+- 🫀 **Updated OS (2024):** 12.9 vs 11.3 months (HR 0.76); 24-month OS 23.6% vs 11.5%. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/38823398/">[Lancet Gastroenterol Hepatol 2024]</a>
 - 📈 **Three-year exploratory update (2025):** OS 12.9 vs 11.3 months (HR 0.74; 95% CI 0.63–0.87); 36-month OS 14.6% vs 6.9% (updated: J Hepatol 2025 supersedes earlier OS HR 0.76). <a class="cite" href="https://doi.org/10.1016/j.jhep.2025.05.003">[J Hepatol 2025]</a>
 - PD-L1 selection is not required for this trial-defined approach; gallbladder subgroup estimates do not establish a separate preferred checkpoint agent. <a class="cite" href="https://doi.org/10.1056/EVIDoa2200015">[NEJM Evid 2022]</a>
 
@@ -98,7 +99,7 @@ sources:
 - 2️⃣ Chemotherapy stops at its protocol cap; antibody continuation is a separate phase.
 - 3️⃣ 💰 Generic GemCis is a defensible access pathway if checkpoint treatment cannot be sustained.
 
-## 4️⃣ Alternative Chemoimmunotherapy — Match the Continuation Schedule
+## 4️⃣ Equivalent Chemoimmunotherapy Option — Choose Pembrolizumab or Durvalumab by Schedule and Access
 
 **📊 KEYNOTE-966: Pembrolizumab + GemCis**
 
@@ -110,7 +111,7 @@ sources:
 
 **🔑 Key insights**
 
-- 1️⃣ No randomized comparison ranks pembrolizumab against durvalumab.
+- 1️⃣ Durvalumab-GemCis and pembrolizumab-GemCis are alternatives → no randomized comparison ranks one above the other; choose by schedule, cost and availability.
 - 2️⃣ Do not copy the TOPAZ chemotherapy cap into this protocol without an explicit adaptation.
 - 3️⃣ 💰 Select by local indication, infusion burden and total continuation cost.
 
@@ -248,7 +249,8 @@ sources:
 
 
 - MSI-H/dMMR or TMB-high → consider checkpoint treatment within indication; benefit after progression on a prior checkpoint agent is uncertain.
-- BRAF V600E → matched BRAF/MEK approach; NTRK/RET fusion → appropriate selective inhibitor where eligible. KRAS G12C → emerging targeted strategies or trial; molecular tumour board if access or variant significance is uncertain. <a class="cite" href="https://doi.org/10.1016/S1470-2045(20)30157-1">[Lancet Oncol 2020]</a>
+- 🧬 BRAF V600E → dabrafenib + trametinib; NTRK fusion → larotrectinib or entrectinib; RET fusion → selpercatinib (tumour-agnostic indications, where eligible). KRAS G12C → emerging targeted strategies or trial. BRCA1/2, PALB2, ATM/HRD, ALK/ROS1 fusions and MET amplification → molecular tumour board; trial preferred.
+- 🔁 At progression or when access is limited → clinical trial enrolment is a valid option at every line.
 
 **🔑 Key insights**
 
