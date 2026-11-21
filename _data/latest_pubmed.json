@@ -36,6 +36,37 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42962624/"
   },
   {
+    "pmid": "43062005",
+    "title": "One-carbon metabolism-derived prognostic signature orchestrates reactive oxygen species redox homeostasis in head and neck squamous cell carcinoma: integrative bulk and single-cell transcriptomic profiling.",
+    "journal": "Medical gas research",
+    "pubdate": "2027 Mar-Apr 01",
+    "authors": [
+      "Li C",
+      "Chen Y",
+      "Xu L",
+      "Gong Z",
+      "Ni Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43062005/"
+  },
+  {
+    "pmid": "43061995",
+    "title": "Hydrogen sulfide in colorectal cancer: mechanisms, roles, and therapeutic potential.",
+    "journal": "Medical gas research",
+    "pubdate": "2027 Mar-Apr 01",
+    "authors": [
+      "Li HT",
+      "Chen Y",
+      "Hua JQ",
+      "Jiang ZY",
+      "Xu YT",
+      "Fu XY",
+      "Li SW",
+      "Zhou Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43061995/"
+  },
+  {
     "pmid": "42933160",
     "title": "Cascade DNA walker-driven photo-controlled CRISPR/Cas12a nanorobot enabling ultrasensitive one-pot detection of dual miRNAs in triple-negative breast cancer.",
     "journal": "Talanta",
@@ -218,46 +249,5 @@
       "Sanli Y"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/43039498/"
-  },
-  {
-    "pmid": "43039495",
-    "title": "Carcinoma of Unknown Primary.",
-    "journal": "Magnetic resonance imaging clinics of North America",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Mesci I",
-      "Soydal C"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43039495/"
-  },
-  {
-    "pmid": "43032513",
-    "title": "Access to clinical cancer genomics and precision oncology-based care in North America.",
-    "journal": "Lancet regional health. Americas",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Kumar P",
-      "Salawu A",
-      "Demichelis-Gómez R",
-      "Williams A",
-      "Harris AR",
-      "Jenkins-Lord BD",
-      "Mullangi S",
-      "Bajaj RA",
-      "Bolajoko O",
-      "Jacobson I",
-      "Lopez-Correa C",
-      "Parikh A",
-      "Teckie S",
-      "Wu J",
-      "Odedina F",
-      "Davis MB",
-      "Swenson W",
-      "Bourque JM",
-      "Versón CA",
-      "Siu LL",
-      "Chakravarty D"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43032513/"
   }
 ]
