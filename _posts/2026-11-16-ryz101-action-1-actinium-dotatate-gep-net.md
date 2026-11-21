@@ -1,48 +1,50 @@
 ---
 title: "ACTION-1: first phase 3 win for an alpha-emitting radioligand (RYZ101) in neuroendocrine tumours after lutetium-177"
 cover: news
-updated: 2026-11-16
+updated: 2026-11-21
 category: Trials
 audience: clinicians
-summary: "BMS reports a positive interim PFS result for RYZ101 after Lu-177 therapy in SSTR-positive GEP-NETs; quantitative efficacy and safety results remain unreleased."
+summary: "BMS reports a positive interim PFS result for RYZ101 after Lu-177 therapy in SSTR-positive GEP-NETs; quantitative phase 3 results remain unreleased."
 description: "ACTION-1 topline findings for actinium-225 DOTATATE after lutetium-177: population, comparator, missing results and India context."
-tldr: "The planned interim analysis met BICR PFS, according to BMS. No hazard ratio, median PFS or toxicity rates were released. Full results and OS follow-up are awaited; regulatory discussions are planned."
+tldr: "The sponsor reports that the planned interim analysis met the blinded central-review PFS endpoint. The phase 3 effect size and detailed safety results are awaited; orphan designation is not approval."
 sources:
-  - title: "BMS — ACTION-1 planned interim analysis, 12 Oct 2026"
-    url: https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx
-  - title: "ClinicalTrials.gov — ACTION-1, NCT05477576"
+  - title: "ACTION-1 — BMS sponsor announcement 2026"
+    url: https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx
+  - title: "ACTION-1 — ClinicalTrials.gov"
     url: https://clinicaltrials.gov/study/NCT05477576
+  - title: "ACTION-1 phase 1b — JCO conference abstract 2025"
+    url: https://ascopubs.org/doi/10.1200/JCO.2025.43.4_suppl.661
 ---
 ## What was announced
 
-On **12 Oct 2026**, BMS reported that the planned interim analysis of phase 3 ACTION-1 met its primary endpoint: improved progression-free survival (PFS) by blinded independent central review (BICR). The company described the improvement as statistically significant and clinically meaningful, with safety consistent with the known RYZ101 profile. Detailed results are expected at a future meeting; patients remain under follow-up for OS. <a class="cite" href="https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS announcement]</a>
+On **12 October 2026**, BMS reported that a planned interim analysis of the randomised phase 3 ACTION-1 trial met its primary endpoint: progression-free survival (PFS) by blinded independent central review (BICR) improved with RYZ101 versus investigator-selected treatment. The sponsor called the difference statistically significant and clinically meaningful, reported safety as consistent with the known profile, and said detailed results would be presented at a future meeting; overall survival (OS) follow-up continues. <a class="cite" href="https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS 2026, sponsor-reported]</a>
 
-RYZ101 is **actinium-225 DOTATATE**. Its alpha particles deliver high energy over a short range and cause double-strand DNA breaks. BMS describes ACTION-1 as the first phase 3 result for an actinium-based, alpha-isotope targeted radiopharmaceutical in any indication. That milestone is a company claim accompanying topline results. <a class="cite" href="https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS announcement]</a>
+RYZ101 is **actinium-225 DOTATATE**, an investigational SSTR-targeted radiopharmaceutical. Its short-range alpha emissions can cause double-strand DNA damage. BMS describes this as the first phase 3 result for an actinium-based targeted alpha radiopharmaceutical; this is a sponsor claim based on a topline announcement. <a class="cite" href="https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS 2026, sponsor-reported]</a>
 
 ## Who was in the trial
 
-ACTION-1 (**NCT05477576**) studies SSTR-positive gastroenteropancreatic neuroendocrine tumours progressing after lutetium-177-based therapy. The control is investigator-selected high-dose or high-frequency long-acting somatostatin analogues, everolimus or sunitinib.
+ACTION-1 (**NCT05477576**) is an open-label study of advanced SSTR-positive gastroenteropancreatic neuroendocrine tumours (GEP-NETs) after progression on lutetium-177-labelled somatostatin analogue (SSA) therapy. The phase 3 comparator is investigator choice of high-dose or high-frequency long-acting SSA, everolimus or sunitinib. <a class="cite" href="https://clinicaltrials.gov/study/NCT05477576">[ClinicalTrials.gov]</a> <a class="cite" href="https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS 2026]</a>
 
-Key eligibility in the registry includes:
+Key registry eligibility includes:
 
-- **Grade 1–2**, well-differentiated, inoperable GEP-NET; **Ki-67 ≤20%** and **ECOG 0–2**.
-- SSTR-PET positivity, **Krenning 3–4**.
-- Progression after **2–4 cycles** of Lu-177 somatostatin-analogue therapy, with **≥6 months** of prior disease control.
-- **eGFR ≥60**; exclusions include prior radioembolisation, PRRT other than Lu-177 SSA, and cirrhosis.
+- Well-differentiated, inoperable, advanced **grade 1–2** GEP-NET, **Ki-67 ≤20%** and **ECOG 0–2**; the registry describes an exception to the Ki-67 criterion for an ad hoc pharmacokinetic/ECG substudy cohort. <a class="cite" href="https://clinicaltrials.gov/study/NCT05477576">[ClinicalTrials.gov]</a>
+- Positive SSTR-PET with uptake score **3–4**, at least one PET-positive measurable lesion and no measurable SSTR-negative metastatic lesions. <a class="cite" href="https://clinicaltrials.gov/study/NCT05477576">[ClinicalTrials.gov]</a>
+- Progression after **2–4 cycles** of Lu-177 SSA, with disease control for at least **6 months** following that treatment. <a class="cite" href="https://clinicaltrials.gov/study/NCT05477576">[ClinicalTrials.gov]</a>
+- **eGFR ≥60 mL/min/1.73 m²**; prior radioembolisation, PRRT other than Lu-177 SSA, and cirrhosis are among the exclusions. <a class="cite" href="https://clinicaltrials.gov/study/NCT05477576">[ClinicalTrials.gov]</a>
 
-The combined phase 1b/3 record lists actual enrolment of **343**, status **active, not recruiting**, a **24 Mar 2022** start and primary completion in **Dec 2026**. Its primary endpoint is BICR PFS using **RECIST 1.1**, after **143 PFS events**. The registry's completion date should be read alongside the announcement of a planned interim analysis. <a class="cite" href="https://clinicaltrials.gov/study/NCT05477576">[ClinicalTrials.gov]</a>
+The combined phase 1b/3 registry record lists **343** actual participants, a **24 March 2022** start, active but not recruiting status, and estimated primary completion in **December 2026**. The phase 3 primary endpoint is BICR PFS by **RECIST 1.1**; the registry describes assessment after **143 PFS events**, whereas the announced positive result comes from a planned interim analysis. <a class="cite" href="https://clinicaltrials.gov/study/NCT05477576">[ClinicalTrials.gov]</a> <a class="cite" href="https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS 2026]</a>
 
 ## What we do not know yet
 
-**No hazard ratio, median PFS or toxicity rates were released.** The magnitude of benefit and the comparative harm profile cannot yet be independently assessed from this announcement. Calling the result clinically meaningful does not supply those missing data.
+As of **21 November 2026**, the identified phase 3 announcement does not give a hazard ratio, confidence interval, median PFS, response rate or comparative toxicity rates. The magnitude and precision of benefit, and the balance of benefit and harm against each control option, therefore remain unclear. <a class="cite" href="https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS 2026, sponsor-reported]</a>
 
-The company also cites phase 1b experience in **17** previously Lu-177-treated patients, with no treatment-related serious AEs or discontinuations due to AEs. That small earlier cohort does not establish the phase 3 safety balance. Full efficacy and safety reporting remains essential. <a class="cite" href="https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS announcement]</a>
+Earlier, the single-arm phase 1b conference abstract reported **17** treated patients and a confirmed objective response in **5 (29.4%)**, including one complete response; median PFS was not estimable (95% CI **12.16 months to not estimable**). <a class="cite" href="https://ascopubs.org/doi/10.1200/JCO.2025.43.4_suppl.661">[JCO abstract 2025]</a> At the **14 December 2023** cutoff, grade ≥3 treatment-emergent adverse events occurred in **9** patients, including **5 (29.4%)** considered treatment-related; **6 (35.3%)** had serious adverse events, none judged treatment-related, and none discontinued because of an adverse event. One fatal hepatic failure event was considered unrelated to treatment. <a class="cite" href="https://ascopubs.org/doi/10.1200/JCO.2025.43.4_suppl.661">[JCO abstract 2025]</a> This small, uncontrolled cohort cannot establish the phase 3 safety balance. <a class="cite" href="https://ascopubs.org/doi/10.1200/JCO.2025.43.4_suppl.661">[JCO abstract 2025]</a>
 
 ## Why it matters
 
-The study addresses treatment after progression on Lu-177 therapy, within a selected SSTR-positive population. It makes alpha-emitting treatment a consequential clinical question in this sequence. Quantitative results are needed before its place against the investigator-choice options can be judged.
+The trial tests an alpha-emitting agent after Lu-177 therapy in a selected SSTR-positive population. Full comparative efficacy, adverse-event and OS data are needed to judge its position against the available investigator-choice options.
 
-FDA orphan drug designation was granted in **Aug 2026**. BMS plans discussions with FDA about a regulatory submission; designation and a positive interim announcement do not establish approval. <a class="cite" href="https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS announcement]</a>
+BMS reports that the FDA granted orphan drug designation for GEP-NETs in **August 2026** and that regulatory discussions are planned. Designation is not marketing approval; the sponsor describes RYZ101 as investigational. <a class="cite" href="https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx">[BMS 2026, sponsor-reported]</a>
 
 ## India note
 

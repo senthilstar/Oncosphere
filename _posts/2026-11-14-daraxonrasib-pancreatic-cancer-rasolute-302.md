@@ -1,125 +1,127 @@
 ---
 title: "Daraxonrasib (Rasonque) in previously treated metastatic pancreatic cancer: RASolute 302 and the first RAS(ON) inhibitor approval"
 cover: gi
-updated: 2026-11-14
+updated: 2026-11-21
 category: "GI"
 audience: clinicians
-summary: "RASolute 302 compared daraxonrasib with chemotherapy in previously treated metastatic pancreatic cancer: overall median survival was 13.2 vs 6.7 months (HR 0.40). Practical interpretation, toxicity prevention and Indian access considerations."
-description: "Daraxonrasib (Rasonque), the first approved RAS(ON) inhibitor: RASolute 302 survival results, US label eligibility, preventive skin and mouth care, interactions and access considerations for India."
-tldr: "The FDA granted regular approval to daraxonrasib on 26 August 2026 for adults with metastatic pancreatic adenocarcinoma after at least one systemic therapy or who are not candidates for multiagent systemic therapy. RASolute 302 showed overall median OS of 13.2 vs 6.7 months and PFS of 7.2 vs 3.6 months against chemotherapy. No companion diagnostic is required, but the trial mainly enrolled RAS-mutant disease and fit patients. Skin, mouth and bowel toxicity need proactive management; no CDSCO approval was found as of 14 November 2026."
+summary: "RASolute 302 compared daraxonrasib with chemotherapy after treatment for metastatic pancreatic cancer. An updated analysis reports median overall survival of 12.4 versus 6.7 months."
+description: "Daraxonrasib (Rasonque), RASolute 302 survival results, US and EU indications, toxicity prevention, interactions and access considerations for India."
+tldr: "The FDA approved daraxonrasib for metastatic pancreatic adenocarcinoma after prior systemic therapy or when multiagent therapy is unsuitable. An updated RASolute 302 analysis reports median overall survival of 12.4 versus 6.7 months. Manage skin, mouth and bowel toxicity proactively; Indian regulatory status needs local verification."
 sources:
-  - title: "FDA — FDA approves daraxonrasib for metastatic pancreatic adenocarcinoma"
+  - title: "RASolute 302 — FDA approval 2026"
     url: https://www.fda.gov/drugs/cancer-approvals/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma
-  - title: "FDA — FDA approves first-in-class targeted therapy for metastatic pancreatic cancer"
-    url: https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer
-  - title: "FDA — Rasonque US prescribing information"
+  - title: "RASolute 302 — FDA prescribing information 2026"
     url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf
-  - title: "NEJM — Daraxonrasib or Chemotherapy in Previously Treated Metastatic Pancreatic Cancer"
-    url: https://www.nejm.org/doi/full/10.1056/NEJMoa2605555
-  - title: "Revolution Medicines — US FDA approves Rasonque (daraxonrasib)"
-    url: https://ir.revmed.com/news-releases/news-release-details/us-fda-approves-revolution-medicines-rasonquetm-daraxonrasib/
-  - title: "SEC — Revolution Medicines filing, 26 August 2026"
-    url: https://www.sec.gov/Archives/edgar/data/1628171/000119312526366931/rvmd-20260826.htm
-  - title: "Revolution Medicines — Daraxonrasib demonstrates overall survival benefit"
-    url: https://ir.revmed.com/news-releases/news-release-details/daraxonrasib-demonstrates-unprecedented-overall-survival-benefit/
-  - title: "The ASCO Post — Daraxonrasib nearly doubles survival in previously treated metastatic pancreatic cancer"
-    url: https://ascopost.com/issues/june-10-2026/daraxonrasib-nearly-doubles-survival-in-previously-treated-metastatic-pancreatic-cancer
-  - title: "The Lancet — NAPOLI-1"
-    url: https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2815%2900986-1/abstract
-  - title: "Revolution Medicines — Second-quarter 2026 financial results"
-    url: https://revmed.gcs-web.com/news-releases/news-release-details/revolution-medicines-reports-second-quarter-2026-financial/
+  - title: "Rasonque — European Commission register 2026"
+    url: https://ec.europa.eu/health/documents/community-register/html/h2079.htm
+  - title: "RASolute 302 — EU prescribing information 2026"
+    url: https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf
+  - title: "RASolute 302 — NEJM 2026"
+    url: https://pubmed.ncbi.nlm.nih.gov/42223072/
+  - title: "RASolute 302 — ASCO 2026"
+    url: https://www.asco.org/abstracts-presentations/268016/
+  - title: "RASolute 302 — ClinicalTrials.gov"
+    url: https://clinicaltrials.gov/study/NCT06625320
+  - title: "NAPOLI-1 — FDA prescribing information 2024"
+    url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/207793s018lbl.pdf
+  - title: "NAPOLI-1 — Lancet 2016"
+    url: https://pubmed.ncbi.nlm.nih.gov/26615328/
+  - title: "RASolute 303 — ClinicalTrials.gov"
+    url: https://clinicaltrials.gov/study/NCT07491445
+  - title: "RASolute 304 — Annals of Oncology 2026"
+    url: https://www.annalsofoncology.org/article/S0923-7534%2826%2900695-2/abstract
+  - title: "RMC-GI-102 — sponsor report 2026"
+    url: https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-presents-updated-phase-12-data-rasonquer
   - title: "CDSCO — Approved New Drugs"
     url: https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/index.html
 ---
 ## Why this matters
 
-Pancreatic adenocarcinoma is usually driven by mutated KRAS, yet treatment after progression has largely depended on changing chemotherapy. RAS was long described as “undruggable”: its tight nucleotide binding and lack of an obvious pocket made conventional small-molecule inhibition difficult. Targeting the active protein through a partner protein offers a different approach.
+After progression on chemotherapy, metastatic pancreatic adenocarcinoma has limited treatment options. Daraxonrasib targets active RAS signalling and improved survival against investigator-selected chemotherapy in a randomised trial. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42223072/">[NEJM 2026]</a>
 
-On 26 August 2026, the [FDA granted regular approval to daraxonrasib](https://www.fda.gov/drugs/cancer-approvals/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma), marketed as Rasonque. This first RAS(ON) inhibitor approval brings a broadly applicable RAS-directed treatment into metastatic pancreatic cancer. It is a meaningful change because benefit was demonstrated against active chemotherapy, with overall survival as a central outcome.
+The FDA approved daraxonrasib, the first RAS(ON) inhibitor approved for pancreatic cancer, on 26 August 2026 for adults with metastatic pancreatic adenocarcinoma after at least one systemic therapy or who are not candidates for multiagent systemic therapy. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma">[FDA 2026]</a> On 16 November 2026 the European Commission authorised monotherapy for adults with metastatic pancreatic adenocarcinoma after at least one prior systemic therapy; the EU indication does not include the US alternative criterion for patients unsuitable for multiagent treatment. <a class="cite" href="https://ec.europa.eu/health/documents/community-register/html/h2079.htm">[EC 2026]</a> <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a>
 
-The historical second-line benchmark remains modest. In [NAPOLI-1](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2815%2900986-1/abstract), following gemcitabine-based therapy, nal-IRI plus fluorouracil and leucovorin produced median overall survival of 6.1 months versus 4.2 months, with HR 0.67. That provides context, but differences between trials prevent a direct efficacy comparison with daraxonrasib.
+For historical context, NAPOLI-1 compared liposomal irinotecan plus fluorouracil/leucovorin with fluorouracil/leucovorin after gemcitabine-based treatment. Median OS was 6.1 versus 4.2 months (HR 0.67; 95% CI 0.49–0.92). In the combination arm, frequent grade 3–4 events included neutropenia 27%, diarrhoea 13%, vomiting 11% and fatigue 14%. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/26615328/">[Lancet 2016]</a>
+
+In the FDA label's concurrent comparison (117 versus 119 patients), median PFS was 3.1 versus 1.5 months (HR 0.55; 95% CI 0.41–0.75), and confirmed ORR was 7.7% versus 0.8%. Different analysis populations and methods account for the label's OS HR of 0.68 (95% CI 0.50–0.93). Differences between trials prevent direct comparison with daraxonrasib. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/207793s018lbl.pdf">[FDA label 2024]</a>
 
 ## How daraxonrasib works
 
-Daraxonrasib is described as a **RAS(ON) multi-selective inhibitor**: it targets the active, GTP-bound state of RAS across multiple variants. The [US prescribing information](https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf) states that it **binds cyclophilin A**. The resulting drug–protein partnership engages active RAS to form a tri-complex, interfering with downstream signalling that supports tumour growth.
+Daraxonrasib binds cyclophilin A; the resulting complex engages GTP-bound RAS and disrupts downstream signalling. Its activity spans multiple mutant and wild-type RAS proteins, but that does not establish equal clinical benefit for every tumour genotype. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
 
-This is broader than targeting a single mutation-specific pocket. It does not mean every pancreatic tumour will respond, or that RAS testing has become irrelevant. The recommended dose is **300 mg orally once daily**, continued until progression or unacceptable toxicity. Oral administration avoids infusion visits for the drug itself, but still requires structured toxicity assessment and medication review.
+The US recommended dose is **300 mg orally once daily**, until disease progression or unacceptable toxicity. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> Oral therapy still requires proactive monitoring and medication reconciliation.
 
 ## RASolute 302 design
 
-The [NEJM report of RASolute 302](https://www.nejm.org/doi/full/10.1056/NEJMoa2605555) describes an international, open-label, randomised phase 3 trial. The comparison addressed treatment after progression on a prior chemotherapy backbone rather than untreated metastatic disease.
+This international, open-label phase 3 trial enrolled patients with metastatic pancreatic adenocarcinoma progressing after one prior fluoropyrimidine- or gemcitabine-based systemic regimen, measurable disease, documented local RAS status and ECOG performance status 0–1. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> The protocol also allowed recurrence soon after perioperative treatment under specified criteria. <a class="cite" href="https://clinicaltrials.gov/study/NCT06625320">[ClinicalTrials.gov]</a>
 
 | Feature | Trial design |
 |---|---|
-| Eligibility | Metastatic pancreatic adenocarcinoma progressing after one prior fluoropyrimidine- or gemcitabine-based line; ECOG 0–1; measurable disease; locally documented RAS status, mutant or wild-type |
-| Allocation | 1:1 randomisation; 500 participants |
-| Daraxonrasib arm | 248 participants; 300 mg orally daily |
-| Chemotherapy arm | 252 participants; physician’s choice of mFOLFIRINOX, gemcitabine–nab-paclitaxel, FOLFOX, or nal-IRI plus fluorouracil/leucovorin |
-| Dual primary endpoints | Overall survival (OS) and progression-free survival (PFS) by blinded independent central review in the RAS G12 population |
-| Key secondary endpoints | OS and PFS in the overall population, objective response rate (ORR), and quality of life |
+| Allocation | 500 patients randomised 1:1; 248 to daraxonrasib and 252 to chemotherapy. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> |
+| Treatment | Daraxonrasib 300 mg daily versus investigator choice of mFOLFIRINOX, gemcitabine–nab-paclitaxel, FOLFOX, or liposomal irinotecan plus fluorouracil/leucovorin. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> |
+| Primary endpoints | Overall survival (OS) and progression-free survival (PFS), the latter by blinded independent central review, in the RAS G12 population. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42223072/">[NEJM 2026]</a> |
+| Other outcomes | OS and PFS in the overall population and objective response rate (ORR). <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> |
 
-RAS G12 mutations were present in 91.8% of participants. The label describes a population with substantial disease burden: 70% had liver metastases and 50% had ECOG 1 performance status. These were nevertheless patients fit enough for trial treatment; eligibility should frame discussions about frailer patients.
+RAS G12 mutations were present in 459 of 500 patients (91.8%); 70% had liver metastases and 50% had ECOG performance status 1. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> This selected population limits extrapolation to patients with poorer performance status.
 
 ## Results
 
-The primary RAS G12 analysis and the overall-population analysis tell a consistent story, but their medians and PFS hazard ratios should not be interchanged. In the table, treatment values appear as **daraxonrasib versus chemotherapy**. Overall-population confidence intervals are provided where reported in the FDA notice and label.
+Values below are **daraxonrasib versus chemotherapy**. The prespecified primary analysis used the 10 February 2026 cutoff; the later overall-population OS analysis was ad hoc and used the 15 June 2026 cutoff. <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a>
 
-| Outcome | RAS G12 population | Overall population |
+| Outcome | RAS G12 population, primary analysis | Overall population |
 |---|---|---|
-| Median OS | 13.2 vs 6.6 months | 13.2 vs 6.7 months |
-| OS hazard ratio | 0.40 | 0.40 (95% CI 0.30–0.53) |
-| Median PFS | 7.3 vs 3.5 months | 7.2 vs 3.6 months |
-| PFS hazard ratio | 0.45 | 0.49 (95% CI 0.38–0.64) |
-| ORR | Not separately presented here | 30% vs 11% |
-| OS events | Not separately presented here | 79 (32%) vs 141 (56%) |
+| Population | 228 vs 231 patients. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42223072/">[NEJM 2026]</a> | 248 vs 252 patients. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> |
+| Median OS, primary analysis | 13.2 vs 6.6 months; HR 0.40 (95% CI 0.30–0.54). <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> | 13.2 vs 6.7 months; HR 0.40 (95% CI 0.30–0.53). <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a> |
+| OS events, primary analysis | 72 (32%) vs 127 (55%). <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42223072/">[NEJM 2026]</a> | 79 (32%) vs 141 (56%). <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> |
+| Median OS, updated analysis | Not reported in the cited EU label. <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a> | 12.4 vs 6.7 months; HR 0.49 (95% CI 0.39–0.62); 124 vs 169 deaths. <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a> |
+| Median PFS, primary analysis | 7.3 vs 3.5 months; HR 0.45 (95% CI 0.34–0.59). <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> | 7.2 vs 3.6 months; HR 0.49 (95% CI 0.38–0.64). <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a> |
+| ORR, primary analysis | 32% vs 11%, all randomised patients. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> | 30% vs 11%, all randomised patients. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> |
+
+The EU label reports ORR of 31.6% versus 11.2% among patients with centrally assessed measurable disease at baseline (237 versus 241 patients); this different denominator explains the distinction from the FDA all-randomised percentages. <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a> A hazard ratio describes relative event rates over follow-up, not an individual probability of benefit.
 
 <figure style="margin:24px 0">
 <img src="{{ '/assets/img/infographic-rasolute-302-daraxonrasib.svg' | relative_url }}" alt="RASolute 302, phase 3, 500 patients: daraxonrasib versus chemotherapy in the overall population. Median OS 13.2 versus 6.7 months, HR 0.40; median PFS 7.2 versus 3.6 months, HR 0.49; ORR 30% versus 11%; grade ≥3 adverse events 61.8% versus 69.6%; discontinuation for treatment-related adverse events 1.2% versus 11.2%." width="1200" height="800" style="width:100%;height:auto;border-radius:14px;border:1px solid #e3ecee;background:#fbfaf6">
-<figcaption class="meta">Original Oncosphere graphic · 14 Nov 2026 · figures from the FDA approval notice, US prescribing information and NEJM report of RASolute 302</figcaption>
+<figcaption class="meta">Original Oncosphere graphic · 14 Nov 2026 · initial analysis, not the later updated OS analysis. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42223072/">[NEJM 2026]</a></figcaption>
 </figure>
 
-The concordant survival and disease-control findings strengthen the clinical case. A hazard ratio summarises relative event rates across follow-up; it is not the probability that an individual patient will benefit. Similarly, a median describes the population experience rather than a survival deadline for someone starting treatment.
+The graphic preserves the initial OS estimate; use the updated analysis above for the latest overall-population survival estimate. <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a>
 
 ## Safety and how to manage it in clinic
 
-In the randomised trial, grade ≥3 adverse events occurred in **61.8% versus 69.6%**, and treatment-related adverse events caused discontinuation in **1.2% versus 11.2%**. Lower discontinuation does not make daraxonrasib a low-toxicity treatment. Its skin, oral and bowel effects require a different workflow from chemotherapy.
+In RASolute 302, among treated patients (241 versus 214), grade 3 or higher adverse events occurred in 61.8% versus 69.6%, and treatment-related adverse events led to discontinuation in 1.2% versus 11.2%, respectively. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42223072/">[NEJM 2026]</a> Lower discontinuation does not remove the need for active toxicity prevention and monitoring.
 
-The label’s pooled pancreatic adenocarcinoma safety data should be distinguished from those comparative trial rates:
+The following rates come from the label's pooled pancreatic cancer safety experience and should not be compared directly with the randomised treatment-arm rates:
 
-- **Skin:** dermatologic toxicity affected 86%, including grade 3 toxicity in 10%, with median onset at 13 days. Start prophylactic skin care **before the first dose**: topical steroids, emollients, sunscreen and oral antibiotics as advised in the label. Counsel patients to limit sun exposure and report evolving rash promptly.
-- **Mouth:** stomatitis occurred in 57%, including grade 3 events in 9%; median onset was 22 days. Arrange steroid-containing mouthwash and assess whether soreness is compromising eating, drinking or adherence.
-- **Bowel:** diarrhoea occurred in 63%, including grade 3 events in 6%, with median onset at 3 days. Give an early reporting and management plan, including hydration advice and access to symptom treatment. Review persistent symptoms before dehydration or poor intake becomes established.
+- **Skin:** Dermatologic toxicity occurred in 86%, grade 3 in 10%, with median onset at 13 days. Begin topical corticosteroids, emollients, sunscreen and oral antibiotics as indicated before the first dose; counsel about sun exposure and early reporting. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
+- **Mouth:** Stomatitis occurred in 57%, grade 3 in 9%, with median onset at 22 days. Treat stomatitis with steroid-containing mouthwash and assess intake and adherence. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
+- **Bowel:** Diarrhoea occurred in 63%, grade 3 in 6%, with median onset at 3 days. Provide a plan for prompt reporting, hydration and antidiarrhoeal treatment. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
 
-Rare events need explicit counselling. Gastrointestinal perforation occurred in 0.9%, with a fatal case. ILD/pneumonitis occurred in 2.4%, including grade 3 events in 0.9% and a fatal case; median onset was 111 days. New severe abdominal symptoms, cough or breathlessness warrant urgent assessment rather than routine symptom suppression. Follow the label for treatment interruption, dose modification and discontinuation.
+Gastrointestinal perforation occurred in 0.9%, including a fatal event; interstitial lung disease or pneumonitis occurred in 2.4%, including grade 3 in 0.9% and a fatal event, with median onset at 111 days. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> New severe abdominal pain or respiratory symptoms warrant urgent assessment; withhold treatment when perforation or pneumonitis is suspected and follow label dose-modification guidance. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
 
-Review blood counts and biochemistry. All-grade haemoglobin decreases were reported in 52% versus 68%, platelet decreases in 45% versus 58%, and white-cell decreases in 35% versus 58%. Creatinine increases were more frequent with daraxonrasib: 24% versus 9%. The label also requires contraception during treatment and for 1 week afterwards.
+Check blood counts and biochemistry. In the trial, haemoglobin decreases occurred in 52% versus 68%, platelet decreases in 45% versus 58%, white-cell decreases in 35% versus 58%, and creatinine increases in 24% versus 9%. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> Advise effective contraception during therapy and for one week after the last dose for patients and partners as specified in the label. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
 
-Medication reconciliation is essential. Daraxonrasib is a CYP3A and P-gp substrate. Avoid strong CYP3A inhibitors that also inhibit P-gp, and follow label-specific dose adjustments for other CYP3A/P-gp modulators. Separate P-gp substrates by at least 4 hours. Avoid systemic cyclosporine because of the cyclophilin A interaction; seek pharmacy input before prescribing unfamiliar combinations.
+Daraxonrasib is a CYP3A and P-gp substrate. Avoid strong CYP3A inhibitors that also inhibit P-gp and systemic cyclosporine or its derivatives; consult the label for other inhibitor and inducer dose adjustments. Take P-gp substrates at least 4 hours apart from daraxonrasib. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
 
 ## What it changes in practice
 
-The US indication covers adults with metastatic pancreatic adenocarcinoma who have received **at least one prior systemic therapy or are “not candidates for multiagent systemic therapy”**. That wording is broader than the randomised trial’s previously treated, ECOG 0–1 population. A label option for someone unable to receive a chemotherapy combination should not be read as proof of identical benefit across all levels of frailty.
+The US indication extends beyond the trial population to patients unsuitable for multiagent treatment; efficacy in substantially frailer patients remains uncertain. No RAS companion diagnostic is required by the US indication, but local testing remains useful for interpretation and other treatment or trial decisions. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> Only 3% had no RAS mutation detected, so conclusions for that subgroup are limited. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
 
-The [approval announcement](https://ir.revmed.com/news-releases/news-release-details/us-fda-approves-revolution-medicines-rasonquetm-daraxonrasib/) states that no companion diagnostic is required, and the indication includes disease with or without an identified RAS mutation. RAS testing remains informative for interpreting applicability and considering trials. The **3% RAS-not-detected subgroup was small**, limiting confidence about outcomes in that group alone.
+The primary analysis was performed at an interim look, with median follow-up of 8.5 months; the primary and key secondary endpoints were met. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42223072/">[NEJM 2026]</a> The later OS update supports a continuing benefit, although its ad hoc nature and the open-label design matter when interpreting the findings. <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a>
 
-Other caveats matter. The study was open-label, although central blinded review supported PFS assessment. Results came from an interim analysis; the [sponsor described the OS and PFS endpoint results as final](https://ir.revmed.com/news-releases/news-release-details/daraxonrasib-demonstrates-unprecedented-overall-survival-benefit/). Median follow-up was **8.5 months**, as [reported from the ASCO 2026 plenary presentation](https://ascopost.com/issues/june-10-2026/daraxonrasib-nearly-doubles-survival-in-previously-treated-metastatic-pancreatic-cancer). Longer observation remains useful for understanding durability and late toxicity.
-
-Earlier use remains under investigation. [RASolute 303 and RASolute 304](https://revmed.gcs-web.com/news-releases/news-release-details/revolution-medicines-reports-second-quarter-2026-financial/) address first-line metastatic treatment and adjuvant treatment respectively. Their pending results should guide any future expansion into those settings.
+Earlier use remains investigational. RASolute 303 (NCT07491445) evaluates first-line metastatic treatment. <a class="cite" href="https://clinicaltrials.gov/study/NCT07491445">[ClinicalTrials.gov]</a> RASolute 304 (NCT07252232) evaluates adjuvant daraxonrasib versus observation after surgery and chemotherapy. <a class="cite" href="https://www.annalsofoncology.org/article/S0923-7534%2826%2900695-2/abstract">[Ann Oncol 2026]</a> Updated early-phase results for daraxonrasib with gemcitabine–nab-paclitaxel were sponsor-reported in November 2026; without a randomised comparison, they do not establish a first-line standard. <a class="cite" href="https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-presents-updated-phase-12-data-rasonquer">[Sponsor 2026]</a>
 
 ## India and resource-limited settings
 
-No CDSCO approval was found as of **14 November 2026** in the [Approved New Drugs listing](https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/index.html). The sponsor describes daraxonrasib as investigational outside the US. The [SEC filing](https://www.sec.gov/Archives/edgar/data/1628171/000119312526366931/rvmd-20260826.htm) gives a US list price of **$39,800 per 30-day supply**; this is not an Indian price or an estimate of a patient’s eventual cost.
+The CDSCO Approved New Drugs listing should be checked for the current regulatory position; an absent listing alone cannot establish that approval or access is unavailable. <a class="cite" href="https://cdsco.gov.in/opencms/opencms/en/Approval_new/Approved-New-Drugs/index.html">[CDSCO]</a> Confirm the applicable legal route before any hospital-arranged import or named-patient access, and plan for continuity of supply and toxicity monitoring.
 
-Any hospital-arranged import or named-patient access should proceed only after confirming the legal route. Availability, continuity of supply and the ability to monitor toxicity all matter before treatment begins. Trial enrolment deserves active discussion where feasible.
-
-Most patients will still receive established chemotherapy, including gemcitabine–nab-paclitaxel, FOLFIRINOX/mFOLFOX or nal-IRI-based second-line treatment, selected according to prior exposure, ECOG status and organ function. Good supportive care remains central: pain relief, nutrition, symptom control and realistic treatment goals. If daraxonrasib becomes accessible, inexpensive skin prophylaxis and mouth care should be planned alongside the anticancer prescription; preventing avoidable toxicity is especially valuable when return visits are difficult.
+Established chemotherapy remains important: gemcitabine–nab-paclitaxel, FOLFIRINOX or FOLFOX, and liposomal irinotecan-based treatment are options selected for prior exposure, performance status and organ function. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a> Supportive care includes pain relief, nutrition and symptom control. Discuss clinical trials where feasible. If daraxonrasib becomes accessible, plan skin and mouth care with the prescription, particularly where return visits are difficult.
 
 ## Key take-aways
 
-- Daraxonrasib brings RAS(ON) inhibition into approved treatment for metastatic pancreatic adenocarcinoma, with a substantial survival benefit against chemotherapy.
-- Overall median OS was 13.2 versus 6.7 months; RAS G12 and overall-population estimates should remain clearly labelled.
-- No companion diagnostic is required, but the small RAS-not-detected subgroup and fit trial population constrain extrapolation.
-- Begin skin prophylaxis before treatment, provide mouth care, anticipate early diarrhoea and check interactions.
-- Indian approval and access remain unresolved; established chemotherapy, supportive care and trial enrolment remain practical priorities.
+- Daraxonrasib improved survival against chemotherapy in previously treated metastatic pancreatic adenocarcinoma. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42223072/">[NEJM 2026]</a>
+- Updated overall-population median OS was 12.4 versus 6.7 months; the preserved graphic shows the earlier analysis. <a class="cite" href="https://ec.europa.eu/health/documents/community-register/2026/20261116171392/anx_171392_en.pdf">[EU label 2026]</a>
+- The US indication is broader than the trial's fit, previously treated population; evidence in RAS-not-detected disease is limited. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
+- Start skin prophylaxis before treatment, manage mouth and bowel toxicity promptly, and check drug interactions. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf">[FDA label 2026]</a>
+- Verify Indian regulatory status and access locally; chemotherapy, supportive care and trial enrolment remain practical priorities.
 
 Related: [GI treatment paradigms]({{ '/paradigms/#gi' | relative_url }}) · [Locally advanced pancreatic cancer]({{ '/first-line/locally-advanced-pancreatic-cancer/' | relative_url }}) · [FDA oncology approvals, October 2026]({{ '/fda-oncology-approvals-october-2026/' | relative_url }}) · [Infographics gallery]({{ '/gallery/' | relative_url }}).
