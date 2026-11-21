@@ -6,7 +6,7 @@ permalink: /lung-cancer-staging-puzzle/
 ---
 <div class="wrap narrow block">
 <h1>Lung cancer staging puzzle: TNM 9th edition</h1>
-<p class="note"><strong>Educational only</strong> (added 9 Nov 2026). Ten short, hypothetical cases. For each one, pick the T category, then N, then M, then the stage group. Rules follow the IASLC 9th edition TNM classification of lung cancer, in use from 1 January 2025 (sources below). Nothing is saved or sent; your score stays in your browser. This is not a substitute for multidisciplinary staging of a real patient.</p>
+<p class="note"><strong>Educational only</strong> (added 9 Nov 2026). Work through ten hypothetical NSCLC cases: choose T, N, M and then the stage group. Assume no additional staging features beyond those stated, and that separate tumour nodules represent the same cancer. The cases use the IASLC ninth edition. Your score remains in this browser. Real patients need multidisciplinary staging. <a class="cite" href="https://www.iaslc.org/file/10871/download?token=DmNIDkWP">[IASLC 2024]</a></p>
 <p id="sp-score" role="status" aria-live="polite">Case 1 of 10 · 0 correct first try · 0 wrong picks</p>
 <div id="sp-case" class="sp-case" aria-live="polite"></div>
 <p class="sp-actions">
@@ -19,7 +19,7 @@ permalink: /lung-cancer-staging-puzzle/
 <summary>Reference: 9th edition stage groups (open if you get stuck)</summary>
 <div class="sp-tablewrap">
 <table class="sp-table">
-<thead><tr><th>T \ N</th><th>N0</th><th>N1</th><th>N2a</th><th>N2b</th><th>N3</th></tr></thead>
+<thead><tr><th>T \ N (M0)</th><th>N0</th><th>N1</th><th>N2a</th><th>N2b</th><th>N3</th></tr></thead>
 <tbody>
 <tr><th>T1a</th><td>IA1</td><td>IIA</td><td>IIB</td><td>IIIA</td><td>IIIB</td></tr>
 <tr><th>T1b</th><td>IA2</td><td>IIA</td><td>IIB</td><td>IIIA</td><td>IIIB</td></tr>
@@ -34,25 +34,25 @@ permalink: /lung-cancer-staging-puzzle/
 </table>
 </div>
 <ul class="sp-key">
-<li><strong>T (unchanged from 8th edition):</strong> T1a ≤1 cm · T1b &gt;1–2 cm · T1c &gt;2–3 cm · T2a &gt;3–4 cm, or visceral pleural invasion, adjacent-lobe invasion, main bronchus involvement or atelectasis/obstructive pneumonitis to the hilum · T2b &gt;4–5 cm · T3 &gt;5–7 cm, or parietal pleura/chest wall, pericardium, phrenic nerve, azygos vein, T1–T2 nerve roots/stellate ganglion, or separate nodule(s) in the same lobe · T4 &gt;7 cm, or mediastinum, diaphragm, heart/great vessels, trachea/carina, oesophagus, vertebral body, brachial plexus and similar, or separate nodule(s) in a different ipsilateral lobe.</li>
-<li><strong>N:</strong> N1 ipsilateral peribronchial, hilar or intrapulmonary nodes · <strong>N2a</strong> a single ipsilateral mediastinal or subcarinal station · <strong>N2b</strong> multiple ipsilateral mediastinal stations, with or without the subcarinal station · N3 contralateral mediastinal/hilar, or any scalene/supraclavicular nodes.</li>
-<li><strong>M:</strong> M1a contralateral lung nodule(s), pleural or pericardial nodules, or malignant pleural/pericardial effusion · M1b a single extrathoracic metastasis (including a single non-regional node) · <strong>M1c1</strong> multiple extrathoracic metastases in one organ system · <strong>M1c2</strong> multiple extrathoracic metastases in more than one organ system. The skeleton counts as one organ system.</li>
+<li><strong>T (selected categories; use the highest applicable category):</strong> T1a ≤1 cm · T1b &gt;1–2 cm · T1c &gt;2–3 cm · T2a &gt;3–4 cm, or a tumour ≤4 cm with visceral pleural or adjacent-lobe invasion, main bronchus involvement short of the carina, or atelectasis/obstructive pneumonitis extending to the hilum · T2b &gt;4–5 cm · T3 &gt;5–7 cm, or tumour ≤7 cm invading parietal pleura/chest wall, pericardium, phrenic nerve, azygos vein, T1–T2 nerve roots or stellate ganglion, or separate nodule(s) in the same lobe · T4 &gt;7 cm, or mediastinum, diaphragm, heart/great vessels, trachea/carina, oesophagus, vertebral body, brachial plexus and similar, or separate nodule(s) in a different ipsilateral lobe. <a class="cite" href="https://www.iaslc.org/file/10871/download?token=DmNIDkWP">[IASLC 2024]</a></li>
+<li><strong>N:</strong> N1 ipsilateral peribronchial, hilar or intrapulmonary nodes · <strong>N2a</strong> a single ipsilateral mediastinal or subcarinal station · <strong>N2b</strong> multiple ipsilateral mediastinal stations, with or without the subcarinal station · N3 contralateral mediastinal/hilar, or ipsilateral or contralateral scalene/supraclavicular nodes. <a class="cite" href="https://www.iaslc.org/file/10871/download?token=DmNIDkWP">[IASLC 2024]</a></li>
+<li><strong>M:</strong> M1a contralateral lung nodule(s), pleural or pericardial nodules, or malignant pleural/pericardial effusion · M1b a single extrathoracic metastasis (including a single non-regional node) · <strong>M1c1</strong> multiple extrathoracic metastases in one organ system · <strong>M1c2</strong> multiple extrathoracic metastases in more than one organ system. The skeleton counts as one organ system. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/38320664/">[J Thorac Oncol 2024]</a></li>
 </ul>
 </details>
 
 <h2>What changed in the 9th edition</h2>
 <ul>
-<li>T descriptors are the same as in the 8th edition.</li>
+<li>T categories remain the same as in the 8th edition; some descriptors previously considered separately are now listed explicitly. <a class="cite" href="https://www.iaslc.org/file/10871/download?token=DmNIDkWP">[IASLC 2024]</a></li>
 <li>N2 is split into <strong>N2a</strong> (single station) and <strong>N2b</strong> (multiple stations).</li>
 <li>M1c is split into <strong>M1c1</strong> (one organ system) and <strong>M1c2</strong> (multiple organ systems). Both stay in stage IVB.</li>
-<li>Stage-group moves: <strong>T1N1 → IIA</strong> (was IIB), <strong>T1N2a → IIB</strong>, <strong>T3N2a → IIIA</strong>, <strong>T2N2b → IIIB</strong>.</li>
+<li>With M0, <strong>T1N1 → IIA</strong> (previously IIB), <strong>T1N2a → IIB</strong>, <strong>T3N2a → IIIA</strong> and <strong>T2N2b → IIIB</strong>. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/38447919/">[J Thorac Oncol 2024]</a></li>
 </ul>
 
 <h2>Sources</h2>
 <ul class="sp-src">
-<li>Rami-Porta R, et al. The IASLC Lung Cancer Staging Project: proposals for revision of the TNM stage groups in the forthcoming (ninth) edition of the TNM classification for lung cancer. <em>J Thorac Oncol</em> 2024;19(7):1007–1027. <a href="https://doi.org/10.1016/j.jtho.2024.02.011">doi:10.1016/j.jtho.2024.02.011</a> (stage groups, descriptor table).</li>
-<li>IASLC. <a href="https://www.iaslc.org/file/10871/download?token=DmNIDkWP">9th Edition TNM descriptors and stages chart</a> (stage grid used above).</li>
-<li>Fong KM, et al. IASLC proposals for the M descriptors in the ninth edition. <em>J Thorac Oncol</em> 2024;19(5):786–802 (M1c1/M1c2, skeleton as one organ system).</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/38447919/">IASLC stage-group proposals — J Thorac Oncol 2024</a>.</li>
+<li><a href="https://www.iaslc.org/file/10871/download?token=DmNIDkWP">IASLC ninth-edition descriptor and stage chart</a>.</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/38320664/">IASLC M-category proposals — J Thorac Oncol 2024</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/39927917/">corrigendum</a>.</li>
 </ul>
 <p>Related on Oncosphere: <a href="{{ '/egfr-nsclc-after-osimertinib-2026-phase-3-options/' | relative_url }}">EGFR-mutant NSCLC after osimertinib</a> · <a href="{{ '/flaura-2-trial/' | relative_url }}">FLAURA2</a> · <a href="{{ '/esmo-2026-match/' | relative_url }}">ESMO 2026 trial matching game</a> · <a href="{{ '/paradigms/#lung' | relative_url }}">Lung paradigms</a></p>
 </div>
@@ -89,10 +89,10 @@ var CASES=[
 {v:"1.8 cm peripheral solid tumour surrounded by lung. PET-CT and EBUS: no nodal disease. No metastases.",a:{T:"T1b",N:"N0",M:"M0",S:"IA2"},why:"&gt;1 cm but ≤2 cm = T1b. T1b N0 M0 = stage IA2."},
 {v:"3.6 cm tumour that invades the visceral pleura. Nodes negative. No metastases.",a:{T:"T2a",N:"N0",M:"M0",S:"IB"},why:"&gt;3–4 cm is T2a (visceral pleural invasion also gives T2). T2a N0 = IB."},
 {v:"2.5 cm tumour. One ipsilateral hilar node is positive on EBUS. No mediastinal nodes. No metastases.",a:{T:"T1c",N:"N1",M:"M0",S:"IIA"},why:"&gt;2–3 cm = T1c; ipsilateral hilar node = N1. In the 9th edition T1N1 is <strong>IIA</strong> (it was IIB in the 8th)."},
-{v:"2.8 cm tumour. EBUS shows disease in one ipsilateral mediastinal station only (4R). Hilar nodes negative. No metastases.",a:{T:"T1c",N:"N2a",M:"M0",S:"IIB"},why:"Single ipsilateral mediastinal station = <strong>N2a</strong>. New 9th edition group: T1N2a = <strong>IIB</strong>."},
-{v:"4.5 cm tumour. Ipsilateral mediastinal station 4R and subcarinal station 7 are both positive. No metastases.",a:{T:"T2b",N:"N2b",M:"M0",S:"IIIB"},why:"&gt;4–5 cm = T2b. More than one N2 station = <strong>N2b</strong>. T2N2b = <strong>IIIB</strong> in the 9th edition."},
-{v:"6 cm tumour. One ipsilateral mediastinal station (4R) is positive. No metastases.",a:{T:"T3",N:"N2a",M:"M0",S:"IIIA"},why:"&gt;5–7 cm = T3. Single station = N2a. T3N2a = <strong>IIIA</strong> in the 9th edition."},
-{v:"3 cm tumour in the right upper lobe with a separate tumour nodule in the right lower lobe. Nodes negative. No metastases.",a:{T:"T4",N:"N0",M:"M0",S:"IIIA"},why:"A separate nodule in a <em>different ipsilateral lobe</em> makes it T4, whatever the size of the primary (same lobe would be T3). T4 N0 = IIIA."},
+{v:"2.8 cm right lung tumour. EBUS shows disease in one ipsilateral mediastinal station only (4R). Hilar nodes negative. No metastases.",a:{T:"T1c",N:"N2a",M:"M0",S:"IIB"},why:"Single ipsilateral mediastinal station = <strong>N2a</strong>. New 9th edition group: T1N2a = <strong>IIB</strong>."},
+{v:"4.5 cm right lung tumour. Ipsilateral mediastinal station 4R and subcarinal station 7 are both positive. No metastases.",a:{T:"T2b",N:"N2b",M:"M0",S:"IIIB"},why:"&gt;4–5 cm = T2b. More than one N2 station = <strong>N2b</strong>. T2N2b = <strong>IIIB</strong> in the 9th edition."},
+{v:"6 cm right lung tumour. One ipsilateral mediastinal station (4R) is positive. No metastases.",a:{T:"T3",N:"N2a",M:"M0",S:"IIIA"},why:"&gt;5–7 cm = T3. Single station = N2a. T3N2a = <strong>IIIA</strong> in the 9th edition."},
+{v:"3 cm tumour in the right upper lobe with a separate tumour nodule in the right lower lobe. Nodes negative. No metastases.",a:{T:"T4",N:"N0",M:"M0",S:"IIIA"},why:"A separate tumour nodule in a <em>different ipsilateral lobe</em> makes it T4 (same lobe would be T3). T4 N0 = IIIA."},
 {v:"5.5 cm tumour. A contralateral mediastinal node is positive. No metastases.",a:{T:"T3",N:"N3",M:"M0",S:"IIIC"},why:"&gt;5–7 cm = T3. Contralateral mediastinal node = N3. T3 N3 = IIIC."},
 {v:"2.5 cm tumour, nodes negative, with a malignant pleural effusion (cytology positive). No extrathoracic disease.",a:{T:"T1c",N:"N0",M:"M1a",S:"IVA"},why:"Malignant pleural effusion = M1a. Any M1a or M1b = stage IVA."},
 {v:"4.5 cm tumour with one positive ipsilateral hilar node. Several bone metastases (spine, pelvis, rib), with no other organ involved.",a:{T:"T2b",N:"N1",M:"M1c1",S:"IVB"},why:"Multiple metastases in one organ system = <strong>M1c1</strong>; the skeleton counts as one organ system. M1c1 and M1c2 are both stage IVB."}

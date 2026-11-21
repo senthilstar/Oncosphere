@@ -6,7 +6,8 @@ title: "Calculators"
 <link rel="stylesheet" href="{{ '/assets/calculators.css' | relative_url }}">
 <div class="wrap block calculators-page">
 <h1>Calculators</h1>
-<p class="note"><strong>Educational only.</strong> These calculators are not for clinical decisions without clinician judgment. Verify inputs, units, results and applicability against current guidelines. Adult models unless stated otherwise. No patient data: use hypothetical values only; entries stay in your browser and are not saved or transmitted.</p>
+<p class="note"><strong>Educational only.</strong> Use hypothetical values, not patient data. Entries stay in your browser and are not saved or transmitted. These tools generally use adult models; check the intended population, inputs, units and result against the original source and current guidance. Results do not replace clinical judgment.</p>
+<p class="note">The breast brain-metastasis GPA shown below is the earlier model. A later update also includes the number of brain metastases and extracranial disease status. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/32084525/">[J Clin Oncol 2020]</a></p>
 <nav class="calc-nav" aria-label="Calculator groups"><a href="#hematology">Hematology</a> <a href="#solid-tumour">Solid tumour</a> <a href="#chemo-dosing">Chemo dosing</a> <a href="#labs-supportive">Labs &amp; supportive</a> <a href="#performance">Performance</a></nav>
 <label class="calc-search" for="calculator-search">Filter calculators by name<input id="calculator-search" type="search" placeholder="e.g. MIPI, BSA, sodium" autocomplete="off"></label>
 <p id="calculator-count" role="status"></p>
