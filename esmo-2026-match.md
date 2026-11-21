@@ -6,7 +6,7 @@ permalink: /esmo-2026-match/
 ---
 <div class="wrap narrow block">
 <h1>ESMO 2026 trial matching game</h1>
-<p class="note"><strong>Educational only.</strong> Match each trial name to its disease setting or regimen. Every pair comes from the linked trial page and its primary sources. Nothing is saved or sent; your score stays in your browser.</p>
+<p class="note"><strong>Educational only.</strong> Match each trial name to its disease setting or regimen. Each match includes a trial result and its source. The linked summaries provide more context. Nothing is saved or sent; your score stays in your browser.</p>
 <p id="match-score" role="status" aria-live="polite">Score: 0 matched · 0 wrong · 10 left</p>
 <div id="match-board" class="match-board" aria-live="polite"></div>
 <p id="match-feedback" class="match-feedback" role="status" aria-live="polite"></p>
@@ -38,16 +38,16 @@ permalink: /esmo-2026-match/
 (function(){
 var P1="{{ '/esmo-2026-presidential-symposium-1/' | relative_url }}",P2="{{ '/esmo-2026-presidential-symposium-2/' | relative_url }}",P3="{{ '/esmo-2026-china-phase-3-healer-optitrop-lung06/' | relative_url }}";
 var PAIRS=[
-{id:"interpath",left:"INTerpath-001",right:"Adjuvant resected stage IIB–IV melanoma (intismeran autogene + pembrolizumab)",why:"RFS HR 0.58 (95% CI 0.45–0.75); OS immature.",l:P1},
-{id:"volga",left:"VOLGA",right:"Cisplatin-ineligible/refusing MIBC (durvalumab + enfortumab vedotin)",why:"EFS HR 0.51; OS HR 0.58 vs surgery alone.",l:P1},
-{id:"dellphi",left:"DeLLphi-305",right:"ES-SCLC first-line maintenance (tarlatamab + durvalumab)",why:"Median OS 21.1 vs 12.7 months; OS HR 0.42.",l:P1},
-{id:"dasl",left:"DASL-HiCaP",right:"Very high-risk localised prostate (darolutamide + RT + ADT)",why:"MFS HR 0.42; OS HR 0.88, not significant.",l:P1},
-{id:"krascendo",left:"Krascendo 1",right:"Pretreated KRAS G12C NSCLC (divarasib vs sotorasib/adagrasib)",why:"PFS 9.8 vs 5.7 months (HR 0.58); interim OS HR 0.56.",l:P2},
-{id:"saffron",left:"SAFFRON",right:"EGFR-mutant NSCLC post-osimertinib with MET alteration (osimertinib + savolitinib)",why:"Vs platinum–pemetrexed; PFS HR 0.55; final OS HR 0.68.",l:P2},
-{id:"clarity",left:"CLARITY-Gastric 01",right:"CLDN18.2+ gastric/GEC (sonesitatug vedotin)",why:"OS benefit concentrated in 3L+: 10.0 vs 5.0 months (HR 0.47); ITT PFS not met.",l:P2},
-{id:"harmoni",left:"HARMONi-GI1",right:"First-line biliary cancer (ivonescimab + GemCis)",why:"Vs durvalumab + GemCis; OS HR 0.75; PFS HR 0.61.",l:P2},
-{id:"healer",left:"HEALER",right:"First-line HER2+ advanced breast (anbenitamab + nab-docetaxel vs THP)",why:"PFS HR 0.46; 24-month PFS 58.5% vs 34.4%; OS immature.",l:P3},
-{id:"optitrop",left:"OptiTROP-Lung06",right:"PD-L1 <1% non-squamous NSCLC (sacituzumab tirumotecan + pembrolizumab)",why:"Vs chemo + pembrolizumab; median PFS 15.0 vs 5.7 months (HR 0.49).",l:P3}
+{id:"interpath",left:"INTerpath-001",right:"Adjuvant treatment after complete resection of stage IIB–IV cutaneous melanoma (intismeran autogene + pembrolizumab)",why:"Recurrence-free survival at 24 months was 82.2% with intismeran plus pembrolizumab versus 70.0% with placebo plus pembrolizumab; overall survival data remained immature.",src:"https://pubmed.ncbi.nlm.nih.gov/43013837/",cite:"NEJM 2026",l:P1},
+{id:"volga",left:"VOLGA",right:"Cisplatin-ineligible or declining muscle-invasive bladder cancer (perioperative durvalumab + neoadjuvant enfortumab vedotin)",why:"Versus cystectomy alone, event-free survival HR was 0.51 (95% CI 0.38–0.67) and overall survival HR was 0.58 (95% CI 0.40–0.83) at interim analysis.",src:"https://pubmed.ncbi.nlm.nih.gov/42929692/",cite:"NEJM 2026",l:P1},
+{id:"dellphi",left:"DeLLphi-305",right:"Extensive-stage small-cell lung cancer maintenance without progression after induction chemoimmunotherapy (tarlatamab + durvalumab)",why:"At interim analysis, median overall survival from maintenance randomisation was 21.1 versus 12.7 months with durvalumab alone (HR 0.42; 95% CI 0.32–0.54).",src:"https://pubmed.ncbi.nlm.nih.gov/42929702/",cite:"NEJM 2026",l:P1},
+{id:"dasl",left:"DASL-HiCaP",right:"Very high-risk localised or recurrent prostate cancer (darolutamide + radiotherapy + androgen deprivation)",why:"At interim analysis, conventional-imaging metastasis-free survival HR was 0.42 (95% CI 0.27–0.66) versus placebo on the same backbone; overall survival HR was 0.88 (95% CI 0.49–1.59), with follow-up ongoing.",src:"https://www.bayer.com/media/en-us/darolutamide-plus-adt-and-radiation-therapy-reduces-risk-of-metastasis-or-death-by-58-in-prostate-cancer-patients-at-high-risk-of-recurrence/",cite:"Sponsor-reported 2026",l:P1},
+{id:"krascendo",left:"Krascendo 1",right:"Previously treated KRAS G12C-mutant advanced NSCLC (divarasib vs sotorasib or adagrasib)",why:"Median progression-free survival was 9.8 versus 5.7 months (HR 0.58; 95% CI 0.44–0.76); overall survival HR at interim analysis was 0.56 (95% CI 0.41–0.78).",src:"https://pubmed.ncbi.nlm.nih.gov/42929675/",cite:"NEJM 2026",l:P2},
+{id:"saffron",left:"SAFFRON",right:"EGFR-mutant advanced NSCLC progressing on osimertinib with MET overexpression (IHC 3+ in ≥90% of tumour cells) or amplification (FISH ≥10 copies) (osimertinib + savolitinib)",why:"Against platinum–pemetrexed, progression-free survival HR was 0.55 (95% CI 0.42–0.72) and final overall survival HR was 0.68 (95% CI 0.50–0.91).",src:"https://pubmed.ncbi.nlm.nih.gov/42929693/",cite:"NEJM 2026",l:P2},
+{id:"clarity",left:"CLARITY-Gastric 01",right:"Previously treated advanced gastric, gastro-oesophageal junction or oesophageal adenocarcinoma with CLDN18.2 staining in ≥25% of tumour cells (sonesitatug vedotin)",why:"Against investigator’s choice, median overall survival in the third-line or later population was 10.0 versus 5.0 months (HR 0.47; 95% CI 0.36–0.62); the overall-population progression-free survival endpoint did not meet its significance threshold.",src:"https://www.astrazeneca.com/media-centre/press-releases/2026/sonesitatug-vedotin-reduced-the-risk-of-death-by-42-pct-in-2nd-and-later-line-cldn182-positive-advanced-gastricgej-cancers-in-clarity-gastric01.html",cite:"Sponsor-reported 2026",l:P2},
+{id:"harmoni",left:"HARMONi-GI1",right:"First-line advanced biliary tract cancer (ivonescimab + gemcitabine–cisplatin)",why:"In this China-based trial, interim overall survival HR was 0.75 (95% CI 0.61–0.92) and progression-free survival HR was 0.61 (95% CI 0.51–0.72) versus durvalumab plus gemcitabine–cisplatin.",src:"https://akesobio.com/en/media/akeso-news/20261025/",cite:"Sponsor-reported 2026",l:P2},
+{id:"healer",left:"HEALER",right:"First-line HER2-positive advanced breast cancer (anbenitamab + albumin-bound docetaxel vs trastuzumab, pertuzumab and docetaxel)",why:"At interim analysis, progression-free survival HR was 0.46 (95% CI 0.37–0.56); estimated progression-free survival at 24 months was 58.5% versus 34.4%.",src:"https://pubmed.ncbi.nlm.nih.gov/42929681/",cite:"NEJM 2026",l:P3},
+{id:"optitrop",left:"OptiTROP-Lung06",right:"First-line PD-L1-negative advanced non-squamous NSCLC without targetable alterations (sacituzumab tirumotecan + pembrolizumab)",why:"Against platinum–pemetrexed plus pembrolizumab, median progression-free survival was 15.0 versus 5.7 months (HR 0.49; 95% CI 0.36–0.65); overall survival data were immature.",src:"https://pubmed.ncbi.nlm.nih.gov/42929694/",cite:"NEJM 2026",l:P3}
 ];
 var board=document.getElementById('match-board'),scoreEl=document.getElementById('match-score'),fb=document.getElementById('match-feedback');
 var leftOrder=[],rightOrder=[],matched={},wrong=0,pickL=null,pickR=null,busy=false;
@@ -56,6 +56,7 @@ function remaining(){return PAIRS.filter(function(p){return !matched[p.id]}).len
 function upd(){var m=Object.keys(matched).length;scoreEl.textContent='Score: '+m+' matched · '+wrong+' wrong · '+remaining()+' left'+(remaining()===0?' — finished':'')}
 function clearPick(){pickL=null;pickR=null;board.querySelectorAll('.match-item.selected').forEach(function(el){el.classList.remove('selected')})}
 function setFb(ok,html){fb.className='match-feedback '+(ok?'ok':'bad');fb.innerHTML=html}
+function citation(p){return ' <a class="cite" href="'+p.src+'">['+p.cite+']</a>'}
 function tryMatch(){
 if(pickL===null||pickR===null||busy)return;
 busy=true;
@@ -66,13 +67,13 @@ if(L.id===R.id){
 matched[L.id]=true;
 if(btnL){btnL.classList.add('done');btnL.disabled=true}
 if(btnR){btnR.classList.add('done');btnR.disabled=true}
-setFb(true,'Correct. '+L.why+' <a href="'+L.l+'">Read the trial page</a>');
+setFb(true,'Correct. '+L.why+citation(L)+' <a href="'+L.l+'">Read the trial page</a>');
 clearPick();busy=false;upd();
 }else{
 wrong++;
 if(btnL)btnL.classList.add('wrong-flash');
 if(btnR)btnR.classList.add('wrong-flash');
-setFb(false,'Not a match. '+L.left+' belongs with: '+L.right+'. '+L.why+' <a href="'+L.l+'">Read the trial page</a>');
+setFb(false,'Not a match. '+L.left+' belongs with: '+L.right+'. '+L.why+citation(L)+' <a href="'+L.l+'">Read the trial page</a>');
 upd();
 setTimeout(function(){
 if(btnL)btnL.classList.remove('wrong-flash');
