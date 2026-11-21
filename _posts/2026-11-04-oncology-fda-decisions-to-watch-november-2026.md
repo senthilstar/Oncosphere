@@ -1,76 +1,72 @@
 ---
 title: "Three oncology FDA decisions to watch in November 2026"
 cover: news
-updated: 2026-11-20
+updated: 2026-11-21
 category: News
 audience: clinicians
-summary: "FDA target dates this month: ivonescimab + chemo after EGFR-TKI failure (14 Nov), neladalkib in TKI-pretreated ALK+ NSCLC (27 Nov) and adjuvant giredestrant in ER+/HER2- early breast cancer (30 Nov)."
-description: "FDA target dates this month: ivonescimab + chemo after EGFR-TKI failure (14 Nov), neladalkib in TKI-pretreated ALK+ NSCLC (27 Nov) and adjuvant giredestrant in ER+/HER2- early breast cancer (30 Nov)."
-tldr: "These are decision deadlines (PDUFA dates), not approvals. FDA can approve, reject or extend. None of the three drugs is approved in India."
+summary: "November FDA decisions: a complete response letter for ivonescimab, accelerated approval of neladalkib, and a pending adjuvant giredestrant application."
+description: "November FDA decisions: a complete response letter for ivonescimab, accelerated approval of neladalkib, and a pending adjuvant giredestrant application."
+tldr: "Neladalkib has accelerated FDA approval in specified previously treated ALK-positive lung cancers; ivonescimab received a complete response letter. The adjuvant giredestrant application remains under review."
 sources:
-  - title: "FDA — neladalkib approval"
+  - title: "HARMONi — Lancet Oncology 2026"
+    url: https://pubmed.ncbi.nlm.nih.gov/42636833/
+  - title: "HARMONi — Summit updated analysis, sponsor-reported"
+    url: https://docs.publicnow.com/viewDoc?filename=70118%5CEXT%5C9BB75B7D535F7DF5E2A1C841F1B307B22464E0EC_4F9BAC742699721FB4A9BC8405ADAA6299BE56D5.PDF
+  - title: "HARMONi — Summit complete response letter, sponsor-reported"
+    url: https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application-2026.pdf
+  - title: "ALKOVE-1 — FDA approval 2026"
     url: https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk
-  - title: "FDA — giredestrant approval"
-    url: https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally
-  - title: "GSK — neladalkib approval"
-    url: https://us.gsk.com/en-us/media/press-releases/nelkarmi-neladalkib-approved-in-the-us-for-previously-treated-advanced-alk-positive-non-small-cell-lung-cancer/
-  - title: "Genentech — giredestrant approval"
-    url: https://www.gene.com/media/press-releases/15144/2026-11-16/fda-approves-genentechs-wilserdly-girede
-  - title: "Summit Therapeutics — Complete Response Letter for ivonescimab BLA (15 Nov 2026)"
-    url: https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx
-  - title: "Summit Therapeutics — FDA accepts ivonescimab BLA in EGFRm NSCLC post-TKI; PDUFA 14 Nov 2026 (29 Jan 2026)"
-    url: https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Announces-U-S--FDA-Acceptance-of-Biologics-License-Application-BLA-Seeking-Approval-for-Ivonescimab-in-Combination-with-Chemotherapy-in-Treatment-of-Patients-with-EGFRm-NSCLC-Post-TKI-Therapy/default.aspx
-  - title: "Summit Therapeutics — updated HARMONi overall survival at WCLC 2026 (15 Sep 2026)"
-    url: https://smmttx.com/news/press-releases/news-details/2026/Updated-HARMONi-Data-Presented-at-WCLC-2026-Demonstrate-Consistent-Overall-Survival-Results-with-Ivonescimab-Plus-Chemotherapy-in-Western-and-Asian-Patients/default.aspx
-  - title: "Nuvalent — neladalkib NDA accepted with Priority Review; PDUFA 27 Nov 2026 (27 May 2026)"
-    url: https://investors.nuvalent.com/2026-05-27-Nuvalent-Announces-Key-Program-and-Business-Updates,-Strengthening-Foundation-for-Global-Leadership-in-ROS1-and-ALK-positive-NSCLC
-  - title: "OncLive — ALKOVE-1 top-line efficacy in TKI-pretreated ALK+ NSCLC"
-    url: https://www.onclive.com/view/fda-grants-priority-review-to-neladalkib-for-tki-pretreated-alk-nsclc
-  - title: "Roche — FDA accepts giredestrant NDA in ER+ early breast cancer (lidERA); PDUFA 30 Nov 2026 (2 Jun 2026)"
+  - title: "ALKOVE-1 — FDA prescribing information 2026"
+    url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220936s000lbl.pdf
+  - title: "ALKOVE-1 — Journal of Clinical Oncology 2026"
+    url: https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.8503
+  - title: "ALKOVE-1 — GSK approval announcement, sponsor-reported"
+    url: https://www.gsk.com/en-gb/media/press-releases/nelkarmi-neladalkib-approved-in-the-us-for-previously-treated-advanced-alk-positive-non-small-cell-lung-cancer/
+  - title: "lidERA — Clinical Cancer Research 2026"
+    url: https://aacrjournals.org/clincancerres/article/32/4_Supplement/GS1-10/772276/Abstract-GS1-10-Giredestrant-vs-standard-of-care
+  - title: "lidERA — Roche submission announcement, sponsor-reported"
     url: https://www.roche.com/media/releases/med-cor-2026-06-02
-  - title: "ClinicalTrials.gov — ALKOVE-1 (NCT05384626)"
-    url: https://clinicaltrials.gov/study/NCT05384626
-  - title: "ClinicalTrials.gov — lidERA (NCT04961996)"
-    url: https://clinicaltrials.gov/study/NCT04961996
+  - title: "lidERA — congress presentation 2026"
+    url: https://medically.roche.com/content/dam/pdmahub/restricted/oncology/annual-meeting-2026/oncology-annual-meeting-2026-presentation-schmid-efficacy-and-safety-of-giredestrant-in-patients.pdf
+  - title: "evERA — FDA approval 2026"
+    url: https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally
+  - title: "lidERA and evERA — Genentech announcement, sponsor-reported"
+    url: https://www.gene.com/media/press-releases/15144/2026-11-16/fda-approves-genentechs-wilserdly-girede
 ---
-A short note on three oncology applications with FDA target action dates (PDUFA dates) this month. A PDUFA date is the deadline for the FDA to act. It is **not** an approval: the agency can approve, issue a complete response letter, or extend the review.
+FDA target action dates are review goals, not guarantees of approval. The agency may approve an application, issue a complete response letter or extend its review. The table records the original targets and the status known at this update.
 
-| Target date | Drug (sponsor) | Proposed use | Key trial |
-|---|---|---|---|
-| 14 Nov 2026 | Ivonescimab + platinum doublet (Summit) | EGFR-mutated non-squamous NSCLC after a third-generation EGFR TKI | HARMONi (phase 3) |
-| 27 Nov 2026 | Neladalkib (Nuvalent) | TKI-pretreated advanced ALK-positive NSCLC (Priority Review) | ALKOVE-1 (phase 1/2) |
-| 30 Nov 2026 | Giredestrant (Roche) | Adjuvant ER-positive, HER2-negative stage I–III breast cancer (Priority Review) | lidERA (phase 3) |
+| Original target | Application | Status |
+|---|---|---|
+| 14 Nov 2026 | Ivonescimab plus chemotherapy after an EGFR TKI | Complete response letter reported by Summit on 15 Nov. <a class="cite" href="https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application-2026.pdf">[Summit 2026, sponsor-reported]</a> <a class="cite" href="https://docs.publicnow.com/viewDoc?filename=70118%5CEXT%5C9BB75B7D535F7DF5E2A1C841F1B307B22464E0EC_4F9BAC742699721FB4A9BC8405ADAA6299BE56D5.PDF">[Summit 2026, sponsor-reported]</a> |
+| 27 Nov 2026 | Neladalkib for previously treated ALK-positive NSCLC | Accelerated approval on 17 Nov for specified prior-treatment groups. <a class="cite" href="https://www.gsk.com/en-gb/media/press-releases/nelkarmi-neladalkib-approved-in-the-us-for-previously-treated-advanced-alk-positive-non-small-cell-lung-cancer/">[GSK 2026, sponsor-reported]</a> <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk">[FDA 2026]</a> |
+| 30 Nov 2026 | Adjuvant giredestrant for ER-positive, HER2-negative early breast cancer | Under review; a separate advanced-disease combination has been approved. <a class="cite" href="https://www.gene.com/media/press-releases/15144/2026-11-16/fda-approves-genentechs-wilserdly-girede">[Genentech 2026, sponsor-reported]</a> |
 
 ## Ivonescimab after osimertinib (14 Nov)
-Ivonescimab is a PD-1 × VEGF bispecific antibody. HARMONi compared ivonescimab + platinum doublet with placebo + platinum doublet after progression on a third-generation EGFR TKI. PFS was statistically significant. At the primary OS analysis the HR was 0.79 (95% CI 0.62–1.01; p=0.057), not significant; median OS 16.8 vs 14.0 months. With a June 2026 data cut, the OS HR was 0.76 (95% CI 0.61–0.95; **nominal** p=0.0151), and 0.76 (0.52–1.10) in Western patients, per Summit.
+Ivonescimab targets PD-1 and VEGF. In the double-blind phase 3 HARMONi trial, 438 patients with advanced EGFR-mutated non-squamous NSCLC progressing after a third-generation EGFR TKI were assigned ivonescimab or placebo with carboplatin and pemetrexed. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a> Median progression-free survival (PFS) was 6.8 versus 4.4 months (HR 0.52; 95% CI 0.41–0.66); the PFS analysis included 345 patients. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a> At the prespecified overall survival (OS) analysis, median OS was 16.8 versus 14.0 months (HR 0.79; 95% CI 0.62–1.01; p=0.057), which did not meet statistical significance. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a> Serious treatment-related adverse events occurred in 28% versus 15%. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a>
 
-**What to watch:** whether FDA accepts a nominal later OS analysis after a non-significant primary one. Ivonescimab is currently approved only in China.
+Summit's later exploratory analysis reported an OS HR of 0.76 (95% CI 0.61–0.95; nominal p=0.0151); the Western subgroup HR was 0.76 (95% CI 0.52–1.10). <a class="cite" href="https://docs.publicnow.com/viewDoc?filename=70118%5CEXT%5C9BB75B7D535F7DF5E2A1C841F1B307B22464E0EC_4F9BAC742699721FB4A9BC8405ADAA6299BE56D5.PDF">[Summit 2026, sponsor-reported]</a> The June 2026 cut extended Western follow-up, while Asian data remained locked at the April 2025 cut; the subgroup interval includes no effect. <a class="cite" href="https://docs.publicnow.com/viewDoc?filename=70118%5CEXT%5C9BB75B7D535F7DF5E2A1C841F1B307B22464E0EC_4F9BAC742699721FB4A9BC8405ADAA6299BE56D5.PDF">[Summit 2026, sponsor-reported]</a>
 
-**Update 15 Nov 2026:** FDA issued a complete response letter (see below).
+**Decision:** On 15 November, Summit reported a complete response letter: according to the sponsor, FDA found that the PFS result alone did not establish a favorable benefit–risk profile without a statistically significant OS improvement. <a class="cite" href="https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application-2026.pdf">[Summit 2026, sponsor-reported]</a>
 
 {% include chart.html title="HARMONi: overall survival hazard ratio, ivonescimab + chemo vs chemo" labels="Primary analysis (Apr 2025)|Updated cut (Jun 2026, nominal)|Western patients (Jun 2026)" values="0.79|0.76|0.76" max="1.2" unit="" note="Summit Therapeutics, 15 Sep 2026. 95% CIs 0.62–1.01, 0.61–0.95 and 0.52–1.10. HR below 1 favours ivonescimab." %}
+<a class="cite" href="https://docs.publicnow.com/viewDoc?filename=70118%5CEXT%5C9BB75B7D535F7DF5E2A1C841F1B307B22464E0EC_4F9BAC742699721FB4A9BC8405ADAA6299BE56D5.PDF">[Summit 2026, sponsor-reported]</a>
 
 ## Neladalkib for ALK-positive NSCLC after TKIs (27 Nov)
-Neladalkib (NVL-655) is a brain-penetrant, ALK-selective inhibitor designed to stay active against resistance mutations such as G1202R and to avoid TRK-related CNS side effects. In ALKOVE-1, 253 TKI-pretreated patients had a blinded central ORR of 31% (95% CI 26–37%), with 12- and 18-month duration-of-response rates of 64% and 53%. In lorlatinib-naive patients (n=63) ORR was 46%; in G1202R-mutant disease after a prior TKI (n=47) it was 68%. Dose reductions occurred in 17% and discontinuations in 5% at the recommended dose.
+On 17 November, FDA granted accelerated approval for adults with locally advanced or metastatic ALK-positive NSCLC who had received either alectinib as their sole prior ALK TKI, or at least two ALK TKIs and platinum chemotherapy, in the unresectable locally advanced or metastatic setting. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk">[FDA 2026]</a> This single-arm approval is contingent on confirmation of clinical benefit.
 
-**What to watch:** this is a single-arm filing, so any approval would likely be accelerated. Lorlatinib-pretreated patients are where the need is greatest and where responses were lower.
+In ALKOVE-1, blinded central review found an objective response rate (ORR) of 49% (95% CI 37–62) among 67 patients after alectinib as their only ALK TKI, and 32% (95% CI 24–40) among 155 patients after at least two ALK TKIs and platinum chemotherapy. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk">[FDA 2026]</a> Median response duration was not evaluable in the former group and was 17.3 months in the latter (95% CI 8.9–not evaluable). <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220936s000lbl.pdf">[FDA label 2026]</a> Among patients with measurable brain metastases and no recent brain radiotherapy, intracranial ORR was 55% (11/20) and 26% (14/53), respectively; these small subsets warrant cautious interpretation. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220936s000lbl.pdf">[FDA label 2026]</a> In G1202R-mutant subsets, ORR was 77% (n=13) and 71% (n=35), respectively. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220936s000lbl.pdf">[FDA label 2026]</a>
 
-**Update 17 Nov 2026:** FDA granted accelerated approval for adults with locally advanced or metastatic ALK-positive NSCLC after alectinib alone or after at least two ALK TKIs and platinum chemotherapy. In ALKOVE-1, ORR was 49% (95% CI 37–62) and 32% (95% CI 24–40), respectively. The decision preceded the 27 Nov target date. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk">[FDA]</a> <a class="cite" href="https://us.gsk.com/en-us/media/press-releases/nelkarmi-neladalkib-approved-in-the-us-for-previously-treated-advanced-alk-positive-non-small-cell-lung-cancer/">[GSK]</a>
+The recommended dose is 150 mg orally daily. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk">[FDA 2026]</a> In the label's safety population (n=656), adverse reactions led to dose reduction in 17% and permanent discontinuation in 5%; grade 3–4 hepatotoxicity occurred in 25%. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220936s000lbl.pdf">[FDA label 2026]</a> Monitor liver and renal function and creatine phosphokinase; ocular toxicity is also a labeled precaution. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220936s000lbl.pdf">[FDA label 2026]</a>
 
 ## Adjuvant giredestrant in ER+ early breast cancer (30 Nov)
-Giredestrant is an oral SERD. lidERA (n≈4,170, open-label) compared 5 years of giredestrant 30 mg daily with standard tamoxifen or an aromatase inhibitor in medium- or high-risk stage I–III disease. Invasive DFS HR was 0.70 (95% CI 0.57–0.87; p=0.0014); 3-year iDFS 92.4% vs 89.6%. OS was immature. Discontinuation was 5.3% vs 8.2%.
+Giredestrant is an oral selective estrogen receptor degrader. In open-label lidERA, 4,170 patients with ER-positive, HER2-negative stage I–III early breast cancer at medium or high risk were assigned five years of giredestrant 30 mg daily or standard endocrine therapy with tamoxifen or an aromatase inhibitor. <a class="cite" href="https://aacrjournals.org/clincancerres/article/32/4_Supplement/GS1-10/772276/Abstract-GS1-10-Giredestrant-vs-standard-of-care">[Clin Cancer Res 2026]</a> Invasive disease-free survival (iDFS) favored giredestrant (HR 0.70; 95% CI 0.57–0.87; p=0.0014); estimated three-year iDFS was 92.4% versus 89.6%, an absolute difference of 2.8 percentage points. <a class="cite" href="https://aacrjournals.org/clincancerres/article/32/4_Supplement/GS1-10/772276/Abstract-GS1-10-Giredestrant-vs-standard-of-care">[Clin Cancer Res 2026]</a> Treatment discontinuation due to adverse events occurred in 5.3% versus 8.2%. <a class="cite" href="https://medically.roche.com/content/dam/pdmahub/restricted/oncology/annual-meeting-2026/oncology-annual-meeting-2026-presentation-schmid-efficacy-and-safety-of-giredestrant-in-patients.pdf">[lidERA congress presentation 2026]</a> OS remains immature, and longer follow-up matters in ER-positive disease. <a class="cite" href="https://www.roche.com/media/releases/med-cor-2026-06-02">[Roche 2026, sponsor-reported]</a>
 
-**What to watch:** this would be the first oral SERD in the curative setting. The absolute gain at 3 years is 2.8 percentage points, follow-up is short for ER-positive disease, and the trial was open-label. A separate giredestrant + everolimus application (evERA, ESR1-mutated advanced disease) is due in December.
-
-**Update 16 Nov 2026:** FDA approved giredestrant with everolimus for eligible ER-positive, HER2-negative, ESR1-mutated advanced breast cancer after endocrine therapy. In evERA, median PFS was 10 versus 5.5 months, HR 0.38 (95% CI 0.27–0.54); ORR was 27% versus 14%, and OS was immature. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally">[FDA]</a> The separate adjuvant lidERA application remains under review, with a decision expected by 30 Nov. <a class="cite" href="https://www.gene.com/media/press-releases/15144/2026-11-16/fda-approves-genentechs-wilserdly-girede">[Genentech]</a>
+**Separate advanced-disease decision:** On 16 November, FDA approved giredestrant with everolimus for adults with ER-positive, HER2-negative, ESR1-mutated locally advanced or metastatic breast cancer, detected by an FDA-authorized test, after recurrence during or after adjuvant endocrine therapy or progression on endocrine therapy in the metastatic setting. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally">[FDA 2026]</a> In the ESR1-mutated evERA population, median PFS was 10 versus 5.5 months (HR 0.38; 95% CI 0.27–0.54), and ORR was 27% versus 14%; OS was immature. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally">[FDA 2026]</a> The adjuvant lidERA application is separate and, according to Genentech, has a 30 November target date. <a class="cite" href="https://www.gene.com/media/press-releases/15144/2026-11-16/fda-approves-genentechs-wilserdly-girede">[Genentech 2026, sponsor-reported]</a>
 
 {% include chart.html title="lidERA: 3-year invasive disease-free survival" labels="Giredestrant|Standard endocrine therapy" values="92.4|89.6" max="100" unit="%" note="Roche, 2 Jun 2026. HR 0.70 (0.57–0.87). OS immature." %}
+<a class="cite" href="https://aacrjournals.org/clincancerres/article/32/4_Supplement/GS1-10/772276/Abstract-GS1-10-Giredestrant-vs-standard-of-care">[Clin Cancer Res 2026]</a>
 
 ## For readers in India
-An FDA decision does not mean CDSCO approval, availability or affordability here. We will update this note when each decision is announced.
+An FDA decision does not establish CDSCO approval, local availability or affordability. Check current Indian regulatory status and access before prescribing; we will update this note when further decisions are announced.
 
-**Status, 12 Nov 2026:** no decision has been announced yet on any of the three applications. See [what changed this week]({{ '/paradigms/#this-week' | relative_url }}). See also the [October 2026 FDA approvals roundup]({{ '/fda-oncology-approvals-october-2026/' | relative_url }}).
-
-**Update, 15 Nov 2026:** FDA issued a complete response letter for ivonescimab plus platinum chemotherapy after EGFR TKI therapy (HARMONi), according to [Summit](https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx). Without a statistically significant OS improvement, FDA considered substantial evidence of effectiveness unestablished and the PFS benefit alone insufficient for a positive benefit-risk profile. Summit describes a non-significant trend at the primary OS analysis and cites a post-hoc HR of 0.76. The question above is now answered: a nominal later OS analysis was not accepted in place of a significant primary analysis. Neladalkib (27 Nov) and giredestrant (30 Nov) remain pending.
-
-**Update, 20 Nov 2026:** Neladalkib received accelerated approval for the specified previously treated ALK-positive advanced NSCLC populations on 17 Nov. Giredestrant with everolimus was approved on 16 Nov for eligible ESR1-mutated advanced breast cancer; the separate adjuvant lidERA decision remains pending. The earlier statement that neladalkib and giredestrant remain pending is superseded for neladalkib. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk">[FDA]</a> <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally">[FDA]</a> <a class="cite" href="https://www.gene.com/media/press-releases/15144/2026-11-16/fda-approves-genentechs-wilserdly-girede">[Genentech]</a>
+See [what changed this week]({{ '/paradigms/#this-week' | relative_url }}) and the [October FDA approvals roundup]({{ '/fda-oncology-approvals-october-2026/' | relative_url }}).

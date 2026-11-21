@@ -1,42 +1,56 @@
 ---
-title: "Ivonescimab after EGFR TKI: FDA complete response letter, and why OS decided it"
+title: "Ivonescimab after EGFR TKI: FDA complete response letter, and why the evidence fell short"
 cover: lung
-updated: 2026-11-16
+updated: 2026-11-21
 category: Perspective
 audience: clinicians
-summary: "On 15 Nov 2026 the FDA declined ivonescimab + platinum chemotherapy for EGFR-mutant NSCLC after EGFR TKI (HARMONi). Reason given: a PFS gain without a statistically significant OS improvement does not establish effectiveness or a positive benefit–risk in this setting."
-description: "FDA complete response letter for ivonescimab (PD-1×VEGF bispecific) + chemotherapy in EGFR-mutant NSCLC after TKI, based on HARMONi: significant PFS, primary OS HR 0.79 (0.62–1.01) not significant."
-tldr: "The FDA held the line that PFS alone is not enough after EGFR TKI when OS is not significant. Platinum–pemetrexed remains the reference second-line option; the decision also sets the bar for PFS-only ADC trials in the same setting."
+summary: "The FDA declined the ivonescimab plus chemotherapy application after EGFR TKI therapy, citing the trial's regional data, efficacy and added toxicity. Its published letter recommends a new multiregional trial."
+description: "FDA complete response letter for ivonescimab plus chemotherapy in EGFR-mutant NSCLC after TKI: HARMONi results, the survival analysis and the agency's full rationale."
+tldr: "HARMONi improved progression-free survival but missed its planned overall survival test. The FDA also questioned applicability to the US population and judged the benefit insufficient for the added toxicity; it recommended a new multiregional trial."
 sources:
-  - title: "Summit Therapeutics — Update regarding ivonescimab BLA: complete response letter (15 Nov 2026)"
-    url: https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx
-  - title: "Summit Therapeutics — Updated HARMONi overall survival (WCLC 2026)"
-    url: https://smmttx.com/news/press-releases/news-details/2026/Updated-HARMONi-Data-Presented-at-WCLC-2026-Demonstrate-Consistent-Overall-Survival-Results-with-Ivonescimab-Plus-Chemotherapy-in-Western-and-Asian-Patients/default.aspx
-  - title: "FDA — Oncology/Hematologic Malignancies Approval Notifications"
-    url: https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications
+  - title: "HARMONi — FDA complete response letter 2026"
+    url: https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf
+  - title: "HARMONi — Lancet Oncology 2026"
+    url: https://pubmed.ncbi.nlm.nih.gov/42636833/
+  - title: "HARMONi — WCLC 2025 presentation"
+    url: https://s206.q4cdn.com/652410165/files/doc_downloads/publications/2025/FINAL-HARMONi-WCLC-2025-Presidential-Presentation-UNBRANDED_05Sep2025-1.pdf
+  - title: "HARMONi — WCLC 2026 sponsor-reported update"
+    url: https://www.sec.gov/Archives/edgar/data/1599298/000159929826000081/a2026_prx0915xharmoniltf.htm
+  - title: "HARMONi — sponsor regulatory update 2026"
+    url: https://www.sec.gov/Archives/edgar/data/1599298/000159929826000092/ivonescimabcrlscenariopr.htm
+  - title: "SAFFRON — NEJM 2026"
+    url: https://pubmed.ncbi.nlm.nih.gov/42929693/
+  - title: "HERON-Lung01 — Lancet Oncology 2026"
+    url: https://pubmed.ncbi.nlm.nih.gov/42933457/
 ---
-On **15 November 2026** the FDA issued a **complete response letter (CRL)** for **ivonescimab** (PD-1 × VEGF bispecific antibody) with platinum chemotherapy in locally advanced or metastatic **EGFR-mutant non-squamous NSCLC previously treated with an EGFR TKI**. The application rested on the global phase 3 **HARMONi** trial. A CRL means the application cannot be approved in its present form; it is not a safety withdrawal.
+The FDA's **13 November 2026 complete response letter (CRL)** declined the application for **ivonescimab**, a PD-1 × VEGF bispecific antibody, with platinum-containing chemotherapy after EGFR TKI therapy in advanced NSCLC; the sponsor announced the decision on 15 November. <a class="cite" href="https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf">[FDA 2026]</a> <a class="cite" href="https://www.sec.gov/Archives/edgar/data/1599298/000159929826000092/ivonescimabcrlscenariopr.htm">[Sponsor 2026]</a> A CRL means the application cannot be approved in its present form; it is not a safety withdrawal.
 
-## What the FDA said (as reported by the sponsor)
-- Substantial evidence of effectiveness is **not established without a statistically significant OS improvement**.
-- The **PFS benefit alone** does not support a positive benefit–risk profile for approval in this setting.
+## What the FDA said
+- **Applicability:** 257 of 275 progression-free survival (PFS) events (93%) occurred in patients enrolled in China, leaving the applicability of the prespecified PFS result to the US population uncertain. <a class="cite" href="https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf">[FDA 2026]</a>
+- **Efficacy and risk:** The FDA described the median PFS improvement as modest, noted no statistically significant final overall survival (OS) improvement and no substantial difference in overall response rate, and judged the benefit insufficient to offset added immune-related and VEGF-related toxicity. <a class="cite" href="https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf">[FDA 2026]</a>
+- **Later analyses:** The agency considered the later PFS and OS analyses exploratory; the OS analysis was further limited by different regional data cutoffs. <a class="cite" href="https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf">[FDA 2026]</a>
+- **Next evidence:** The FDA recommended a new adequate, well-controlled multiregional trial showing a statistically significant and clinically meaningful improvement in OS, PFS or another measure of clinical benefit sufficient to outweigh toxicity. It did not state that OS is the only acceptable endpoint. <a class="cite" href="https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf">[FDA 2026]</a>
 
 ## HARMONi in one table
-| Endpoint (ivonescimab + chemo vs placebo + chemo) | Result |
-|---|---|
-| PFS (dual primary) | Met — statistically significant |
-| OS (dual primary), primary analysis | HR **0.79** (0.62–1.01) — not significant |
-| OS, post-hoc longer follow-up | HR 0.76 (full, Asian and Western subsets) — exploratory |
-| Discontinuation for treatment-related AEs | 7.3% vs 5.0% |
-| Treatment-related deaths | 1.8% vs 2.3% |
+The double-blind phase 3 trial randomised 438 patients with advanced non-squamous EGFR-mutant NSCLC after progression on a third-generation EGFR TKI to ivonescimab plus carboplatin–pemetrexed or placebo plus the same chemotherapy; PFS and OS were primary endpoints. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a> <a class="cite" href="https://s206.q4cdn.com/652410165/files/doc_downloads/publications/2025/FINAL-HARMONi-WCLC-2025-Presidential-Presentation-UNBRANDED_05Sep2025-1.pdf">[WCLC 2025]</a>
 
-The post-hoc OS figure is a sponsor analysis; it does not replace the prespecified test.
+| Endpoint (ivonescimab + chemotherapy vs placebo + chemotherapy) | Result |
+|---|---|
+| PFS by independent review | Median 6.8 vs 4.4 months; HR 0.52 (95% CI 0.41–0.66), p < 0.0001; primary PFS analysis included 345 patients. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a> |
+| OS, prespecified final analysis | Median 16.8 vs 14.0 months; HR 0.79 (95% CI 0.62–1.01), p = 0.057; not statistically significant. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a> <a class="cite" href="https://www.sec.gov/Archives/edgar/data/1599298/000159929826000081/a2026_prx0915xharmoniltf.htm">[Sponsor 2026]</a> |
+| OS, later exploratory analysis | HR 0.76 (95% CI 0.61–0.95; nominal p = 0.0151); Asian follow-up used the earlier April 2025 cutoff, while Western follow-up extended to June 2026. <a class="cite" href="https://www.sec.gov/Archives/edgar/data/1599298/000159929826000081/a2026_prx0915xharmoniltf.htm">[Sponsor 2026]</a> |
+| Response by independent review | 45% vs 34%; FDA considered the difference not substantial. <a class="cite" href="https://s206.q4cdn.com/652410165/files/doc_downloads/publications/2025/FINAL-HARMONi-WCLC-2025-Presidential-Presentation-UNBRANDED_05Sep2025-1.pdf">[WCLC 2025]</a> <a class="cite" href="https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf">[FDA 2026]</a> |
+| Serious treatment-related adverse events | 28% vs 15%, among 218 treated patients per arm. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a> |
+| Treatment-related adverse events leading to discontinuation of ivonescimab or placebo | 7.3% vs 5.0%. <a class="cite" href="https://s206.q4cdn.com/652410165/files/doc_downloads/publications/2025/FINAL-HARMONi-WCLC-2025-Presidential-Presentation-UNBRANDED_05Sep2025-1.pdf">[WCLC 2025]</a> |
+| Treatment-related deaths | 4 vs 5 patients. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42636833/">[Lancet Oncol 2026]</a> |
+
+The later sponsor-reported OS estimate is hypothesis-generating; it does not change the prespecified final result. The Western subgroup HR was 0.76 (95% CI 0.52–1.10), with uncertainty around the estimate. <a class="cite" href="https://www.sec.gov/Archives/edgar/data/1599298/000159929826000081/a2026_prx0915xharmoniltf.htm">[Sponsor 2026]</a>
 
 ## Why it matters
-- **Endpoint discipline.** After osimertinib, post-progression therapy is varied and survival is long enough that PFS may not translate. The FDA asked for OS, and the trial missed it on the planned analysis.
-- **Read-across.** HERON-Lung01 and PANKU-Lung01 (HER3-directed ADCs) currently rest on PFS with immature OS. SAFFRON (osimertinib + savolitinib, MET-driven) is the one 2026 phase 3 in this space with a significant OS gain. See our [post-osimertinib comparison]({{ '/egfr-nsclc-after-osimertinib-2026-phase-3-options/' | relative_url }}).
-- **Not the end for the drug.** Ivonescimab continues in other phase 3 programmes (first-line NSCLC, colorectal, and others); this decision is specific to the post-TKI EGFR setting.
+- **Read the whole decision.** Both the generalisability of the PFS evidence and the balance of benefit against toxicity influenced the FDA's decision, alongside the missed OS test. <a class="cite" href="https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf">[FDA 2026]</a>
+- **Compare like populations.** HERON-Lung01 reported a PFS benefit for a HER3-directed antibody–drug conjugate after EGFR TKI therapy; SAFFRON showed PFS and OS benefit with osimertinib–savolitinib in patients selected for MET overexpression, amplification or both after osimertinib. These results do not establish the benefit of ivonescimab. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42933457/">[Lancet Oncol 2026]</a> <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42929693/">[NEJM 2026]</a> See our [post-osimertinib comparison]({{ '/egfr-nsclc-after-osimertinib-2026-phase-3-options/' | relative_url }}).
+- **Other settings remain under study.** This decision concerns the submitted post-TKI application, not every ivonescimab programme. <a class="cite" href="https://www.sec.gov/Archives/edgar/data/1599298/000159929826000081/a2026_prx0915xharmoniltf.htm">[Sponsor 2026]</a>
 
-{% include india.html text="Ivonescimab is not CDSCO-approved. For EGFR-mutant NSCLC progressing on osimertinib, the realistic standard in Indian public practice remains a **repeat biopsy or liquid biopsy** for resistance mechanisms (MET amplification, histological transformation), then **platinum–pemetrexed** — with bevacizumab where affordable. The FDA's reasoning is a useful filter for any new, expensive post-TKI option: ask for overall survival, not just PFS, before changing practice. **Opinion.**" %}
+{% include india.html text="For EGFR-mutant NSCLC progressing on osimertinib, consider a **repeat biopsy or liquid biopsy** for resistance mechanisms, including MET amplification; tissue biopsy can also assess histological transformation. **Platinum–pemetrexed** remains a practical treatment option, with bevacizumab where appropriate and affordable. Check current CDSCO status and local availability before prescribing ivonescimab. The FDA decision underscores the need to weigh survival, disease control and added toxicity before changing practice. **Opinion.**" %}
 
 Related: [EGFR-mutant NSCLC after osimertinib: the 2026 phase 3 evidence]({{ '/egfr-nsclc-after-osimertinib-2026-phase-3-options/' | relative_url }}) · [Oncology FDA decisions to watch, November 2026]({{ '/oncology-fda-decisions-to-watch-november-2026/' | relative_url }}).
