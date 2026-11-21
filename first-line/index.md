@@ -18,8 +18,8 @@ Then match therapy to tumour biology, clinical urgency, safety and sustainable a
 - [Locally advanced pancreatic cancer]({{ '/first-line/locally-advanced-pancreatic-cancer/' | relative_url }}) — Use expert anatomical staging, fitness-led induction and repeated surgical reassessment for unresectable pancreatic cancer.
 - [Chronic lymphocytic leukaemia]({{ '/first-line/chronic-lymphocytic-leukaemia/' | relative_url }}) — Treat active CLL, test TP53 and IGHV, then choose continuous BTK inhibition or a finite venetoclax-based strategy.
 - [HER2-positive metastatic breast cancer]({{ '/first-line/her2-positive-metastatic-breast-cancer/' | relative_url }}) — Confirm metastatic HER2 status, choose an induction pathway and plan maintenance, pulmonary safety and later sequencing.
-
 - [Cervical cancer (recurrent / metastatic)]({{ '/first-line/cervical-cancer/' | relative_url }}) — Select treatment by PD-L1 CPS, prior immunotherapy, bevacizumab safety and sustainable access.
+- [Metastatic colorectal cancer]({{ '/first-line/metastatic-colorectal-cancer/' | relative_url }}) — Test RAS, BRAF, MMR and HER2 first; then match immunotherapy, BRAF-targeted or chemotherapy-plus-antibody treatment to biology and sidedness.
 
 ## Related treatment reviews
 
