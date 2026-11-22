@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OncoSphere — ESMO Congress 2026 SOTA Clinical Command Center</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap');
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-alt: #f1f5f9;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #0f766e;
+      --accent-soft: #ccfbf1;
+    }
+    .dark {
+      --bg: #0b1120;
+      --surface: #111827;
+      --surface-alt: #1e293b;
+      --border: #263349;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #2dd4bf;
+      --accent-soft: #134e4a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace; }
+    .raft {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+    .raft:hover {
+      transform: translateY(-2px);
+      border-color: #14b8a6;
+      box-shadow: 0 10px 26px -12px rgba(15, 118, 110, 0.22);
+    }
+    .surface { background: var(--surface); border-color: var(--border); }
+    .surface-alt { background: var(--surface-alt); border-color: var(--border); }
+    .text-muted { color: var(--muted); }
+    .drawer-backdrop {
+      background: rgba(2, 6, 23, 0.55);
+      backdrop-filter: blur(3px);
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="min-h-screen antialiased">
+  <!-- P-Stack Sticky Header -->
+  <header class="sticky top-0 z-30 surface border-b shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3 min-w-0">
+        <div class="w-9 h-9 rounded-xl bg-teal-700 text-white flex items-center justify-center font-extrabold text-sm tracking-tight shrink-0 shadow">OS</div>
+        <div class="min-w-0">
+          <div class="flex items-center gap-2 flex-wrap">
+            <h1 class="text-base sm:text-lg font-extrabold tracking-tight truncate">OncoSphere · ESMO 2026</h1>
+            <span class="px-2 py-0.5 text-[11px] font-semibold rounded-full bg-teal-100 text-teal-800 dark:bg-teal-950 dark:text-teal-300">Madrid · Oct 23–27, 2026</span>
+          </div>
+          <p class="text-xs text-muted truncate">Curated by Dr. Senthil Kumar (<a href="https://x.com/esenthil84" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 hover:underline font-medium">@esenthil84</a>) · Historical Benchmarks to Presidential LBAs</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="btnSavedFilter" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border surface-alt hover:border-teal-500 transition">
+          <i data-lucide="bookmark" class="w-3.5 h-3.5"></i>
+          <span>Saved</span>
+          <span id="savedCount" class="mono px-1.5 py-0.5 rounded bg-teal-700 text-white text-[10px]">0</span>
+        </button>
+        <button id="btnTheme" type="button" class="p-2 rounded-lg border surface-alt hover:border-teal-500 transition" aria-label="Toggle dark mode" title="Toggle light/dark mode">
+          <i id="themeIcon" data-lucide="moon" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Primary View Tabs -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 border-t" style="border-color: var(--border);">
+      <nav class="flex items-center gap-1 overflow-x-auto no-scrollbar py-1.5" aria-label="Primary sections">
+        <button data-tab="matrix" class="tab-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5">
+          <i data-lucide="layout-grid" class="w-4 h-4"></i> Presidential Matrix (12)
+        </button>
+        <button data-tab="analytics" class="tab-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5">
+          <i data-lucide="bar-chart-3" class="w-4 h-4"></i> HR &amp; Survival Analytics
+        </button>
+        <button data-tab="evolution" class="tab-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5">
+          <i data-lucide="git-branch" class="w-4 h-4"></i> Historical → 2026 Evolution
+        </button>
+        <button data-tab="router" class="tab-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5">
+          <i data-lucide="stethoscope" class="w-4 h-4"></i> Bedside Clinical Router
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-5 space-y-5">
+    <!-- Top Executive KPI Rafts -->
+    <section class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+      <div class="raft rounded-2xl p-3.5">
+        <div class="text-[11px] font-semibold uppercase tracking-wider text-muted">Presidential LBAs</div>
+        <div class="mt-1 flex items-baseline gap-2">
+          <span class="text-2xl font-extrabold mono">12</span>
+          <span class="text-xs font-medium text-teal-600 dark:text-teal-400">11 Positive · 1 Cautionary</span>
+        </div>
+        <p class="text-[11px] text-muted mt-1">PS I–III · Oct 24–26, 2026</p>
+      </div>
+      <div class="raft rounded-2xl p-3.5">
+        <div class="text-[11px] font-semibold uppercase tracking-wider text-muted">Strongest OS Signal</div>
+        <div class="mt-1 flex items-baseline gap-2">
+          <span class="text-2xl font-extrabold mono text-emerald-600 dark:text-emerald-400">HR 0.42</span>
+          <span class="text-xs font-semibold">DeLLphi-305</span>
+        </div>
+        <p class="text-[11px] text-muted mt-1">ES-SCLC mOS 21.1 vs 12.7 mo</p>
+      </div>
+      <div class="raft rounded-2xl p-3.5">
+        <div class="text-[11px] font-semibold uppercase tracking-wider text-muted">Engineered Antibodies</div>
+        <div class="mt-1 flex items-baseline gap-2">
+          <span class="text-2xl font-extrabold mono">6 / 12</span>
+          <span class="text-xs font-medium text-indigo-600 dark:text-indigo-400">ADCs &amp; Bispecifics</span>
+        </div>
+        <p class="text-[11px] text-muted mt-1">EV, tarlatamab, Sone-Ve, ivo, Ris-Rez, sac-TMT</p>
+      </div>
+      <div class="raft rounded-2xl p-3.5">
+        <div class="text-[11px] font-semibold uppercase tracking-wider text-muted">Key Warning Signal</div>
+        <div class="mt-1 flex items-baseline gap-2">
+          <span class="text-2xl font-extrabold mono text-rose-600 dark:text-rose-400">OS HR 2.0</span>
+          <span class="text-xs font-semibold">MOIO (LBA10)</span>
+        </div>
+        <p class="text-[11px] text-muted mt-1">Q12W ICI de-escalation failed NI</p>
+      </div>
+    </section>
+
+    <!-- VIEW 1: PRESIDENTIAL MATRIX -->
+    <section id="view-matrix" class="space-y-4">
+      <!-- P-Stack Filter Deck -->
+      <div class="surface border rounded-2xl p-4 space-y-3">
+        <div class="flex flex-col md:flex-row gap-3">
+          <div class="relative flex-1">
+            <i data-lucide="search" class="w-4 h-4 text-muted absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input id="searchInput" type="text" placeholder="Search trial, drug, biomarker, tumor, or LBA (e.g., tarlatamab, MET, CLDN18.2, LBA2)..." class="w-full pl-9 pr-3 py-2 text-sm rounded-xl border surface-alt focus:outline-none focus:ring-2 focus:ring-teal-500" />
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <select id="symposiumSelect" class="px-3 py-2 text-xs font-semibold rounded-xl border surface-alt focus:outline-none focus:ring-2 focus:ring-teal-500">
+              <option value="all">All Symposia (PS I–III)</option>
+              <option value="PS I">Presidential I (Oct 24)</option>
+              <option value="PS II">Presidential II (Oct 25)</option>
+              <option value="PS III">Presidential III (Oct 26)</option>
+            </select>
+            <select id="modalitySelect" class="px-3 py-2 text-xs font-semibold rounded-xl border surface-alt focus:outline-none focus:ring-2 focus:ring-teal-500">
+              <option value="all">All Modalities</option>
+              <option value="ADC">ADC</option>
+              <option value="Bispecific / BiTE">Bispecific / BiTE</option>
+              <option value="mRNA Vaccine">mRNA Vaccine</option>
+              <option value="Targeted / Small Molecule">Targeted / Small Molecule</option>
+              <option value="ICI Strategy">ICI Strategy</option>
+            </select>
+            <button id="btnResetFilters" type="button" class="px-3 py-2 text-xs font-semibold rounded-xl border surface-alt hover:border-teal-500 transition">Reset</button>
+          </div>
+        </div>
+
+        <!-- Disease Site Filter Chips -->
+        <div id="tumorChips" class="flex flex-wrap gap-1.5"></div>
+        <div class="flex items-center justify-between text-xs text-muted pt-1 border-t" style="border-color: var(--border);">
+          <span id="resultsCount">Showing 12 of 12 Presidential LBAs</span>
+          <span>Click any raft for full historical arc, safety, India/LMIC lens &amp; primary sources</span>
+        </div>
+      </div>
+
+      <!-- Mini-Rafts Grid -->
+      <div id="trialsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+    </section>
+
+    <!-- VIEW 2: HR & SURVIVAL ANALYTICS -->
+    <section id="view-analytics" class="hidden space-y-4">
+      <div class="surface border rounded-2xl p-4 sm:p-5 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h2 class="text-base sm:text-lg font-bold">Presidential Symposium Hazard Ratio Comparison</h2>
+            <p class="text-xs text-muted">HR &lt; 1.0 favors experimental regimen; HR &gt; 1.0 favors control (MOIO LBA10). Click any bar to inspect the trial.</p>
+          </div>
+          <div class="inline-flex rounded-xl border surface-alt p-1 self-start">
+            <button id="btnMetricPrimary" type="button" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition">Primary Endpoint HR (12)</button>
+            <button id="btnMetricOS" type="button" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition">Overall Survival HR (11)</button>
+          </div>
+        </div>
+        <div class="relative h-[460px] w-full">
+          <canvas id="hrChart"></canvas>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="surface border rounded-2xl p-4 sm:p-5 space-y-3">
+          <h3 class="text-sm font-bold flex items-center gap-2"><i data-lucide="award" class="w-4 h-4 text-teal-600"></i> Three Defining Themes of ESMO 2026</h3>
+          <ul class="space-y-2.5 text-xs sm:text-sm leading-relaxed">
+            <li class="p-2.5 rounded-xl surface-alt border"><span class="font-bold">1. Engineered Antibodies Dominate:</span> Half of all Presidential LBAs (6/12) evaluated ADCs or bispecifics/BiTEs — enfortumab vedotin, tarlatamab, sonesitatug vedotin, ivonescimab, risvutatug rezetecan, and sacituzumab tirumotecan (<a href="https://lifesciencedaily.news/esmo-2026-five-results/" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 underline">Life Science Daily</a>).</li>
+            <li class="p-2.5 rounded-xl surface-alt border"><span class="font-bold">2. Higher Bar for Active Comparators:</span> Krascendo 1 beat 1st-gen KRAS G12C inhibitors (sotorasib/adagrasib) and HARMONi-GI1 beat durvalumab + chemotherapy, moving beyond placebo or legacy chemo controls (<a href="https://www.esmo.org/insights-by-esmo/all-news/divarasib-outperforms-approved-kras-g12c-inhibitors-in-nsclc" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 underline">ESMO</a>).</li>
+            <li class="p-2.5 rounded-xl surface-alt border"><span class="font-bold">3. De-Escalation Requires Rigor:</span> MOIO (LBA10) failed non-inferiority with an OS HR of 2.0 (p=0.0143) when spacing ICI to Q12W after 6 months, reinforcing that dose reduction needs the same Phase III proof as intensification (<a href="https://www.esmo.org/insights-by-esmo/all-news/de-escalating-immunotherapy-in-advanced-or-metastatic-cancer-it-is-not-time-yet" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 underline">ESMO</a>).</li>
+          </ul>
+        </div>
+        <div class="surface border rounded-2xl p-4 sm:p-5 space-y-3">
+          <h3 class="text-sm font-bold flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-teal-600"></i> Post-ESMO Regulatory Tracker (as of Nov 22, 2026)</h3>
+          <div class="space-y-2 text-xs sm:text-sm">
+            <div class="p-2.5 rounded-xl surface-alt border flex items-start justify-between gap-3">
+              <div>
+                <div class="font-bold">VOLGA (Durvalumab + EV, MIBC)</div>
+                <div class="text-xs text-muted">FDA approved Nov 13, 2026 for cisplatin-ineligible/refusing MIBC (<a href="https://www.fda.gov/drugs/cancer-approvals/fda-approves-durvalumab-enfortumab-vedotin-ejfv-muscle-invasive-bladder-cancer" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 underline">FDA</a>).</div>
+              </div>
+              <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 shrink-0">FDA Approved</span>
+            </div>
+            <div class="p-2.5 rounded-xl surface-alt border flex items-start justify-between gap-3">
+              <div>
+                <div class="font-bold">CLARITY-Gastric 01 (Sonesitatug vedotin)</div>
+                <div class="text-xs text-muted">FDA Priority Review granted Nov 19, 2026 for 2L+ CLDN18.2+ G/GEJ (<a href="https://www.astrazeneca.com/media-centre/press-releases/2026/sonesitatug-vedotin-granted-priority-review-us-for-2nd-later-line-treatment-patients-with-cldn182-positive-advanced-gastric-gej-cancers.html" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 underline">AstraZeneca</a>).</div>
+              </div>
+              <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 shrink-0">Priority Review</span>
+            </div>
+            <div class="p-2.5 rounded-xl surface-alt border flex items-start justify-between gap-3">
+              <div>
+                <div class="font-bold">TroFuse-005 (Sacituzumab tirumotecan)</div>
+                <div class="text-xs text-muted">Under FDA Priority Review for previously treated endometrial cancer (<a href="https://www.onclive.com/view/sac-tmt-improves-pfs-and-os-is-under-fda-priority-review-in-previously-treated-endometrial-cancer" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 underline">OncLive</a>).</div>
+              </div>
+              <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 shrink-0">Priority Review</span>
+            </div>
+            <div class="p-2.5 rounded-xl surface-alt border flex items-start justify-between gap-3">
+              <div>
+                <div class="font-bold">Ivonescimab Regional Caveat</div>
+                <div class="text-xs text-muted">HARMONi-GI1 is China-only; FDA did not approve ivonescimab in EGFRm NSCLC on Nov 20, 2026 (<a href="https://www.targetedonc.com/view/fda-does-not-approve-ivonescimab-for-egfr-mutant-nsclc-harmoni" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 underline">TargetedOnc</a>).</div>
+              </div>
+              <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 shrink-0">Global Trial Needed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: HISTORICAL TO 2026 EVOLUTION -->
+    <section id="view-evolution" class="hidden space-y-4">
+      <div class="surface border rounded-2xl p-4 sm:p-5 space-y-4">
+        <div>
+          <h2 class="text-base sm:text-lg font-bold">Historical Standard of Care → ESMO 2026 Paradigm Shifts</h2>
+          <p class="text-xs text-muted">Select any clinical track to trace how practice evolved from legacy therapy through prior landmark trials to ESMO 2026.</p>
+        </div>
+        <div id="evolutionTabs" class="flex flex-wrap gap-1.5"></div>
+        <div id="evolutionContent" class="pt-2"></div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: BEDSIDE CLINICAL ROUTER -->
+    <section id="view-router" class="hidden space-y-4">
+      <div class="surface border rounded-2xl p-4 sm:p-5 space-y-4">
+        <div>
+          <h2 class="text-base sm:text-lg font-bold">Bedside Clinical Decision Router (ESMO 2026 Edition)</h2>
+          <p class="text-xs text-muted">Choose a tumor site and clinical scenario to pull the ESMO 2026 evidence-backed regimen, comparator nuance, and India/LMIC applicability.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div>
+            <label for="routerSite" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1">1. Tumor / Clinical Domain</label>
+            <select id="routerSite" class="w-full px-3 py-2.5 text-sm font-medium rounded-xl border surface-alt focus:outline-none focus:ring-2 focus:ring-teal-500"></select>
+          </div>
+          <div>
+            <label for="routerScenario" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1">2. Clinical Scenario &amp; Biomarker</label>
+            <select id="routerScenario" class="w-full px-3 py-2.5 text-sm font-medium rounded-xl border surface-alt focus:outline-none focus:ring-2 focus:ring-teal-500"></select>
+          </div>
+        </div>
+        <div id="routerOutput" class="pt-2"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Deep-Dive Slide-Over Drawer -->
+  <div id="drawerOverlay" class="fixed inset-0 z-50 hidden drawer-backdrop flex justify-end">
+    <div id="drawerPanel" class="w-full max-w-2xl h-full surface border-l shadow-2xl overflow-y-auto p-5 sm:p-6 space-y-5">
+      <div class="flex items-start justify-between gap-3 pb-3 border-b" style="border-color: var(--border);">
+        <div id="drawerHeader"></div>
+        <button id="btnCloseDrawer" type="button" class="p-2 rounded-lg border surface-alt hover:border-teal-500 transition shrink-0" aria-label="Close trial details">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div id="drawerBody" class="space-y-4 text-sm"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 hidden px-4 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-semibold shadow-lg border border-slate-700"></div>
+
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-muted border-t mt-8" style="border-color: var(--border);">
+    OncoSphere · Dr. Senthil Kumar (<a href="https://x.com/esenthil84" target="_blank" rel="noopener noreferrer" class="text-teal-600 dark:text-teal-400 hover:underline">@esenthil84</a>) · For medical oncology educational &amp; clinical reference use · Verify local regulatory labels &amp; availability before prescribing.
+  </footer>
+
+  <script>
+    const TRIALS = [
+      {
+        id: 'LBA1',
+        lba: 'LBA1',
+        symposium: 'PS I',
+        date: 'Oct 24, 2026',
+        name: 'INTerpath-001',
+        nct: 'NCT05933577',
+        tumor: 'Melanoma',
+        setting: 'Adjuvant Resected Stage IIB–IV Cutaneous Melanoma',
+        modality: 'mRNA Vaccine',
+        regimen: 'Intismeran autogene (mRNA INT, up to 34 neoantigens) + Pembrolizumab',
+        control: 'Placebo + Pembrolizumab',
+        n: 'N = 1,137 (757 vs 380; median f/u 24.6 mo)',
+        primaryEndpoint: 'RFS',
+        primaryHR: 0.58,
+        primaryCI: '0.45–0.75',
+        primaryP: 'p < 0.001',
+        primaryReadout: '24-mo RFS: 82.2% vs 70.0%',
+        secondaryReadout: '24-mo DMFS: 88.5% vs 80.2% (HR 0.62, 95% CI 0.45–0.85, p = 0.002)',
+        osHR: 0.77,
+        osReadout: 'OS immature (HR 0.77, 95% CI 0.45–1.31)',
+        outcome: 'Positive',
+        regBadge: 'First Positive Ph3 mRNA Vaccine',
+        safety: 'Grade ≥3 AEs 23.6% vs 20.3%; dual-drug discontinuation 6.5% vs 5.3%. Most common: pyrexia (52.2% vs 8.2%), injection-site pain (51.0% vs 9.5%), fatigue (38.5% vs 29.7%) — generally low-grade and transient.',
+        caveat: 'OS remains immature at 24.6 mo; requires tumor sequencing and individualized mRNA manufacturing turnaround.',
+        indiaLens: 'Not yet available in India; bespoke NGS-to-mRNA logistics and cost will limit near-term LMIC access. Adjuvant anti-PD-1 monotherapy remains the practical benchmark.',
+        evolution: [
+          { era: 'Pre-2015', label: 'Observation / High-Dose IFN-α', detail: 'High toxicity, minimal durable OS gain.' },
+          { era: '2015–2018', label: 'Adjuvant Anti-PD-1 (KEYNOTE-054 / CheckMate 238 / KN-716)', detail: 'Established pembrolizumab/nivolumab as adjuvant SOC for stage IIB–IV.' },
+          { era: '2023–2026', label: 'Failed Dual-ICI Combos (CM-915, RELATIVITY-098, KEYVIBE-010)', detail: 'Adding CTLA-4, LAG-3, or TIGIT failed to beat adjuvant anti-PD-1 alone.' },
+          { era: 'ESMO 2026', label: 'INTerpath-001 (LBA1)', detail: 'First Phase III to beat adjuvant pembrolizumab: 42% RFS risk reduction (HR 0.58) and 38% DMFS reduction (HR 0.62).' }
+        ],
+        sources: [
+          { title: 'ESMO Official Press Release & LBA1 Abstract', url: 'https://www.esmo.org/press-releases/personalised-cancer-vaccine-plus-immunotherapy-reduces-melanoma-recurrence-after-surgery' },
+          { title: 'TargetedOnc PS I Recap', url: 'https://www.targetedonc.com/view/esmo-2026-presidential-symposium-i-late-breaking-recap' }
+        ]
+      },
+      {
+        id: 'LBA2',
+        lba: 'LBA2',
+        symposium: 'PS I',
+        date: 'Oct 24, 2026',
+        name: 'VOLGA',
+        nct: 'NCT04960709',
+        tumor: 'GU',
+        setting: 'Cisplatin-Ineligible or Cisplatin-Refusing MIBC',
+        modality: 'ADC',
+        regimen: 'Neoadjuvant Enfortumab Vedotin + Durvalumab → Cystectomy → Adjuvant Durvalumab',
+        control: 'Radical Cystectomy Alone',
+        n: 'Phase III global trial (D+EV vs D+T+EV vs control)',
+        primaryEndpoint: 'EFS',
+        primaryHR: 0.51,
+        primaryCI: '0.38–0.67',
+        primaryP: 'p < 0.0001',
+        primaryReadout: '24-mo EFS: 64% vs 45% (49% risk reduction)',
+        secondaryReadout: 'pCR 45%; baseline ctDNA clearance strongly prognostic for 24-mo EFS',
+        osHR: 0.58,
+        osReadout: 'OS HR 0.58 (42% reduction in risk of death)',
+        outcome: 'Positive',
+        regBadge: 'FDA Approved Nov 13, 2026',
+        safety: 'Higher grade 3/4 toxicity vs upfront cystectomy (skin reactions, peripheral neuropathy, hyperglycemia with EV + irAEs with durvalumab), manageable with vigilant monitoring.',
+        caveat: 'Applies specifically to cisplatin-ineligible or cisplatin-refusing MIBC; compare against NIAGARA (durvalumab + gem-cis) for cisplatin-eligible patients.',
+        indiaLens: 'EV + durvalumab cost is substantial in India; reserve for cisplatin-ineligible patients with access/insurance, while cisplatin-eligible patients still anchor on NIAGARA-style chemo-IO or neoadjuvant gem-cis.',
+        evolution: [
+          { era: 'Historical', label: 'Upfront Radical Cystectomy Alone', detail: 'Cisplatin-ineligible MIBC had no neoadjuvant systemic SOC; high relapse rates.' },
+          { era: '2021', label: 'Adjuvant Nivolumab (CheckMate 274)', detail: 'Improved DFS post-cystectomy for high-risk pathologic residual disease.' },
+          { era: 'ESMO 2024', label: 'NIAGARA (Cisplatin-Eligible)', detail: 'Perioperative durvalumab + gemcitabine-cisplatin improved EFS and OS in cisplatin-fit MIBC.' },
+          { era: 'ESMO 2026', label: 'VOLGA (LBA2) · FDA Approved Nov 13, 2026', detail: 'Perioperative D+EV cuts EFS risk by 49% (HR 0.51), death risk by 42% (HR 0.58), achieving 45% pCR.' }
+        ],
+        sources: [
+          { title: 'FDA Approval Notice (Nov 13, 2026)', url: 'https://www.fda.gov/drugs/cancer-approvals/fda-approves-durvalumab-enfortumab-vedotin-ejfv-muscle-invasive-bladder-cancer' },
+          { title: 'ESMO News Report (LBA2)', url: 'https://www.esmo.org/insights-by-esmo/all-news/neoadjuvant-enfortumab-vedotin-added-to-peri-operative-durvalumab-significantly-improved-event-free-and-overall-survival' },
+          { title: 'OncoDaily VOLGA Summary', url: 'https://oncodaily.com/genitourinary-oncology/volga-esmo-2026' }
+        ]
+      },
+      {
+        id: 'LBA3',
+        lba: 'LBA3',
+        symposium: 'PS I',
+        date: 'Oct 24, 2026',
+        name: 'DeLLphi-305',
+        nct: 'NCT06211036',
+        tumor: 'Thoracic',
+        setting: '1L Maintenance Extensive-Stage SCLC (Post-Induction Chemo-IO)',
+        modality: 'Bispecific / BiTE',
+        regimen: 'Tarlatamab (DLL3×CD3 BiTE) + Durvalumab Maintenance',
+        control: 'Durvalumab Maintenance Alone',
+        n: 'Phase III global trial in non-progressing ES-SCLC post-induction',
+        primaryEndpoint: 'OS',
+        primaryHR: 0.42,
+        primaryCI: '58% risk reduction',
+        primaryP: 'Statistically significant',
+        primaryReadout: 'mOS: 21.1 vs 12.7 months (HR 0.42)',
+        secondaryReadout: 'mPFS: 7.4 vs 1.9 months',
+        osHR: 0.42,
+        osReadout: 'mOS 21.1 vs 12.7 mo (lowest OS HR of ESMO 2026)',
+        outcome: 'Positive',
+        regBadge: 'Landmark ES-SCLC SOC Shift',
+        safety: 'Frequent mostly low-grade cytokine release syndrome (CRS) during step-up dosing; rare ICANS. Requires structured inpatient/monitored CRS protocols early in maintenance.',
+        caveat: 'Only enrolls patients who did not progress during 1L chemoimmunotherapy induction; monitoring infrastructure for CRS is essential.',
+        indiaLens: 'Check current Indian regulatory availability and cost for tarlatamab; step-up CRS monitoring beds and tocilizumab readiness are mandatory before rollout.',
+        evolution: [
+          { era: '1980s–2018', label: 'Platinum + Etoposide Alone', detail: '30-year plateau with median OS ~10 months.' },
+          { era: '2018–2019', label: 'Chemo + Anti-PD-L1 (IMpower133 / CASPIAN)', detail: 'First OS gain in decades: mOS ~12.3–13.0 months.' },
+          { era: '2024–2025', label: '2L Tarlatamab (DeLLphi-304)', detail: 'Validated DLL3×CD3 T-cell engager in relapsed SCLC (mOS 13.6 vs 8.3 mo, HR 0.60).' },
+          { era: 'ESMO 2026', label: 'DeLLphi-305 (LBA3)', detail: '1L maintenance tarlatamab + durvalumab breaks the 20-mo barrier: mOS 21.1 vs 12.7 mo (HR 0.42), mPFS 7.4 vs 1.9 mo.' }
+        ],
+        sources: [
+          { title: 'ESMO News Report (LBA3)', url: 'https://www.esmo.org/insights-by-esmo/all-news/novel-first-line-treatment-significantly-improves-outcomes-in-small-cell-lung-cancer' },
+          { title: 'OncLive DeLLphi-305 Takeaways', url: 'https://www.onclive.com/view/dellphi-305-data-support-frontline-maintenance-tarlatamab-plus-durvalumab-as-a-new-soc-in-es-sclc' },
+          { title: 'AstraZeneca Press Release', url: 'https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-plus-imdelltra-reduced-the-risk-of-death-by-58-pct-in-1st-line-extensive-stage-small-cell-lung-cancer-in-the-dellphi-305-phase-iii-trial.html' }
+        ]
+      },
+      {
+        id: 'LBA4',
+        lba: 'LBA4',
+        symposium: 'PS I',
+        date: 'Oct 24, 2026',
+        name: 'DASL-HiCaP',
+        nct: 'NCT04136353',
+        tumor: 'GU',
+        setting: 'Very High-Risk Localized / Salvage Prostate Cancer (Definitive or Salvage RT)',
+        modality: 'Targeted / Small Molecule',
+        regimen: 'Darolutamide + 96 Weeks ADT + Locoregional Radiotherapy',
+        control: 'Placebo + 96 Weeks ADT + Locoregional Radiotherapy',
+        n: 'N = 1,106 (73% Gleason 9–10; median f/u 3.8 yrs)',
+        primaryEndpoint: 'MFS (Conventional Imaging)',
+        primaryHR: 0.42,
+        primaryCI: '58% risk reduction',
+        primaryP: 'Statistically significant',
+        primaryReadout: '4-yr MFS: 95% vs 88% (HR 0.42)',
+        secondaryReadout: '4-yr PSA-PFS: 91% vs 83% (HR 0.47, 95% CI 0.33–0.67)',
+        osHR: null,
+        osReadout: 'OS immature / nonsignificant at interim analysis',
+        outcome: 'Positive',
+        regBadge: 'High-Risk Localized Intensification',
+        safety: 'Favorable darolutamide tolerability (low CNS penetration, fewer drug-drug interactions and no steroid requirement compared with abiraterone).',
+        caveat: 'OS remains immature; high-risk selection (73% Gleason 9–10) means avoid over-treating standard intermediate-risk localized disease.',
+        indiaLens: 'Generic abiraterone (STAMPEDE M0) remains far more affordable in India; darolutamide is a strong alternative when steroids, cardiac comorbidities, or drug interactions preclude abiraterone.',
+        evolution: [
+          { era: '1990s–2000s', label: 'RT + Long-Term ADT (2–3 Years)', detail: 'Established systemic androgen suppression with definitive RT for high-risk localized disease.' },
+          { era: '2021', label: 'STAMPEDE M0 High-Risk (Abiraterone)', detail: '2 yrs abiraterone + prednisolone + ADT + RT improved MFS and OS.' },
+          { era: 'ESMO 2026', label: 'DASL-HiCaP / ANZUP1801 (LBA4)', detail: 'Darolutamide + 96w ADT + RT achieves 95% vs 88% 4-yr MFS (HR 0.42) and 91% vs 83% 4-yr PSA-PFS (HR 0.47).' }
+        ],
+        sources: [
+          { title: 'ESMO News Report (LBA4)', url: 'https://www.esmo.org/insights-by-esmo/all-news/can-systemic-treatment-intensification-reduce-recurrence-risk-in-high-risk-localised-prostate-cancer' },
+          { title: 'OncoDaily DASL-HiCaP', url: 'https://oncodaily.com/genitourinary-oncology/dasl-hicap' },
+          { title: 'UroToday ESMO 2026 Report', url: 'https://www.urotoday.com/conference-highlights/esmo-2026/esmo-2026-prostate-cancer/172748-esmo-2026-dasl-hicap-anzup1801-darolutamide-with-adt-and-definitive-or-salvage-locoregional-radiation-therapy-for-localized-very-high-risk-prostate-cancer-interim-analysis-of-an-international-placebo-controlled-randomized-phase-3-trial.html' }
+        ]
+      },
+      {
+        id: 'LBA5',
+        lba: 'LBA5',
+        symposium: 'PS II',
+        date: 'Oct 25, 2026',
+        name: 'Krascendo 1',
+        nct: 'NCT06497556',
+        tumor: 'Thoracic',
+        setting: 'Previously Treated Advanced KRAS G12C-Mutated NSCLC',
+        modality: 'Targeted / Small Molecule',
+        regimen: 'Divarasib (Next-Gen Covalent KRAS G12C Inhibitor)',
+        control: 'Sotorasib or Adagrasib (1st-Gen KRAS G12C Inhibitors)',
+        n: 'Global Phase III head-to-head (median f/u 14.3 mo)',
+        primaryEndpoint: 'PFS',
+        primaryHR: 0.58,
+        primaryCI: '42% risk reduction',
+        primaryP: 'Statistically significant',
+        primaryReadout: 'mPFS: 9.8 vs 5.7 months (HR 0.58)',
+        secondaryReadout: 'Interim mOS ~18 months favoring divarasib; superior ORR vs active control',
+        osHR: null,
+        osReadout: 'Interim mOS ~18 mo favoring divarasib (full final OS awaited)',
+        outcome: 'Positive',
+        regBadge: 'Beat Active 1st-Gen KRAS TKI',
+        safety: 'Manageable GI/hepatic profile consistent with covalent KRAS G12C inhibition; favorable benefit-risk over 1st-gen agents.',
+        caveat: 'First head-to-head Phase III against approved KRAS G12C inhibitors; awaits regulatory approval and frontline combination readouts.',
+        indiaLens: 'KRAS G12C prevalence in Indian lung adenocarcinoma is lower (~3–5%) than Western cohorts, making broad NGS essential; check current availability as divarasib progresses toward approval.',
+        evolution: [
+          { era: 'Pre-2021', label: 'Docetaxel (2L NSCLC)', detail: 'mPFS ~4.0–4.5 months with substantial cytopenias and neuropathy.' },
+          { era: '2021–2024', label: 'Sotorasib (CodeBreaK 200) & Adagrasib (KRYSTAL-12)', detail: 'Modest PFS gain over docetaxel (mPFS ~5.5–5.6 mo) without OS benefit.' },
+          { era: 'ESMO 2026', label: 'Krascendo 1 (LBA5)', detail: 'Divarasib beats sotorasib/adagrasib head-to-head: mPFS 9.8 vs 5.7 mo (HR 0.58), interim mOS ~18 mo.' }
+        ],
+        sources: [
+          { title: 'ESMO News Report (LBA5)', url: 'https://www.esmo.org/insights-by-esmo/all-news/divarasib-outperforms-approved-kras-g12c-inhibitors-in-nsclc' },
+          { title: 'TargetedOnc PS II Recap', url: 'https://www.targetedonc.com/view/esmo-2026-savolitinib-presidential-symposium-divarasib-nsclc-krascendo1-saffron-clarity-gastric01-harmoni-gi1' },
+          { title: 'Roche Press Release', url: 'https://www.roche.com/media/releases/med-cor-2026-10-25' }
+        ]
+      },
+      {
+        id: 'LBA6',
+        lba: 'LBA6',
+        symposium: 'PS II',
+        date: 'Oct 25, 2026',
+        name: 'SAFFRON',
+        nct: 'NCT05261399',
+        tumor: 'Thoracic',
+        setting: 'Post-Osimertinib EGFRm NSCLC with MET Overexpression / Amplification',
+        modality: 'Targeted / Small Molecule',
+        regimen: 'Osimertinib + Savolitinib (All-Oral EGFR + MET TKI)',
+        control: 'Platinum + Pemetrexed Chemotherapy',
+        n: 'Global Phase III (Simultaneous NEJM Publication)',
+        primaryEndpoint: 'PFS (BICR)',
+        primaryHR: 0.55,
+        primaryCI: '0.42–0.72',
+        primaryP: 'p < 0.001',
+        primaryReadout: 'BICR mPFS: 7.6 vs 5.4 months (HR 0.55)',
+        secondaryReadout: 'Investigator mPFS 7.4 vs 4.2 mo (HR 0.47); mDoR 9.7 vs 5.7 mo',
+        osHR: 0.68,
+        osReadout: 'mOS: 17.8 vs 12.9 months (HR 0.68, 95% CI 0.50–0.91, p = 0.010)',
+        outcome: 'Positive',
+        regBadge: 'Simultaneous NEJM · Global SOC',
+        safety: 'Oral regimen avoids cytotoxic myelosuppression; monitor peripheral edema, transaminitis, and rare hypersensitivity associated with MET TKIs.',
+        caveat: 'Requires tissue re-biopsy at osimertinib progression for MET IHC overexpression and/or FISH amplification (benefit consistent across both).',
+        indiaLens: 'Highly relevant in India given ~28–30% EGFR mutation rate in lung adenocarcinoma. Reinforces mandatory re-biopsy + MET IHC/FISH at osimertinib progression; check savolitinib India availability.',
+        evolution: [
+          { era: '2018–2023', label: 'Platinum + Pemetrexed Post-Osimertinib', detail: 'Default 2L SOC post-FLAURA with mPFS ~4.2–5.4 mo and mOS ~12–13 mo.' },
+          { era: '2023–2025', label: 'MARIPOSA-2 (Amivantamab + Chemo)', detail: 'Improved PFS in biomarker-unselected post-osimertinib EGFRm NSCLC, with infusion/chemo toxicity.' },
+          { era: 'ESMO 2026', label: 'SAFFRON (LBA6 · NEJM)', detail: 'All-oral osimertinib + savolitinib in MET+ resistance cuts progression risk 45% (HR 0.55) and death risk 32% (mOS 17.8 vs 12.9 mo, HR 0.68).' }
+        ],
+        sources: [
+          { title: 'ESMO News Report (LBA6)', url: 'https://www.esmo.org/insights-by-esmo/all-news/savolitinib-plus-osimertinib-prolongs-both-progression-free-and-overall-survival-in-mutated-nsclc' },
+          { title: 'TribeMD SAFFRON Clinical Breakdown', url: 'https://tribemd.com/us/contents/saffron%3A-osimertinib-plus-savolitinib-improves-pfs-and-os-in-met-driven-resistance-after-osimertinib-in-egfr-mutated-nsclc/' },
+          { title: 'HUTCHMED NEJM / ESMO Release', url: 'https://www.biospace.com/press-releases/hutchmed-highlights-saffron-global-phase-iii-data-presented-at-esmo-congress-2026-and-simultaneously-published-in-the-new-england-journal-of-medicine' }
+        ]
+      },
+      {
+        id: 'LBA7',
+        lba: 'LBA7',
+        symposium: 'PS II',
+        date: 'Oct 25, 2026',
+        name: 'CLARITY-Gastric 01',
+        nct: 'NCT06346392',
+        tumor: 'GI',
+        setting: '2L+ CLDN18.2-Positive Advanced Gastric / GEJ Adenocarcinoma',
+        modality: 'ADC',
+        regimen: 'Sonesitatug vedotin (CLDN18.2-Directed MMAE ADC)',
+        control: 'Investigator’s Choice Chemotherapy',
+        n: 'Global Phase III (data cutoff May 31, 2026)',
+        primaryEndpoint: 'OS',
+        primaryHR: 0.58,
+        primaryCI: '42% risk reduction',
+        primaryP: 'Statistically significant',
+        primaryReadout: 'mOS: 10.6 vs 6.4 months (HR 0.58)',
+        secondaryReadout: 'mPFS: 4.2 vs 3.8 months (numerical favor)',
+        osHR: 0.58,
+        osReadout: 'mOS 10.6 vs 6.4 mo (+4.2 mo OS gain in 2L+)',
+        outcome: 'Positive',
+        regBadge: 'FDA Priority Review Nov 19, 2026',
+        safety: 'MMAE-payload class toxicities (peripheral neuropathy, cytopenias) plus CLDN18.2 on-target GI nausea/vomiting; manageable with antiemetics and dose holds.',
+        caveat: 'Modest median PFS separation (4.2 vs 3.8 mo) contrasted with a substantial +4.2-month median OS advantage (HR 0.58); CLDN18.2 IHC testing required.',
+        indiaLens: 'CLDN18.2 IHC testing is expanding at Indian tertiary centers; paclitaxel +/- ramucirumab or irinotecan remains current 2L SOC until sonesitatug vedotin obtains Indian approval.',
+        evolution: [
+          { era: '2014', label: 'RAINBOW (Paclitaxel + Ramucirumab)', detail: 'Established 2L gastric SOC (mOS 9.6 vs 7.4 mo); single-agent taxane/irinotecan mOS ~6–7 mo.' },
+          { era: '2023–2024', label: '1L Zolbetuximab (SPOTLIGHT / GLOW)', detail: 'Validated CLDN18.2 as a druggable target using a naked monoclonal antibody in 1L.' },
+          { era: 'ESMO 2026', label: 'CLARITY-Gastric 01 (LBA7) · FDA Priority Review', detail: 'First CLDN18.2 ADC proves 42% OS risk reduction in 2L+ (mOS 10.6 vs 6.4 mo, HR 0.58).' }
+        ],
+        sources: [
+          { title: 'ESMO News Report (LBA7)', url: 'https://www.esmo.org/insights-by-esmo/all-news/an-anti-claudin-18-2-antibody-drug-conjugate-prolongs-overall-survival-in-gastroesophageal-cancer' },
+          { title: 'AstraZeneca FDA Priority Review (Nov 19, 2026)', url: 'https://www.astrazeneca.com/media-centre/press-releases/2026/sonesitatug-vedotin-granted-priority-review-us-for-2nd-later-line-treatment-patients-with-cldn182-positive-advanced-gastric-gej-cancers.html' },
+          { title: 'OncoDaily CLARITY-Gastric 01', url: 'https://oncodaily.com/gastrointestinal-oncology/clarity-gastric-01' }
+        ]
+      },
+      {
+        id: 'LBA8',
+        lba: 'LBA8',
+        symposium: 'PS II',
+        date: 'Oct 25, 2026',
+        name: 'HARMONi-GI1',
+        nct: 'NCT06591520',
+        tumor: 'GI',
+        setting: '1L Advanced Biliary Tract Cancer (Cholangiocarcinoma & Gallbladder)',
+        modality: 'Bispecific / BiTE',
+        regimen: 'Ivonescimab (PD-1×VEGF Bispecific) + Chemotherapy',
+        control: 'Durvalumab + Chemotherapy (Active TOPAZ-1 SOC)',
+        n: 'Phase III China trial (median f/u 14.3 mo)',
+        primaryEndpoint: 'OS',
+        primaryHR: 0.75,
+        primaryCI: '25% risk reduction',
+        primaryP: 'Statistically significant',
+        primaryReadout: 'mOS: 14.9 vs 12.1 months (HR 0.75)',
+        secondaryReadout: 'Improved PFS and ORR vs active durvalumab + chemotherapy',
+        osHR: 0.75,
+        osReadout: 'mOS 14.9 vs 12.1 mo (+2.8 mo over durvalumab + chemo)',
+        outcome: 'Positive',
+        regBadge: 'Beat Active Chemo-IO (China Ph3)',
+        safety: 'Combine anti-PD-1 irAEs with anti-VEGF class monitoring (hypertension, proteinuria, bleeding — particularly relevant in biliary stents/varices).',
+        caveat: 'Conducted exclusively in China; global multiregional confirmation is needed before Western/global regulatory adoption (FDA declined ivonescimab in EGFRm NSCLC on Nov 20, 2026).',
+        indiaLens: 'High gallbladder cancer burden in North/East India makes PD-1×VEGF + chemo highly relevant long-term; today, Gem-Cis + durvalumab (TOPAZ-1) or pembrolizumab (KN-966) remains 1L SOC.',
+        evolution: [
+          { era: '2010', label: 'ABC-02 (Gemcitabine + Cisplatin)', detail: 'Established 1L BTC doublet SOC (mOS 11.7 mo).' },
+          { era: '2022–2023', label: 'TOPAZ-1 (Durvalumab) & KEYNOTE-966 (Pembrolizumab)', detail: 'Added anti-PD-(L)1 to Gem-Cis (TOPAZ-1 mOS ~12.8 mo, 3-yr OS HR 0.74).' },
+          { era: 'ESMO 2026', label: 'HARMONi-GI1 (LBA8)', detail: 'First regimen to beat active chemo-IO head-to-head in 1L BTC: mOS 14.9 vs 12.1 mo (HR 0.75).' }
+        ],
+        sources: [
+          { title: 'ESMO News Report (LBA8)', url: 'https://www.esmo.org/insights-by-esmo/all-news/ivonescimab-plus-chemotherapy-improves-survival-in-biliary-tract-cancer' },
+          { title: 'EMJ HARMONi-GI1 Summary', url: 'https://www.emjreviews.com/oncology/news/ivonescimab-improves-survival-in-biliary-tract-cancer-esmo-2026/' },
+          { title: 'OncLive HARMONi-GI1', url: 'https://www.onclive.com/view/ivonescimab-plus-chemotherapy-improves-os-vs-durvalumab-plus-chemotherapy-in-first-line-biliary' }
+        ]
+      },
+      {
+        id: 'LBA9',
+        lba: 'LBA9',
+        symposium: 'PS III',
+        date: 'Oct 26, 2026',
+        name: 'ARTEMIS-011',
+        nct: 'NCT06935409',
+        tumor: 'Sarcoma',
+        setting: 'Heavily Pretreated Relapsed / Refractory Advanced Osteosarcoma',
+        modality: 'ADC',
+        regimen: 'Risvutatug rezetecan (B7-H3 ADC, Topo-I Payload)',
+        control: 'Gemcitabine + Docetaxel',
+        n: 'N = 122 (80 vs 42; 25% adolescents 12–<18 yrs; median f/u 7.1 mo)',
+        primaryEndpoint: 'PFS (BICR)',
+        primaryHR: 0.33,
+        primaryCI: '0.20–0.55',
+        primaryP: 'p < 0.0001',
+        primaryReadout: 'BICR mPFS: 5.5 vs 1.4 months (67% risk reduction)',
+        secondaryReadout: 'Investigator mPFS 5.6 vs 1.0 mo',
+        osHR: 0.51,
+        osReadout: 'OS immature (HR 0.51, 95% CI 0.21–1.23)',
+        outcome: 'Positive',
+        regBadge: 'First Ph3 Osteosarcoma Advance in Decades',
+        safety: 'Grade ≥3 TRAEs 93% vs 83% (predominantly hematologic); serious TRAEs 64% vs 29%; dose reductions 71% vs 26%, but low permanent discontinuation (3.8% vs 2.4%). 1 Grade 2 ILD (resolved); 0 treatment-related deaths.',
+        caveat: 'Open-label, all-Chinese cohort with short 7.1-month median follow-up; high hematologic toxicity requires proactive G-CSF and dose-modification support.',
+        indiaLens: 'Osteosarcoma disproportionately affects adolescents and young adults in India; while Ris-Rez is investigational outside China, B7-H3 ADCs represent the first real Phase III shift beyond salvage chemo/regorafenib.',
+        evolution: [
+          { era: '1980s–2018', label: 'Salvage Cytotoxics (Gem-Docetaxel / Ifosfamide-Etoposide)', detail: 'Decades of stagnation in R/R osteosarcoma with mPFS ~1.4–3.0 months.' },
+          { era: '2019–2023', label: 'Multikinase TKIs (Regorafenib / Cabozantinib)', detail: 'Phase II trials (REGOBONE, CABONE) showed ~3.6–6.7 mo PFS in selected cohorts.' },
+          { era: 'ESMO 2026', label: 'ARTEMIS-011 (LBA9)', detail: 'B7-H3 ADC Ris-Rez quadruples BICR mPFS vs gem-docetaxel (5.5 vs 1.4 mo, HR 0.33, p<0.0001) with 0 treatment-related deaths.' }
+        ],
+        sources: [
+          { title: 'PubMed ARTEMIS-011 Primary Results', url: 'https://pubmed.ncbi.nlm.nih.gov/42933637/' },
+          { title: 'ESMO News Report (LBA9)', url: 'https://www.esmo.org/insights-by-esmo/all-news/osteosarcoma-first-progress-in-decades-with-an-antibody-drug-conjugate' },
+          { title: 'Trialsgram LBA9 Analysis', url: 'https://trialsgram.com/trial/esmo-2026-lba9' }
+        ]
+      },
+      {
+        id: 'LBA10',
+        lba: 'LBA10',
+        symposium: 'PS III',
+        date: 'Oct 26, 2026',
+        name: 'MOIO',
+        nct: 'NCT05078047',
+        tumor: 'Pan-Tumor',
+        setting: 'Responding Advanced Solid Tumors After 6 Mo Standard ICI (De-Escalation)',
+        modality: 'ICI Strategy',
+        regimen: 'Reduced-Frequency ICI (Every 3 Months / Q12W)',
+        control: 'Standard-Frequency ICI Dosing',
+        n: 'N = 308 mITT across 36 French centers (Phase III Non-Inferiority)',
+        primaryEndpoint: 'PFS (Non-Inferiority)',
+        primaryHR: 1.35,
+        primaryCI: '0.90–2.00',
+        primaryP: 'Failed NI · Stopped Early',
+        primaryReadout: 'mPFS: 21.9 (Q12W) vs 25.0 mo (Standard)',
+        secondaryReadout: 'Subgroup PFS HRs: Urothelial 2.9, Lung 1.6, >1L 2.9; RCC 0.7, H&N 0.6',
+        osHR: 2.00,
+        osReadout: 'Higher death risk with Q12W: OS HR 2.0 (95% CI 1.1–3.9, p = 0.0143)',
+        outcome: 'Cautionary',
+        regBadge: 'Negative / Stopped Early',
+        safety: 'No meaningful safety gain: Grade 3–4 irAEs 9.5% (reduced) vs 10.5% (standard); SAEs 25.0% vs 26.3%.',
+        caveat: 'Do NOT empirically space standard ICI to Q12W at 6 months in responding metastatic patients (especially urothelial, lung, or ≥2L) — it harmed OS without cutting irAEs.',
+        indiaLens: 'Crucial clinical caution for India/LMIC practice where financial toxicity often prompts empirical ICI spacing: MOIO proves uniform Q12W spacing at 6 months risks survival loss. If de-escalating for cost, use low-dose evidence (e.g., head & neck) rather than untested Q12W spacing.',
+        evolution: [
+          { era: '2015–2024', label: 'Continuous / 2-Year Standard ICI Dosing', detail: 'High financial toxicity and infusion chair burden drove interest in extended intervals.' },
+          { era: '2022–2025', label: 'Pharmacokinetic & Low-Dose De-Escalation Hypotheses', detail: 'Suggested receptor occupancy might allow Q12W spacing after initial response.' },
+          { era: 'ESMO 2026', label: 'MOIO (LBA10) — Cautionary Stop', detail: 'Failed PFS non-inferiority (HR 1.35) and doubled mortality hazard (OS HR 2.0, p=0.0143) with no irAE reduction.' }
+        ],
+        sources: [
+          { title: 'ESMO News Report (LBA10)', url: 'https://www.esmo.org/insights-by-esmo/all-news/de-escalating-immunotherapy-in-advanced-or-metastatic-cancer-it-is-not-time-yet' },
+          { title: 'Trialsgram MOIO Detailed Stats', url: 'https://trialsgram.com/trial/esmo-2026-lba10' },
+          { title: 'Pharmacy Times MOIO Analysis', url: 'https://www.pharmacytimes.com/view/moio-trial-raises-survival-concerns-with-reduced-frequency-immunotherapy' }
+        ]
+      },
+      {
+        id: 'LBA11',
+        lba: 'LBA11',
+        symposium: 'PS III',
+        date: 'Oct 26, 2026',
+        name: 'TroFuse-005',
+        nct: 'NCT06132958',
+        tumor: 'Gyn',
+        setting: 'Previously Treated Advanced / Recurrent Endometrial Cancer (Post-Platinum + Post-IO)',
+        modality: 'ADC',
+        regimen: 'Sacituzumab tirumotecan (sac-TMT, TROP2 ADC)',
+        control: 'Treatment of Physician’s Choice Chemotherapy',
+        n: 'N = 776 (ENGOT-en23 / GOG-3095; Simultaneous The Lancet)',
+        primaryEndpoint: 'Dual Primary: PFS & OS',
+        primaryHR: 0.59,
+        primaryCI: '0.50–0.70',
+        primaryP: 'p < 0.0001',
+        primaryReadout: 'mPFS: 7.2 vs 3.9 months (41% risk reduction)',
+        secondaryReadout: 'Consistent PFS/OS benefit across subgroups; higher ORR vs TPC chemo',
+        osHR: 0.68,
+        osReadout: 'mOS: 19.0 vs 12.1 months (HR 0.68, 95% CI 0.55–0.84, p < 0.0001)',
+        outcome: 'Positive',
+        regBadge: 'The Lancet · FDA Priority Review',
+        safety: 'Topo-I TROP2 ADC profile (cytopenias, stomatitis, GI toxicity, alopecia) — monitor proactively with stomatitis mouthwash and hematologic checks.',
+        caveat: 'Fills the exact modern post-platinum AND post-IO gap created after chemo+IO moved to 1L.',
+        indiaLens: 'As 1L chemo-IO expands in endometrial cancer, post-IO salvage is an urgent need; check sac-TMT India regulatory timeline while paclitaxel/doxorubicin remain interim salvage options.',
+        evolution: [
+          { era: 'Pre-2021', label: 'Single-Agent Chemo (Doxorubicin / Paclitaxel)', detail: 'Poor 2L+ outcomes: mPFS ~3–4 mo, mOS ~11–12 mo.' },
+          { era: '2022', label: 'Lenvatinib + Pembrolizumab (KEYNOTE-775)', detail: 'Improved OS in IO-naive 2L endometrial cancer, but left a post-IO void.' },
+          { era: 'ESMO 2026', label: 'TroFuse-005 (LBA11 · The Lancet)', detail: 'TROP2 ADC sac-TMT delivers +6.9-mo mOS gain (19.0 vs 12.1 mo, HR 0.68) and mPFS 7.2 vs 3.9 mo (HR 0.59) post-platinum/post-IO.' }
+        ],
+        sources: [
+          { title: 'ESMO News Report (LBA11)', url: 'https://www.esmo.org/insights-by-esmo/all-news/sacituzumab-tirumotecan-shows-significant-clinical-benefit-in-advanced-recurrent-endometrial-cancer' },
+          { title: 'Merck Press Release (The Lancet)', url: 'https://www.merck.com/news/sacituzumab-tirumotecan-sac-tmt-reduced-the-risk-of-death-by-32-and-the-risk-of-disease-progression-or-death-by-41-compared-to-chemotherapy-in-certain-patients-with-advanced-or-recurrent-endometrial/' },
+          { title: 'OncLive FDA Priority Review', url: 'https://www.onclive.com/view/sac-tmt-improves-pfs-and-os-is-under-fda-priority-review-in-previously-treated-endometrial-cancer' }
+        ]
+      },
+      {
+        id: 'LBA12',
+        lba: 'LBA12',
+        symposium: 'PS III',
+        date: 'Oct 26, 2026',
+        name: 'KEYNOTE-C93',
+        nct: 'NCT05173987',
+        tumor: 'Gyn',
+        setting: '1L dMMR Advanced or Recurrent Endometrial Carcinoma',
+        modality: 'ICI Strategy',
+        regimen: 'Pembrolizumab Monotherapy (Chemo-Free 1L)',
+        control: 'Carboplatin + Paclitaxel',
+        n: 'N = 299 (149 vs 150; median f/u 36.7 mo; Simultaneous The Lancet)',
+        primaryEndpoint: 'PFS (BICR)',
+        primaryHR: 0.57,
+        primaryCI: '0.42–0.79',
+        primaryP: 'p = 0.0002',
+        primaryReadout: 'BICR mPFS: 38.2 vs 8.4 months (HR 0.57)',
+        secondaryReadout: '24-mo PFS 55.4% vs 31.0%; 36-mo PFS 52.8% vs 30.0%',
+        osHR: 0.77,
+        osReadout: 'OS HR 0.77 (95% CI 0.52–1.15, p = 0.1000, NS; 36-mo OS 70.7% vs 62.0%)',
+        outcome: 'Positive',
+        regBadge: 'The Lancet · Chemo-Free 1L dMMR',
+        safety: 'Spares cytotoxic alopecia, neuropathy, and cytopenias; standard pembrolizumab irAE spectrum.',
+        caveat: 'Control arm was chemotherapy alone (not contemporary chemo + IO from RUBY/NRG-GY018); OS did not reach statistical significance at interim partly due to subsequent IO crossover.',
+        indiaLens: 'Universal MMR IHC at diagnosis is cheap and widely available across India. For elderly/chemo-unfit dMMR endometrial cancer patients, KEYNOTE-C93 validates chemo-free 1L pembrolizumab; for bulky symptomatic disease, chemo+IO remains important to prevent early progression.',
+        evolution: [
+          { era: '2012–2022', label: 'Carboplatin + Paclitaxel (GOG-0209)', detail: 'Decade-long 1L SOC with mPFS ~8–13 months.' },
+          { era: '2023', label: 'Chemo + IO (RUBY / NRG-GY018)', detail: 'Dramatic PFS/OS benefit in dMMR subgroup when adding dostarlimab or pembrolizumab to chemo.' },
+          { era: 'ESMO 2026', label: 'KEYNOTE-C93 (LBA12 · The Lancet)', detail: 'Chemo-free 1L pembrolizumab achieves 38.2 vs 8.4 mo mPFS (HR 0.57, p=0.0002) and 52.8% 36-mo PFS.' }
+        ],
+        sources: [
+          { title: 'OncLive KEYNOTE-C93 Primary Data', url: 'https://www.onclive.com/view/keynote-c93-shows-pfs-benefit-with-first-line-pembrolizumab-in-dmmr-endometrial-cancer' },
+          { title: 'ESMO News Report (LBA11 & LBA12)', url: 'https://www.esmo.org/insights-by-esmo/all-news/sacituzumab-tirumotecan-shows-significant-clinical-benefit-in-advanced-recurrent-endometrial-cancer' }
+        ]
+      }
+    ];
+
+    const TUMOR_SITES = ['All', 'Thoracic', 'GU', 'GI', 'Gyn', 'Melanoma', 'Sarcoma', 'Pan-Tumor'];
+
+    const state = {
+      activeTab: 'matrix',
+      symposium: 'all',
+      tumor: 'All',
+      modality: 'all',
+      search: '',
+      savedOnly: false,
+      bookmarks: [],
+      selectedTrialId: null,
+      chartMetric: 'primary',
+      selectedEvolutionId: 'LBA3',
+      routerSite: 'Thoracic',
+      routerTrialId: 'LBA3',
+      darkMode: false
+    };
+
+    try {
+      const saved = localStorage.getItem('oncosphere_esmo26_bookmarks');
+      if (saved) state.bookmarks = JSON.parse(saved);
+      const dm = localStorage.getItem('oncosphere_esmo26_dark');
+      if (dm === '1') {
+        state.darkMode = true;
+        document.documentElement.classList.add('dark');
+      }
+    } catch (e) {}
+
+    let hrChartInstance = null;
+
+    function showToast(msg) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.classList.remove('hidden');
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => el.classList.add('hidden'), 2400);
+    }
+
+    function copyText(text, label) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => showToast(label)).catch(() => fallbackCopy(text, label));
+      } else {
+        fallbackCopy(text, label);
+      }
+    }
+
+    function fallbackCopy(text, label) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); showToast(label); } catch (e) { showToast('Copy unavailable'); }
+      document.body.removeChild(ta);
+    }
+
+    function toggleBookmark(id, evt) {
+      if (evt) evt.stopPropagation();
+      const idx = state.bookmarks.indexOf(id);
+      if (idx >= 0) {
+        state.bookmarks.splice(idx, 1);
+        showToast(`Removed ${id} from saved list`);
+      } else {
+        state.bookmarks.push(id);
+        showToast(`Saved ${id} to bookmarks`);
+      }
+      try { localStorage.setItem('oncosphere_esmo26_bookmarks', JSON.stringify(state.bookmarks)); } catch (e) {}
+      renderAll();
+      if (state.selectedTrialId === id) openDrawer(id);
+    }
+
+    function getFilteredTrials() {
+      return TRIALS.filter(t => {
+        if (state.savedOnly && !state.bookmarks.includes(t.id)) return false;
+        if (state.symposium !== 'all' && t.symposium !== state.symposium) return false;
+        if (state.tumor !== 'All' && t.tumor !== state.tumor) return false;
+        if (state.modality !== 'all' && t.modality !== state.modality) return false;
+        if (state.search.trim()) {
+          const q = state.search.toLowerCase();
+          const hay = `${t.lba} ${t.name} ${t.tumor} ${t.setting} ${t.modality} ${t.regimen} ${t.control} ${t.primaryReadout} ${t.osReadout} ${t.regBadge}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+    }
+
+    function renderTabs() {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        const active = btn.dataset.tab === state.activeTab;
+        btn.className = `tab-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5 ${
+          active ? 'bg-teal-700 text-white shadow-sm' : 'text-muted hover:bg-slate-200/60 dark:hover:bg-slate-800'
+        }`;
+      });
+      ['matrix', 'analytics', 'evolution', 'router'].forEach(v => {
+        document.getElementById(`view-${v}`).classList.toggle('hidden', state.activeTab !== v);
+      });
+      if (state.activeTab === 'analytics') renderChart();
+      if (state.activeTab === 'evolution') renderEvolution();
+      if (state.activeTab === 'router') renderRouter();
+    }
+
+    function renderTumorChips() {
+      const container = document.getElementById('tumorChips');
+      container.innerHTML = TUMOR_SITES.map(site => {
+        const active = state.tumor === site;
+        const count = site === 'All' ? TRIALS.length : TRIALS.filter(t => t.tumor === site).length;
+        return `<button type="button" data-tumor="${site}" class="tumor-chip px-3 py-1.5 rounded-full text-xs font-semibold border transition ${
+          active ? 'bg-teal-700 text-white border-teal-700' : 'surface-alt text-muted hover:border-teal-500'
+        }">${site} <span class="opacity-75 mono text-[10px]">(${count})</span></button>`;
+      }).join('');
+      container.querySelectorAll('.tumor-chip').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.tumor = btn.dataset.tumor;
+          renderMatrix();
+        });
+      });
+    }
+
+    function renderMatrix() {
+      renderTumorChips();
+      const filtered = getFilteredTrials();
+      document.getElementById('resultsCount').textContent = `Showing ${filtered.length} of ${TRIALS.length} Presidential LBAs${state.savedOnly ? ' (Saved only)' : ''}`;
+      document.getElementById('savedCount').textContent = state.bookmarks.length;
+      const savedBtn = document.getElementById('btnSavedFilter');
+      savedBtn.classList.toggle('ring-2', state.savedOnly);
+      savedBtn.classList.toggle('ring-teal-500', state.savedOnly);
+
+      const grid = document.getElementById('trialsGrid');
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="col-span-full surface border rounded-2xl p-8 text-center space-y-2">
+          <p class="font-bold text-sm">No Presidential LBAs match the current filters.</p>
+          <p class="text-xs text-muted">Try clearing your search query or resetting the symposium/tumor filters.</p>
+        </div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(t => {
+        const isWarn = t.outcome === 'Cautionary';
+        const saved = state.bookmarks.includes(t.id);
+        const hrColor = isWarn ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400';
+        const badgeClass = isWarn
+          ? 'bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300'
+          : 'bg-teal-100 text-teal-800 dark:bg-teal-950 dark:text-teal-300';
+        const lastHist = t.evolution[t.evolution.length - 2];
+        return `
+          <article class="raft rounded-2xl p-4 flex flex-col justify-between gap-3 cursor-pointer" data-trial-card="${t.id}">
+            <div class="space-y-2.5">
+              <div class="flex items-start justify-between gap-2">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <span class="mono px-2 py-0.5 rounded-md text-[11px] font-bold bg-slate-900 text-white dark:bg-slate-700">${t.lba}</span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-semibold surface-alt border">${t.symposium} · ${t.tumor}</span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-semibold ${badgeClass}">${t.regBadge}</span>
+                </div>
+                <button type="button" data-bookmark="${t.id}" class="p-1.5 rounded-lg border surface-alt hover:border-teal-500 transition shrink-0" aria-label="Bookmark ${t.name}">
+                  <i data-lucide="bookmark" class="w-3.5 h-3.5 ${saved ? 'fill-teal-600 text-teal-600' : ''}"></i>
+                </button>
+              </div>
+
+              <div>
+                <h3 class="text-base font-extrabold tracking-tight">${t.name}</h3>
+                <p class="text-xs text-muted mt-0.5 leading-snug">${t.setting}</p>
+              </div>
+
+              <div class="p-3 rounded-xl surface-alt border space-y-1">
+                <div class="flex items-baseline justify-between gap-2">
+                  <span class="text-[11px] font-semibold uppercase tracking-wider text-muted">${t.primaryEndpoint}</span>
+                  <span class="mono text-lg font-extrabold ${hrColor}">HR ${t.primaryHR.toFixed(2)}</span>
+                </div>
+                <div class="text-xs font-semibold">${t.primaryReadout}</div>
+                <div class="text-[11px] text-muted">${t.primaryCI} · ${t.primaryP}</div>
+              </div>
+
+              <div class="text-xs space-y-1">
+                <div><span class="font-semibold text-muted">Arm:</span> ${t.regimen}</div>
+                <div><span class="font-semibold text-muted">vs:</span> ${t.control}</div>
+                <div><span class="font-semibold text-muted">OS:</span> ${t.osReadout}</div>
+              </div>
+
+              <div class="pt-2 border-t text-[11px] text-muted" style="border-color: var(--border);">
+                <span class="font-semibold text-teal-700 dark:text-teal-400">Shift from ${lastHist.era}:</span> ${lastHist.label} → <span class="font-semibold text-slate-900 dark:text-slate-100">${t.name}</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-2 border-t gap-2" style="border-color: var(--border);">
+              <a href="${t.sources[0].url}" target="_blank" rel="noopener noreferrer" data-source-link="1" class="text-[11px] font-semibold text-teal-700 dark:text-teal-400 hover:underline inline-flex items-center gap-1 truncate">
+                <i data-lucide="external-link" class="w-3 h-3 shrink-0"></i> Primary Source
+              </a>
+              <span class="text-xs font-bold text-teal-700 dark:text-teal-400 inline-flex items-center gap-1 shrink-0">
+                Deep-Dive <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      grid.querySelectorAll('[data-trial-card]').forEach(card => {
+        card.addEventListener('click', () => openDrawer(card.dataset.trialCard));
+      });
+      grid.querySelectorAll('[data-bookmark]').forEach(btn => {
+        btn.addEventListener('click', (e) => toggleBookmark(btn.dataset.bookmark, e));
+      });
+      grid.querySelectorAll('[data-source-link]').forEach(a => {
+        a.addEventListener('click', (e) => e.stopPropagation());
+      });
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function openDrawer(id) {
+      const t = TRIALS.find(x => x.id === id);
+      if (!t) return;
+      state.selectedTrialId = id;
+      const isWarn = t.outcome === 'Cautionary';
+      const saved = state.bookmarks.includes(t.id);
+
+      document.getElementById('drawerHeader').innerHTML = `
+        <div class="flex items-center gap-2 flex-wrap mb-1">
+          <span class="mono px-2 py-0.5 rounded bg-slate-900 text-white text-xs font-bold">${t.lba}</span>
+          <span class="text-xs font-semibold text-muted">${t.symposium} · ${t.date} · ${t.nct}</span>
+        </div>
+        <h2 class="text-xl font-extrabold tracking-tight">${t.name}</h2>
+        <p class="text-xs text-muted mt-0.5">${t.setting}</p>
+      `;
+
+      const evoHtml = t.evolution.map((step, i) => `
+        <div class="relative pl-5 pb-3 ${i < t.evolution.length - 1 ? 'border-l-2 border-teal-500/40' : ''}">
+          <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full ${i === t.evolution.length - 1 ? (isWarn ? 'bg-rose-500' : 'bg-teal-600') : 'bg-slate-400'}"></span>
+          <div class="text-[11px] font-bold uppercase tracking-wider text-teal-700 dark:text-teal-400">${step.era}</div>
+          <div class="text-xs font-bold">${step.label}</div>
+          <div class="text-xs text-muted">${step.detail}</div>
+        </div>
+      `).join('');
+
+      const sourcesHtml = t.sources.map(s => `
+        <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border surface-alt hover:border-teal-500 text-teal-700 dark:text-teal-400 transition">
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i> ${s.title}
+        </a>
+      `).join('');
+
+      document.getElementById('drawerBody').innerHTML = `
+        <div class="flex flex-wrap gap-2">
+          <button id="drawerCopyBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-teal-700 text-white hover:bg-teal-800 transition">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy Clinical Pearl
+          </button>
+          <button id="drawerBookmarkBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border surface-alt hover:border-teal-500 transition">
+            <i data-lucide="bookmark" class="w-3.5 h-3.5 ${saved ? 'fill-teal-600 text-teal-600' : ''}"></i> ${saved ? 'Bookmarked' : 'Bookmark Trial'}
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="p-3.5 rounded-xl surface-alt border">
+            <div class="text-[11px] font-semibold uppercase text-muted">Primary Endpoint (${t.primaryEndpoint})</div>
+            <div class="mono text-xl font-extrabold mt-0.5 ${isWarn ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'}">HR ${t.primaryHR.toFixed(2)}</div>
+            <div class="text-xs font-semibold mt-1">${t.primaryReadout}</div>
+            <div class="text-[11px] text-muted">${t.primaryCI} · ${t.primaryP}</div>
+          </div>
+          <div class="p-3.5 rounded-xl surface-alt border">
+            <div class="text-[11px] font-semibold uppercase text-muted">Overall Survival &amp; Key Secondary</div>
+            <div class="text-xs font-bold mt-1">${t.osReadout}</div>
+            <div class="text-xs text-muted mt-1.5">${t.secondaryReadout}</div>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl surface-alt border space-y-1.5 text-xs">
+          <div><span class="font-bold">Experimental Arm:</span> ${t.regimen}</div>
+          <div><span class="font-bold">Control Arm:</span> ${t.control}</div>
+          <div><span class="font-bold">Population / Follow-up:</span> ${t.n}</div>
+        </div>
+
+        <div class="space-y-1.5">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-muted">Safety &amp; Clinical Caveats</h3>
+          <p class="text-xs leading-relaxed"><span class="font-semibold">Safety:</span> ${t.safety}</p>
+          <p class="text-xs leading-relaxed"><span class="font-semibold">Critical Appraisal:</span> ${t.caveat}</p>
+        </div>
+
+        <div class="p-3.5 rounded-xl border border-amber-500/30 bg-amber-50/70 dark:bg-amber-950/30 space-y-1">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300">India &amp; LMIC Practical Lens</h3>
+          <p class="text-xs leading-relaxed">${t.indiaLens}</p>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-muted">Historical → ESMO 2026 Paradigm Arc</h3>
+          <div class="pl-2 pt-1">${evoHtml}</div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t" style="border-color: var(--border);">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-muted">Verified Primary Sources</h3>
+          <div class="flex flex-wrap gap-2">${sourcesHtml}</div>
+        </div>
+      `;
+
+      document.getElementById('drawerCopyBtn').addEventListener('click', () => {
+        const pearl = `${t.name} (${t.lba}, ESMO 2026) — ${t.setting}\nRegimen: ${t.regimen} vs ${t.control}\nPrimary (${t.primaryEndpoint}): ${t.primaryReadout} (HR ${t.primaryHR.toFixed(2)}, ${t.primaryCI}, ${t.primaryP})\nOS: ${t.osReadout}\nSource: ${t.sources[0].url}`;
+        copyText(pearl, `Copied ${t.name} clinical pearl`);
+      });
+      document.getElementById('drawerBookmarkBtn').addEventListener('click', () => toggleBookmark(t.id));
+
+      document.getElementById('drawerOverlay').classList.remove('hidden');
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function closeDrawer() {
+      state.selectedTrialId = null;
+      document.getElementById('drawerOverlay').classList.add('hidden');
+    }
+
+    function renderChart() {
+      const btnP = document.getElementById('btnMetricPrimary');
+      const btnO = document.getElementById('btnMetricOS');
+      btnP.className = `px-3 py-1.5 rounded-lg text-xs font-semibold transition ${state.chartMetric === 'primary' ? 'bg-teal-700 text-white' : 'text-muted'}`;
+      btnO.className = `px-3 py-1.5 rounded-lg text-xs font-semibold transition ${state.chartMetric === 'os' ? 'bg-teal-700 text-white' : 'text-muted'}`;
+
+      const dataset = state.chartMetric === 'primary'
+        ? [...TRIALS].sort((a, b) => a.primaryHR - b.primaryHR)
+        : TRIALS.filter(t => t.osHR !== null).sort((a, b) => a.osHR - b.osHR);
+
+      const labels = dataset.map(t => `${t.name} (${t.lba} · ${t.tumor})`);
+      const values = dataset.map(t => state.chartMetric === 'primary' ? t.primaryHR : t.osHR);
+      const colors = values.map(v => v >= 1.0 ? '#e11d48' : (v <= 0.50 ? '#059669' : '#0d9488'));
+      const textColor = state.darkMode ? '#cbd5e1' : '#334155';
+      const gridColor = state.darkMode ? 'rgba(148,163,184,0.14)' : 'rgba(15,23,42,0.08)';
+
+      const ctx = document.getElementById('hrChart').getContext('2d');
+      if (hrChartInstance) hrChartInstance.destroy();
+      hrChartInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: state.chartMetric === 'primary' ? 'Primary Endpoint Hazard Ratio' : 'Overall Survival Hazard Ratio',
+            data: values,
+            backgroundColor: colors,
+            borderRadius: 6,
+            barThickness: 22
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          onClick: (_, elements) => {
+            if (elements.length > 0) {
+              const t = dataset[elements[0].index];
+              if (t) openDrawer(t.id);
+            }
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => {
+                  const t = dataset[ctx.dataIndex];
+                  const val = ctx.parsed.x;
+                  return state.chartMetric === 'primary'
+                    ? ` HR ${val.toFixed(2)} (${t.primaryEndpoint}: ${t.primaryReadout})`
+                    : ` OS HR ${val.toFixed(2)} (${t.osReadout})`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              min: 0,
+              max: state.chartMetric === 'os' ? 2.2 : 1.6,
+              grid: { color: gridColor },
+              ticks: { color: textColor, font: { family: 'JetBrains Mono', size: 11 } },
+              title: { display: true, text: 'Hazard Ratio (< 1.0 favors experimental; > 1.0 favors control)', color: textColor, font: { size: 11, weight: '600' } }
+            },
+            y: {
+              grid: { display: false },
+              ticks: { color: textColor, font: { family: 'Inter', size: 11, weight: '600' } }
+            }
+          }
+        }
+      });
+    }
+
+    function renderEvolution() {
+      const tabsEl = document.getElementById('evolutionTabs');
+      tabsEl.innerHTML = TRIALS.map(t => {
+        const active = t.id === state.selectedEvolutionId;
+        return `<button type="button" data-evo="${t.id}" class="evo-btn px-3 py-1.5 rounded-full text-xs font-semibold border transition ${
+          active ? 'bg-teal-700 text-white border-teal-700' : 'surface-alt text-muted hover:border-teal-500'
+        }">${t.name} · ${t.tumor}</button>`;
+      }).join('');
+      tabsEl.querySelectorAll('.evo-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.selectedEvolutionId = btn.dataset.evo;
+          renderEvolution();
+        });
+      });
+
+      const t = TRIALS.find(x => x.id === state.selectedEvolutionId) || TRIALS[0];
+      const isWarn = t.outcome === 'Cautionary';
+      document.getElementById('evolutionContent').innerHTML = `
+        <div class="space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b" style="border-color: var(--border);">
+            <div>
+              <div class="text-xs font-bold text-teal-700 dark:text-teal-400">${t.lba} · ${t.tumor} · ${t.modality}</div>
+              <h3 class="text-lg font-extrabold">${t.setting}</h3>
+            </div>
+            <button type="button" id="evoOpenDrawer" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-teal-700 text-white hover:bg-teal-800 transition">Open Full Trial Drawer</button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+            ${t.evolution.map((step, idx) => `
+              <div class="p-3.5 rounded-2xl border ${idx === t.evolution.length - 1 ? (isWarn ? 'border-rose-500 bg-rose-50/60 dark:bg-rose-950/30' : 'border-teal-500 bg-teal-50/60 dark:bg-teal-950/30') : 'surface-alt'} space-y-1.5">
+                <div class="mono text-[11px] font-bold uppercase ${idx === t.evolution.length - 1 ? (isWarn ? 'text-rose-600 dark:text-rose-400' : 'text-teal-700 dark:text-teal-400') : 'text-muted'}">${step.era}</div>
+                <div class="text-xs font-extrabold leading-snug">${step.label}</div>
+                <p class="text-xs text-muted leading-relaxed">${step.detail}</p>
+              </div>
+            `).join('')}
+          </div>
+          <div class="flex flex-wrap gap-2 pt-1">
+            ${t.sources.map(s => `<a href="${s.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold border surface-alt text-teal-700 dark:text-teal-400 hover:border-teal-500">${s.title} ↗</a>`).join('')}
+          </div>
+        </div>
+      `;
+      document.getElementById('evoOpenDrawer').addEventListener('click', () => openDrawer(t.id));
+    }
+
+    function renderRouter() {
+      const siteSelect = document.getElementById('routerSite');
+      const scenarioSelect = document.getElementById('routerScenario');
+      const sites = [...new Set(TRIALS.map(t => t.tumor))];
+
+      siteSelect.innerHTML = sites.map(s => `<option value="${s}" ${s === state.routerSite ? 'selected' : ''}>${s}</option>`).join('');
+      const siteTrials = TRIALS.filter(t => t.tumor === state.routerSite);
+      if (!siteTrials.some(t => t.id === state.routerTrialId)) {
+        state.routerTrialId = siteTrials[0].id;
+      }
+      scenarioSelect.innerHTML = siteTrials.map(t => `<option value="${t.id}" ${t.id === state.routerTrialId ? 'selected' : ''}>${t.setting} (${t.name})</option>`).join('');
+
+      const t = TRIALS.find(x => x.id === state.routerTrialId) || siteTrials[0];
+      const isWarn = t.outcome === 'Cautionary';
+
+      document.getElementById('routerOutput').innerHTML = `
+        <div class="rounded-2xl border p-4 sm:p-5 space-y-4 ${isWarn ? 'border-rose-500/60 bg-rose-50/40 dark:bg-rose-950/20' : 'border-teal-500/60 bg-teal-50/40 dark:bg-teal-950/20'}">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <span class="mono px-2 py-0.5 rounded text-[11px] font-bold ${isWarn ? 'bg-rose-600 text-white' : 'bg-teal-700 text-white'}">${isWarn ? 'DO NOT ADOPT UNIFORMLY' : 'ESMO 2026 EVIDENCE-BACKED OPTION'}</span>
+              <h3 class="text-base sm:text-lg font-extrabold mt-1.5">${t.regimen}</h3>
+              <p class="text-xs text-muted">Trial: <span class="font-semibold">${t.name} (${t.lba})</span> vs ${t.control}</p>
+            </div>
+            <button type="button" id="routerCopyBtn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-teal-700 text-white hover:bg-teal-800 transition inline-flex items-center gap-1.5">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy Note
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+            <div class="p-3 rounded-xl surface border">
+              <div class="font-bold text-muted uppercase text-[10px]">Key Efficacy</div>
+              <div class="font-extrabold mt-1">${t.primaryReadout}</div>
+              <div class="text-muted mt-0.5">HR ${t.primaryHR.toFixed(2)} (${t.primaryCI}; ${t.primaryP})</div>
+              <div class="mt-1 font-semibold">${t.osReadout}</div>
+            </div>
+            <div class="p-3 rounded-xl surface border">
+              <div class="font-bold text-muted uppercase text-[10px]">Safety &amp; Caveat</div>
+              <p class="mt-1 leading-relaxed">${t.caveat}</p>
+            </div>
+            <div class="p-3 rounded-xl surface border">
+              <div class="font-bold text-amber-700 dark:text-amber-400 uppercase text-[10px]">India / LMIC Practicality</div>
+              <p class="mt-1 leading-relaxed">${t.indiaLens}</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t" style="border-color: var(--border);">
+            <div class="flex flex-wrap gap-2">
+              ${t.sources.map(s => `<a href="${s.url}" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-teal-700 dark:text-teal-400 hover:underline">${s.title} ↗</a>`).join(' · ')}
+            </div>
+            <button type="button" id="routerDrawerBtn" class="text-xs font-bold text-teal-700 dark:text-teal-400 hover:underline">Full Trial Deep-Dive →</button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('routerCopyBtn').addEventListener('click', () => {
+        const note = `[OncoSphere ESMO 2026 Router] ${t.setting}\nRegimen: ${t.regimen} (vs ${t.control})\nEvidence (${t.name}, ${t.lba}): ${t.primaryReadout} (HR ${t.primaryHR.toFixed(2)}, ${t.primaryP}); ${t.osReadout}\nIndia/LMIC: ${t.indiaLens}\nSource: ${t.sources[0].url}`;
+        copyText(note, 'Copied bedside router note');
+      });
+      document.getElementById('routerDrawerBtn').addEventListener('click', () => openDrawer(t.id));
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function renderAll() {
+      renderTabs();
+      renderMatrix();
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // Event Bindings
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.activeTab = btn.dataset.tab;
+        renderTabs();
+      });
+    });
+
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      state.search = e.target.value;
+      renderMatrix();
+    });
+    document.getElementById('symposiumSelect').addEventListener('change', (e) => {
+      state.symposium = e.target.value;
+      renderMatrix();
+    });
+    document.getElementById('modalitySelect').addEventListener('change', (e) => {
+      state.modality = e.target.value;
+      renderMatrix();
+    });
+    document.getElementById('btnResetFilters').addEventListener('click', () => {
+      state.symposium = 'all';
+      state.tumor = 'All';
+      state.modality = 'all';
+      state.search = '';
+      state.savedOnly = false;
+      document.getElementById('searchInput').value = '';
+      document.getElementById('symposiumSelect').value = 'all';
+      document.getElementById('modalitySelect').value = 'all';
+      renderMatrix();
+    });
+    document.getElementById('btnSavedFilter').addEventListener('click', () => {
+      state.savedOnly = !state.savedOnly;
+      state.activeTab = 'matrix';
+      renderAll();
+    });
+    document.getElementById('btnMetricPrimary').addEventListener('click', () => {
+      state.chartMetric = 'primary';
+      renderChart();
+    });
+    document.getElementById('btnMetricOS').addEventListener('click', () => {
+      state.chartMetric = 'os';
+      renderChart();
+    });
+    document.getElementById('routerSite').addEventListener('change', (e) => {
+      state.routerSite = e.target.value;
+      renderRouter();
+    });
+    document.getElementById('routerScenario').addEventListener('change', (e) => {
+      state.routerTrialId = e.target.value;
+      renderRouter();
+    });
+    document.getElementById('btnCloseDrawer').addEventListener('click', closeDrawer);
+    document.getElementById('drawerOverlay').addEventListener('click', (e) => {
+      if (e.target.id === 'drawerOverlay') closeDrawer();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && state.selectedTrialId) closeDrawer();
+    });
+    document.getElementById('btnTheme').addEventListener('click', () => {
+      state.darkMode = !state.darkMode;
+      document.documentElement.classList.toggle('dark', state.darkMode);
+      try { localStorage.setItem('oncosphere_esmo26_dark', state.darkMode ? '1' : '0'); } catch (e) {}
+      if (state.activeTab === 'analytics') renderChart();
+    });
+
+    renderAll();
+  </script>
+</body>
+</html>
