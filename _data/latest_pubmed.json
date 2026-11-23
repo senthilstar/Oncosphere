@@ -21,21 +21,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/43041607/"
   },
   {
-    "pmid": "42962624",
-    "title": "Nucleic acid amplification-free, aptamer-gated Cas13a-Csm6 cascade for signal-on electrochemical detection of carcinoembryonic antigen in esophageal cancer.",
-    "journal": "Talanta",
-    "pubdate": "2027 Apr 1",
-    "authors": [
-      "Song Y",
-      "Zhao W",
-      "Liu Q",
-      "Yang H",
-      "He Y",
-      "Jia S"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42962624/"
-  },
-  {
     "pmid": "43062005",
     "title": "One-carbon metabolism-derived prognostic signature orchestrates reactive oxygen species redox homeostasis in head and neck squamous cell carcinoma: integrative bulk and single-cell transcriptomic profiling.",
     "journal": "Medical gas research",
@@ -169,28 +154,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42946182/"
   },
   {
-    "pmid": "42914718",
-    "title": "Xinlikang capsule ameliorates cancer-related fatigue in Lewis lung carcinoma tumor-bearing mice: association with inhibition of oxidative stress and attenuation of JNK activation and bone marrow apoptosis.",
-    "journal": "Journal of ethnopharmacology",
-    "pubdate": "2027 Feb 10",
-    "authors": [
-      "Lu X",
-      "Huang S",
-      "Zhang Y",
-      "Ma T",
-      "Wang J",
-      "Wu X",
-      "Lv G",
-      "Wang F",
-      "Zhang L",
-      "Chen Z",
-      "Wu L",
-      "Liu X",
-      "Zhang L"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42914718/"
-  },
-  {
     "pmid": "43054192",
     "title": "Releasing Immunosuppression in the Tumor: A Phase 1/2 Study of Arginase Inhibitor INCB001158 in Combination with Chemotherapy in Advanced Malignancies.",
     "journal": "Journal of immunotherapy and precision oncology",
@@ -217,37 +180,95 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/43054192/"
   },
   {
-    "pmid": "43039505",
-    "title": "FDG PET/CT in Gynecologic Malignancies.",
-    "journal": "Magnetic resonance imaging clinics of North America",
+    "pmid": "43032513",
+    "title": "Access to clinical cancer genomics and precision oncology-based care in North America.",
+    "journal": "Lancet regional health. Americas",
     "pubdate": "2027 Feb",
     "authors": [
-      "Aslaner K",
-      "Ozkan ZG",
-      "Akin EA"
+      "Kumar P",
+      "Salawu A",
+      "Demichelis-Gómez R",
+      "Williams A",
+      "Harris AR",
+      "Jenkins-Lord BD",
+      "Mullangi S",
+      "Bajaj RA",
+      "Bolajoko O",
+      "Jacobson I",
+      "Lopez-Correa C",
+      "Parikh A",
+      "Teckie S",
+      "Wu J",
+      "Odedina F",
+      "Davis MB",
+      "Swenson W",
+      "Bourque JM",
+      "Versón CA",
+      "Siu LL",
+      "Chakravarty D"
     ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43039505/"
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43032513/"
   },
   {
-    "pmid": "43039500",
-    "title": "Breast Cancer and Hybrid Imaging Strategies.",
-    "journal": "Magnetic resonance imaging clinics of North America",
+    "pmid": "43000092",
+    "title": "FSTL1(high) hepatic stellate cells secrete CCL3 to activate the PI3K/AKT/mTOR pathway, initiating anoikis resistance and promoting hepatocellular carcinoma progression.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
     "pubdate": "2027 Feb",
     "authors": [
-      "Ntekim AU",
-      "Dibble EH"
+      "Wang Y",
+      "Wang H",
+      "Nie Y",
+      "Xue H",
+      "Zhou Y",
+      "Li C",
+      "Zhang C",
+      "Gu C"
     ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43039500/"
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43000092/"
   },
   {
-    "pmid": "43039498",
-    "title": "Prostate-Specific Membrane Antigen-Targeted Radioligand Therapy in Prostate Cancer: Patient Selection, Treatment Workflow, and Emerging Directions.",
-    "journal": "Magnetic resonance imaging clinics of North America",
+    "pmid": "42999803",
+    "title": "Outcomes of Patients with Rare Cancers Treated with Immune Checkpoint Inhibitors with and Without Lung and/or Liver Metastases (NCI/SWOG S1609).",
+    "journal": "Journal of immunotherapy and precision oncology",
     "pubdate": "2027 Feb",
     "authors": [
-      "Denizmen Zorba D",
-      "Sanli Y"
+      "Wang Y",
+      "Othus M",
+      "Chae YK",
+      "Davies M",
+      "Dietrich E",
+      "Patel SP",
+      "Kurzrock R"
     ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43039498/"
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42999803/"
+  },
+  {
+    "pmid": "42994735",
+    "title": "O-glycosylation of ENO1 at serine 63 by GALNT14 promotes triple-negative breast cancer progression by enhancing ENO1 protein stability.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Wan Y",
+      "Lan J",
+      "Zhou Y",
+      "Shi Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42994735/"
+  },
+  {
+    "pmid": "42988231",
+    "title": "JQ1 targeting BRD4 enhances cisplatin-induced pyroptosis via LDHA-mediated ROS release to potentially overcome chemoresistance in bladder cancer.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Li K",
+      "Tan YK",
+      "Li ZB",
+      "Xiang R",
+      "Deng X",
+      "Jin JY",
+      "Li Y"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42988231/"
   }
 ]
