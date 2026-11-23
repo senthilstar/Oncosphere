@@ -192,6 +192,7 @@ sources:
 ## 4️⃣ When Combinations Are Unsuitable — Choose a Sustainable VEGFR Inhibitor
 
 - Checkpoint contraindication or unaffordable combination → quality-assured pazopanib 800 mg orally daily fasting or sunitinib 50 mg orally daily, four weeks on/two weeks off; adapt for tolerance and organ function. <a class="cite" href="https://doi.org/10.1056/NEJMoa1303989">[NEJM 2013]</a>
+- ⚠️ Pazopanib → monitor liver tests closely in the first months; review interacting drugs (CYP3A4 inhibitors/inducers, acid suppressants).
 - Cabozantinib monotherapy 60 mg orally daily is another option, particularly in intermediate/poor-risk disease when appropriate and accessible. <a class="cite" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5455807/">[J Clin Oncol 2017]</a>
 - Frailty → correct reversible causes, consider dose adaptation and early supportive care; irreversible severe functional impairment may make symptom-directed care preferable.
 - 📊 COMPARZ → pazopanib vs sunitinib PFS 8.4 vs 9.5 months; noninferiority met; quality of life generally favoured pazopanib. <a class="cite" href="https://doi.org/10.1056/NEJMoa1303989">[NEJM 2013]</a>
@@ -236,6 +237,7 @@ sources:
 
 - 🧬 Young onset, bilateral or multifocal tumours, characteristic histology or family history → genetics referral and germline testing with counselling.
 - 🧬 Suspected FH-deficient RCC → FH and 2SC pathology work-up, germline assessment and counselling. Bevacizumab 10 mg/kg IV every 2 weeks + erlotinib 150 mg orally daily → phase 2 hereditary cohort n=43; ORR 72%, PFS 21.1 months, OS 44.6 months; grade ≥3 hypertension 34%, proteinuria 17%. <a class="cite" href="https://doi.org/10.1056/NEJMoa2200900">[NEJM 2025]</a>
+- ⚠️ Bevacizumab → bleeding, delayed wound healing; erlotinib → acneiform rash, diarrhoea → plan skin care and antidiarrhoeals.
 - FH-deficient disease → discuss a clinical trial or a histology-specific regimen; distinguish hereditary from sporadic cases.
 
 **🔑 Key insights**
@@ -336,7 +338,7 @@ sources:
 
 - 1️⃣ Match risk, tempo and toxicity; avoid cross-trial rankings.
 - 2️⃣ Record perioperative PD-1 exposure before choosing metastatic treatment.
-- 3️⃣ 💰 🇮🇳 Generic VEGFR-TKIs may be the sustainable option; include monitoring, travel and later-line costs in the plan. Verify exact CDSCO indications, procurement quality and assistance/PM-JAY or state-scheme coverage.
+- 3️⃣ 💰 🇮🇳 Generic VEGFR-TKIs may be the sustainable option; include monitoring, travel, lost wages and later-line costs in the plan. Verify exact CDSCO indications, procurement quality and assistance/PM-JAY or state-scheme coverage.
 - 4️⃣ Biosimilars used elsewhere in oncology do not establish an interchangeable checkpoint product; use only appropriately authorised products. Preserve a rapid contact route for immune symptoms and early palliative care.
 
 {% include india.html text="Confirm histology and choose a treatment that can be sustained with reliable monitoring, travel and supportive care; check local availability and coverage." %}

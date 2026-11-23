@@ -88,7 +88,7 @@ sources:
 ## 2️⃣ Molecular Classification — Obtain Results That Change Treatment
 
 - 🧬 MMR IHC: MLH1, PMS2, MSH2 and MSH6; use validated MSI testing to clarify or confirm when needed; both tests are not automatically required. MLH1/PMS2 loss → MLH1 promoter methylation testing and hereditary-risk assessment as indicated.
-- **Classify using an integrated algorithm:** pathogenic POLE exonuclease-domain mutation; dMMR; p53-abnormal; or no specific molecular profile (NSMP). Resolve multiple classifiers through expert pathology review.
+- **Classify using an integrated algorithm:** pathogenic POLE exonuclease-domain mutation (sequencing); dMMR (MMR IHC); p53-abnormal (p53 IHC); or no specific molecular profile (NSMP). Resolve multiple classifiers through expert pathology review.
 - POLE-mutated prognosis is especially relevant in earlier-stage disease; it does not justify withholding needed metastatic treatment. p53-abnormal biology signals aggressive disease but does not replace MMR testing.
 - ER/PR → identify endocrine candidates; HER2 IHC with confirmatory ISH for equivocal results → serous-directed options. Consider testing carcinosarcoma where a matched treatment is contemplated, while recognising its distinct evidence base.
 - PD-L1 is not required for routine chemo-immunotherapy selection. Autoimmune disease, transplant and previous severe immune toxicity may change checkpoint fitness.

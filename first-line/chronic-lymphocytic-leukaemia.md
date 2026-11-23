@@ -133,7 +133,7 @@ sources:
 - **Study design:** phase 3; n=535; older/comorbid untreated patients; acalabrutinib–obinutuzumab, acalabrutinib or chlorambucil–obinutuzumab. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40198878/">[Blood 2025]</a>
 - Acalabrutinib 100 mg orally twice daily until progression/toxicity; antibody for 6 cycles, beginning after acalabrutinib lead-in. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40198878/">[Blood 2025]</a>
 - Six-year update: 72-month PFS 78.0% / 61.5% / 17.2%; median PFS not reached / not reached / 27.8 months. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40198878/">[Blood 2025]</a>
-- 📊 PFS HR versus chlorambucil–obinutuzumab: 0.14 (95% CI 0.10–0.20) with combination and 0.24 (95% CI 0.17–0.32) with monotherapy (74.5-month median follow-up publication). <a class="cite" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824692/">[Blood 2025]</a>
+- 📊 PFS HR versus chlorambucil–obinutuzumab: 0.14 (95% CI 0.10–0.20) with combination and 0.24 (95% CI 0.17–0.32) with monotherapy (74.5-month median follow-up publication; ≈0.23 in earlier summaries). <a class="cite" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824692/">[Blood 2025]</a>
 - At median 74.5-month follow-up, acalabrutinib–obinutuzumab improved OS versus chlorambucil–obinutuzumab; antibody addition improves disease control but adds infusion, neutropenia and infection burden; the comparison with acalabrutinib alone was exploratory. Grade ≥3 neutropenia was 30.9% / 11.7% / 42.0% across the three arms. <a class="cite" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824692/">[Blood 2025]</a>
 
 
@@ -218,8 +218,9 @@ sources:
 
 
 - **GAIA/CLL13:** phase 3; n=926; fit, TP53-intact patients. Month-15 blood uMRD 86.5% with Ven–Obi, 92.2% with Ven–Obi–ibrutinib, 57.0% with VenR and 52.0% with chemoimmunotherapy. <a class="cite" href="https://doi.org/10.1056/NEJMoa2213093">[NEJM 2023]</a>
+- 📊 GAIA/CLL13 primary 3-year PFS → Ven–Obi 87.7% vs 75.5% with chemoimmunotherapy (HR 0.42; 97.5% CI 0.26–0.68). <a class="cite" href="https://doi.org/10.1056/NEJMoa2213093">[NEJM 2023]</a>
 - GAIA/CLL13 updated: 5-year PFS 69.8% with Ven–Obi vs 50.7% with chemoimmunotherapy; Ven–Obi–ibrutinib 81.3%, VenR 57.4% (updated: these supersede earlier 3-year estimates). Five-year OS was 93.6% / 90.7% / 94.3% / 94.7% in the same respective order. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41911073/">[Blood 2026]</a>
-- **BOVen:** investigational MRD-directed zanubrutinib–obinutuzumab–venetoclax; single-arm phase 2, n=39; median follow-up 25.8 months and treatment duration 10 cycles. Blood and marrow uMRD occurred in 33/37 evaluable patients; grade ≥3 neutropenia 18%. No established superiority over doublets; MRD negativity is not cure. <a class="cite" href="https://www.sciencedirect.com/science/article/pii/S2352302621003070">[Lancet Haematol 2021]</a>
+- **BOVen:** investigational MRD-directed zanubrutinib–obinutuzumab–venetoclax; single-arm phase 2, n=39; median follow-up 25.8 months and treatment duration 10 cycles. Blood and marrow uMRD occurred in 33/37 evaluable patients (89%) → protocol-defined treatment discontinuation; grade ≥3 neutropenia 18%. No established superiority over doublets; MRD negativity is not cure. <a class="cite" href="https://www.sciencedirect.com/science/article/pii/S2352302621003070">[Lancet Haematol 2021]</a>
 
 **🔑 Key insights**
 
