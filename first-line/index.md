@@ -20,12 +20,13 @@ Match therapy to tumour biology, clinical urgency, safety and sustainable access
 - [HER2-positive metastatic breast cancer]({{ '/first-line/her2-positive-metastatic-breast-cancer/' | relative_url }}) — Confirm metastatic HER2 status; select induction by prior treatment, pulmonary safety and access, and plan maintenance and sequencing.
 - [Cervical cancer (recurrent / metastatic)]({{ '/first-line/cervical-cancer/' | relative_url }}) — Assess curability, PD-L1 CPS, prior immunotherapy and bevacizumab safety; plan sustainable access.
 - [Metastatic colorectal cancer]({{ '/first-line/metastatic-colorectal-cancer/' | relative_url }}) — Assess resection potential; test MMR, RAS, BRAF and HER2, then match therapy to biology, sidedness and fitness.
-- [Advanced gastric / GEJ adenocarcinoma]({{ '/first-line/gastric-gej-adenocarcinoma-1l-algorithm/' | relative_url }}) — Assess HER2, PD-L1 CPS, MMR/MSI and CLDN18.2 up front; match first-line therapy to the biomarker profile.
+- [Advanced gastric / GEJ adenocarcinoma]({{ '/first-line/advanced-gastric-gej-adenocarcinoma/' | relative_url }}) — Test HER2, PD-L1 CPS, MMR and CLDN18.2 up front; add a PD-1 inhibitor, HER2 antibody or zolbetuximab to the chemotherapy backbone by profile and fitness.
 - [Unresectable hepatocellular carcinoma]({{ '/first-line/unresectable-hcc-systemic-therapy-guide/' | relative_url }}) — Choose an IO-based first-line regimen by Child-Pugh class, variceal bleeding risk and the need for rapid shrinkage.
 - [Metastatic hormone-sensitive prostate cancer]({{ '/first-line/mhspc-doublet-vs-triplet-therapy/' | relative_url }}) — Intensify by CHAARTED volume, presentation timing and chemotherapy fitness — triplet or ARPI doublet, never ADT alone.
 
 ## Related treatment reviews
 
+- [Gastric / GEJ biomarker algorithm (quick reference)]({{ '/first-line/gastric-gej-adenocarcinoma-1l-algorithm/' | relative_url }}) — one-page summary of first-line choice by HER2, PD-L1 CPS, MMR and CLDN18.2.
 - [Stage IV lung adenocarcinoma]({{ '/stage4-lung-adenocarcinoma/' | relative_url }}) — driver and PD-L1 testing; targeted therapy or immunotherapy-based systemic treatment.
 - [Newly diagnosed multiple myeloma: quadruplet therapy & MRD guide]({{ '/ndmm-quadruplet-therapy-mrd-guide/' | relative_url }}) — Anti-CD38 quadruplets by transplant eligibility and frailty, with MRD-guided maintenance.
 - [Stage IV NSCLC: first-line precision matrix]({{ '/stage-iv-nsclc-1l-precision-matrix/' | relative_url }}) — Wait for broad NGS, then match EGFR/ALK disease to targeted therapy and PD-L1 to the immunotherapy backbone.
