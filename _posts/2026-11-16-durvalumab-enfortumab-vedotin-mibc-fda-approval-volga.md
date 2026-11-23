@@ -50,3 +50,5 @@ Randomisation was stratified by PD-L1 status, clinical stage and cisplatin eligi
 {% include india.html text="CDSCO approval for this specific indication could not be verified; check current Indian regulatory status before prescribing. Enfortumab vedotin is costly and access-limited in India and most LMICs, so for now this regimen is realistic mainly in private or trial settings. The practical lesson for public hospitals is selection: document cisplatin ineligibility (GFR, hearing, neuropathy, PS, heart failure) properly, refer early for cystectomy, and use bladder-preserving trimodality therapy where surgery or systemic access is not available. **Opinion.**" %}
 
 Related: [ESMO 2026 Presidential Symposium I]({{ '/esmo-2026-presidential-symposium-1/' | relative_url }}) · [Advanced bladder/urothelial cancer]({{ '/advanced-bladder-urothelial-cancer/' | relative_url }}) · [Pimicotinib for TGCT (10 Nov 2026)]({{ '/pimicotinib-tgct-fda-approval/' | relative_url }}).
+
+Related deep dive: [perioperative enfortumab vedotin + pembrolizumab — KEYNOTE-905 and KEYNOTE-B15](/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/).

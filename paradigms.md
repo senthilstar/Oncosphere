@@ -13,8 +13,9 @@ Concise trial reviews, treatment pathways and regulatory updates, with context f
 - [First-line systemic therapy](#first-line) · [Lung](#lung) · [Breast](#breast) · [GI](#gi) · [Bladder / GU](#bladder) · [Myeloma](#myeloma) · [Sarcoma](#sarcoma) · [Immunotherapy — dostarlimab](#immuno) · [Trial briefs](#trial-briefs) · [FDA approvals](#fda) · [Conferences](#conferences) · [What changed this week](#this-week)
 
 ## Recent updates {#this-week}
-A selection of recent articles and regulatory updates, current to 21 Nov 2026.
+A selection of recent articles and regulatory updates, current to 23 Nov 2026.
 
+- [KEYNOTE-905 and KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }}) — perioperative enfortumab vedotin plus pembrolizumab improved survival in cystectomy candidates.
 - [First-line metastatic colorectal cancer]({{ '/first-line/metastatic-colorectal-cancer/' | relative_url }}) — assess resectability, fitness, MMR, RAS, BRAF V600E and sidedness; HER2 and KRAS G12C guide later options. Includes India access considerations.
 - [First-line advanced gastric / GEJ adenocarcinoma]({{ '/first-line/advanced-gastric-gej-adenocarcinoma/' | relative_url }}) — test HER2, PD-L1 CPS, MMR and CLDN18.2; choose PD-1, HER2-directed or zolbetuximab combinations; sequencing and India access.
 - [PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }}) — Lu-PSMA-617 added to ADT and an androgen receptor pathway inhibitor in PSMA-positive metastatic hormone-sensitive prostate cancer improved radiographic PFS; overall survival remains immature.
@@ -60,6 +61,7 @@ A selection of recent articles and regulatory updates, current to 21 Nov 2026.
 - [ASCO GI 2026 — HERIZON-GEA-01, BREAKWATER, COMMIT]({{ '/asco-gi-2026/' | relative_url }})
 
 ## Bladder / GU {#bladder}
+- [New 23 Nov 2026: perioperative enfortumab vedotin + pembrolizumab in MIBC — KEYNOTE-905 / KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }})
 - [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
 - [New 17 Nov 2026: talazoparib + enzalutamide in HRR-mutated mHSPC — TALAPRO-3]({{ '/talazoparib-enzalutamide-hrr-mhspc-talapro-3/' | relative_url }})
 - [Advanced bladder (urothelial) cancer]({{ '/advanced-bladder-urothelial-cancer/' | relative_url }})
@@ -77,6 +79,7 @@ A selection of recent articles and regulatory updates, current to 21 Nov 2026.
 - [New 5 Nov 2026: organ-preservation pathway illustration]({{ '/dostarlimab-organ-preservation-pathway/' | relative_url }})
 
 ## Trial briefs {#trial-briefs}
+- [New 23 Nov 2026: perioperative enfortumab vedotin + pembrolizumab in MIBC — KEYNOTE-905 / KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }})
 - [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
 - [New 19 Nov 2026: adjuvant atezolizumab in stage III dMMR colon cancer — ATOMIC]({{ '/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/' | relative_url }})
 - [New 18 Nov 2026: camizestrant switch on ctDNA ESR1 mutation — SERENA-6]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }})
@@ -87,6 +90,7 @@ A selection of recent articles and regulatory updates, current to 21 Nov 2026.
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 23 Nov 2026: perioperative enfortumab vedotin + pembrolizumab in MIBC — KEYNOTE-905 / KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }})
 - [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
 - [New 19 Nov 2026: adjuvant atezolizumab in stage III dMMR colon cancer — ATOMIC]({{ '/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/' | relative_url }})
 - [New 18 Nov 2026: camizestrant switch on ctDNA ESR1 mutation — SERENA-6]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }})

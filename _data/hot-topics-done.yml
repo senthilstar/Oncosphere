@@ -89,5 +89,18 @@ topics:
       - "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01092-5/abstract"
       - "https://www.annalsofoncology.org/article/S0923-7534(25)04871-9/fulltext"
       - https://www.novartis.com/news/media-releases/fda-approves-pluvicto-psma-metastatic-hormone-sensitive-prostate-cancer-mhspc-advancing-potential-new-standard-care-across-metastatic-disease
+  - slug: keynote-905-ev-pembro-mibc
+    topic: "Perioperative enfortumab vedotin + pembrolizumab in muscle-invasive bladder cancer — KEYNOTE-905/EV-303 (cisplatin-ineligible; NEJM Feb 2026; FDA 21 Nov 2025) and KEYNOTE-B15/EV-304 (cisplatin-eligible; NEJM Jul 2026; FDA 10 Jul 2026; EU Oct 2026)"
+    date_added: 2026-11-23
+    page: /enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/
+    signal: "First perioperative regimen with OS benefit in cisplatin-ineligible MIBC; not previously covered on the site; GU/bladder pages provide related clinical context"
+    primary_sources:
+      - https://www.nejm.org/doi/10.1056/NEJMoa2511674
+      - https://www.nejm.org/doi/10.1056/NEJMoa2601486
+      - https://www.fda.gov/drugs/cancer-approvals/fda-approves-pembrolizumab-enfortumab-vedotin-ejfv-muscle-invasive-bladder-cancer
+      - https://www.fda.gov/drugs/cancer-approvals/fda-approves-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph-each-enfortumab-vedotin
+      - https://www.ema.europa.eu/en/documents/smop/chmp-post-authorisation-summary-positive-opinion-padcev-vr0000336191_en.pdf
+      - https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.4613
+      - https://clinicaltrials.gov/study/NCT03924895
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"
