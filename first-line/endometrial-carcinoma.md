@@ -2,7 +2,7 @@
 layout: post
 title: "First-line treatment principles: Endometrial carcinoma"
 display_date: 2026-11-14
-updated: 2026-11-21
+updated: 2026-11-23
 category: "First-line principles"
 audience: "clinicians"
 cover: "paradigm"
@@ -59,6 +59,8 @@ sources:
     url: https://www.ema.europa.eu/en/documents/product-information/imfinzi-epar-product-information_en.pdf
   - title: "DUO-E — FDA 2024"
     url: https://www.fda.gov/drugs/cancer-approvals/fda-approves-durvalumab-chemotherapy-mismatch-repair-deficient-primary-advanced-or-recurrent
+  - title: "NRG-GY018 OS update — NRG Oncology 2026"
+    url: https://www.nrgoncology.org/Home/News/Post/addition-of-immunotherapy-continues-to-show-survival-benefit-in-prolonged-follow-up-in-nrg-oncology-trial-for-primary-advanced-stage-or-recurrent-endometrial-cancer/
   - title: "NRG-GY018 — FDA 2024"
     url: https://www.fda.gov/drugs/cancer-approvals/fda-approves-pembrolizumab-chemotherapy-primary-advanced-or-recurrent-endometrial-carcinoma
   - title: "RUBY — FDA 2024"
@@ -85,7 +87,7 @@ sources:
 
 ## 2️⃣ Molecular Classification — Obtain Results That Change Treatment
 
-- 🧬 MMR IHC: MLH1, PMS2, MSH2 and MSH6; use validated MSI testing when appropriate. MLH1/PMS2 loss → MLH1 promoter methylation testing and hereditary-risk assessment as indicated.
+- 🧬 MMR IHC: MLH1, PMS2, MSH2 and MSH6; use validated MSI testing to clarify or confirm when needed; both tests are not automatically required. MLH1/PMS2 loss → MLH1 promoter methylation testing and hereditary-risk assessment as indicated.
 - **Classify using an integrated algorithm:** pathogenic POLE exonuclease-domain mutation; dMMR; p53-abnormal; or no specific molecular profile (NSMP). Resolve multiple classifiers through expert pathology review.
 - POLE-mutated prognosis is especially relevant in earlier-stage disease; it does not justify withholding needed metastatic treatment. p53-abnormal biology signals aggressive disease but does not replace MMR testing.
 - ER/PR → identify endocrine candidates; HER2 IHC with confirmatory ISH for equivocal results → serous-directed options. Consider testing carcinosarcoma where a matched treatment is contemplated, while recognising its distinct evidence base.
@@ -103,7 +105,8 @@ sources:
 - Carboplatin AUC 5 + paclitaxel 175 mg/m² IV day 1 every 21 days, usually six cycles in the frontline immune-combination trials. <a class="cite" href="https://doi.org/10.1056/NEJMoa2302312">[NEJM 2023]</a>
 - Pembrolizumab 200 mg IV every 3 weeks during chemotherapy → 400 mg every 6 weeks for up to 14 maintenance cycles in NRG-GY018; approximately two years total. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761467s008lbl.pdf">[FDA 2026]</a>
 - Dostarlimab 500 mg IV every 3 weeks for six combination cycles → 1,000 mg every 6 weeks, up to three years total in RUBY. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761174s009lbl.pdf">[FDA 2024]</a>
-- dMMR disease → particularly large benefit supports prioritising chemo-immunotherapy when chemotherapy is indicated. pMMR → discuss a checkpoint-containing regimen with explicit benefit, toxicity and affordability counselling.
+- 🎯 dMMR/MSI-H → prefer pembrolizumab– or dostarlimab–chemotherapy; durvalumab–chemotherapy is another approved option where available. pMMR/MSS with symptomatic or rapidly progressive disease → pembrolizumab– or dostarlimab–chemotherapy, with benefit, toxicity and access counselling.
+- 🇺🇸 US approval → pembrolizumab– or dostarlimab–chemotherapy followed by the same antibody is irrespective of MMR status. <a class="cite" href="https://www.fda.gov/drugs/cancer-approvals/fda-approves-pembrolizumab-chemotherapy-primary-advanced-or-recurrent-endometrial-carcinoma">[FDA 2024]</a> <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761174s009lbl.pdf">[FDA 2024]</a>
 
 **📊 NRG-GY018 / KEYNOTE-868: Pembrolizumab + Chemotherapy**
 
@@ -111,8 +114,21 @@ sources:
 - **Initial PFS analysis — dMMR:** 12-month PFS 74% vs 38%; HR 0.30 (95% CI 0.19–0.48). <a class="cite" href="https://doi.org/10.1056/NEJMoa2302312">[NEJM 2023]</a>
 - **Initial PFS analysis — pMMR:** median PFS 13.1 vs 8.7 months; HR 0.54 (95% CI 0.41–0.71). <a class="cite" href="https://doi.org/10.1056/NEJMoa2302312">[NEJM 2023]</a>
 - ⚠️ Grade ≥3 AEs: dMMR 63.3% vs 47.2%; pMMR 55.1% vs 45.3%. <a class="cite" href="https://doi.org/10.1056/NEJMoa2302312">[NEJM 2023]</a>
-- 🫀 Updated conference OS analysis → dMMR 48-month OS 80% vs 60%, HR 0.53 (95% CI 0.32–0.89); pMMR median OS 46.9 vs 35.1 months, HR 0.84 (95% CI 0.66–1.06), not statistically significant. Subsequent checkpoint treatment complicates interpretation. <a class="cite" href="https://doi.org/10.1200/JCO.2026.44.16_suppl.5502">[J Clin Oncol 2026 abstract]</a>
+- 🫀 ASCO 2026 OS update (data cut-off 14 Apr 2026) → dMMR 48-month OS 79% vs 60%, HR 0.56 (95% CI 0.34–0.92); pMMR median OS 44.4 vs 35.1 months, not statistically significant. ≥93% (dMMR) and ≥81% (pMMR) of control patients given later therapy received a checkpoint inhibitor → complicates OS interpretation. <a class="cite" href="https://www.nrgoncology.org/Home/News/Post/addition-of-immunotherapy-continues-to-show-survival-benefit-in-prolonged-follow-up-in-nrg-oncology-trial-for-primary-advanced-stage-or-recurrent-endometrial-cancer/">[NRG Oncology 2026]</a>
+- 📝 The printed abstract used an earlier cut-off (23 Dec 2025: dMMR 80% vs 60%, HR 0.53; pMMR 46.9 vs 35.1 months) → the April 2026 cut-off is the more mature analysis. <a class="cite" href="https://doi.org/10.1200/JCO.2026.44.16_suppl.5502">[J Clin Oncol 2026 abstract]</a>
 - Exploratory pMMR ORR 72.3% vs 59.0% in the later analysis; subsequent checkpoint therapy affects OS interpretation. <a class="cite" href="https://doi.org/10.1038/s41591-025-03566-1">[Nat Med 2025]</a>
+
+**📊 RUBY: Dostarlimab + Chemotherapy**
+
+- **Study design:** phase 3, double-blind; n=494; primary advanced or first recurrent endometrial cancer, including eligible carcinosarcoma; comparator placebo–carboplatin–paclitaxel → placebo continuation. <a class="cite" href="https://doi.org/10.1056/NEJMoa2216334">[NEJM 2023]</a>
+- **Initial dMMR/MSI-H analysis:** 24-month PFS 61.4% vs 15.7%; HR 0.28 (95% CI 0.16–0.50). <a class="cite" href="https://doi.org/10.1056/NEJMoa2216334">[NEJM 2023]</a>
+- ⏱️ Exploratory pMMR/MSS PFS → HR 0.76 (95% CI 0.59–0.98). <a class="cite" href="https://doi.org/10.1056/NEJMoa2216334">[NEJM 2023]</a>
+- **Second interim OS analysis:** overall median OS 44.6 vs 28.2 months; HR 0.69 (95% CI 0.54–0.89). <a class="cite" href="https://doi.org/10.1016/j.annonc.2024.05.546">[Ann Oncol 2024]</a>
+- **Molecular subgroups:** dMMR/MSI-H OS HR 0.32 (95% CI 0.17–0.63); pMMR/MSS OS HR 0.79 (95% CI 0.60–1.04). The pMMR subgroup interval includes no effect; avoid asserting definitive subgroup OS superiority. <a class="cite" href="https://doi.org/10.1016/j.annonc.2024.05.546">[Ann Oncol 2024]</a>
+- ⚠️ Initial grade ≥3 AEs 70.5% vs 59.8%; include marrow suppression, neuropathy and immune injury in counselling. <a class="cite" href="https://doi.org/10.1056/NEJMoa2216334">[NEJM 2023]</a>
+- Updated dMMR follow-up → median PFS and OS not reached with dostarlimab; long-term estimates remain exploratory. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42215378/">[Gynecol Oncol 2026]</a>
+- Plan maintenance access before induction; no progression and acceptable tolerance → continue the selected antibody. Progression → reassess the next line rather than calling it maintenance.
+
 
 **🔑 Key insights**
 
@@ -122,17 +138,6 @@ sources:
 ## 4️⃣ Preferred Therapy Unsuitable — Choose an Alternative
 
 - 💊 If checkpoint therapy is contraindicated or inaccessible → carboplatin–paclitaxel; low-volume indolent receptor-positive disease → consider endocrine therapy.
-- Dostarlimab–chemotherapy is an alternative preferred checkpoint regimen when suitable and available.
-
-**📊 RUBY: Dostarlimab + Chemotherapy**
-
-- **Study design:** phase 3, double-blind; n=494; primary advanced or first recurrent endometrial cancer, including eligible carcinosarcoma; comparator placebo–carboplatin–paclitaxel → placebo continuation. <a class="cite" href="https://doi.org/10.1056/NEJMoa2216334">[NEJM 2023]</a>
-- **Initial dMMR/MSI-H analysis:** 24-month PFS 61.4% vs 15.7%; HR 0.28 (95% CI 0.16–0.50). <a class="cite" href="https://doi.org/10.1056/NEJMoa2216334">[NEJM 2023]</a>
-- **Second interim OS analysis:** overall median OS 44.6 vs 28.2 months; HR 0.69 (95% CI 0.54–0.89). <a class="cite" href="https://doi.org/10.1016/j.annonc.2024.05.546">[Ann Oncol 2024]</a>
-- **Molecular subgroups:** dMMR/MSI-H OS HR 0.32 (95% CI 0.17–0.63); pMMR/MSS OS HR 0.79 (95% CI 0.60–1.04). The pMMR subgroup interval includes no effect; avoid asserting definitive subgroup OS superiority. <a class="cite" href="https://doi.org/10.1016/j.annonc.2024.05.546">[Ann Oncol 2024]</a>
-- ⚠️ Initial grade ≥3 AEs 70.5% vs 59.8%; include marrow suppression, neuropathy and immune injury in counselling. <a class="cite" href="https://doi.org/10.1056/NEJMoa2216334">[NEJM 2023]</a>
-- Updated dMMR follow-up → median PFS and OS not reached with dostarlimab; long-term estimates remain exploratory. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/42215378/">[Gynecol Oncol 2026]</a>
-- Plan maintenance access before induction; no progression and acceptable tolerance → continue the selected antibody. Progression → reassess the next line rather than calling it maintenance.
 
 **🔑 Key insights**
 
@@ -146,6 +151,7 @@ sources:
 - **Study design:** phase 3, double-blind; n=551 randomized; advanced/recurrent carcinoma or carcinosarcoma; atezolizumab 1,200 mg IV every 3 weeks + carboplatin AUC 5–6/paclitaxel 175 mg/m² for 6–8 cycles → antibody continuation; comparator placebo pathway. <a class="cite" href="https://doi.org/10.1016/S1470-2045(24)00334-6">[Lancet Oncol 2024]</a>
 - ⏱️ **Initial analysis — dMMR:** PFS not estimable vs 6.9 months; HR 0.36 (95% CI 0.23–0.57). <a class="cite" href="https://doi.org/10.1016/S1470-2045(24)00334-6">[Lancet Oncol 2024]</a>
 - ⏱️ **Overall:** PFS 10.1 vs 8.9 months; HR 0.74 (95% CI 0.61–0.91). Interim OS 38.7 vs 30.2 months; HR 0.82 (95% CI 0.63–1.07) did not cross the prespecified significance boundary. <a class="cite" href="https://doi.org/10.1016/S1470-2045(24)00334-6">[Lancet Oncol 2024]</a>
+- ⚠️ Positive trial evidence → atezolizumab is not automatically interchangeable with established approved first-line options.
 - ⚠️ Grade 3–4 neutropenia 27% vs 28%; treatment-related serious AEs 13% vs 3%. <a class="cite" href="https://doi.org/10.1016/S1470-2045(24)00334-6">[Lancet Oncol 2024]</a>
 
 **📊 DUO-E: Durvalumab ± Olaparib Maintenance**
@@ -190,7 +196,7 @@ sources:
 - **Regimen:** carboplatin AUC 5 + paclitaxel 175 mg/m² IV every 3 weeks for six cycles; trastuzumab 8 mg/kg IV loading → 6 mg/kg every 3 weeks, continued until progression/toxicity. <a class="cite" href="https://doi.org/10.1158/1078-0432.CCR-20-0953">[Clin Cancer Res 2020]</a>
 - ⏱️ **Updated analysis:** PFS 12.9 vs 8.0 months; HR 0.46 (90% CI 0.28–0.76); OS 29.6 vs 24.4 months; HR 0.58 (90% CI 0.34–0.99). These are reported 90%, not 95%, intervals. <a class="cite" href="https://doi.org/10.1158/1078-0432.CCR-20-0953">[Clin Cancer Res 2020]</a>
 - Primary advanced stage III–IV subgroup → PFS 17.7 vs 9.3 months; subgroup estimate is exploratory. <a class="cite" href="https://doi.org/10.1158/1078-0432.CCR-20-0953">[Clin Cancer Res 2020]</a>
-- Baseline and serial LVEF; review cardiac history. Do not automatically add trastuzumab on top of chemo-immunotherapy without supporting evidence for that combination.
+- ⚠️ Baseline and serial LVEF → review cardiac history. Evidence is strongest in serous carcinoma and less mature in carcinosarcoma; HER2 positivity alone does not mandate replacing chemo-immunotherapy. Routine checkpoint inhibitor plus trastuzumab with chemotherapy lacks definitive randomized evidence.
 - Later-line HER2-directed ADC treatment may be relevant under a tumour-agnostic/local indication or trial; reassess expression, pulmonary risk and access.
 
 **🔑 Key insights**

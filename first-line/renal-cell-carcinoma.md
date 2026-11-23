@@ -2,7 +2,7 @@
 layout: post
 title: "First-line treatment principles: Renal cell carcinoma"
 display_date: 2026-11-14
-updated: 2026-11-21
+updated: 2026-11-23
 category: "First-line principles"
 audience: "clinicians"
 cover: "bladder"
@@ -33,6 +33,8 @@ sources:
     url: https://doi.org/10.1001/jamaoncol.2018.5543
   - title: "KEYNOTE-B61 — Lancet Oncol 2023"
     url: https://doi.org/10.1016/S1470-2045(23)00276-0
+  - title: "CA209-9KU — Eur Urol 2024"
+    url: https://pubmed.ncbi.nlm.nih.gov/38782695/
   - title: "CA209-9KU — J Clin Oncol 2022"
     url: https://doi.org/10.1200/JCO.21.01944
   - title: "PAPMET — Lancet 2021"
@@ -149,6 +151,7 @@ sources:
 - 📈 **Key outcomes — intention-to-treat:** OS 52.7 vs 37.8 months; ORR 39.5% vs 33.0%; complete response 12.0% vs 3.5%; PFS 12.4 vs 12.3 months (HR 0.88; 95% CI 0.75–1.03) at earlier follow-up. <a class="cite" href="https://doi.org/10.1016/j.annonc.2024.07.727">[Ann Oncol 2024]</a> Final OS HR 0.71 (95% CI 0.62–0.82). <a class="cite" href="https://doi.org/10.1016/j.annonc.2026.02.017">[Ann Oncol 2026]</a>
 - 📈 **Intermediate/poor risk:** median OS 46.7 vs 26.0 months at earlier follow-up. <a class="cite" href="https://doi.org/10.1016/j.annonc.2024.07.727">[Ann Oncol 2024]</a> Nine-year OS 30.2% vs 18.7%; OS HR 0.69 (95% CI 0.59–0.81); this remains the principal risk-defined population supporting routine use. <a class="cite" href="https://doi.org/10.1016/j.annonc.2026.02.017">[Ann Oncol 2026]</a>
 - ⚠️ Grade 3–4 treatment-related AEs 48.6% vs 64.1%. Immune colitis, hepatitis, pneumonitis and endocrinopathy require rapid assessment. <a class="cite" href="https://doi.org/10.1016/j.annonc.2026.02.017">[Ann Oncol 2026]</a>
+- ⚠️ Early progression remains possible; favourable-risk final OS HR 0.80 with confidence interval crossing 1. <a class="cite" href="https://doi.org/10.1016/j.annonc.2026.02.017">[Ann Oncol 2026]</a>
 - Sarcomatoid subgroup → ORR 60.8% vs 23.1%; PFS 26.5 vs 5.5 months; OS 48.6 vs 14.2 months. <a class="cite" href="https://doi.org/10.1136/jitc-2022-005445">[J Immunother Cancer 2022]</a>
 - Sarcomatoid differentiation → favour an immune-containing regimen; subgroup findings do not compare immune combinations directly. <a class="cite" href="https://doi.org/10.1136/jitc-2022-005445">[J Immunother Cancer 2022]</a>
 
@@ -192,7 +195,7 @@ sources:
 - Cabozantinib monotherapy 60 mg orally daily is another option, particularly in intermediate/poor-risk disease when appropriate and accessible. <a class="cite" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5455807/">[J Clin Oncol 2017]</a>
 - Frailty → correct reversible causes, consider dose adaptation and early supportive care; irreversible severe functional impairment may make symptom-directed care preferable.
 - 📊 COMPARZ → pazopanib vs sunitinib PFS 8.4 vs 9.5 months; noninferiority met; quality of life generally favoured pazopanib. <a class="cite" href="https://doi.org/10.1056/NEJMoa1303989">[NEJM 2013]</a>
-- 📊 RESTORE → sunitinib two weeks on/one week off can ease cumulative toxicity; six-month failure-free survival 63% vs 44% with four weeks on/two weeks off; OS superiority unproven. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/26347107/">[Eur J Cancer 2015]</a>
+- 📊 RESTORE → randomized phase 2, 74 eligible patients; sunitinib two weeks on/one week off can ease cumulative toxicity; six-month failure-free survival 63% vs 44% with four weeks on/two weeks off; OS superiority unproven. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/26347107/">[Eur J Cancer 2015]</a>
 
 **🔑 Key insights**
 
@@ -218,10 +221,10 @@ sources:
 - Check actual progression, adherence and tolerated TKI exposure before switching. Isolated progression → multidisciplinary local treatment may preserve otherwise effective therapy.
 - 💊 Cabozantinib monotherapy 60 mg daily → reduce to 40 mg then 20 mg for toxicity. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/208692s019lbl.pdf">[FDA 2025]</a> METEOR after VEGFR treatment: initial PFS 7.4 vs 3.8 months (HR 0.58; 95% CI 0.45–0.75) vs everolimus. <a class="cite" href="https://doi.org/10.1056/NEJMoa1510016">[NEJM 2015]</a> Final OS 21.4 vs 16.5 months (HR 0.66; 95% CI 0.53–0.83); older VEGF-pretreated setting differs from current sequences. <a class="cite" href="https://doi.org/10.1016/S1470-2045(16)30107-3">[Lancet Oncol 2016]</a>
 - IO-naive after VEGFR-TKI → nivolumab is an option: CheckMate 025 OS 25.8 vs 19.7 months (HR 0.73), five-year OS 26% vs 18% vs everolimus. <a class="cite" href="https://doi.org/10.1158/1078-0432.CCR-20-2174">[Clin Cancer Res 2020]</a>
-- 📊 Study 205 after VEGF therapy → lenvatinib–everolimus vs everolimus: PFS 14.6 vs 5.5 months (HR 0.40); ORR 43% vs 6%. <a class="cite" href="https://doi.org/10.1016/S1470-2045(15)00290-9">[Lancet Oncol 2015]</a>
-- 📊 LenCabo after PD-1 therapy → lenvatinib–everolimus vs cabozantinib: PFS 15.7 vs 10.2 months (HR 0.51; 95% CI 0.29–0.89); ORR 52.6% vs 38.6%; phase 2, OS immature. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41115467/">[Ann Oncol 2026]</a>
+- 📊 Study 205 after VEGF therapy → combination arm n=51; lenvatinib–everolimus vs everolimus: PFS 14.6 vs 5.5 months (HR 0.40); ORR 43% vs 6%. <a class="cite" href="https://doi.org/10.1016/S1470-2045(15)00290-9">[Lancet Oncol 2015]</a>
+- 📊 LenCabo after PD-1 therapy → lenvatinib–everolimus vs cabozantinib: PFS 15.7 vs 10.2 months (HR 0.51; 95% CI 0.29–0.89); ORR 52.6% vs 38.6%; phase 2, OS immature; ORR difference not statistically significant. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41115467/">[Ann Oncol 2026]</a>
 - Later-line tivozanib → TIVO-3 after prior VEGFR therapy: PFS 5.6 vs 3.9 months (HR 0.73; 95% CI 0.56–0.94); ORR 18% vs 8% vs sorafenib; no established OS advantage. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/31810797/">[Lancet Oncol 2020]</a>
-- CONTACT-03 and TiNivo-2 → adding checkpoint blockade after progression did not improve outcomes; routine rechallenge is discouraged. <a class="cite" href="https://doi.org/10.1016/S0140-6736(23)01472-3">[Lancet 2023]</a> <a class="cite" href="https://doi.org/10.1016/S0140-6736(24)01764-4">[Lancet 2024]</a>
+- CONTACT-03 and TiNivo-2 → adding checkpoint blockade after progression did not improve outcomes; CONTACT-03 showed greater toxicity with atezolizumab–cabozantinib. Routine rechallenge is discouraged. <a class="cite" href="https://doi.org/10.1016/S0140-6736(23)01472-3">[Lancet 2023]</a> <a class="cite" href="https://doi.org/10.1016/S0140-6736(24)01764-4">[Lancet 2024]</a>
 - Routine checkpoint recycling after checkpoint-resistant progression is unsupported; distinguish intolerance, completed treatment and resistance.
 
 **🔑 Key insights**
@@ -232,7 +235,7 @@ sources:
 ## 7️⃣ Hereditary Biomarkers — Identify FH-deficient Disease
 
 - 🧬 Young onset, bilateral or multifocal tumours, characteristic histology or family history → genetics referral and germline testing with counselling.
-- 🧬 Suspected FH-deficient RCC → FH and 2SC pathology work-up, germline assessment and counselling. Bevacizumab 10 mg/kg IV every 2 weeks + erlotinib 150 mg orally daily → phase 2 hereditary cohort ORR 72%, PFS 21.1 months, OS 44.6 months; grade ≥3 hypertension 34%, proteinuria 17%. <a class="cite" href="https://doi.org/10.1056/NEJMoa2200900">[NEJM 2025]</a>
+- 🧬 Suspected FH-deficient RCC → FH and 2SC pathology work-up, germline assessment and counselling. Bevacizumab 10 mg/kg IV every 2 weeks + erlotinib 150 mg orally daily → phase 2 hereditary cohort n=43; ORR 72%, PFS 21.1 months, OS 44.6 months; grade ≥3 hypertension 34%, proteinuria 17%. <a class="cite" href="https://doi.org/10.1056/NEJMoa2200900">[NEJM 2025]</a>
 - FH-deficient disease → discuss a clinical trial or a histology-specific regimen; distinguish hereditary from sporadic cases.
 
 **🔑 Key insights**
@@ -249,7 +252,7 @@ sources:
 - **Published analyses:** median PFS 5.6 months in both arms, but PFS HR 0.75 (95% CI 0.63–0.88; updated: 0.88 supersedes earlier 0.90 as the upper CI); ORR 22.7% vs 3.5%. Final OS 21.4 vs 18.2 months; HR 0.92 (95% CI 0.77–1.10; updated: 0.92 supersedes earlier 0.88); 24-month PFS 17.5% vs 4.1%, without established OS superiority. <a class="cite" href="https://s3.eu-central-1.amazonaws.com/m-anage.com.storage.esmo/static/esmo2024_abstracts/LBA74.html.pdf">[Ann Oncol 2024]</a>
 - ⚠️ Grade ≥3 AEs 61.8% vs 62.5%. Anaemia and hypoxia are signature risks → check haemoglobin and oxygen saturation, investigate symptoms and use label-directed holds/reductions. <a class="cite" href="https://doi.org/10.1056/NEJMoa2313906">[NEJM 2024]</a>
 - 💊 After PD-(L)1 therapy in advanced RCC with a clear-cell component → belzutifan 120 mg + lenvatinib 20 mg orally daily; US FDA approval September 2026. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/206947s035lbl.pdf">[FDA 2026]</a>
-- 📊 LITESPARK-011 (n=747) vs cabozantinib → PFS 14.8 vs 10.8 months; final analysis (Feb 2026 cut-off) → PFS HR 0.74 (95% CI 0.62–0.88); ORR 53.1% vs 40.2%; response duration 22.0 vs 11.9 months; OS 33.7 vs 28.6 months (HR 0.85; 95% CI 0.70–1.03), not statistically significant; grade ≥3 TEAEs 85.4% vs 83.0%. <a class="cite" href="https://doi.org/10.1016/j.annonc.2026.10.109">[Ann Oncol 2026]</a>
+- 📊 LITESPARK-011 (n=747) vs cabozantinib → PFS 14.8 vs 10.8 months (updated: Ann Oncol 2026 final analysis supersedes earlier 14.6 vs 10.6 months); final analysis (Feb 2026 cut-off) → PFS HR 0.74 (95% CI 0.62–0.88); ORR 53.1% vs 40.2% (updated: Ann Oncol 2026 final analysis supersedes earlier rounded 53% vs 40%); response duration 22.0 vs 11.9 months; OS 33.7 vs 28.6 months (HR 0.85; 95% CI 0.70–1.03), not statistically significant; grade ≥3 TEAEs 85.4% vs 83.0%. <a class="cite" href="https://doi.org/10.1016/j.annonc.2026.10.109">[Ann Oncol 2026]</a>
 - VHL-associated RCC requiring treatment but not immediate surgery → consider belzutifan where authorised; germline counselling and surveillance for associated tumours are essential. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215383s013lbl.pdf">[FDA 2026]</a>
 - Belzutifan is a later-line option in this evidence base; do not extrapolate it to untreated sporadic metastatic RCC.
 
@@ -268,7 +271,7 @@ sources:
 - Extra toxicity without a demonstrated survival gain → do not adopt routine triplet escalation. <a class="cite" href="https://doi.org/10.1016/j.annonc.2026.02.011">[Ann Oncol 2026]</a>
 - Historical access-driven options → sorafenib 400 mg twice daily (TARGET PFS 5.5 vs 2.8 months vs placebo after cytokines); temsirolimus 25 mg IV weekly (poor-risk Global ARCC OS 10.9 vs 7.3 months vs interferon). <a class="cite" href="https://doi.org/10.1056/NEJMoa060655">[NEJM 2007]</a> <a class="cite" href="https://doi.org/10.1056/NEJMoa066838">[NEJM 2007]</a>
 - Everolimus alone → fallback when preferred therapies are inaccessible or unsuitable; monitor stomatitis, glucose, lipids, infection and pneumonitis.
-- High-dose interleukin-2 is an exceptional specialist option; severe toxicity and infrastructure needs limit applicability. Conventional cytotoxic chemotherapy has little routine role in clear-cell RCC.
+- High-dose interleukin-2 → exceptional specialist option; durable complete responses occur only in a small minority of carefully selected patients; severe toxicity and infrastructure needs limit use. Conventional cytotoxic chemotherapy has little routine role in clear-cell RCC.
 
 **🔑 Key insights**
 
@@ -306,11 +309,12 @@ sources:
 
 - **Study design:** single-arm phase 2; n=47 across two histology cohorts; advanced non-clear-cell RCC, with zero or one prior systemic line. Cabozantinib 40 mg orally daily + nivolumab 240 mg IV every 2 weeks or 480 mg every 4 weeks. <a class="cite" href="https://doi.org/10.1200/JCO.21.01944">[J Clin Oncol 2022]</a>
 - **Initial cohort 1 analysis:** n=40 with papillary, unclassified or translocation-associated disease; ORR 47.5% (95% CI 31.5–63.9); PFS 12.5 months; OS 28 months. The small chromophobe cohort had no objective responses. <a class="cite" href="https://doi.org/10.1200/JCO.21.01944">[J Clin Oncol 2022]</a>
+- 📊 Updated cohort 1 → ORR 48% (95% CI 31.5–63.9); PFS 13 months; OS 28 months (updated: Eur Urol 2024 follow-up supersedes earlier 47.5% ORR and 12.5-month PFS). <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/38782695/">[Eur Urol 2024]</a>
 - This is cabozantinib–nivolumab evidence, distinct from lenvatinib–pembrolizumab; histology and prior-line differences prevent direct comparison. <a class="cite" href="https://doi.org/10.1200/JCO.21.01944">[J Clin Oncol 2022]</a>
 - **PAPMET/SWOG-1500:** cabozantinib vs sunitinib → PFS 9.0 vs 5.6 months; ORR 23% vs 4%; crizotinib and savolitinib arms stopped for futility. <a class="cite" href="https://doi.org/10.1016/S0140-6736(21)00152-5">[Lancet 2021]</a>
 - 📊 SUNNIFORECAST → nivolumab–ipilimumab vs investigator-selected care in non-clear-cell RCC: 12-month OS 78% vs 68%; median OS 33.2 vs 25.2 months (HR 0.81; 95% CI 0.61–1.099); median OS difference not significant. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40180121/">[Ann Oncol 2025]</a>
-- Chromophobe → trial, lenvatinib–pembrolizumab, lenvatinib–everolimus or selected VEGFR-TKI. First-line lenvatinib–everolimus phase 2: ORR 26% overall, 4/9 chromophobe patients; small single-arm study. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/33867192/">[Eur Urol 2021]</a>
-- Collecting duct → gemcitabine–cisplatin; substitute carboplatin for renal insufficiency. GETUG phase 2: ORR 26%, PFS 7.1 months, OS 10.5 months. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/17437788/">[J Urol 2007]</a>
+- Chromophobe → trial, lenvatinib–pembrolizumab, lenvatinib–everolimus or selected VEGFR-TKI. First-line lenvatinib–everolimus phase 2: n=31; ORR 26% overall, 4/9 chromophobe patients; small single-arm study. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/33867192/">[Eur Urol 2021]</a>
+- Collecting duct → gemcitabine–cisplatin; substitute carboplatin for renal insufficiency. GETUG phase 2: n=23; ORR 26%, PFS 7.1 months, OS 10.5 months. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/17437788/">[J Urol 2007]</a>
 - BONSAI → cabozantinib in untreated collecting duct disease: ORR 35%, PFS 4 months, OS 7 months; separate small studies cannot rank it against platinum. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/35420628/">[JAMA Oncol 2022]</a>
 - Renal medullary carcinoma → assess SMARCB1 loss and sickle haemoglobinopathy; platinum-based chemotherapy, expert pathology and rare-tumour referral or trial.
 
@@ -324,6 +328,8 @@ sources:
 - Reassess clinically each cycle; CT typically every 8–12 weeks initially, adapted to tempo. Check BP, urine protein, renal/liver/thyroid function and symptoms during therapy. <a class="cite" href="https://www.onkopedia.com/en/onkopedia/archive/guidelines/renal-cell-carcinoma-hypernephroma/version-21072026T130543/%40%40guideline/html/index.html">[Onkopedia 2026]</a>
 - Severe diarrhoea or hepatitis on immune–TKI therapy → assess both drugs, infection and dehydration. Holding the oral drug must not delay treatment of serious immune injury.
 - Oral dose reductions for toxicity: cabozantinib with nivolumab 40 → 20 mg daily → 20 mg on alternate days. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/208692s019lbl.pdf">[FDA 2025]</a> Lenvatinib RCC combination starting at 20 mg daily → 14 → 10 → 8 mg daily. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/206947s035lbl.pdf">[FDA 2026]</a> Follow toxicity-specific hold and restart rules; checkpoint drugs are held or discontinued rather than dose-reduced.
+- ⚠️ Severe hypertension → hold VEGFR-TKI and treat promptly; quantify significant proteinuria and assess renal dysfunction, volume status and other causes before restarting. Hand–foot syndrome → skin care, interruption and dose adjustment when needed.
+- 💰 Unsupported ultra-low-dose checkpoint substitutions → equivalence to studied schedules is unproven.
 - 🦴 Painful bone disease → analgesia, radiation and stabilisation when needed; assess dental/renal suitability for bone-directed agents. Brain metastases → neurosurgery/radiation review and systemic planning.
 
 **🔑 Key insights**

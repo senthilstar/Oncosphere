@@ -2,7 +2,7 @@
 layout: post
 title: "First-line treatment principles: Chronic lymphocytic leukaemia"
 display_date: 2026-11-14
-updated: 2026-11-21
+updated: 2026-11-23
 category: "First-line principles"
 audience: "clinicians"
 cover: "paradigm"
@@ -81,6 +81,18 @@ sources:
     url: https://www.sciencedirect.com/science/article/pii/S2352302621003070
   - title: "ELEVATE-RR — J Clin Oncol 2021"
     url: https://pubmed.ncbi.nlm.nih.gov/34310172/
+  - title: "CLL8 — Blood 2016"
+    url: https://pubmed.ncbi.nlm.nih.gov/26486789/
+  - title: "CLL10 — Lancet Oncol 2016"
+    url: https://pubmed.ncbi.nlm.nih.gov/27216274/
+  - title: "CLL11 — N Engl J Med 2014"
+    url: https://www.nejm.org/doi/full/10.1056/NEJMoa1313984
+  - title: "HDMP–rituximab — Leukemia 2009"
+    url: https://pubmed.ncbi.nlm.nih.gov/19693094/
+  - title: "Study 116 — N Engl J Med 2014"
+    url: https://www.nejm.org/doi/full/10.1056/NEJMoa1315226
+  - title: "DUO — Blood 2018"
+    url: https://doi.org/10.1182/blood-2018-05-850461
 ---
 **Chronic lymphocytic leukaemia — first-line management**
 
@@ -121,6 +133,7 @@ sources:
 - **Study design:** phase 3; n=535; older/comorbid untreated patients; acalabrutinib–obinutuzumab, acalabrutinib or chlorambucil–obinutuzumab. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40198878/">[Blood 2025]</a>
 - Acalabrutinib 100 mg orally twice daily until progression/toxicity; antibody for 6 cycles, beginning after acalabrutinib lead-in. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40198878/">[Blood 2025]</a>
 - Six-year update: 72-month PFS 78.0% / 61.5% / 17.2%; median PFS not reached / not reached / 27.8 months. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/40198878/">[Blood 2025]</a>
+- 📊 PFS HR versus chlorambucil–obinutuzumab: 0.14 (95% CI 0.10–0.20) with combination and 0.24 (95% CI 0.17–0.32) with monotherapy (74.5-month median follow-up publication). <a class="cite" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824692/">[Blood 2025]</a>
 - At median 74.5-month follow-up, acalabrutinib–obinutuzumab improved OS versus chlorambucil–obinutuzumab; antibody addition improves disease control but adds infusion, neutropenia and infection burden; the comparison with acalabrutinib alone was exploratory. Grade ≥3 neutropenia was 30.9% / 11.7% / 42.0% across the three arms. <a class="cite" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12824692/">[Blood 2025]</a>
 
 
@@ -149,6 +162,7 @@ sources:
 - Six-year analysis: PFS 76.2 vs 36.4 months (HR 0.40; 95% CI 0.31–0.52); 6-year PFS 53.1% vs 21.7%. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/39082668/">[Blood 2024]</a>
 - 📈 Six-year OS 78.7% vs 69.2% (HR 0.69; 95% CI 0.48–1.01; P=.052) → no established OS superiority in this analysis. TP53 aberration, unmutated IGHV and bulk predict shorter durability. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/39082668/">[Blood 2024]</a>
 - 🎯 ORR 84.7% vs 71.3%; grade 3–4 neutropenia 52.8% vs 48.1% and infections 17.5% vs 15.0%. <a class="cite" href="https://www.nejm.org/doi/10.1056/NEJMoa1815281">[NEJM 2019]</a>
+- 🧬 End-of-treatment peripheral blood uMRD below 10⁻⁴ → approximately 76% with venetoclax–obinutuzumab. <a class="cite" href="https://www.nejm.org/doi/10.1056/NEJMoa1815281">[NEJM 2019]</a>
 - ⚠️ Infusion reactions and TLS require active prevention.
 
 
@@ -176,7 +190,7 @@ sources:
 
 - **Study design:** phase 3; n=211; older/comorbid untreated patients without del(17p) or known TP53 mutation at screening; ibrutinib–venetoclax versus chlorambucil–obinutuzumab. <a class="cite" href="https://doi.org/10.1016/S1470-2045(23)00452-7">[Lancet Oncol 2023]</a>
 - Ibrutinib 420 mg orally daily for 3 lead-in cycles → 12 combination cycles with venetoclax ramp-up to 400 mg daily. <a class="cite" href="https://doi.org/10.1016/S1470-2045(23)00452-7">[Lancet Oncol 2023]</a>
-- At 67-month follow-up: 66-month PFS 51.7% vs 18.1% (HR 0.27; 95% CI 0.19–0.40); OS 79.0% vs 60.8% (HR 0.46; 95% CI 0.27–0.78). Earlier 42-month PFS was 74.6% vs 24.8%. <a class="cite" href="https://doi.org/10.1016/S1470-2045(23)00452-7">[Lancet Oncol 2023]</a> <a class="cite" href="https://www.nature.com/articles/s41375-026-03150-7">[Leukemia 2026]</a>
+- At 67-month follow-up: 66-month PFS 51.7% vs 18.1% (HR 0.27; 95% CI 0.19–0.40); OS 79.0% vs 60.8% (HR 0.46; 95% CI 0.27–0.78). Earlier 42-month PFS was 74.6% vs 24.8% (HR 0.214). <a class="cite" href="https://doi.org/10.1016/S1470-2045(23)00452-7">[Lancet Oncol 2023]</a> <a class="cite" href="https://www.nature.com/articles/s41375-026-03150-7">[Leukemia 2026]</a>
 - Lead-in can reduce TLS risk; repeat CT/ALC assessment. Cardiac/bleeding risks of ibrutinib persist.
 
 
@@ -205,7 +219,7 @@ sources:
 
 - **GAIA/CLL13:** phase 3; n=926; fit, TP53-intact patients. Month-15 blood uMRD 86.5% with Ven–Obi, 92.2% with Ven–Obi–ibrutinib, 57.0% with VenR and 52.0% with chemoimmunotherapy. <a class="cite" href="https://doi.org/10.1056/NEJMoa2213093">[NEJM 2023]</a>
 - GAIA/CLL13 updated: 5-year PFS 69.8% with Ven–Obi vs 50.7% with chemoimmunotherapy; Ven–Obi–ibrutinib 81.3%, VenR 57.4% (updated: these supersede earlier 3-year estimates). Five-year OS was 93.6% / 90.7% / 94.3% / 94.7% in the same respective order. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/41911073/">[Blood 2026]</a>
-- **BOVen:** investigational MRD-directed zanubrutinib–obinutuzumab–venetoclax; single-arm phase 2, n=39. Blood and marrow uMRD occurred in 33/37 evaluable patients; grade ≥3 neutropenia 18%. No established superiority over doublets; MRD negativity is not cure. <a class="cite" href="https://www.sciencedirect.com/science/article/pii/S2352302621003070">[Lancet Haematol 2021]</a>
+- **BOVen:** investigational MRD-directed zanubrutinib–obinutuzumab–venetoclax; single-arm phase 2, n=39; median follow-up 25.8 months and treatment duration 10 cycles. Blood and marrow uMRD occurred in 33/37 evaluable patients; grade ≥3 neutropenia 18%. No established superiority over doublets; MRD negativity is not cure. <a class="cite" href="https://www.sciencedirect.com/science/article/pii/S2352302621003070">[Lancet Haematol 2021]</a>
 
 **🔑 Key insights**
 
@@ -228,6 +242,7 @@ sources:
 
 - **Study design:** phase 3; n=652; relapsed/refractory CLL/SLL; zanubrutinib versus ibrutinib, not a frontline comparison. <a class="cite" href="https://doi.org/10.1182/blood.2024024667">[Blood 2024]</a>
 - Final comparative analysis: 36-month PFS 65.4% vs 54.4% (HR 0.68; 95% CI 0.54–0.84); AF/flutter 7.1% vs 17.0%. <a class="cite" href="https://doi.org/10.1182/blood.2024024667">[Blood 2024]</a>
+- 🧬 del(17p)/TP53-mutated subgroup → PFS HR 0.51 (95% CI 0.33–0.78). <a class="cite" href="https://doi.org/10.1182/blood.2024024667">[Blood 2024]</a>
 - ELEVATE-RR in previously treated disease: median PFS 38.4 months in both arms; AF/flutter 9.4% with acalabrutinib vs 16.0% with ibrutinib. No randomized acalabrutinib-versus-zanubrutinib comparison. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/34310172/">[J Clin Oncol 2021]</a>
 
 
@@ -265,6 +280,7 @@ sources:
 
 - **Study design:** phase 3; n=389; VenR versus BR; venetoclax 24 months from rituximab cycle 1 after ramp-up, six antibody cycles. <a class="cite" href="https://doi.org/10.1182/blood.2024025525">[Blood 2025]</a>
 - Final 2025 report: PFS 54.7 vs 17.0 months (HR 0.23; 95% CI 0.18–0.29); 7-year OS 69.6% vs 51.0%. <a class="cite" href="https://doi.org/10.1182/blood.2024025525">[Blood 2025]</a>
+- 🧬 Seven-year PFS with VenR 23.0%; approximately 5% in the TP53-aberrant subgroup. <a class="cite" href="https://doi.org/10.1182/blood.2024025525">[Blood 2025]</a>
 - Retreatment substudy n=25: ORR 72%, PFS 23.3 months; supports selected retreatment after prior response, not retreatment for progression on venetoclax. <a class="cite" href="https://doi.org/10.1182/blood.2024025525">[Blood 2025]</a>
 - Original population largely preceded routine BTKi exposure; repeat TLS assessment before retreatment. <a class="cite" href="https://doi.org/10.1182/blood.2024025525">[Blood 2025]</a>
 
@@ -275,6 +291,7 @@ sources:
 - Updated 2025 publication: PFS 14.0 vs 8.7 months (HR 0.54; 95% CI 0.39–0.75); OS HR 1.09 (95% CI 0.68–1.75), no demonstrated OS advantage. Keep the two analysis dates separate. <a class="cite" href="https://doi.org/10.1200/JCO-25-00166">[J Clin Oncol 2025]</a>
 - US relapsed indication since December 2025 requires prior covalent BTKi, without a requirement for prior BCL2 inhibition; verify local label. Monitor infections, bleeding, cytopenias, rhythm and liver injury. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216059s006lbl.pdf">[FDA 2026]</a>
 - After targeted-class failures → early cellular-therapy/trial referral. Liso-cel US indication requires ≥2 prior lines including BTKi and BCL2 inhibitor; selected allogeneic transplant remains an option. <a class="cite" href="https://www.fda.gov/media/145711/download">[FDA 2026]</a>
+- 📊 TRANSCEND CLL 004 → regulatory efficacy population n=65; ORR 45%, complete response 20%. ⚠️ CAR-T may cause cytokine release syndrome, neurological toxicity, prolonged cytopenias, infections and hypogammaglobulinaemia. <a class="cite" href="https://www.fda.gov/media/145711/download">[FDA 2026]</a>
 - Pirtobrutinib → adjust for severe renal impairment and relevant CYP3A interactions according to the label. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216059s006lbl.pdf">[FDA 2026]</a>
 
 **🔑 Key insights**
@@ -295,7 +312,7 @@ sources:
 - Do not treat biopsy-proven transformation as ordinary CLL progression.
 - Anaemia → reticulocytes, DAT, bilirubin, LDH, haptoglobin; exclude bleeding, deficiency, kidney disease and marrow failure. DAT positivity alone is not active AIHA.
 - Abrupt isolated thrombocytopenia → assess ITP, drugs/infection; marrow evaluation if unclear.
-- Warm AIHA/ITP without active CLL → corticosteroids ± rituximab; cold-antibody disease needs a different pathway. Refractory autoimmunity or concurrent active CLL → consider CLL-directed therapy.
+- Warm AIHA/ITP without active CLL → corticosteroids ± rituximab; cold-antibody disease generally responds poorly to steroids → use a different pathway. Refractory autoimmunity or concurrent active CLL → consider CLL-directed therapy.
 
 **🔑 Key insights**
 
@@ -306,10 +323,15 @@ sources:
 
 - FCR: exceptional fit, IGHV-mutated, TP53-intact patient when targeted therapy is inaccessible; discuss prolonged immunosuppression and secondary myeloid malignancy risk. <a class="cite" href="https://doi.org/10.1056/NEJMoa2504341">[NEJM 2025]</a>
 - BR or obinutuzumab–chlorambucil: historical TP53-intact access fallbacks, not equivalent to contemporary targeted regimens. <a class="cite" href="https://doi.org/10.1200/JCO-24-02265">[J Clin Oncol 2025]</a>
-- HDMP–rituximab: selected rescue/bridge with substantial infection and hyperglycaemia risk.
+- 📊 CLL8 → median PFS 56.8 vs 32.9 months with FCR vs FC (HR 0.59; 95% CI 0.50–0.69). <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/26486789/">[Blood 2016]</a>
+- 📊 CLL10 → median PFS 41.7 vs 55.2 months with BR vs FCR (HR 1.643; 90.4% CI 1.308–2.064). <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/27216274/">[Lancet Oncol 2016]</a>
+- 📊 CLL11 → median PFS 26.7 vs 15.2 months with obinutuzumab–chlorambucil vs rituximab–chlorambucil. <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa1313984">[NEJM 2014]</a>
+- 📊 HDMP–rituximab → selected rescue/bridge; single-arm frontline study n=28, ORR 96%, CR 32%, median PFS 30.3 months; some received alemtuzumab consolidation. ⚠️ Infection and hyperglycaemia risk. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/19693094/">[Leukemia 2009]</a>
 - Idelalisib–rituximab and duvelisib: restricted reserves, not routine first line; colitis, hepatitis, pneumonitis and opportunistic infection, with mortality concerns for duvelisib. PJP prophylaxis and CMV monitoring where appropriate.
+- 📊 Study 116 → relapsed CLL: idelalisib–rituximab vs placebo–rituximab, 24-week PFS 93% vs 46% (HR 0.15; 95% CI 0.08–0.28). <a class="cite" href="https://www.nejm.org/doi/full/10.1056/NEJMoa1315226">[NEJM 2014]</a>
+- 📊 DUO → relapsed CLL/SLL: duvelisib vs ofatumumab, median PFS 13.3 vs 9.9 months (HR 0.52). <a class="cite" href="https://doi.org/10.1182/blood-2018-05-850461">[Blood 2018]</a>
 - BTKi → monitor BP/rhythm, bleeding, CBC, infections and liver injury; planned perioperative holds commonly 3–7 days before/after, individualised to haemostasis/procedure. <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216059s006lbl.pdf">[FDA 2026]</a>
-- Controlled mild AF does not always require permanent cessation; coordinate anticoagulation and interaction management. Acalabrutinib capsules require acid-suppression precautions; tablets differ.
+- Controlled mild AF does not always require permanent cessation; coordinate anticoagulation and interaction management. Acalabrutinib capsules → avoid proton-pump inhibitors; tablets permit their use.
 - Severe neutropenia/infection → indicated drug holds, supportive care/G-CSF and protocol-specific dose reduction.
 
 **🔑 Key insights**
