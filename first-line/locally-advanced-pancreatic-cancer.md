@@ -2,7 +2,7 @@
 layout: post
 title: 'First-line treatment principles: Locally advanced pancreatic cancer'
 display_date: 2026-11-14
-updated: '2026-11-21'
+updated: 2026-11-25
 category: First-line principles
 audience: clinicians
 cover: gi
@@ -121,7 +121,7 @@ sources:
 - **Study design:** single-arm phase 2; n=107; nab-paclitaxel 125 mg/m² plus gemcitabine 1,000 mg/m² on days 1, 8 and 15 every 28 days, for six planned induction cycles. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/31953079/">[Lancet Gastroenterol Hepatol 2020]</a> <a class="cite" href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/021660s047lbl.pdf">[FDA 2020]</a>
 - **Key outcomes:**
   - ⏱️ Median PFS 10.9 months (90% CI 9.3–11.6) and OS 18.8 months (90% CI 15.0–24.0); no comparator or comparative HR. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/31953079/">[Lancet Gastroenterol Hepatol 2020]</a>
-  - 🎯 Induction ORR 33.6%, disease control 77.6%; 58% completed induction, 17 underwent surgery and seven had R0 resection. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/31953079/">[Lancet Gastroenterol Hepatol 2020]</a>
+  - 🎯 Induction ORR 33.6%, disease control 77.6%; 58% completed induction, 17 (16%) underwent surgery and seven had R0 resection. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/31953079/">[Lancet Gastroenterol Hepatol 2020]</a>
 - ⚠️ Grade ≥3 induction neutropenia 33%, anaemia 11% and fatigue 10%. <a class="cite" href="https://pubmed.ncbi.nlm.nih.gov/31953079/">[Lancet Gastroenterol Hepatol 2020]</a>
 - Conventional paclitaxel is not an interchangeable substitute; adjust for cytopenias, neuropathy and hepatic dysfunction.
 
@@ -247,7 +247,7 @@ sources:
 
 **📊 SMART: MR-guided adaptive radiotherapy ✨**
 
-- **Study design:** single-arm phase 2; n=136, mixed locally advanced and borderline disease; after ≥3 months chemotherapy without distant progression and CA19-9 ≤500 U/mL → 50 Gy in five fractions. <a class="cite" href="https://www.thegreenjournal.com/article/S0167-8140%2823%2909371-4/fulltext">[Radiother Oncol 2024]</a>
+- **Study design:** single-arm phase 2; n=136 (56.6% locally advanced, 43.4% borderline resectable); after ≥3 months chemotherapy without distant progression and CA19-9 ≤500 U/mL → 50 Gy in five fractions. <a class="cite" href="https://www.thegreenjournal.com/article/S0167-8140%2823%2909371-4/fulltext">[Radiother Oncol 2024]</a>
 - ⏱️ Two-year OS 53.6% from diagnosis and 40.5% from radiation; 34.6% underwent surgery → mixed, selected cohort without a comparative survival estimate. <a class="cite" href="https://www.thegreenjournal.com/article/S0167-8140%2823%2909371-4/fulltext">[Radiother Oncol 2024]</a>
 - ⚠️ Late grade ≥3 toxicity possibly attributed to treatment 11.5%; ulceration, bleeding and perforation are concerns. Dose requires MR-guided adaptation, organ constraints and experienced delivery. <a class="cite" href="https://www.thegreenjournal.com/article/S0167-8140%2823%2909371-4/fulltext">[Radiother Oncol 2024]</a>
 - SBRT requires image guidance, motion management and stomach, duodenal and bowel constraints; active ulceration or close bowel contact may prevent safe ablative dosing.

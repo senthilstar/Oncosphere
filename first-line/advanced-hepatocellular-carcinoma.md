@@ -271,7 +271,7 @@ sources:
 - 4️⃣ 🦠 Antivirals for HBV throughout.
 - 5️⃣ 🔁 Plan the TKI sequence at the start; recheck liver reserve at each progression.
 
-## Related
+**Related**
 
 - [Unresectable HCC systemic therapy guide (quick reference)]({{ '/first-line/unresectable-hcc-systemic-therapy-guide/' | relative_url }}) — one-page regimen selector by Child-Pugh class, bleeding risk and response goal.
 

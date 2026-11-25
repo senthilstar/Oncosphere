@@ -2,7 +2,7 @@
 layout: post
 title: "First-line treatment principles: HER2-positive metastatic breast cancer"
 display_date: 2026-11-14
-updated: 2026-11-21
+updated: 2026-11-25
 category: "First-line principles"
 audience: "clinicians"
 cover: "breast"
@@ -35,6 +35,8 @@ sources:
     url: https://www.fda.gov/drugs/drug-approvals-and-databases/fda-approves-fam-trastuzumab-deruxtecan-nxki-pertuzumab-unresectable-or-metastatic-her2-positive
   - title: "Tucatinib — FDA 2026"
     url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213411s010lbl.pdf
+  - title: "HER2CLIMB brain metastases — J Clin Oncol 2020"
+    url: https://doi.org/10.1200/JCO.20.00775
   - title: "HER2CLIMB CNS — JAMA Oncol 2023"
     url: https://jamanetwork.com/journals/jamaoncology/fullarticle/2799133
   - title: "DESTINY-Breast12 — Clin Cancer Res 2025"
@@ -212,9 +214,10 @@ sources:
 
 - Symptomatic, large or threatening lesions → prompt steroids when indicated, neurosurgery/SRS/radiation review; do not defer urgent local control solely to try a systemic drug.
 - Selected isolated CNS progression with controlled body disease → local treatment while continuing an effective systemic pathway may be reasonable.
-- 📊 HER2CLIMB active measurable brain metastases → intracranial ORR 47.3% vs 20.0%; exploratory updated analysis. <a class="cite" href="https://jamanetwork.com/journals/jamaoncology/fullarticle/2799133">[JAMA Oncol 2023]</a>
+- 📊 HER2CLIMB brain-metastasis subgroup (n=291; exploratory): CNS-PFS 9.9 vs 4.2 months (HR 0.32; 95% CI 0.22–0.48); 1-year CNS-PFS 40.2% vs 0%; OS 18.1 vs 12.0 months (HR 0.58; 95% CI 0.40–0.85); intracranial ORR in measurable disease 47.3% vs 20.0%. <a class="cite" href="https://doi.org/10.1200/JCO.20.00775">[J Clin Oncol 2020]</a>
+- 📊 Updated HER2CLIMB CNS analysis confirms the intracranial benefit with longer follow-up. <a class="cite" href="https://jamanetwork.com/journals/jamaoncology/fullarticle/2799133">[JAMA Oncol 2023]</a>
 - 📊 DESTINY-Breast12: single-arm T-DXd in previously treated disease; brain-metastasis cohort n=263 → CNS ORR 71.7% in measurable CNS disease; no randomized comparator. <a class="cite" href="https://aacrjournals.org/clincancerres/article/31/12_Supplement/PS14-10/753287/Abstract-PS14-10-Effects-of-trastuzumab-deruxtecan">[Clin Cancer Res 2025]</a>
-- Coordinate stereotactic radiation and ADC timing with radiation oncology; overlapping toxicity and optimal timing remain uncertain.
+- ⚠️ Concurrent stereotactic radiosurgery and ADC dosing needs caution → coordinate timing with radiation oncology; overlapping toxicity and optimal sequencing remain uncertain.
 - T-DXd also has intracranial activity, but there is no universal head-to-head CNS ranking against tucatinib; HER2CLIMB largely predates T-DXd exposure. <a class="cite" href="https://doi.org/10.1056/NEJMoa1914609">[NEJM 2020]</a>
 
 **🔑 Key insights**
