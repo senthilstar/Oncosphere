@@ -102,5 +102,18 @@ topics:
       - https://www.ema.europa.eu/en/documents/smop/chmp-post-authorisation-summary-positive-opinion-padcev-vr0000336191_en.pdf
       - https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.4613
       - https://clinicaltrials.gov/study/NCT03924895
+  - slug: matterhorn-durvalumab-flot-gastric
+    topic: "Perioperative durvalumab + FLOT in resectable gastric/GEJ adenocarcinoma — MATTERHORN (NEJM 2025 EFS; Lancet 2026 final OS; FDA 25 Nov 2025; EU Mar 2026; CDSCO Feb 2026)"
+    date_added: 2026-11-25
+    page: /durvalumab-flot-perioperative-gastric-gej-matterhorn/
+    signal: "Among the most-discussed GI oncology trials of the past year (final OS published Sep 2026; first perioperative immunotherapy approval in gastric cancer); not previously covered on the site; gastric/GI pages among the site's read areas"
+    primary_sources:
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2503701
+      - "https://www.thelancet.com/pdfs/journals/lancet/PIIS0140-6736(26)01254-7.pdf"
+      - "https://www.annalsofoncology.org/article/S0923-7534(25)04866-5/fulltext"
+      - https://www.fda.gov/drugs/cancer-approvals/fda-approves-durvalumab-resectable-gastric-or-gastroesophageal-junction-adenocarcinoma
+      - https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761069s060lbl.pdf
+      - https://www.ema.europa.eu/en/medicines/human/EPAR/imfinzi
+      - https://clinicaltrials.gov/study/NCT04592913
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"

@@ -15,6 +15,7 @@ Concise trial reviews, treatment pathways and regulatory updates, with context f
 ## Recent updates {#this-week}
 A selection of recent articles and regulatory updates, current to 25 Nov 2026.
 
+- [MATTERHORN]({{ '/durvalumab-flot-perioperative-gastric-gej-matterhorn/' | relative_url }}) — perioperative durvalumab plus FLOT improved event-free and overall survival in resectable gastric/GEJ adenocarcinoma.
 - [KEYNOTE-905 and KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }}) — perioperative enfortumab vedotin plus pembrolizumab improved survival in cystectomy candidates.
 - [First-line metastatic colorectal cancer]({{ '/first-line/metastatic-colorectal-cancer/' | relative_url }}) — assess resectability, fitness, MMR, RAS, BRAF V600E and sidedness; HER2 and KRAS G12C guide later options. Includes India access considerations.
 - [First-line advanced hepatocellular carcinoma]({{ '/first-line/advanced-hepatocellular-carcinoma/' | relative_url }}) — Child-Pugh class, endoscopy and immunotherapy eligibility decide between atezolizumab–bevacizumab, STRIDE, nivolumab–ipilimumab and lenvatinib or sorafenib; sequencing and India access.
@@ -56,6 +57,7 @@ A selection of recent articles and regulatory updates, current to 25 Nov 2026.
 - [DESTINY-Breast11]({{ '/destiny-breast-11-trial/' | relative_url }})
 
 ## GI {#gi}
+- [New 25 Nov 2026: perioperative durvalumab + FLOT in resectable gastric/GEJ adenocarcinoma — MATTERHORN]({{ '/durvalumab-flot-perioperative-gastric-gej-matterhorn/' | relative_url }})
 - [New 19 Nov 2026: adjuvant atezolizumab in stage III dMMR colon cancer — ATOMIC]({{ '/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/' | relative_url }})
 - [New 16 Nov 2026: ACTION-1 — RYZ101 (actinium-225 DOTATATE) in GEP-NETs after lutetium-177]({{ '/ryz101-action-1-actinium-dotatate-gep-net/' | relative_url }})
 - [New 14 Nov 2026: daraxonrasib (Rasonque) in previously treated metastatic pancreatic cancer — RASolute 302]({{ '/daraxonrasib-pancreatic-cancer-rasolute-302/' | relative_url }})
@@ -80,6 +82,7 @@ A selection of recent articles and regulatory updates, current to 25 Nov 2026.
 - [New 5 Nov 2026: organ-preservation pathway illustration]({{ '/dostarlimab-organ-preservation-pathway/' | relative_url }})
 
 ## Trial briefs {#trial-briefs}
+- [New 25 Nov 2026: perioperative durvalumab + FLOT in resectable gastric/GEJ adenocarcinoma — MATTERHORN]({{ '/durvalumab-flot-perioperative-gastric-gej-matterhorn/' | relative_url }})
 - [New 23 Nov 2026: perioperative enfortumab vedotin + pembrolizumab in MIBC — KEYNOTE-905 / KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }})
 - [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
 - [New 19 Nov 2026: adjuvant atezolizumab in stage III dMMR colon cancer — ATOMIC]({{ '/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/' | relative_url }})
@@ -91,6 +94,7 @@ A selection of recent articles and regulatory updates, current to 25 Nov 2026.
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 25 Nov 2026: perioperative durvalumab + FLOT in resectable gastric/GEJ adenocarcinoma — MATTERHORN]({{ '/durvalumab-flot-perioperative-gastric-gej-matterhorn/' | relative_url }})
 - [New 23 Nov 2026: perioperative enfortumab vedotin + pembrolizumab in MIBC — KEYNOTE-905 / KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }})
 - [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
 - [New 19 Nov 2026: adjuvant atezolizumab in stage III dMMR colon cancer — ATOMIC]({{ '/atezolizumab-adjuvant-dmmr-colon-cancer-atomic/' | relative_url }})
