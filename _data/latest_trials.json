@@ -1,82 +1,82 @@
 [
   {
-    "nct": "NCT03750981",
-    "title": "C.A.P.A.B.L.E. (CrossFit® and Physical Activity: A Better Life Experience)",
+    "nct": "NCT05366699",
+    "title": "LYMPHA Procedure for the Prevention of Lymphedema After Axillary Lymphadenectomy",
     "status": "RECRUITING",
     "phase": "NA",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT03750981"
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT05366699"
   },
   {
-    "nct": "NCT06539338",
-    "title": "A Study to Investigate Safety of INT2104 Infusions in Participants Aged 18 Years of Age and Older Who Have B-cell Cancers That Came Back After Previous Treatment",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE1",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT06539338"
+    "nct": "NCT07723534",
+    "title": "Zolbetuximab With mFOLFOX6 or CAPOX in Claudin 18.2 Overexpressed Advanced or Metastatic Biliary Tract Cancers",
+    "status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT07723534"
   },
   {
-    "nct": "NCT06055790",
-    "title": "Feasibility of 18F-Fluciclovine PET/CT to Identify Brain Metastasis",
-    "status": "RECRUITING",
-    "phase": "EARLY_PHASE1",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT06055790"
-  },
-  {
-    "nct": "NCT06241846",
-    "title": "A Phase II Study to Evaluate the Safety, Efficacy, and Pharmacokinetics of YL201 in Patients With mCRPC",
+    "nct": "NCT07946848",
+    "title": "Phase 2 Study to Evaluate Dose Optimization and Anti-tumor Activity of Atebimetinib in Participants With Advanced or Metastatic NSCLC.",
     "status": "RECRUITING",
     "phase": "PHASE2",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT06241846"
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT07946848"
   },
   {
-    "nct": "NCT04889924",
-    "title": "ALND vs ART in Positive Sentinel Node After Neoadjuvant Therapy in Breast Cancer",
-    "status": "RECRUITING",
-    "phase": "NA",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT04889924"
-  },
-  {
-    "nct": "NCT00867269",
-    "title": "Etiology, Pathogenesis, and Natural History of Idiopathic CD4+ Lymphocytopenia",
+    "nct": "NCT00092235",
+    "title": "Natural History Study of Clinical and Biological Factors Determining Outcomes in Chronic Graft-Versus-Host Disease",
     "status": "RECRUITING",
     "phase": "Not applicable",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT00867269"
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT00092235"
   },
   {
-    "nct": "NCT07570173",
-    "title": "A Clinical Trial of MK-1045 in People With B-cell Acute Lymphoblastic Leukemia (MK-1045-005)",
+    "nct": "NCT03213652",
+    "title": "Ensartinib in Treating Patients With Relapsed or Refractory Advanced Solid Tumors, Non-Hodgkin Lymphoma, or Histiocytic Disorders With ALK or ROS1 Genomic Alterations (A Pediatric MATCH Treatment Trial)",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE2",
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT03213652"
+  },
+  {
+    "nct": "NCT04715958",
+    "title": "SHAPE Neoadjuvant Chemotherapy Response",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE2, PHASE3",
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT04715958"
+  },
+  {
+    "nct": "NCT06794086",
+    "title": "SBRT + PD-1 Monoclonal Antibody in Unresectable Colorectal Liver Metastases",
+    "status": "RECRUITING",
+    "phase": "PHASE3",
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT06794086"
+  },
+  {
+    "nct": "NCT03811002",
+    "title": "Testing the Addition of a New Immunotherapy Drug, Atezolizumab (MPDL3280A), to the Usual Chemoradiation (CRT) Therapy Treatment for Limited Stage Small Cell Lung Cancer (LS-SCLC)",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE3",
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT03811002"
+  },
+  {
+    "nct": "NCT00843882",
+    "title": "Lenalidomide With or Without Epoetin Alfa in Treating Patients With Myelodysplastic Syndrome and Anemia",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": "PHASE3",
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT00843882"
+  },
+  {
+    "nct": "NCT07955909",
+    "title": "Compare Treatment Efficacy Between Spot-Marking and Clip-Marking Targeted Axillary Dissection （TAD）Initially Node-positive Breast Cancer Patients After Neoadjuvant Systemic Treatments",
     "status": "RECRUITING",
     "phase": "PHASE2, PHASE3",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT07570173"
-  },
-  {
-    "nct": "NCT05672927",
-    "title": "Comparing Immune Response of 2 vs 3 HPV Doses (27-45 Years Old)",
-    "status": "ACTIVE_NOT_RECRUITING",
-    "phase": "PHASE4",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT05672927"
-  },
-  {
-    "nct": "NCT00001823",
-    "title": "Evaluation for NCI Surgery Branch Clinical Research Protocols",
-    "status": "RECRUITING",
-    "phase": "Not applicable",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT00001823"
-  },
-  {
-    "nct": "NCT06935188",
-    "title": "Dalpicilib Plus Cetuximab Compared With Cetuximab Alone in HPV-negative, Anti-PD-1-resistant R/M HNSCC",
-    "status": "RECRUITING",
-    "phase": "PHASE2",
-    "updated": "2026-11-23",
-    "url": "https://clinicaltrials.gov/study/NCT06935188"
+    "updated": "2026-11-24",
+    "url": "https://clinicaltrials.gov/study/NCT07955909"
   }
 ]

@@ -52,18 +52,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/43061995/"
   },
   {
-    "pmid": "42933160",
-    "title": "Cascade DNA walker-driven photo-controlled CRISPR/Cas12a nanorobot enabling ultrasensitive one-pot detection of dual miRNAs in triple-negative breast cancer.",
-    "journal": "Talanta",
-    "pubdate": "2027 Mar 1",
-    "authors": [
-      "Yu L",
-      "Li X",
-      "Huang L"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42933160/"
-  },
-  {
     "pmid": "42981670",
     "title": "Tracking lipid droplet dynamics for in vivo visualization of breast cancer models by a BODIPY-based fluorescent probe.",
     "journal": "Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy",
@@ -270,5 +258,22 @@
       "Li Y"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42988231/"
+  },
+  {
+    "pmid": "42988230",
+    "title": "Endothelial senescence orchestrates the tumor immune microenvironment and immunotherapy response in non-small cell lung cancer.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Qiu X",
+      "Qin H",
+      "Deng S",
+      "Kong X",
+      "Chen K",
+      "Zhang R",
+      "Yan H",
+      "Wong PP"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42988230/"
   }
 ]
