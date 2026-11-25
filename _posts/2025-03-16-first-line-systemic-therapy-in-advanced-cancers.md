@@ -45,7 +45,7 @@ Choosing the right first-line systemic therapy is crucial in managing advanced c
 | [Urothelial](#urothelial) | FGFR2/3; (PD-L1 rarely decisive now) |
 | Any solid tumour | MMR/MSI, TMB, NTRK — tissue-agnostic options |
 
-**First-line principles by cancer (full pages):** [urothelial](/first-line/urothelial-bladder-cancer/) · [renal cell](/first-line/renal-cell-carcinoma/) · [endometrial](/first-line/endometrial-carcinoma/) · [medullary thyroid](/first-line/medullary-thyroid-cancer/) · [gallbladder/biliary](/first-line/gallbladder-biliary-cancer/) · [locally advanced pancreatic](/first-line/locally-advanced-pancreatic-cancer/) · [CLL](/first-line/chronic-lymphocytic-leukaemia/) · [HER2+ metastatic breast](/first-line/her2-positive-metastatic-breast-cancer/) · [cervical](/first-line/cervical-cancer/) · [metastatic colorectal](/first-line/metastatic-colorectal-cancer/) · [stage IV lung adenocarcinoma](/stage4-lung-adenocarcinoma/) · [hub](/first-line/)
+**First-line principles by cancer (full pages):** [urothelial](/first-line/urothelial-bladder-cancer/) · [renal cell](/first-line/renal-cell-carcinoma/) · [endometrial](/first-line/endometrial-carcinoma/) · [medullary thyroid](/first-line/medullary-thyroid-cancer/) · [gallbladder/biliary](/first-line/gallbladder-biliary-cancer/) · [locally advanced pancreatic](/first-line/locally-advanced-pancreatic-cancer/) · [CLL](/first-line/chronic-lymphocytic-leukaemia/) · [HER2+ metastatic breast](/first-line/her2-positive-metastatic-breast-cancer/) · [cervical](/first-line/cervical-cancer/) · [metastatic colorectal](/first-line/metastatic-colorectal-cancer/) · [advanced gastric/GEJ](/first-line/advanced-gastric-gej-adenocarcinoma/) · [advanced hepatocellular](/first-line/advanced-hepatocellular-carcinoma/) · [stage IV lung adenocarcinoma](/stage4-lung-adenocarcinoma/) · [hub](/first-line/)
 
 ## Step 3 — Match the therapy
 - **Driver-positive** → targeted therapy first (e.g. osimertinib ± chemotherapy in EGFR-mutant NSCLC; alectinib/lorlatinib in ALK).
@@ -102,8 +102,11 @@ Each cancer now has its own page — click a name, or see [all first-line princi
 ### [Colorectal cancer]({{ '/first-line/metastatic-colorectal-cancer/' | relative_url }}) {#colorectal}
 - RAS, BRAF V600E, MMR/MSI, HER2 first; dMMR → immunotherapy. Full page: [metastatic colorectal cancer — first-line principles]({{ '/first-line/metastatic-colorectal-cancer/' | relative_url }}). See [dostarlimab in MSI-H rectal]({{ '/dostarlimab-msi-h-rectal-cancer/' | relative_url }}) and [ASCO GI 2026]({{ '/asco-gi-2026/' | relative_url }}).
 
-### Gastric / GEJ cancer {#gastric}
-- HER2, MMR/MSI, PD-L1 CPS, claudin 18.2 before first line; nivolumab benefit concentrated at CPS ≥5 (CheckMate 649). See [ASCO GI 2026]({{ '/asco-gi-2026/' | relative_url }}).
+### [Gastric / GEJ cancer]({{ '/first-line/advanced-gastric-gej-adenocarcinoma/' | relative_url }}) {#gastric}
+- HER2, MMR/MSI, PD-L1 CPS, claudin 18.2 before first line; nivolumab benefit concentrated at CPS ≥5 (CheckMate 649). Full page: [advanced gastric / GEJ adenocarcinoma — first-line principles]({{ '/first-line/advanced-gastric-gej-adenocarcinoma/' | relative_url }}). See [ASCO GI 2026]({{ '/asco-gi-2026/' | relative_url }}).
+
+### [Hepatocellular carcinoma]({{ '/first-line/advanced-hepatocellular-carcinoma/' | relative_url }}) {#hcc}
+- Child-Pugh A and ECOG 0–1 define the evidence base; endoscopy before bevacizumab; immunotherapy combinations (atezolizumab–bevacizumab, STRIDE, nivolumab–ipilimumab) over lenvatinib or sorafenib when immunotherapy is safe; antivirals for hepatitis B. Full page: [advanced hepatocellular carcinoma — first-line principles]({{ '/first-line/advanced-hepatocellular-carcinoma/' | relative_url }}).
 
 ## Step 4 — Practicalities
 - Check drug access, insurance (CMCHIS, PM-JAY) and travel burden before promising a regimen.
