@@ -1,5 +1,18 @@
 [
   {
+    "pmid": "43080406",
+    "title": "Breast cancer cell motility speed measurement using in vitro assays: a systematic scoping review of current knowledge.",
+    "journal": "In vitro models",
+    "pubdate": "2027 Dec",
+    "authors": [
+      "Maran MM",
+      "Shelling AN",
+      "Wu Z",
+      "Laking G"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43080406/"
+  },
+  {
     "pmid": "43041607",
     "title": "PSMA-targeted nanoparticles delivering ATR and Src/Bcr-Abl inhibitors to stimulate STING and reprogram senescence-associated secretory phenotype for enhancing immunotherapy in prostate cancer.",
     "journal": "Bioactive materials",
@@ -258,22 +271,5 @@
       "Li Y"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42988231/"
-  },
-  {
-    "pmid": "42988230",
-    "title": "Endothelial senescence orchestrates the tumor immune microenvironment and immunotherapy response in non-small cell lung cancer.",
-    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
-    "pubdate": "2027 Feb",
-    "authors": [
-      "Qiu X",
-      "Qin H",
-      "Deng S",
-      "Kong X",
-      "Chen K",
-      "Zhang R",
-      "Yan H",
-      "Wong PP"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42988230/"
   }
 ]
