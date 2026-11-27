@@ -115,5 +115,18 @@ topics:
       - https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761069s060lbl.pdf
       - https://www.ema.europa.eu/en/medicines/human/EPAR/imfinzi
       - https://clinicaltrials.gov/study/NCT04592913
+  - slug: destiny-breast05-tdxd-residual-her2
+    topic: "Post-neoadjuvant trastuzumab deruxtecan vs T-DM1 in high-risk residual HER2+ early breast cancer — DESTINY-Breast05 (ESMO 2025; NEJM 2026; FDA 15 May 2026; CHMP 17 Sep 2026; EC Oct 2026)"
+    date_added: 2026-11-27
+    page: /trastuzumab-deruxtecan-residual-her2-early-breast-cancer-destiny-breast05/
+    signal: "Among the most-discussed breast oncology trials of the past year (new curative-setting standard; US and EU approvals 2026); previously only summarised inside the DESTINY-Breast11 page; HER2+ breast pages among the site's read areas"
+    primary_sources:
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2514661
+      - https://pubmed.ncbi.nlm.nih.gov/41370739/
+      - "https://www.annalsofoncology.org/article/S0923-7534(25)04791-X/fulltext"
+      - https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-two-separate-indications-fam-trastuzumab-deruxtecan-nxki-her2-positive-early-stage
+      - https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6
+      - https://www.ema.europa.eu/en/medicines/human/variation/enhertu-0
+      - https://clinicaltrials.gov/study/NCT04622319
 # Already covered elsewhere on the site (do not pick as a new hot topic unless a dedicated page adds real value):
 covered_elsewhere_note: "intismeran/mRNA-4157 melanoma vaccine (INTerpath-001), tarlatamab (DeLLphi), divarasib, ivonescimab (HARMONi), dostarlimab rectal — covered in ESMO 2026 and approval pages"

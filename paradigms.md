@@ -15,6 +15,7 @@ Concise trial reviews, treatment pathways and regulatory updates, with context f
 ## Recent updates {#this-week}
 A selection of recent articles and regulatory updates, current to 27 Nov 2026.
 
+- [DESTINY-Breast05]({{ '/trastuzumab-deruxtecan-residual-her2-early-breast-cancer-destiny-breast05/' | relative_url }}) — post-neoadjuvant T-DXd improved invasive disease-free survival in high-risk residual HER2-positive early breast cancer.
 - [MATTERHORN]({{ '/durvalumab-flot-perioperative-gastric-gej-matterhorn/' | relative_url }}) — perioperative durvalumab plus FLOT improved event-free and overall survival in resectable gastric/GEJ adenocarcinoma.
 - [KEYNOTE-905 and KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }}) — perioperative enfortumab vedotin plus pembrolizumab improved survival in cystectomy candidates.
 - [First-line recurrent/metastatic head and neck SCC]({{ '/first-line/recurrent-metastatic-head-and-neck-scc/' | relative_url }}) — salvage options first; PD-L1 CPS decides pembrolizumab alone or with chemotherapy, cetuximab regimens for CPS <1, low-dose nivolumab and metronomic options for India; sequencing including amivantamab.
@@ -54,6 +55,7 @@ A selection of recent articles and regulatory updates, current to 27 Nov 2026.
 - [New 9 Nov 2026: lung cancer staging puzzle (TNM 9th edition, 10 cases)]({{ '/lung-cancer-staging-puzzle/' | relative_url }})
 
 ## Breast {#breast}
+- [New 27 Nov 2026: post-neoadjuvant T-DXd for residual HER2+ early breast cancer — DESTINY-Breast05]({{ '/trastuzumab-deruxtecan-residual-her2-early-breast-cancer-destiny-breast05/' | relative_url }})
 - [New 18 Nov 2026: camizestrant switch on ctDNA ESR1 mutation — SERENA-6]({{ '/camizestrant-esr1-ctdna-switch-serena-6/' | relative_url }})
 - [DESTINY-Breast11]({{ '/destiny-breast-11-trial/' | relative_url }})
 
@@ -83,6 +85,7 @@ A selection of recent articles and regulatory updates, current to 27 Nov 2026.
 - [New 5 Nov 2026: organ-preservation pathway illustration]({{ '/dostarlimab-organ-preservation-pathway/' | relative_url }})
 
 ## Trial briefs {#trial-briefs}
+- [New 27 Nov 2026: post-neoadjuvant T-DXd for residual HER2+ early breast cancer — DESTINY-Breast05]({{ '/trastuzumab-deruxtecan-residual-her2-early-breast-cancer-destiny-breast05/' | relative_url }})
 - [New 25 Nov 2026: perioperative durvalumab + FLOT in resectable gastric/GEJ adenocarcinoma — MATTERHORN]({{ '/durvalumab-flot-perioperative-gastric-gej-matterhorn/' | relative_url }})
 - [New 23 Nov 2026: perioperative enfortumab vedotin + pembrolizumab in MIBC — KEYNOTE-905 / KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }})
 - [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
@@ -95,6 +98,7 @@ A selection of recent articles and regulatory updates, current to 27 Nov 2026.
 - [Trial briefs, October 2026]({{ '/trial-briefs-october-2026/' | relative_url }})
 
 ## FDA approvals {#fda}
+- [New 27 Nov 2026: post-neoadjuvant T-DXd for residual HER2+ early breast cancer — DESTINY-Breast05]({{ '/trastuzumab-deruxtecan-residual-her2-early-breast-cancer-destiny-breast05/' | relative_url }})
 - [New 25 Nov 2026: perioperative durvalumab + FLOT in resectable gastric/GEJ adenocarcinoma — MATTERHORN]({{ '/durvalumab-flot-perioperative-gastric-gej-matterhorn/' | relative_url }})
 - [New 23 Nov 2026: perioperative enfortumab vedotin + pembrolizumab in MIBC — KEYNOTE-905 / KEYNOTE-B15]({{ '/enfortumab-vedotin-pembrolizumab-perioperative-mibc-keynote-905/' | relative_url }})
 - [New 20 Nov 2026: Lu-PSMA-617 in hormone-sensitive metastatic prostate cancer — PSMAddition]({{ '/lutetium-psma-hormone-sensitive-prostate-cancer-psmaddition/' | relative_url }})
