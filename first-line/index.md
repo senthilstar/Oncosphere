@@ -22,6 +22,7 @@ Match therapy to tumour biology, clinical urgency, safety and sustainable access
 - [Metastatic colorectal cancer]({{ '/first-line/metastatic-colorectal-cancer/' | relative_url }}) — Assess resection potential; test MMR, RAS, BRAF and HER2, then match therapy to biology, sidedness and fitness.
 - [Advanced gastric / GEJ adenocarcinoma]({{ '/first-line/advanced-gastric-gej-adenocarcinoma/' | relative_url }}) — Test HER2, PD-L1 CPS, MMR and CLDN18.2 up front; add a PD-1 inhibitor, HER2 antibody or zolbetuximab to the chemotherapy backbone by profile and fitness.
 - [Advanced hepatocellular carcinoma]({{ '/first-line/advanced-hepatocellular-carcinoma/' | relative_url }}) — Judge Child-Pugh class, varices and immunotherapy eligibility; choose atezolizumab–bevacizumab, STRIDE, nivolumab–ipilimumab or a TKI and plan the sequence.
+- [Recurrent/metastatic head and neck SCC]({{ '/first-line/recurrent-metastatic-head-and-neck-scc/' | relative_url }}) — Rule out salvage surgery or re-irradiation; test PD-L1 CPS and p16, then choose pembrolizumab alone, pembrolizumab with chemotherapy or a cetuximab regimen; low-cost Indian options.
 - [Metastatic hormone-sensitive prostate cancer]({{ '/first-line/mhspc-doublet-vs-triplet-therapy/' | relative_url }}) — Intensify by CHAARTED volume, presentation timing and chemotherapy fitness — triplet or ARPI doublet, never ADT alone.
 
 ## Related treatment reviews
