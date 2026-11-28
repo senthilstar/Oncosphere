@@ -135,26 +135,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42966514/"
   },
   {
-    "pmid": "42946182",
-    "title": "Integrated analysis of the blood-absorbed and gastric tissue-distributed components of Huangqi Fuling Decoction reveals the inhibitory effect on gastric cancer liver metastasis via the PRMT1/FOXO1 axis.",
-    "journal": "Journal of ethnopharmacology",
-    "pubdate": "2027 Feb 10",
-    "authors": [
-      "Lu D",
-      "Jia S",
-      "Song C",
-      "Liu W",
-      "Wang R",
-      "Zhao J",
-      "Feng J",
-      "Liu Y",
-      "Qu H",
-      "Nan Y",
-      "Yuan L"
-    ],
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42946182/"
-  },
-  {
     "pmid": "43054192",
     "title": "Releasing Immunosuppression in the Tumor: A Phase 1/2 Study of Arginase Inhibitor INCB001158 in Combination with Chemotherapy in Advanced Malignancies.",
     "journal": "Journal of immunotherapy and precision oncology",
@@ -271,5 +251,22 @@
       "Li Y"
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/42988231/"
+  },
+  {
+    "pmid": "42988230",
+    "title": "Endothelial senescence orchestrates the tumor immune microenvironment and immunotherapy response in non-small cell lung cancer.",
+    "journal": "Biochimica et biophysica acta. Molecular basis of disease",
+    "pubdate": "2027 Feb",
+    "authors": [
+      "Qiu X",
+      "Qin H",
+      "Deng S",
+      "Kong X",
+      "Chen K",
+      "Zhang R",
+      "Yan H",
+      "Wong PP"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42988230/"
   }
 ]
